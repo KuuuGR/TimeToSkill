@@ -10,10 +10,14 @@ import SwiftData
 
 @main
 struct TimeToSkillApp: App {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some Scene {
         WindowGroup {
-            SplashView() // Your custom splash screen
+            SplashView()
+                .preferredColorScheme(.dark) // Force dark
+                .environment(\.colorScheme, .dark) // Override all views
         }
-        .modelContainer(for: Skill.self) // Replace Item with Skill
+        .modelContainer(for: Skill.self)
     }
 }
