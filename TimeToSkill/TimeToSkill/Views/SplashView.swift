@@ -9,37 +9,67 @@ import SwiftUI
 
 struct SplashView: View {
     @State private var isActive = false
-    @State private var scale: CGFloat = 0.5
-    @State private var opacity = 0.0
-    @State private var rotation: Double = 0
+    @State private var logoScale: CGFloat = 0.8
+    @State private var logoOpacity: Double = 0.0
+    @State private var glowRadius: CGFloat = 0
+    @State private var cornerRadius: CGFloat = 0 // For animation
+    
+    private var transparentGradient: LinearGradient {
+        LinearGradient(
+            gradient: Gradient(colors: [
+                .white.opacity(0.2),
+                .white.opacity(0.05),
+                .clear
+            ]),
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    }
     
     var body: some View {
         ZStack {
             // Dark background
-            Color("Background")
+            Color(red: 0.08, green: 0.08, blue: 0.1)
                 .ignoresSafeArea()
             
-            // Logo with combined effects
+            // Circular logo with effects
             Image("app_logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: calculateLogoSize())
-                .opacity(opacity)
-                .scaleEffect(scale)
-                .rotationEffect(.degrees(rotation))
+                .frame(width: min(UIScreen.main.bounds.width, UIScreen.main.bounds.height) * 0.8) // Smaller for circle
+                .clipShape(Circle()) // Makes it perfectly round
+                .overlay(
+                    Circle() // Circular overlay for gradient
+                        .fill(transparentGradient)
+                )
+                .scaleEffect(logoScale)
+                .opacity(logoOpacity)
+                .shadow(color: .white.opacity(0.3), radius: glowRadius)
+                .overlay(
+                    Circle()
+                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .scaleEffect(logoScale * 1.1) // Slightly larger than logo
+                )
                 .onAppear {
-                    // Sequence animations
-                    withAnimation(.easeIn(duration: 0.5)) {
-                        opacity = 1.0
+                    // Initial state
+                    logoOpacity = 0.0
+                    logoScale = 0.8
+                    glowRadius = 0
+                    cornerRadius = 0
+                    
+                    // Animation sequence
+                    withAnimation(.easeInOut(duration: 0.8)) {
+                        logoOpacity = 0.2
+                        cornerRadius = 100 // Animate to circle
                     }
                     
-                    withAnimation(.interpolatingSpring(stiffness: 100, damping: 10).delay(0.3)) {
-                        scale = 1.2  // Overshoot slightly
+                    withAnimation(.easeOut(duration: 1.2).delay(0.3)) {
+                        logoScale = 1.0
+                        glowRadius = 15 // Smaller glow for circle
                     }
                     
-                    withAnimation(.linear(duration: 1.5).delay(0.5)) {
-                        rotation = 360
-                        scale = 1.0  // Return to normal
+                    withAnimation(.easeIn(duration: 0.5).delay(1.8)) {
+                        logoOpacity = 0.7
                     }
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
@@ -49,14 +79,8 @@ struct SplashView: View {
                     }
                 }
         }
-    }
-    
-    private func calculateLogoSize() -> CGFloat {
-        #if os(iOS)
-        let screenSize = min(UIScreen.main.bounds.width, UIScreen.main.bounds.height)
-        return screenSize * 0.7  // 70% of smallest screen dimension
-        #else
-        return 300  // Fallback for other platforms
-        #endif
+        .fullScreenCover(isPresented: $isActive) {
+            MainView()
+        }
     }
 }
