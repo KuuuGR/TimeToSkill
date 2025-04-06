@@ -5,13 +5,13 @@
 import SwiftUI
 
 struct MainView: View {
-    // Choose your preferred animation type here
+    // Background configuration
     private let backgroundAnimation: BackgroundAnimationType = .staticCircle
     
     var body: some View {
         NavigationStack {
             ZStack {
-                // Configurable background
+                // Background
                 AppBackground(animationType: backgroundAnimation)
                 
                 // Main content
@@ -23,28 +23,25 @@ struct MainView: View {
                             .foregroundColor(AppColors.onSurface)
                             .padding(.top, 40)
                         
-                        // Button Cards
+                        // Navigation Buttons
                         VStack(spacing: 16) {
                             NavigationLink {
                                 StartView()
                             } label: {
                                 PrimaryButton(title: "Start Tracking") {}
                             }
-                            .buttonStyle(.plain)
                             
                             NavigationLink {
                                 TheoryView()
                             } label: {
                                 SecondaryButton(title: "Learning Theory") {}
                             }
-                            .buttonStyle(.plain)
                             
                             NavigationLink {
                                 AboutView()
                             } label: {
                                 SecondaryButton(title: "About App") {}
                             }
-                            .buttonStyle(.plain)
                         }
                         .padding(20)
                         .background(
@@ -57,16 +54,21 @@ struct MainView: View {
                         
                         Spacer()
                     }
-                    .frame(maxWidth: .infinity)
                 }
                 
-                // FAB Button
+                // Floating Action Button
                 VStack {
                     Spacer()
                     HStack {
                         Spacer()
-                        FABButton(icon: "plus") {
-                            // FAB action
+                        Button(action: { print("FAB tapped") }) {
+                            Image(systemName: "plus")
+                                .font(.title.weight(.bold))
+                                .foregroundColor(.white)
+                                .frame(width: 56, height: 56)
+                                .background(AppColors.primary)
+                                .clipShape(Circle())
+                                .shadow(color: .black.opacity(0.3), radius: 8, y: 4)
                         }
                         .padding(20)
                     }
@@ -74,6 +76,5 @@ struct MainView: View {
             }
             .navigationBarHidden(true)
         }
-        .accentColor(AppColors.primary)
     }
 }
