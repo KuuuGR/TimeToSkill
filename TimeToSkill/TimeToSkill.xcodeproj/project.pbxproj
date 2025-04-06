@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0713ACAD2DA29289005F9E07 /* TimeToSkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToSkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0713ACBF2DA29292005F9E07 /* TimeToSkillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeToSkillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0713ACC92DA29292005F9E07 /* TimeToSkillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeToSkillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713ACAD2DA29289005F9E07 /* TimeToSkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TimeToSkill.app; path = "/Users/grzegorzkulesza/Developer/TimeToSkill/TimeToSkill/build/Debug-iphoneos/TimeToSkill.app"; sourceTree = "<absolute>"; };
+		0713ACBF2DA29292005F9E07 /* TimeToSkillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TimeToSkillTests.xctest; path = "/Users/grzegorzkulesza/Developer/TimeToSkill/TimeToSkill/build/Debug-iphoneos/TimeToSkill.app/PlugIns/TimeToSkillTests.xctest"; sourceTree = "<absolute>"; };
+		0713ACC92DA29292005F9E07 /* TimeToSkillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TimeToSkillUITests.xctest; path = "/Users/grzegorzkulesza/Developer/TimeToSkill/TimeToSkill/build/Debug-iphoneos/TimeToSkillUITests-Runner.app/PlugIns/TimeToSkillUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -98,18 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0713ACAF2DA29289005F9E07 /* TimeToSkill */,
-				0713ACAE2DA29289005F9E07 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		0713ACAE2DA29289005F9E07 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0713ACAD2DA29289005F9E07 /* TimeToSkill.app */,
-				0713ACBF2DA29292005F9E07 /* TimeToSkillTests.xctest */,
-				0713ACC92DA29292005F9E07 /* TimeToSkillUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +199,7 @@
 			mainGroup = 0713ACA42DA29289005F9E07;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 0713ACAE2DA29289005F9E07 /* Products */;
+			productRefGroup = 0713ACA42DA29289005F9E07;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
