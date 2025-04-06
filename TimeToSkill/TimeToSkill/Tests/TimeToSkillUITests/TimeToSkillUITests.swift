@@ -4,7 +4,6 @@
 //
 //  Created by Grzegorz Kulesza on 06/04/2025.
 //
-
 import XCTest
 
 final class TimeToSkillUITests: XCTestCase {

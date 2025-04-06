@@ -5,15 +5,14 @@
 import SwiftUI
 
 struct MainView: View {
-    // Background configuration
     private let backgroundAnimation: BackgroundAnimationType = .staticCircle
-    
+
     var body: some View {
         NavigationStack {
             ZStack {
                 // Background
                 AppBackground(animationType: backgroundAnimation)
-                
+
                 // Main content
                 ScrollView {
                     VStack(spacing: 24) {
@@ -22,25 +21,46 @@ struct MainView: View {
                             .font(AppTypography.display)
                             .foregroundColor(AppColors.onSurface)
                             .padding(.top, 40)
-                        
+
                         // Navigation Buttons
                         VStack(spacing: 16) {
-                            NavigationLink {
-                                StartView()
-                            } label: {
-                                PrimaryButton(title: "Start Tracking") {}
+                            NavigationLink(destination: StartView()) {
+                                Text("Start Tracking")
+                                    .font(AppTypography.headline)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 12)
+                                    .foregroundColor(AppColors.onPrimary)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(AppColors.primary)
+                                            .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
+                                    )
                             }
-                            
-                            NavigationLink {
-                                TheoryView()
-                            } label: {
-                                SecondaryButton(title: "Learning Theory") {}
+
+                            NavigationLink(destination: TheoryView()) {
+                                Text("Learning Theory")
+                                    .font(AppTypography.headline)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 12)
+                                    .foregroundColor(AppColors.onPrimary)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(AppColors.secondary)
+                                            .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
+                                    )
                             }
-                            
-                            NavigationLink {
-                                AboutView()
-                            } label: {
-                                SecondaryButton(title: "About App") {}
+
+                            NavigationLink(destination: AboutView()) {
+                                Text("About App")
+                                    .font(AppTypography.headline)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 12)
+                                    .foregroundColor(AppColors.onPrimary)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(AppColors.secondary)
+                                            .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
+                                    )
                             }
                         }
                         .padding(20)
@@ -51,24 +71,18 @@ struct MainView: View {
                         )
                         .padding(.horizontal, 20)
                         .padding(.top, 40)
-                        
+
                         Spacer()
                     }
                 }
-                
-                // Floating Action Button
+
+                // FAB
                 VStack {
                     Spacer()
                     HStack {
                         Spacer()
-                        Button(action: { print("FAB tapped") }) {
-                            Image(systemName: "plus")
-                                .font(.title.weight(.bold))
-                                .foregroundColor(.white)
-                                .frame(width: 56, height: 56)
-                                .background(AppColors.primary)
-                                .clipShape(Circle())
-                                .shadow(color: .black.opacity(0.3), radius: 8, y: 4)
+                        FABButton(icon: "plus") {
+                            print("FAB tapped") // Optional move to StartView in future
                         }
                         .padding(20)
                     }

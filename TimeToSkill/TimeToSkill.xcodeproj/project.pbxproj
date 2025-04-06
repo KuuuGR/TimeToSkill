@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0713AE1F2DA30745005F9E07 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713AE122DA30523005F9E07 /* XCTest.framework */; platformFilter = ios; };
+		0713AE202DA30745005F9E07 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0713AE122DA30523005F9E07 /* XCTest.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0713AE222DA3074E005F9E07 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713AE122DA30523005F9E07 /* XCTest.framework */; platformFilter = ios; };
+		0713AE232DA3074E005F9E07 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0713AE122DA30523005F9E07 /* XCTest.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0713ACC02DA29292005F9E07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,14 +30,50 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0713AE212DA30745005F9E07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0713AE202DA30745005F9E07 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0713AE242DA3074E005F9E07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0713AE232DA3074E005F9E07 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0713AE272DA3077B005F9E07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0713ACAD2DA29289005F9E07 /* TimeToSkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TimeToSkill.app; path = "/Users/grzegorzkulesza/Developer/TimeToSkill/TimeToSkill/build/Debug-iphoneos/TimeToSkill.app"; sourceTree = "<absolute>"; };
-		0713ACBF2DA29292005F9E07 /* TimeToSkillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TimeToSkillTests.xctest; path = "/Users/grzegorzkulesza/Developer/TimeToSkill/TimeToSkill/build/Debug-iphoneos/TimeToSkill.app/PlugIns/TimeToSkillTests.xctest"; sourceTree = "<absolute>"; };
-		0713ACC92DA29292005F9E07 /* TimeToSkillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TimeToSkillUITests.xctest; path = "/Users/grzegorzkulesza/Developer/TimeToSkill/TimeToSkill/build/Debug-iphoneos/TimeToSkillUITests-Runner.app/PlugIns/TimeToSkillUITests.xctest"; sourceTree = "<absolute>"; };
+		0713AD612DA2FF64005F9E07 /* TimeToSkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToSkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713AD622DA2FF64005F9E07 /* TimeToSkillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeToSkillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713AD632DA2FF64005F9E07 /* TimeToSkillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeToSkillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713AE122DA30523005F9E07 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0713AD052DA2CBB0005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkill" target */ = {
+		0713AE2B2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkill" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/SkillTests.swift,
@@ -39,14 +82,14 @@
 			);
 			target = 0713ACAC2DA29289005F9E07 /* TimeToSkill */;
 		};
-		0713AD062DA2CBB0005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillTests" target */ = {
+		0713AE2C2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/SkillTests.swift,
 			);
 			target = 0713ACBE2DA29292005F9E07 /* TimeToSkillTests */;
 		};
-		0713AD072DA2CBB0005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillUITests" target */ = {
+		0713AE2E2DA3161E005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillUITests/TimeToSkillUITests.swift,
@@ -60,9 +103,9 @@
 		0713ACAF2DA29289005F9E07 /* TimeToSkill */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				0713AD052DA2CBB0005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkill" target */,
-				0713AD062DA2CBB0005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillTests" target */,
-				0713AD072DA2CBB0005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillUITests" target */,
+				0713AE2B2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkill" target */,
+				0713AE2C2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillTests" target */,
+				0713AE2E2DA3161E005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillUITests" target */,
 			);
 			path = TimeToSkill;
 			sourceTree = "<group>";
@@ -81,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0713AE222DA3074E005F9E07 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0713AE1F2DA30745005F9E07 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +143,19 @@
 			isa = PBXGroup;
 			children = (
 				0713ACAF2DA29289005F9E07 /* TimeToSkill */,
+				0713AD612DA2FF64005F9E07 /* TimeToSkill.app */,
+				0713AD622DA2FF64005F9E07 /* TimeToSkillTests.xctest */,
+				0713AD632DA2FF64005F9E07 /* TimeToSkillUITests.xctest */,
+				0713AE112DA30523005F9E07 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		0713AE112DA30523005F9E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0713AE122DA30523005F9E07 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +168,7 @@
 				0713ACA92DA29289005F9E07 /* Sources */,
 				0713ACAA2DA29289005F9E07 /* Frameworks */,
 				0713ACAB2DA29289005F9E07 /* Resources */,
+				0713AE272DA3077B005F9E07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,7 +181,7 @@
 			packageProductDependencies = (
 			);
 			productName = TimeToSkill;
-			productReference = 0713ACAD2DA29289005F9E07 /* TimeToSkill.app */;
+			productReference = 0713AD612DA2FF64005F9E07 /* TimeToSkill.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0713ACBE2DA29292005F9E07 /* TimeToSkillTests */ = {
@@ -133,6 +191,7 @@
 				0713ACBB2DA29292005F9E07 /* Sources */,
 				0713ACBC2DA29292005F9E07 /* Frameworks */,
 				0713ACBD2DA29292005F9E07 /* Resources */,
+				0713AE242DA3074E005F9E07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,7 +202,7 @@
 			packageProductDependencies = (
 			);
 			productName = TimeToSkillTests;
-			productReference = 0713ACBF2DA29292005F9E07 /* TimeToSkillTests.xctest */;
+			productReference = 0713AD622DA2FF64005F9E07 /* TimeToSkillTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0713ACC82DA29292005F9E07 /* TimeToSkillUITests */ = {
@@ -153,6 +212,7 @@
 				0713ACC52DA29292005F9E07 /* Sources */,
 				0713ACC62DA29292005F9E07 /* Frameworks */,
 				0713ACC72DA29292005F9E07 /* Resources */,
+				0713AE212DA30745005F9E07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,7 +223,7 @@
 			packageProductDependencies = (
 			);
 			productName = TimeToSkillUITests;
-			productReference = 0713ACC92DA29292005F9E07 /* TimeToSkillUITests.xctest */;
+			productReference = 0713AD632DA2FF64005F9E07 /* TimeToSkillUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */

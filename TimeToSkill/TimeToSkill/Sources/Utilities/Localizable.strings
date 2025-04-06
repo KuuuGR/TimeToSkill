@@ -16,3 +16,11 @@
 "Theory" = "Teoria";
 "About" = "O Aplikacji";
 "SkillName" = "Nazwa Umiejętności";
+
+// default
+"default_guitar" = "Guitar";
+"default_spanish" = "Spanish";
+"enter_skill_name" = "Enter skill name";
+"add_skill" = "Add Skill";
+"new_skill" = "New Skill";
+"cancel" = "Cancel";

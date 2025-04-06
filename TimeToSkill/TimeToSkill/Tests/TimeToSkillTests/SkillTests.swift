@@ -6,8 +6,8 @@
 //
 
 import XCTest
+
 @testable import TimeToSkill
-import SwiftData
 
 final class SkillTests: XCTestCase {
     func testSkillProgressColors() {
