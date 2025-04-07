@@ -60,6 +60,7 @@ struct SkillProgressView: View {
 
             Text("\(skill.hours, specifier: "%.1f") hours")
                 .font(.caption)
+                .accessibilityIdentifier("SkillProgressLabel")
                 .foregroundColor(.secondary)
         }
         .padding()

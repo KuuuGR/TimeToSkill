@@ -1,6 +1,4 @@
-//
 //  TimeToSkillTests.swift
-//  TimeToSkillTests
 //
 //  Created by Grzegorz Kulesza on 06/04/2025.
 //

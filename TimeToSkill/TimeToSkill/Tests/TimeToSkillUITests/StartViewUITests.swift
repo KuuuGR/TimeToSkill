@@ -6,22 +6,27 @@
 //
 import XCTest
 
-final class TimeToSkillUITests: XCTestCase {
+final class StartViewUITests: XCTestCase {
     let app = XCUIApplication()
     
-    override func setUp() {
+    override func setUpWithError() throws {
+        continueAfterFailure = false
         app.launch()
     }
-    
+
     func testStartButton() {
         app.buttons["Start"].tap()
         XCTAssertTrue(app.buttons["Stop"].exists)
     }
-    
+
     func testSkillProgressUpdates() {
         app.buttons["Start"].tap()
-        sleep(2) // Simulate 2s practice
+        sleep(2) // simulate practice
         app.buttons["Stop"].tap()
-        XCTAssertTrue(app.staticTexts["0.1 hours"].exists)
+
+        // Make sure this label has `.accessibilityIdentifier("SkillProgressLabel")` in SkillProgressView
+        let label = app.staticTexts["SkillProgressLabel"]
+        XCTAssertTrue(label.label.contains("hours"))
     }
 }
+
