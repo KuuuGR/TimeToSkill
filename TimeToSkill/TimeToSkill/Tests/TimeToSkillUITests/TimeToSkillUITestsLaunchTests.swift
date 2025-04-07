@@ -31,4 +31,18 @@ final class TimeToSkillUITestsLaunchTests: XCTestCase {
         attachment.name = "Main Screen"
         add(attachment)
     }
+    
+    func testNavigationToTheoryView() {
+        let app = XCUIApplication()
+        app.launch()
+
+        // Tap the "Learning Theory" button
+        let theoryButton = app.buttons["Learning Theory"]
+        XCTAssertTrue(theoryButton.waitForExistence(timeout: 3))
+        theoryButton.tap()
+
+        // Verify navigation occurred
+        let theoryTitle = app.staticTexts["Teorie czasu nauki"]
+        XCTAssertTrue(theoryTitle.waitForExistence(timeout: 3))
+    }
 }
