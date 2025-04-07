@@ -11,62 +11,49 @@ struct TheoryView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
-                Text("Teorie czasu nauki")
+                Text(LocalizedStringKey("theory_title"))
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.top)
 
                 TheoryCard(
                     icon: "🔥",
-                    title: "Zasada 10 000 godzin",
-                    author: "Malcolm Gladwell (na podstawie Andersa Ericssona)",
-                    description: """
-Twierdzi, że aby osiągnąć mistrzostwo, potrzeba ok. 10 000 godzin celowego treningu. Dotyczy elity (muzycy, sportowcy, szachiści), nie tylko ilości, ale i jakości nauki. Krytykowana za uproszczenia.
-""",
-                    worksFor: "✔️ Precyzyjne dziedziny, profesjonalna kariera\n✖️ Nieprzydatna dla szybkiego startu"
+                    title: NSLocalizedString("theory_10k_title", comment: ""),
+                    author: NSLocalizedString("theory_10k_author", comment: ""),
+                    description: NSLocalizedString("theory_10k_description", comment: ""),
+                    worksFor: NSLocalizedString("theory_10k_works", comment: "")
                 )
 
                 TheoryCard(
                     icon: "⚡",
-                    title: "Zasada 20/21 godzin",
-                    author: "Josh Kaufman",
-                    description: """
-Wystarczy 20 godzin świadomej nauki, by zacząć cieszyć się nową umiejętnością. Idealna do hobby lub podstaw (np. ukulele, język A1).
-""",
-                    worksFor: "✔️ Szybki start, hobby\n✖️ Nie prowadzi do mistrzostwa"
+                    title: NSLocalizedString("theory_20_title", comment: ""),
+                    author: NSLocalizedString("theory_20_author", comment: ""),
+                    description: NSLocalizedString("theory_20_description", comment: ""),
+                    worksFor: NSLocalizedString("theory_20_works", comment: "")
                 )
 
                 TheoryCard(
                     icon: "🧠",
-                    title: "Zasada 100 godzin",
-                    author: "Nieformalna koncepcja edukacyjna",
-                    description: """
-Około 100 godzin pozwala osiągnąć solidną biegłość – idealna do zdobycia nowych zawodowych kompetencji, np. framework czy nowy język programowania.
-""",
-                    worksFor: "✔️ Praktyczne kompetencje, przekwalifikowanie\n✖️ Nie wystarczy do eksperckiego poziomu"
+                    title: NSLocalizedString("theory_100_title", comment: ""),
+                    author: NSLocalizedString("theory_100_author", comment: ""),
+                    description: NSLocalizedString("theory_100_description", comment: ""),
+                    worksFor: NSLocalizedString("theory_100_works", comment: "")
                 )
 
                 TheoryCard(
                     icon: "🌀",
-                    title: "Zasada 1000 godzin",
-                    author: "Popularna wśród mentorów IT, języków, freelancingu",
-                    description: """
-1000 godzin intensywnego treningu wystarczy, by być zawodowym ekspertem. Świetna do osiągnięcia zawodowej niezależności w IT, tłumaczenia, sztuce cyfrowej.
-""",
-                    worksFor: "✔️ Ekspert zawodowy, własne projekty\n✖️ Nie elita światowa"
+                    title: NSLocalizedString("theory_1000_title", comment: ""),
+                    author: NSLocalizedString("theory_1000_author", comment: ""),
+                    description: NSLocalizedString("theory_1000_description", comment: ""),
+                    worksFor: NSLocalizedString("theory_1000_works", comment: "")
                 )
 
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("📈 Porównanie")
+                    Text(LocalizedStringKey("theory_comparison_title"))
                         .font(.title3)
                         .fontWeight(.semibold)
 
-                    Text("""
-• 20 godzin → Dobry start (Amator)
-• 100 godzin → Solidna biegłość (Zaaw. pocz.)
-• 1000 godzin → Mistrz praktyki (Zawodowiec)
-• 10 000 godzin → Mistrzostwo (Elita)
-""")
+                    Text(LocalizedStringKey("theory_comparison_text"))
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
@@ -74,7 +61,7 @@ Około 100 godzin pozwala osiągnąć solidną biegłość – idealna do zdobyc
             }
             .padding(.horizontal)
         }
-        .navigationTitle("Teoria nauki")
+        .navigationTitle(LocalizedStringKey("theory_nav_title"))
     }
 }
 
