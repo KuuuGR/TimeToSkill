@@ -12,6 +12,7 @@ struct SkillProgressView: View {
     @Bindable var skill: Skill
     var isActive: Bool
     var onToggleTimer: () -> Void
+    var onShowOptions: () -> Void  // 👈 new
 
     internal var progressColor: Color {
         switch skill.hours {
@@ -23,12 +24,20 @@ struct SkillProgressView: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            // Editable skill name
-            TextField("Skill Name", text: $skill.name)
-                .font(.headline)
-                .multilineTextAlignment(.center)
+            HStack {
+                TextField("Skill Name", text: $skill.name)
+                    .font(.headline)
+                    .multilineTextAlignment(.center)
 
-            // Animated progress vial
+                Button(action: onShowOptions) {
+                    Image(systemName: "ellipsis")
+                        .rotationEffect(.degrees(90)) // ⋯ horizontally
+                        .padding(.leading, 4)
+                }
+                .accessibilityIdentifier("OptionsButton_\(skill.id.hashValue)")
+            }
+
+            // Animated progress bar
             GeometryReader { geo in
                 ZStack(alignment: .leading) {
                     Capsule()
@@ -57,15 +66,12 @@ struct SkillProgressView: View {
                     .cornerRadius(12)
             }
             .buttonStyle(.bordered)
-            .accessibilityIdentifier(
-                "\(isActive ? "StopButton" : "StartButton")_\(skill.id.uuidString)"
-            )
+            .accessibilityIdentifier(isActive ? "StopButton_\(skill.id.hashValue)" : "StartButton_\(skill.id.hashValue)")
 
-            // Hours label
             Text("\(skill.hours, specifier: "%.1f") hours")
                 .font(.caption)
+                .accessibilityIdentifier("SkillProgressLabel_\(skill.id.hashValue)")
                 .foregroundColor(.secondary)
-                .accessibilityIdentifier("SkillProgressLabel_\(skill.id.uuidString)")
         }
         .padding()
         .background(.ultraThinMaterial)

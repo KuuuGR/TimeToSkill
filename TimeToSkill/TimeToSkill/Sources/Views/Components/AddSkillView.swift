@@ -1,10 +1,11 @@
 import SwiftUI
+import SwiftData
 
 struct AddSkillView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) private var context
 
     @State private var skillName: String = ""
-    var onSave: (String) -> Void
 
     var body: some View {
         NavigationStack {
@@ -15,7 +16,8 @@ struct AddSkillView: View {
 
                 Button(action: {
                     guard !skillName.isEmpty else { return }
-                    onSave(skillName)
+                    let newSkill = Skill(name: skillName)
+                    context.insert(newSkill)
                     dismiss()
                 }) {
                     Text("Add Skill")

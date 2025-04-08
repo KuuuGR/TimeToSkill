@@ -6,8 +6,7 @@ struct StartView: View {
     @Environment(\.modelContext) private var context
     @Query private var skills: [Skill]  // Auto-fetched from SwiftData
 
-    @State private var activeTimer: Skill?
-    @State private var startTime: Date?
+    @State private var selectedSkillForOptions: Skill?
 
     @State private var showingAddSkill = false
 
@@ -22,10 +21,17 @@ struct StartView: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         ForEach(skills) { skill in
-                            SkillProgressView(skill: skill,
-                                              isActive: activeTimer == skill) {
-                                toggleTimer(for: skill)
-                            }
+                            SkillProgressView(
+                                skill: skill,
+                                isActive: skill.activeStart != nil,
+                                onToggleTimer: {
+                                    toggleTimer(for: skill)
+                                },
+                                onShowOptions: {
+                                    selectedSkillForOptions = skill
+                                    
+                                }
+                            )
                         }
                     }
                     .padding()
@@ -37,6 +43,8 @@ struct StartView: View {
                     Spacer()
                     HStack {
                         Spacer()
+
+                        // Add Skill FAB
                         FABButton(icon: "plus") {
                             showingAddSkill = true
                         }
@@ -47,9 +55,12 @@ struct StartView: View {
         }
         .navigationTitle(NSLocalizedString("tracking_nav_title", comment: "Navigation title for tracking view"))
         .sheet(isPresented: $showingAddSkill) {
-            AddSkillView { name in
-                let newSkill = Skill(name: name)
-                context.insert(newSkill)
+            AddSkillView()
+        }
+
+        .sheet(item: $selectedSkillForOptions) { skill in
+            SkillOptionsSheet(skill: skill) {
+                context.delete(skill)
             }
         }
         .onAppear {
@@ -62,14 +73,12 @@ struct StartView: View {
 
     /// Toggles the timer state for a given skill.
     private func toggleTimer(for skill: Skill) {
-        if activeTimer == skill {
-            // Timer is stopping
-            skill.hours += Date().timeIntervalSince(startTime ?? Date()) / 3600
-            activeTimer = nil
+        if let start = skill.activeStart {
+            let elapsed = Date().timeIntervalSince(start)
+            skill.hours += elapsed / 3600
+            skill.activeStart = nil
         } else {
-            // Timer is starting
-            activeTimer = skill
-            startTime = Date()
+            skill.activeStart = Date()
         }
     }
 }

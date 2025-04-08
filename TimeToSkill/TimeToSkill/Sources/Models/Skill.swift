@@ -15,6 +15,7 @@ final class Skill {
     var name: String
     var hours: Double
     var lastUpdated: Date
+    var activeStart: Date?
 
     init(id: UUID = UUID(), name: String, hours: Double = 0) {
         self.id = id
