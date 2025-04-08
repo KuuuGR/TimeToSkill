@@ -11,11 +11,13 @@ import SwiftData
 /// Represents a skill to track (e.g., "Guitar", "Spanish")
 @Model
 final class Skill {
+    @Attribute(.unique) var id: UUID
     var name: String
-    var hours: Double  // Total hours invested
+    var hours: Double
     var lastUpdated: Date
-    
-    init(name: String, hours: Double = 0) {
+
+    init(id: UUID = UUID(), name: String, hours: Double = 0) {
+        self.id = id
         self.name = name
         self.hours = hours
         self.lastUpdated = Date()

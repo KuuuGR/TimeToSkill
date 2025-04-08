@@ -3,6 +3,10 @@
 "Theory" = "Theory";
 "About" = "About";
 
+// MARK: - StartView
+"tracking_title" = "Skill Tracker";
+"tracking_nav_title" = "Tracking";
+
 // MARK: - SkillProgressView
 "SkillName" = "Skill Name";
 

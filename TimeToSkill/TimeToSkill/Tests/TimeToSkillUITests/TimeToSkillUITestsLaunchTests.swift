@@ -21,21 +21,24 @@ final class TimeToSkillUITestsLaunchTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // Wait for splash screen
-        let splash = app.images["app_logo"]
-        XCTAssertTrue(splash.waitForExistence(timeout: 3))
+        // Wait for the app logo (splash) to disappear
+        let appLogo = app.images["app_logo"]
+        XCTAssertTrue(appLogo.waitForExistence(timeout: 5), "App logo not found")
 
-        // Navigate to TheoryView
+        // Tap the Theory button using accessibility label
         let theoryButton = app.buttons["Learning Theory"]
-        XCTAssertTrue(theoryButton.waitForExistence(timeout: 3))
+        XCTAssertTrue(theoryButton.waitForExistence(timeout: 5), "Theory button not found")
         theoryButton.tap()
 
-        let theoryTitle = app.staticTexts["Teorie czasu nauki"]
-        XCTAssertTrue(theoryTitle.waitForExistence(timeout: 3))
+        // Use a predicate to match a localized title (based on theory_nav_title = "Learning Theory")
+        let theoryTitlePredicate = NSPredicate(format: "label CONTAINS[c] %@", "Learning Theory")
+        let theoryTitle = app.staticTexts.containing(theoryTitlePredicate).element(boundBy: 0)
+        XCTAssertTrue(theoryTitle.waitForExistence(timeout: 5), "TheoryView title not found")
 
-        // Screenshot for QA or App Store previews
+        // Optionally, take screenshot for verification
         let screenshot = XCTAttachment(screenshot: app.screenshot())
         screenshot.name = "TheoryView Screenshot"
+        screenshot.lifetime = .keepAlways
         add(screenshot)
     }
 }

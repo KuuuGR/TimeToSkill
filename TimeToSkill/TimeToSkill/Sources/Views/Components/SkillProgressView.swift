@@ -23,7 +23,7 @@ struct SkillProgressView: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            // Editable name
+            // Editable skill name
             TextField("Skill Name", text: $skill.name)
                 .font(.headline)
                 .multilineTextAlignment(.center)
@@ -57,11 +57,15 @@ struct SkillProgressView: View {
                     .cornerRadius(12)
             }
             .buttonStyle(.bordered)
+            .accessibilityIdentifier(
+                "\(isActive ? "StopButton" : "StartButton")_\(skill.id.uuidString)"
+            )
 
+            // Hours label
             Text("\(skill.hours, specifier: "%.1f") hours")
                 .font(.caption)
-                .accessibilityIdentifier("SkillProgressLabel")
                 .foregroundColor(.secondary)
+                .accessibilityIdentifier("SkillProgressLabel_\(skill.id.uuidString)")
         }
         .padding()
         .background(.ultraThinMaterial)

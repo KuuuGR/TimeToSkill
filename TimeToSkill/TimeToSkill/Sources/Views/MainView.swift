@@ -36,6 +36,7 @@ struct MainView: View {
                                             .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
                                     )
                             }
+                            .accessibilityLabel("Start Tracking")
 
                             NavigationLink(destination: TheoryView()) {
                                 Text("Learning Theory")
@@ -49,6 +50,7 @@ struct MainView: View {
                                             .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
                                     )
                             }
+                            .accessibilityLabel("Learning Theory")
 
                             NavigationLink(destination: AboutView()) {
                                 Text("About App")
@@ -62,6 +64,7 @@ struct MainView: View {
                                             .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
                                     )
                             }
+                            .accessibilityLabel("About")
                         }
                         .padding(20)
                         .background(

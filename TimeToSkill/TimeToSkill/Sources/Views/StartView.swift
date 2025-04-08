@@ -1,7 +1,7 @@
 import SwiftUI
 import SwiftData
 
-/// Shows skill vials with progress tracking
+/// Displays the list of skills with progress tracking functionality.
 struct StartView: View {
     @Environment(\.modelContext) private var context
     @Query private var skills: [Skill]  // Auto-fetched from SwiftData
@@ -12,32 +12,40 @@ struct StartView: View {
     @State private var showingAddSkill = false
 
     var body: some View {
-        ZStack {
-            ScrollView {
-                VStack(spacing: 20) {
-                    ForEach(skills) { skill in
-                        SkillProgressView(skill: skill,
-                                          isActive: activeTimer == skill) {
-                            toggleTimer(for: skill)
+        VStack {
+            // Title for UI testing
+            Text(NSLocalizedString("tracking_title", comment: "Tracking screen title"))
+                .font(.headline)
+                .accessibilityIdentifier("StartViewTitle")
+
+            ZStack {
+                ScrollView {
+                    VStack(spacing: 20) {
+                        ForEach(skills) { skill in
+                            SkillProgressView(skill: skill,
+                                              isActive: activeTimer == skill) {
+                                toggleTimer(for: skill)
+                            }
                         }
                     }
+                    .padding()
+                    .padding(.bottom, 100) // Add space so FAB doesn't overlap the last skill
                 }
-                .padding()
-                .padding(.bottom, 100) // So FAB doesn't overlap last item
-            }
 
-            // Floating Action Button
-            VStack {
-                Spacer()
-                HStack {
+                // Floating Action Button (FAB)
+                VStack {
                     Spacer()
-                    FABButton(icon: "plus") {
-                        showingAddSkill = true
+                    HStack {
+                        Spacer()
+                        FABButton(icon: "plus") {
+                            showingAddSkill = true
+                        }
+                        .padding(20)
                     }
-                    .padding(20)
                 }
             }
         }
+        .navigationTitle(NSLocalizedString("tracking_nav_title", comment: "Navigation title for tracking view"))
         .sheet(isPresented: $showingAddSkill) {
             AddSkillView { name in
                 let newSkill = Skill(name: name)
@@ -52,11 +60,14 @@ struct StartView: View {
         }
     }
 
+    /// Toggles the timer state for a given skill.
     private func toggleTimer(for skill: Skill) {
         if activeTimer == skill {
+            // Timer is stopping
             skill.hours += Date().timeIntervalSince(startTime ?? Date()) / 3600
             activeTimer = nil
         } else {
+            // Timer is starting
             activeTimer = skill
             startTime = Date()
         }
