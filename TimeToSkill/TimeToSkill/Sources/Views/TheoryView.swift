@@ -16,36 +16,44 @@ struct TheoryView: View {
                     .fontWeight(.bold)
                     .padding(.top)
 
-                TheoryCard(
-                    icon: "🔥",
-                    title: NSLocalizedString("theory_10k_title", comment: ""),
-                    author: NSLocalizedString("theory_10k_author", comment: ""),
-                    description: NSLocalizedString("theory_10k_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_10k_works", comment: "")
-                )
-
+                // 0–21 hours
                 TheoryCard(
                     icon: "⚡",
                     title: NSLocalizedString("theory_20_title", comment: ""),
                     author: NSLocalizedString("theory_20_author", comment: ""),
                     description: NSLocalizedString("theory_20_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_20_works", comment: "")
+                    worksFor: NSLocalizedString("theory_20_works", comment: ""),
+                    borderColor: AppColors.tertiary
                 )
 
+                // 21–100 hours
                 TheoryCard(
                     icon: "🧠",
                     title: NSLocalizedString("theory_100_title", comment: ""),
                     author: NSLocalizedString("theory_100_author", comment: ""),
                     description: NSLocalizedString("theory_100_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_100_works", comment: "")
+                    worksFor: NSLocalizedString("theory_100_works", comment: ""),
+                    borderColor: AppColors.secondary
                 )
 
+                // 100–1000 hours
                 TheoryCard(
                     icon: "🌀",
                     title: NSLocalizedString("theory_1000_title", comment: ""),
                     author: NSLocalizedString("theory_1000_author", comment: ""),
                     description: NSLocalizedString("theory_1000_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_1000_works", comment: "")
+                    worksFor: NSLocalizedString("theory_1000_works", comment: ""),
+                    borderColor: AppColors.primary
+                )
+
+                // 1000–10000 hours
+                TheoryCard(
+                    icon: "🔥",
+                    title: NSLocalizedString("theory_10k_title", comment: ""),
+                    author: NSLocalizedString("theory_10k_author", comment: ""),
+                    description: NSLocalizedString("theory_10k_description", comment: ""),
+                    worksFor: NSLocalizedString("theory_10k_works", comment: ""),
+                    borderColor: AppColors.error
                 )
 
                 VStack(alignment: .leading, spacing: 12) {
@@ -65,12 +73,15 @@ struct TheoryView: View {
     }
 }
 
+import SwiftUI
+
 struct TheoryCard: View {
     let icon: String
     let title: String
     let author: String
     let description: String
     let worksFor: String
+    let borderColor: Color
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -92,11 +103,15 @@ struct TheoryCard: View {
 
             Text(worksFor)
                 .font(.footnote)
-                .foregroundColor(.green)
+                .foregroundColor(.secondary)
         }
         .padding()
         .background(.ultraThinMaterial)
         .cornerRadius(16)
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(borderColor, lineWidth: 2)
+        )
         .shadow(radius: 4, y: 2)
     }
 }

@@ -18,6 +18,9 @@ struct SkillOptionsSheet: View {
     @State private var newName: String
     @State private var showResetConfirmation = false
     @State private var showDeleteConfirmation = false
+    @State private var timeAdjustment: String = ""
+    @State private var adjustHours: String = ""
+    @State private var adjustMinutes: String = ""
 
     init(skill: Skill, onDelete: @escaping () -> Void) {
         self._skill = .init(wrappedValue: skill)
@@ -28,6 +31,7 @@ struct SkillOptionsSheet: View {
     var body: some View {
         NavigationStack {
             Form {
+                // Skill name editing
                 Section(header: Text("Name")) {
                     TextField("Skill Name", text: $newName)
                         .onSubmit {
@@ -35,6 +39,28 @@ struct SkillOptionsSheet: View {
                         }
                 }
 
+                // Manual time adjustment
+                Section(header: Text("Adjust Time")) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        TextField("Hours to add/subtract", text: $adjustHours)
+                            .keyboardType(.numberPad)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+
+                        TextField("Minutes to add/subtract", text: $adjustMinutes)
+                            .keyboardType(.numberPad)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+
+                        Text("Enter positive or negative values.\nExample: -30 minutes subtracts half an hour.")
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
+                    }
+
+                    Button("Apply Time Change") {
+                        applyTimeChange()
+                    }
+                }
+
+                // Reset progress with confirmation
                 Section(header: Text("Progress")) {
                     Button("Reset Progress", role: .destructive) {
                         showResetConfirmation = true
@@ -46,6 +72,7 @@ struct SkillOptionsSheet: View {
                     }
                 }
 
+                // Delete skill with double confirmation
                 Section {
                     Button(role: .destructive) {
                         showDeleteConfirmation = true
@@ -74,5 +101,16 @@ struct SkillOptionsSheet: View {
                 }
             }
         }
+    }
+
+    /// Parses minutes input and adjusts the skill's total hours.
+    private func applyTimeChange() {
+        let hours = Double(adjustHours) ?? 0
+        let minutes = Double(adjustMinutes) ?? 0
+        let totalHours = hours + (minutes / 60)
+        skill.hours += totalHours
+
+        adjustHours = ""
+        adjustMinutes = ""
     }
 }

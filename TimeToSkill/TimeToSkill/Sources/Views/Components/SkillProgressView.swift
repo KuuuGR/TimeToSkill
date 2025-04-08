@@ -14,11 +14,27 @@ struct SkillProgressView: View {
     var onToggleTimer: () -> Void
     var onShowOptions: () -> Void  // 👈 new
 
-    internal var progressColor: Color {
+    /// Determines the color based on current learning stage
+    private var progressColor: Color {
         switch skill.hours {
-        case ..<21: return .green.opacity(0.7)
-        case 21..<100: return .orange.opacity(0.7)
-        default: return .red.opacity(0.7)
+        case ..<21: return AppColors.tertiary     // Green
+        case ..<100: return AppColors.secondary   // Orange
+        case ..<1000: return AppColors.primary    // Blue
+        default: return AppColors.error           // Red
+        }
+    }
+
+    /// Computes progress within the current stage
+    private var stageProgress: Double {
+        switch skill.hours {
+        case ..<21:
+            return skill.hours / 21
+        case ..<100:
+            return (skill.hours - 21) / (100 - 21)
+        case ..<1000:
+            return (skill.hours - 100) / (1000 - 100)
+        default:
+            return min((skill.hours - 1000) / (10000 - 1000), 1)
         }
     }
 
@@ -46,7 +62,7 @@ struct SkillProgressView: View {
 
                     Capsule()
                         .frame(
-                            width: geo.size.width * CGFloat(min(skill.hours / 1000, 1)),
+                            width: geo.size.width * CGFloat(min(stageProgress, 1)),
                             height: 25
                         )
                         .foregroundColor(progressColor)
@@ -68,7 +84,10 @@ struct SkillProgressView: View {
             .buttonStyle(.bordered)
             .accessibilityIdentifier(isActive ? "StopButton_\(skill.id.hashValue)" : "StartButton_\(skill.id.hashValue)")
 
-            Text("\(skill.hours, specifier: "%.1f") hours")
+            let totalHours = skill.hours
+            let hours = Int(totalHours)
+            let minutes = Int((totalHours - Double(hours)) * 60)
+            Text("\(hours) hours \(minutes) minutes")
                 .font(.caption)
                 .accessibilityIdentifier("SkillProgressLabel_\(skill.id.hashValue)")
                 .foregroundColor(.secondary)
