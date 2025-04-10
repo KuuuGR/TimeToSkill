@@ -8,25 +8,26 @@
 /// View to show tracked time for Week / Month / Total using Picker
 import SwiftUI
 
+/// View to show tracked time for Week / Month / Total using Picker
 struct TrackedTimeView: View {
     let skills: [Skill]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("📅 Tracked Time")
+            Text(LocalizedStringKey("stats_tracked_time_title"))
                 .font(.title2)
                 .fontWeight(.semibold)
 
             HStack(spacing: 16) {
                 StatCard(
-                    label: "Week",
+                    label: NSLocalizedString("stats_week_label", comment: ""),
                     value: String(format: "%.1f h", trackedHours(forDays: 7)),
                     subtext: percentageLabel(for: trackedHours(forDays: 7)),
                     color: .success
                 )
 
                 StatCard(
-                    label: "Month",
+                    label: NSLocalizedString("stats_month_label", comment: ""),
                     value: String(format: "%.1f h", trackedHours(forDays: 30)),
                     subtext: percentageLabel(for: trackedHours(forDays: 30)),
                     color: .info
@@ -35,7 +36,7 @@ struct TrackedTimeView: View {
 
             HStack(spacing: 16) {
                 StatCard(
-                    label: "Total",
+                    label: NSLocalizedString("stats_total_label", comment: ""),
                     value: String(format: "%.1f h", totalHours),
                     subtext: "100%",
                     color: .gold
@@ -43,7 +44,6 @@ struct TrackedTimeView: View {
             }
         }
     }
-    
 
     private func trackedHours(forDays days: Int) -> Double {
         let cutoffDate = Calendar.current.date(byAdding: .day, value: -days, to: Date())!
@@ -61,4 +61,3 @@ struct TrackedTimeView: View {
         return String(format: "%.0f%%", percentage)
     }
 }
-

@@ -79,3 +79,31 @@
 "theory_comparison_text" = "• 20 hours → Good start (Amateur)\n• 100 hours → Solid (Adv. Beginner)\n• 1000 hours → Skilled Pro\n• 10,000 hours → Mastery (Elite)";
 
 "theory_nav_title" = "Learning Theory";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Skill Progress Overview";
+"stats_nav_title" = "Your Statistics";
+"button_done" = "Done";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Summary";
+"stats_total_hours" = "Total Hours";
+"stats_skill_count" = "Skills";
+"stats_active_timers" = "Active Timers";
+"stats_first_tracked" = "First Tracked";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Top Skills";
+"stats_top_skills_empty_msg" = "No skills yet. Start tracking to see your top skills here!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Tracked Time";
+"stats_week_label" = "Week";
+"stats_month_label" = "Month";
+"stats_total_label" = "Total";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Activity Log";
+"activity_log_empty_message" = "No recent activity.";
+
+

@@ -17,7 +17,7 @@ struct StatsView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 32) {
-                    Text("📊 Skill Progress Overview")
+                    Text(LocalizedStringKey("stats_title_overview"))
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(.top)
@@ -29,11 +29,11 @@ struct StatsView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Your Statistics")
+            .navigationTitle(LocalizedStringKey("stats_nav_title"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Done") {
+                    Button(LocalizedStringKey("button_done")) {
                         dismiss()
                     }
                 }

@@ -11,43 +11,54 @@ import SwiftUI
 struct StatsSummaryView: View {
     let skills: [Skill]
 
-    // Total hours (excluding active timers)
     var totalHours: Double {
         skills.reduce(0) { $0 + $1.hours }
     }
 
-    // Number of skills
     var skillCount: Int {
         skills.count
     }
 
-    // Count of active timers
     var activeTimers: Int {
         skills.filter { $0.activeStart != nil }.count
     }
 
-    // Date of first tracked skill (based on lastUpdated)
     var firstSkillDate: Date? {
         skills.map(\.lastUpdated).min()
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("🧾 Summary")
+            Text(LocalizedStringKey("stats_summary_title"))
                 .font(.title2)
                 .fontWeight(.semibold)
 
             HStack(spacing: 16) {
-                StatCard(label: "Total Hours", value: formattedHours(totalHours))
-                StatCard(label: "Skills", value: "\(skillCount)")
+                StatCard(
+                    label: NSLocalizedString("stats_total_hours", comment: ""),
+                    value: formattedHours(totalHours)
+                )
+                StatCard(
+                    label: NSLocalizedString("stats_skill_count", comment: ""),
+                    value: "\(skillCount)"
+                )
             }
 
             HStack(spacing: 16) {
-                StatCard(label: "Active Timers", value: "\(activeTimers)")
+                StatCard(
+                    label: NSLocalizedString("stats_active_timers", comment: ""),
+                    value: "\(activeTimers)"
+                )
                 if let date = firstSkillDate {
-                    StatCard(label: "First Tracked", value: formatted(date: date))
+                    StatCard(
+                        label: NSLocalizedString("stats_first_tracked", comment: ""),
+                        value: formatted(date: date)
+                    )
                 } else {
-                    StatCard(label: "First Tracked", value: "-")
+                    StatCard(
+                        label: NSLocalizedString("stats_first_tracked", comment: ""),
+                        value: "-"
+                    )
                 }
             }
         }
@@ -63,36 +74,5 @@ struct StatsSummaryView: View {
         let h = Int(hours)
         let m = Int((hours - Double(h)) * 60)
         return "\(h)h \(m)m"
-    }
-}
-
-struct StatCard: View {
-    let label: String
-    let value: String
-    var subtext: String? = nil
-    var color: Color = AppColors.primary
-
-    var body: some View {
-        VStack(spacing: 4) {
-            Text(value)
-                .font(.title2)
-                .fontWeight(.bold)
-                .foregroundColor(color)
-
-            if let subtext = subtext {
-                Text(subtext)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-
-            Text(label)
-                .font(.footnote)
-                .foregroundColor(.secondary)
-        }
-        .frame(maxWidth: .infinity)
-        .padding()
-        .background(AppColors.surface)
-        .cornerRadius(12)
-        .shadow(radius: 2, y: 1)
     }
 }
