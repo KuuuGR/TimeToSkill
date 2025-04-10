@@ -97,9 +97,12 @@ struct MainView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        FABButton(icon: "chart.bar") {
-                            showStats = true
-                        }
+                        FABButton(
+                            icon: "chart.bar.fill",
+                            action: { showStats = true },
+                            backgroundColor: Color.warningDark,
+                            size: 64
+                        )
                         .sheet(isPresented: $showStats) {
                             StatsView()
                         }
