@@ -40,23 +40,43 @@ struct StartView: View {
 
             // Content with skills and FAB
             ZStack {
-                ScrollView {
-                    VStack(spacing: 20) {
-                        ForEach(sortedSkills) { skill in
-                            SkillProgressView(
-                                skill: skill,
-                                isActive: skill.activeStart != nil,
-                                onToggleTimer: {
-                                    toggleTimer(for: skill)
-                                },
-                                onShowOptions: {
-                                    selectedSkillForOptions = skill
-                                }
-                            )
-                        }
+                if sortedSkills.isEmpty {
+                    VStack(spacing: 16) {
+                        Image(systemName: "lightbulb")
+                            .font(.system(size: 60))
+                            .foregroundColor(.yellow.opacity(0.8))
+
+                        Text("No skills yet")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+
+                        Text("Tap + to begin your learning journey.")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                            .multilineTextAlignment(.center)
                     }
                     .padding()
-                    .padding(.bottom, 100)
+                    .multilineTextAlignment(.center)
+                    .transition(.opacity)
+                } else {
+                    ScrollView {
+                        VStack(spacing: 20) {
+                            ForEach(sortedSkills) { skill in
+                                SkillProgressView(
+                                    skill: skill,
+                                    isActive: skill.activeStart != nil,
+                                    onToggleTimer: {
+                                        toggleTimer(for: skill)
+                                    },
+                                    onShowOptions: {
+                                        selectedSkillForOptions = skill
+                                    }
+                                )
+                            }
+                        }
+                        .padding()
+                        .padding(.bottom, 100)
+                    }
                 }
 
                 // FAB
@@ -71,6 +91,7 @@ struct StartView: View {
                     }
                 }
             }
+
         }
         .navigationTitle(NSLocalizedString("tracking_nav_title", comment: "Navigation title for tracking view"))
         .sheet(isPresented: $showingAddSkill) {
