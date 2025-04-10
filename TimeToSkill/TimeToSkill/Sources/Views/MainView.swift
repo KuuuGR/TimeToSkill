@@ -24,18 +24,23 @@ struct MainView: View {
                             .padding(.top, 40)
 
                         if let quote = selectedQuote {
-                            VStack(alignment: .center, spacing: 4) {
+                            VStack(alignment: .center, spacing: 6) {
                                 Text("“\(quote.quote)”")
-                                    .font(.subheadline)
+                                    .font(.body)
                                     .italic()
                                     .multilineTextAlignment(.center)
-                                    .padding(.horizontal)
+                                    .foregroundColor(AppColors.onSurface)
+                                    .padding(.horizontal, 24)
+                                    .minimumScaleFactor(0.8)
 
                                 Text("- \(quote.author)")
-                                    .font(.caption)
+                                    .font(.footnote)
                                     .foregroundColor(.secondary)
+                                    .multilineTextAlignment(.center)
                             }
+                            .padding(.top, 8)
                             .transition(.opacity)
+                            .frame(maxWidth: .infinity)
                         }
 
                         VStack(spacing: 16) {
