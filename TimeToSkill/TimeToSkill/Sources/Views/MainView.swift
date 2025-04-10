@@ -5,27 +5,40 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var selectedQuote: Quote? = nil
+
     private let backgroundAnimation: BackgroundAnimationType = .staticCircle
 
     var body: some View {
         NavigationStack {
             ZStack {
-                // Background
                 AppBackground(animationType: backgroundAnimation)
 
-                // Main content
                 ScrollView {
                     VStack(spacing: 24) {
-                        // Header
                         Text("TimeToSkill")
                             .font(AppTypography.display)
                             .foregroundColor(AppColors.onSurface)
                             .padding(.top, 40)
 
-                        // Navigation Buttons
+                        if let quote = selectedQuote {
+                            VStack(alignment: .center, spacing: 4) {
+                                Text("“\(quote.quote)”")
+                                    .font(.subheadline)
+                                    .italic()
+                                    .multilineTextAlignment(.center)
+                                    .padding(.horizontal)
+
+                                Text("- \(quote.author)")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                            .transition(.opacity)
+                        }
+
                         VStack(spacing: 16) {
                             NavigationLink(destination: StartView()) {
-                                Text("Start Tracking")
+                                Text(LocalizedStringKey("main_manage_trackers"))
                                     .font(AppTypography.headline)
                                     .frame(maxWidth: .infinity)
                                     .padding(.vertical, 12)
@@ -36,10 +49,10 @@ struct MainView: View {
                                             .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
                                     )
                             }
-                            .accessibilityLabel("Start Tracking")
+                            .accessibilityLabel("Manage Trackers")
 
                             NavigationLink(destination: TheoryView()) {
-                                Text("Learning Theory")
+                                Text(LocalizedStringKey("main_learning_theory"))
                                     .font(AppTypography.headline)
                                     .frame(maxWidth: .infinity)
                                     .padding(.vertical, 12)
@@ -53,7 +66,7 @@ struct MainView: View {
                             .accessibilityLabel("Learning Theory")
 
                             NavigationLink(destination: AboutView()) {
-                                Text("About App")
+                                Text(LocalizedStringKey("main_about_app"))
                                     .font(AppTypography.headline)
                                     .frame(maxWidth: .infinity)
                                     .padding(.vertical, 12)
@@ -64,7 +77,7 @@ struct MainView: View {
                                             .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
                                     )
                             }
-                            .accessibilityLabel("About")
+                            .accessibilityLabel("About App")
                         }
                         .padding(20)
                         .background(
@@ -79,7 +92,6 @@ struct MainView: View {
                     }
                 }
 
-                // FAB
                 VStack {
                     Spacer()
                     HStack {
@@ -92,6 +104,12 @@ struct MainView: View {
                 }
             }
             .navigationBarHidden(true)
+        }
+        .onAppear {
+            let quotes = QuoteLoader.loadLocalizedQuotes()
+            if let random = quotes.randomElement() {
+                selectedQuote = random
+            }
         }
     }
 }

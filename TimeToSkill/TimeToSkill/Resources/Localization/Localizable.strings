@@ -1,7 +1,8 @@
 // MARK: - MainView
-"Start" = "Start";
-"Theory" = "Theory";
-"About" = "About";
+"main_manage_trackers" = "Manage Trackers";
+"main_learning_theory" = "Learning Theory";
+"main_about_app" = "About App";
+
 
 // MARK: - StartView
 "tracking_title" = "Skill Tracker";
