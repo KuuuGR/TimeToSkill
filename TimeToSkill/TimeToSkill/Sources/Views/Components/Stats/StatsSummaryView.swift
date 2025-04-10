@@ -69,13 +69,22 @@ struct StatsSummaryView: View {
 struct StatCard: View {
     let label: String
     let value: String
+    var subtext: String? = nil
+    var color: Color = AppColors.primary
 
     var body: some View {
-        VStack {
+        VStack(spacing: 4) {
             Text(value)
                 .font(.title2)
                 .fontWeight(.bold)
-                .foregroundColor(AppColors.primary)
+                .foregroundColor(color)
+
+            if let subtext = subtext {
+                Text(subtext)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+
             Text(label)
                 .font(.footnote)
                 .foregroundColor(.secondary)

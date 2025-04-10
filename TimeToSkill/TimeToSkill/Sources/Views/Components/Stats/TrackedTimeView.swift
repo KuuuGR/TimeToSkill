@@ -12,7 +12,7 @@ struct TrackedTimeView: View {
     let skills: [Skill]
 
     var totalHours: Double {
-        skills.reduce(0) { $0 + $1.hours }
+        max(skills.reduce(0) { $0 + $1.hours }, 0.01) // prevent division by zero
     }
 
     var weekHours: Double {
@@ -36,12 +36,28 @@ struct TrackedTimeView: View {
                 .fontWeight(.semibold)
 
             HStack(spacing: 16) {
-                StatCard(label: "This Week", value: String(format: "%.1f", weekHours))
-                StatCard(label: "This Month", value: String(format: "%.1f", monthHours))
+                StatCard(
+                    label: "This Week",
+                    value: String(format: "%.1f h", weekHours),
+                    subtext: String(format: "%.0f%%", (weekHours / totalHours) * 100),
+                    color: .success
+                )
+
+                StatCard(
+                    label: "This Month",
+                    value: String(format: "%.1f h", monthHours),
+                    subtext: String(format: "%.0f%%", (monthHours / totalHours) * 100),
+                    color: .info
+                )
             }
 
-            StatCard(label: "Total", value: String(format: "%.1f", totalHours))
-                .frame(maxWidth: .infinity)
+            StatCard(
+                label: "Total",
+                value: String(format: "%.1f h", totalHours),
+                subtext: "100%",
+                color: .gold
+            )
+            .frame(maxWidth: .infinity)
         }
     }
 }
