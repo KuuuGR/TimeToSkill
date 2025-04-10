@@ -5,8 +5,19 @@
 
 
 // MARK: - StartView
-"tracking_title" = "Skill Tracker";
-"tracking_nav_title" = "Tracking";
+"tracking_title" = "Skill Tracking";
+"tracking_nav_title" = "Your Skills";
+"sort_by_label" = "Sort By";
+
+"sort_name_asc" = "Name ↑";
+"sort_name_desc" = "Name ↓";
+"sort_time_asc" = "Time ↑";
+"sort_time_desc" = "Time ↓";
+
+"empty_message_title" = "No skills tracked yet";
+"empty_message_description" = "Tap the plus button to start tracking your first skill.";
+
+"button_back" = "Back";
 
 // MARK: - SkillProgressView
 "SkillName" = "Skill Name";

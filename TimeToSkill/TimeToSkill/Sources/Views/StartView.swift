@@ -7,14 +7,13 @@ struct StartView: View {
     @Query private var skills: [Skill]  // Auto-fetched from SwiftData
 
     @State private var selectedSkillForOptions: Skill?
-
     @State private var showingAddSkill = false
-    
+
     enum SkillSortOption: String, CaseIterable, Identifiable {
-        case nameAsc = "Name ↑"
-        case nameDesc = "Name ↓"
-        case hoursAsc = "Time ↑"
-        case hoursDesc = "Time ↓"
+        case nameAsc = "sort_name_asc"
+        case nameDesc = "sort_name_desc"
+        case hoursAsc = "sort_time_asc"
+        case hoursDesc = "sort_time_desc"
 
         var id: String { self.rawValue }
     }
@@ -24,14 +23,14 @@ struct StartView: View {
     var body: some View {
         VStack {
             // Title
-            Text(NSLocalizedString("tracking_title", comment: "Tracking screen title"))
+            Text(LocalizedStringKey("tracking_title"))
                 .font(.headline)
                 .accessibilityIdentifier("StartViewTitle")
 
             // Picker for sorting
-            Picker("Sort By", selection: $selectedSort) {
+            Picker(LocalizedStringKey("sort_by_label"), selection: $selectedSort) {
                 ForEach(SkillSortOption.allCases) { option in
-                    Text(option.rawValue).tag(option)
+                    Text(LocalizedStringKey(option.rawValue)).tag(option)
                 }
             }
             .pickerStyle(.segmented)
@@ -48,11 +47,11 @@ struct StartView: View {
                             .frame(width: 64, height: 64)
                             .foregroundColor(.yellow.opacity(0.8))
 
-                        Text("No skills tracked yet")
+                        Text(LocalizedStringKey("empty_message_title"))
                             .font(.title3)
                             .fontWeight(.semibold)
 
-                        Text("Tap the plus button to start tracking your first skill.")
+                        Text(LocalizedStringKey("empty_message_description"))
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
@@ -81,7 +80,7 @@ struct StartView: View {
                     }
                 }
 
-                // FAB stays as-is
+                // Floating action button
                 VStack {
                     Spacer()
                     HStack {
@@ -93,25 +92,16 @@ struct StartView: View {
                     }
                 }
             }
-
-
         }
-        .navigationTitle(NSLocalizedString("tracking_nav_title", comment: "Navigation title for tracking view"))
+        .navigationTitle(LocalizedStringKey("tracking_nav_title"))
         .sheet(isPresented: $showingAddSkill) {
             AddSkillView()
         }
-
         .sheet(item: $selectedSkillForOptions) { skill in
             SkillOptionsSheet(skill: skill) {
                 context.delete(skill)
             }
         }
-//        .onAppear {
-//            if skills.isEmpty {
-//                context.insert(Skill(name: NSLocalizedString("default_guitar", comment: "")))
-//                context.insert(Skill(name: NSLocalizedString("default_spanish", comment: "")))
-//            }
-//        }
     }
 
     /// Toggles the timer state for a given skill.
@@ -124,7 +114,7 @@ struct StartView: View {
             skill.activeStart = Date()
         }
     }
-    
+
     var sortedSkills: [Skill] {
         switch selectedSort {
         case .nameAsc:
