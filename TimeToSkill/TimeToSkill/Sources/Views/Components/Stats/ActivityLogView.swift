@@ -32,26 +32,37 @@ struct ActivityLogView: View {
                 .font(.title2)
                 .fontWeight(.semibold)
 
-            ForEach(recentSkills, id: \.id) { skill in
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(skill.name)
-                        .font(.headline)
-
-                    HStack {
-                        Text("\(formattedTime(skill.hours))")
-                        Spacer()
-                        Text(dateFormatter.string(from: skill.lastUpdated))
-                            .foregroundColor(.secondary)
-                            .font(.caption)
-                    }
-                }
-                .padding(.vertical, 4)
-            }
-
             if recentSkills.isEmpty {
                 Text("No recent activity.")
                     .foregroundColor(.secondary)
                     .font(.footnote)
+                    .padding(.top, 8)
+            } else {
+                ForEach(recentSkills, id: \.id) { skill in
+                    HStack {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(skill.name)
+                                .font(.headline)
+
+                            Text(dateFormatter.string(from: skill.lastUpdated))
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+
+                        Spacer()
+
+                        Text(formattedTime(skill.hours))
+                            .font(.subheadline)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Color.gray.opacity(0.1))
+                            .cornerRadius(6)
+                    }
+                    .padding(12)
+                    .background(AppColors.surface)
+                    .cornerRadius(10)
+                    .shadow(color: .black.opacity(0.05), radius: 2, y: 1)
+                }
             }
         }
     }
