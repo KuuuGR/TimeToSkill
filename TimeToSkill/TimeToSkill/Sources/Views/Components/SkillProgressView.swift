@@ -7,35 +7,56 @@
 
 import SwiftUI
 
-/// Horizontal progress vial for a single skill
+/// Horizontal progress bar for a single skill
 struct SkillProgressView: View {
     @Bindable var skill: Skill
     var isActive: Bool
     var onToggleTimer: () -> Void
-    var onShowOptions: () -> Void  // 👈 new
+    var onShowOptions: () -> Void
 
     /// Determines the color based on current learning stage
-    private var progressColor: Color {
+    internal var progressColor: Color {
         switch skill.hours {
-        case ..<21: return AppColors.tertiary     // Green
-        case ..<100: return AppColors.secondary   // Orange
-        case ..<1000: return AppColors.primary    // Blue
-        default: return AppColors.error           // Red
+        case ..<0:
+            return .trueGray
+        case 0..<21:
+            return .success
+        case 21..<100:
+            return .infoDark
+        case 100..<1000:
+            return .warningDark
+        case 1000..<10000:
+            return .danger
+        default:
+            return .dangerDark
         }
     }
 
     /// Computes progress within the current stage
     private var stageProgress: Double {
         switch skill.hours {
-        case ..<21:
+        case ..<0:
+            return 0
+        case 0..<21:
             return skill.hours / 21
-        case ..<100:
+        case 21..<100:
             return (skill.hours - 21) / (100 - 21)
-        case ..<1000:
+        case 100..<1000:
             return (skill.hours - 100) / (1000 - 100)
+        case 1000..<10000:
+            return (skill.hours - 1000) / (10000 - 1000)
         default:
-            return min((skill.hours - 1000) / (10000 - 1000), 1)
+            return 1
         }
+    }
+
+    /// Converts hours into human-friendly label
+    private var formattedTimeLabel: String {
+        let absHours = abs(skill.hours)
+        let hours = Int(absHours)
+        let minutes = Int((absHours - Double(hours)) * 60)
+        let sign = skill.hours < 0 ? "-" : ""
+        return "\(sign)\(hours)h \(minutes)m"
     }
 
     var body: some View {
@@ -84,10 +105,8 @@ struct SkillProgressView: View {
             .buttonStyle(.bordered)
             .accessibilityIdentifier(isActive ? "StopButton_\(skill.id.hashValue)" : "StartButton_\(skill.id.hashValue)")
 
-            let totalHours = skill.hours
-            let hours = Int(totalHours)
-            let minutes = Int((totalHours - Double(hours)) * 60)
-            Text("\(hours) hours \(minutes) minutes")
+            // Time label
+            Text(formattedTimeLabel)
                 .font(.caption)
                 .accessibilityIdentifier("SkillProgressLabel_\(skill.id.hashValue)")
                 .foregroundColor(.secondary)

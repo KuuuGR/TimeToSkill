@@ -18,32 +18,32 @@ struct TheoryView: View {
 
                 // 0–21 hours
                 TheoryCard(
-                    icon: "⚡",
+                    icon: "🌱",
                     title: NSLocalizedString("theory_20_title", comment: ""),
                     author: NSLocalizedString("theory_20_author", comment: ""),
                     description: NSLocalizedString("theory_20_description", comment: ""),
                     worksFor: NSLocalizedString("theory_20_works", comment: ""),
-                    borderColor: AppColors.tertiary
+                    borderColor: .success
                 )
 
                 // 21–100 hours
                 TheoryCard(
-                    icon: "🧠",
+                    icon: "🌀",
                     title: NSLocalizedString("theory_100_title", comment: ""),
                     author: NSLocalizedString("theory_100_author", comment: ""),
                     description: NSLocalizedString("theory_100_description", comment: ""),
                     worksFor: NSLocalizedString("theory_100_works", comment: ""),
-                    borderColor: AppColors.secondary
+                    borderColor: .infoDark
                 )
 
                 // 100–1000 hours
                 TheoryCard(
-                    icon: "🌀",
+                    icon: "🧠",
                     title: NSLocalizedString("theory_1000_title", comment: ""),
                     author: NSLocalizedString("theory_1000_author", comment: ""),
                     description: NSLocalizedString("theory_1000_description", comment: ""),
                     worksFor: NSLocalizedString("theory_1000_works", comment: ""),
-                    borderColor: AppColors.primary
+                    borderColor: .warningDark
                 )
 
                 // 1000–10000 hours
@@ -53,7 +53,7 @@ struct TheoryView: View {
                     author: NSLocalizedString("theory_10k_author", comment: ""),
                     description: NSLocalizedString("theory_10k_description", comment: ""),
                     worksFor: NSLocalizedString("theory_10k_works", comment: ""),
-                    borderColor: AppColors.error
+                    borderColor: Color.danger
                 )
 
                 VStack(alignment: .leading, spacing: 12) {
