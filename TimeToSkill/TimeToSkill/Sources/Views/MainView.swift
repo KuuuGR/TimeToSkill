@@ -3,11 +3,18 @@
 //  TimeToSkill
 //
 
+//
+//  MainView.swift
+//  TimeToSkill
+//
+
 import SwiftUI
 
 struct MainView: View {
     @State private var selectedQuote: Quote? = nil
     @State private var showStats = false
+    @AppStorage("hasSeenFABAnimation") private var hasSeenFABAnimation = false
+    @State private var animateFAB = false
 
     private let backgroundAnimation: BackgroundAnimationType = .staticCircle
 
@@ -62,7 +69,7 @@ struct MainView: View {
                                     shadowRadius: 10
                                 )
                             )
-                            
+
                             Spacer().frame(height: 12)
 
                             NavigationLink(destination: TheoryView()) {
@@ -94,9 +101,13 @@ struct MainView: View {
                         Spacer()
                         FABButton(
                             icon: "chart.bar.fill",
-                            action: { showStats = true },
-                            backgroundColor: Color.warningDark,
-                            size: 64
+                            action: {
+                                showStats = true
+                                hasSeenFABAnimation = true
+                            },
+                            backgroundColor: .warningDark,
+                            size: 64,
+                            animatePulse: !hasSeenFABAnimation
                         )
                         .sheet(isPresented: $showStats) {
                             StatsView()
@@ -111,6 +122,13 @@ struct MainView: View {
             let quotes = QuoteLoader.loadLocalizedQuotes()
             if let random = quotes.randomElement() {
                 selectedQuote = random
+            }
+
+            // Trigger subtle animation if needed
+            if !hasSeenFABAnimation {
+                withAnimation(Animation.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+                    animateFAB = true
+                }
             }
         }
     }
