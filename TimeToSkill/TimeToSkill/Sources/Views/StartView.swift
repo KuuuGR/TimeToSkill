@@ -43,21 +43,23 @@ struct StartView: View {
                 if sortedSkills.isEmpty {
                     VStack(spacing: 16) {
                         Image(systemName: "lightbulb")
-                            .font(.system(size: 60))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 64, height: 64)
                             .foregroundColor(.yellow.opacity(0.8))
 
-                        Text("No skills yet")
+                        Text("No skills tracked yet")
                             .font(.title3)
                             .fontWeight(.semibold)
 
-                        Text("Tap + to begin your learning journey.")
+                        Text("Tap the plus button to start tracking your first skill.")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
+                            .padding(.horizontal, 32)
                     }
                     .padding()
-                    .multilineTextAlignment(.center)
-                    .transition(.opacity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } else {
                     ScrollView {
                         VStack(spacing: 20) {
@@ -79,7 +81,7 @@ struct StartView: View {
                     }
                 }
 
-                // FAB
+                // FAB stays as-is
                 VStack {
                     Spacer()
                     HStack {
@@ -92,6 +94,7 @@ struct StartView: View {
                 }
             }
 
+
         }
         .navigationTitle(NSLocalizedString("tracking_nav_title", comment: "Navigation title for tracking view"))
         .sheet(isPresented: $showingAddSkill) {
@@ -103,12 +106,12 @@ struct StartView: View {
                 context.delete(skill)
             }
         }
-        .onAppear {
-            if skills.isEmpty {
-                context.insert(Skill(name: NSLocalizedString("default_guitar", comment: "")))
-                context.insert(Skill(name: NSLocalizedString("default_spanish", comment: "")))
-            }
-        }
+//        .onAppear {
+//            if skills.isEmpty {
+//                context.insert(Skill(name: NSLocalizedString("default_guitar", comment: "")))
+//                context.insert(Skill(name: NSLocalizedString("default_spanish", comment: "")))
+//            }
+//        }
     }
 
     /// Toggles the timer state for a given skill.
