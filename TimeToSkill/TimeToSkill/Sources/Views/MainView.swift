@@ -1,3 +1,4 @@
+//
 //  MainView.swift
 //  TimeToSkill
 //
@@ -39,46 +40,35 @@ struct MainView: View {
 
                         VStack(spacing: 16) {
                             NavigationLink(destination: StartView()) {
-                                Text(LocalizedStringKey("main_manage_trackers"))
-                                    .font(AppTypography.headline)
-                                    .frame(maxWidth: .infinity)
-                                    .padding(.vertical, 12)
-                                    .foregroundColor(AppColors.onPrimary)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .fill(AppColors.primary)
-                                            .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
-                                    )
+                                Label {
+                                    Text(LocalizedStringKey("main_manage_trackers"))
+                                        .font(AppTypography.headline)
+                                } icon: {
+                                    Image(systemName: "bolt.fill")
+                                        .font(.headline)
+                                }
                             }
-                            .accessibilityLabel("Manage Trackers")
+                            .buttonStyle(
+                                FancyButtonStyle(
+                                    background: .gold,
+                                    gradientEnd: .darkGold,
+                                    cornerRadius: 18,
+                                    shadow: .black.opacity(0.25),
+                                    shadowRadius: 10
+                                )
+                            )
+                            
+                            Spacer().frame(height: 12)
 
                             NavigationLink(destination: TheoryView()) {
                                 Text(LocalizedStringKey("main_learning_theory"))
-                                    .font(AppTypography.headline)
-                                    .frame(maxWidth: .infinity)
-                                    .padding(.vertical, 12)
-                                    .foregroundColor(AppColors.onPrimary)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .fill(AppColors.secondary)
-                                            .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
-                                    )
                             }
-                            .accessibilityLabel("Learning Theory")
+                            .buttonStyle(FancyButtonStyle(background: .mdbBlue, gradientEnd: .info))
 
                             NavigationLink(destination: AboutView()) {
                                 Text(LocalizedStringKey("main_about_app"))
-                                    .font(AppTypography.headline)
-                                    .frame(maxWidth: .infinity)
-                                    .padding(.vertical, 12)
-                                    .foregroundColor(AppColors.onPrimary)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .fill(AppColors.secondary)
-                                            .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
-                                    )
                             }
-                            .accessibilityLabel("About App")
+                            .buttonStyle(FancyButtonStyle(background: .mdbBlue, gradientEnd: .infoDark))
                         }
                         .padding(20)
                         .background(
