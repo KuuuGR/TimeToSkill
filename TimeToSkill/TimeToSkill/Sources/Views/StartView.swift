@@ -9,18 +9,40 @@ struct StartView: View {
     @State private var selectedSkillForOptions: Skill?
 
     @State private var showingAddSkill = false
+    
+    enum SkillSortOption: String, CaseIterable, Identifiable {
+        case nameAsc = "Name ↑"
+        case nameDesc = "Name ↓"
+        case hoursAsc = "Time ↑"
+        case hoursDesc = "Time ↓"
+
+        var id: String { self.rawValue }
+    }
+
+    @State private var selectedSort: SkillSortOption = .nameAsc
 
     var body: some View {
         VStack {
-            // Title for UI testing
+            // Title
             Text(NSLocalizedString("tracking_title", comment: "Tracking screen title"))
                 .font(.headline)
                 .accessibilityIdentifier("StartViewTitle")
 
+            // Picker for sorting
+            Picker("Sort By", selection: $selectedSort) {
+                ForEach(SkillSortOption.allCases) { option in
+                    Text(option.rawValue).tag(option)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal)
+            .padding(.bottom, 8)
+
+            // Content with skills and FAB
             ZStack {
                 ScrollView {
                     VStack(spacing: 20) {
-                        ForEach(skills) { skill in
+                        ForEach(sortedSkills) { skill in
                             SkillProgressView(
                                 skill: skill,
                                 isActive: skill.activeStart != nil,
@@ -29,22 +51,19 @@ struct StartView: View {
                                 },
                                 onShowOptions: {
                                     selectedSkillForOptions = skill
-                                    
                                 }
                             )
                         }
                     }
                     .padding()
-                    .padding(.bottom, 100) // Add space so FAB doesn't overlap the last skill
+                    .padding(.bottom, 100)
                 }
 
-                // Floating Action Button (FAB)
+                // FAB
                 VStack {
                     Spacer()
                     HStack {
                         Spacer()
-
-                        // Add Skill FAB
                         FABButton(icon: "plus") {
                             showingAddSkill = true
                         }
@@ -79,6 +98,19 @@ struct StartView: View {
             skill.activeStart = nil
         } else {
             skill.activeStart = Date()
+        }
+    }
+    
+    var sortedSkills: [Skill] {
+        switch selectedSort {
+        case .nameAsc:
+            return skills.sorted { $0.name.lowercased() < $1.name.lowercased() }
+        case .nameDesc:
+            return skills.sorted { $0.name.lowercased() > $1.name.lowercased() }
+        case .hoursAsc:
+            return skills.sorted { $0.hours < $1.hours }
+        case .hoursDesc:
+            return skills.sorted { $0.hours > $1.hours }
         }
     }
 }
