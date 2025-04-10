@@ -36,10 +36,29 @@ struct SkillOptionsSheet: View {
         NavigationStack {
             Form {
                 Section(header: Text("Name")) {
-                    TextField("Skill Name", text: $newName)
-                        .onSubmit {
-                            skill.name = newName
+                    Text("Skill Name")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+
+                    TextEditor(text: $newName)
+                        .frame(minHeight: 40, maxHeight: 300)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 6)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color.secondary.opacity(0.3))
+                        )
+                        .onChange(of: newName) {
+                            if newName.count > 255 {
+                                newName = String(newName.prefix(255))
+                            }
                         }
+                    HStack {
+                        Spacer()
+                        Text("\(newName.count)/255")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
                 }
 
                 Section(header: Text("Adjust Time")) {
@@ -106,8 +125,10 @@ struct SkillOptionsSheet: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") {
-                        skill.name = newName
-                        dismiss()
+                        if !newName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                            skill.name = newName
+                            dismiss()
+                        }
                     }
                 }
             }

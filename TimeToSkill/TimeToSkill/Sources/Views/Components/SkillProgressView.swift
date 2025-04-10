@@ -62,9 +62,11 @@ struct SkillProgressView: View {
     var body: some View {
         VStack(spacing: 12) {
             HStack {
-                TextField("Skill Name", text: $skill.name)
+                Text(skill.name)
                     .font(.headline)
-                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
 
                 Button(action: onShowOptions) {
                     Image(systemName: "ellipsis")
