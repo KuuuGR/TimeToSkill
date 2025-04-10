@@ -6,6 +6,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var selectedQuote: Quote? = nil
+    @State private var showStats = false
 
     private let backgroundAnimation: BackgroundAnimationType = .staticCircle
 
@@ -96,8 +97,11 @@ struct MainView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        FABButton(icon: "plus") {
-                            print("FAB tapped") // Optional move to StartView in future
+                        FABButton(icon: "chart.bar") {
+                            showStats = true
+                        }
+                        .sheet(isPresented: $showStats) {
+                            StatsView()
                         }
                         .padding(20)
                     }
