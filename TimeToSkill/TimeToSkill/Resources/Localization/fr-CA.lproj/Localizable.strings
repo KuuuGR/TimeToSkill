@@ -1,0 +1,136 @@
+// French (Canada)
+
+// MARK: - MainView
+"main_manage_trackers" = "Gérer les suivis";
+"main_learning_theory" = "Théorie d’apprentissage";
+"main_about_app" = "À propos de l’app";
+
+// MARK: - StartView
+"tracking_title" = "Suivi des compétences";
+"tracking_nav_title" = "Vos compétences";
+"sort_by_label" = "Trier par";
+
+"sort_name_asc" = "Nom ↑";
+"sort_name_desc" = "Nom ↓";
+"sort_time_asc" = "Temps ↑";
+"sort_time_desc" = "Temps ↓";
+
+"empty_message_title" = "Aucune compétence suivie";
+"empty_message_description" = "Appuie sur le bouton plus pour commencer à suivre ta première compétence.";
+
+"button_back" = "Retour";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nom de la compétence";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Entrez le nom de la compétence";
+"add_skill" = "Ajouter une compétence";
+"new_skill" = "Nouvelle compétence";
+"cancel" = "Annuler";
+
+// MARK: - AboutView
+"ab_section_about_app" = "À propos de l’app";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Version 1.0";
+"ab_developer" = "Créé par Grzegorz Kulesza";
+
+"ab_section_purpose" = "Objectif de cette app";
+"ab_purpose_major_system" = "Apprends mieux en suivant ton temps investi.";
+"ab_purpose_large_numbers" = "Suis de grands objectifs avec un retour visuel.";
+"ab_purpose_dates" = "Utilise des systèmes flexibles comme 20 h, 100 h, 1000 h...";
+"ab_purpose_words" = "Améliore ta mémoire grâce à la régularité.";
+
+"ab_section_support" = "Soutien";
+"ab_support_developer" = "Appuyer le développeur";
+"ab_navigation_title" = "À propos";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Appuyer le développement";
+"support_description" = "Si tu aimes cette app, tu peux me payer un café !";
+"support_button" = "Appuyer via PayPal";
+"support_nav_title" = "Soutien";
+
+// MARK: - TheoryView
+"theory_title" = "Théories sur le temps d’apprentissage";
+
+"theory_10k_title" = "Règle des 10 000 heures";
+"theory_10k_author" = "Malcolm Gladwell (inspiré d’Anders Ericsson)";
+"theory_10k_description" = "Pour atteindre la maîtrise, environ dix mille heures de pratique délibérée sont nécessaires. S’applique aux performeurs d’élite (musiciens, athlètes, joueurs d’échecs). Ce n’est pas juste une question de quantité, mais de qualité. Critiqué pour sa simplification.";
+"theory_10k_works" = "✔️ Domaines de précision, carrière pro\n✖️ Peu utile pour débuter";
+
+"theory_20_title" = "Règle des 20/21 heures";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Il suffit de vingt heures d’apprentissage ciblé pour commencer à apprécier une nouvelle compétence. Parfait pour les loisirs ou le niveau de base (ex. ukulélé, expressions simples, yoga).";
+"theory_20_works" = "✔️ Démarrage rapide, loisirs\n✖️ Ne mène pas à la maîtrise";
+
+"theory_100_title" = "Règle des 100 heures";
+"theory_100_author" = "Concept d’apprentissage informel";
+"theory_100_description" = "Environ cent heures mènent à des compétences solides — utile pour la photo, la cuisine, la peinture, la conduite ou Excel.";
+"theory_100_works" = "✔️ Compétences pratiques, reconversion\n✖️ Pas niveau expert";
+
+"theory_1000_title" = "Règle des 1 000 heures";
+"theory_1000_author" = "Populaire en TI, langues, travail autonome";
+"theory_1000_description" = "Mille heures de formation ciblée te placent à un niveau professionnel — professeurs de musique, chefs, traducteurs ou instructeurs de yoga. Suffisant pour enseigner ou gagner sa vie.";
+"theory_1000_works" = "✔️ Indépendance professionnelle\n✖️ Pas niveau élite";
+
+"theory_comparison_title" = "📈 Comparaison";
+"theory_comparison_text" = "• 20 heures → Bon départ (Amateur)\n• 100 heures → Solide (Intermédiaire)\n• 1 000 heures → Professionnel\n• 10 000 heures → Expert (Maître)";
+
+"theory_nav_title" = "Théorie d’apprentissage";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Vue d’ensemble des compétences";
+"stats_nav_title" = "Tes statistiques";
+"button_done" = "Terminé";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Résumé";
+"stats_total_hours" = "Total d’heures";
+"stats_skill_count" = "Compétences";
+"stats_active_timers" = "Minuteurs actifs";
+"stats_first_tracked" = "Première suivie";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Meilleures compétences";
+"stats_top_skills_empty_msg" = "Aucune donnée. Commence le suivi pour voir tes meilleures compétences ici !";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Temps suivi";
+"stats_week_label" = "Semaine";
+"stats_month_label" = "Mois";
+"stats_total_label" = "Total";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Journal d’activités";
+"activity_log_empty_message" = "Aucune activité récente.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Options de compétence";
+"done" = "Terminé";
+
+"skill_name_section" = "Nom";
+"skill_name_label" = "Nom de la compétence";
+
+"adjust_time_section" = "Ajuster le temps";
+"adjust_hours_placeholder" = "Heures à ajouter/soustraire";
+"adjust_minutes_placeholder" = "Minutes à ajouter/soustraire";
+"adjust_time_hint" = "Saisis une valeur positive ou négative.\nExemple : -30 minutes retire une demi-heure.";
+"adjust_time_apply" = "Appliquer la modification";
+"adjust_time_success" = "Le temps a été mis à jour !";
+
+"reset_section" = "Progression";
+"reset_progress" = "Réinitialiser la progression";
+"reset_confirm_title" = "Es-tu sûr de vouloir réinitialiser ?";
+"reset_confirm_action" = "Réinitialiser";
+
+"delete_skill" = "Supprimer la compétence";
+"delete_confirm_title" = "Es-tu certain ?";
+"delete_confirm_message" = "Cette action est irréversible.";
+"delete_confirm_action" = "Supprimer";
+
+"cancel" = "Annuler";
+
+// MARK: - FABButton
+"fab_add_skill" = "Ajouter une compétence";
+"fab_view_stats" = "Voir les statistiques";

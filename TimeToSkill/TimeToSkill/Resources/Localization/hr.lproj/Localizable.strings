@@ -1,0 +1,136 @@
+// Croatian
+
+// MARK: - MainView
+"main_manage_trackers" = "Upravljaj trackerima";
+"main_learning_theory" = "Teorija učenja";
+"main_about_app" = "O aplikaciji";
+
+// MARK: - StartView
+"tracking_title" = "Praćenje vještina";
+"tracking_nav_title" = "Tvoje vještine";
+"sort_by_label" = "Sortiraj prema";
+
+"sort_name_asc" = "Naziv ↑";
+"sort_name_desc" = "Naziv ↓";
+"sort_time_asc" = "Vrijeme ↑";
+"sort_time_desc" = "Vrijeme ↓";
+
+"empty_message_title" = "Još nema praćenih vještina";
+"empty_message_description" = "Dodirni plus za početak praćenja prve vještine.";
+
+"button_back" = "Natrag";
+
+// MARK: - SkillProgressView
+"SkillName" = "Naziv vještine";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Unesi naziv vještine";
+"add_skill" = "Dodaj vještinu";
+"new_skill" = "Nova vještina";
+"cancel" = "Odustani";
+
+// MARK: - AboutView
+"ab_section_about_app" = "O aplikaciji";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Verzija 1.0";
+"ab_developer" = "Autor: Grzegorz Kulesza";
+
+"ab_section_purpose" = "Svrha aplikacije";
+"ab_purpose_major_system" = "Uči učinkovitije praćenjem uloženog vremena.";
+"ab_purpose_large_numbers" = "Prati velike ciljeve uz vizualne povratne informacije.";
+"ab_purpose_dates" = "Koristi fleksibilne sustave kao što su 20h, 100h, 1000h...";
+"ab_purpose_words" = "Poboljšaj pamćenje uz dosljednost.";
+
+"ab_section_support" = "Podrška";
+"ab_support_developer" = "Podrži razvoj";
+"ab_navigation_title" = "O aplikaciji";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Podrži razvoj";
+"support_description" = "Ako ti se aplikacija sviđa, počasti me kavom!";
+"support_button" = "Podrži putem PayPala";
+"support_nav_title" = "Podrška";
+
+// MARK: - TheoryView
+"theory_title" = "Teorije o vremenu učenja";
+
+"theory_10k_title" = "Pravilo 10.000 sati";
+"theory_10k_author" = "Malcolm Gladwell (prema Andersu Ericssonu)";
+"theory_10k_description" = "Za postizanje vrhunskog znanja potrebno je oko deset tisuća sati svjesne prakse. Primjenjivo na elitne izvođače (glazbenici, sportaši, šahisti). Važna je i kvaliteta, ne samo količina. Kritizirano zbog pojednostavljivanja.";
+"theory_10k_works" = "✔️ Precizna područja, profesionalna karijera\n✖️ Nije korisno za početnike";
+
+"theory_20_title" = "Pravilo 20/21 sata";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Samo 20 sati fokusiranog učenja dovoljno je da uživaš u novoj vještini. Idealno za hobije i osnovne razine (npr. ukulele, jezik A1, joga).";
+"theory_20_works" = "✔️ Brz početak, hobi\n✖️ Ne vodi do majstorstva";
+
+"theory_100_title" = "Pravilo 100 sati";
+"theory_100_author" = "Neformalni obrazovni koncept";
+"theory_100_description" = "Oko 100 sati donosi solidnu kompetenciju — korisno za fotografiju, kuhanje, slikanje, vožnju ili rad u Excelu.";
+"theory_100_works" = "✔️ Praktične vještine, prekvalifikacija\n✖️ Nije ekspertska razina";
+
+"theory_1000_title" = "Pravilo 1.000 sati";
+"theory_1000_author" = "Popularno u IT-u, jezicima, freelancingu";
+"theory_1000_description" = "Tisuću sati intenzivnog učenja vodi te na profesionalnu razinu — od učitelja glazbe i kuhara do prevoditelja i joga instruktora.";
+"theory_1000_works" = "✔️ Samostalnost na profesionalnoj razini\n✖️ Nije elita";
+
+"theory_comparison_title" = "📈 Usporedba";
+"theory_comparison_text" = "• 20 sati → Dobar početak (Amater)\n• 100 sati → Solidno (Srednje napredno)\n• 1.000 sati → Profesionalac\n• 10.000 sati → Majstor (Elita)";
+
+"theory_nav_title" = "Teorija učenja";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Pregled napretka";
+"stats_nav_title" = "Tvoja statistika";
+"button_done" = "Gotovo";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Sažetak";
+"stats_total_hours" = "Ukupno sati";
+"stats_skill_count" = "Vještine";
+"stats_active_timers" = "Aktivni trackeri";
+"stats_first_tracked" = "Prvi zapis";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Najbolje vještine";
+"stats_top_skills_empty_msg" = "Još nema podataka. Započni praćenje kako bi se ovdje prikazale najbolje vještine!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Praćeno vrijeme";
+"stats_week_label" = "Tjedan";
+"stats_month_label" = "Mjesec";
+"stats_total_label" = "Ukupno";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Dnevnik aktivnosti";
+"activity_log_empty_message" = "Nema nedavnih aktivnosti.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opcije vještine";
+"done" = "Gotovo";
+
+"skill_name_section" = "Naziv";
+"skill_name_label" = "Naziv vještine";
+
+"adjust_time_section" = "Prilagodi vrijeme";
+"adjust_hours_placeholder" = "Sati za dodavanje/oduzimanje";
+"adjust_minutes_placeholder" = "Minute za dodavanje/oduzimanje";
+"adjust_time_hint" = "Unesi pozitivne ili negativne vrijednosti.\nPrimjer: -30 minuta oduzima pola sata.";
+"adjust_time_apply" = "Primijeni promjenu";
+"adjust_time_success" = "Vrijeme je uspješno ažurirano!";
+
+"reset_section" = "Napredak";
+"reset_progress" = "Resetiraj napredak";
+"reset_confirm_title" = "Jesi li siguran da želiš resetirati napredak?";
+"reset_confirm_action" = "Resetiraj";
+
+"delete_skill" = "Izbriši vještinu";
+"delete_confirm_title" = "Jesi li siguran?";
+"delete_confirm_message" = "Ova radnja se ne može poništiti.";
+"delete_confirm_action" = "Izbriši";
+
+"cancel" = "Odustani";
+
+// MARK: - FABButton
+"fab_add_skill" = "Dodaj novu vještinu";
+"fab_view_stats" = "Pogledaj statistiku";

@@ -232,7 +232,7 @@
 		0713ACA52DA29289005F9E07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
@@ -254,7 +254,45 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				pl,
+				cs,
+				ar,
+				de,
+				he,
+				el,
+				"zh-Hans",
+				ja,
+				"en-CA",
+				uk,
+				nb,
+				"en-GB",
+				es,
+				da,
+				"es-419",
+				it,
+				sk,
+				"fr-CA",
+				ms,
+				sv,
+				ko,
+				"zh-Hant",
+				hu,
+				"en-AU",
+				tr,
+				"pt-BR",
+				vi,
+				ru,
+				fr,
+				fi,
+				id,
+				nl,
+				th,
+				"pt-PT",
+				ro,
+				hr,
+				hi,
+				ca,
+				"en-IN",
 			);
 			mainGroup = 0713ACA42DA29289005F9E07;
 			minimizedProjectReferenceProxies = 1;

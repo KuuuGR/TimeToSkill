@@ -1,20 +1,21 @@
+// English (UK)
+
 // MARK: - MainView
 "main_manage_trackers" = "Manage Trackers";
 "main_learning_theory" = "Learning Theory";
-"main_about_app" = "About App";
-
+"main_about_app" = "About the App";
 
 // MARK: - StartView
 "tracking_title" = "Skill Tracking";
 "tracking_nav_title" = "Your Skills";
-"sort_by_label" = "Sort By";
+"sort_by_label" = "Sort by";
 
 "sort_name_asc" = "Name ↑";
 "sort_name_desc" = "Name ↓";
 "sort_time_asc" = "Time ↑";
 "sort_time_desc" = "Time ↓";
 
-"empty_message_title" = "No skills tracked yet";
+"empty_message_title" = "No skills being tracked";
 "empty_message_description" = "Tap the plus button to start tracking your first skill.";
 
 "button_back" = "Back";
@@ -34,11 +35,11 @@
 "ab_version" = "Version 1.0";
 "ab_developer" = "Created by Grzegorz Kulesza";
 
-"ab_section_purpose" = "Purpose of This App";
-"ab_purpose_major_system" = "Learn better through tracking your time investment.";
+"ab_section_purpose" = "Purpose of this App";
+"ab_purpose_major_system" = "Learn more effectively by tracking your time investment.";
 "ab_purpose_large_numbers" = "Track large goals with visual feedback.";
-"ab_purpose_dates" = "Use flexible systems like 20h, 100h, 1000h...";
-"ab_purpose_words" = "Improve your memory through consistency.";
+"ab_purpose_dates" = "Use flexible systems like 20h, 100h, 1,000h...";
+"ab_purpose_words" = "Improve memory through consistency.";
 
 "ab_section_support" = "Support";
 "ab_support_developer" = "Support the Developer";
@@ -55,26 +56,26 @@
 
 "theory_10k_title" = "10,000-Hour Rule";
 "theory_10k_author" = "Malcolm Gladwell (based on Anders Ericsson)";
-"theory_10k_description" = "To achieve mastery, you need about 10,000 hours of deliberate practice. Applies to elite performers (musicians, athletes, chess players). Not just quantity, but quality. Criticized for oversimplification.";
+"theory_10k_description" = "To achieve mastery, you need about ten thousand hours of deliberate practice. Applies to elite performers (musicians, athletes, chess players). It’s about quality as well as quantity. Criticised for oversimplification.";
 "theory_10k_works" = "✔️ Precision fields, pro career\n✖️ Not helpful for quick starts";
 
 "theory_20_title" = "20/21-Hour Rule";
 "theory_20_author" = "Josh Kaufman";
-"theory_20_description" = "Just 20 hours of focused learning is enough to start enjoying a new skill. Ideal for hobbies or basic level (e.g. ukulele, A1 language).";
-"theory_20_works" = "✔️ Fast start, hobbies\n✖️ Not for mastery";
+"theory_20_description" = "Just twenty hours of focused learning is enough to enjoy a new skill. Ideal for hobbies or basic levels (e.g. ukulele, A1 language, yoga).";
+"theory_20_works" = "✔️ Quick start, hobbies\n✖️ Doesn’t lead to mastery";
 
 "theory_100_title" = "100-Hour Rule";
 "theory_100_author" = "Informal educational concept";
-"theory_100_description" = "Around 100 hours leads to solid competence — perfect for new professional skills like a framework or programming language.";
+"theory_100_description" = "Roughly one hundred hours leads to solid competence — great for photography, cooking, painting, driving, or Excel.";
 "theory_100_works" = "✔️ Practical skills, reskilling\n✖️ Not expert level";
 
 "theory_1000_title" = "1,000-Hour Rule";
 "theory_1000_author" = "Popular in IT, languages, freelancing";
-"theory_1000_description" = "1,000 hours of focused training makes you a professional expert. Excellent for reaching independence in IT, translation, digital art.";
-"theory_1000_works" = "✔️ Pro-level independence\n✖️ Not world elite";
+"theory_1000_description" = "One thousand hours of focused study can take you to a professional level — from music teachers and chefs to translators and yoga instructors.";
+"theory_1000_works" = "✔️ Professional independence\n✖️ Not elite level";
 
 "theory_comparison_title" = "📈 Comparison";
-"theory_comparison_text" = "• 20 hours → Good start (Amateur)\n• 100 hours → Solid (Adv. Beginner)\n• 1000 hours → Skilled Pro\n• 10,000 hours → Mastery (Elite)";
+"theory_comparison_text" = "• 20 hours → Good start (Amateur)\n• 100 hours → Solid (Intermediate)\n• 1,000 hours → Professional\n• 10,000 hours → Expert (Master)";
 
 "theory_nav_title" = "Learning Theory";
 
@@ -92,7 +93,7 @@
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Top Skills";
-"stats_top_skills_empty_msg" = "No skills yet. Start tracking to see your top skills here!";
+"stats_top_skills_empty_msg" = "No data yet. Start tracking to see your top skills here!";
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Tracked Time";
@@ -112,9 +113,9 @@
 "skill_name_label" = "Skill Name";
 
 "adjust_time_section" = "Adjust Time";
-"adjust_hours_placeholder" = "Hours to add/subtract";
-"adjust_minutes_placeholder" = "Minutes to add/subtract";
-"adjust_time_hint" = "Enter positive or negative values.\nExample: -30 minutes subtracts half an hour.";
+"adjust_hours_placeholder" = "Hours to add/remove";
+"adjust_minutes_placeholder" = "Minutes to add/remove";
+"adjust_time_hint" = "Enter a positive or negative value.\nExample: -30 minutes removes half an hour.";
 "adjust_time_apply" = "Apply Time Change";
 "adjust_time_success" = "Time updated successfully!";
 
@@ -133,4 +134,3 @@
 // MARK: - FABButton
 "fab_add_skill" = "Add a new skill";
 "fab_view_stats" = "View statistics";
-

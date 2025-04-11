@@ -47,7 +47,7 @@ struct SplashView: View {
                 .shadow(color: .white.opacity(0.3), radius: glowRadius)
                 .overlay(
                     Circle()
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(Color.darkGold.opacity(0.12), lineWidth: 2.3)
                         .scaleEffect(logoScale * 1.1) // Slightly larger than logo
                 )
                 .onAppear {

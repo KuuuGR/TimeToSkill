@@ -1,0 +1,136 @@
+// Romanian
+
+// MARK: - MainView
+"main_manage_trackers" = "Gestionare urmăriri";
+"main_learning_theory" = "Teoria învățării";
+"main_about_app" = "Despre aplicație";
+
+// MARK: - StartView
+"tracking_title" = "Urmărirea abilităților";
+"tracking_nav_title" = "Abilitățile tale";
+"sort_by_label" = "Sortare după";
+
+"sort_name_asc" = "Nume ↑";
+"sort_name_desc" = "Nume ↓";
+"sort_time_asc" = "Timp ↑";
+"sort_time_desc" = "Timp ↓";
+
+"empty_message_title" = "Nicio abilitate urmărită";
+"empty_message_description" = "Apasă pe butonul plus pentru a începe să urmărești prima ta abilitate.";
+
+"button_back" = "Înapoi";
+
+// MARK: - SkillProgressView
+"SkillName" = "Numele abilității";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Introdu numele abilității";
+"add_skill" = "Adaugă abilitate";
+"new_skill" = "Abilitate nouă";
+"cancel" = "Anulează";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Despre aplicație";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Versiunea 1.0";
+"ab_developer" = "Creat de Grzegorz Kulesza";
+
+"ab_section_purpose" = "Scopul aplicației";
+"ab_purpose_major_system" = "Învăță mai eficient urmărind timpul pe care îl investești.";
+"ab_purpose_large_numbers" = "Urmărește obiective mari cu feedback vizual.";
+"ab_purpose_dates" = "Folosește sisteme flexibile precum 20h, 100h, 1000h...";
+"ab_purpose_words" = "Îmbunătățește-ți memoria prin consecvență.";
+
+"ab_section_support" = "Susținere";
+"ab_support_developer" = "Susține dezvoltatorul";
+"ab_navigation_title" = "Despre";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Susține dezvoltarea";
+"support_description" = "Dacă îți place aplicația, poți să-mi cumperi o cafea!";
+"support_button" = "Susține prin PayPal";
+"support_nav_title" = "Susținere";
+
+// MARK: - TheoryView
+"theory_title" = "Teorii ale timpului de învățare";
+
+"theory_10k_title" = "Regula celor 10 000 de ore";
+"theory_10k_author" = "Malcolm Gladwell (bazat pe Anders Ericsson)";
+"theory_10k_description" = "Pentru a atinge măiestria, ai nevoie de aproximativ zece mii de ore de practică deliberată. Se aplică performerilor de elită (muzicieni, sportivi, jucători de șah). Contează nu doar cantitatea, ci și calitatea. Criticată pentru simplificare excesivă.";
+"theory_10k_works" = "✔️ Domenii de precizie, carieră profesională\n✖️ Puțin util pentru început";
+
+"theory_20_title" = "Regula celor 20/21 de ore";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Douăzeci de ore de învățare concentrată sunt suficiente pentru a începe să te bucuri de o nouă abilitate. Ideal pentru hobby-uri sau niveluri de bază (ex: ukulele, nivel A1 de limbă, yoga).";
+"theory_20_works" = "✔️ Start rapid, hobby-uri\n✖️ Nu duce la măiestrie";
+
+"theory_100_title" = "Regula celor 100 de ore";
+"theory_100_author" = "Concept educațional informal";
+"theory_100_description" = "Aproximativ o sută de ore oferă competență solidă — utilă pentru fotografie, gătit, pictură, condus sau utilizarea Excel-ului.";
+"theory_100_works" = "✔️ Abilități practice, recalificare\n✖️ Nu este nivel expert";
+
+"theory_1000_title" = "Regula celor 1 000 de ore";
+"theory_1000_author" = "Populară în IT, limbi, freelancing";
+"theory_1000_description" = "O mie de ore de studiu intens te duc la nivel profesional — de la profesori de muzică și bucătari, până la traducători și instructori de yoga.";
+"theory_1000_works" = "✔️ Independență profesională\n✖️ Nu este nivel de elită";
+
+"theory_comparison_title" = "📈 Comparație";
+"theory_comparison_text" = "• 20 de ore → Început bun (Amator)\n• 100 de ore → Solid (Intermediar)\n• 1 000 de ore → Profesionist\n• 10 000 de ore → Expert (Elită)";
+
+"theory_nav_title" = "Teoria învățării";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Prezentare generală a progresului";
+"stats_nav_title" = "Statisticile tale";
+"button_done" = "Gata";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Rezumat";
+"stats_total_hours" = "Total ore";
+"stats_skill_count" = "Abilități";
+"stats_active_timers" = "Cronometre active";
+"stats_first_tracked" = "Primul înregistrat";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Abilități de top";
+"stats_top_skills_empty_msg" = "Nicio abilitate încă. Începe urmărirea pentru a vedea aici cele mai bune abilități!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Timp urmărit";
+"stats_week_label" = "Săptămână";
+"stats_month_label" = "Lună";
+"stats_total_label" = "Total";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Jurnal de activitate";
+"activity_log_empty_message" = "Nicio activitate recentă.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opțiuni pentru abilitate";
+"done" = "Gata";
+
+"skill_name_section" = "Nume";
+"skill_name_label" = "Numele abilității";
+
+"adjust_time_section" = "Ajustează timpul";
+"adjust_hours_placeholder" = "Ore de adăugat/scăzut";
+"adjust_minutes_placeholder" = "Minute de adăugat/scăzut";
+"adjust_time_hint" = "Introduceți valori pozitive sau negative.\nExemplu: -30 minute scade o jumătate de oră.";
+"adjust_time_apply" = "Aplică modificarea";
+"adjust_time_success" = "Timpul a fost actualizat cu succes!";
+
+"reset_section" = "Progres";
+"reset_progress" = "Resetează progresul";
+"reset_confirm_title" = "Ești sigur că vrei să resetezi progresul?";
+"reset_confirm_action" = "Resetează";
+
+"delete_skill" = "Șterge abilitatea";
+"delete_confirm_title" = "Ești sigur?";
+"delete_confirm_message" = "Această acțiune nu poate fi anulată.";
+"delete_confirm_action" = "Șterge";
+
+"cancel" = "Anulează";
+
+// MARK: - FABButton
+"fab_add_skill" = "Adaugă abilitate nouă";
+"fab_view_stats" = "Vezi statistici";

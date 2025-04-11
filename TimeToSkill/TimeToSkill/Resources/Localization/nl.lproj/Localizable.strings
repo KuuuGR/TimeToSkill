@@ -1,0 +1,136 @@
+// Dutch
+
+// MARK: - MainView
+"main_manage_trackers" = "Trackers beheren";
+"main_learning_theory" = "Leertheorie";
+"main_about_app" = "Over de app";
+
+// MARK: - StartView
+"tracking_title" = "Vaardigheidstracking";
+"tracking_nav_title" = "Jouw vaardigheden";
+"sort_by_label" = "Sorteren op";
+
+"sort_name_asc" = "Naam ↑";
+"sort_name_desc" = "Naam ↓";
+"sort_time_asc" = "Tijd ↑";
+"sort_time_desc" = "Tijd ↓";
+
+"empty_message_title" = "Nog geen vaardigheden gevolgd";
+"empty_message_description" = "Tik op de plusknop om je eerste vaardigheid te volgen.";
+
+"button_back" = "Terug";
+
+// MARK: - SkillProgressView
+"SkillName" = "Naam van de vaardigheid";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Voer de vaardigheidsnaam in";
+"add_skill" = "Vaardigheid toevoegen";
+"new_skill" = "Nieuwe vaardigheid";
+"cancel" = "Annuleren";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Over de app";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Versie 1.0";
+"ab_developer" = "Gemaakt door Grzegorz Kulesza";
+
+"ab_section_purpose" = "Doel van deze app";
+"ab_purpose_major_system" = "Leer beter door je geïnvesteerde tijd bij te houden.";
+"ab_purpose_large_numbers" = "Volg grote doelen met visuele feedback.";
+"ab_purpose_dates" = "Gebruik flexibele systemen zoals 20u, 100u, 1000u...";
+"ab_purpose_words" = "Verbeter je geheugen met consistentie.";
+
+"ab_section_support" = "Ondersteuning";
+"ab_support_developer" = "Steun de ontwikkelaar";
+"ab_navigation_title" = "Over";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Ontwikkeling ondersteunen";
+"support_description" = "Als je deze app leuk vindt, kun je me een kop koffie aanbieden!";
+"support_button" = "Steun via PayPal";
+"support_nav_title" = "Ondersteuning";
+
+// MARK: - TheoryView
+"theory_title" = "Leertijdtheorieën";
+
+"theory_10k_title" = "10.000-uurregel";
+"theory_10k_author" = "Malcolm Gladwell (gebaseerd op Anders Ericsson)";
+"theory_10k_description" = "Om meesterschap te bereiken, heb je ongeveer tienduizend uur gerichte oefening nodig. Van toepassing op elitepresteerders (musici, atleten, schakers). Niet alleen kwantiteit, maar ook kwaliteit telt. Bekritiseerd vanwege simplificatie.";
+"theory_10k_works" = "✔️ Nauwkeurige vakken, professionele carrière\n✖️ Niet handig voor beginners";
+
+"theory_20_title" = "20/21-uurregel";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Slechts twintig uur gefocust leren is genoeg om te genieten van een nieuwe vaardigheid. Ideaal voor hobby’s of een basisniveau (bijv. ukelele, A1-taal, yoga).";
+"theory_20_works" = "✔️ Snelle start, hobby’s\n✖️ Leidt niet tot meesterschap";
+
+"theory_100_title" = "100-uurregel";
+"theory_100_author" = "Informeel onderwijsidee";
+"theory_100_description" = "Ongeveer honderd uur leidt tot solide competentie — handig voor fotografie, koken, schilderen, autorijden of Excel.";
+"theory_100_works" = "✔️ Praktische vaardigheden, omscholing\n✖️ Geen expert-niveau";
+
+"theory_1000_title" = "1.000-uurregel";
+"theory_1000_author" = "Populair in IT, talen, freelance";
+"theory_1000_description" = "Duizend uur gerichte training brengt je naar professioneel niveau — van muziekleraren en koks tot vertalers en yogainstructeurs.";
+"theory_1000_works" = "✔️ Professionele zelfstandigheid\n✖️ Geen elite-niveau";
+
+"theory_comparison_title" = "📈 Vergelijking";
+"theory_comparison_text" = "• 20 uur → Goede start (Amateur)\n• 100 uur → Solide (Halfgevorderd)\n• 1.000 uur → Professioneel\n• 10.000 uur → Expert (Elite)";
+
+"theory_nav_title" = "Leertheorie";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Overzicht van de voortgang";
+"stats_nav_title" = "Jouw statistieken";
+"button_done" = "Gereed";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Samenvatting";
+"stats_total_hours" = "Totaal aantal uren";
+"stats_skill_count" = "Vaardigheden";
+"stats_active_timers" = "Actieve timers";
+"stats_first_tracked" = "Eerste registratie";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Topvaardigheden";
+"stats_top_skills_empty_msg" = "Nog geen vaardigheden. Begin met volgen om je beste vaardigheden hier te zien!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Tijd gevolgd";
+"stats_week_label" = "Week";
+"stats_month_label" = "Maand";
+"stats_total_label" = "Totaal";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Activiteitenlogboek";
+"activity_log_empty_message" = "Geen recente activiteit.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Vaardigheidsopties";
+"done" = "Gereed";
+
+"skill_name_section" = "Naam";
+"skill_name_label" = "Naam van de vaardigheid";
+
+"adjust_time_section" = "Tijd aanpassen";
+"adjust_hours_placeholder" = "Uren toe-/aftrekken";
+"adjust_minutes_placeholder" = "Minuten toe-/aftrekken";
+"adjust_time_hint" = "Voer positieve of negatieve waarden in.\nVoorbeeld: -30 minuten trekt een half uur af.";
+"adjust_time_apply" = "Pas tijd aan";
+"adjust_time_success" = "Tijd succesvol bijgewerkt!";
+
+"reset_section" = "Voortgang";
+"reset_progress" = "Voortgang resetten";
+"reset_confirm_title" = "Weet je zeker dat je de voortgang wilt resetten?";
+"reset_confirm_action" = "Resetten";
+
+"delete_skill" = "Vaardigheid verwijderen";
+"delete_confirm_title" = "Weet je het zeker?";
+"delete_confirm_message" = "Deze actie kan niet ongedaan worden gemaakt.";
+"delete_confirm_action" = "Verwijderen";
+
+"cancel" = "Annuleren";
+
+// MARK: - FABButton
+"fab_add_skill" = "Nieuwe vaardigheid toevoegen";
+"fab_view_stats" = "Bekijk statistieken";

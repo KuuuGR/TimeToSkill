@@ -1,0 +1,136 @@
+// Vietnamese
+
+// MARK: - MainView
+"main_manage_trackers" = "Quản lý theo dõi";
+"main_learning_theory" = "Lý thuyết học tập";
+"main_about_app" = "Về ứng dụng";
+
+// MARK: - StartView
+"tracking_title" = "Theo dõi kỹ năng";
+"tracking_nav_title" = "Kỹ năng của bạn";
+"sort_by_label" = "Sắp xếp theo";
+
+"sort_name_asc" = "Tên ↑";
+"sort_name_desc" = "Tên ↓";
+"sort_time_asc" = "Thời gian ↑";
+"sort_time_desc" = "Thời gian ↓";
+
+"empty_message_title" = "Chưa theo dõi kỹ năng nào";
+"empty_message_description" = "Nhấn nút cộng để bắt đầu theo dõi kỹ năng đầu tiên của bạn.";
+
+"button_back" = "Quay lại";
+
+// MARK: - SkillProgressView
+"SkillName" = "Tên kỹ năng";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Nhập tên kỹ năng";
+"add_skill" = "Thêm kỹ năng";
+"new_skill" = "Kỹ năng mới";
+"cancel" = "Hủy";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Về ứng dụng";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Phiên bản 1.0";
+"ab_developer" = "Tác giả: Grzegorz Kulesza";
+
+"ab_section_purpose" = "Mục đích của ứng dụng";
+"ab_purpose_major_system" = "Học hiệu quả hơn bằng cách theo dõi thời gian bạn đầu tư.";
+"ab_purpose_large_numbers" = "Theo dõi mục tiêu lớn với phản hồi trực quan.";
+"ab_purpose_dates" = "Sử dụng hệ thống linh hoạt như 20h, 100h, 1000h...";
+"ab_purpose_words" = "Cải thiện trí nhớ nhờ sự nhất quán.";
+
+"ab_section_support" = "Hỗ trợ";
+"ab_support_developer" = "Hỗ trợ nhà phát triển";
+"ab_navigation_title" = "Về ứng dụng";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Hỗ trợ phát triển";
+"support_description" = "Nếu bạn thích ứng dụng này, bạn có thể mời tôi một ly cà phê!";
+"support_button" = "Hỗ trợ qua PayPal";
+"support_nav_title" = "Hỗ trợ";
+
+// MARK: - TheoryView
+"theory_title" = "Lý thuyết về thời gian học tập";
+
+"theory_10k_title" = "Quy tắc 10.000 giờ";
+"theory_10k_author" = "Malcolm Gladwell (dựa trên Anders Ericsson)";
+"theory_10k_description" = "Để đạt được sự thành thạo, bạn cần khoảng mười nghìn giờ luyện tập có chủ đích. Áp dụng cho người biểu diễn đỉnh cao (nhạc sĩ, vận động viên, kỳ thủ). Không chỉ là số lượng mà còn là chất lượng. Bị chỉ trích vì quá đơn giản hóa.";
+"theory_10k_works" = "✔️ Lĩnh vực chính xác, nghề chuyên nghiệp\n✖️ Không phù hợp cho người mới bắt đầu";
+
+"theory_20_title" = "Quy tắc 20/21 giờ";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Chỉ cần hai mươi giờ học tập tập trung là đủ để bạn bắt đầu tận hưởng kỹ năng mới. Lý tưởng cho sở thích hoặc cấp độ cơ bản (ví dụ: ukulele, ngôn ngữ A1).";
+"theory_20_works" = "✔️ Khởi đầu nhanh, sở thích\n✖️ Không đạt được trình độ chuyên gia";
+
+"theory_100_title" = "Quy tắc 100 giờ";
+"theory_100_author" = "Khái niệm giáo dục phi chính thức";
+"theory_100_description" = "Khoảng một trăm giờ mang lại năng lực vững chắc — phù hợp để học nhiếp ảnh, nấu ăn, vẽ tranh, lái xe hoặc Excel.";
+"theory_100_works" = "✔️ Kỹ năng thực tế, chuyển đổi nghề nghiệp\n✖️ Không phải trình độ chuyên gia";
+
+"theory_1000_title" = "Quy tắc 1.000 giờ";
+"theory_1000_author" = "Phổ biến trong CNTT, ngôn ngữ, làm việc tự do";
+"theory_1000_description" = "Một nghìn giờ học tập tập trung sẽ giúp bạn đạt đến trình độ chuyên nghiệp — từ giáo viên âm nhạc và đầu bếp đến dịch giả và huấn luyện viên yoga.";
+"theory_1000_works" = "✔️ Trình độ chuyên nghiệp\n✖️ Không phải trình độ đỉnh cao";
+
+"theory_comparison_title" = "📈 So sánh";
+"theory_comparison_text" = "• 20 giờ → Khởi đầu tốt (Nghiệp dư)\n• 100 giờ → Vững vàng (Trung cấp)\n• 1.000 giờ → Chuyên nghiệp\n• 10.000 giờ → Thành thạo (Đỉnh cao)";
+
+"theory_nav_title" = "Lý thuyết học tập";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Tổng quan tiến độ";
+"stats_nav_title" = "Thống kê của bạn";
+"button_done" = "Hoàn tất";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Tóm tắt";
+"stats_total_hours" = "Tổng số giờ";
+"stats_skill_count" = "Kỹ năng";
+"stats_active_timers" = "Trình theo dõi đang hoạt động";
+"stats_first_tracked" = "Bản ghi đầu tiên";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Kỹ năng hàng đầu";
+"stats_top_skills_empty_msg" = "Chưa có dữ liệu. Hãy bắt đầu theo dõi để thấy kỹ năng hàng đầu tại đây!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Thời gian đã theo dõi";
+"stats_week_label" = "Tuần";
+"stats_month_label" = "Tháng";
+"stats_total_label" = "Tổng cộng";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Nhật ký hoạt động";
+"activity_log_empty_message" = "Không có hoạt động gần đây.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Tùy chọn kỹ năng";
+"done" = "Hoàn tất";
+
+"skill_name_section" = "Tên";
+"skill_name_label" = "Tên kỹ năng";
+
+"adjust_time_section" = "Điều chỉnh thời gian";
+"adjust_hours_placeholder" = "Giờ cần thêm/bớt";
+"adjust_minutes_placeholder" = "Phút cần thêm/bớt";
+"adjust_time_hint" = "Nhập giá trị dương hoặc âm.\nVí dụ: -30 phút sẽ trừ nửa giờ.";
+"adjust_time_apply" = "Áp dụng thay đổi";
+"adjust_time_success" = "Đã cập nhật thời gian thành công!";
+
+"reset_section" = "Tiến trình";
+"reset_progress" = "Đặt lại tiến trình";
+"reset_confirm_title" = "Bạn có chắc chắn muốn đặt lại tiến trình?";
+"reset_confirm_action" = "Đặt lại";
+
+"delete_skill" = "Xóa kỹ năng";
+"delete_confirm_title" = "Bạn có chắc chắn?";
+"delete_confirm_message" = "Hành động này không thể hoàn tác.";
+"delete_confirm_action" = "Xóa";
+
+"cancel" = "Hủy";
+
+// MARK: - FABButton
+"fab_add_skill" = "Thêm kỹ năng mới";
+"fab_view_stats" = "Xem thống kê";

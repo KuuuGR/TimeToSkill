@@ -1,0 +1,136 @@
+// Indonesian
+
+// MARK: - MainView
+"main_manage_trackers" = "Kelola Pelacak";
+"main_learning_theory" = "Teori Pembelajaran";
+"main_about_app" = "Tentang Aplikasi";
+
+// MARK: - StartView
+"tracking_title" = "Pelacakan Keterampilan";
+"tracking_nav_title" = "Keterampilanmu";
+"sort_by_label" = "Urutkan berdasarkan";
+
+"sort_name_asc" = "Nama ↑";
+"sort_name_desc" = "Nama ↓";
+"sort_time_asc" = "Waktu ↑";
+"sort_time_desc" = "Waktu ↓";
+
+"empty_message_title" = "Belum ada keterampilan yang dilacak";
+"empty_message_description" = "Ketuk tombol plus untuk mulai melacak keterampilan pertamamu.";
+
+"button_back" = "Kembali";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nama Keterampilan";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Masukkan nama keterampilan";
+"add_skill" = "Tambahkan Keterampilan";
+"new_skill" = "Keterampilan Baru";
+"cancel" = "Batal";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Tentang Aplikasi";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Versi 1.0";
+"ab_developer" = "Dibuat oleh Grzegorz Kulesza";
+
+"ab_section_purpose" = "Tujuan Aplikasi";
+"ab_purpose_major_system" = "Belajar lebih efektif dengan melacak waktu yang kamu investasikan.";
+"ab_purpose_large_numbers" = "Lacak target besar dengan umpan balik visual.";
+"ab_purpose_dates" = "Gunakan sistem fleksibel seperti 20 jam, 100 jam, 1000 jam...";
+"ab_purpose_words" = "Tingkatkan daya ingat melalui konsistensi.";
+
+"ab_section_support" = "Dukungan";
+"ab_support_developer" = "Dukung Pengembang";
+"ab_navigation_title" = "Tentang Aplikasi";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Dukung Pengembangan";
+"support_description" = "Jika kamu menyukai aplikasi ini, kamu bisa mentraktir kopi!";
+"support_button" = "Dukung via PayPal";
+"support_nav_title" = "Dukungan";
+
+// MARK: - TheoryView
+"theory_title" = "Teori Waktu Belajar";
+
+"theory_10k_title" = "Aturan 10.000 Jam";
+"theory_10k_author" = "Malcolm Gladwell (berdasarkan Anders Ericsson)";
+"theory_10k_description" = "Untuk mencapai tingkat ahli, dibutuhkan sekitar sepuluh ribu jam latihan yang disengaja. Berlaku untuk pelaku elit (musisi, atlet, pemain catur). Bukan hanya kuantitas, tetapi juga kualitas. Dikritik karena penyederhanaan.";
+"theory_10k_works" = "✔️ Bidang presisi, karier profesional\n✖️ Tidak cocok untuk pemula";
+
+"theory_20_title" = "Aturan 20/21 Jam";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Hanya dua puluh jam pembelajaran terfokus sudah cukup untuk mulai menikmati keterampilan baru. Ideal untuk hobi atau tingkat dasar (misalnya ukulele, frasa dasar, yoga).";
+"theory_20_works" = "✔️ Awal cepat, hobi\n✖️ Tidak membawa ke tingkat ahli";
+
+"theory_100_title" = "Aturan 100 Jam";
+"theory_100_author" = "Konsep pendidikan informal";
+"theory_100_description" = "Sekitar seratus jam memberikan kompetensi yang solid — cocok untuk belajar fotografi, memasak, melukis, menyetir, atau Excel.";
+"theory_100_works" = "✔️ Keterampilan praktis, alih karier\n✖️ Bukan tingkat ahli";
+
+"theory_1000_title" = "Aturan 1.000 Jam";
+"theory_1000_author" = "Populer di bidang TI, bahasa, freelance";
+"theory_1000_description" = "Seribu jam pembelajaran intensif membawamu ke tingkat profesional — mulai dari guru musik dan koki hingga penerjemah dan instruktur yoga.";
+"theory_1000_works" = "✔️ Kemandirian tingkat profesional\n✖️ Bukan level elit";
+
+"theory_comparison_title" = "📈 Perbandingan";
+"theory_comparison_text" = "• 20 jam → Awal yang baik (Amatir)\n• 100 jam → Solid (Menengah)\n• 1.000 jam → Profesional\n• 10.000 jam → Ahli (Elit)";
+
+"theory_nav_title" = "Teori Pembelajaran";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Ringkasan Kemajuan";
+"stats_nav_title" = "Statistikmu";
+"button_done" = "Selesai";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Ringkasan";
+"stats_total_hours" = "Total Jam";
+"stats_skill_count" = "Jumlah Keterampilan";
+"stats_active_timers" = "Timer Aktif";
+"stats_first_tracked" = "Pertama Dicatat";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Keterampilan Teratas";
+"stats_top_skills_empty_msg" = "Belum ada data. Mulailah melacak untuk melihat keterampilan terbaikmu di sini!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Waktu yang Dilacak";
+"stats_week_label" = "Minggu";
+"stats_month_label" = "Bulan";
+"stats_total_label" = "Total";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Riwayat Aktivitas";
+"activity_log_empty_message" = "Belum ada aktivitas terbaru.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opsi Keterampilan";
+"done" = "Selesai";
+
+"skill_name_section" = "Nama";
+"skill_name_label" = "Nama keterampilan";
+
+"adjust_time_section" = "Sesuaikan Waktu";
+"adjust_hours_placeholder" = "Jam untuk ditambah/kurangi";
+"adjust_minutes_placeholder" = "Menit untuk ditambah/kurangi";
+"adjust_time_hint" = "Masukkan nilai positif atau negatif.\nContoh: -30 menit akan mengurangi setengah jam.";
+"adjust_time_apply" = "Terapkan Perubahan";
+"adjust_time_success" = "Waktu berhasil diperbarui!";
+
+"reset_section" = "Kemajuan";
+"reset_progress" = "Atur Ulang Kemajuan";
+"reset_confirm_title" = "Yakin ingin mengatur ulang kemajuan?";
+"reset_confirm_action" = "Atur Ulang";
+
+"delete_skill" = "Hapus Keterampilan";
+"delete_confirm_title" = "Apakah kamu yakin?";
+"delete_confirm_message" = "Tindakan ini tidak dapat dibatalkan.";
+"delete_confirm_action" = "Hapus";
+
+"cancel" = "Batal";
+
+// MARK: - FABButton
+"fab_add_skill" = "Tambahkan keterampilan baru";
+"fab_view_stats" = "Lihat statistik";

@@ -23,8 +23,8 @@ struct SkillOptionsSheet: View {
     @State private var showSuccessMessage = false
 
     private let maxFieldHours = 10_000.0
-    private let maxTotalHours = 100_000.0
-    private let minTotalHours = -100_000.0
+    private let maxTotalHours = 876_000.0
+    private let minTotalHours = -876_000.0
 
     init(skill: Skill, onDelete: @escaping () -> Void) {
         self._skill = .init(wrappedValue: skill)

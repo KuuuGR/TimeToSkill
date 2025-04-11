@@ -1,0 +1,137 @@
+// Danish
+
+// MARK: - MainView
+"main_manage_trackers" = "Administrer trackere";
+"main_learning_theory" = "Læringsteori";
+"main_about_app" = "Om appen";
+
+// MARK: - StartView
+"tracking_title" = "Færdighedssporing";
+"tracking_nav_title" = "Dine færdigheder";
+"sort_by_label" = "Sorter efter";
+
+"sort_name_asc" = "Navn ↑";
+"sort_name_desc" = "Navn ↓";
+"sort_time_asc" = "Tid ↑";
+"sort_time_desc" = "Tid ↓";
+
+"empty_message_title" = "Ingen færdigheder spores endnu";
+"empty_message_description" = "Tryk på plus-knappen for at begynde at spore din første færdighed.";
+
+"button_back" = "Tilbage";
+
+// MARK: - SkillProgressView
+"SkillName" = "Færdighedsnavn";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Indtast færdighedsnavn";
+"add_skill" = "Tilføj færdighed";
+"new_skill" = "Ny færdighed";
+"cancel" = "Annuller";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Om appen";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Version 1.0";
+"ab_developer" = "Skabt af Grzegorz Kulesza";
+
+"ab_section_purpose" = "Formålet med appen";
+"ab_purpose_major_system" = "Lær bedre ved at spore den tid, du investerer.";
+"ab_purpose_large_numbers" = "Spor store mål med visuel feedback.";
+"ab_purpose_dates" = "Brug fleksible systemer som 20t, 100t, 1000t...";
+"ab_purpose_words" = "Forbedr din hukommelse gennem konsistens.";
+
+// MARK: - SupportDeveloperView
+"ab_section_support" = "Support";
+"ab_support_developer" = "Støt udvikleren";
+"ab_navigation_title" = "Om";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Støt udviklingen";
+"support_description" = "Hvis du kan lide denne app, kan du støtte mig med en kaffe!";
+"support_button" = "Støt via PayPal";
+"support_nav_title" = "Support";
+
+// MARK: - TheoryView
+"theory_title" = "Læringstidsteorier";
+
+"theory_10k_title" = "10.000-timers reglen";
+"theory_10k_author" = "Malcolm Gladwell (baseret på Anders Ericsson)";
+"theory_10k_description" = "For at opnå mestring kræves cirka ti tusind timers bevidst praksis. Gælder eliteudøvere (musikere, atleter, skakspillere). Det handler ikke kun om kvantitet, men også kvalitet. Kritiseret for forenkling.";
+"theory_10k_works" = "✔️ Præcisionsfelter, professionel karriere\n✖️ Ikke nyttigt for begyndere";
+
+"theory_20_title" = "20/21-timers reglen";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Tyve timers fokuseret læring er nok til at begynde at nyde en ny færdighed. Ideel til hobbyer eller begynderniveau (f.eks. ukulele, A1 sprog, yoga).";
+"theory_20_works" = "✔️ Hurtig start, hobbyer\n✖️ Ikke til mestring";
+
+"theory_100_title" = "100-timers reglen";
+"theory_100_author" = "Uformelt læringskoncept";
+"theory_100_description" = "Omkring hundrede timer giver solid kompetence — nyttigt til at lære fotografering, madlavning, maling, bilkørsel eller Excel.";
+"theory_100_works" = "✔️ Praktiske færdigheder, omskoling\n✖️ Ikke ekspertniveau";
+
+"theory_1000_title" = "1.000-timers reglen";
+"theory_1000_author" = "Populær i IT, sprog, freelancing";
+"theory_1000_description" = "Tusen timers intensiv læring bringer dig til et professionelt niveau — fra musiklærere og kokke til oversættere og yogainstruktører.";
+"theory_1000_works" = "✔️ Professionel uafhængighed\n✖️ Ikke elite-niveau";
+
+"theory_comparison_title" = "📈 Sammenligning";
+"theory_comparison_text" = "• 20 timer → God start (Amatør)\n• 100 timer → Solid (Let øvet)\n• 1.000 timer → Professionel\n• 10.000 timer → Ekspert (Mester)";
+
+"theory_nav_title" = "Læringsteori";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Overblik over fremskridt";
+"stats_nav_title" = "Dine statistikker";
+"button_done" = "Færdig";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Resume";
+"stats_total_hours" = "Samlede timer";
+"stats_skill_count" = "Færdigheder";
+"stats_active_timers" = "Aktive trackere";
+"stats_first_tracked" = "Første optegnelse";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Topfærdigheder";
+"stats_top_skills_empty_msg" = "Ingen data endnu. Begynd at spore for at se dine topfærdigheder her!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Tid sporet";
+"stats_week_label" = "Uge";
+"stats_month_label" = "Måned";
+"stats_total_label" = "I alt";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Aktivitetslog";
+"activity_log_empty_message" = "Ingen nylig aktivitet.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Færdighedsindstillinger";
+"done" = "Færdig";
+
+"skill_name_section" = "Navn";
+"skill_name_label" = "Færdighedsnavn";
+
+"adjust_time_section" = "Justér tid";
+"adjust_hours_placeholder" = "Timer at tilføje/trække fra";
+"adjust_minutes_placeholder" = "Minutter at tilføje/trække fra";
+"adjust_time_hint" = "Indtast positive eller negative værdier.\nEksempel: -30 minutter trækker en halv time fra.";
+"adjust_time_apply" = "Anvend ændring";
+"adjust_time_success" = "Tid opdateret med succes!";
+
+"reset_section" = "Fremskridt";
+"reset_progress" = "Nulstil fremskridt";
+"reset_confirm_title" = "Er du sikker på, at du vil nulstille fremskridtet?";
+"reset_confirm_action" = "Nulstil";
+
+"delete_skill" = "Slet færdighed";
+"delete_confirm_title" = "Er du sikker?";
+"delete_confirm_message" = "Denne handling kan ikke fortrydes.";
+"delete_confirm_action" = "Slet";
+
+"cancel" = "Annuller";
+
+// MARK: - FABButton
+"fab_add_skill" = "Tilføj ny færdighed";
+"fab_view_stats" = "Vis statistik";

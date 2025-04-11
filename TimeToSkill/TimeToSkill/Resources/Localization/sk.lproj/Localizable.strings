@@ -1,0 +1,136 @@
+// Slovak
+
+// MARK: - MainView
+"main_manage_trackers" = "Spravovať trackery";
+"main_learning_theory" = "Teória učenia";
+"main_about_app" = "O aplikácii";
+
+// MARK: - StartView
+"tracking_title" = "Sledovanie zručností";
+"tracking_nav_title" = "Tvoje zručnosti";
+"sort_by_label" = "Zoradiť podľa";
+
+"sort_name_asc" = "Názov ↑";
+"sort_name_desc" = "Názov ↓";
+"sort_time_asc" = "Čas ↑";
+"sort_time_desc" = "Čas ↓";
+
+"empty_message_title" = "Žiadne sledované zručnosti";
+"empty_message_description" = "Klepni na tlačidlo plus a začni sledovať svoju prvú zručnosť.";
+
+"button_back" = "Späť";
+
+// MARK: - SkillProgressView
+"SkillName" = "Názov zručnosti";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Zadaj názov zručnosti";
+"add_skill" = "Pridať zručnosť";
+"new_skill" = "Nová zručnosť";
+"cancel" = "Zrušiť";
+
+// MARK: - AboutView
+"ab_section_about_app" = "O aplikácii";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Verzia 1.0";
+"ab_developer" = "Vytvoril Grzegorz Kulesza";
+
+"ab_section_purpose" = "Účel aplikácie";
+"ab_purpose_major_system" = "Uč sa efektívnejšie sledovaním času, ktorý investuješ.";
+"ab_purpose_large_numbers" = "Sleduj veľké ciele pomocou vizuálnej spätnej väzby.";
+"ab_purpose_dates" = "Použi flexibilné systémy ako 20 h, 100 h, 1000 h...";
+"ab_purpose_words" = "Zlepši si pamäť pomocou konzistentnosti.";
+
+"ab_section_support" = "Podpora";
+"ab_support_developer" = "Podpor vývojára";
+"ab_navigation_title" = "O aplikácii";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Podpor vývoj";
+"support_description" = "Ak sa ti aplikácia páči, môžeš mi kúpiť kávu!";
+"support_button" = "Podpor cez PayPal";
+"support_nav_title" = "Podpora";
+
+// MARK: - TheoryView
+"theory_title" = "Teórie učenia";
+
+"theory_10k_title" = "Pravidlo 10 000 hodín";
+"theory_10k_author" = "Malcolm Gladwell (na základe Andersa Ericssona)";
+"theory_10k_description" = "Na dosiahnutie majstrovstva potrebuješ približne desaťtisíc hodín vedomej praxe. Platí pre elitných profesionálov (hudobníci, športovci, šachisti). Dôležitá je nielen kvantita, ale aj kvalita. Kritizované pre zjednodušenie.";
+"theory_10k_works" = "✔️ Presné odbory, profesionálna kariéra\n✖️ Nevhodné na začiatok";
+
+"theory_20_title" = "Pravidlo 20/21 hodín";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Stačí dvadsať hodín sústredeného učenia na to, aby si si začal užívať novú zručnosť. Ideálne na hobby alebo základnú úroveň (napr. ukulele, jazyk A1, jóga).";
+"theory_20_works" = "✔️ Rýchly začiatok, záľuby\n✖️ Nevedie k majstrovstvu";
+
+"theory_100_title" = "Pravidlo 100 hodín";
+"theory_100_author" = "Neformálny vzdelávací koncept";
+"theory_100_description" = "Asi sto hodín vedie k solídnym schopnostiam – vhodné pre fotografovanie, varenie, maľovanie, šoférovanie alebo Excel.";
+"theory_100_works" = "✔️ Praktické zručnosti, rekvalifikácia\n✖️ Nie expertná úroveň";
+
+"theory_1000_title" = "Pravidlo 1 000 hodín";
+"theory_1000_author" = "Populárne v IT, jazykoch, na voľnej nohe";
+"theory_1000_description" = "Tisíc hodín intenzívneho učenia ťa dostane na profesionálnu úroveň – od učiteľov hudby a kuchárov po prekladateľov a inštruktorov jogy.";
+"theory_1000_works" = "✔️ Profesionálna samostatnosť\n✖️ Nie elitná úroveň";
+
+"theory_comparison_title" = "📈 Porovnanie";
+"theory_comparison_text" = "• 20 hodín → Dobrý začiatok (Amatér)\n• 100 hodín → Solídne (Stredne pokročilý)\n• 1 000 hodín → Profesionál\n• 10 000 hodín → Majster (Elita)";
+
+"theory_nav_title" = "Teória učenia";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Prehľad pokroku";
+"stats_nav_title" = "Tvoje štatistiky";
+"button_done" = "Hotovo";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Zhrnutie";
+"stats_total_hours" = "Celkový čas";
+"stats_skill_count" = "Zručnosti";
+"stats_active_timers" = "Aktívne trackery";
+"stats_first_tracked" = "Prvý záznam";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Top zručnosti";
+"stats_top_skills_empty_msg" = "Zatiaľ žiadne dáta. Začni sledovať, aby sa tu zobrazili tvoje top zručnosti!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Sledovaný čas";
+"stats_week_label" = "Týždeň";
+"stats_month_label" = "Mesiac";
+"stats_total_label" = "Celkovo";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Denník aktivít";
+"activity_log_empty_message" = "Žiadne nedávne aktivity.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Možnosti zručnosti";
+"done" = "Hotovo";
+
+"skill_name_section" = "Názov";
+"skill_name_label" = "Názov zručnosti";
+
+"adjust_time_section" = "Upraviť čas";
+"adjust_hours_placeholder" = "Hodiny na pripočítanie/odpočítanie";
+"adjust_minutes_placeholder" = "Minúty na pripočítanie/odpočítanie";
+"adjust_time_hint" = "Zadaj kladnú alebo zápornú hodnotu.\nPríklad: -30 minút odpočíta pol hodiny.";
+"adjust_time_apply" = "Použiť zmenu";
+"adjust_time_success" = "Čas bol úspešne aktualizovaný!";
+
+"reset_section" = "Pokrok";
+"reset_progress" = "Resetovať pokrok";
+"reset_confirm_title" = "Naozaj chceš resetovať pokrok?";
+"reset_confirm_action" = "Resetovať";
+
+"delete_skill" = "Odstrániť zručnosť";
+"delete_confirm_title" = "Si si istý?";
+"delete_confirm_message" = "Túto akciu nie je možné vrátiť späť.";
+"delete_confirm_action" = "Odstrániť";
+
+"cancel" = "Zrušiť";
+
+// MARK: - FABButton
+"fab_add_skill" = "Pridať novú zručnosť";
+"fab_view_stats" = "Zobraziť štatistiky";

@@ -1,0 +1,136 @@
+// Greek
+
+// MARK: - MainView
+"main_manage_trackers" = "Διαχείριση ιχνηλατών";
+"main_learning_theory" = "Θεωρία μάθησης";
+"main_about_app" = "Σχετικά με την εφαρμογή";
+
+// MARK: - StartView
+"tracking_title" = "Παρακολούθηση δεξιοτήτων";
+"tracking_nav_title" = "Οι δεξιότητές σου";
+"sort_by_label" = "Ταξινόμηση κατά";
+
+"sort_name_asc" = "Όνομα ↑";
+"sort_name_desc" = "Όνομα ↓";
+"sort_time_asc" = "Χρόνος ↑";
+"sort_time_desc" = "Χρόνος ↓";
+
+"empty_message_title" = "Καμία δεξιότητα προς παρακολούθηση";
+"empty_message_description" = "Πάτησε το κουμπί συν για να ξεκινήσεις την παρακολούθηση της πρώτης σου δεξιότητας.";
+
+"button_back" = "Πίσω";
+
+// MARK: - SkillProgressView
+"SkillName" = "Όνομα δεξιότητας";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Εισαγωγή ονόματος δεξιότητας";
+"add_skill" = "Προσθήκη δεξιότητας";
+"new_skill" = "Νέα δεξιότητα";
+"cancel" = "Ακύρωση";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Σχετικά με την εφαρμογή";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Έκδοση 1.0";
+"ab_developer" = "Δημιουργήθηκε από τον Grzegorz Kulesza";
+
+"ab_section_purpose" = "Σκοπός της εφαρμογής";
+"ab_purpose_major_system" = "Μάθε πιο αποδοτικά παρακολουθώντας τον χρόνο που επενδύεις.";
+"ab_purpose_large_numbers" = "Παρακολούθησε μεγάλους στόχους με οπτική ανατροφοδότηση.";
+"ab_purpose_dates" = "Χρησιμοποίησε ευέλικτα συστήματα όπως 20 ώρες, 100 ώρες, 1.000 ώρες...";
+"ab_purpose_words" = "Βελτίωσε τη μνήμη σου με συνέπεια.";
+
+"ab_section_support" = "Υποστήριξη";
+"ab_support_developer" = "Υποστήριξε τον προγραμματιστή";
+"ab_navigation_title" = "Σχετικά";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Υποστήριξη ανάπτυξης";
+"support_description" = "Αν σου αρέσει η εφαρμογή, μπορείς να με κεράσεις έναν καφέ!";
+"support_button" = "Υποστήριξε μέσω PayPal";
+"support_nav_title" = "Υποστήριξη";
+
+// MARK: - TheoryView
+"theory_title" = "Θεωρίες χρόνου μάθησης";
+
+"theory_10k_title" = "Κανόνας των 10.000 ωρών";
+"theory_10k_author" = "Malcolm Gladwell (βάσει Anders Ericsson)";
+"theory_10k_description" = "Για να φτάσεις στην αριστεία, χρειάζεσαι περίπου δέκα χιλιάδες ώρες συνειδητής εξάσκησης. Αφορά τους κορυφαίους (μουσικούς, αθλητές, σκακιστές). Δεν μετρά μόνο η ποσότητα, αλλά και η ποιότητα. Έχει δεχτεί κριτική για υπεραπλούστευση.";
+"theory_10k_works" = "✔️ Απαιτητικά πεδία, επαγγελματική καριέρα\n✖️ Όχι κατάλληλο για αρχάριους";
+
+"theory_20_title" = "Κανόνας των 20/21 ωρών";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Μόλις είκοσι ώρες εστιασμένης μάθησης αρκούν για να απολαύσεις μια νέα δεξιότητα. Ιδανικό για χόμπι ή βασικό επίπεδο (π.χ. γιουκαλίλι, Α1 γλώσσα, γιόγκα).";
+"theory_20_works" = "✔️ Γρήγορη εκκίνηση, χόμπι\n✖️ Δεν οδηγεί σε εξειδίκευση";
+
+"theory_100_title" = "Κανόνας των 100 ωρών";
+"theory_100_author" = "Άτυπη εκπαιδευτική έννοια";
+"theory_100_description" = "Περίπου εκατό ώρες οδηγούν σε σταθερή επάρκεια – χρήσιμο για φωτογραφία, μαγειρική, ζωγραφική, οδήγηση ή Excel.";
+"theory_100_works" = "✔️ Πρακτικές δεξιότητες, επανεκπαίδευση\n✖️ Όχι επίπεδο ειδικού";
+
+"theory_1000_title" = "Κανόνας των 1.000 ωρών";
+"theory_1000_author" = "Δημοφιλές σε IT, γλώσσες, freelancing";
+"theory_1000_description" = "Χίλιες ώρες εντατικής μάθησης σε φέρνουν σε επαγγελματικό επίπεδο — από καθηγητές μουσικής και μάγειρες μέχρι μεταφραστές και εκπαιδευτές γιόγκα.";
+"theory_1000_works" = "✔️ Επαγγελματική επάρκεια\n✖️ Όχι κορυφαίο επίπεδο";
+
+"theory_comparison_title" = "📈 Σύγκριση";
+"theory_comparison_text" = "• 20 ώρες → Καλό ξεκίνημα (Αρχάριος)\n• 100 ώρες → Σταθερότητα (Μέτριος)\n• 1.000 ώρες → Επαγγελματίας\n• 10.000 ώρες → Ειδικός (Μάστερ)";
+
+"theory_nav_title" = "Θεωρία μάθησης";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Επισκόπηση προόδου";
+"stats_nav_title" = "Τα στατιστικά σου";
+"button_done" = "Έτοιμο";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Περίληψη";
+"stats_total_hours" = "Συνολικές ώρες";
+"stats_skill_count" = "Δεξιότητες";
+"stats_active_timers" = "Ενεργά χρονόμετρα";
+"stats_first_tracked" = "Πρώτη καταγραφή";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Κορυφαίες δεξιότητες";
+"stats_top_skills_empty_msg" = "Δεν υπάρχουν ακόμα δεδομένα. Ξεκίνα την παρακολούθηση για να δεις τις κορυφαίες δεξιότητές σου!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Χρόνος που παρακολουθήθηκε";
+"stats_week_label" = "Εβδομάδα";
+"stats_month_label" = "Μήνας";
+"stats_total_label" = "Σύνολο";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Ιστορικό δραστηριοτήτων";
+"activity_log_empty_message" = "Δεν υπάρχουν πρόσφατες δραστηριότητες.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Ρυθμίσεις δεξιότητας";
+"done" = "Έγινε";
+
+"skill_name_section" = "Όνομα";
+"skill_name_label" = "Όνομα δεξιότητας";
+
+"adjust_time_section" = "Προσαρμογή χρόνου";
+"adjust_hours_placeholder" = "Ώρες προς προσθήκη/αφαίρεση";
+"adjust_minutes_placeholder" = "Λεπτά προς προσθήκη/αφαίρεση";
+"adjust_time_hint" = "Εισάγετε θετικές ή αρνητικές τιμές.\nΠαράδειγμα: -30 λεπτά αφαιρεί μισή ώρα.";
+"adjust_time_apply" = "Εφαρμογή αλλαγής";
+"adjust_time_success" = "Ο χρόνος ενημερώθηκε με επιτυχία!";
+
+"reset_section" = "Πρόοδος";
+"reset_progress" = "Επαναφορά προόδου";
+"reset_confirm_title" = "Σίγουρα θέλεις να επαναφέρεις την πρόοδο;";
+"reset_confirm_action" = "Επαναφορά";
+
+"delete_skill" = "Διαγραφή δεξιότητας";
+"delete_confirm_title" = "Είσαι σίγουρος;";
+"delete_confirm_message" = "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.";
+"delete_confirm_action" = "Διαγραφή";
+
+"cancel" = "Ακύρωση";
+
+// MARK: - FABButton
+"fab_add_skill" = "Προσθήκη νέας δεξιότητας";
+"fab_view_stats" = "Προβολή στατιστικών";

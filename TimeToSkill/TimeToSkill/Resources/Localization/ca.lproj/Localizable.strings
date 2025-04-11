@@ -1,0 +1,137 @@
+// Catalan
+
+// MARK: - MainView
+"main_manage_trackers" = "Gestiona els seguiments";
+"main_learning_theory" = "Teoria de l'aprenentatge";
+"main_about_app" = "Sobre l'aplicació";
+
+// MARK: - StartView
+"tracking_title" = "Seguiment de les habilitats";
+"tracking_nav_title" = "Les teves habilitats";
+"sort_by_label" = "Ordena per";
+
+"sort_name_asc" = "Nom ↑";
+"sort_name_desc" = "Nom ↓";
+"sort_time_asc" = "Temps ↑";
+"sort_time_desc" = "Temps ↓";
+
+"empty_message_title" = "Encara no segueixes cap habilitat";
+"empty_message_description" = "Toca el botó de més per començar a seguir la teva primera habilitat.";
+
+"button_back" = "Enrere";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nom de l'habilitat";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Introdueix el nom de l'habilitat";
+"add_skill" = "Afegeix habilitat";
+"new_skill" = "Nova habilitat";
+"cancel" = "Cancel·la";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Sobre l'aplicació";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Versió 1.0";
+"ab_developer" = "Creat per Grzegorz Kulesza";
+
+"ab_section_purpose" = "Objectiu de l'aplicació";
+"ab_purpose_major_system" = "Aprèn millor fent un seguiment del teu temps invertit.";
+"ab_purpose_large_numbers" = "Fes un seguiment de grans objectius amb retroalimentació visual.";
+"ab_purpose_dates" = "Utilitza sistemes flexibles com 20h, 100h, 1000h...";
+"ab_purpose_words" = "Millora la memòria amb constància.";
+
+// MARK: - SupportDeveloperView
+"ab_section_support" = "Suport";
+"ab_support_developer" = "Dóna suport al desenvolupador";
+"ab_navigation_title" = "Sobre";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Dóna suport al desenvolupament";
+"support_description" = "Si t'agrada aquesta aplicació, pots convidar-me a un cafè!";
+"support_button" = "Donar suport amb PayPal";
+"support_nav_title" = "Suport";
+
+// MARK: - TheoryView
+"theory_title" = "Teories del temps d'aprenentatge";
+
+"theory_10k_title" = "Regla de les 10.000 hores";
+"theory_10k_author" = "Malcolm Gladwell (basat en Anders Ericsson)";
+"theory_10k_description" = "Per assolir la mestria, es necessiten unes deu mil hores de pràctica deliberada. Aplica als professionals d’elit (músics, atletes, jugadors d’escacs). No només és quantitat, sinó qualitat. Ha estat criticada per simplificar massa.";
+"theory_10k_works" = "✔️ Camps de precisió, carrera professional\n✖️ Poc útil per començar";
+
+"theory_20_title" = "Regla de les 20/21 hores";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Només calen vint hores d'aprenentatge centrat per començar a gaudir d'una nova habilitat. Ideal per a aficions o nivell bàsic (p. ex. ukulele, nivell A1 d’idioma).";
+"theory_20_works" = "✔️ Inici ràpid, aficions\n✖️ No condueix a la mestria";
+
+"theory_100_title" = "Regla de les 100 hores";
+"theory_100_author" = "Concepte educatiu informal";
+"theory_100_description" = "Unes cent hores condueixen a una competència sòlida — útil per aprendre fotografia, cuina, pintura, conducció o Excel.";
+"theory_100_works" = "✔️ Habilitats pràctiques, reciclatge\n✖️ No és nivell expert";
+
+"theory_1000_title" = "Regla de les 1.000 hores";
+"theory_1000_author" = "Popular en informàtica, idiomes, freelancing";
+"theory_1000_description" = "Mil hores d’aprenentatge intensiu et porten a un nivell professional — des de professors de música i cuiners fins a traductors i instructors de ioga.";
+"theory_1000_works" = "✔️ Independència professional\n✖️ No és nivell d’elit";
+
+"theory_comparison_title" = "📈 Comparació";
+"theory_comparison_text" = "• 20 hores → Bon començament (Aficionat)\n• 100 hores → Sòlid (Intermedi)\n• 1.000 hores → Professional\n• 10.000 hores → Expert (Mestre)";
+
+"theory_nav_title" = "Teoria de l'aprenentatge";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Resum del progrés";
+"stats_nav_title" = "Les teves estadístiques";
+"button_done" = "Fet";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Resum";
+"stats_total_hours" = "Total d'hores";
+"stats_skill_count" = "Habilitats";
+"stats_active_timers" = "Timers actius";
+"stats_first_tracked" = "Primera habilitat";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Millors habilitats";
+"stats_top_skills_empty_msg" = "Encara no hi ha dades. Comença a fer seguiment per veure les teves millors habilitats aquí!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Temps registrat";
+"stats_week_label" = "Setmana";
+"stats_month_label" = "Mes";
+"stats_total_label" = "Total";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Registre d’activitat";
+"activity_log_empty_message" = "No hi ha activitat recent.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opcions d’habilitat";
+"done" = "Fet";
+
+"skill_name_section" = "Nom";
+"skill_name_label" = "Nom de l'habilitat";
+
+"adjust_time_section" = "Ajustar el temps";
+"adjust_hours_placeholder" = "Hores a afegir/restar";
+"adjust_minutes_placeholder" = "Minuts a afegir/restar";
+"adjust_time_hint" = "Introdueix valors positius o negatius.\nExemple: -30 minuts resta mitja hora.";
+"adjust_time_apply" = "Aplicar canvi";
+"adjust_time_success" = "Temps actualitzat correctament!";
+
+"reset_section" = "Progrés";
+"reset_progress" = "Reiniciar progrés";
+"reset_confirm_title" = "Segur que vols reiniciar el progrés?";
+"reset_confirm_action" = "Reiniciar";
+
+"delete_skill" = "Eliminar habilitat";
+"delete_confirm_title" = "Segur que vols eliminar?";
+"delete_confirm_message" = "Aquesta acció no es pot desfer.";
+"delete_confirm_action" = "Eliminar";
+
+"cancel" = "Cancel·la";
+
+// MARK: - FABButton
+"fab_add_skill" = "Afegeix una nova habilitat";
+"fab_view_stats" = "Veure estadístiques";

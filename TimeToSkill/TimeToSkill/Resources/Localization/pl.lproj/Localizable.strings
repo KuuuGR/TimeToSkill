@@ -1,0 +1,135 @@
+// Polish
+// MARK: - MainView
+"main_manage_trackers" = "Zarządzaj trackerami";
+"main_learning_theory" = "Teoria nauki";
+"main_about_app" = "O aplikacji";
+
+// MARK: - StartView
+"tracking_title" = "Śledzenie umiejętności";
+"tracking_nav_title" = "Twoje umiejętności";
+"sort_by_label" = "Sortuj według";
+
+"sort_name_asc" = "Nazwa ↑";
+"sort_name_desc" = "Nazwa ↓";
+"sort_time_asc" = "Czas ↑";
+"sort_time_desc" = "Czas ↓";
+
+"empty_message_title" = "Brak śledzonych umiejętności";
+"empty_message_description" = "Kliknij przycisk plus, aby zacząć śledzić swoją pierwszą umiejętność.";
+
+"button_back" = "Wstecz";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nazwa umiejętności";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Wpisz nazwę umiejętności";
+"add_skill" = "Dodaj umiejętność";
+"new_skill" = "Nowa umiejętność";
+"cancel" = "Anuluj";
+
+// MARK: - AboutView
+"ab_section_about_app" = "O aplikacji";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Wersja 1.0";
+"ab_developer" = "Autor: Grzegorz Kulesza";
+
+"ab_section_purpose" = "Cel aplikacji";
+"ab_purpose_major_system" = "Ucz się skuteczniej, śledząc czas, który inwestujesz.";
+"ab_purpose_large_numbers" = "Śledź duże cele z pomocą wizualnej informacji zwrotnej.";
+"ab_purpose_dates" = "Wykorzystaj elastyczne systemy jak 20h, 100h, 1000h...";
+"ab_purpose_words" = "Popraw pamięć dzięki konsekwencji.";
+
+"ab_section_support" = "Wsparcie";
+"ab_support_developer" = "Wesprzyj twórcę";
+"ab_navigation_title" = "O aplikacji";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Wesprzyj rozwój";
+"support_description" = "Jeśli podoba Ci się ta aplikacja, możesz postawić mi kawę!";
+"support_button" = "Wesprzyj przez PayPal";
+"support_nav_title" = "Wsparcie";
+
+// MARK: - TheoryView
+"theory_title" = "Teorie czasu nauki";
+
+"theory_10k_title" = "Zasada 10 000 godzin";
+"theory_10k_author" = "Malcolm Gladwell (na podstawie Andersa Ericssona)";
+"theory_10k_description" = "Aby osiągnąć mistrzostwo, potrzeba ok. 10 000 godzin świadomej praktyki. Dotyczy elitarnych wykonawców (muzyków, sportowców, szachistów). Liczy się nie tylko ilość, ale i jakość. Krytykowana za uproszczenia.";
+"theory_10k_works" = "✔️ Dziedziny precyzyjne, kariera pro\n✖️ Mało przydatne na start";
+
+"theory_20_title" = "Zasada 20/21 godzin";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Wystarczy 20 godzin skoncentrowanej nauki, by zacząć cieszyć się nową umiejętnością. Idealne dla hobby lub podstawowego poziomu (np. ukulele, język A1).";
+"theory_20_works" = "✔️ Szybki start, hobby\n✖️ Nie prowadzi do mistrzostwa";
+
+"theory_100_title" = "Zasada 100 godzin";
+"theory_100_author" = "Nieformalna koncepcja edukacyjna";
+"theory_100_description" = "Około 100 godzin daje solidne kompetencje — idealne przy nauce frameworka lub języka programowania.";
+"theory_100_works" = "✔️ Umiejętności praktyczne\n✖️ Nie poziom eksperta";
+
+"theory_1000_title" = "Zasada 1 000 godzin";
+"theory_1000_author" = "Popularna w IT, językach, freelancingu";
+"theory_1000_description" = "1 000 godzin intensywnej nauki czyni cię zawodowym ekspertem. Świetne do osiągnięcia samodzielności w IT, tłumaczeniach, sztuce cyfrowej.";
+"theory_1000_works" = "✔️ Poziom profesjonalisty\n✖️ Nie elitarny poziom";
+
+"theory_comparison_title" = "📈 Porównanie";
+"theory_comparison_text" = "• 20 godzin → Dobry start (Amator)\n• 100 godzin → Solidnie (Średnio zaawansowany)\n• 1000 godzin → Profesjonalista (Zawodowiec)\n• 10 000 godzin → Ekspert (Mistrz)";
+
+"theory_nav_title" = "Teorie nauki";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Przegląd postępów";
+"stats_nav_title" = "Twoje statystyki";
+"button_done" = "Gotowe";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Podsumowanie";
+"stats_total_hours" = "Łącznie godzin";
+"stats_skill_count" = "Umiejętności";
+"stats_active_timers" = "Aktywne trackery";
+"stats_first_tracked" = "Pierwszy zapis";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Najlepsze umiejętności";
+"stats_top_skills_empty_msg" = "Brak danych. Zacznij śledzenie, by zobaczyć najlepsze umiejętności!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Śledzony czas";
+"stats_week_label" = "Tydzień";
+"stats_month_label" = "Miesiąc";
+"stats_total_label" = "Łącznie";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Historia aktywności";
+"activity_log_empty_message" = "Brak ostatnich aktywności.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opcje umiejętności";
+"done" = "Gotowe";
+
+"skill_name_section" = "Nazwa";
+"skill_name_label" = "Nazwa umiejętności";
+
+"adjust_time_section" = "Dostosuj czas";
+"adjust_hours_placeholder" = "Godziny do dodania/odjęcia";
+"adjust_minutes_placeholder" = "Minuty do dodania/odjęcia";
+"adjust_time_hint" = "Wpisz wartość dodatnią lub ujemną.\nPrzykład: -30 minut odejmie pół godziny.";
+"adjust_time_apply" = "Zastosuj zmianę";
+"adjust_time_success" = "Czas został zaktualizowany!";
+
+"reset_section" = "Postęp";
+"reset_progress" = "Zresetuj postęp";
+"reset_confirm_title" = "Czy na pewno zresetować postęp?";
+"reset_confirm_action" = "Resetuj";
+
+"delete_skill" = "Usuń umiejętność";
+"delete_confirm_title" = "Czy jesteś pewien?";
+"delete_confirm_message" = "Tej operacji nie można cofnąć.";
+"delete_confirm_action" = "Usuń";
+
+"cancel" = "Anuluj";
+
+// MARK: - FABButton
+"fab_add_skill" = "Dodaj nową umiejętność";
+"fab_view_stats" = "Zobacz statystyki";

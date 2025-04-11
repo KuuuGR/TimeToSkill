@@ -1,0 +1,136 @@
+// Turkish
+
+// MARK: - MainView
+"main_manage_trackers" = "İzleyicileri Yönet";
+"main_learning_theory" = "Öğrenme Teorisi";
+"main_about_app" = "Uygulama Hakkında";
+
+// MARK: - StartView
+"tracking_title" = "Beceri Takibi";
+"tracking_nav_title" = "Becerilerin";
+"sort_by_label" = "Sıralama Kriteri";
+
+"sort_name_asc" = "İsim ↑";
+"sort_name_desc" = "İsim ↓";
+"sort_time_asc" = "Süre ↑";
+"sort_time_desc" = "Süre ↓";
+
+"empty_message_title" = "Henüz takip edilen beceri yok";
+"empty_message_description" = "İlk becerini takip etmek için artı butonuna dokun.";
+
+"button_back" = "Geri";
+
+// MARK: - SkillProgressView
+"SkillName" = "Beceri Adı";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Beceri adını gir";
+"add_skill" = "Beceri Ekle";
+"new_skill" = "Yeni Beceri";
+"cancel" = "İptal";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Uygulama Hakkında";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Sürüm 1.0";
+"ab_developer" = "Geliştirici: Grzegorz Kulesza";
+
+"ab_section_purpose" = "Uygulamanın Amacı";
+"ab_purpose_major_system" = "Harcadığın zamanı takip ederek daha verimli öğren.";
+"ab_purpose_large_numbers" = "Büyük hedefleri görsel geri bildirimle takip et.";
+"ab_purpose_dates" = "20s, 100s, 1000s gibi esnek sistemler kullan.";
+"ab_purpose_words" = "Tutarlılıkla hafızanı geliştir.";
+
+"ab_section_support" = "Destek";
+"ab_support_developer" = "Geliştiriciyi Destekle";
+"ab_navigation_title" = "Hakkında";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Geliştirmeyi Destekle";
+"support_description" = "Bu uygulamayı seviyorsan bana bir kahve ısmarlayabilirsin!";
+"support_button" = "PayPal ile Destekle";
+"support_nav_title" = "Destek";
+
+// MARK: - TheoryView
+"theory_title" = "Öğrenme Süresi Teorileri";
+
+"theory_10k_title" = "10.000 Saat Kuralı";
+"theory_10k_author" = "Malcolm Gladwell (Anders Ericsson’a dayanır)";
+"theory_10k_description" = "Ustalık seviyesine ulaşmak için yaklaşık on bin saatlik bilinçli pratik gerekir. Müzisyenler, sporcular, satranç ustaları gibi elit performans alanları için geçerlidir. Sadece nicelik değil, nitelik de önemlidir. Aşırı genelleme yaptığı için eleştirilmiştir.";
+"theory_10k_works" = "✔️ Hassas alanlar, profesyonel kariyer\n✖️ Hızlı başlangıç için uygun değil";
+
+"theory_20_title" = "20/21 Saat Kuralı";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Yeni bir beceriden keyif almaya başlamak için sadece yirmi saatlik odaklanmış öğrenme yeterlidir. Hobi ya da temel seviyeler (ör. ukulele, A1 dili, yoga) için idealdir.";
+"theory_20_works" = "✔️ Hızlı başlangıç, hobiler\n✖️ Ustalık sağlamaz";
+
+"theory_100_title" = "100 Saat Kuralı";
+"theory_100_author" = "Gayriresmî eğitim konsepti";
+"theory_100_description" = "Yaklaşık yüz saatlik eğitim sağlam bir yetkinlik kazandırır — fotoğrafçılık, yemek yapma, resim, araç kullanma veya Excel gibi alanlar için uygundur.";
+"theory_100_works" = "✔️ Pratik beceriler, meslek değişimi\n✖️ Uzman seviyesi değil";
+
+"theory_1000_title" = "1.000 Saat Kuralı";
+"theory_1000_author" = "IT, diller, serbest çalışma alanlarında popüler";
+"theory_1000_description" = "Bin saatlik yoğun öğrenme seni profesyonel seviyeye taşır — müzik öğretmenlerinden aşçılara, çevirmenlere ve yoga eğitmenlerine kadar.";
+"theory_1000_works" = "✔️ Profesyonel düzeyde bağımsızlık\n✖️ Dünya çapında elit değil";
+
+"theory_comparison_title" = "📈 Karşılaştırma";
+"theory_comparison_text" = "• 20 saat → İyi bir başlangıç (Amatör)\n• 100 saat → Sağlam (Orta seviye)\n• 1.000 saat → Profesyonel\n• 10.000 saat → Usta (Elit)";
+
+"theory_nav_title" = "Öğrenme Teorisi";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Beceri İlerlemesi Özeti";
+"stats_nav_title" = "İstatistiklerin";
+"button_done" = "Tamamlandı";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Özet";
+"stats_total_hours" = "Toplam Saat";
+"stats_skill_count" = "Beceriler";
+"stats_active_timers" = "Aktif Zamanlayıcılar";
+"stats_first_tracked" = "İlk Kayıt";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 En İyi Beceriler";
+"stats_top_skills_empty_msg" = "Henüz beceri yok. En iyi becerilerini burada görmek için takip etmeye başla!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Takip Edilen Süre";
+"stats_week_label" = "Hafta";
+"stats_month_label" = "Ay";
+"stats_total_label" = "Toplam";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Aktivite Günlüğü";
+"activity_log_empty_message" = "Henüz bir aktivite yok.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Beceri Seçenekleri";
+"done" = "Tamam";
+
+"skill_name_section" = "İsim";
+"skill_name_label" = "Beceri Adı";
+
+"adjust_time_section" = "Zamanı Ayarla";
+"adjust_hours_placeholder" = "Eklenecek/çıkarılacak saat";
+"adjust_minutes_placeholder" = "Eklenecek/çıkarılacak dakika";
+"adjust_time_hint" = "Pozitif veya negatif değer gir.\nÖrn: -30 dakika yarım saat çıkarır.";
+"adjust_time_apply" = "Zamanı Güncelle";
+"adjust_time_success" = "Zaman başarıyla güncellendi!";
+
+"reset_section" = "İlerleme";
+"reset_progress" = "İlerlemeni Sıfırla";
+"reset_confirm_title" = "İlerleme sıfırlansın mı?";
+"reset_confirm_action" = "Sıfırla";
+
+"delete_skill" = "Beceriyi Sil";
+"delete_confirm_title" = "Emin misin?";
+"delete_confirm_message" = "Bu işlem geri alınamaz.";
+"delete_confirm_action" = "Sil";
+
+"cancel" = "İptal";
+
+// MARK: - FABButton
+"fab_add_skill" = "Yeni beceri ekle";
+"fab_view_stats" = "İstatistikleri Görüntüle";

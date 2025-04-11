@@ -1,0 +1,136 @@
+// Hebrew
+
+// MARK: - MainView
+"main_manage_trackers" = "ניהול מעקבים";
+"main_learning_theory" = "תאוריית למידה";
+"main_about_app" = "אודות האפליקציה";
+
+// MARK: - StartView
+"tracking_title" = "מעקב מיומנויות";
+"tracking_nav_title" = "המיומנויות שלך";
+"sort_by_label" = "מיין לפי";
+
+"sort_name_asc" = "שם ↑";
+"sort_name_desc" = "שם ↓";
+"sort_time_asc" = "זמן ↑";
+"sort_time_desc" = "זמן ↓";
+
+"empty_message_title" = "אין מיומנויות במעקב";
+"empty_message_description" = "הקש על כפתור הפלוס כדי להתחיל לעקוב אחר המיומנות הראשונה שלך.";
+
+"button_back" = "חזרה";
+
+// MARK: - SkillProgressView
+"SkillName" = "שם המיומנות";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "הזן שם מיומנות";
+"add_skill" = "הוסף מיומנות";
+"new_skill" = "מיומנות חדשה";
+"cancel" = "ביטול";
+
+// MARK: - AboutView
+"ab_section_about_app" = "אודות האפליקציה";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "גרסה 1.0";
+"ab_developer" = "פותח על ידי גרגוז' קולשזה";
+
+"ab_section_purpose" = "מטרת האפליקציה";
+"ab_purpose_major_system" = "ללמוד טוב יותר על ידי מעקב אחר הזמן שאתה משקיע.";
+"ab_purpose_large_numbers" = "לעקוב אחרי מטרות גדולות עם משוב חזותי.";
+"ab_purpose_dates" = "השתמש במערכות גמישות כמו 20, 100, 1000 שעות...";
+"ab_purpose_words" = "שפר את הזיכרון שלך בעזרת התמדה.";
+
+"ab_section_support" = "תמיכה";
+"ab_support_developer" = "תמוך במפתח";
+"ab_navigation_title" = "אודות";
+
+// MARK: - SupportDeveloperView
+"support_title" = "תמוך בפיתוח";
+"support_description" = "אם אתה אוהב את האפליקציה, תוכל להזמין לי קפה!";
+"support_button" = "תמוך דרך PayPal";
+"support_nav_title" = "תמיכה";
+
+// MARK: - TheoryView
+"theory_title" = "תאוריות זמן למידה";
+
+"theory_10k_title" = "חוק 10,000 השעות";
+"theory_10k_author" = "מלקולם גלדוול (בהשראת אנדרס אריקסון)";
+"theory_10k_description" = "כדי להגיע לרמת שליטה, דרושות כעשרת אלפים שעות של תרגול מכוון. תקף למבצעים עיליתיים (מוזיקאים, ספורטאים, שחמטאים). לא רק כמות אלא גם איכות. ספג ביקורת על פשטנות יתר.";
+"theory_10k_works" = "✔️ תחומים מדויקים, קריירה מקצועית\n✖️ לא מתאים להתחלה מהירה";
+
+"theory_20_title" = "חוק 20/21 השעות";
+"theory_20_author" = "ג'וש קאופמן";
+"theory_20_description" = "רק עשרים שעות של למידה ממוקדת מספיקות כדי להתחיל ליהנות מיכולת חדשה. אידיאלי לתחביבים או רמה בסיסית (לדוגמה: יוקולילי, שפה זרה בסיסית, יוגה).";
+"theory_20_works" = "✔️ התחלה מהירה, תחביבים\n✖️ לא מתאים לרמת שליטה";
+
+"theory_100_title" = "חוק 100 השעות";
+"theory_100_author" = "קונספט חינוכי בלתי פורמלי";
+"theory_100_description" = "כמאה שעות מביאות לרמת מיומנות טובה — מתאים לצילום, בישול, ציור, נהיגה או שימוש באקסל.";
+"theory_100_works" = "✔️ מיומנויות פרקטיות, הסבת מקצוע\n✖️ לא רמת מומחה";
+
+"theory_1000_title" = "חוק 1,000 השעות";
+"theory_1000_author" = "פופולרי ב-IT, שפות, פרילנסרים";
+"theory_1000_description" = "אלף שעות של אימון ממוקד מספיקות כדי להגיע לרמה מקצועית — ממורים למוזיקה וטבחים ועד למתרגמים ומדריכי יוגה. מספיק כדי ללמד או להרוויח.";
+"theory_1000_works" = "✔️ עצמאות מקצועית\n✖️ לא רמה עילית";
+
+"theory_comparison_title" = "📈 השוואה";
+"theory_comparison_text" = "• 20 שעות → התחלה טובה (חובבן)\n• 100 שעות → מוצק (ביניים)\n• 1,000 שעות → מקצוען\n• 10,000 שעות → מומחה (מאסטר)";
+
+"theory_nav_title" = "תאוריית למידה";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 סקירת התקדמות";
+"stats_nav_title" = "הסטטיסטיקה שלך";
+"button_done" = "סיום";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 סיכום";
+"stats_total_hours" = "סה\"כ שעות";
+"stats_skill_count" = "מיומנויות";
+"stats_active_timers" = "טיימרים פעילים";
+"stats_first_tracked" = "מעקב ראשון";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 מיומנויות מובילות";
+"stats_top_skills_empty_msg" = "אין עדיין נתונים. התחל מעקב כדי לראות את המובילות כאן!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 זמן במעקב";
+"stats_week_label" = "שבוע";
+"stats_month_label" = "חודש";
+"stats_total_label" = "סה\"כ";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 יומן פעילות";
+"activity_log_empty_message" = "אין פעילות אחרונה.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "אפשרויות מיומנות";
+"done" = "סיום";
+
+"skill_name_section" = "שם";
+"skill_name_label" = "שם המיומנות";
+
+"adjust_time_section" = "כוונון זמן";
+"adjust_hours_placeholder" = "שעות להוספה/הפחתה";
+"adjust_minutes_placeholder" = "דקות להוספה/הפחתה";
+"adjust_time_hint" = "הזן ערך חיובי או שלילי.\nלדוגמה: ‎-30 דקות מפחית חצי שעה.";
+"adjust_time_apply" = "החל שינוי";
+"adjust_time_success" = "הזמן עודכן בהצלחה!";
+
+"reset_section" = "התקדמות";
+"reset_progress" = "איפוס התקדמות";
+"reset_confirm_title" = "האם לאפס את ההתקדמות?";
+"reset_confirm_action" = "איפוס";
+
+"delete_skill" = "מחק מיומנות";
+"delete_confirm_title" = "האם אתה בטוח?";
+"delete_confirm_message" = "לא ניתן לבטל פעולה זו.";
+"delete_confirm_action" = "מחק";
+
+"cancel" = "ביטול";
+
+// MARK: - FABButton
+"fab_add_skill" = "הוסף מיומנות חדשה";
+"fab_view_stats" = "הצג סטטיסטיקות";

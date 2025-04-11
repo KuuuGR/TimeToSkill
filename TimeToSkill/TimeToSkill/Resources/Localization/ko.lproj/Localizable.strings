@@ -1,0 +1,136 @@
+// Korean
+
+// MARK: - MainView
+"main_manage_trackers" = "트래커 관리";
+"main_learning_theory" = "학습 이론";
+"main_about_app" = "앱 정보";
+
+// MARK: - StartView
+"tracking_title" = "스킬 추적";
+"tracking_nav_title" = "나의 스킬";
+"sort_by_label" = "정렬 기준";
+
+"sort_name_asc" = "이름 ↑";
+"sort_name_desc" = "이름 ↓";
+"sort_time_asc" = "시간 ↑";
+"sort_time_desc" = "시간 ↓";
+
+"empty_message_title" = "추적된 스킬이 없습니다";
+"empty_message_description" = "플러스 버튼을 눌러 첫 번째 스킬을 추가하세요.";
+
+"button_back" = "뒤로";
+
+// MARK: - SkillProgressView
+"SkillName" = "스킬 이름";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "스킬 이름 입력";
+"add_skill" = "스킬 추가";
+"new_skill" = "새 스킬";
+"cancel" = "취소";
+
+// MARK: - AboutView
+"ab_section_about_app" = "앱 정보";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "버전 1.0";
+"ab_developer" = "개발자: Grzegorz Kulesza";
+
+"ab_section_purpose" = "앱의 목적";
+"ab_purpose_major_system" = "투자한 시간을 추적하며 더 효과적으로 학습하세요.";
+"ab_purpose_large_numbers" = "시각적 피드백으로 큰 목표를 추적하세요.";
+"ab_purpose_dates" = "20시간, 100시간, 1000시간 같은 유연한 시스템을 활용하세요.";
+"ab_purpose_words" = "일관성을 통해 기억력을 향상시키세요.";
+
+"ab_section_support" = "지원";
+"ab_support_developer" = "개발자 지원";
+"ab_navigation_title" = "앱 정보";
+
+// MARK: - SupportDeveloperView
+"support_title" = "개발 지원";
+"support_description" = "앱이 마음에 들면 커피 한 잔으로 응원해주세요!";
+"support_button" = "PayPal로 지원";
+"support_nav_title" = "지원";
+
+// MARK: - TheoryView
+"theory_title" = "학습 시간 이론";
+
+"theory_10k_title" = "1만 시간 법칙";
+"theory_10k_author" = "말콤 글래드웰 (앤더스 에릭슨 기반)";
+"theory_10k_description" = "달인이 되려면 약 만 시간의 의도적인 연습이 필요합니다. 음악가, 운동선수, 체스 선수 등 엘리트 수행자에게 해당됩니다. 양뿐만 아니라 질도 중요합니다. 지나치게 단순화되었다는 비판도 있습니다.";
+"theory_10k_works" = "✔️ 정밀 분야, 프로 경력\n✖️ 초보자에게는 비효율적";
+
+"theory_20_title" = "20/21시간 법칙";
+"theory_20_author" = "조쉬 카우프만";
+"theory_20_description" = "20시간의 집중 학습이면 새로운 기술을 즐기기 시작할 수 있습니다. 우쿨렐레, 외국어 기초, 요가 등 취미나 기초 수준에 적합합니다.";
+"theory_20_works" = "✔️ 빠른 시작, 취미\n✖️ 달인 수준에는 부족";
+
+"theory_100_title" = "100시간 법칙";
+"theory_100_author" = "비공식 교육 개념";
+"theory_100_description" = "약 100시간의 학습은 사진, 요리, 그림, 운전, 엑셀 등 실용적인 기술을 익히기에 충분합니다.";
+"theory_100_works" = "✔️ 실용 기술, 직무 전환\n✖️ 전문가 수준은 아님";
+
+"theory_1000_title" = "1,000시간 법칙";
+"theory_1000_author" = "IT, 언어, 프리랜스 분야에서 인기";
+"theory_1000_description" = "1,000시간의 집중 훈련으로 전문 수준에 도달할 수 있습니다. 음악 교사, 요리사, 번역가, 요가 강사 등에게 적합합니다.";
+"theory_1000_works" = "✔️ 전문가 수준의 자립\n✖️ 세계 최정상 수준은 아님";
+
+"theory_comparison_title" = "📈 비교";
+"theory_comparison_text" = "• 20시간 → 좋은 출발 (아마추어)\n• 100시간 → 견고함 (중급자)\n• 1,000시간 → 전문가\n• 10,000시간 → 달인 (엘리트)";
+
+"theory_nav_title" = "학습 이론";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 스킬 진행 개요";
+"stats_nav_title" = "나의 통계";
+"button_done" = "완료";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 요약";
+"stats_total_hours" = "총 시간";
+"stats_skill_count" = "스킬 수";
+"stats_active_timers" = "활성 타이머";
+"stats_first_tracked" = "첫 기록";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 최고 스킬";
+"stats_top_skills_empty_msg" = "아직 스킬이 없습니다. 추적을 시작하여 최고 스킬을 확인하세요!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 추적된 시간";
+"stats_week_label" = "주";
+"stats_month_label" = "월";
+"stats_total_label" = "합계";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 활동 로그";
+"activity_log_empty_message" = "최근 활동이 없습니다.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "스킬 옵션";
+"done" = "완료";
+
+"skill_name_section" = "이름";
+"skill_name_label" = "스킬 이름";
+
+"adjust_time_section" = "시간 조정";
+"adjust_hours_placeholder" = "추가/제거할 시간(시)";
+"adjust_minutes_placeholder" = "추가/제거할 시간(분)";
+"adjust_time_hint" = "양수 또는 음수를 입력하세요.\n예: -30분은 30분 감소합니다.";
+"adjust_time_apply" = "시간 변경 적용";
+"adjust_time_success" = "시간이 성공적으로 업데이트되었습니다!";
+
+"reset_section" = "진행 상황";
+"reset_progress" = "진행 상황 초기화";
+"reset_confirm_title" = "진행 상황을 정말 초기화하시겠습니까?";
+"reset_confirm_action" = "초기화";
+
+"delete_skill" = "스킬 삭제";
+"delete_confirm_title" = "정말 삭제하시겠습니까?";
+"delete_confirm_message" = "이 작업은 되돌릴 수 없습니다.";
+"delete_confirm_action" = "삭제";
+
+"cancel" = "취소";
+
+// MARK: - FABButton
+"fab_add_skill" = "새 스킬 추가";
+"fab_view_stats" = "통계 보기";

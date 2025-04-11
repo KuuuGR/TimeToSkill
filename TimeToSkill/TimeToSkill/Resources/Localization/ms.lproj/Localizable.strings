@@ -1,0 +1,136 @@
+// Malay
+
+// MARK: - MainView
+"main_manage_trackers" = "Urus Penjejak";
+"main_learning_theory" = "Teori Pembelajaran";
+"main_about_app" = "Mengenai Aplikasi";
+
+// MARK: - StartView
+"tracking_title" = "Penjejakan Kemahiran";
+"tracking_nav_title" = "Kemahiran Anda";
+"sort_by_label" = "Isih Mengikut";
+
+"sort_name_asc" = "Nama ↑";
+"sort_name_desc" = "Nama ↓";
+"sort_time_asc" = "Masa ↑";
+"sort_time_desc" = "Masa ↓";
+
+"empty_message_title" = "Tiada kemahiran dijejak";
+"empty_message_description" = "Tekan butang tambah untuk mula menjejak kemahiran pertama anda.";
+
+"button_back" = "Kembali";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nama Kemahiran";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Masukkan nama kemahiran";
+"add_skill" = "Tambah Kemahiran";
+"new_skill" = "Kemahiran Baru";
+"cancel" = "Batal";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Mengenai Aplikasi";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Versi 1.0";
+"ab_developer" = "Dibangunkan oleh Grzegorz Kulesza";
+
+"ab_section_purpose" = "Tujuan Aplikasi Ini";
+"ab_purpose_major_system" = "Belajar dengan lebih baik melalui penjejakan masa pelaburan anda.";
+"ab_purpose_large_numbers" = "Jejak matlamat besar dengan maklum balas visual.";
+"ab_purpose_dates" = "Gunakan sistem fleksibel seperti 20j, 100j, 1000j...";
+"ab_purpose_words" = "Tingkatkan ingatan melalui konsistensi.";
+
+"ab_section_support" = "Sokongan";
+"ab_support_developer" = "Sokong Pembangun";
+"ab_navigation_title" = "Mengenai";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Sokong Pembangunan";
+"support_description" = "Jika anda suka aplikasi ini, anda boleh belanja saya kopi!";
+"support_button" = "Sokong melalui PayPal";
+"support_nav_title" = "Sokongan";
+
+// MARK: - TheoryView
+"theory_title" = "Teori Masa Pembelajaran";
+
+"theory_10k_title" = "Peraturan 10,000 Jam";
+"theory_10k_author" = "Malcolm Gladwell (berdasarkan Anders Ericsson)";
+"theory_10k_description" = "Untuk mencapai tahap mahir, anda memerlukan kira-kira sepuluh ribu jam latihan yang disengajakan. Digunakan oleh penggiat elit (pemusik, atlet, pemain catur). Kualiti latihan juga penting, bukan sekadar kuantiti. Dikritik kerana terlalu mudah.";
+"theory_10k_works" = "✔️ Bidang tepat, kerjaya profesional\n✖️ Kurang berguna untuk permulaan";
+
+"theory_20_title" = "Peraturan 20/21 Jam";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Hanya dua puluh jam pembelajaran fokus cukup untuk mula menikmati kemahiran baru. Sesuai untuk hobi atau tahap asas (cth. ukulele, frasa asas bahasa, yoga).";
+"theory_20_works" = "✔️ Permulaan pantas, hobi\n✖️ Tidak mencapai tahap pakar";
+
+"theory_100_title" = "Peraturan 100 Jam";
+"theory_100_author" = "Konsep pendidikan tidak formal";
+"theory_100_description" = "Sekitar seratus jam memberi kemahiran yang mantap — sesuai untuk belajar fotografi, memasak, melukis, memandu atau Excel.";
+"theory_100_works" = "✔️ Kemahiran praktikal, perubahan kerjaya\n✖️ Bukan tahap pakar";
+
+"theory_1000_title" = "Peraturan 1,000 Jam";
+"theory_1000_author" = "Popular dalam IT, bahasa, freelance";
+"theory_1000_description" = "Seribu jam latihan fokus membolehkan anda mencapai tahap profesional — daripada guru muzik dan cef hingga penterjemah dan pengajar yoga.";
+"theory_1000_works" = "✔️ Tahap profesional bebas\n✖️ Bukan tahap elit dunia";
+
+"theory_comparison_title" = "📈 Perbandingan";
+"theory_comparison_text" = "• 20 jam → Permulaan Baik (Amatur)\n• 100 jam → Mantap (Pertengahan)\n• 1,000 jam → Profesional\n• 10,000 jam → Pakar (Elit)";
+
+"theory_nav_title" = "Teori Pembelajaran";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Gambaran Kemajuan Kemahiran";
+"stats_nav_title" = "Statistik Anda";
+"button_done" = "Selesai";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Ringkasan";
+"stats_total_hours" = "Jumlah Jam";
+"stats_skill_count" = "Bilangan Kemahiran";
+"stats_active_timers" = "Penjejak Aktif";
+"stats_first_tracked" = "Rekod Pertama";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Kemahiran Tertinggi";
+"stats_top_skills_empty_msg" = "Tiada kemahiran lagi. Mula menjejak untuk melihat kemahiran terbaik anda di sini!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Masa Dijejak";
+"stats_week_label" = "Minggu";
+"stats_month_label" = "Bulan";
+"stats_total_label" = "Jumlah";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Log Aktiviti";
+"activity_log_empty_message" = "Tiada aktiviti terkini.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Pilihan Kemahiran";
+"done" = "Selesai";
+
+"skill_name_section" = "Nama";
+"skill_name_label" = "Nama Kemahiran";
+
+"adjust_time_section" = "Laraskan Masa";
+"adjust_hours_placeholder" = "Jam untuk tambah/tolak";
+"adjust_minutes_placeholder" = "Minit untuk tambah/tolak";
+"adjust_time_hint" = "Masukkan nilai positif atau negatif.\nContoh: -30 minit akan menolak setengah jam.";
+"adjust_time_apply" = "Laksanakan Perubahan";
+"adjust_time_success" = "Masa berjaya dikemas kini!";
+
+"reset_section" = "Kemajuan";
+"reset_progress" = "Tetapkan Semula Kemajuan";
+"reset_confirm_title" = "Adakah anda pasti ingin menetapkan semula kemajuan?";
+"reset_confirm_action" = "Tetapkan Semula";
+
+"delete_skill" = "Padam Kemahiran";
+"delete_confirm_title" = "Adakah anda pasti?";
+"delete_confirm_message" = "Tindakan ini tidak boleh dibatalkan.";
+"delete_confirm_action" = "Padam";
+
+"cancel" = "Batal";
+
+// MARK: - FABButton
+"fab_add_skill" = "Tambah kemahiran baru";
+"fab_view_stats" = "Lihat statistik";

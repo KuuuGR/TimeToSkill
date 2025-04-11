@@ -1,0 +1,136 @@
+// Japanese
+
+// MARK: - MainView
+"main_manage_trackers" = "トラッカーを管理";
+"main_learning_theory" = "学習理論";
+"main_about_app" = "アプリについて";
+
+// MARK: - StartView
+"tracking_title" = "スキルトラッキング";
+"tracking_nav_title" = "あなたのスキル";
+"sort_by_label" = "並び替え";
+
+"sort_name_asc" = "名前 ↑";
+"sort_name_desc" = "名前 ↓";
+"sort_time_asc" = "時間 ↑";
+"sort_time_desc" = "時間 ↓";
+
+"empty_message_title" = "スキルがまだ追跡されていません";
+"empty_message_description" = "＋ボタンをタップして、最初のスキルの追跡を始めましょう。";
+
+"button_back" = "戻る";
+
+// MARK: - SkillProgressView
+"SkillName" = "スキル名";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "スキル名を入力";
+"add_skill" = "スキルを追加";
+"new_skill" = "新しいスキル";
+"cancel" = "キャンセル";
+
+// MARK: - AboutView
+"ab_section_about_app" = "アプリについて";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "バージョン 1.0";
+"ab_developer" = "開発者: Grzegorz Kulesza";
+
+"ab_section_purpose" = "アプリの目的";
+"ab_purpose_major_system" = "投資した時間を追跡することで、より効果的に学習しましょう。";
+"ab_purpose_large_numbers" = "視覚的なフィードバックで大きな目標を追跡。";
+"ab_purpose_dates" = "20時間、100時間、1000時間などの柔軟なシステムを活用。";
+"ab_purpose_words" = "一貫した努力で記憶力を向上。";
+
+"ab_section_support" = "サポート";
+"ab_support_developer" = "開発者を支援";
+"ab_navigation_title" = "アプリについて";
+
+// MARK: - SupportDeveloperView
+"support_title" = "開発をサポート";
+"support_description" = "このアプリが気に入ったら、コーヒーをおごってください！";
+"support_button" = "PayPalでサポート";
+"support_nav_title" = "サポート";
+
+// MARK: - TheoryView
+"theory_title" = "学習時間の理論";
+
+"theory_10k_title" = "1万時間の法則";
+"theory_10k_author" = "マルコム・グラッドウェル（アンダース・エリクソンに基づく）";
+"theory_10k_description" = "達人になるには、およそ一万時間の意図的な練習が必要です。音楽家、アスリート、チェスプレイヤーなどのエリートに当てはまります。量だけでなく質も重要。単純化しすぎと批判されることも。";
+"theory_10k_works" = "✔️ 精密分野、プロのキャリア\n✖️ 初心者には非効率";
+
+"theory_20_title" = "20/21時間の法則";
+"theory_20_author" = "ジョシュ・カウフマン";
+"theory_20_description" = "20時間の集中した学習で、新しいスキルを楽しみ始めることができます。趣味や基礎レベル（例：ウクレレ、初級語学、ヨガ）に最適。";
+"theory_20_works" = "✔️ すぐに始められる、趣味に最適\n✖️ 熟練レベルには不十分";
+
+"theory_100_title" = "100時間の法則";
+"theory_100_author" = "非公式な教育概念";
+"theory_100_description" = "約100時間でしっかりとしたスキルが身につきます。写真、料理、絵画、運転、Excelなどに最適。";
+"theory_100_works" = "✔️ 実用的なスキル、再訓練にも有効\n✖️ 専門家レベルではない";
+
+"theory_1000_title" = "1000時間の法則";
+"theory_1000_author" = "IT、語学、フリーランス界隈で人気";
+"theory_1000_description" = "1000時間の集中トレーニングで、プロフェッショナルレベルに到達。音楽講師、料理人、翻訳者、ヨガインストラクターなどに最適。";
+"theory_1000_works" = "✔️ プロとしての自立\n✖️ 世界的なエリートではない";
+
+"theory_comparison_title" = "📈 比較";
+"theory_comparison_text" = "• 20時間 → 良いスタート（アマチュア）\n• 100時間 → 安定（中級）\n• 1000時間 → プロフェッショナル\n• 10,000時間 → 達人（エリート）";
+
+"theory_nav_title" = "学習理論";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 進捗の概要";
+"stats_nav_title" = "あなたの統計";
+"button_done" = "完了";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 サマリー";
+"stats_total_hours" = "合計時間";
+"stats_skill_count" = "スキル数";
+"stats_active_timers" = "アクティブなタイマー";
+"stats_first_tracked" = "最初の記録";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 トップスキル";
+"stats_top_skills_empty_msg" = "まだスキルが記録されていません。追跡を始めて上位スキルを確認しましょう！";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 記録された時間";
+"stats_week_label" = "週";
+"stats_month_label" = "月";
+"stats_total_label" = "合計";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 アクティビティログ";
+"activity_log_empty_message" = "最近のアクティビティはありません。";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "スキルオプション";
+"done" = "完了";
+
+"skill_name_section" = "名前";
+"skill_name_label" = "スキル名";
+
+"adjust_time_section" = "時間の調整";
+"adjust_hours_placeholder" = "追加/削除する時間（時間）";
+"adjust_minutes_placeholder" = "追加/削除する時間（分）";
+"adjust_time_hint" = "正または負の値を入力。\n例: -30 分は30分を削除します。";
+"adjust_time_apply" = "時間を変更";
+"adjust_time_success" = "時間が正常に更新されました！";
+
+"reset_section" = "進捗";
+"reset_progress" = "進捗をリセット";
+"reset_confirm_title" = "本当に進捗をリセットしますか？";
+"reset_confirm_action" = "リセット";
+
+"delete_skill" = "スキルを削除";
+"delete_confirm_title" = "本当に削除しますか？";
+"delete_confirm_message" = "この操作は取り消せません。";
+"delete_confirm_action" = "削除";
+
+"cancel" = "キャンセル";
+
+// MARK: - FABButton
+"fab_add_skill" = "新しいスキルを追加";
+"fab_view_stats" = "統計を見る";

@@ -1,0 +1,136 @@
+// Hungarian
+
+// MARK: - MainView
+"main_manage_trackers" = "Időkövetők kezelése";
+"main_learning_theory" = "Tanuláselmélet";
+"main_about_app" = "Az alkalmazásról";
+
+// MARK: - StartView
+"tracking_title" = "Készségek követése";
+"tracking_nav_title" = "Készségeid";
+"sort_by_label" = "Rendezés szerint";
+
+"sort_name_asc" = "Név ↑";
+"sort_name_desc" = "Név ↓";
+"sort_time_asc" = "Idő ↑";
+"sort_time_desc" = "Idő ↓";
+
+"empty_message_title" = "Nincs követett készség";
+"empty_message_description" = "Koppints a plusz ikonra az első készség hozzáadásához.";
+
+"button_back" = "Vissza";
+
+// MARK: - SkillProgressView
+"SkillName" = "Készség neve";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Írd be a készség nevét";
+"add_skill" = "Készség hozzáadása";
+"new_skill" = "Új készség";
+"cancel" = "Mégse";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Az alkalmazásról";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Verzió 1.0";
+"ab_developer" = "Fejlesztő: Grzegorz Kulesza";
+
+"ab_section_purpose" = "Az alkalmazás célja";
+"ab_purpose_major_system" = "Tanulj hatékonyabban az időbefektetésed követésével.";
+"ab_purpose_large_numbers" = "Kövess nagy célokat vizuális visszajelzéssel.";
+"ab_purpose_dates" = "Használj rugalmas rendszereket, mint 20 óra, 100 óra, 1000 óra...";
+"ab_purpose_words" = "Fejleszd a memóriád következetességgel.";
+
+"ab_section_support" = "Támogatás";
+"ab_support_developer" = "Támogasd a fejlesztőt";
+"ab_navigation_title" = "Az alkalmazásról";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Fejlesztés támogatása";
+"support_description" = "Ha tetszik az alkalmazás, hívj meg egy kávéra!";
+"support_button" = "Támogatás PayPalon keresztül";
+"support_nav_title" = "Támogatás";
+
+// MARK: - TheoryView
+"theory_title" = "Tanulási időelméletek";
+
+"theory_10k_title" = "10 000 órás szabály";
+"theory_10k_author" = "Malcolm Gladwell (Anders Ericsson alapján)";
+"theory_10k_description" = "A mesterszint eléréséhez körülbelül tízezer óra tudatos gyakorlás szükséges. Elit előadókra (zenészek, sportolók, sakkjátékosok) jellemző. Nemcsak a mennyiség, hanem a minőség is számít. Kritika: túlzott egyszerűsítés.";
+"theory_10k_works" = "✔️ Precíz szakmák, profi karrier\n✖️ Nem hasznos kezdéshez";
+
+"theory_20_title" = "20/21 órás szabály";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Csak 20 óra fókuszált tanulás elég ahhoz, hogy élvezd az új készséget. Ideális hobbikhoz vagy alapfokhoz (pl. ukulele, A1 nyelvi szint, jóga).";
+"theory_20_works" = "✔️ Gyors kezdés, hobbik\n✖️ Nem vezet mesterszinthez";
+
+"theory_100_title" = "100 órás szabály";
+"theory_100_author" = "Informális oktatási koncepció";
+"theory_100_description" = "Körülbelül száz óra biztos alapot ad — alkalmas fotózáshoz, főzéshez, festéshez, autóvezetéshez vagy Excel használathoz.";
+"theory_100_works" = "✔️ Gyakorlati készségek, átképzés\n✖️ Nem szakértői szint";
+
+"theory_1000_title" = "1 000 órás szabály";
+"theory_1000_author" = "Népszerű az IT, nyelvek és szabadúszás területén";
+"theory_1000_description" = "Ezer óra intenzív tanulás profi szintre juttat — zeneoktatók, szakácsok, fordítók vagy jógaoktatók szintjére.";
+"theory_1000_works" = "✔️ Profi szintű önállóság\n✖️ Nem elit szint";
+
+"theory_comparison_title" = "📈 Összehasonlítás";
+"theory_comparison_text" = "• 20 óra → Jó kezdet (Amatőr)\n• 100 óra → Szilárd (Középhaladó)\n• 1 000 óra → Profi\n• 10 000 óra → Mester (Elit)";
+
+"theory_nav_title" = "Tanuláselmélet";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Készségfejlődés áttekintése";
+"stats_nav_title" = "Statisztikáid";
+"button_done" = "Kész";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Összegzés";
+"stats_total_hours" = "Összes óra";
+"stats_skill_count" = "Készségek";
+"stats_active_timers" = "Aktív trackerek";
+"stats_first_tracked" = "Első követés";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Legjobb készségek";
+"stats_top_skills_empty_msg" = "Még nincs adat. Kezdd el a követést, hogy itt megjelenjenek!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Követett idő";
+"stats_week_label" = "Hét";
+"stats_month_label" = "Hónap";
+"stats_total_label" = "Összesen";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Aktivitásnapló";
+"activity_log_empty_message" = "Nincs friss aktivitás.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Készség beállításai";
+"done" = "Kész";
+
+"skill_name_section" = "Név";
+"skill_name_label" = "Készség neve";
+
+"adjust_time_section" = "Idő módosítása";
+"adjust_hours_placeholder" = "Hozzáadandó/levonandó órák";
+"adjust_minutes_placeholder" = "Hozzáadandó/levonandó percek";
+"adjust_time_hint" = "Írj be pozitív vagy negatív értékeket.\nPélda: -30 perc fél óra levonása.";
+"adjust_time_apply" = "Változás alkalmazása";
+"adjust_time_success" = "Az idő sikeresen frissítve!";
+
+"reset_section" = "Fejlődés";
+"reset_progress" = "Fejlődés visszaállítása";
+"reset_confirm_title" = "Biztos vagy benne, hogy visszaállítod a fejlődést?";
+"reset_confirm_action" = "Visszaállítás";
+
+"delete_skill" = "Készség törlése";
+"delete_confirm_title" = "Biztos vagy benne?";
+"delete_confirm_message" = "Ez a művelet nem visszavonható.";
+"delete_confirm_action" = "Törlés";
+
+"cancel" = "Mégse";
+
+// MARK: - FABButton
+"fab_add_skill" = "Új készség hozzáadása";
+"fab_view_stats" = "Statisztikák megtekintése";

@@ -1,0 +1,136 @@
+// Swedish
+
+// MARK: - MainView
+"main_manage_trackers" = "Hantera spårare";
+"main_learning_theory" = "Inlärningsteori";
+"main_about_app" = "Om appen";
+
+// MARK: - StartView
+"tracking_title" = "Spårning av färdigheter";
+"tracking_nav_title" = "Dina färdigheter";
+"sort_by_label" = "Sortera efter";
+
+"sort_name_asc" = "Namn ↑";
+"sort_name_desc" = "Namn ↓";
+"sort_time_asc" = "Tid ↑";
+"sort_time_desc" = "Tid ↓";
+
+"empty_message_title" = "Inga färdigheter spårade än";
+"empty_message_description" = "Tryck på plusknappen för att börja spåra din första färdighet.";
+
+"button_back" = "Tillbaka";
+
+// MARK: - SkillProgressView
+"SkillName" = "Färdighetsnamn";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Ange färdighetsnamn";
+"add_skill" = "Lägg till färdighet";
+"new_skill" = "Ny färdighet";
+"cancel" = "Avbryt";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Om appen";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Version 1.0";
+"ab_developer" = "Skapad av Grzegorz Kulesza";
+
+"ab_section_purpose" = "Syftet med appen";
+"ab_purpose_major_system" = "Lär dig bättre genom att spåra den tid du investerar.";
+"ab_purpose_large_numbers" = "Spåra stora mål med visuell återkoppling.";
+"ab_purpose_dates" = "Använd flexibla system som 20h, 100h, 1000h...";
+"ab_purpose_words" = "Förbättra ditt minne genom konsekvens.";
+
+"ab_section_support" = "Stöd";
+"ab_support_developer" = "Stöd utvecklaren";
+"ab_navigation_title" = "Om";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Stöd utvecklingen";
+"support_description" = "Om du gillar appen kan du bjuda mig på kaffe!";
+"support_button" = "Stöd via PayPal";
+"support_nav_title" = "Stöd";
+
+// MARK: - TheoryView
+"theory_title" = "Inlärningstidsteorier";
+
+"theory_10k_title" = "10 000-timmarsregeln";
+"theory_10k_author" = "Malcolm Gladwell (baserat på Anders Ericsson)";
+"theory_10k_description" = "För att uppnå mästerskap krävs cirka tiotusen timmars medveten övning. Gäller elitutövare (musiker, idrottare, schackspelare). Det handlar inte bara om kvantitet, utan även kvalitet. Kritiserad för förenkling.";
+"theory_10k_works" = "✔️ Exakta områden, proffskarriär\n✖️ Inte bra för nybörjare";
+
+"theory_20_title" = "20/21-timmarsregeln";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Bara tjugo timmars fokuserat lärande räcker för att börja njuta av en ny färdighet. Perfekt för hobbyer eller nybörjarnivå (t.ex. ukulele, grundläggande fraser i ett främmande språk, yoga).";
+"theory_20_works" = "✔️ Snabb start, hobby\n✖️ Leder inte till mästerskap";
+
+"theory_100_title" = "100-timmarsregeln";
+"theory_100_author" = "Informellt utbildningskoncept";
+"theory_100_description" = "Ungefär hundra timmar ger god kompetens — användbart för fotografering, matlagning, målning, bilkörning eller Excel.";
+"theory_100_works" = "✔️ Praktiska färdigheter, omskolning\n✖️ Inte expert-nivå";
+
+"theory_1000_title" = "1 000-timmarsregeln";
+"theory_1000_author" = "Populär inom IT, språk, frilans";
+"theory_1000_description" = "Tusen timmars fokuserat lärande ger professionell nivå – från musiklärare och kockar till översättare och yogainstruktörer.";
+"theory_1000_works" = "✔️ Självständig professionell nivå\n✖️ Inte elitnivå";
+
+"theory_comparison_title" = "📈 Jämförelse";
+"theory_comparison_text" = "• 20 timmar → Bra start (Amatör)\n• 100 timmar → Stabil nivå (Medelnivå)\n• 1 000 timmar → Professionell\n• 10 000 timmar → Mästare (Elit)";
+
+"theory_nav_title" = "Inlärningsteori";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Färdighetsöversikt";
+"stats_nav_title" = "Dina statistik";
+"button_done" = "Klar";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Sammanfattning";
+"stats_total_hours" = "Totala timmar";
+"stats_skill_count" = "Färdigheter";
+"stats_active_timers" = "Aktiva timrar";
+"stats_first_tracked" = "Första spårning";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Toppfärdigheter";
+"stats_top_skills_empty_msg" = "Inga färdigheter än. Börja spåra för att se dina toppfärdigheter här!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Spårad tid";
+"stats_week_label" = "Vecka";
+"stats_month_label" = "Månad";
+"stats_total_label" = "Totalt";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Aktivitetslogg";
+"activity_log_empty_message" = "Ingen nylig aktivitet.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Färdighetsalternativ";
+"done" = "Klar";
+
+"skill_name_section" = "Namn";
+"skill_name_label" = "Färdighetsnamn";
+
+"adjust_time_section" = "Justera tid";
+"adjust_hours_placeholder" = "Timmar att lägga till/ta bort";
+"adjust_minutes_placeholder" = "Minuter att lägga till/ta bort";
+"adjust_time_hint" = "Ange positiva eller negativa värden.\nExempel: -30 minuter drar bort en halvtimme.";
+"adjust_time_apply" = "Tillämpa ändring";
+"adjust_time_success" = "Tiden har uppdaterats!";
+
+"reset_section" = "Framsteg";
+"reset_progress" = "Återställ framsteg";
+"reset_confirm_title" = "Är du säker på att du vill återställa framsteg?";
+"reset_confirm_action" = "Återställ";
+
+"delete_skill" = "Ta bort färdighet";
+"delete_confirm_title" = "Är du säker?";
+"delete_confirm_message" = "Detta kan inte ångras.";
+"delete_confirm_action" = "Ta bort";
+
+"cancel" = "Avbryt";
+
+// MARK: - FABButton
+"fab_add_skill" = "Lägg till ny färdighet";
+"fab_view_stats" = "Visa statistik";

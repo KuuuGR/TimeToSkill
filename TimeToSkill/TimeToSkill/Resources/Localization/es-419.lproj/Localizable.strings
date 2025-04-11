@@ -1,0 +1,137 @@
+// Spanish (Latin America)
+
+// MARK: - MainView
+"main_manage_trackers" = "Administrar Seguimientos";
+"main_learning_theory" = "Teoría del Aprendizaje";
+"main_about_app" = "Acerca de la App";
+
+// MARK: - StartView
+"tracking_title" = "Seguimiento de Habilidades";
+"tracking_nav_title" = "Tus Habilidades";
+"sort_by_label" = "Ordenar por";
+
+"sort_name_asc" = "Nombre ↑";
+"sort_name_desc" = "Nombre ↓";
+"sort_time_asc" = "Tiempo ↑";
+"sort_time_desc" = "Tiempo ↓";
+
+"empty_message_title" = "No se están siguiendo habilidades";
+"empty_message_description" = "Toca el botón más para comenzar a seguir tu primera habilidad.";
+
+"button_back" = "Atrás";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nombre de la Habilidad";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Ingresa el nombre de la habilidad";
+"add_skill" = "Agregar Habilidad";
+"new_skill" = "Nueva Habilidad";
+"cancel" = "Cancelar";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Acerca de la App";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Versión 1.0";
+"ab_developer" = "Creado por Grzegorz Kulesza";
+
+"ab_section_purpose" = "Propósito de la App";
+"ab_purpose_major_system" = "Aprende mejor registrando el tiempo que inviertes.";
+"ab_purpose_large_numbers" = "Sigue grandes metas con retroalimentación visual.";
+"ab_purpose_dates" = "Usa sistemas flexibles como 20h, 100h, 1000h...";
+"ab_purpose_words" = "Mejora tu memoria con constancia.";
+
+// MARK: - SupportDeveloperView
+"ab_section_support" = "Apoyo";
+"ab_support_developer" = "Apoyar al Desarrollador";
+"ab_navigation_title" = "Acerca de";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Apoyar el Desarrollo";
+"support_description" = "Si te gusta esta app, ¡puedes invitarme un café!";
+"support_button" = "Apoyar vía PayPal";
+"support_nav_title" = "Apoyo";
+
+// MARK: - TheoryView
+"theory_title" = "Teorías del Tiempo de Aprendizaje";
+
+"theory_10k_title" = "Regla de las 10 000 horas";
+"theory_10k_author" = "Malcolm Gladwell (basado en Anders Ericsson)";
+"theory_10k_description" = "Para alcanzar el dominio, necesitas unas diez mil horas de práctica deliberada. Aplica a los mejores (músicos, atletas, ajedrecistas). No es solo la cantidad, sino la calidad. Criticada por ser simplista.";
+"theory_10k_works" = "✔️ Campos precisos, carrera profesional\n✖️ Poco útil al comenzar";
+
+"theory_20_title" = "Regla de las 20/21 horas";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Solo necesitas veinte horas de aprendizaje enfocado para comenzar a disfrutar una nueva habilidad. Ideal para pasatiempos o nivel básico (como ukelele, nivel A1 de idioma).";
+"theory_20_works" = "✔️ Comienzo rápido, hobbies\n✖️ No lleva a la maestría";
+
+"theory_100_title" = "Regla de las 100 horas";
+"theory_100_author" = "Concepto educativo informal";
+"theory_100_description" = "Cien horas llevan a una competencia sólida — útil para fotografía, cocina, pintura, manejar o trabajar con Excel.";
+"theory_100_works" = "✔️ Habilidades prácticas, reentrenamiento\n✖️ No es nivel experto";
+
+"theory_1000_title" = "Regla de las 1 000 horas";
+"theory_1000_author" = "Popular en IT, idiomas, freelancers";
+"theory_1000_description" = "Mil horas de entrenamiento intensivo te hacen profesional — desde maestros de música y chefs hasta traductores e instructores de yoga.";
+"theory_1000_works" = "✔️ Independencia profesional\n✖️ No es nivel élite";
+
+"theory_comparison_title" = "📈 Comparación";
+"theory_comparison_text" = "• 20 horas → Buen comienzo (Amateur)\n• 100 horas → Sólido (Intermedio)\n• 1 000 horas → Profesional\n• 10 000 horas → Experto (Maestro)";
+
+"theory_nav_title" = "Teoría del Aprendizaje";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Resumen del Progreso";
+"stats_nav_title" = "Tus Estadísticas";
+"button_done" = "Hecho";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Resumen";
+"stats_total_hours" = "Horas Totales";
+"stats_skill_count" = "Habilidades";
+"stats_active_timers" = "Temporizadores Activos";
+"stats_first_tracked" = "Primer Registro";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Mejores Habilidades";
+"stats_top_skills_empty_msg" = "Aún no hay datos. ¡Empieza a registrar para ver tus mejores habilidades!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Tiempo Registrado";
+"stats_week_label" = "Semana";
+"stats_month_label" = "Mes";
+"stats_total_label" = "Total";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Registro de Actividades";
+"activity_log_empty_message" = "Sin actividad reciente.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opciones de Habilidad";
+"done" = "Hecho";
+
+"skill_name_section" = "Nombre";
+"skill_name_label" = "Nombre de la Habilidad";
+
+"adjust_time_section" = "Ajustar Tiempo";
+"adjust_hours_placeholder" = "Horas a añadir/quitar";
+"adjust_minutes_placeholder" = "Minutos a añadir/quitar";
+"adjust_time_hint" = "Ingresa valores positivos o negativos.\nEjemplo: -30 minutos resta media hora.";
+"adjust_time_apply" = "Aplicar Cambio de Tiempo";
+"adjust_time_success" = "¡Tiempo actualizado exitosamente!";
+
+"reset_section" = "Progreso";
+"reset_progress" = "Reiniciar Progreso";
+"reset_confirm_title" = "¿Seguro que quieres reiniciar el progreso?";
+"reset_confirm_action" = "Reiniciar";
+
+"delete_skill" = "Eliminar Habilidad";
+"delete_confirm_title" = "¿Estás seguro?";
+"delete_confirm_message" = "Esta acción no se puede deshacer.";
+"delete_confirm_action" = "Eliminar";
+
+"cancel" = "Cancelar";
+
+// MARK: - FABButton
+"fab_add_skill" = "Agregar nueva habilidad";
+"fab_view_stats" = "Ver estadísticas";

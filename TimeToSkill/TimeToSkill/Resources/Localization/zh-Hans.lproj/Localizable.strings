@@ -1,0 +1,136 @@
+// Chinese (Simplified)
+
+// MARK: - MainView
+"main_manage_trackers" = "管理跟踪器";
+"main_learning_theory" = "学习理论";
+"main_about_app" = "关于应用程序";
+
+// MARK: - StartView
+"tracking_title" = "技能跟踪";
+"tracking_nav_title" = "你的技能";
+"sort_by_label" = "排序方式";
+
+"sort_name_asc" = "名称 ↑";
+"sort_name_desc" = "名称 ↓";
+"sort_time_asc" = "时间 ↑";
+"sort_time_desc" = "时间 ↓";
+
+"empty_message_title" = "尚未跟踪任何技能";
+"empty_message_description" = "点击加号按钮开始跟踪你的第一个技能。";
+
+"button_back" = "返回";
+
+// MARK: - SkillProgressView
+"SkillName" = "技能名称";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "输入技能名称";
+"add_skill" = "添加技能";
+"new_skill" = "新技能";
+"cancel" = "取消";
+
+// MARK: - AboutView
+"ab_section_about_app" = "关于应用程序";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "版本 1.0";
+"ab_developer" = "作者：Grzegorz Kulesza";
+
+"ab_section_purpose" = "应用目的";
+"ab_purpose_major_system" = "通过跟踪你投入的时间来更高效地学习。";
+"ab_purpose_large_numbers" = "通过可视化反馈追踪大型目标。";
+"ab_purpose_dates" = "使用灵活的系统，如 20 小时、100 小时、1000 小时...";
+"ab_purpose_words" = "通过坚持提升记忆力。";
+
+"ab_section_support" = "支持";
+"ab_support_developer" = "支持开发者";
+"ab_navigation_title" = "关于应用程序";
+
+// MARK: - SupportDeveloperView
+"support_title" = "支持开发";
+"support_description" = "如果你喜欢这个应用程序，可以请我喝杯咖啡！";
+"support_button" = "通过 PayPal 支持";
+"support_nav_title" = "支持";
+
+// MARK: - TheoryView
+"theory_title" = "学习时间理论";
+
+"theory_10k_title" = "一万小时定律";
+"theory_10k_author" = "Malcolm Gladwell（基于 Anders Ericsson）";
+"theory_10k_description" = "要达到大师级水平，你需要大约一万小时的刻意练习。适用于精英表现者（音乐家、运动员、国际象棋大师）。不仅是数量，质量也很重要。此理论因过于简化而受到批评。";
+"theory_10k_works" = "✔️ 精准领域，职业生涯\n✖️ 不适合快速入门";
+
+"theory_20_title" = "20/21 小时法则";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "只需二十小时的专注学习就能开始享受一项新技能。非常适合爱好或入门级（如：尤克里里、A1语言、瑜伽）。";
+"theory_20_works" = "✔️ 快速入门、兴趣爱好\n✖️ 不适用于专业技能";
+
+"theory_100_title" = "一百小时法则";
+"theory_100_author" = "非正式教育概念";
+"theory_100_description" = "大约一百小时可建立扎实能力——适用于摄影、烹饪、绘画、驾驶或 Excel 等技能的学习。";
+"theory_100_works" = "✔️ 实用技能、转行\n✖️ 不属于专家级别";
+
+"theory_1000_title" = "一千小时法则";
+"theory_1000_author" = "在 IT、语言、自由职业中广泛使用";
+"theory_1000_description" = "一千小时的专注训练可让你达到职业水平——包括音乐教师、厨师、翻译、瑜伽教练等。足以教人或谋生。";
+"theory_1000_works" = "✔️ 专业水平\n✖️ 非世界顶尖";
+
+"theory_comparison_title" = "📈 对比";
+"theory_comparison_text" = "• 20 小时 → 良好开端（业余）\n• 100 小时 → 稳固水平（中级）\n• 1,000 小时 → 专业人士\n• 10,000 小时 → 大师（精英）";
+
+"theory_nav_title" = "学习理论";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 技能进度概览";
+"stats_nav_title" = "你的统计数据";
+"button_done" = "完成";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 总结";
+"stats_total_hours" = "总小时数";
+"stats_skill_count" = "技能数量";
+"stats_active_timers" = "活跃计时器";
+"stats_first_tracked" = "首次记录";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 顶级技能";
+"stats_top_skills_empty_msg" = "暂无技能数据。开始跟踪以查看顶级技能！";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 跟踪时间";
+"stats_week_label" = "周";
+"stats_month_label" = "月";
+"stats_total_label" = "总计";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 活动记录";
+"activity_log_empty_message" = "暂无近期活动。";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "技能选项";
+"done" = "完成";
+
+"skill_name_section" = "名称";
+"skill_name_label" = "技能名称";
+
+"adjust_time_section" = "调整时间";
+"adjust_hours_placeholder" = "要添加/减少的小时数";
+"adjust_minutes_placeholder" = "要添加/减少的分钟数";
+"adjust_time_hint" = "输入正值或负值。\n例如：-30 分钟表示减去半小时。";
+"adjust_time_apply" = "应用更改";
+"adjust_time_success" = "时间已成功更新！";
+
+"reset_section" = "进度";
+"reset_progress" = "重置进度";
+"reset_confirm_title" = "你确定要重置进度吗？";
+"reset_confirm_action" = "重置";
+
+"delete_skill" = "删除技能";
+"delete_confirm_title" = "你确定吗？";
+"delete_confirm_message" = "此操作无法撤销。";
+"delete_confirm_action" = "删除";
+
+"cancel" = "取消";
+
+// MARK: - FABButton
+"fab_add_skill" = "添加新技能";
+"fab_view_stats" = "查看统计数据";

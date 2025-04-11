@@ -1,0 +1,135 @@
+// Czech
+// MARK: - MainView
+"main_manage_trackers" = "Spravovat sledování";
+"main_learning_theory" = "Teorie učení";
+"main_about_app" = "O aplikaci";
+
+// MARK: - StartView
+"tracking_title" = "Sledování dovedností";
+"tracking_nav_title" = "Tvé dovednosti";
+"sort_by_label" = "Řadit podle";
+
+"sort_name_asc" = "Název ↑";
+"sort_name_desc" = "Název ↓";
+"sort_time_asc" = "Čas ↑";
+"sort_time_desc" = "Čas ↓";
+
+"empty_message_title" = "Žádné sledované dovednosti";
+"empty_message_description" = "Klepni na tlačítko plus a začni sledovat svou první dovednost.";
+
+"button_back" = "Zpět";
+
+// MARK: - SkillProgressView
+"SkillName" = "Název dovednosti";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Zadej název dovednosti";
+"add_skill" = "Přidat dovednost";
+"new_skill" = "Nová dovednost";
+"cancel" = "Zrušit";
+
+// MARK: - AboutView
+"ab_section_about_app" = "O aplikaci";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Verze 1.0";
+"ab_developer" = "Autor: Grzegorz Kulesza";
+
+"ab_section_purpose" = "Účel aplikace";
+"ab_purpose_major_system" = "Uč se efektivněji sledováním času, který investuješ.";
+"ab_purpose_large_numbers" = "Sleduj velké cíle pomocí vizuální zpětné vazby.";
+"ab_purpose_dates" = "Využij pružné systémy jako 20 h, 100 h, 1000 h...";
+"ab_purpose_words" = "Zlepši paměť díky konzistenci.";
+
+"ab_section_support" = "Podpora";
+"ab_support_developer" = "Podpoř vývojáře";
+"ab_navigation_title" = "O aplikaci";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Podpoř vývoj";
+"support_description" = "Líbí se ti aplikace? Kup mi kávu!";
+"support_button" = "Podpořit přes PayPal";
+"support_nav_title" = "Podpora";
+
+// MARK: - TheoryView
+"theory_title" = "Teorie času učení";
+
+"theory_10k_title" = "Pravidlo 10 000 hodin";
+"theory_10k_author" = "Malcolm Gladwell (na základě Andersa Ericssona)";
+"theory_10k_description" = "K dosažení mistrovství potřebuješ přibližně deset tisíc hodin vědomé praxe. Platí pro špičkové výkony (hudebníci, sportovci, šachisté). Nejde jen o množství, ale i o kvalitu. Kritizováno za zjednodušení.";
+"theory_10k_works" = "✔️ Precizní obory, profesionální kariéra\n✖️ Nevhodné na začátek";
+
+"theory_20_title" = "Pravidlo 20/21 hodin";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Stačí dvacet hodin soustředěného učení, abys začal mít radost z nové dovednosti. Ideální pro koníčky nebo základní úroveň (např. ukulele, jazyk A1).";
+"theory_20_works" = "✔️ Rychlý start, hobby\n✖️ Nevede k mistrovství";
+
+"theory_100_title" = "Pravidlo 100 hodin";
+"theory_100_author" = "Neformální vzdělávací koncept";
+"theory_100_description" = "Přibližně sto hodin poskytuje solidní kompetenci — vhodné pro frameworky, programování, fotografii, vaření nebo řízení.";
+"theory_100_works" = "✔️ Praktické dovednosti\n✖️ Ne expertní úroveň";
+
+"theory_1000_title" = "Pravidlo 1 000 hodin";
+"theory_1000_author" = "Populární v IT, jazycích, na volné noze";
+"theory_1000_description" = "Tisíc hodin intenzivního učení tě dostane na profesionální úroveň — vhodné pro překladatele, učitele hudby, kuchaře či instruktory jógy.";
+"theory_1000_works" = "✔️ Profesionální samostatnost\n✖️ Ne elitní úroveň";
+
+"theory_comparison_title" = "📈 Srovnání";
+"theory_comparison_text" = "• 20 hodin → Dobrý začátek (Amatér)\n• 100 hodin → Solidní (Středně pokročilý)\n• 1 000 hodin → Profesionál\n• 10 000 hodin → Mistr (Elita)";
+
+"theory_nav_title" = "Teorie učení";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Přehled pokroku";
+"stats_nav_title" = "Tvé statistiky";
+"button_done" = "Hotovo";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Souhrn";
+"stats_total_hours" = "Celkový čas";
+"stats_skill_count" = "Dovednosti";
+"stats_active_timers" = "Aktivní trackery";
+"stats_first_tracked" = "První záznam";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Nejlepší dovednosti";
+"stats_top_skills_empty_msg" = "Zatím žádná data. Začni sledovat, aby se zobrazily nejlepší dovednosti!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Sledovaný čas";
+"stats_week_label" = "Týden";
+"stats_month_label" = "Měsíc";
+"stats_total_label" = "Celkem";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Historie aktivit";
+"activity_log_empty_message" = "Žádné nedávné aktivity.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Možnosti dovednosti";
+"done" = "Hotovo";
+
+"skill_name_section" = "Název";
+"skill_name_label" = "Název dovednosti";
+
+"adjust_time_section" = "Upravit čas";
+"adjust_hours_placeholder" = "Hodiny k přidání/odečtení";
+"adjust_minutes_placeholder" = "Minuty k přidání/odečtení";
+"adjust_time_hint" = "Zadej kladné nebo záporné hodnoty.\nPříklad: -30 minut odečte půl hodiny.";
+"adjust_time_apply" = "Použít změnu";
+"adjust_time_success" = "Čas byl úspěšně aktualizován!";
+
+"reset_section" = "Postup";
+"reset_progress" = "Resetovat postup";
+"reset_confirm_title" = "Opravdu chceš resetovat postup?";
+"reset_confirm_action" = "Resetovat";
+
+"delete_skill" = "Smazat dovednost";
+"delete_confirm_title" = "Jsi si jistý?";
+"delete_confirm_message" = "Tuto akci nelze vrátit zpět.";
+"delete_confirm_action" = "Smazat";
+
+"cancel" = "Zrušit";
+
+// MARK: - FABButton
+"fab_add_skill" = "Přidat novou dovednost";
+"fab_view_stats" = "Zobrazit statistiky";

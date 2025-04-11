@@ -1,0 +1,136 @@
+// Portuguese (Portugal)
+
+// MARK: - MainView
+"main_manage_trackers" = "Gerir registos";
+"main_learning_theory" = "Teoria da aprendizagem";
+"main_about_app" = "Sobre a aplicação";
+
+// MARK: - StartView
+"tracking_title" = "Registo de competências";
+"tracking_nav_title" = "As tuas competências";
+"sort_by_label" = "Ordenar por";
+
+"sort_name_asc" = "Nome ↑";
+"sort_name_desc" = "Nome ↓";
+"sort_time_asc" = "Tempo ↑";
+"sort_time_desc" = "Tempo ↓";
+
+"empty_message_title" = "Sem competências registadas";
+"empty_message_description" = "Toca no botão de mais para começares a registar a tua primeira competência.";
+
+"button_back" = "Voltar";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nome da competência";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Escreve o nome da competência";
+"add_skill" = "Adicionar competência";
+"new_skill" = "Nova competência";
+"cancel" = "Cancelar";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Sobre a aplicação";
+"ab_app_name" = "TimeToSkill";
+"ab_version" = "Versão 1.0";
+"ab_developer" = "Criado por Grzegorz Kulesza";
+
+"ab_section_purpose" = "Objetivo da aplicação";
+"ab_purpose_major_system" = "Aprende de forma mais eficaz ao acompanhar o tempo que investes.";
+"ab_purpose_large_numbers" = "Acompanha grandes metas com feedback visual.";
+"ab_purpose_dates" = "Utiliza sistemas flexíveis como 20h, 100h, 1000h...";
+"ab_purpose_words" = "Melhora a tua memória com consistência.";
+
+"ab_section_support" = "Apoio";
+"ab_support_developer" = "Apoia o desenvolvedor";
+"ab_navigation_title" = "Sobre";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Apoiar o desenvolvimento";
+"support_description" = "Se gostaste da aplicação, podes oferecer-me um café!";
+"support_button" = "Apoiar via PayPal";
+"support_nav_title" = "Apoio";
+
+// MARK: - TheoryView
+"theory_title" = "Teorias do tempo de aprendizagem";
+
+"theory_10k_title" = "Regra das 10 000 horas";
+"theory_10k_author" = "Malcolm Gladwell (baseado em Anders Ericsson)";
+"theory_10k_description" = "Para alcançar a mestria, são necessárias cerca de dez mil horas de prática deliberada. Aplica-se a executantes de elite (músicos, atletas, xadrezistas). Importa não só a quantidade, mas também a qualidade. Criticada por ser simplista.";
+"theory_10k_works" = "✔️ Áreas precisas, carreira profissional\n✖️ Pouco útil no início";
+
+"theory_20_title" = "Regra das 20/21 horas";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Bastam vinte horas de aprendizagem focada para começar a desfrutar de uma nova competência. Ideal para passatempos ou nível básico (ex: ukulele, idioma A1, yoga).";
+"theory_20_works" = "✔️ Início rápido, hobbies\n✖️ Não conduz à mestria";
+
+"theory_100_title" = "Regra das 100 horas";
+"theory_100_author" = "Conceito educacional informal";
+"theory_100_description" = "Cerca de cem horas resultam em competências sólidas — útil para fotografia, culinária, pintura, condução ou uso do Excel.";
+"theory_100_works" = "✔️ Competências práticas, reconversão\n✖️ Não é nível especialista";
+
+"theory_1000_title" = "Regra das 1 000 horas";
+"theory_1000_author" = "Popular em TI, línguas, freelancers";
+"theory_1000_description" = "Mil horas de treino focado permitem atingir um nível profissional — desde professores de música e cozinheiros até tradutores e instrutores de yoga.";
+"theory_1000_works" = "✔️ Autonomia profissional\n✖️ Não é nível de elite";
+
+"theory_comparison_title" = "📈 Comparação";
+"theory_comparison_text" = "• 20 horas → Bom começo (Amador)\n• 100 horas → Sólido (Intermédio)\n• 1 000 horas → Profissional\n• 10 000 horas → Especialista (Elite)";
+
+"theory_nav_title" = "Teoria da aprendizagem";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Visão geral do progresso";
+"stats_nav_title" = "As tuas estatísticas";
+"button_done" = "Concluído";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Resumo";
+"stats_total_hours" = "Total de horas";
+"stats_skill_count" = "Competências";
+"stats_active_timers" = "Temporizadores ativos";
+"stats_first_tracked" = "Primeiro registo";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Principais competências";
+"stats_top_skills_empty_msg" = "Ainda sem dados. Começa a registar para veres aqui as tuas melhores competências!";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Tempo registado";
+"stats_week_label" = "Semana";
+"stats_month_label" = "Mês";
+"stats_total_label" = "Total";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Registo de atividade";
+"activity_log_empty_message" = "Sem atividades recentes.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opções da competência";
+"done" = "Concluído";
+
+"skill_name_section" = "Nome";
+"skill_name_label" = "Nome da competência";
+
+"adjust_time_section" = "Ajustar tempo";
+"adjust_hours_placeholder" = "Horas a adicionar/subtrair";
+"adjust_minutes_placeholder" = "Minutos a adicionar/subtrair";
+"adjust_time_hint" = "Insere valores positivos ou negativos.\nExemplo: -30 minutos subtrai meia hora.";
+"adjust_time_apply" = "Aplicar alteração";
+"adjust_time_success" = "Tempo atualizado com sucesso!";
+
+"reset_section" = "Progresso";
+"reset_progress" = "Repor progresso";
+"reset_confirm_title" = "Tens a certeza que queres repor o progresso?";
+"reset_confirm_action" = "Repor";
+
+"delete_skill" = "Eliminar competência";
+"delete_confirm_title" = "Tens a certeza?";
+"delete_confirm_message" = "Esta ação não pode ser desfeita.";
+"delete_confirm_action" = "Eliminar";
+
+"cancel" = "Cancelar";
+
+// MARK: - FABButton
+"fab_add_skill" = "Adicionar nova competência";
+"fab_view_stats" = "Ver estatísticas";
