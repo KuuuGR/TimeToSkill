@@ -85,9 +85,11 @@ struct StartView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        FABButton(icon: "plus") {
-                            showingAddSkill = true
-                        }
+                        FABButton(
+                            icon: "plus",
+                            action: { showingAddSkill = true },
+                            accessibilityLabelKey: "fab_add_skill"
+                        )
                         .padding(20)
                     }
                 }

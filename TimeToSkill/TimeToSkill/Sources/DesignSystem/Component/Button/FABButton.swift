@@ -11,6 +11,7 @@ struct FABButton: View {
     var backgroundColor: Color = AppColors.primary
     var size: CGFloat = 56
     var animatePulse: Bool = false
+    var accessibilityLabelKey: String? = nil
 
     @State private var animatedOnce = false
     @State private var isAnimating = false
@@ -39,6 +40,7 @@ struct FABButton: View {
                 .shadow(color: .black.opacity(0.25), radius: 8, y: 4)
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(accessibilityLabelKey != nil ? LocalizedStringKey(accessibilityLabelKey!) : "")
         .onAppear {
             // Run a one-time gentle animation
             if animatePulse && !animatedOnce {

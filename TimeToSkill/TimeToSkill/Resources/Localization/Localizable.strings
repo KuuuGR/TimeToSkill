@@ -130,3 +130,7 @@
 
 "cancel" = "Cancel";
 
+// MARK: - FABButton
+"fab_add_skill" = "Add a new skill";
+"fab_view_stats" = "View statistics";
+

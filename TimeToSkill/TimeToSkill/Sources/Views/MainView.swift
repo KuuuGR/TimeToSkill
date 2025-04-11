@@ -105,9 +105,10 @@ struct MainView: View {
                                 showStats = true
                                 hasSeenFABAnimation = true
                             },
-                            backgroundColor: .warningDark,
+                            backgroundColor: Color.warningDark,
                             size: 64,
-                            animatePulse: !hasSeenFABAnimation
+                            animatePulse: !hasSeenFABAnimation,
+                            accessibilityLabelKey: "fab_view_stats"
                         )
                         .sheet(isPresented: $showStats) {
                             StatsView()
