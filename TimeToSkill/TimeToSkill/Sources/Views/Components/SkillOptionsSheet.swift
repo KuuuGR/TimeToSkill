@@ -35,8 +35,8 @@ struct SkillOptionsSheet: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text("Name")) {
-                    Text("Skill Name")
+                Section(header: Text(LocalizedStringKey("skill_name_section"))) {
+                    Text(LocalizedStringKey("skill_name_label"))
                         .font(.caption)
                         .foregroundColor(.secondary)
 
@@ -53,6 +53,7 @@ struct SkillOptionsSheet: View {
                                 newName = String(newName.prefix(255))
                             }
                         }
+
                     HStack {
                         Spacer()
                         Text("\(newName.count)/255")
@@ -61,27 +62,27 @@ struct SkillOptionsSheet: View {
                     }
                 }
 
-                Section(header: Text("Adjust Time")) {
+                Section(header: Text(LocalizedStringKey("adjust_time_section"))) {
                     VStack(alignment: .leading, spacing: 8) {
-                        TextField("Hours to add/subtract", text: $adjustHours)
+                        TextField(LocalizedStringKey("adjust_hours_placeholder"), text: $adjustHours)
                             .keyboardType(.numbersAndPunctuation)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
 
-                        TextField("Minutes to add/subtract", text: $adjustMinutes)
+                        TextField(LocalizedStringKey("adjust_minutes_placeholder"), text: $adjustMinutes)
                             .keyboardType(.numbersAndPunctuation)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
 
-                        Text("Enter positive or negative values.\nExample: -30 minutes subtracts half an hour.")
+                        Text(LocalizedStringKey("adjust_time_hint"))
                             .font(.footnote)
                             .foregroundColor(.secondary)
 
                         if showSuccessMessage {
-                            Text("Time updated successfully!")
+                            Text(LocalizedStringKey("adjust_time_success"))
                                 .foregroundColor(.green)
                                 .font(.footnote)
                         }
 
-                        Button("Apply Time Change") {
+                        Button(LocalizedStringKey("adjust_time_apply")) {
                             applyTimeChange()
                         }
                         .disabled(!isValidInput)
@@ -92,12 +93,12 @@ struct SkillOptionsSheet: View {
                     }
                 }
 
-                Section(header: Text("Progress")) {
-                    Button("Reset Progress", role: .destructive) {
+                Section(header: Text(LocalizedStringKey("reset_section"))) {
+                    Button(LocalizedStringKey("reset_progress"), role: .destructive) {
                         showResetConfirmation = true
                     }
-                    .confirmationDialog("Are you sure you want to reset progress?", isPresented: $showResetConfirmation) {
-                        Button("Reset", role: .destructive) {
+                    .confirmationDialog(LocalizedStringKey("reset_confirm_title"), isPresented: $showResetConfirmation) {
+                        Button(LocalizedStringKey("reset_confirm_action"), role: .destructive) {
                             skill.hours = 0
                         }
                     }
@@ -107,24 +108,24 @@ struct SkillOptionsSheet: View {
                     Button(role: .destructive) {
                         showDeleteConfirmation = true
                     } label: {
-                        Label("Delete Skill", systemImage: "trash")
+                        Label(LocalizedStringKey("delete_skill"), systemImage: "trash")
                     }
-                    .alert("Are you sure?", isPresented: $showDeleteConfirmation) {
-                        Button("Delete", role: .destructive) {
+                    .alert(LocalizedStringKey("delete_confirm_title"), isPresented: $showDeleteConfirmation) {
+                        Button(LocalizedStringKey("delete_confirm_action"), role: .destructive) {
                             onDelete()
                             dismiss()
                         }
-                        Button("Cancel", role: .cancel) { }
+                        Button(LocalizedStringKey("cancel"), role: .cancel) { }
                     } message: {
-                        Text("This action cannot be undone.")
+                        Text(LocalizedStringKey("delete_confirm_message"))
                     }
                 }
             }
-            .navigationTitle("Skill Options")
+            .navigationTitle(LocalizedStringKey("skill_options_title"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") {
+                    Button(LocalizedStringKey("done")) {
                         if !newName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                             skill.name = newName
                             dismiss()
@@ -140,19 +141,7 @@ struct SkillOptionsSheet: View {
         let minutes = Double(adjustMinutes) ?? 0
         let totalInput = abs(hours) + abs(minutes / 60.0)
         let newTotal = skill.hours + hours + (minutes / 60.0)
-
-        // Debug info (remove or comment in production)
-        #if DEBUG
-        print("Hours input: \(hours)")
-        print("Minutes input: \(minutes)")
-        print("Total input: \(totalInput)")
-        print("Resulting total skill.hours: \(newTotal)")
-        #endif
-
-        // Must input something
         guard totalInput > 0 else { return false }
-
-        // Check limits
         return totalInput <= maxFieldHours && newTotal <= maxTotalHours && newTotal >= minTotalHours
     }
 
@@ -160,7 +149,6 @@ struct SkillOptionsSheet: View {
         let hours = Double(adjustHours) ?? 0
         let minutes = Double(adjustMinutes) ?? 0
         let totalHours = hours + (minutes / 60.0)
-
         guard totalHours != 0 else { return }
 
         skill.hours += totalHours

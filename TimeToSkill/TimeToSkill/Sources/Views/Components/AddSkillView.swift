@@ -10,7 +10,7 @@ struct AddSkillView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
-                TextField("Enter skill name", text: $skillName)
+                TextField(LocalizedStringKey("enter_skill_name"), text: $skillName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
 
@@ -20,7 +20,7 @@ struct AddSkillView: View {
                     context.insert(newSkill)
                     dismiss()
                 }) {
-                    Text("Add Skill")
+                    Text(LocalizedStringKey("add_skill"))
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -32,10 +32,10 @@ struct AddSkillView: View {
 
                 Spacer()
             }
-            .navigationTitle("New Skill")
+            .navigationTitle(LocalizedStringKey("new_skill"))
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button(LocalizedStringKey("cancel")) {
                         dismiss()
                     }
                 }

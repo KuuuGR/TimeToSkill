@@ -23,8 +23,6 @@
 "SkillName" = "Skill Name";
 
 // MARK: - AddSkillView
-"default_guitar" = "Guitar";
-"default_spanish" = "Spanish";
 "enter_skill_name" = "Enter skill name";
 "add_skill" = "Add Skill";
 "new_skill" = "New Skill";
@@ -106,4 +104,29 @@
 "activity_log_title" = "📅 Activity Log";
 "activity_log_empty_message" = "No recent activity.";
 
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Skill Options";
+"done" = "Done";
+
+"skill_name_section" = "Name";
+"skill_name_label" = "Skill Name";
+
+"adjust_time_section" = "Adjust Time";
+"adjust_hours_placeholder" = "Hours to add/subtract";
+"adjust_minutes_placeholder" = "Minutes to add/subtract";
+"adjust_time_hint" = "Enter positive or negative values.\nExample: -30 minutes subtracts half an hour.";
+"adjust_time_apply" = "Apply Time Change";
+"adjust_time_success" = "Time updated successfully!";
+
+"reset_section" = "Progress";
+"reset_progress" = "Reset Progress";
+"reset_confirm_title" = "Are you sure you want to reset progress?";
+"reset_confirm_action" = "Reset";
+
+"delete_skill" = "Delete Skill";
+"delete_confirm_title" = "Are you sure?";
+"delete_confirm_message" = "This action cannot be undone.";
+"delete_confirm_action" = "Delete";
+
+"cancel" = "Cancel";
 
