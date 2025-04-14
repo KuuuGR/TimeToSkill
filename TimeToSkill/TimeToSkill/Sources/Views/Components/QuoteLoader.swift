@@ -6,7 +6,7 @@ class QuoteLoader {
         let preferredLang = Locale.preferredLanguages.first ?? "en"
         let langPrefix = String(preferredLang.prefix(2)).lowercased()
         
-        print("📘 Detected language prefix:", langPrefix)
+        //print("📘 Detected language prefix:", langPrefix)
         
         let preferredFile = "\(langPrefix)_quotes"
         let fallbackFile = "en_quotes"
