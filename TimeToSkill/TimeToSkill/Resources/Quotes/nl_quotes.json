@@ -1,7 +1,503 @@
 // Dutch
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Een kind dat niet wordt omhelst door het dorp, zal het in brand steken om de warmte ervan te voelen.",
+    "author": "Basotho Spreekwoord"
+  },
+  {
+    "quote": "Een enkele stok kan roken, maar zal niet branden.",
+    "author": "Tongaans Spreekwoord"
+  },
+  {
+    "quote": "Stap voor stap bouwt de vogel zijn nest.",
+    "author": "Dominicaans Spreekwoord"
+  },
+  {
+    "quote": "Een reis wordt het beste gemeten aan vrienden, niet in kilometers.",
+    "author": "Kaapverdisch Spreekwoord"
+  },
+  {
+    "quote": "Een man die vraagt is vijf minuten een dwaas. Een man die nooit vraagt is zijn leven lang een dwaas.",
+    "author": "Chinees Spreekwoord"
+  },
+  {
+    "quote": "Een nieuwe bezem veegt goed, maar de oude kent de hoeken.",
+    "author": "Saint Luciaans Spreekwoord"
+  },
+  {
+    "quote": "Wijsheid is als vuur. Mensen nemen het van anderen.",
+    "author": "Ivoriaans Spreekwoord"
+  },
+  {
+    "quote": "Iemand die te veel praat, bereikt weinig.",
+    "author": "Oezbeeks Spreekwoord"
+  },
+  {
+    "quote": "Een wijze man weet nooit alles, alleen dwazen weten alles.",
+    "author": "Antiguaans Spreekwoord"
+  },
+  {
+    "quote": "Beter een stabiele stap dan een vermoeiende galop.",
+    "author": "Venezolaans Spreekwoord"
+  },
+  {
+    "quote": "Beter laat dan nooit.",
+    "author": "Argentijns Spreekwoord"
+  },
+  {
+    "quote": "Achter de bergen, zijn er bergen.",
+    "author": "Haïtiaans Spreekwoord"
+  },
+  {
+    "quote": "Begin niet als je bang bent, eenmaal begonnen wees dan niet bang.",
+    "author": "Mongools Spreekwoord"
+  },
+  {
+    "quote": "Stel niet uit tot morgen wat je vandaag kunt doen.",
+    "author": "Pools Spreekwoord"
+  },
+  {
+    "quote": "Lege vaten maken het meeste lawaai.",
+    "author": "Kittitiaans Spreekwoord"
+  },
+  {
+    "quote": "Zelfs apen vallen uit bomen.",
+    "author": "Koreaans Spreekwoord"
+  },
+  {
+    "quote": "God helpt degene die vroeg opstaat.",
+    "author": "Pools Spreekwoord"
+  },
+  {
+    "quote": "Graan voor graan vult de hen haar buik.",
+    "author": "Braziliaans Spreekwoord"
+  },
+  {
+    "quote": "Wie te laat komt, schaadt zichzelf.",
+    "author": "Tsjechisch Spreekwoord"
+  },
+  {
+    "quote": "Wie zich haasten, struikelt.",
+    "author": "Panamees Spreekwoord"
+  },
+  {
+    "quote": "Wie bergen verplaatst, is begonnen met kleine stenen.",
+    "author": "Chinees Spreekwoord"
+  },
+  {
+    "quote": "Wie wacht op iets goeds, wacht nooit te lang.",
+    "author": "Zweeds Spreekwoord"
+  },
+  {
+    "quote": "Als je in een boom klimt, moet je van dezelfde boom afklimmen.",
+    "author": "Guinees Spreekwoord"
+  },
+  {
+    "quote": "Als je niet weet waar je heen gaat, zal elke weg je daar naartoe brengen.",
+    "author": "Bahamaans Spreekwoord"
+  },
+  {
+    "quote": "Krakau is niet in één dag gebouwd.",
+    "author": "Pools Spreekwoord"
+  },
+  {
+    "quote": "Weinig en blijvend is beter dan veel en voorbijgaand.",
+    "author": "Marokkaans Spreekwoord"
+  },
+  {
+    "quote": "Stap voor stap vult de mand.",
+    "author": "Jamaicaans Spreekwoord"
+  },
+  {
+    "quote": "Stap voor stap vult de container zich.",
+    "author": "Bengalees Spreekwoord"
+  },
+  {
+    "quote": "Stap voor stap, een beetje wordt veel.",
+    "author": "Indonesisch Spreekwoord"
+  },
+  {
+    "quote": "Hoe vol de rivier ook is, hij wil nog steeds groeien.",
+    "author": "Guinee-Bissauans Spreekwoord"
+  },
+  {
+    "quote": "Perfectie is de vijand van uitvoering.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Succes is een reis, geen bestemming.",
+    "author": "Singapurs Spreekwoord"
+  },
+  {
+    "quote": "De geduldige vindt geluk.",
+    "author": "Litouws Spreekwoord"
+  },
+  {
+    "quote": "De persoon die weinig weet, praat veel.",
+    "author": "Dominicaans Spreekwoord"
+  },
+  {
+    "quote": "Een boom planten waarvan je de schaduw nooit zult zien - dat is echte wijsheid.",
+    "author": "Grieks Spreekwoord"
+  },
+  {
+    "quote": "Wanneer de spinnenwebben zich verenigen, kunnen ze een leeuw binden.",
+    "author": "Gabonese Spreekwoord"
+  },
+  {
+    "quote": "Wijsheid is als een leeuw. Je hoeft het niet te verkondigen.",
+    "author": "Senegalees Spreekwoord"
+  },
+  {
+    "quote": "Wijsheid is als zout - het moet in de juiste maat worden gebruikt.",
+    "author": "Eritreërs Spreekwoord"
+  },
+  {
+    "quote": "Je hoeft niet groot te zijn om te beginnen, maar je moet beginnen om groot te worden.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Je moet handelen alsof falen onmogelijk is.",
+    "author": "Maliaans Spreekwoord"
+  },
+  {
+    "quote": "Je oogst wat je zaait.",
+    "author": "Birmese Spreekwoord"
+  },
+  {
+    "quote": "Je zult nooit een veld ploegen door er alleen maar over te denken.",
+    "author": "Iers Spreekwoord"
+  },
+  {
+    "quote": "Een vogel vergeet niet waar hij zijn eieren heeft gelegd.",
+    "author": "Swazi Proverb"
+  },
+  {
+    "quote": "Een vogel zal altijd de veren van een andere vogel gebruiken om zijn eigen nest te maken.",
+    "author": "Santomean Proverb"
+  },
+  {
+    "quote": "Een boek is als een tuin die je in je zak draagt.",
+    "author": "Syrian Proverb"
+  },
+  {
+    "quote": "Een kleine druppel holt de steen uit.",
+    "author": "Korean Proverb"
+  },
+  {
+    "quote": "Een boom met sterke wortels lacht om stormen.",
+    "author": "Thai Proverb"
+  },
+  {
+    "quote": "Beter drie uur te vroeg dan één minuut te laat.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Vrees geen langzaam vooruitgaan, vrees stilstand.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Doe vandaag wat anderen niet willen, zodat je morgen hebt wat anderen dromen.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Kijk niet naar de klok; doe wat hij doet. Blijf doorgaan.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Druppel voor druppel vult de pot.",
+    "author": "Khmer Proverb"
+  },
+  {
+    "quote": "Zelfs de grootste golven beginnen klein.",
+    "author": "Marshallese Saying"
+  },
+  {
+    "quote": "Alles moet zo simpel mogelijk worden gemaakt, maar niet simpeler.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Grote dingen beginnen klein.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Haast is zelden goed.",
+    "author": "Dutch Proverb"
+  },
+  {
+    "quote": "Haast bederft het werk.",
+    "author": "Romanian Proverb"
+  },
+  {
+    "quote": "Wie vragen stelt, kan de antwoorden niet vermijden.",
+    "author": "Cameroonian Proverb"
+  },
+  {
+    "quote": "Wie niet vooruit kijkt, blijft achter.",
+    "author": "Cuban Proverb"
+  },
+  {
+    "quote": "Beetje bij beetje vult men de maat.",
+    "author": "Zambian Proverb"
+  },
+  {
+    "quote": "Veel kleine stroompjes maken een grote rivier.",
+    "author": "Danish Proverb"
+  },
+  {
+    "quote": "Moskou werd niet in één dag gebouwd.",
+    "author": "Russian Proverb"
+  },
+  {
+    "quote": "Hoe ver een stroom ook stroomt, hij vergeet nooit zijn bron.",
+    "author": "Belizean Proverb"
+  },
+  {
+    "quote": "Eén dag is net zo goed als twee voor degene die alles op zijn plaats doet.",
+    "author": "Seychellois Proverb"
+  },
+  {
+    "quote": "Één vinger kan geen steentje optillen.",
+    "author": "Equatoguinean Proverb"
+  },
+  {
+    "quote": "Één uur plannen bespaart tien uur werk.",
+    "author": "Turkish Proverb"
+  },
+  {
+    "quote": "Langzaam zul je ver komen.",
+    "author": "Slovenian Proverb"
+  },
+  {
+    "quote": "Langzaam maar zeker wint de race.",
+    "author": "Timorese Proverb"
+  },
+  {
+    "quote": "Begin waar je bent. Gebruik wat je hebt. Doe wat je kunt.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Neem de eerste stap in geloof. Je hoeft niet de hele trap te zien.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Hoe meer je weet, hoe minder je nodig hebt.",
+    "author": "Aboriginal Proverb"
+  },
+  {
+    "quote": "Ware kracht is kalmte.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Wat gemeten wordt, wordt beheerd.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Waar geen schaamte is, is geen eer.",
+    "author": "Malawian Proverb"
+  },
+  {
+    "quote": "Je bereikt je doel niet door stil te zitten.",
+    "author": "Finnish Proverb"
+  },
+  {
+    "quote": "Een reis van duizend mijl begint met één stap.",
+    "author": "Maldivian Saying"
+  },
+  {
+    "quote": "Een klein bijl kan een grote boom omhakken.",
+    "author": "Surinamese Proverb"
+  },
+  {
+    "quote": "Wees niet bang om langzaam te gaan, wees alleen bang om stil te staan.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Beter vijftien minuten te laat dan veertig jaar te vroeg.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Discipline is de brug tussen doelen en prestaties.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Stel niet uit tot morgen wat je vandaag kunt doen.",
+    "author": "Uruguayan Proverb"
+  },
+  {
+    "quote": "Zelfs als je vroeg opstaat, zal de zon niet eerder opkomen.",
+    "author": "Spanish Proverb"
+  },
+  {
+    "quote": "Zelfs Solomon kan niet uit een leeg vat schenken.",
+    "author": "Belgian Proverb"
+  },
+  {
+    "quote": "Zelfs de maan heeft vlekken.",
+    "author": "Comorian Proverb"
+  },
+  {
+    "quote": "God helpt de vroege opstaander.",
+    "author": "Colombiaans gezegde"
+  },
+  {
+    "quote": "Als je twee konijnen achtervolgt, verlies je ze allebei.",
+    "author": "Georgisch gezegde"
+  },
+  {
+    "quote": "Als je snel wilt gaan, ga alleen. Als je ver wilt gaan, ga samen.",
+    "author": "Afrikaans gezegde"
+  },
+  {
+    "quote": "Kleine daden die gedaan zijn, zijn beter dan grote daden die gepland zijn.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Succes komt niet van wat je af en toe doet, maar van wat je consistent doet.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "De toekomst begint vandaag, niet morgen.",
+    "author": "Paus Johannes Paulus II"
+  },
+  {
+    "quote": "De geduldige zal gered worden.",
+    "author": "Kroatisch gezegde"
+  },
+  {
+    "quote": "Er is meer in het leven dan alleen maar de snelheid ervan verhogen.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Draai je gezicht naar de zon en de schaduwen vallen achter je.",
+    "author": "Maori gezegde"
+  },
+  {
+    "quote": "Wanneer de wortels diep zijn, is er geen reden om bang te zijn voor de wind.",
+    "author": "Botswaans gezegde"
+  },
+  {
+    "quote": "Wanneer de wind van verandering waait, bouwen sommigen muren, anderen bouwen windmolens.",
+    "author": "Chinees gezegde"
+  },
+  {
+    "quote": "Neem het tempo van de natuur aan: haar geheim is geduld.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Kruipend leert een kind staan.",
+    "author": "Togolees gezegde"
+  },
+  {
+    "quote": "Klokken doden de tijd... tijd is dood zolang het afgeteld wordt door kleine wieltjes.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Wacht niet. De tijd zal nooit perfect zijn.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Val zeven keer, sta op acht keer.",
+    "author": "Japans gezegde"
+  },
+  {
+    "quote": "Wie geen geduld heeft, heeft geen wijsheid.",
+    "author": "Qatarees gezegde"
+  },
+  {
+    "quote": "Wie geduld beheerst, beheerst alles.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Kennis is slechts een gerucht totdat het in de spieren zit.",
+    "author": "Papua-Nieuw-Guinea gezegde"
+  },
+  {
+    "quote": "Leren breidt grote zielen uit.",
+    "author": "Namibisch gezegde"
+  },
+  {
+    "quote": "Leren is een schat die zijn eigenaar overal volgt.",
+    "author": "Vietnamees gezegde"
+  },
+  {
+    "quote": "Leren maakt de geest nooit moe.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Geduld brengt rozen.",
+    "author": "Zwitserlands gezegde"
+  },
+  {
+    "quote": "Geduld is een deugd die vrede brengt.",
+    "author": "Samoaans gezegde"
+  },
+  {
+    "quote": "Geduld is de metgezel van wijsheid.",
+    "author": "Maleisisch gezegde"
+  },
+  {
+    "quote": "Geduld is de sleutel tot het paradijs.",
+    "author": "Oostenrijks gezegde"
+  },
+  {
+    "quote": "Geduld is de sleutel tot verlichting.",
+    "author": "Jordaans gezegde"
+  },
+  {
+    "quote": "Kleine dagelijkse verbeteringen leiden over tijd tot verbluffende resultaten.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "De sleutel ligt niet in het spenderen van tijd, maar in het investeren ervan.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "De enige bron van kennis is ervaring.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Er is geen beter moment dan nu.",
+    "author": "Onbekende auteur"
+  },
+  {
+    "quote": "Tijd brengt alles tot stand.",
+    "author": "Aischylos"
+  },
+  {
+    "quote": "Tijd is de wijste raadgever van allemaal.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Tijd is wat we het meest willen, maar het slechtst gebruiken.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Tijd zal het zeggen.",
+    "author": "Pools gezegde"
+  },
+  {
+    "quote": "Tijd, de verwoester van alle dingen.",
+    "author": "Ovidius"
+  },
+  {
+    "quote": "We zijn wat we herhaaldelijk doen. Daarom is excellentie geen daad, maar een gewoonte.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Waar geduld is, daar is vrede.",
+    "author": "Bruneis gezegde"
+  },
+  {
+    "quote": "Je leert bomen kappen door ze te kappen.",
+    "author": "Congolees gezegde"
+  },
+  {
+    "quote": "Je kunt vertragen, maar tijd doet dat niet.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Een handvol geduld is meer waard dan een mand vol verstand.",
+    "author": "Algerijns gezegde"
   }
 ]

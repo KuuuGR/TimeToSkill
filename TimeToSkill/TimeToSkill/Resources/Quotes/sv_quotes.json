@@ -1,7 +1,676 @@
 // Swedish
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Ett barn som inte omfamnas av byn kommer att bränna ner den för att känna dess värme.",
+    "author": "Basotho ordspråk"
+  },
+  {
+    "quote": "En enda pinne kan ryka, men den kommer inte att brinna.",
+    "author": "Tonga ordspråk"
+  },
+  {
+    "quote": "Lite i taget bygger fågeln sitt bo.",
+    "author": "Dominikanskt ordspråk"
+  },
+  {
+    "quote": "En resa mäts bäst i vänner, inte i mil.",
+    "author": "Kap Verde ordspråk"
+  },
+  {
+    "quote": "En man som frågar är en dåre i fem minuter. En man som aldrig frågar är en dåre för livet.",
+    "author": "Kinesiskt ordspråk"
+  },
+  {
+    "quote": "En ny kvast sopar rent, men den gamla känner hörnen.",
+    "author": "Saint Lucia ordspråk"
+  },
+  {
+    "quote": "Visdom är som eld. Folk tar den från andra.",
+    "author": "Elfenbenskustens ordspråk"
+  },
+  {
+    "quote": "En person som pratar för mycket uppnår lite.",
+    "author": "Uzbekistans ordspråk"
+  },
+  {
+    "quote": "En vis man vet aldrig allt, bara dårar vet allt.",
+    "author": "Antiguans ordspråk"
+  },
+  {
+    "quote": "Bättre ett stadigt steg än en utmattande galopp.",
+    "author": "Venezuelanskt ordspråk"
+  },
+  {
+    "quote": "Bättre sent än aldrig.",
+    "author": "Argentinskt ordspråk"
+  },
+  {
+    "quote": "Bakom bergen finns det berg.",
+    "author": "Haitianskt ordspråk"
+  },
+  {
+    "quote": "Börja inte om du är rädd, men när du väl har börjat, var inte rädd.",
+    "author": "Mongoliskt ordspråk"
+  },
+  {
+    "quote": "Tänk inte att skjuta upp till imorgon det du kan göra idag.",
+    "author": "Polskt ordspråk"
+  },
+  {
+    "quote": "Tomma tunnor låter mest.",
+    "author": "Kittitianskt ordspråk"
+  },
+  {
+    "quote": "Även apor faller från träden.",
+    "author": "Koreanskt ordspråk"
+  },
+  {
+    "quote": "Gud hjälper dem som vaknar tidigt.",
+    "author": "Polskt ordspråk"
+  },
+  {
+    "quote": "Kornen fyller långsamt hönans mage.",
+    "author": "Brasilianskt ordspråk"
+  },
+  {
+    "quote": "Den som kommer sent skadar sig själv.",
+    "author": "Tjeckiskt ordspråk"
+  },
+  {
+    "quote": "Den som skyndar sig snubblar.",
+    "author": "Panamanskt ordspråk"
+  },
+  {
+    "quote": "Den som flyttar berg började med små stenar.",
+    "author": "Kinesiskt ordspråk"
+  },
+  {
+    "quote": "Den som väntar på något bra väntar aldrig för länge.",
+    "author": "Svenskt ordspråk"
+  },
+  {
+    "quote": "Om du klättrar upp i ett träd, måste du klättra ner från samma träd.",
+    "author": "Guineanskt ordspråk"
+  },
+  {
+    "quote": "Om du inte vet vart du ska, kommer vilken väg som helst att ta dig dit.",
+    "author": "Bahamanskt ordspråk"
+  },
+  {
+    "quote": "Krakow byggdes inte på en dag.",
+    "author": "Polskt ordspråk"
+  },
+  {
+    "quote": "Lite och varaktigt är bättre än mycket och förbigående.",
+    "author": "Marockanskt ordspråk"
+  },
+  {
+    "quote": "Lite i taget fylls korgen.",
+    "author": "Jamaicanskt ordspråk"
+  },
+  {
+    "quote": "Lite i taget fylls behållaren.",
+    "author": "Bengaliskt ordspråk"
+  },
+  {
+    "quote": "Lite i taget, lite blir mycket.",
+    "author": "Indonesiskt ordspråk"
+  },
+  {
+    "quote": "Oavsett hur full floden är, vill den fortfarande växa.",
+    "author": "Guinea-Bissaus ordspråk"
+  },
+  {
+    "quote": "Perfektion är utförandets fiende.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Framgång är en resa, inte ett mål.",
+    "author": "Singapores ordspråk"
+  },
+  {
+    "quote": "Den tålmodige hittar lyckan.",
+    "author": "Litauiskt ordspråk"
+  },
+  {
+    "quote": "Den som vet lite, pratar mycket.",
+    "author": "Dominikanskt ordspråk"
+  },
+  {
+    "quote": "Att plantera ett träd vars skugga du aldrig kommer att se — det är sann visdom.",
+    "author": "Grekiskt ordspråk"
+  },
+  {
+    "quote": "När spindelvävarna förenas, kan de binda en lejon.",
+    "author": "Gabonesiskt ordspråk"
+  },
+  {
+    "quote": "Visdom är som ett lejon. Du behöver inte förkunna det.",
+    "author": "Senegalesiskt ordspråk"
+  },
+  {
+    "quote": "Visdom är som salt — den måste användas i rätt mängd.",
+    "author": "Eritreanskt ordspråk"
+  },
+  {
+    "quote": "Du behöver inte vara stor för att börja, men du måste börja för att bli stor.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Du måste agera som om det är omöjligt att misslyckas.",
+    "author": "Maliansk ordspråk"
+  },
+  {
+    "quote": "Du skördar vad du sår.",
+    "author": "Burmese ordspråk"
+  },
+  {
+    "quote": "Du kommer aldrig att plöja ett fält genom att bara tänka på det.",
+    "author": "Irländskt ordspråk"
+  },
+  {
+    "quote": "En fågel glömmer inte var den lade sina ägg.",
+    "author": "Swazi Proverb"
+  },
+  {
+    "quote": "En fågel kommer alltid att använda en annan fågels fjädrar för att bygga sitt eget bo.",
+    "author": "Santomean Proverb"
+  },
+  {
+    "quote": "En bok är som en trädgård bärs i fickan.",
+    "author": "Syrian Proverb"
+  },
+  {
+    "quote": "En liten droppe urholkar stenen.",
+    "author": "Korean Proverb"
+  },
+  {
+    "quote": "Ett träd med starka rötter skrattar åt stormarna.",
+    "author": "Thai Proverb"
+  },
+  {
+    "quote": "Bättre tre timmar för tidigt än en minut för sent.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Rädas inte långsam framsteg, rädas stagnation.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Gör idag det som andra inte gör, så att du imorgon får det andra drömmer om.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Titta inte på klockan; gör som den gör. Fortsätt gå.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Droppe för droppe fyller man krukan.",
+    "author": "Khmer Proverb"
+  },
+  {
+    "quote": "Även de största vågorna börjar små.",
+    "author": "Marshallese Saying"
+  },
+  {
+    "quote": "Allt ska göras så enkelt som möjligt, men inte enklare.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Stora saker har små början.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Skynda dig sällan.",
+    "author": "Dutch Proverb"
+  },
+  {
+    "quote": "Skynda förstör arbetet.",
+    "author": "Romanian Proverb"
+  },
+  {
+    "quote": "Den som ställer frågor kan inte undvika svaren.",
+    "author": "Cameroonian Proverb"
+  },
+  {
+    "quote": "Den som inte ser framåt blir kvar bakom.",
+    "author": "Cuban Proverb"
+  },
+  {
+    "quote": "Lite i taget fyller man måttet.",
+    "author": "Zambian Proverb"
+  },
+  {
+    "quote": "Många små strömmar gör en stor flod.",
+    "author": "Danish Proverb"
+  },
+  {
+    "quote": "Moskva byggdes inte på en dag.",
+    "author": "Russian Proverb"
+  },
+  {
+    "quote": "Oavsett hur långt en ström rinner, glömmer den aldrig sin källa.",
+    "author": "Belizean Proverb"
+  },
+  {
+    "quote": "En dag är lika bra som två för den som gör allt på rätt plats.",
+    "author": "Seychellois Proverb"
+  },
+  {
+    "quote": "En finger kan inte lyfta en liten sten.",
+    "author": "Equatoguinean Proverb"
+  },
+  {
+    "quote": "En timmes planering sparar tio timmars arbete.",
+    "author": "Turkish Proverb"
+  },
+  {
+    "quote": "Långsamt kommer du att gå långt.",
+    "author": "Slovenian Proverb"
+  },
+  {
+    "quote": "Långsam och stadig vinner loppet.",
+    "author": "Timorese Proverb"
+  },
+  {
+    "quote": "Börja där du är. Använd det du har. Gör vad du kan.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Ta det första steget i tro. Du behöver inte se hela trappan.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Ju mer du vet, desto mindre behöver du.",
+    "author": "Aboriginal Proverb"
+  },
+  {
+    "quote": "Sann styrka är lugn.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Det som mäts, hanteras.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Där det inte finns någon skam, finns heller ingen ära.",
+    "author": "Malawian Proverb"
+  },
+  {
+    "quote": "Du kommer inte att nå ditt mål genom att sitta stilla.",
+    "author": "Finnish Proverb"
+  },
+  {
+    "quote": "En resa på tusen mil börjar med ett enda steg.",
+    "author": "Maldivian Saying"
+  },
+  {
+    "quote": "En liten yxa kan fälla ett stort träd.",
+    "author": "Surinamese Proverb"
+  },
+  {
+    "quote": "Var inte rädd för att gå långsamt, var bara rädd för att stå still.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Bättre femton minuter för sent än fyrtio år för tidigt.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Disciplin är bron mellan mål och prestation.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Skjut inte upp till imorgon vad du kan göra idag.",
+    "author": "Uruguayan Proverb"
+  },
+  {
+    "quote": "Även om du vaknar tidigt, stiger inte solen upp tidigare.",
+    "author": "Spanish Proverb"
+  },
+  {
+    "quote": "Även Solomon kan inte hälla ur en tom kruka.",
+    "author": "Belgian Proverb"
+  },
+  {
+    "quote": "Även månen har fläckar.",
+    "author": "Comorian Proverb"
+  },
+  {
+    "quote": "Gud hjälper den som stiger upp tidigt.",
+    "author": "Colombianskt ordspråk"
+  },
+  {
+    "quote": "Om du jagar två kaniner, kommer du att förlora dem båda.",
+    "author": "Georgiskt ordspråk"
+  },
+  {
+    "quote": "Om du vill gå snabbt, gå ensam. Om du vill gå långt, gå tillsammans.",
+    "author": "Afrikanskt ordspråk"
+  },
+  {
+    "quote": "Små gärningar som görs är bättre än stora gärningar som planeras.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Framgång kommer inte från det du gör då och då, utan från det du gör konsekvent.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Framtiden börjar idag, inte imorgon.",
+    "author": "Påve Johannes Paulus II"
+  },
+  {
+    "quote": "Den tålmodige kommer att räddas.",
+    "author": "Kroatisk ordspråk"
+  },
+  {
+    "quote": "Det finns mer i livet än att bara öka dess hastighet.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Vänd ditt ansikte mot solen och skuggorna kommer att falla bakom dig.",
+    "author": "Maori ordspråk"
+  },
+  {
+    "quote": "När rötterna är djupa finns det ingen anledning att vara rädd för vinden.",
+    "author": "Botswaniskt ordspråk"
+  },
+  {
+    "quote": "När förändringens vind blåser bygger vissa murar, andra bygger vindmölla.",
+    "author": "Kinesiskt ordspråk"
+  },
+  {
+    "quote": "Adoptera naturens takt: hennes hemlighet är tålamod.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Genom att krypa lär sig ett barn att stå.",
+    "author": "Togo ordspråk"
+  },
+  {
+    "quote": "Klockor dödar tid... tid är död så länge den mäts av små hjul.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Vänta inte. Tiden kommer aldrig vara helt rätt.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Falla sju gånger, stå upp åtta.",
+    "author": "Japanskt ordspråk"
+  },
+  {
+    "quote": "Den som inte har tålamod har ingen visdom.",
+    "author": "Qatari ordspråk"
+  },
+  {
+    "quote": "Den som bemästrar tålamod bemästrar allt annat.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Kunskap är bara ett rykte tills det är i musklerna.",
+    "author": "Papua Nya Guinea ordspråk"
+  },
+  {
+    "quote": "Lärande expanderar stora själar.",
+    "author": "Namibiskt ordspråk"
+  },
+  {
+    "quote": "Lärande är en skatt som följer sin ägare överallt.",
+    "author": "Vietnamesiskt ordspråk"
+  },
+  {
+    "quote": "Lärande utmattas aldrig av sinnet.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Tålamod ger rosor.",
+    "author": "Schweiziskt ordspråk"
+  },
+  {
+    "quote": "Tålamod är en dygd som ger fred.",
+    "author": "Samoanskt ordspråk"
+  },
+  {
+    "quote": "Tålamod är visdomens följeslagare.",
+    "author": "Malaysiskt ordspråk"
+  },
+  {
+    "quote": "Tålamod är nyckeln till paradiset.",
+    "author": "Österrikiskt ordspråk"
+  },
+  {
+    "quote": "Tålamod är nyckeln till lättnad.",
+    "author": "Jordaniskt ordspråk"
+  },
+  {
+    "quote": "Små dagliga förbättringar över tid leder till fantastiska resultat.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Nyckeln ligger inte i att spendera tid, utan i att investera den.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Den enda källan till kunskap är erfarenhet.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Det finns ingen bättre tid än nu.",
+    "author": "Okänd författare"
+  },
+  {
+    "quote": "Tid får alla saker att hända.",
+    "author": "Aiskylos"
+  },
+  {
+    "quote": "Tid är den klokaste rådgivaren av alla.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Tid är det vi vill ha mest, men använder sämst.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Tid kommer att säga.",
+    "author": "Polskt ordspråk"
+  },
+  {
+    "quote": "Tid, den som förtär alla saker.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Vi är det vi gör upprepade gånger. Därför är excellens inte en handling, utan en vana.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Där det finns tålamod, finns fred.",
+    "author": "Bruneiskt ordspråk"
+  },
+  {
+    "quote": "Du lär dig att fälla träd genom att fälla dem.",
+    "author": "Kongolesiskt ordspråk"
+  },
+  {
+    "quote": "Du kan fördröja, men tiden gör inte det.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "En handfull tålamod är mer värd än en korg med hjärnor.",
+    "author": "Algeriskt ordspråk"
+  },
+  {
+    "quote": "En lugn sjö har aldrig gjort en skicklig sjöman.",
+    "author": "Bolivianskt ordspråk"
+  },
+  {
+    "quote": "Genialitet är evigt tålamod.",
+    "author": "Michelangelo"
+  },
+  {
+    "quote": "Den som inte lägger till sin kunskap, minskar den.",
+    "author": "Hebreiskt ordspråk"
+  },
+  {
+    "quote": "Den som lär sig, lär ut.",
+    "author": "Kongolesiskt ordspråk"
+  },
+  {
+    "quote": "Kunskap är som en trädgård: om den inte odlas kan den inte skördas.",
+    "author": "Gambianskt ordspråk"
+  },
+  {
+    "quote": "Lev som om du skulle dö imorgon. Lär dig som om du skulle leva för alltid.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Förlorad tid återfinns aldrig igen.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Motivation är det som får dig att börja. Vanan är det som får dig att fortsätta.",
+    "author": "Jim Ryun"
+  },
+  {
+    "quote": "Ett steg i taget är bra gång.",
+    "author": "Kinesiskt ordspråk"
+  },
+  {
+    "quote": "Berätta för mig och jag glömmer. Lär mig och jag kommer ihåg. Engagera mig och jag lär mig.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Den bästa tiden att plantera ett träd var för 20 år sedan. Den näst bästa tiden är nu.",
+    "author": "Kinesiskt ordspråk"
+  },
+  {
+    "quote": "Vanor gör inte munkar.",
+    "author": "Chilenskt ordspråk"
+  },
+  {
+    "quote": "Problemet är att du tror att du har tid.",
+    "author": "Jack Kornfield"
+  },
+  {
+    "quote": "De två mest kraftfulla krigarna är tålamod och tid.",
+    "author": "Leo Tolstoy"
+  },
+  {
+    "quote": "De säger alltid att tiden förändrar saker, men egentligen måste du förändra dem själv.",
+    "author": "Andy Warhol"
+  },
+  {
+    "quote": "Tid är en skapad sak. Att säga 'Jag har inte tid' är som att säga 'Jag vill inte'.",
+    "author": "Laozi"
+  },
+  {
+    "quote": "Tid är en stor lärare, men tyvärr dödar den alla sina elever.",
+    "author": "Hector Berlioz"
+  },
+  {
+    "quote": "Tid är det mest värdefulla som en människa kan spendera.",
+    "author": "Theophrastus"
+  },
+  {
+    "quote": "Tid är inte den viktigaste saken. Det är den enda saken.",
+    "author": "Miles Davis"
+  },
+  {
+    "quote": "Tid räcker länge nog för alla som vet hur man använder den.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Tid väntar på ingen.",
+    "author": "Traditionellt ordspråk"
+  },
+  {
+    "quote": "Tid väntar inte på någon. Och inte bör du.",
+    "author": "Okänd författare"
+  },
+  {
+    "quote": "Tid som du njuter av att slösa bort är inte slösad tid.",
+    "author": "Marthe Troly-Curtin"
+  },
+  {
+    "quote": "Det som lärs i vaggan varar tills graven.",
+    "author": "Libanskt ordspråk"
+  },
+  {
+    "quote": "Allt vi måste besluta är vad vi ska göra med den tid som ges oss.",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "quote": "Förändring kanske inte sker snabbt och är inte alltid lätt. Men med tid och ansträngning kan nästan alla vanor omformas.",
+    "author": "Charles Duhigg"
+  },
+  {
+    "quote": "Vänta inte. Tiden kommer aldrig vara precis rätt.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Den som inte hittar tid för hälsan, kommer att tvingas hitta tid för sjukdom.",
+    "author": "Österländskt ordspråk"
+  },
+  {
+    "quote": "Kunskap är en skatt som följer sin ägare överallt.",
+    "author": "Kinesiskt ordspråk"
+  },
+  {
+    "quote": "Lär dig som om du skulle leva för alltid.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Lärande är en skatt som följer sin ägare överallt.",
+    "author": "Indiskt ordspråk"
+  },
+  {
+    "quote": "Tålamod kan koka en sten.",
+    "author": "Beninskt ordspråk"
+  },
+  {
+    "quote": "Tålamod är en bitter växt, men den ger söta frukter.",
+    "author": "Turkmenskt ordspråk"
+  },
+  {
+    "quote": "Tålamod är nyckeln till tillfredsställelse.",
+    "author": "Mikronesiskt ordspråk"
+  },
+  {
+    "quote": "Det vackra med att lära sig är att ingen kan ta det från dig.",
+    "author": "B.B. King"
+  },
+  {
+    "quote": "Den bästa tiden att agera är nu.",
+    "author": "Mark Fisher"
+  },
+  {
+    "quote": "Mästaren har misslyckats tusen gånger innan han blev en mästare.",
+    "author": "Zen-ordspråk"
+  },
+  {
+    "quote": "Tid flyger över oss, men lämnar sin skugga bakom sig.",
+    "author": "Nathaniel Hawthorne"
+  },
+  {
+    "quote": "Tid är en skräddare som specialiserar sig på förändringar.",
+    "author": "Faith Baldwin"
+  },
+  {
+    "quote": "Tid är en storm som vi alla är förlorade i.",
+    "author": "William Carlos Williams"
+  },
+  {
+    "quote": "Tid rör sig i en riktning, minne i en annan.",
+    "author": "William Gibson"
+  },
+  {
+    "quote": "Tid tar allt, oavsett om du vill eller inte.",
+    "author": "Stephen King"
+  },
+  {
+    "quote": "Vad Johnny inte lär sig, kommer John inte att veta.",
+    "author": "Polskt ordspråk"
   }
 ]
+

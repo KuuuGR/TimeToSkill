@@ -1,7 +1,504 @@
 // Finnish
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Lapsi, jota kylä ei syleile, polttaa sen tunteakseen sen lämmön.",
+    "author": "Basothon sananlasku"
+  },
+  {
+    "quote": "Yksi ainoa keppi voi savuta, mutta se ei pala.",
+    "author": "Tongalainen sananlasku"
+  },
+  {
+    "quote": "Pikkuhiljaa lintu rakentaa pesänsä.",
+    "author": "Dominikaaninen sananlasku"
+  },
+  {
+    "quote": "Matka mitataan parhaiten ystävillä, ei kilometreillä.",
+    "author": "Kap Verden sananlasku"
+  },
+  {
+    "quote": "Mies, joka kysyy, on hölmö viideksi minuutiksi. Mies, joka ei koskaan kysy, on hölmö koko elämänsä ajan.",
+    "author": "Kiinalainen sananlasku"
+  },
+  {
+    "quote": "Uusi luuta lakaisee puhtaasti, mutta vanha tuntee kulmat.",
+    "author": "Saint Lucian sananlasku"
+  },
+  {
+    "quote": "Viisaus on kuin tuli. Ihmiset ottavat sen toisilta.",
+    "author": "Ivorian sananlasku"
+  },
+  {
+    "quote": "Liian paljon puhuva ihminen saavuttaa vähän.",
+    "author": "Uzbekerin sananlasku"
+  },
+  {
+    "quote": "Viisas ihminen ei tiedä kaikkea, vain tyhmät tietävät kaiken.",
+    "author": "Antiguan sananlasku"
+  },
+  {
+    "quote": "Parempi vakaa askel kuin uuvuttava hölkkä.",
+    "author": "Venezuelan sananlasku"
+  },
+  {
+    "quote": "Parempi myöhään kuin ei koskaan.",
+    "author": "Argentiinan sananlasku"
+  },
+  {
+    "quote": "Vuorten takana on aina vuoria.",
+    "author": "Haitin sananlasku"
+  },
+  {
+    "quote": "Älä aloita, jos pelkäät, mutta kun olet alkanut, älä pelkää.",
+    "author": "Mongolilainen sananlasku"
+  },
+  {
+    "quote": "Älä jätä huomiselle, mitä voit tehdä tänään.",
+    "author": "Puolan sananlasku"
+  },
+  {
+    "quote": "Tyhjät tynnyrit tekevät eniten melua.",
+    "author": "Kittitian sananlasku"
+  },
+  {
+    "quote": "Jopa apinat putoavat puista.",
+    "author": "Korealainen sananlasku"
+  },
+  {
+    "quote": "Jumala auttaa niitä, jotka heräävät aikaisin.",
+    "author": "Puolan sananlasku"
+  },
+  {
+    "quote": "Jyvä jyvältä kana täyttää vatsansa.",
+    "author": "Brasilian sananlasku"
+  },
+  {
+    "quote": "Se, joka tulee myöhään, vahingoittaa itseään.",
+    "author": "Tšekin sananlasku"
+  },
+  {
+    "quote": "Se, joka kiirehtii, kompastuu.",
+    "author": "Panamalainen sananlasku"
+  },
+  {
+    "quote": "Se, joka liikuttaa vuoria, aloitti pienillä kivillä.",
+    "author": "Kiinalainen sananlasku"
+  },
+  {
+    "quote": "Se, joka odottaa jotain hyvää, ei odota liian kauan.",
+    "author": "Ruotsin sananlasku"
+  },
+  {
+    "quote": "Jos kiipeät puuhun, sinun täytyy laskeutua samasta puusta.",
+    "author": "Guinean sananlasku"
+  },
+  {
+    "quote": "Jos et tiedä, minne olet menossa, mikä tahansa tie vie sinut sinne.",
+    "author": "Bahaman sananlasku"
+  },
+  {
+    "quote": "Krakova ei rakennettu päivässä.",
+    "author": "Puolan sananlasku"
+  },
+  {
+    "quote": "Vähän ja kestävä on parempi kuin paljon ja ohimenevää.",
+    "author": "Marokon sananlasku"
+  },
+  {
+    "quote": "Pikkuhiljaa täyttyy kori.",
+    "author": "Jamajkan sananlasku"
+  },
+  {
+    "quote": "Pikkuhiljaa astia täyttyy.",
+    "author": "Bengalin sananlasku"
+  },
+  {
+    "quote": "Pikkuhiljaa, vähän muuttuu paljon.",
+    "author": "Indonesian sananlasku"
+  },
+  {
+    "quote": "Ei ole väliä, kuinka täynnä joki on, se haluaa silti kasvaa.",
+    "author": "Guinea-Bisauksen sananlasku"
+  },
+  {
+    "quote": "Täydellisyys on toimeenpanon vihollinen.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Onnistuminen on matka, ei määränpää.",
+    "author": "Singaporen sananlasku"
+  },
+  {
+    "quote": "Se, joka on kärsivällinen, löytää onnen.",
+    "author": "Liettuan sananlasku"
+  },
+  {
+    "quote": "Se, joka tietää vähän, puhuu paljon.",
+    "author": "Dominikaaninen sananlasku"
+  },
+  {
+    "quote": "Istuta puu, jonka varjoa et koskaan näe — siinä on todellinen viisaus.",
+    "author": "Kreikan sananlasku"
+  },
+  {
+    "quote": "Kun hämähäkinverkot yhdistyvät, ne voivat sitoa leijonan.",
+    "author": "Gabonin sananlasku"
+  },
+  {
+    "quote": "Viisaus on kuin leijona. Et tarvitse julistaa sitä.",
+    "author": "Senegalin sananlasku"
+  },
+  {
+    "quote": "Viisaus on kuin suola — sitä on käytettävä oikeassa mittasuhteessa.",
+    "author": "Eritrean sananlasku"
+  },
+  {
+    "quote": "Et tarvitse olla suuri aloittaaksesi, mutta sinun täytyy aloittaa, jotta voit olla suuri.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Sinun täytyy toimia kuin epäonnistuminen olisi mahdotonta.",
+    "author": "Malian sananlasku"
+  },
+  {
+    "quote": "Kylvät, mitä olet kylvänyt.",
+    "author": "Burmalainen sananlasku"
+  },
+  {
+    "quote": "Et koskaan kyntäisi peltoa vain pyörittämällä sitä mielessäsi.",
+    "author": "Irlantilainen sananlasku"
+  },
+  {
+    "quote": "Lintu ei unohda, minne se on munansa asettanut.",
+    "author": "Swazilainen sananlasku"
+  },
+  {
+    "quote": "Lintu käyttää aina toisen linnun sulkia tehdäkseen oman pesänsä.",
+    "author": "Santomeilainen sananlasku"
+  },
+  {
+    "quote": "Kirja on kuin puutarha, jonka voit kantaa taskussasi.",
+    "author": "Syyrian sananlasku"
+  },
+  {
+    "quote": "Pieni tippa kovertaa kiven.",
+    "author": "Korealainen sananlasku"
+  },
+  {
+    "quote": "Vahvalla juurilla oleva puu nauraa myrskyille.",
+    "author": "Thaimaan sananlasku"
+  },
+  {
+    "quote": "Parempi kolme tuntia liian aikaisin kuin minuutti liian myöhään.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Älä pelkää hidasta edistymistä, pelkää pysähtymistä.",
+    "author": "Kiinalainen sananlasku"
+  },
+  {
+    "quote": "Tee tänään se, mitä muut eivät tee, jotta huomenna sinulla on se, mitä muut unelmoivat.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Älä katso kelloa; tee mitä se tekee. Jatka eteenpäin.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Tippa tippa täyttää kattilan.",
+    "author": "Khmerin sananlasku"
+  },
+  {
+    "quote": "Jopa suurimmat aallot alkavat pienistä.",
+    "author": "Marshallilainen sananlasku"
+  },
+  {
+    "quote": "Kaiken pitäisi olla mahdollisimman yksinkertaista, mutta ei yksinkertaisempaa.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Suuret asiat alkavat pienistä alkuista.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Hätäily ei ole harvoin hyväksi.",
+    "author": "Alankomaalainen sananlasku"
+  },
+  {
+    "quote": "Hätäily pilaa työn.",
+    "author": "Romanialainen sananlasku"
+  },
+  {
+    "quote": "Kysymykset esittävä ei voi välttää vastauksia.",
+    "author": "Kamerunilainen sananlasku"
+  },
+  {
+    "quote": "Se, joka ei katso eteenpäin, jää jälkeen.",
+    "author": "Kuubalainen sananlasku"
+  },
+  {
+    "quote": "Pikku hiljaa täytetään mitta.",
+    "author": "Zambialainen sananlasku"
+  },
+  {
+    "quote": "Monet pienet purot tekevät suuren joen.",
+    "author": "Tanskalainen sananlasku"
+  },
+  {
+    "quote": "Moskova ei rakennettu yhdessä päivässä.",
+    "author": "Venäläinen sananlasku"
+  },
+  {
+    "quote": "Ei ole väliä kuinka kauas puro virtaa, se ei unohda alkuperäänsä.",
+    "author": "Belizeläinen sananlasku"
+  },
+  {
+    "quote": "Yksi päivä on yhtä hyvä kuin kaksi, jos tekee kaiken omalla paikallaan.",
+    "author": "Seychellien sananlasku"
+  },
+  {
+    "quote": "Yksi sormi ei voi nostaa pientä kiveä.",
+    "author": "Ekvatoria-Guinealainen sananlasku"
+  },
+  {
+    "quote": "Yksi tunti suunnittelua säästää kymmenen tuntia työtä.",
+    "author": "Turkkilainen sananlasku"
+  },
+  {
+    "quote": "Hitaasti menee kauas.",
+    "author": "Slovenialainen sananlasku"
+  },
+  {
+    "quote": "Hitaasti ja vakaasti voittaa kilpailun.",
+    "author": "Timorilainen sananlasku"
+  },
+  {
+    "quote": "Aloita siellä, missä olet. Käytä sitä, mitä sinulla on. Tee, mitä voit.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Ota ensimmäinen askel uskossa. Sinun ei tarvitse nähdä koko portaikkoa.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Mitä enemmän tiedät, sitä vähemmän tarvitset.",
+    "author": "Aborigeeninen sananlasku"
+  },
+  {
+    "quote": "Todellinen voima on rauhallisuudessa.",
+    "author": "Kiinalainen sananlasku"
+  },
+  {
+    "quote": "Mikä mitataan, sitä hallitaan.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Missä ei ole häpeää, siellä ei ole kunniaa.",
+    "author": "Malawilainen sananlasku"
+  },
+  {
+    "quote": "Et saavuta tavoitettasi, jos pysyt paikallasi.",
+    "author": "Suomalainen sananlasku"
+  },
+  {
+    "quote": "Tuhannen mailin matka alkaa yhdestä askeleesta.",
+    "author": "Maldivilainen sananlasku"
+  },
+  {
+    "quote": "Pieni kirves voi kaataa suuren puun.",
+    "author": "Surinamilainen sananlasku"
+  },
+  {
+    "quote": "Älä pelkää mennä hitaasti, pelkää vain pysähtyä.",
+    "author": "Kiinalainen sananlasku"
+  },
+  {
+    "quote": "Parempi viisitoista minuuttia myöhässä kuin neljäkymmentä vuotta liian aikaisin.",
+    "author": "Puolalainen sananlasku"
+  },
+  {
+    "quote": "Kuri on silta tavoitteiden ja saavutusten välillä.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Älä jätä huomiseen sitä, mitä voit tehdä tänään.",
+    "author": "Uruguaylainen sananlasku"
+  },
+  {
+    "quote": "Vaikka nousisit aikaisin, aurinko ei nouse aikaisemmin.",
+    "author": "Espanjalainen sananlasku"
+  },
+  {
+    "quote": "Vaikka Salomo ei voi kaataa tyhjästä astiasta.",
+    "author": "Belgialainen sananlasku"
+  },
+  {
+    "quote": "Jopa kuulla on läiskiä.",
+    "author": "Komorilainen sananlasku"
+  },
+  {
+    "quote": "Jumala auttaa aikaisin heräävää.",
+    "author": "Kolumbialainen sananlasku"
+  },
+  {
+    "quote": "Jos jahtaat kahta jänistä, menetät molemmat.",
+    "author": "Georgialainen sananlasku"
+  },
+  {
+    "quote": "Jos haluat mennä nopeasti, mene yksin. Jos haluat mennä pitkälle, mene yhdessä.",
+    "author": "Afrikkalainen sananlasku"
+  },
+  {
+    "quote": "Pienet teot, jotka tehdään, ovat parempia kuin suuret teot, jotka suunnitellaan.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Menestys ei tule siitä, mitä teet satunnaisesti, vaan siitä, mitä teet johdonmukaisesti.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Tulevaisuus alkaa tänään, ei huomenna.",
+    "author": "Paavi Johannes Paavali II"
+  },
+  {
+    "quote": "Potentiaalinen pelastuu.",
+    "author": "Kroatialainen sananlasku"
+  },
+  {
+    "quote": "Elämä on enemmän kuin vain nopeuden lisääminen.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Käännä kasvosi aurinkoon ja varjot jäävät taaksesi.",
+    "author": "Maorien sananlasku"
+  },
+  {
+    "quote": "Kun juuret ovat syvällä, ei tarvitse pelätä tuulta.",
+    "author": "Botswanalainen sananlasku"
+  },
+  {
+    "quote": "Kun muutoksen tuuli puhaltaa, jotkut rakentavat seiniä, toiset rakentavat tuulimyllyjä.",
+    "author": "Kiinalainen sananlasku"
+  },
+  {
+    "quote": "Hyväksy luonnon rytmi: sen salaisuus on kärsivällisyys.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Kontaten lapsi oppii seisomaan.",
+    "author": "Togolainen sananlasku"
+  },
+  {
+    "quote": "Kellot tappavat ajan... aika on kuollut, kun sitä mitataan pienillä pyörillä.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Älä odota. Aika ei tule koskaan olemaan täydellinen.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Kaadu seitsemän kertaa, nouse kahdeksan.",
+    "author": "Japanilainen sananlasku"
+  },
+  {
+    "quote": "Se, joka ei ole kärsivällinen, ei ole viisas.",
+    "author": "Qatarilainen sananlasku"
+  },
+  {
+    "quote": "Se, joka hallitsee kärsivällisyyttä, hallitsee kaikkea muuta.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Tieto on vain huhu, kunnes se on lihaksissa.",
+    "author": "Papuan Uuden-Guinean sananlasku"
+  },
+  {
+    "quote": "Oppiminen laajentaa suuria sieluja.",
+    "author": "Namibialainen sananlasku"
+  },
+  {
+    "quote": "Oppiminen on aarre, joka seuraa omistajaansa kaikkialla.",
+    "author": "Vietnamilainen sananlasku"
+  },
+  {
+    "quote": "Oppiminen ei koskaan väsyttävä mieltä.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Kärsivällisyys tuo ruusuja.",
+    "author": "Sveitsiläinen sananlasku"
+  },
+  {
+    "quote": "Kärsivällisyys on hyve, joka tuo rauhan.",
+    "author": "Samoalainen sananlasku"
+  },
+  {
+    "quote": "Kärsivällisyys on viisauden kumppani.",
+    "author": "Malesialainen sananlasku"
+  },
+  {
+    "quote": "Kärsivällisyys on avain paratiisiin.",
+    "author": "Itävaltalainen sananlasku"
+  },
+  {
+    "quote": "Kärsivällisyys on avain helpotukseen.",
+    "author": "Jordanialainen sananlasku"
+  },
+  {
+    "quote": "Pienet päivittäiset parannukset ajan myötä johtavat upeisiin tuloksiin.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Avain ei ole ajan käyttämisessä, vaan sen investoimisessa.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Tieto on vain kokemus.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Ei ole parempaa aikaa kuin nyt.",
+    "author": "Tuntematon kirjoittaja"
+  },
+  {
+    "quote": "Aika tuo kaikki asiat.",
+    "author": "Aiskhylos"
+  },
+  {
+    "quote": "Aika on viisain neuvonantaja.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Aika on se, mitä me eniten haluamme, mutta mitä me käytämme huonoimmin.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Aika näyttää.",
+    "author": "Puolalainen sananlasku"
+  },
+  {
+    "quote": "Aika, kaiken kuluttaja.",
+    "author": "Ovidius"
+  },
+  {
+    "quote": "Me olemme mitä teemme toistuvasti. Täydellisyys ei siis ole teko, vaan tapa.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Missä on kärsivällisyyttä, siellä on rauha.",
+    "author": "Bruneilainen sananlasku"
+  },
+  {
+    "quote": "Opit puiden kaatamisen kaatamalla niitä.",
+    "author": "Kongolainen sananlasku"
+  },
+  {
+    "quote": "Voit viivyttää, mutta aika ei viivyttele.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Kämmenellinen kärsivällisyyttä on arvokkaampi kuin kori älykkyyttä.",
+    "author": "Algerialainen sananlasku"
   }
 ]
+

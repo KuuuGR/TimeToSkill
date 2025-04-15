@@ -1,10 +1,504 @@
+// Spanish (Spain)
 [
+  {
+    "quote": "Un niño que no es abrazado por el pueblo lo quemará para sentir su calor.",
+    "author": "Proverbio Basotho"
+  },
+  {
+    "quote": "Un solo palo puede fumar, pero no se quemará.",
+    "author": "Proverbio Tongano"
+  },
+  {
+    "quote": "Poco a poco el pájaro construye su nido.",
+    "author": "Proverbio Dominicano"
+  },
+  {
+    "quote": "Un viaje se mide mejor con amigos, no con millas.",
+    "author": "Dicho de Cabo Verde"
+  },
+  {
+    "quote": "Un hombre que pregunta es un tonto por cinco minutos. Un hombre que nunca pregunta es un tonto toda su vida.",
+    "author": "Proverbio Chino"
+  },
+  {
+    "quote": "Una escoba nueva barre bien, pero la vieja conoce los rincones.",
+    "author": "Proverbio de Santa Lucía"
+  },
+  {
+    "quote": "La sabiduría es como el fuego. La gente la toma de otros.",
+    "author": "Proverbio de Costa de Marfil"
+  },
+  {
+    "quote": "Una persona que habla demasiado logra poco.",
+    "author": "Proverbio Uzbeko"
+  },
+  {
+    "quote": "Un hombre sabio nunca sabe todo, solo los tontos saben todo.",
+    "author": "Proverbio Antiguano"
+  },
+  {
+    "quote": "Mejor un paso firme que un trote agotador.",
+    "author": "Proverbio Venezolano"
+  },
+  {
+    "quote": "Mejor tarde que nunca.",
+    "author": "Proverbio Argentino"
+  },
+  {
+    "quote": "Más allá de las montañas, hay más montañas.",
+    "author": "Proverbio Haitiano"
+  },
+  {
+    "quote": "No empieces si tienes miedo, una vez que empieces no tengas miedo.",
+    "author": "Proverbio Mongol"
+  },
+  {
+    "quote": "No dejes para mañana lo que puedes hacer hoy.",
+    "author": "Proverbio Polaco"
+  },
+  {
+    "quote": "Los barriles vacíos hacen el mayor ruido.",
+    "author": "Proverbio Kittitiano"
+  },
+  {
+    "quote": "Incluso los monos caen de los árboles.",
+    "author": "Proverbio Coreano"
+  },
+  {
+    "quote": "Dios ayuda a los que se levantan temprano.",
+    "author": "Proverbio Polaco"
+  },
+  {
+    "quote": "Grano a grano, la gallina llena su barriga.",
+    "author": "Proverbio Brasileño"
+  },
+  {
+    "quote": "El que llega tarde se perjudica a sí mismo.",
+    "author": "Proverbio Checo"
+  },
+  {
+    "quote": "El que se apresura tropieza.",
+    "author": "Proverbio Panameño"
+  },
+  {
+    "quote": "El que mueve montañas comenzó con pequeñas piedras.",
+    "author": "Proverbio Chino"
+  },
+  {
+    "quote": "El que espera algo bueno nunca espera demasiado.",
+    "author": "Proverbio Sueco"
+  },
+  {
+    "quote": "Si subes a un árbol, debes bajar del mismo árbol.",
+    "author": "Proverbio Guineano"
+  },
+  {
+    "quote": "Si no sabes a dónde vas, cualquier camino te llevará allí.",
+    "author": "Proverbio de las Bahamas"
+  },
+  {
+    "quote": "Cracovia no se construyó en un día.",
+    "author": "Proverbio Polaco"
+  },
+  {
+    "quote": "Lo poco y lo duradero es mejor que lo mucho y lo pasajero.",
+    "author": "Proverbio Marroquí"
+  },
+  {
+    "quote": "Poco a poco se llena la cesta.",
+    "author": "Proverbio Jamaicano"
+  },
+  {
+    "quote": "Poco a poco se llena el recipiente.",
+    "author": "Proverbio Bengalí"
+  },
+  {
+    "quote": "Poco a poco, lo poco se convierte en mucho.",
+    "author": "Proverbio Indonesio"
+  },
+  {
+    "quote": "No importa cuán llena esté el río, siempre quiere crecer.",
+    "author": "Proverbio de Guinea-Bisáu"
+  },
+  {
+    "quote": "La perfección es el enemigo de la ejecución.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "El éxito es un viaje, no un destino.",
+    "author": "Dicho de Singapur"
+  },
+  {
+    "quote": "El paciente encuentra la felicidad.",
+    "author": "Proverbio Lituano"
+  },
+  {
+    "quote": "La persona que sabe poco, habla mucho.",
+    "author": "Proverbio Dominicano"
+  },
+  {
+    "quote": "Plantar un árbol cuya sombra no verás — esa es la verdadera sabiduría.",
+    "author": "Proverbio Griego"
+  },
+  {
+    "quote": "Cuando las telarañas se unen, pueden atar a un león.",
+    "author": "Proverbio Gabonés"
+  },
+  {
+    "quote": "La sabiduría es como un león. No tienes que proclamarla.",
+    "author": "Proverbio Senegales"
+  },
+  {
+    "quote": "La sabiduría es como la sal — debe usarse en la cantidad correcta.",
+    "author": "Proverbio Eritreo"
+  },
+  {
+    "quote": "No tienes que ser grande para empezar, pero tienes que empezar para ser grande.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Debes actuar como si fuera imposible fracasar.",
+    "author": "Dicho Malí"
+  },
+  {
+    "quote": "Cosecharás lo que siembres.",
+    "author": "Proverbio Birmano"
+  },
+  {
+    "quote": "Nunca ararás un campo solo dándole vueltas en tu mente.",
+    "author": "Proverbio Irlandés"
+  },
+  {
+    "quote": "Un pájaro no olvida dónde puso sus huevos.",
+    "author": "Refrán Swazi"
+  },
+  {
+    "quote": "Un pájaro siempre usará las plumas de otro pájaro para hacer su propio nido.",
+    "author": "Refrán Santomeano"
+  },
+  {
+    "quote": "Un libro es como un jardín que llevas en tu bolsillo.",
+    "author": "Refrán Sirio"
+  },
+  {
+    "quote": "Una pequeña gota perfora la piedra.",
+    "author": "Refrán Coreano"
+  },
+  {
+    "quote": "Un árbol con raíces fuertes se ríe de las tormentas.",
+    "author": "Refrán Tailandés"
+  },
+  {
+    "quote": "Mejor tres horas demasiado pronto que un minuto demasiado tarde.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "No temas al progreso lento, teme a la estancación.",
+    "author": "Refrán Chino"
+  },
+  {
+    "quote": "Haz hoy lo que otros no harán, para que mañana tengas lo que otros sueñan.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "No mires el reloj; haz lo que él hace. Sigue adelante.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Gota a gota se llena el vaso.",
+    "author": "Refrán Khmer"
+  },
+  {
+    "quote": "Incluso las olas más grandes comienzan pequeñas.",
+    "author": "Refrán Marshallés"
+  },
+  {
+    "quote": "Todo debe hacerse lo más simple posible, pero no más simple.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Las grandes cosas tienen pequeños comienzos.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "La prisa rara vez es buena.",
+    "author": "Refrán Neerlandés"
+  },
+  {
+    "quote": "La prisa arruina el trabajo.",
+    "author": "Refrán Rumano"
+  },
+  {
+    "quote": "Quien hace preguntas no puede evitar las respuestas.",
+    "author": "Refrán Camerunés"
+  },
+  {
+    "quote": "Quien no mira hacia adelante se queda atrás.",
+    "author": "Refrán Cubano"
+  },
+  {
+    "quote": "Poco a poco se llena el vaso.",
+    "author": "Refrán Zambiano"
+  },
+  {
+    "quote": "Muchos pequeños riachuelos hacen un gran río.",
+    "author": "Refrán Danés"
+  },
+  {
+    "quote": "Moscú no se construyó en un día.",
+    "author": "Refrán Ruso"
+  },
+  {
+    "quote": "No importa cuán lejos fluya un arroyo, nunca olvida su fuente.",
+    "author": "Refrán Beliceño"
+  },
+  {
+    "quote": "Un día es tan bueno como dos para quien hace todo en su lugar.",
+    "author": "Refrán Seychellense"
+  },
+  {
+    "quote": "Un dedo no puede levantar una piedra pequeña.",
+    "author": "Refrán Ecuatoguineano"
+  },
+  {
+    "quote": "Una hora de planificación ahorra diez horas de trabajo.",
+    "author": "Refrán Turco"
+  },
+  {
+    "quote": "Lentamente irás lejos.",
+    "author": "Refrán Esloveno"
+  },
+  {
+    "quote": "Lento pero seguro gana la carrera.",
+    "author": "Refrán Timorense"
+  },
+  {
+    "quote": "Comienza donde estás. Usa lo que tienes. Haz lo que puedas.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Da el primer paso con fe. No tienes que ver toda la escalera.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Cuanto más sabes, menos necesitas.",
+    "author": "Refrán Aborigen"
+  },
+  {
+    "quote": "La verdadera fuerza es calma.",
+    "author": "Refrán Chino"
+  },
+  {
+    "quote": "Lo que se mide se gestiona.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Donde no hay vergüenza, no hay honor.",
+    "author": "Refrán Malawiano"
+  },
+  {
+    "quote": "No llegarás a tu meta si te quedas quieto.",
+    "author": "Refrán Finés"
+  },
+  {
+    "quote": "Un viaje de mil millas comienza con un solo paso.",
+    "author": "Refrán Maldivo"
+  },
+  {
+    "quote": "Una pequeña hacha puede cortar un gran árbol.",
+    "author": "Refrán Surinamés"
+  },
+  {
+    "quote": "No tengas miedo de ir despacio, solo ten miedo de quedarte quieto.",
+    "author": "Refrán Chino"
+  },
+  {
+    "quote": "Mejor quince minutos tarde que cuarenta años demasiado temprano.",
+    "author": "Refrán Polaco"
+  },
+  {
+    "quote": "La disciplina es el puente entre las metas y los logros.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "No dejes para mañana lo que puedes hacer hoy.",
+    "author": "Refrán Uruguayo"
+  },
+  {
+    "quote": "Aunque te levantes temprano, el sol no saldrá antes.",
+    "author": "Refrán Español"
+  },
+  {
+    "quote": "Incluso Salomón no puede verter de un recipiente vacío.",
+    "author": "Refrán Belga"
+  },
+  {
+    "quote": "Incluso la luna tiene manchas.",
+    "author": "Refrán Comorense"
+  },
+  {
+    "quote": "Dios ayuda al que se levanta temprano.",
+    "author": "Refrán colombiano"
+  },
+  {
+    "quote": "Si persigues dos conejos, perderás ambos.",
+    "author": "Refrán georgiano"
+  },
+  {
+    "quote": "Si quieres ir rápido, ve solo. Si quieres ir lejos, ve acompañado.",
+    "author": "Refrán africano"
+  },
+  {
+    "quote": "Las pequeñas acciones realizadas son mejores que las grandes acciones planificadas.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "El éxito no proviene de lo que haces de vez en cuando, sino de lo que haces constantemente.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "El futuro comienza hoy, no mañana.",
+    "author": "Papa Juan Pablo II"
+  },
+  {
+    "quote": "El paciente será salvado.",
+    "author": "Refrán croata"
+  },
+  {
+    "quote": "La vida es más que simplemente aumentar su velocidad.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Gira tu rostro hacia el sol y las sombras caerán detrás de ti.",
+    "author": "Refrán maorí"
+  },
+  {
+    "quote": "Cuando las raíces son profundas, no hay razón para temer al viento.",
+    "author": "Refrán botswanés"
+  },
+  {
+    "quote": "Cuando sopla el viento del cambio, algunos construyen muros, otros construyen molinos de viento.",
+    "author": "Refrán chino"
+  },
+  {
+    "quote": "Adopta el ritmo de la naturaleza: su secreto es la paciencia.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Al gatear, un niño aprende a levantarse.",
+    "author": "Refrán togolés"
+  },
+  {
+    "quote": "Los relojes matan el tiempo... el tiempo está muerto mientras se mide con pequeños engranajes.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "No esperes. El tiempo nunca será perfecto.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Cae siete veces, levántate ocho.",
+    "author": "Refrán japonés"
+  },
+  {
+    "quote": "El que no tiene paciencia no tiene sabiduría.",
+    "author": "Refrán catarí"
+  },
+  {
+    "quote": "El que domina la paciencia, domina todo lo demás.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "El conocimiento es solo un rumor hasta que llega a los músculos.",
+    "author": "Refrán de Papúa Nueva Guinea"
+  },
+  {
+    "quote": "El aprendizaje expande las grandes almas.",
+    "author": "Refrán namibio"
+  },
+  {
+    "quote": "El aprendizaje es un tesoro que sigue a su dueño en todas partes.",
+    "author": "Refrán vietnamita"
+  },
   {
     "quote": "El aprendizaje nunca agota la mente.",
     "author": "Leonardo da Vinci"
   },
   {
-    "quote": "La práctica hace al maestro.",
-    "author": "Proverbio español"
+    "quote": "La paciencia trae rosas.",
+    "author": "Refrán suizo"
+  },
+  {
+    "quote": "La paciencia es una virtud que trae paz.",
+    "author": "Refrán samoano"
+  },
+  {
+    "quote": "La paciencia es la compañera de la sabiduría.",
+    "author": "Refrán malayo"
+  },
+  {
+    "quote": "La paciencia es la clave del paraíso.",
+    "author": "Refrán austriaco"
+  },
+  {
+    "quote": "La paciencia es la clave para el alivio.",
+    "author": "Refrán jordano"
+  },
+  {
+    "quote": "Las pequeñas mejoras diarias con el tiempo conducen a resultados sorprendentes.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "La clave no está en gastar tiempo, sino en invertirlo.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "La única fuente de conocimiento es la experiencia.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "No hay mejor momento que ahora.",
+    "author": "Autor desconocido"
+  },
+  {
+    "quote": "El tiempo lo trae todo.",
+    "author": "Esquilo"
+  },
+  {
+    "quote": "El tiempo es el consejero más sabio de todos.",
+    "author": "Pericles"
+  },
+  {
+    "quote": "El tiempo es lo que más queremos, pero lo que usamos peor.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "El tiempo lo dirá.",
+    "author": "Refrán polaco"
+  },
+  {
+    "quote": "El tiempo, el devorador de todas las cosas.",
+    "author": "Ovidio"
+  },
+  {
+    "quote": "Somos lo que hacemos repetidamente. Por lo tanto, la excelencia no es un acto, sino un hábito.",
+    "author": "Aristóteles"
+  },
+  {
+    "quote": "Donde hay paciencia, hay paz.",
+    "author": "Refrán bruneano"
+  },
+  {
+    "quote": "Aprendes a cortar árboles cortándolos.",
+    "author": "Refrán congoleño"
+  },
+  {
+    "quote": "Puedes retrasar, pero el tiempo no lo hará.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Un puñado de paciencia vale más que una canasta de sabiduría.",
+    "author": "Refrán argelino"
   }
 ]
+

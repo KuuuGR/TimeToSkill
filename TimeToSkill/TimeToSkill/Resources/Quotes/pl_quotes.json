@@ -1,6 +1,1347 @@
 [
+    {
+        "quote": "Dziecko, którego nie przytuli wieś, spali ją, by poczuć jej ciepło.",
+        "author": "Przysłowie Basotho",
+        "note": "Tłumaczenie oddaje sens, ale brzmi mocno metaforycznie. W polskim odpowiedniku raczej mówimy o zaniedbaniu prowadzącym do buntu."
+    },
+    {
+        "quote": "Pojedynczy patyk może dymić, ale nie spłonie.",
+        "author": "Przysłowie z Tonga",
+        "note": "Sens zachowany – samotność ogranicza siłę działania."
+    },
+    {
+        "quote": "Ptak buduje gniazdo kawałek po kawałku.",
+        "author": "Przysłowie dominikańskie",
+        "note": "Odpowiada polskiemu: „Kropla drąży skałę”."
+    },
+    {
+        "quote": "Podróż mierzy się przyjaciółmi, nie kilometrami.",
+        "author": "Przysłowie z Wysp Zielonego Przylądka",
+        "note": "Naturalne w języku polskim."
+    },
+    {
+        "quote": "Kto pyta, głupim jest przez pięć minut. Kto nie pyta – głupim jest przez całe życie.",
+        "author": "Chińskie przysłowie",
+        "note": "Bardzo dobre tłumaczenie, zachowuje sens."
+    },
+    {
+        "quote": "Nowa miotła dobrze zamiata, ale stara zna zakamarki.",
+        "author": "Przysłowie z Saint Lucia",
+        "note": "Brzmi naturalnie – doświadczenie ma wartość."
+    },
+    {
+        "quote": "Mądrość jest jak ogień – ludzie czerpią ją od innych.",
+        "author": "Przysłowie z Wybrzeża Kości Słoniowej",
+        "note": "Poprawne logicznie i stylistycznie."
+    },
+    {
+        "quote": "Kto dużo mówi, mało zdziała.",
+        "author": "Uzbeckie przysłowie",
+        "note": "Odpowiednik polskiego: „Mowa jest srebrem, milczenie złotem”."
+    },
+    {
+        "quote": "Mądry nigdy nie wie wszystkiego, tylko głupi wie wszystko.",
+        "author": "Przysłowie z Antigui",
+        "note": "Analogiczne do polskiego: „Mądry wie, że nic nie wie”."
+    },
+    {
+        "quote": "Lepszy powolny krok niż męczący kłus.",
+        "author": "Wenezuelskie przysłowie",
+        "note": "Zbliżone do: „Śpiesz się powoli”."
+    },
+    {
+        "quote": "Lepiej późno niż wcale.",
+        "author": "Argentyńskie przysłowie",
+        "note": "Identyczne jak polskie!"
+    },
+    {
+        "quote": "Za górami są góry.",
+        "author": "Haitańskie przysłowie",
+        "note": "Brzmi jak metafora nieskończonych wyzwań."
+    },
+    {
+        "quote": "Nie zaczynaj, jeśli się boisz, ale raz rozpoczętego nie porzucaj ze strachu.",
+        "author": "Mongolskie przysłowie",
+        "note": "Zachęta do wytrwałości – sens zachowany."
+    },
+    {
+        "quote": "Nie odkładaj na jutro tego, co możesz zrobić dziś.",
+        "author": "Polskie przysłowie",
+        "note": "Dokładnie to samo w polskiej wersji!"
+    },
+    {
+        "quote": "Puste beczki najgłośniej się tłuką.",
+        "author": "Przysłowie z Saint Kitts",
+        "note": "Odpowiada polskiemu: „Pusta kłoda najgłośniej dudni”."
+    },
+    {
+        "quote": "Nawet małpy spadają z drzew.",
+        "author": "Koreańskie przysłowie",
+        "note": "Analogiczne do: „Nikt nie jest nieomylny”."
+    },
+    {
+        "quote": "Bóg pomaga tym, którzy wstają wcześnie.",
+        "author": "Polskie przysłowie",
+        "note": "Wierne tłumaczenie polskiego powiedzenia."
+    },
+    {
+        "quote": "Ziarnko do ziarnka, aż kura zbierze miarkę.",
+        "author": "Brazylijskie przysłowie",
+        "note": "Bardzo podobne do polskiego odpowiednika."
+    },
+    {
+        "quote": "Kto przychodzi późno, sam sobie szkodzi.",
+        "author": "Czeskie przysłowie",
+        "note": "Naturalne w języku polskim."
+    },
+    {
+        "quote": "Kto się spieszy, ten się potyka.",
+        "author": "Panamskie przysłowie",
+        "note": "Zbliżone do: „Śpiesz się powoli”."
+    },
+    {
+        "quote": "Ten, kto przenosi góry, zaczyna od małych kamieni.",
+        "author": "Chińskie przysłowie",
+        "note": "Odpowiada polskiemu: „Ziarnko do ziarnka…”."
+    },
+    {
+        "quote": "Kto czeka na coś dobrego, nigdy nie czeka zbyt długo.",
+        "author": "Szwedzkie przysłowie",
+        "note": "Optymistyczne i zrozumiałe po polsku."
+    },
+    {
+        "quote": "Jeśli wspinasz się na drzewo, musisz zejść tą samą drogą.",
+        "author": "Przysłowie z Gwinei",
+        "note": "Metafora odpowiedzialności za swoje czyny."
+    },
+    {
+        "quote": "Jeśli nie wiesz, dokąd idziesz, każda droga cię tam zaprowadzi.",
+        "author": "Przysłowie z Bahamów",
+        "note": "Podobne do: „Błądzenie jest rzeczą ludzką”."
+    },
+    {
+        "quote": "Kraków nie od razu zbudowano.",
+        "author": "Polskie przysłowie",
+        "note": "Klasyczne polskie powiedzenie!"
+    },
+    {
+        "quote": "Mniej, a trwale, lepsze niż dużo, a na chwilę.",
+        "author": "Marokańskie przysłowie",
+        "note": "Zbliżone do: „Lepszy wróbel w garści niż gołąb na dachu”."
+    },
+    {
+        "quote": "Kropla po kropli napełnia się koszyk.",
+        "author": "Jamajskie przysłowie",
+        "note": "Analogiczne do polskich przysłów o systematyczności."
+    },
+    {
+        "quote": "Po trochu naczynie się napełnia.",
+        "author": "Bengalskie przysłowie",
+        "note": "Podobny sens jak wyżej."
+    },
+    {
+        "quote": "Mało po mału, aż zbierze się dużo.",
+        "author": "Indonezyjskie przysłowie",
+        "note": "Spójne z polską logiką językową."
+    },
+    {
+        "quote": "Choćby rzeka była pełna, wciąż chce rosnąć.",
+        "author": "Przysłowie z Gwinei Bissau",
+        "note": "Metafora ludzkiej ambicji – zrozumiała."
+    },
+    {
+        "quote": "Perfekcjonizm jest wrogiem wykonania.",
+        "author": "Voltaire",
+        "note": "Tłumaczenie oddaje sens oryginału."
+    },
+    {
+        "quote": "Sukces to podróż, nie cel.",
+        "author": "Singapurskie powiedzenie",
+        "note": "Brzmi naturalnie po polsku."
+    },
+    {
+        "quote": "Cierpliwy znajdzie szczęście.",
+        "author": "Litewskie przysłowie",
+        "note": "Zrozumiałe i poprawne."
+    },
+    {
+        "quote": "Ten, kto mało wie, dużo mówi.",
+        "author": "Przysłowie dominikańskie",
+        "note": "Analogiczne do innych przysłów o gadulstwie."
+    },
+    {
+        "quote": "Posadzić drzewo, w którego cieniu się nie usiądzie – oto prawdziwa mądrość.",
+        "author": "Greckie przysłowie",
+        "note": "Pięknie oddaje ideę altruizmu."
+    },
+    {
+        "quote": "Gdy pajęczyny się zjednoczą, mogą związać lwa.",
+        "author": "Przysłowie gabońskie",
+        "note": "Metafora siły współpracy – czytelna."
+    },
+    {
+        "quote": "Mądrość jest jak lew – nie trzeba jej obwieszczać.",
+        "author": "Senegalskie przysłowie",
+        "note": "Zgrabne porównanie."
+    },
+    {
+        "quote": "Mądrość jest jak sól – trzeba jej używać we właściwej mierze.",
+        "author": "Erytrejskie przysłowie",
+        "note": "Logiczne i trafne."
+    },
+    {
+        "quote": "Nie musisz być wielki, by zacząć, ale musisz zacząć, by być wielkim.",
+        "author": "Zig Ziglar",
+        "note": "Inspirujące i poprawne językowo."
+    },
+    {
+        "quote": "Musisz działać, jakby porażka była niemożliwa.",
+        "author": "Przysłowie z Mali",
+        "note": "Motywujące i zrozumiałe."
+    },
+    {
+        "quote": "Co posiejesz, to zbierzesz.",
+        "author": "Birmańskie przysłowie",
+        "note": "Dokładnie to samo znaczenie co w polskim!"
+    },
+    {
+        "quote": "Nigdy nie zaorzesz pola, obracając je tylko w myślach.",
+        "author": "Irlandzkie przysłowie",
+        "note": "Odpowiada polskiemu: „Myślenie nie jest robieniem”."
+    },
+    {
+        "quote": "Ptak nie zapomina, gdzie złożył jaja.",
+        "author": "Przysłowie Suazi",
+        "note": "Naturalne tłumaczenie, podobne do polskiego 'Nie wywołuj wilka z lasu'"
+    },
+    {
+        "quote": "Ptak zawsze użyje piór innych ptaków, by wyścielić własne gniazdo.",
+        "author": "Przysłowie z Wysp Świętego Tomasza",
+        "note": "Odpowiada polskiemu 'Kruk krukowi oka nie wykole'"
+    },
+    {
+        "quote": "Książka jest jak ogród noszony w kieszeni.",
+        "author": "Syryjskie przysłowie",
+        "note": "Piękna metafora, zrozumiała po polsku"
+    },
+    {
+        "quote": "Mała kropla drąży kamień.",
+        "author": "Koreańskie przysłowie",
+        "note": "Identyczne z polskim 'Kropla drąży skałę'"
+    },
+    {
+        "quote": "Drzewo o mocnych korzeniach śmieje się z burz.",
+        "author": "Tajskie przysłowie",
+        "note": "Dobrze oddaje sens stabilności"
+    },
+    {
+        "quote": "Lepiej trzy godziny za wcześnie niż minutę za późno.",
+        "author": "William Shakespeare",
+        "note": "Tłumaczenie zachowuje dramatyzm oryginału"
+    },
+    {
+        "quote": "Nie bój się powolnego postępu, bój się stagnacji.",
+        "author": "Chińskie przysłowie",
+        "note": "Bardzo dobre tłumaczenie motywacyjne"
+    },
+    {
+        "quote": "Rób dziś to, czego inni nie chcą, byś jutro miał to, o czym inni marzą.",
+        "author": "Jerry Rice",
+        "note": "Inspirujące i poprawne językowo"
+    },
+    {
+        "quote": "Nie patrz na zegar; rób to, co on. Idź naprzód.",
+        "author": "Sam Levenson",
+        "note": "Lepiej brzmi: 'Podążaj za zegarem - idź naprzód'"
+    },
+    {
+        "quote": "Kropla po kropli napełnia garnek.",
+        "author": "Khmerskie przysłowie",
+        "note": "Analogiczne do polskich przysłów o cierpliwości"
+    },
+    {
+        "quote": "Nawet największe fale zaczynają się od małych.",
+        "author": "Powiedzenie z Wysp Marshalla",
+        "note": "Dobra metafora rozwoju"
+    },
+    {
+        "quote": "Wszystko powinno być tak proste, jak to tylko możliwe, ale nie prostsze.",
+        "author": "Albert Einstein",
+        "note": "Wierne tłumaczenie słynnego cytatu"
+    },
+    {
+        "quote": "Wielkie rzeczy mają małe początki.",
+        "author": "T. E. Lawrence",
+        "note": "Naturalne w języku polskim"
+    },
+    {
+        "quote": "Pośpiech rzadko jest dobry.",
+        "author": "Holenderskie przysłowie",
+        "note": "Odpowiada polskiemu 'Śpiesz się powoli'"
+    },
+    {
+        "quote": "Pośpiech psuje pracę.",
+        "author": "Rumuńskie przysłowie",
+        "note": "Podobne do 'Gdzie się człowiek spieszy, tam się diabeł cieszy'"
+    },
+    {
+        "quote": "Kto pyta, nie uniknie odpowiedzi.",
+        "author": "Kameruńskie przysłowie",
+        "note": "Logiczne i poprawne"
+    },
+    {
+        "quote": "Kto nie patrzy przed siebie, zostaje w tyle.",
+        "author": "Kubańskie przysłowie",
+        "note": "Dobrze oddaje sens planowania"
+    },
+    {
+        "quote": "Po trochu napełnia się miarę.",
+        "author": "Zambijskie przysłowie",
+        "note": "Podobne do polskich przysłów o systematyczności"
+    },
+    {
+        "quote": "Wiele małych strumyków tworzy wielką rzekę.",
+        "author": "Duńskie przysłowie",
+        "note": "Piękna metafora współpracy"
+    },
+    {
+        "quote": "Moskwa nie od razu zbudowana.",
+        "author": "Rosyjskie przysłowie",
+        "note": "Odpowiednik polskiego 'Rzymu nie zbudowano w jeden dzień'"
+    },
+    {
+        "quote": "Nieważne jak daleko płynie strumień, nigdy nie zapomina swego źródła.",
+        "author": "Przysłowie z Belize",
+        "note": "Metafora wdzięczności - zrozumiała"
+    },
+    {
+        "quote": "Jeden dzień jest jak dwa dla tego, kto wszystko robi na czas.",
+        "author": "Przysłowie z Seszelów",
+        "note": "Podkreśla wartość organizacji czasu"
+    },
+    {
+        "quote": "Jednym palcem nie podniesiesz kamyka.",
+        "author": "Przysłowie z Gwinei Równikowej",
+        "note": "O współpracy - podobne do polskich"
+    },
+    {
+        "quote": "Godzina planowania oszczędza dziesięć godzin pracy.",
+        "author": "Tureckie przysłowie",
+        "note": "Bardzo praktyczne i zrozumiałe"
+    },
+    {
+        "quote": "Powoli zajdziesz daleko.",
+        "author": "Słoweńskie przysłowie",
+        "note": "Odpowiada polskiemu 'Co nagle, to po diable'"
+    },
+    {
+        "quote": "Powoli i stabilnie wygrywa się wyścig.",
+        "author": "Przysłowie z Timoru Wschodniego",
+        "note": "Podobne do 'Cierpliwość popłaca'"
+    },
+    {
+        "quote": "Zacznij tam, gdzie jesteś. Użyj tego, co masz. Zrób, co możesz.",
+        "author": "Arthur Ashe",
+        "note": "Doskonałe tłumaczenie motywacyjne"
+    },
+    {
+        "quote": "Zrób pierwszy krok w wierze. Nie musisz widzieć całych schodów.",
+        "author": "Martin Luther King Jr.",
+        "note": "Piękne zachowanie metafory"
+    },
+    {
+        "quote": "Im więcej wiesz, tym mniej potrzebujesz.",
+        "author": "Aborygeńskie przysłowie",
+        "note": "Mądrość uniwersalna, dobrze przetłumaczona"
+    },
+    {
+        "quote": "Prawdziwa siła jest spokojna.",
+        "author": "Chińskie przysłowie",
+        "note": "Krótkie i trafne"
+    },
+    {
+        "quote": "Co jest mierzone, tym można zarządzać.",
+        "author": "Peter Drucker",
+        "note": "Wierne tłumaczenie biznesowej maksymy"
+    },
+    {
+        "quote": "Gdzie nie ma wstydu, tam nie ma honoru.",
+        "author": "Malawijskie przysłowie",
+        "note": "Logiczne i poprawne"
+    },
+    {
+        "quote": "Nie osiągniesz celu siedząc w miejscu.",
+        "author": "Fińskie przysłowie",
+        "note": "Bardzo bezpośrednie i zrozumiałe"
+    },
+    {
+        "quote": "Podróż tysiąca mil zaczyna się od jednego kroku.",
+        "author": "Powiedzenie z Malediwów",
+        "note": "Znane również w polskiej wersji"
+    },
+    {
+        "quote": "Mała siekiera może ściąć duże drzewo.",
+        "author": "Surinamskie przysłowie",
+        "note": "Metafora wytrwałości - zrozumiała"
+    },
+    {
+        "quote": "Nie bój się iść powoli, bój się tylko stać w miejscu.",
+        "author": "Chińskie przysłowie",
+        "note": "Lepiej brzmi: 'Nie bój się powolnego kroku, bój się bezruchu'"
+    },
+    {
+        "quote": "Lepiej piętnaście minut za późno niż czterdzieści lat za wcześnie.",
+        "author": "Polskie przysłowie",
+        "note": "W oryginale brzmi: 'Lepiej późno niż za wcześnie'"
+    },
+    {
+        "quote": "Dyscyplina jest mostem między celami a osiągnięciami.",
+        "author": "Jim Rohn",
+        "note": "Doskonałe tłumaczenie"
+    },
+    {
+        "quote": "Nie odkładaj na jutro tego, co możesz zrobić dziś.",
+        "author": "Urugwajskie przysłowie",
+        "note": "Identyczne z polskim!"
+    },
+    {
+        "quote": "Nawet jeśli wstaniesz wcześnie, słońce nie wzejdzie szybciej.",
+        "author": "Hiszpańskie przysłowie",
+        "note": "Podobne do 'Nie czasem, ale sposobem'"
+    },
+    {
+        "quote": "Z pustego w próżne i Salomon nie naleje.",
+        "author": "Belgijskie przysłowie",
+        "note": "Odpowiada polskiemu 'Z pustego i Salomon nie naleje'"
+    },
+    {
+        "quote": "Nawet księżyc ma plamy.",
+        "author": "Komoryjskie przysłowie",
+        "note": "Podobne do 'Nie ma róży bez kolców'"
+    },
+    {
+        "quote": "Bóg pomaga tym, którzy wstają wcześnie.",
+        "author": "Kolumbijskie przysłowie",
+        "note": "Identyczne z polskim przysłowiem"
+    },
+    {
+        "quote": "Goniąc dwa zające, nie złapiesz żadnego.",
+        "author": "Gruzinskie przysłowie",
+        "note": "Dosłowne tłumaczenie, odpowiada polskiemu 'Za dwoma zającami...'"
+    },
+    {
+        "quote": "Jeśli chcesz iść szybko - idź sam. Jeśli chcesz iść daleko - idźcie razem.",
+        "author": "Afrykańskie przysłowie",
+        "note": "Powszechnie znana wersja"
+    },
+    {
+        "quote": "Lepsze małe czyny wykonane niż wielkie zamierzenia.",
+        "author": "Peter Marshall",
+        "note": "Lepiej brzmi: 'Lepszy mały uczynek niż wielki zamiar'"
+    },
+    {
+        "quote": "Sukces nie pochodzi z tego, co robisz okazjonalnie, ale z tego, co robisz stale.",
+        "author": "Marie Forleo",
+        "note": "Wierne tłumaczenie"
+    },
+    {
+        "quote": "Przyszłość zaczyna się dziś, nie jutro.",
+        "author": "Jan Paweł II",
+        "note": "Autentyczne tłumaczenie cytatu"
+    },
+    {
+        "quote": "Cierpliwy będzie ocalony.",
+        "author": "Chorwackie przysłowie",
+        "note": "Odpowiada polskiemu 'Cierpliwość popłaca'"
+    },
+    {
+        "quote": "Życie to coś więcej niż tylko zwiększanie jego tempa.",
+        "author": "Mahatma Gandhi",
+        "note": "Zachowano filozoficzny wydźwięk"
+    },
+    {
+        "quote": "Zwróć twarz ku słońcu, a cienie padną za ciebie.",
+        "author": "Maoryskie przysłowie",
+        "note": "Piękna metafora optymizmu"
+    },
+    {
+        "quote": "Gdy korzenie są głębokie, nie ma powodu bać się wiatru.",
+        "author": "Botswańskie przysłowie",
+        "note": "Podobne do tajskiego przysłowia o drzewie"
+    },
+    {
+        "quote": "Gdy wieje wiatr zmian, jedni budują mury, inni wiatraki.",
+        "author": "Chińskie przysłowie",
+        "note": "Znana metafora postaw wobec zmian"
+    },
+    {
+        "quote": "Naśladuj rytm natury: jej sekretem jest cierpliwość.",
+        "author": "Ralph Waldo Emerson",
+        "note": "Poetyckie tłumaczenie"
+    },
+    {
+        "quote": "Pełzając, dziecko uczy się stać.",
+        "author": "Togijskie przysłowie",
+        "note": "Naturalne w języku polskim"
+    },
+    {
+        "quote": "Zegary zabijają czas... czas jest martwy, dopóki jest odliczany przez małe kółka.",
+        "author": "William Faulkner",
+        "note": "Zachowano literacki styl"
+    },
+    {
+        "quote": "Nie czekaj. Nigdy nie nadejdzie idealny moment.",
+        "author": "Napoleon Hill",
+        "note": "Mocne tłumaczenie motywacyjne"
+    },
+    {
+        "quote": "Siedem razy upadnij, osiem razy się podnieś.",
+        "author": "Japońskie przysłowie",
+        "note": "Popularna wersja tłumaczenia"
+    },
+    {
+        "quote": "Kto nie ma cierpliwości, ten nie ma mądrości.",
+        "author": "Katarskie przysłowie",
+        "note": "Zwięzłe i trafne"
+    },
+    {
+        "quote": "Kto opanuje cierpliwość, opanuje wszystko inne.",
+        "author": "George Savile",
+        "note": "Dosłowne tłumaczenie"
+    },
+    {
+        "quote": "Wiedza to tylko pogłoska, dopóki nie trafi do mięśni.",
+        "author": "Przysłowie z Papui Nowej Gwinei",
+        "note": "Oryginalna metafora praktycznej wiedzy"
+    },
+    {
+        "quote": "Nauka rozwija wielkie dusze.",
+        "author": "Namibijskie przysłowie",
+        "note": "Proste i zrozumiałe"
+    },
+    {
+        "quote": "Wiedza to skarb, który podąża za swoim właścicielem wszędzie.",
+        "author": "Wietnamskie przysłowie",
+        "note": "Podobne do polskiego 'Czego się Jaś nie nauczy...'"
+    },
+    {
+        "quote": "Nauka nigdy nie wyczerpuje umysłu.",
+        "author": "Leonardo da Vinci",
+        "note": "Wierne tłumaczenie"
+    },
+    {
+        "quote": "Cierpliwość przynosi róże.",
+        "author": "Szwajcarskie przysłowie",
+        "note": "Odpowiada polskiemu 'Cierpliwość popłaca'"
+    },
+    {
+        "quote": "Cierpliwość to cnota, która przynosi pokój.",
+        "author": "Samoańskie przysłowie",
+        "note": "Zachowano spokojny wydźwięk"
+    },
+    {
+        "quote": "Cierpliwość jest towarzyszką mądrości.",
+        "author": "Malajskie przysłowie",
+        "note": "Trafne zestawienie"
+    },
+    {
+        "quote": "Cierpliwość jest kluczem do raju.",
+        "author": "Austriackie przysłowie",
+        "note": "Religijna metafora"
+    },
+    {
+        "quote": "Cierpliwość jest kluczem do ulgi.",
+        "author": "Jordańskie przysłowie",
+        "note": "Podkreśla wartość wytrwałości"
+    },
+    {
+        "quote": "Małe codzienne ulepszenia z czasem prowadzą do oszałamiających rezultatów.",
+        "author": "Robin Sharma",
+        "note": "Dobrze oddaje sens przyrostowych zmian"
+    },
+    {
+        "quote": "Klucz polega nie na wydawaniu czasu, ale na inwestowaniu go.",
+        "author": "Stephen R. Covey",
+        "note": "Znana metafora zarządzania czasem"
+    },
+    {
+        "quote": "Jedynym źródłem wiedzy jest doświadczenie.",
+        "author": "Albert Einstein",
+        "note": "Autentyczne tłumaczenie"
+    },
+    {
+        "quote": "Nie ma lepszego czasu niż teraz.",
+        "author": "Autor nieznany",
+        "note": "Zwięzłe i motywujące"
+    },
+    {
+        "quote": "Czas wszystko przynosi.",
+        "author": "Ajschylos",
+        "note": "Tradycyjne tłumaczenie"
+    },
+    {
+        "quote": "Czas jest najmądrzejszym doradcą.",
+        "author": "Perykles",
+        "note": "Powszechnie znana wersja"
+    },
+    {
+        "quote": "Czas to, czego najbardziej pragniemy, ale najgorzej wykorzystujemy.",
+        "author": "William Penn",
+        "note": "Zachowano paradoksalny wydźwięk"
+    },
+    {
+        "quote": "Czas pokaże.",
+        "author": "Polskie przysłowie",
+        "note": "Dokładnie to samo w polskiej wersji"
+    },
+    {
+        "quote": "Czas, pożeracz wszystkich rzeczy.",
+        "author": "Owidiusz",
+        "note": "Klasyczne tłumaczenie"
+    },
+    {
+        "quote": "Jesteśmy tym, co regularnie czynimy. Doskonałość nie jest aktem, lecz nawykiem.",
+        "author": "Arystoteles",
+        "note": "Autoryzowane tłumaczenie"
+    },
+    {
+        "quote": "Gdzie jest cierpliwość, tam jest pokój.",
+        "author": "Przysłowie z Brunei",
+        "note": "Podobne do samoańskiego"
+    },
+    {
+        "quote": "Uczysz się ścinać drzewa, ścinając je.",
+        "author": "Kongijskie przysłowie",
+        "note": "Dosłowne tłumaczenie praktycznej nauki"
+    },
+    {
+        "quote": "Ty możesz zwlekać, ale czas nie będzie.",
+        "author": "Benjamin Franklin",
+        "note": "Znane tłumaczenie"
+    },
+    {
+        "quote": "Garść cierpliwości jest warta więcej niż korzec rozumu.",
+        "author": "Algierskie przysłowie",
+        "note": "Oryginalne porównanie"
+    },
+    {
+        "quote": "Spokojne morze nie wychowa dobrego żeglarza.",
+        "author": "Boliwijskie powiedzenie",
+        "note": "Odpowiada polskiemu 'Czego nas nie zabije, to nas wzmocni'"
+    },
+    {
+        "quote": "Geniusz to wieczna cierpliwość.",
+        "author": "Michał Anioł",
+        "note": "Dosłowne tłumaczenie"
+    },
+    {
+        "quote": "Kto nie pomnaża swojej wiedzy, ten ją umniejsza.",
+        "author": "Hebrajskie przysłowie",
+        "note": "Podobne do 'Stać w miejscu to cofać się'"
+    },
+    {
+        "quote": "Kto się uczy, ten uczy innych.",
+        "author": "Kongijskie przysłowie",
+        "note": "O procesie dzielenia się wiedzą"
+    },
+    {
+        "quote": "Wiedza jest jak ogród: jeśli go nie uprawiasz, nie możesz zbierać plonów.",
+        "author": "Gambijskie przysłowie",
+        "note": "Piękna metafora edukacji"
+    },
+    {
+        "quote": "Żyj tak, jakbyś miał umrzeć jutro. Ucz się tak, jakbyś miał żyć wiecznie.",
+        "author": "Mahatma Gandhi",
+        "note": "Autoryzowane tłumaczenie"
+    },
+    {
+        "quote": "Straconego czasu nie odzyskasz nigdy.",
+        "author": "Benjamin Franklin",
+        "note": "Odpowiada polskiemu 'Czasu nie cofniesz'"
+    },
+    {
+        "quote": "Motywacja pozwala ci zacząć. Nawyk pozwala ci kontynuować.",
+        "author": "Jim Ryun",
+        "note": "Wierne tłumaczenie"
+    },
+    {
+        "quote": "Krok po kroku - to dobre tempo marszu.",
+        "author": "Laotańskie przysłowie",
+        "note": "Podobne do 'Kropla drąży skałę'"
+    },
+    {
+        "quote": "Powiedz mi - zapomnę. Naucz mnie - zapamiętam. Zaangażuj mnie - nauczę się.",
+        "author": "Benjamin Franklin",
+        "note": "Popularna wersja tłumaczenia"
+    },
+    {
+        "quote": "Najlepszy czas na zasadzenie drzewa był 20 lat temu. Drugi najlepszy czas jest teraz.",
+        "author": "Chińskie przysłowie",
+        "note": "Znane tłumaczenie"
+    },
+    {
+        "quote": "Habit nie czyni mnicha.",
+        "author": "Chilijskie przysłowie",
+        "note": "Identyczne z polskim odpowiednikiem"
+    },
+    {
+        "quote": "Problem w tym, że myślisz, że masz czas.",
+        "author": "Jack Kornfield",
+        "note": "Dosłowne tłumaczenie"
+    },
+    {
+        "quote": "Dwa najpotężniejsze narzędzia to cierpliwość i czas.",
+        "author": "Lew Tołstoj",
+        "note": "Zachowano filozoficzny wydźwięk"
+    },
+    {
+        "quote": "Mówią, że czas zmienia rzeczy, ale tak naprawdę to ty musisz je zmienić.",
+        "author": "Andy Warhol",
+        "note": "Współczesne brzmienie"
+    },
+    {
+        "quote": "Czas to wytwór. Mówienie 'nie mam czasu' to jak mówienie 'nie chcę'.",
+        "author": "Laozi",
+        "note": "Filozoficzne ujęcie"
+    },
+    {
+        "quote": "Czas to wspaniały nauczyciel, ale niestety zabija wszystkich swoich uczniów.",
+        "author": "Hector Berlioz",
+        "note": "Zachowano ironiczny wydźwięk"
+    },
+    {
+        "quote": "Czas to najcenniejsza rzecz, jaką człowiek może wydać.",
+        "author": "Teofrast",
+        "note": "Klasyczne tłumaczenie"
+    },
+    {
+        "quote": "Czas nie jest najważniejszy. Jest jedyną rzeczą, jaka istnieje.",
+        "author": "Miles Davis",
+        "note": "Zachowano jazzowy styl"
+    },
+    {
+        "quote": "Czas zostaje wystarczająco długo dla każdego, kto go wykorzysta.",
+        "author": "Leonardo da Vinci",
+        "note": "Wierne tłumaczenie"
+    },
+    {
+        "quote": "Czas na nikogo nie czeka.",
+        "author": "Tradycyjne powiedzenie",
+        "note": "Odpowiada polskiemu 'Czas nie stoi w miejscu'"
+    },
+    {
+        "quote": "Czas na nikogo nie czeka. Ty też nie powinieneś.",
+        "author": "Autor nieznany",
+        "note": "Współczesna adaptacja"
+    },
+    {
+        "quote": "Czas, którego przyjemnie się marnuje, nie jest czasem zmarnowanym.",
+        "author": "Marthe Troly-Curtin",
+        "note": "Filozoficzne ujęcie"
+    },
+    {
+        "quote": "Czego Jaś się nie nauczy, tego Jan nie będzie umiał.",
+        "author": "Polskie przysłowie",
+        "note": "Dokładny polski odpowiednik"
+    },
+    {b
+        "quote": "Musimy tylko zdecydować, co zrobić z czasem, który nam dano.",
+        "author": "J.R.R. Tolkien",
+        "note": "Z 'Władcy Pierścieni'"
+    },
+    {
+        "quote": "Zmiana może nie być szybka ani łatwa. Ale z czasem i wysiłkiem prawie każdy nawyk można zmienić.",
+        "author": "Charles Duhigg",
+        "note": "Współczesne brzmienie"
+    },
+    {
+        "quote": "Nie czekaj. Idealny moment nigdy nie nadejdzie.",
+        "author": "Napoleon Hill",
+        "note": "Motywacyjne tłumaczenie"
+    },
+    {
+        "quote": "Kto nie znajdzie czasu na zdrowie, będzie musiał znaleźć czas na chorobę.",
+        "author": "Wschodnie przysłowie",
+        "note": "Popularna wersja"
+    },
+    {
+        "quote": "Wiedza to skarb, który podąża za swoim właścicielem wszędzie.",
+        "author": "Chińskie przysłowie",
+        "note": "Podobne do wietnamskiego"
+    },
+    {
+        "quote": "Ucz się tak, jakbyś miał żyć wiecznie.",
+        "author": "Mahatma Gandhi",
+        "note": "Skrócona wersja wcześniejszego cytatu"
+    },
+    {
+        "quote": "Nauka to skarb, który będzie ci towarzyszył wszędzie.",
+        "author": "Indyjskie przysłowie",
+        "note": "Podobne do chińskiego"
+    },
+    {
+        "quote": "Cierpliwość ugotuje kamień.",
+        "author": "Beninskie przysłowie",
+        "note": "Odpowiada polskiemu 'Cierpliwością i pracą...'"
+    },
+    {
+        "quote": "Cierpliwość to gorzka roślina, ale ma słodkie owoce.",
+        "author": "Turkmeńskie przysłowie",
+        "note": "Piękna metafora"
+    },
+    {
+        "quote": "Cierpliwość jest kluczem do zadowolenia.",
+        "author": "Mikronezyjskie przysłowie",
+        "note": "Proste i trafne"
+    },
+    {
+        "quote": "Piękno nauki polega na tym, że nikt nie może ci jej odebrać.",
+        "author": "B.B. King",
+        "note": "Inspirujące tłumaczenie"
+    },
+    {
+        "quote": "Najlepszy czas na działanie jest teraz.",
+        "author": "Mark Fisher",
+        "note": "Zwięzłe i motywujące"
+    },
+    {
+        "quote": "Mistrz zawiódł tysiąc razy, zanim został mistrzem.",
+        "author": "Zen przysłowie",
+        "note": "O wartości porażek"
+    },
+    {
+        "quote": "Czas przelatuje nad nami, ale zostawia za sobą cień.",
+        "author": "Nathaniel Hawthorne",
+        "note": "Poetyckie tłumaczenie"
+    },
+    {
+        "quote": "Czas to krawcowa specjalizująca się w przeróbkach.",
+        "author": "Faith Baldwin",
+        "note": "Oryginalna metafora"
+    },
+    {
+        "quote": "Czas to burza, w której wszyscy jesteśmy zagubieni.",
+        "author": "William Carlos Williams",
+        "note": "Zachowano literacki styl"
+    },
+    {
+        "quote": "Czas płynie w jednym kierunku, pamięć w drugim.",
+        "author": "William Gibson",
+        "note": "Głębokie filozoficznie"
+    },
+    {
+        "quote": "Czas zabiera wszystko, czy tego chcesz, czy nie.",
+        "author": "Stephen King",
+        "note": "Charakterystyczne dla autora"
+    },
+    {
+        "quote": "Czego Jaś się nie nauczy, tego Jan nie będzie umiał.",
+        "author": "Polskie przysłowie",
+        "note": "Dokładny odpowiednik libijskiego"
+    },
+    {
+        "quote": "Ptaszek nie zapomina, gdzie złożył swoje jaja.",
+        "author": "Przysłowie Swazi"
+    },
+    {
+        "quote": "Ptaszek zawsze wykorzysta pióra innego ptaka, by urządzić swoje gniazdo.",
+        "author": "Przysłowie Santomean"
+    },
+    {
+        "quote": "Książka jest jak ogród noszony w kieszeni.",
+        "author": "Przysłowie syryjskie"
+    },
+    {
+        "quote": "Mała kropla drąży kamień.",
+        "author": "Przysłowie koreańskie"
+    },
+    {
+        "quote": "Drzewo z mocnymi korzeniami śmieje się z burz.",
+        "author": "Przysłowie tajlandzkie"
+    },
+    {
+        "quote": "Lepiej trzy godziny za wcześnie niż minutę za późno.",
+        "author": "William Shakespeare"
+    },
+    {
+        "quote": "Nie bój się powolnego postępu, bój się stagnacji.",
+        "author": "Przysłowie chińskie"
+    },
+    {
+        "quote": "Rób dzisiaj to, czego inni nie chcą, byś jutro miał to, o czym inni marzą.",
+        "author": "Jerry Rice"
+    },
+    {
+        "quote": "Nie patrz na zegar; rób to, co on. Idź do przodu.",
+        "author": "Sam Levenson"
+    },
+    {
+        "quote": "Kropla po kropli napełnia garnek.",
+        "author": "Przysłowie khmerskie"
+    },
+    {
+        "quote": "Nawet największe fale zaczynają się od małych.",
+        "author": "Przysłowie marszalskie"
+    },
+    {
+        "quote": "Wszystko powinno być jak najprostsze, ale nie prostsze.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Wielkie rzeczy mają małe początki.",
+        "author": "T. E. Lawrence"
+    },
+    {
+        "quote": "Pośpiech rzadko bywa dobry.",
+        "author": "Przysłowie holenderskie"
+    },
+    {
+        "quote": "Pośpiech psuje pracę.",
+        "author": "Przysłowie rumuńskie"
+    },
+    {
+        "quote": "Kto pyta, nie unika odpowiedzi.",
+        "author": "Przysłowie kameruńskie"
+    },
+    {
+        "quote": "Kto nie patrzy w przyszłość, zostaje w tyle.",
+        "author": "Przysłowie kubańskie"
+    },
+    {
+        "quote": "Małymi krokami wypełnia się miarę.",
+        "author": "Przysłowie zambijskie"
+    },
+    {
+        "quote": "Wiele małych strumieni tworzy wielką rzekę.",
+        "author": "Przysłowie duńskie"
+    },
+    {
+        "quote": "Moskwa nie została zbudowana w jeden dzień.",
+        "author": "Przysłowie rosyjskie"
+    },
+    {
+        "quote": "Niezależnie od tego, jak daleko płynie strumień, nigdy nie zapomina swojego źródła.",
+        "author": "Przysłowie belizejskie"
+    },
+    {
+        "quote": "Jeden dzień jest równie dobry jak dwa dla tego, kto robi wszystko na swoim miejscu.",
+        "author": "Przysłowie seszelskie"
+    },
+    {
+        "quote": "Jeden palec nie podniesie kamyczka.",
+        "author": "Przysłowie Gwinei Równikowej"
+    },
+    {
+        "quote": "Jedna godzina planowania oszczędza dziesięć godzin pracy.",
+        "author": "Przysłowie tureckie"
+    },
+    {
+        "quote": "Powoli dojdziesz daleko.",
+        "author": "Przysłowie słoweńskie"
+    },
+    {
+        "quote": "Powoli i równo wygrywa wyścig.",
+        "author": "Przysłowie timorskie"
+    },
+    {
+        "quote": "Zacznij tam, gdzie jesteś. Użyj tego, co masz. Zrób to, co możesz.",
+        "author": "Arthur Ashe"
+    },
+    {
+        "quote": "Zrób pierwszy krok w wierze. Nie musisz widzieć całych schodów.",
+        "author": "Martin Luther King Jr."
+    },
+    {
+        "quote": "Im więcej wiesz, tym mniej potrzebujesz.",
+        "author": "Przysłowie aborygeńskie"
+    },
+    {
+        "quote": "Prawdziwa siła to spokój.",
+        "author": "Przysłowie chińskie"
+    },
+    {
+        "quote": "To, co jest mierzone, jest zarządzane.",
+        "author": "Peter Drucker"
+    },
+    {
+        "quote": "Tam, gdzie nie ma wstydu, nie ma honoru.",
+        "author": "Przysłowie malawijskie"
+    },
+    {
+        "quote": "Nie osiągniesz celu, siedząc w miejscu.",
+        "author": "Przysłowie fińskie"
+    },
+    {
+        "quote": "Podróż tysiąca mil zaczyna się od jednego kroku.",
+        "author": "Przysłowie malediwskie"
+    },
+    {
+        "quote": "Mała siekiera może ściąć wielkie drzewo.",
+        "author": "Przysłowie surinamskie"
+    },
+    {
+        "quote": "Nie bój się iść powoli, bój się tylko stać w miejscu.",
+        "author": "Przysłowie chińskie"
+    },
+    {
+        "quote": "Lepiej piętnaście minut za późno niż czterdzieści lat za wcześnie.",
+        "author": "Przysłowie polskie"
+    },
+    {
+        "quote": "Dyscyplina to most między celami a osiągnięciami.",
+        "author": "Jim Rohn"
+    },
+    {
+        "quote": "Nie odkładaj na jutro tego, co możesz zrobić dzisiaj.",
+        "author": "Przysłowie urugwajskie"
+    },
+    {
+        "quote": "Nawet jeśli wstaniesz wcześnie, słońce nie wzejdzie szybciej.",
+        "author": "Przysłowie hiszpańskie"
+    },
+    {
+        "quote": "Nawet Salomon nie może nalać z pustego naczynia.",
+        "author": "Przysłowie belgijskie"
+    },
+    {
+        "quote": "Nawet księżyc ma plamy.",
+        "author": "Przysłowie komoryjskie"
+    },
+    {
+        "quote": "Bóg pomaga temu, kto wstaje wcześnie.",
+        "author": "Przysłowie kolumbijskie"
+    },
+    {
+        "quote": "Jeśli gonić dwa króliki, stracisz je oba.",
+        "author": "Przysłowie gruzińskie"
+    },
+    {
+        "quote": "Jeśli chcesz iść szybko, idź sam. Jeśli chcesz dojść daleko, idź razem.",
+        "author": "Przysłowie afrykańskie"
+    },
+    {
+        "quote": "Małe uczynki wykonane są lepsze niż wielkie plany.",
+        "author": "Peter Marshall"
+    },
+    {
+        "quote": "Sukces nie pochodzi z tego, co robisz od czasu do czasu, ale z tego, co robisz konsekwentnie.",
+        "author": "Marie Forleo"
+    },
+    {
+        "quote": "Przyszłość zaczyna się dziś, a nie jutro.",
+        "author": "Papież Jan Paweł II"
+    },
+    {
+        "quote": "Cierpliwy zostanie ocalony.",
+        "author": "Przysłowie chorwackie"
+    },
+    {
+        "quote": "Życie to coś więcej niż tylko zwiększanie jego prędkości.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "quote": "Obróć twarz ku słońcu, a cienie będą za tobą.",
+        "author": "Przysłowie maoryskie"
+    },
+    {
+        "quote": "Gdy korzenie są głębokie, nie ma powodu do obaw przed wiatrem.",
+        "author": "Przysłowie botswańskie"
+    },
+    {
+        "quote": "Gdy wiatr zmiany wieje, jedni budują ściany, inni budują wiatraki.",
+        "author": "Przysłowie chińskie"
+    },
+    {
+        "quote": "Przyjmij tempo natury: jej sekret to cierpliwość.",
+        "author": "Ralph Waldo Emerson"
+    },
+    {
+        "quote": "Czołgając się, dziecko uczy się stawać.",
+        "author": "Przysłowie togijskie"
+    },
+    {
+        "quote": "Zegary zabijają czas... czas jest martwy, dopóki jest mierzony przez małe koła.",
+        "author": "William Faulkner"
+    },
+    {
+        "quote": "Nie czekaj. Czas nigdy nie będzie idealny.",
+        "author": "Napoleon Hill"
+    },
+    {
+        "quote": "Upadnij siedem razy, wstań osiem.",
+        "author": "Przysłowie japońskie"
+    },
+    {
+        "quote": "Ten, kto nie ma cierpliwości, nie ma mądrości.",
+        "author": "Przysłowie katarskie"
+    },
+    {
+        "quote": "Ten, kto opanuje cierpliwość, opanuje wszystko inne.",
+        "author": "George Savile"
+    },
+    {
+        "quote": "Wiedza to tylko plotka, dopóki nie znajdzie się w mięśniach.",
+        "author": "Przysłowie z Papui-Nowej Gwinei"
+    },
+    {
+        "quote": "Uczenie się poszerza wielkie dusze.",
+        "author": "Przysłowie namibijskie"
+    },
+    {
+        "quote": "Uczenie się to skarb, który podąża za swoim właścicielem wszędzie.",
+        "author": "Przysłowie wietnamskie"
+    },
+    {
+        "quote": "Uczenie się nigdy nie wyczerpuje umysłu.",
+        "author": "Leonardo da Vinci"
+    },
+    {
+        "quote": "Cierpliwość przynosi róże.",
+        "author": "Przysłowie szwajcarskie"
+    },
+    {
+        "quote": "Cierpliwość to cnota, która przynosi pokój.",
+        "author": "Przysłowie samoańskie"
+    },
+    {
+        "quote": "Cierpliwość to towarzysz mądrości.",
+        "author": "Przysłowie malajskie"
+    },
+    {
+        "quote": "Cierpliwość to klucz do raju.",
+        "author": "Przysłowie austriackie"
+    },
+    {
+        "quote": "Cierpliwość to klucz do ulgi.",
+        "author": "Przysłowie jordańskie"
+    },
+    {
+        "quote": "Małe codzienne poprawki prowadzą do oszałamiających wyników.",
+        "author": "Robin Sharma"
+    },
+    {
+        "quote": "Kluczem jest nie wydawanie czasu, ale inwestowanie go.",
+        "author": "Stephen R. Covey"
+    },
+    {
+        "quote": "Jedynym źródłem wiedzy jest doświadczenie.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Nie ma lepszego czasu niż teraz.",
+        "author": "Nieznany autor"
+    },
+    {
+        "quote": "Czas sprawia, że wszystko się dzieje.",
+        "author": "Ajschylos"
+    },
+    {
+        "quote": "Czas jest najmądrzejszym doradcą ze wszystkich.",
+        "author": "Perykles"
+    },
+    {
+        "quote": "Czas to to, czego pragniemy najbardziej, ale co marnujemy najgorzej.",
+        "author": "William Penn"
+    },
+    {
+        "quote": "Czas pokaże.",
+        "author": "Przysłowie polskie"
+    },
+    {
+        "quote": "Czas, pożeracz wszystkich rzeczy.",
+        "author": "Owidiusz"
+    },
+    {
+        "quote": "Jesteśmy tym, co robimy powtarzalnie. Doskonałość, więc, to nie czyn, ale nawyk.",
+        "author": "Arystoteles"
+    },
+    {
+        "quote": "Gdzie jest cierpliwość, tam jest pokój.",
+        "author": "Przysłowie brunejskie"
+    },
+    {
+        "quote": "Uczysz się ścinać drzewa, ścinając je.",
+        "author": "Przysłowie kongijskie"
+    },
+    {
+        "quote": "Możesz opóźnić, ale czas nie.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "quote": "Garść cierpliwości jest warta więcej niż kosz pełen rozumu.",
+        "author": "Przysłowie algierskie"
+    },
   {
-    "quote": "Cierpliwość jest kluczem do sukcesu.",
+    "quote": "Gładkie morze nigdy nie uczyniło dobrego marynarza.",
+    "author": "Przysłowie boliwijskie"
+  },
+  {
+    "quote": "Genialność to wieczna cierpliwość.",
+    "author": "Michał Anioł"
+  },
+  {
+    "quote": "Kto nie dodaje do swojej wiedzy, odejmuje od niej.",
+    "author": "Przysłowie hebrajskie"
+  },
+  {
+    "quote": "Kto się uczy, ten uczy innych.",
+    "author": "Przysłowie kongijskie"
+  },
+  {
+    "quote": "Wiedza jest jak ogród: jeśli nie jest uprawiana, nie może być zbierana.",
+    "author": "Przysłowie gambijskie"
+  },
+  {
+    "quote": "Żyj tak, jakbyś miał umrzeć jutro. Ucz się tak, jakbyś miał żyć wiecznie.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Stracony czas nigdy już nie wróci.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Motywacja to to, co sprawia, że zaczynasz. Nałóg to to, co sprawia, że kontynuujesz.",
+    "author": "Jim Ryun"
+  },
+  {
+    "quote": "Jeden krok na raz to dobra wędrówka.",
+    "author": "Przysłowie lao"
+  },
+  {
+    "quote": "Powiedz mi, a zapomnę. Naucz mnie, a zapamiętam. Zaangażuj mnie, a nauczę się.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Najlepszy czas na zasadzenie drzewa minął 20 lat temu. Drugi najlepszy czas jest teraz.",
     "author": "Przysłowie chińskie"
+  },
+  {
+    "quote": "Nałóg nie czyni mnicha.",
+    "author": "Przysłowie chilijskie"
+  },
+  {
+    "quote": "Problem polega na tym, że myślisz, że masz czas.",
+    "author": "Jack Kornfield"
+  },
+  {
+    "quote": "Dwa najpotężniejsze wojowniki to cierpliwość i czas.",
+    "author": "Lew Tołstoj"
+  },
+  {
+    "quote": "Zawsze mówią, że czas zmienia rzeczy, ale w rzeczywistości to ty musisz je zmienić.",
+    "author": "Andy Warhol"
+  },
+  {
+    "quote": "Czas to stworzona rzecz. Mówić 'Nie mam czasu' to jak mówić 'Nie chcę'.",
+    "author": "Laozi"
+  },
+  {
+    "quote": "Czas to wspaniały nauczyciel, ale niestety zabija wszystkich swoich uczniów.",
+    "author": "Hector Berlioz"
+  },
+  {
+    "quote": "Czas jest najcenniejszą rzeczą, którą człowiek może wydać.",
+    "author": "Teofrast"
+  },
+  {
+    "quote": "Czas nie jest główną rzeczą. Jest jedyną rzeczą.",
+    "author": "Miles Davis"
+  },
+  {
+    "quote": "Czas zostaje wystarczająco długo dla każdego, kto potrafi go wykorzystać.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Czas nie czeka na nikogo.",
+    "author": "Tradycyjne powiedzenie"
+  },
+  {
+    "quote": "Czas nie czeka na nikogo. Ty także nie powinieneś.",
+    "author": "Nieznany autor"
+  },
+  {
+    "quote": "Czas, który przyjemnie marnujesz, nie jest zmarnowanym czasem.",
+    "author": "Marthe Troly-Curtin"
+  },
+  {
+    "quote": "Co jest nauczone w kołysce, trwa aż do grobu.",
+    "author": "Przysłowie libijskie"
+  },
+  {
+    "quote": "Wszystko, co musimy zdecydować, to co zrobić z czasem, który nam dany.",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "quote": "Zmiana może nie być szybka i nie zawsze jest łatwa. Ale z czasem i wysiłkiem, prawie każdy nawyk można zmienić.",
+    "author": "Charles Duhigg"
+  },
+  {
+    "quote": "Nie czekaj. Czas nigdy nie będzie idealny.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Kto nie znajduje czasu na zdrowie, będzie musiał znaleźć czas na chorobę.",
+    "author": "Przysłowie wschodnie"
+  },
+  {
+    "quote": "Wiedza jest skarbem, który podąża za swoim właścicielem wszędzie.",
+    "author": "Przysłowie chińskie"
+  },
+  {
+    "quote": "Ucz się, jakbyś miał żyć wiecznie.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Uczenie się to skarb, który podąża za swoim właścicielem wszędzie.",
+    "author": "Przysłowie indyjskie"
+  },
+  {
+    "quote": "Cierpliwość może ugotować kamień.",
+    "author": "Przysłowie beninskie"
+  },
+  {
+    "quote": "Cierpliwość to gorzka roślina, ale ma słodkie owoce.",
+    "author": "Przysłowie turkmeńskie"
+  },
+  {
+    "quote": "Cierpliwość jest kluczem do zadowolenia.",
+    "author": "Przysłowie mikronezyjskie"
+  },
+  {
+    "quote": "Piękne w nauce jest to, że nikt nie może jej zabrać.",
+    "author": "B.B. King"
+  },
+  {
+    "quote": "Najlepszy czas, by działać, to teraz.",
+    "author": "Mark Fisher"
+  },
+  {
+    "quote": "Mistrz nie stał się mistrzem bez uprzednich porażek.",
+    "author": "Przysłowie zen"
+  },
+  {
+    "quote": "Czas leci nad nami, ale zostawia swój cień.",
+    "author": "Nathaniel Hawthorne"
+  },
+  {
+    "quote": "Czas to krawcowa specjalizująca się w przeróbkach.",
+    "author": "Faith Baldwin"
+  },
+  {
+    "quote": "Czas to burza, w której wszyscy jesteśmy zagubieni.",
+    "author": "William Carlos Williams"
+  },
+  {
+    "quote": "Czas płynie w jednym kierunku, pamięć w innym.",
+    "author": "William Gibson"
+  },
+  {
+    "quote": "Czas zabiera wszystko, czy tego chcesz, czy nie.",
+    "author": "Stephen King"
+  },
+  {
+    "quote": "Czego Jaś się nie nauczy, tego Jan nie będzie umiał.",
+    "author": "Przysłowie polskie"
   }
 ]
+

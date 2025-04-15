@@ -1,7 +1,504 @@
 // Croatian
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Dijete koje nije obuhvaćeno od strane sela, zapalit će ga kako bi osjetilo njegovu toplinu.",
+    "author": "Basotho Proverb"
+  },
+  {
+    "quote": "Jedna drška može dimiti, ali neće gorjeti.",
+    "author": "Tongan Proverb"
+  },
+  {
+    "quote": "Polako, polako ptica gradi svoje gnijezdo.",
+    "author": "Dominican Proverb"
+  },
+  {
+    "quote": "Putovanje se najbolje mjeri prijateljima, a ne kilometrima.",
+    "author": "Cape Verdean Saying"
+  },
+  {
+    "quote": "Čovjek koji pita je budala na pet minuta. Čovjek koji nikada ne pita je budala cijeli život.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Nova metla dobro čisti, ali stara poznaje kutove.",
+    "author": "Saint Lucian Proverb"
+  },
+  {
+    "quote": "Mudrost je poput vatre. Ljudi je uzimaju od drugih.",
+    "author": "Ivorian Proverb"
+  },
+  {
+    "quote": "Osoba koja previše priča postiže malo.",
+    "author": "Uzbek Proverb"
+  },
+  {
+    "quote": "Mudri čovjek nikada ne zna sve, samo budale znaju sve.",
+    "author": "Antiguan Proverb"
+  },
+  {
+    "quote": "Bolje stabilan korak nego umorna galop.",
+    "author": "Venezuelan Proverb"
+  },
+  {
+    "quote": "Bolje kasno nego nikad.",
+    "author": "Argentine Proverb"
+  },
+  {
+    "quote": "Iza planina, postoje još planine.",
+    "author": "Haitian Proverb"
+  },
+  {
+    "quote": "Ne počinji ako se bojiš, kad počneš, ne boji se.",
+    "author": "Mongolian Proverb"
+  },
+  {
+    "quote": "Ne odgađaj za sutra što možeš učiniti danas.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Prazni bačve prave najviše buke.",
+    "author": "Kittitian Proverb"
+  },
+  {
+    "quote": "Čak i majmuni padaju s drveća.",
+    "author": "Korean Proverb"
+  },
+  {
+    "quote": "Bog pomaže onima koji se bude rano.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Zrno po zrno, kokoš puni svoj trbuh.",
+    "author": "Brazilian Proverb"
+  },
+  {
+    "quote": "Onaj tko kasni, šteti sebi.",
+    "author": "Czech Proverb"
+  },
+  {
+    "quote": "Onaj tko žuri, posrne.",
+    "author": "Panamanian Proverb"
+  },
+  {
+    "quote": "Onaj tko pomiče planine, započeo je s malim kamenčićima.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Onaj tko čeka nešto dobro, nikada ne čeka predugo.",
+    "author": "Swedish Proverb"
+  },
+  {
+    "quote": "Ako se popneš na drvo, moraš se spustiti s istog drveta.",
+    "author": "Guinean Proverb"
+  },
+  {
+    "quote": "Ako ne znaš kamo ideš, bilo koji put će te tamo odvesti.",
+    "author": "Bahamian Proverb"
+  },
+  {
+    "quote": "Krakov nije izgrađen u jednom danu.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Malo i trajno je bolje nego mnogo i prolazno.",
+    "author": "Moroccan Proverb"
+  },
+  {
+    "quote": "Polako se puni košara.",
+    "author": "Jamaican Proverb"
+  },
+  {
+    "quote": "Polako se puni spremnik.",
+    "author": "Bengali Proverb"
+  },
+  {
+    "quote": "Polako, malo postaje puno.",
+    "author": "Indonesian Proverb"
+  },
+  {
+    "quote": "Bez obzira koliko rijeka bila puna, ona uvijek želi rasti.",
+    "author": "Bissau-Guinean Proverb"
+  },
+  {
+    "quote": "Savršenstvo je neprijatelj izvršenja.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Uspjeh je putovanje, a ne destinacija.",
+    "author": "Singaporean Saying"
+  },
+  {
+    "quote": "Strpljiva osoba nalazi sreću.",
+    "author": "Lithuanian Proverb"
+  },
+  {
+    "quote": "Osoba koja zna malo, puno govori.",
+    "author": "Dominican Proverb"
+  },
+  {
+    "quote": "Posaditi drvo čiji hlad nikada nećete vidjeti — to je prava mudrost.",
+    "author": "Greek Proverb"
+  },
+  {
+    "quote": "Kada se mreže pauka ujedine, mogu povezati lava.",
+    "author": "Gabonese Proverb"
+  },
+  {
+    "quote": "Mudrost je poput lava. Nema potrebe da je proklamiraš.",
+    "author": "Senegalese Proverb"
+  },
+  {
+    "quote": "Mudrost je poput soli — mora se koristiti u pravoj mjeri.",
+    "author": "Eritrean Proverb"
+  },
+  {
+    "quote": "Ne moraš biti velik da bi počeo, ali moraš početi da bi postao velik.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Morate djelovati kao da je nemoguće ne uspjeti.",
+    "author": "Malian Saying"
+  },
+  {
+    "quote": "Žanješ što siješ.",
+    "author": "Burmese Proverb"
+  },
+  {
+    "quote": "Nikada nećeš orati polje samo ga okrećući u svom umu.",
+    "author": "Irish Proverb"
+  },
+  {
+    "quote": "Ptica se ne sjeća gdje je položila svoja jaja.",
+    "author": "Swazi poslovica"
+  },
+  {
+    "quote": "Ptica će uvijek koristiti perje druge ptice za izgradnju vlastitog gnijezda.",
+    "author": "Santomean poslovica"
+  },
+  {
+    "quote": "Knjiga je poput vrta koji nosiš u džepu.",
+    "author": "Sirijska poslovica"
+  },
+  {
+    "quote": "Mala kap izbuši kamen.",
+    "author": "Korejska poslovica"
+  },
+  {
+    "quote": "Stablo s jakim korijenima smije se olujama.",
+    "author": "Tajlandska poslovica"
+  },
+  {
+    "quote": "Bolje tri sata prerano nego minuta prekasno.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Ne bojte se sporog napretka, bojte se stagnacije.",
+    "author": "Kineska poslovica"
+  },
+  {
+    "quote": "Učinite danas ono što drugi neće, kako biste sutra imali ono o čemu drugi sanjaju.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Ne gledaj na sat; radi ono što on radi. Nastavi.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Kap po kap puni posudu.",
+    "author": "Khmer poslovica"
+  },
+  {
+    "quote": "Čak i najveći valovi počinju malima.",
+    "author": "Marshallese poslovica"
+  },
+  {
+    "quote": "Sve treba učiniti što jednostavnije, ali ne jednostavnije.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Velike stvari počinju malim koracima.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Požurivanje rijetko donosi dobro.",
+    "author": "Nizozemska poslovica"
+  },
+  {
+    "quote": "Požurivanje uništava posao.",
+    "author": "Rumunjska poslovica"
+  },
+  {
+    "quote": "Onaj tko postavlja pitanja ne može izbjeći odgovore.",
+    "author": "Kamerunska poslovica"
+  },
+  {
+    "quote": "Onaj tko ne gleda naprijed, ostaje iza.",
+    "author": "Kubanska poslovica"
+  },
+  {
+    "quote": "Malo po malo puni se mjera.",
+    "author": "Zambijska poslovica"
+  },
+  {
+    "quote": "Mnogo malih potoka čini veliki rijeku.",
+    "author": "Danska poslovica"
+  },
+  {
+    "quote": "Moskva nije izgrađena u jednom danu.",
+    "author": "Ruska poslovica"
+  },
+  {
+    "quote": "Bez obzira na to koliko daleko teče potok, on nikada ne zaboravi svoj izvor.",
+    "author": "Belizean poslovica"
+  },
+  {
+    "quote": "Jedan dan je jednako dobar kao dva za onoga tko sve radi na svom mjestu.",
+    "author": "Seychellois poslovica"
+  },
+  {
+    "quote": "Jedan prst ne može podići kamenčić.",
+    "author": "Ekvatorska Gvineja poslovica"
+  },
+  {
+    "quote": "Jedna sat planiranja štedi deset sati rada.",
+    "author": "Turska poslovica"
+  },
+  {
+    "quote": "Polako ćeš otići daleko.",
+    "author": "Slovenska poslovica"
+  },
+  {
+    "quote": "Polako i sigurno pobjeđuje u utrci.",
+    "author": "Timorska poslovica"
+  },
+  {
+    "quote": "Počni tamo gdje jesi. Iskoristi što imaš. Učini što možeš.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Učini prvi korak u vjeri. Ne moraš vidjeti cijelu stepenicu.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Što više znaš, manje ti treba.",
+    "author": "Aboridžinska poslovica"
+  },
+  {
+    "quote": "Prava snaga je mirnoća.",
+    "author": "Kineska poslovica"
+  },
+  {
+    "quote": "Ono što se mjeri, to se upravlja.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Tamo gdje nema srama, nema ni časti.",
+    "author": "Malavijska poslovica"
+  },
+  {
+    "quote": "Nećeš doseći svoj cilj ako sjediš mirno.",
+    "author": "Finska poslovica"
+  },
+  {
+    "quote": "Putovanje od tisuću milja počinje jednim korakom.",
+    "author": "Maldivska poslovica"
+  },
+  {
+    "quote": "Mali sjekira može srušiti veliko stablo.",
+    "author": "Surinam poslovica"
+  },
+  {
+    "quote": "Ne bojte se ići polako, samo se bojte stati.",
+    "author": "Kineska poslovica"
+  },
+  {
+    "quote": "Bolje petnaest minuta kasnije nego četrdeset godina prerano.",
+    "author": "Poljska poslovica"
+  },
+  {
+    "quote": "Disciplina je most između ciljeva i postignuća.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Ne odgađaj za sutra ono što možeš učiniti danas.",
+    "author": "Urugvajska poslovica"
+  },
+  {
+    "quote": "Čak i ako ustaneš rano, sunce neće izaći ranije.",
+    "author": "Španjolska poslovica"
+  },
+  {
+    "quote": "Čak ni Solomon ne može izliti iz prazne posude.",
+    "author": "Belgijska poslovica"
+  },
+  {
+    "quote": "Čak i mjesec ima mrlje.",
+    "author": "Komorska poslovica"
+  },
+  {
+    "quote": "Bog pomaže onima koji rano ustaju.",
+    "author": "Kolumbijska poslovica"
+  },
+  {
+    "quote": "Ako juriš dva zeca, izgubit ćeš oba.",
+    "author": "Gruzijska poslovica"
+  },
+  {
+    "quote": "Ako želiš ići brzo, idi sam. Ako želiš ići daleko, idi zajedno.",
+    "author": "Afrička poslovica"
+  },
+  {
+    "quote": "Male stvari koje su učinjene bolje su od velikih stvari koje su planirane.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Uspjeh ne dolazi od onoga što povremeno radiš, nego od onoga što stalno radiš.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Budućnost počinje danas, ne sutra.",
+    "author": "Papa Ivan Pavao II"
+  },
+  {
+    "quote": "Strpljiv će biti spašen.",
+    "author": "Hrvatska poslovica"
+  },
+  {
+    "quote": "Život je više od samo povećanja njegove brzine.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Okreni svoje lice prema suncu i sjene će pasti iza tebe.",
+    "author": "Maorska poslovica"
+  },
+  {
+    "quote": "Kada su korijeni duboki, nema razloga za strah od vjetra.",
+    "author": "Botsvanska poslovica"
+  },
+  {
+    "quote": "Kada vjetar promjena počne puhati, neki grade zidove, drugi grade vjetroturbine.",
+    "author": "Kineska poslovica"
+  },
+  {
+    "quote": "Prihvati tempo prirode: njezina tajna je strpljenje.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Kroz puzanje dijete uči stajati.",
+    "author": "Togo poslovica"
+  },
+  {
+    "quote": "Satovi ubijaju vrijeme... vrijeme je mrtvo dok ga mjere mali kotačići.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Ne čekaj. Vrijeme nikada neće biti savršeno.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Padni sedam puta, ustani osam puta.",
+    "author": "Japanska poslovica"
+  },
+  {
+    "quote": "Tko nema strpljenja, nema ni mudrosti.",
+    "author": "Katar poslovica"
+  },
+  {
+    "quote": "Tko vlada strpljenjem, vlada svim ostalim.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Znanje je samo glasina dok ne bude u mišićima.",
+    "author": "Papua Nova Gvineja poslovica"
+  },
+  {
+    "quote": "Učenje širi velike duše.",
+    "author": "Namibijska poslovica"
+  },
+  {
+    "quote": "Učenje je blago koje slijedi svog vlasnika svugdje.",
+    "author": "Vijetnamska poslovica"
+  },
+  {
+    "quote": "Učenje nikada ne iscrpljuje um.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Strpljenje donosi ruže.",
+    "author": "Švicarska poslovica"
+  },
+  {
+    "quote": "Strpljenje je vrlina koja donosi mir.",
+    "author": "Samoanska poslovica"
+  },
+  {
+    "quote": "Strpljenje je suputnik mudrosti.",
+    "author": "Malajska poslovica"
+  },
+  {
+    "quote": "Strpljenje je ključ za raj.",
+    "author": "Austrijska poslovica"
+  },
+  {
+    "quote": "Strpljenje je ključ za olakšanje.",
+    "author": "Jordanijska poslovica"
+  },
+  {
+    "quote": "Mala poboljšanja svaki dan tijekom vremena vode do zapanjujućih rezultata.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Ključ nije u tome da trošiš vrijeme, nego da ga investiraš.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Jedini izvor znanja je iskustvo.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Nema boljeg trenutka od sada.",
+    "author": "Nepoznati autor"
+  },
+  {
+    "quote": "Vrijeme donosi sve.",
+    "author": "Eshil"
+  },
+  {
+    "quote": "Vrijeme je najmudriji savjetnik.",
+    "author": "Periklo"
+  },
+  {
+    "quote": "Vrijeme je ono što želimo najviše, ali to najgore koristimo.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Vrijeme će pokazati.",
+    "author": "Poljska poslovica"
+  },
+  {
+    "quote": "Vrijeme, uništavač svih stvari.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Mi smo ono što činimo iznova i iznova. Stoga, izvrsnost nije čin, već navika.",
+    "author": "Aristotel"
+  },
+  {
+    "quote": "Gdje ima strpljenja, tu ima mira.",
+    "author": "Brunejska poslovica"
+  },
+  {
+    "quote": "Učiš rezati drveće rezanjem drveća.",
+    "author": "Kongoleška poslovica"
+  },
+  {
+    "quote": "Možeš odgoditi, ali vrijeme neće.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Šaka strpljenja vrijedi više od košare pameti.",
+    "author": "Alžirska poslovica"
   }
 ]
+

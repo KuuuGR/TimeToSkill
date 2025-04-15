@@ -1,7 +1,675 @@
 // Slovak
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Dieťa, ktoré nie je objaté dedinou, ju podpáli, aby cítilo jej teplo.",
+    "author": "Príslovie Basotho"
+  },
+  {
+    "quote": "Jeden prút môže dymiť, ale nezhorí.",
+    "author": "Príslovie Tonga"
+  },
+  {
+    "quote": "Krok za krokom vták stavia svoje hniezdo.",
+    "author": "Príslovie Dominikánske"
+  },
+  {
+    "quote": "Cesta sa najlepšie meria priateľmi, nie míľami.",
+    "author": "Príslovie Kapverdské"
+  },
+  {
+    "quote": "Muž, ktorý sa pýta, je blázon na päť minút. Muž, ktorý nikdy nepýta, je blázon na celý život.",
+    "author": "Čínske príslovie"
+  },
+  {
+    "quote": "Nový metla zametá dobre, ale stará pozná rohy.",
+    "author": "Príslovie zo Saint Lucie"
+  },
+  {
+    "quote": "Múdrosť je ako oheň. Ľudia ju berú od druhých.",
+    "author": "Príslovie z Pobrežia Slonoviny"
+  },
+  {
+    "quote": "Osoba, ktorá hovorí príliš veľa, dosahuje málo.",
+    "author": "Príslovie uzbecké"
+  },
+  {
+    "quote": "Múdry človek nikdy nevie všetko, iba blázni vedia všetko.",
+    "author": "Príslovie z Antiguy"
+  },
+  {
+    "quote": "Lepšie stabilný krok ako únavný tryskový beh.",
+    "author": "Príslovie venezuelské"
+  },
+  {
+    "quote": "Lepšie neskoro ako nikdy.",
+    "author": "Príslovie argentínske"
+  },
+  {
+    "quote": "Za horami sú ďalšie hory.",
+    "author": "Príslovie haitské"
+  },
+  {
+    "quote": "Nezačínaj, ak máš strach, raz začaté sa už neboj.",
+    "author": "Príslovie mongolské"
+  },
+  {
+    "quote": "Nenechávaj na zajtra, čo môžeš urobiť dnes.",
+    "author": "Príslovie poľské"
+  },
+  {
+    "quote": "Prázdne sudy robia najväčší hluk.",
+    "author": "Príslovie kittitianské"
+  },
+  {
+    "quote": "Aj opice padajú zo stromov.",
+    "author": "Príslovie kórejské"
+  },
+  {
+    "quote": "Boh pomáha tým, ktorí vstávajú skoro.",
+    "author": "Príslovie poľské"
+  },
+  {
+    "quote": "Zrno po zrnku, sliepka si napĺňa brucho.",
+    "author": "Príslovie brazílske"
+  },
+  {
+    "quote": "Kto príde neskoro, poškodí sa.",
+    "author": "Príslovie české"
+  },
+  {
+    "quote": "Kto sa ponáhľa, zakopne.",
+    "author": "Príslovie panamské"
+  },
+  {
+    "quote": "Kto hýbe horami, začal s malými kameňmi.",
+    "author": "Príslovie čínske"
+  },
+  {
+    "quote": "Kto čaká na niečo dobré, nikdy nečaká príliš dlho.",
+    "author": "Príslovie švédske"
+  },
+  {
+    "quote": "Ak vylezieš na strom, musíš z toho istého stromu aj zliezť.",
+    "author": "Príslovie guinejské"
+  },
+  {
+    "quote": "Ak nevieš, kam ideš, akákoľvek cesta ťa tam zavedie.",
+    "author": "Príslovie bahamské"
+  },
+  {
+    "quote": "Krakov nebol postavený za jeden deň.",
+    "author": "Príslovie poľské"
+  },
+  {
+    "quote": "Menej a trvácne je lepšie ako veľa a pominuteľné.",
+    "author": "Príslovie marocké"
+  },
+  {
+    "quote": "Krok za krokom sa napĺňa košík.",
+    "author": "Príslovie jamajské"
+  },
+  {
+    "quote": "Krok za krokom sa nádoba napĺňa.",
+    "author": "Príslovie bengálske"
+  },
+  {
+    "quote": "Krok za krokom, málo sa stáva veľa.",
+    "author": "Príslovie indonézske"
+  },
+  {
+    "quote": "Bez ohľadu na to, ako plná je rieka, stále chce rásť.",
+    "author": "Príslovie z Guiney-Bissau"
+  },
+  {
+    "quote": "Dokonalosť je nepriateľom vykonávania.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Úspech je cesta, nie cieľ.",
+    "author": "Príslovie singapurské"
+  },
+  {
+    "quote": "Trpezlivý nájde šťastie.",
+    "author": "Príslovie litovské"
+  },
+  {
+    "quote": "Ten, kto vie málo, hovorí veľa.",
+    "author": "Príslovie dominikánske"
+  },
+  {
+    "quote": "Zasadiť strom, ktorého tieň nikdy neuvidíš — to je pravá múdrosť.",
+    "author": "Príslovie grécke"
+  },
+  {
+    "quote": "Keď sa pavučiny spoja, môžu zviazať leva.",
+    "author": "Príslovie gabonské"
+  },
+  {
+    "quote": "Múdrosť je ako lev. Nemusíš ju hlásať.",
+    "author": "Príslovie senegalské"
+  },
+  {
+    "quote": "Múdrosť je ako soľ — musí sa používať v správnom množstve.",
+    "author": "Príslovie eritrejské"
+  },
+  {
+    "quote": "Nemusíš byť veľký, aby si začal, ale musíš začať, aby si sa stal veľkým.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Musíš konať, akoby bolo nemožné zlyhať.",
+    "author": "Príslovie malijské"
+  },
+  {
+    "quote": "Zberáš to, čo si zasial.",
+    "author": "Príslovie barmské"
+  },
+  {
+    "quote": "Nikdy neoráš pole len tým, že o tom budeš rozmýšľať.",
+    "author": "Príslovie írské"
+  },
+  {
+    "quote": "Vták nezabudne, kde položil svoje vajcia.",
+    "author": "Swazi Príslovie"
+  },
+  {
+    "quote": "Vták vždy použije perá iného vtáka na postavenie vlastného hniezda.",
+    "author": "Santomean Príslovie"
+  },
+  {
+    "quote": "Kniha je ako záhrada, ktorú nosíš v vrecku.",
+    "author": "Sýrske Príslovie"
+  },
+  {
+    "quote": "Malá kvapka vyhĺbi kameň.",
+    "author": "Kórejské Príslovie"
+  },
+  {
+    "quote": "Strom so silnými koreňmi sa smeje búrkam.",
+    "author": "Thajské Príslovie"
+  },
+  {
+    "quote": "Radšej prísť o tri hodiny skôr, než o jednu minútu neskoro.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Nezabúdaj na pomalý pokrok, zabúdaj na stagnáciu.",
+    "author": "Čínske Príslovie"
+  },
+  {
+    "quote": "Rob dnes to, čo iní neurobia, aby si zajtra mal to, o čom iní snívajú.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Nepozeraj sa na hodiny, rob to, čo robia. Pokračuj v pohybe.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Kvapka po kvapke naplní hrniec.",
+    "author": "Khmer Príslovie"
+  },
+  {
+    "quote": "Aj najväčšie vlny začínajú malými.",
+    "author": "Marshallese Príslovie"
+  },
+  {
+    "quote": "Všetko by malo byť čo najjednoduchšie, ale nie jednoduchšie.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Veľké veci majú malé začiatky.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Rýchlosť zriedka býva dobrá.",
+    "author": "Holandské Príslovie"
+  },
+  {
+    "quote": "Rýchlosť ničí prácu.",
+    "author": "Rumunské Príslovie"
+  },
+  {
+    "quote": "Ten, kto kladie otázky, nemôže sa vyhnúť odpovediam.",
+    "author": "Kamerúnske Príslovie"
+  },
+  {
+    "quote": "Ten, kto nepozerá dopredu, zostane pozadu.",
+    "author": "Kubánske Príslovie"
+  },
+  {
+    "quote": "Postupne sa naplní míra.",
+    "author": "Zambijské Príslovie"
+  },
+  {
+    "quote": "Množstvo malých potokov vytvára veľkú rieku.",
+    "author": "Dánske Príslovie"
+  },
+  {
+    "quote": "Moskva nebola postavená za jeden deň.",
+    "author": "Ruské Príslovie"
+  },
+  {
+    "quote": "Bez ohľadu na to, ako ďaleko potok tečie, nikdy nezabudne na svoj zdroj.",
+    "author": "Belizské Príslovie"
+  },
+  {
+    "quote": "Jeden deň je rovnako dobrý ako dva pre toho, kto robí všetko na svojom mieste.",
+    "author": "Seychellois Príslovie"
+  },
+  {
+    "quote": "Jeden prst nezodvihne kamienok.",
+    "author": "Príslovie z Rovníkovej Guiney"
+  },
+  {
+    "quote": "Jedna hodina plánovania šetrí desať hodín práce.",
+    "author": "Turecké Príslovie"
+  },
+  {
+    "quote": "Pomaly pôjdeš ďaleko.",
+    "author": "Slovinské Príslovie"
+  },
+  {
+    "quote": "Pomalý a stabilný vyhráva závod.",
+    "author": "Timorské Príslovie"
+  },
+  {
+    "quote": "Začni tam, kde si. Použi to, čo máš. Urob, čo môžeš.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Urob prvý krok viera. Nemusíš vidieť celé schody.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Čím viac vieš, tým menej potrebuješ.",
+    "author": "Príslovie pôvodných obyvateľov"
+  },
+  {
+    "quote": "Skutočná sila je pokoj.",
+    "author": "Čínske Príslovie"
+  },
+  {
+    "quote": "To, čo sa meria, sa riadi.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Kde nie je hanby, tam nie je ani cti.",
+    "author": "Malawijské Príslovie"
+  },
+  {
+    "quote": "Nepodíš sa na svoj cieľ tým, že zostaneš sedieť na mieste.",
+    "author": "Fínske Príslovie"
+  },
+  {
+    "quote": "Cesta tisíc míľ začína jedným krokom.",
+    "author": "Maldivské Príslovie"
+  },
+  {
+    "quote": "Malá sekera môže pokázať veľký strom.",
+    "author": "Surinam Príslovie"
+  },
+  {
+    "quote": "Neboj sa ísť pomaly, boj sa len stáť na mieste.",
+    "author": "Čínske Príslovie"
+  },
+  {
+    "quote": "Lepšie je prísť o pätnásť minút neskôr ako o štyridsať rokov skôr.",
+    "author": "Poľské Príslovie"
+  },
+  {
+    "quote": "Disciplína je most medzi cieľmi a úspechom.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Neodkladaj na zajtra to, čo môžeš urobiť dnes.",
+    "author": "Uruguajské Príslovie"
+  },
+  {
+    "quote": "Aj keď sa zobudíš skoro, slnko nevyjde skôr.",
+    "author": "Španielske Príslovie"
+  },
+  {
+    "quote": "Aj Šalamún nemôže liať z prázdnej nádoby.",
+    "author": "Belgické Príslovie"
+  },
+  {
+    "quote": "Aj mesiac má škvrny.",
+    "author": "Komorské Príslovie"
+  },
+  {
+    "quote": "Boh pomáha tomu, kto vstáva skoro.",
+    "author": "Kolumbijské príslovie"
+  },
+  {
+    "quote": "Ak prenasleduješ dve zajace, stratíš ich oboch.",
+    "author": "Gruzínske príslovie"
+  },
+  {
+    "quote": "Ak chceš ísť rýchlo, choď sám. Ak chceš ísť ďaleko, choď spolu.",
+    "author": "Africké príslovie"
+  },
+  {
+    "quote": "Malé skutky vykonané sú lepšie ako veľké skutky naplánované.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Úspech neprichádza z toho, čo robíš občas, ale z toho, čo robíš konzistentne.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Budúcnosť začína dnes, nie zajtra.",
+    "author": "Pápež Ján Pavol II"
+  },
+  {
+    "quote": "Trpezlivý bude spasený.",
+    "author": "Chorvátske príslovie"
+  },
+  {
+    "quote": "Život je viac než len zvyšovanie jeho rýchlosti.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Otoč svoju tvár k slnku a tiene padnú za tebou.",
+    "author": "Maorský príslovie"
+  },
+  {
+    "quote": "Keď sú korene hlboké, nie je dôvod báť sa vetra.",
+    "author": "Botswanské príslovie"
+  },
+  {
+    "quote": "Keď vietor zmien fúka, niektorí stavajú steny, iní stavajú veterné mlyny.",
+    "author": "Čínske príslovie"
+  },
+  {
+    "quote": "Prijmi tempo prírody: jej tajomstvo je trpezlivosť.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Plazením sa dieťa sa učí stáť.",
+    "author": "Togské príslovie"
+  },
+  {
+    "quote": "Hodiny zabíjajú čas... čas je mŕtvy, pokiaľ je odpočítavaný malými kolesami.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Nečakaj. Čas nikdy nebude práve vhodný.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Padol sedemkrát, vstaň osemkrát.",
+    "author": "Japonské príslovie"
+  },
+  {
+    "quote": "Ten, kto nemá trpezlivosť, nemá múdrosť.",
+    "author": "Katarčianske príslovie"
+  },
+  {
+    "quote": "Ten, kto zvládne trpezlivosť, zvládne všetko ostatné.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Vedomosť je len dráma, kým nie je v svaloch.",
+    "author": "Papua Nová Guinea príslovie"
+  },
+  {
+    "quote": "Učenie rozširuje veľké duše.",
+    "author": "Namíbijské príslovie"
+  },
+  {
+    "quote": "Učenie je poklad, ktorý nasledoval svojho vlastníka všade.",
+    "author": "Vietnamské príslovie"
+  },
+  {
+    "quote": "Učenie nikdy nevyčerpá myseľ.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Trpezlivosť prináša ruže.",
+    "author": "Švajčiarske príslovie"
+  },
+  {
+    "quote": "Trpezlivosť je cnosť, ktorá prináša pokoj.",
+    "author": "Samojské príslovie"
+  },
+  {
+    "quote": "Trpezlivosť je spoločník múdrosti.",
+    "author": "Malajzijské príslovie"
+  },
+  {
+    "quote": "Trpezlivosť je kľúčom k raju.",
+    "author": "Rakúske príslovie"
+  },
+  {
+    "quote": "Trpezlivosť je kľúčom k úľave.",
+    "author": "Jordánske príslovie"
+  },
+  {
+    "quote": "Malé každodenné zlepšenia počas času vedú k ohromujúcim výsledkom.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Kľúč nie je v míňaní času, ale v jeho investovaní.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Jedným zdrojom vedomostí je skúsenosť.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Neexistuje lepší čas ako teraz.",
+    "author": "Neznámy autor"
+  },
+  {
+    "quote": "Čas prináša všetky veci.",
+    "author": "Aischylos"
+  },
+  {
+    "quote": "Čas je najmúdrejší poradca.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Čas je to, čo chceme najviac, ale používame to najhoršie.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Čas ukáže.",
+    "author": "Poľské príslovie"
+  },
+  {
+    "quote": "Čas, ničič všetkých vecí.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Sme tým, čo robíme opakovane. Preto dokonalosť nie je čin, ale zvyklosť.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Kde je trpezlivosť, tam je pokoj.",
+    "author": "Brunejské príslovie"
+  },
+  {
+    "quote": "Učíš sa, ako rezať stromy, keď ich režeš.",
+    "author": "Kongozské príslovie"
+  },
+  {
+    "quote": "Môžeš oneskoriť, ale čas sa neoneskorí.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Hrste trpezlivosti sú cennejšie ako kôš rozumu.",
+    "author": "Alžírske príslovie"
+  },
+  {
+    "quote": "Pokojné more nikdy neurobí skúseného námorníka.",
+    "author": "Bolívijské príslovie"
+  },
+  {
+    "quote": "Génius je večná trpezlivosť.",
+    "author": "Michelangelo"
+  },
+  {
+    "quote": "Kto nepridáva k svojmu vedomostiam, odoberá ich.",
+    "author": "Hebrejské príslovie"
+  },
+  {
+    "quote": "Kto sa učí, ten učí.",
+    "author": "Kongozské príslovie"
+  },
+  {
+    "quote": "Vedomosť je ako záhrada: ak nie je ošetrovaná, nemôže byť zozbieraná.",
+    "author": "Gambijské príslovie"
+  },
+  {
+    "quote": "Ži ako keby si mal zomrieť zajtra. Uč sa ako keby si mal žiť navždy.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Stratený čas už nikdy nenájdeš.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Motivácia je to, čo ťa rozbehne. Zvyk je to, čo ťa udrží v pohybe.",
+    "author": "Jim Ryun"
+  },
+  {
+    "quote": "Jeden krok za druhým je dobré chodenie.",
+    "author": "Lao príslovie"
+  },
+  {
+    "quote": "Povedz mi a zabudnem. Nauč ma a zapamätám si. Zapoj ma a naučím sa.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Najlepší čas na zasadenie stromu bol pred 20 rokmi. Druhý najlepší čas je teraz.",
+    "author": "Čínske príslovie"
+  },
+  {
+    "quote": "Zvyk nerobí mnícha.",
+    "author": "Čilské príslovie"
+  },
+  {
+    "quote": "Problém je v tom, že si myslíš, že máš čas.",
+    "author": "Jack Kornfield"
+  },
+  {
+    "quote": "Dva najsilnejší bojovníci sú trpezlivosť a čas.",
+    "author": "Lev Tolstoj"
+  },
+  {
+    "quote": "Vždy hovoria, že čas mení veci, ale v skutočnosti ich musíš zmeniť ty sám.",
+    "author": "Andy Warhol"
+  },
+  {
+    "quote": "Čas je stvorená vec. Povedať „nemám čas“ je ako povedať „nechcem“.",
+    "author": "Laozi"
+  },
+  {
+    "quote": "Čas je skvelý učiteľ, ale žiaľ, zabíja všetkých svojich žiakov.",
+    "author": "Hector Berlioz"
+  },
+  {
+    "quote": "Čas je najcennejšia vec, ktorú človek môže stráviť.",
+    "author": "Theophrastus"
+  },
+  {
+    "quote": "Čas nie je hlavná vec. Je to jediná vec.",
+    "author": "Miles Davis"
+  },
+  {
+    "quote": "Čas je dosť dlhý pre každého, kto vie, ako ho využiť.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Čas nečaká na nikoho.",
+    "author": "Tradičné príslovie"
+  },
+  {
+    "quote": "Čas nečaká na nikoho. Ty by si tiež nemal čakať.",
+    "author": "Neznámy autor"
+  },
+  {
+    "quote": "Čas, ktorý si užívaš pri plytvaní, nie je plytvaným časom.",
+    "author": "Marthe Troly-Curtin"
+  },
+  {
+    "quote": "Čo sa naučí v kolíske, trvá až do hrobu.",
+    "author": "Libyjské príslovie"
+  },
+  {
+    "quote": "Všetko, čo musíme rozhodnúť, je čo robiť s časom, ktorý nám bol daný.",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "quote": "Zmena nemusí byť rýchla a nie vždy je ľahká. Ale s časom a úsilím sa takmer každý zvyk môže zmeniť.",
+    "author": "Charles Duhigg"
+  },
+  {
+    "quote": "Nečakaj. Čas nikdy nebude práve správny.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Kto si nenájde čas na zdravie, bude musieť nájsť čas na chorobu.",
+    "author": "Východné príslovie"
+  },
+  {
+    "quote": "Vedomosť je poklad, ktorý sleduje svojho vlastníka všade.",
+    "author": "Čínske príslovie"
+  },
+  {
+    "quote": "Uč sa, ako keby si mal žiť navždy.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Učenie je poklad, ktorý sleduje svojho vlastníka všade.",
+    "author": "Indické príslovie"
+  },
+  {
+    "quote": "Trpezlivosť môže uvariť kameň.",
+    "author": "Beninské príslovie"
+  },
+  {
+    "quote": "Trpezlivosť je horká rastlina, ale má sladké ovocie.",
+    "author": "Turkménske príslovie"
+  },
+  {
+    "quote": "Trpezlivosť je kľúčom k spokojnosti.",
+    "author": "Mikronézske príslovie"
+  },
+  {
+    "quote": "Krása učenia je v tom, že ti to nikto nemôže vziať.",
+    "author": "B.B. King"
+  },
+  {
+    "quote": "Najlepší čas na konanie je teraz.",
+    "author": "Mark Fisher"
+  },
+  {
+    "quote": "Majster zlyhal tisíckrát predtým, než sa stal majstrom.",
+    "author": "Zenové príslovie"
+  },
+  {
+    "quote": "Čas letí nad nami, ale zanecháva svoj tieň.",
+    "author": "Nathaniel Hawthorne"
+  },
+  {
+    "quote": "Čas je krajčír, ktorý sa špecializuje na úpravy.",
+    "author": "Faith Baldwin"
+  },
+  {
+    "quote": "Čas je búrka, v ktorej sme všetci stratení.",
+    "author": "William Carlos Williams"
+  },
+  {
+    "quote": "Čas sa pohybuje jedným smerom, pamäť iným.",
+    "author": "William Gibson"
+  },
+  {
+    "quote": "Čas vezme všetko, či už to chceš alebo nie.",
+    "author": "Stephen King"
+  },
+  {
+    "quote": "Čo Johnny nepochopí, John nebude vedieť.",
+    "author": "Poľské príslovie"
   }
 ]

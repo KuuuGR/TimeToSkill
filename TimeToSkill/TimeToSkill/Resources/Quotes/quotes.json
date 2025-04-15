@@ -1,22 +1,674 @@
 [
   {
-    "quote": "The journey of a thousand miles begins with one step.",
-    "author": "Lao Tzu"
+    "quote": "A child who is not embraced by the village will burn it down to feel its warmth.",
+    "author": "Basotho Proverb"
   },
   {
-    "quote": "Simplicity is the ultimate sophistication.",
+    "quote": "A single stick may smoke, but it will not burn.",
+    "author": "Tongan Proverb"
+  },
+  {
+    "quote": "Little by little the bird builds its nest.",
+    "author": "Dominican Proverb"
+  },
+  {
+    "quote": "A journey is best measured in friends, not miles.",
+    "author": "Cape Verdean Saying"
+  },
+  {
+    "quote": "A man who asks is a fool for five minutes. A man who never asks is a fool for life.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "A new broom sweeps clean, but the old one knows the corners.",
+    "author": "Saint Lucian Proverb"
+  },
+  {
+    "quote": "Wisdom is like fire. People take it from others.",
+    "author": "Ivorian Proverb"
+  },
+  {
+    "quote": "A person who talks too much accomplishes little.",
+    "author": "Uzbek Proverb"
+  },
+  {
+    "quote": "A wise man never knows all, only fools know everything.",
+    "author": "Antiguan Proverb"
+  },
+  {
+    "quote": "Better a steady step than a tiring trot.",
+    "author": "Venezuelan Proverb"
+  },
+  {
+    "quote": "Better late than never.",
+    "author": "Argentine Proverb"
+  },
+  {
+    "quote": "Beyond mountains, there are mountains.",
+    "author": "Haitian Proverb"
+  },
+  {
+    "quote": "Do not start if afraid, once begun do not be afraid.",
+    "author": "Mongolian Proverb"
+  },
+  {
+    "quote": "Don’t put off until tomorrow what you can do today.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Empty barrels make the most noise.",
+    "author": "Kittitian Proverb"
+  },
+  {
+    "quote": "Even monkeys fall from trees.",
+    "author": "Korean Proverb"
+  },
+  {
+    "quote": "God helps those who wake up early.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Grain by grain, the hen fills her belly.",
+    "author": "Brazilian Proverb"
+  },
+  {
+    "quote": "He who comes late harms himself.",
+    "author": "Czech Proverb"
+  },
+  {
+    "quote": "He who hurries, stumbles.",
+    "author": "Panamanian Proverb"
+  },
+  {
+    "quote": "He who moves mountains started with small stones.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "He who waits for something good never waits too long.",
+    "author": "Swedish Proverb"
+  },
+  {
+    "quote": "If you climb up a tree, you must climb down the same tree.",
+    "author": "Guinean Proverb"
+  },
+  {
+    "quote": "If you don’t know where you’re going, any road will take you there.",
+    "author": "Bahamian Proverb"
+  },
+  {
+    "quote": "Kraków wasn’t built in a day.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Little and lasting is better than much and passing.",
+    "author": "Moroccan Proverb"
+  },
+  {
+    "quote": "Little by little fills the basket.",
+    "author": "Jamaican Proverb"
+  },
+  {
+    "quote": "Little by little the container gets filled.",
+    "author": "Bengali Proverb"
+  },
+  {
+    "quote": "Little by little, a little becomes a lot.",
+    "author": "Indonesian Proverb"
+  },
+  {
+    "quote": "No matter how full the river, it still wants to grow.",
+    "author": "Bissau-Guinean Proverb"
+  },
+  {
+    "quote": "Perfection is the enemy of execution.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Success is a journey, not a destination.",
+    "author": "Singaporean Saying"
+  },
+  {
+    "quote": "The patient one finds happiness.",
+    "author": "Lithuanian Proverb"
+  },
+  {
+    "quote": "The person who knows little, talks much.",
+    "author": "Dominican Proverb"
+  },
+  {
+    "quote": "To plant a tree whose shade you will not see — that is true wisdom.",
+    "author": "Greek Proverb"
+  },
+  {
+    "quote": "When spider webs unite, they can tie up a lion.",
+    "author": "Gabonese Proverb"
+  },
+  {
+    "quote": "Wisdom is like a lion. You don't have to proclaim it.",
+    "author": "Senegalese Proverb"
+  },
+  {
+    "quote": "Wisdom is like salt — it must be used in the right measure.",
+    "author": "Eritrean Proverb"
+  },
+  {
+    "quote": "You don’t have to be great to start, but you have to start to be great.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "You must act as if it is impossible to fail.",
+    "author": "Malian Saying"
+  },
+  {
+    "quote": "You reap what you sow.",
+    "author": "Burmese Proverb"
+  },
+  {
+    "quote": "You’ll never plough a field by turning it over in your mind.",
+    "author": "Irish Proverb"
+  },
+  {
+    "quote": "A bird does not forget where it laid its eggs.",
+    "author": "Swazi Proverb"
+  },
+  {
+    "quote": "A bird will always use another bird’s feathers to feather its own nest.",
+    "author": "Santomean Proverb"
+  },
+  {
+    "quote": "A book is like a garden carried in the pocket.",
+    "author": "Syrian Proverb"
+  },
+  {
+    "quote": "A small drop hollows the stone.",
+    "author": "Korean Proverb"
+  },
+  {
+    "quote": "A tree with strong roots laughs at storms.",
+    "author": "Thai Proverb"
+  },
+  {
+    "quote": "Better three hours too soon than a minute too late.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Do not fear slow progress, fear stagnation.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Do today what others won’t, so tomorrow you’ll have what others dream of.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Don’t watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Drop by drop fills the pot.",
+    "author": "Khmer Proverb"
+  },
+  {
+    "quote": "Even the biggest waves start small.",
+    "author": "Marshallese Saying"
+  },
+  {
+    "quote": "Everything should be made as simple as possible, but not simpler.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Great things have small beginnings.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Haste is rarely good.",
+    "author": "Dutch Proverb"
+  },
+  {
+    "quote": "Haste spoils the work.",
+    "author": "Romanian Proverb"
+  },
+  {
+    "quote": "He who asks questions cannot avoid the answers.",
+    "author": "Cameroonian Proverb"
+  },
+  {
+    "quote": "He who does not look ahead remains behind.",
+    "author": "Cuban Proverb"
+  },
+  {
+    "quote": "Little by little fills the measure.",
+    "author": "Zambian Proverb"
+  },
+  {
+    "quote": "Many small streams make a great river.",
+    "author": "Danish Proverb"
+  },
+  {
+    "quote": "Moscow wasn’t built in a day.",
+    "author": "Russian Proverb"
+  },
+  {
+    "quote": "No matter how far a stream flows, it never forgets its source.",
+    "author": "Belizean Proverb"
+  },
+  {
+    "quote": "One day is as good as two for he who does everything in its place.",
+    "author": "Seychellois Proverb"
+  },
+  {
+    "quote": "One finger cannot lift a pebble.",
+    "author": "Equatoguinean Proverb"
+  },
+  {
+    "quote": "One hour of planning saves ten hours of work.",
+    "author": "Turkish Proverb"
+  },
+  {
+    "quote": "Slowly you will go far.",
+    "author": "Slovenian Proverb"
+  },
+  {
+    "quote": "Slow and steady wins the race.",
+    "author": "Timorese Proverb"
+  },
+  {
+    "quote": "Start where you are. Use what you have. Do what you can.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Take the first step in faith. You don’t have to see the whole staircase.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "The more you know, the less you need.",
+    "author": "Aboriginal Proverb"
+  },
+  {
+    "quote": "True strength is calm.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "What gets measured gets managed.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Where there is no shame, there is no honor.",
+    "author": "Malawian Proverb"
+  },
+  {
+    "quote": "You won’t reach your goal by sitting still.",
+    "author": "Finnish Proverb"
+  },
+  {
+    "quote": "A journey of a thousand miles begins with a single step.",
+    "author": "Maldivian Saying"
+  },
+  {
+    "quote": "A little axe can cut down a big tree.",
+    "author": "Surinamese Proverb"
+  },
+  {
+    "quote": "Be not afraid of going slowly, be afraid only of standing still.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Better fifteen minutes too late than a fourty years too soon.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Discipline is the bridge between goals and accomplishment.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Don’t put off till tomorrow what you can do today.",
+    "author": "Uruguayan Proverb"
+  },
+  {
+    "quote": "Even if you wake up early, the sun won’t rise sooner.",
+    "author": "Spanish Proverb"
+  },
+  {
+    "quote": "Even Solomon can’t pour from an empty vessel.",
+    "author": "Belgian Proverb"
+  },
+  {
+    "quote": "Even the moon has spots.",
+    "author": "Comorian Proverb"
+  },
+  {
+    "quote": "God helps the early riser.",
+    "author": "Colombian Proverb"
+  },
+  {
+    "quote": "If you chase two rabbits, you will lose them both.",
+    "author": "Georgian Proverb"
+  },
+  {
+    "quote": "If you want to go fast, go alone. If you want to go far, go together.",
+    "author": "African Proverb"
+  },
+  {
+    "quote": "Small deeds done are better than great deeds planned.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "The future starts today, not tomorrow.",
+    "author": "Pope John Paul II"
+  },
+  {
+    "quote": "The patient one will be saved.",
+    "author": "Croatian Proverb"
+  },
+  {
+    "quote": "There is more to life than simply increasing its speed.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Turn your face to the sun and the shadows fall behind you.",
+    "author": "Māori Proverb"
+  },
+  {
+    "quote": "When the roots are deep, there is no reason to fear the wind.",
+    "author": "Botswanan Proverb"
+  },
+  {
+    "quote": "When the wind of change blows, some build walls, others build windmills.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Adopt the pace of nature: her secret is patience.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "By crawling, a child learns to stand.",
+    "author": "Togolese Proverb"
+  },
+  {
+    "quote": "Clocks slay time... time is dead as long as it is being clicked off by little wheels.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Do not wait. The time will never be just right.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Fall seven times, stand up eight.",
+    "author": "Japanese Proverb"
+  },
+  {
+    "quote": "He who has no patience has no wisdom.",
+    "author": "Qatari Proverb"
+  },
+  {
+    "quote": "He who masters patience masters everything else.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Knowledge is only a rumor until it is in the muscle.",
+    "author": "Papua New Guinean Proverb"
+  },
+  {
+    "quote": "Learning expands great souls.",
+    "author": "Namibian Proverb"
+  },
+  {
+    "quote": "Learning is a treasure that follows its owner everywhere.",
+    "author": "Vietnamese Proverb"
+  },
+  {
+    "quote": "Learning never exhausts the mind.",
     "author": "Leonardo da Vinci"
   },
   {
-    "quote": "Slow is smooth, smooth is fast.",
-    "author": "Navy SEAL proverb"
+    "quote": "Patience brings roses.",
+    "author": "Swiss Proverb"
   },
   {
-    "quote": "To learn is to grow. To grow is to change.",
-    "author": "Unknown"
+    "quote": "Patience is a virtue that brings peace.",
+    "author": "Samoan Proverb"
   },
   {
-    "quote": "A little progress each day adds up to big results.",
-    "author": "Satya Nani"
+    "quote": "Patience is the companion of wisdom.",
+    "author": "Malay Proverb"
+  },
+  {
+    "quote": "Patience is the key to paradise.",
+    "author": "Austrian Proverb"
+  },
+  {
+    "quote": "Patience is the key to relief.",
+    "author": "Jordanian Proverb"
+  },
+  {
+    "quote": "Small daily improvements over time lead to stunning results.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "The key is in not spending time, but in investing it.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "The only source of knowledge is experience.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "There is no better time than now.",
+    "author": "Unknown Author"
+  },
+  {
+    "quote": "Time brings all things to pass.",
+    "author": "Aeschylus"
+  },
+  {
+    "quote": "Time is the wisest counselor of all.",
+    "author": "Pericles"
+  },
+  {
+    "quote": "Time is what we want most, but what we use worst.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Time will tell.",
+    "author": "Polish Proverb"
+  },
+  {
+    "quote": "Time, the devourer of all things.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle"
+  },
+  {
+    "quote": "Where there is patience, there is peace.",
+    "author": "Bruneian Proverb"
+  },
+  {
+    "quote": "You learn how to cut down trees by cutting them down.",
+    "author": "Congolese Proverb"
+  },
+  {
+    "quote": "You may delay, but time will not.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "A handful of patience is worth more than a bushel of brains.",
+    "author": "Algerian Proverb"
+  },
+  {
+    "quote": "A smooth sea never made a skilled sailor.",
+    "author": "Bolivian Saying"
+  },
+  {
+    "quote": "Genius is eternal patience.",
+    "author": "Michelangelo"
+  },
+  {
+    "quote": "He who adds not to his knowledge subtracts from it.",
+    "author": "Hebrew Proverb"
+  },
+  {
+    "quote": "He who learns, teaches.",
+    "author": "Congolese Proverb"
+  },
+  {
+    "quote": "Knowledge is like a garden: if it is not cultivated, it cannot be harvested.",
+    "author": "Gambian Proverb"
+  },
+  {
+    "quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Lost time is never found again.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Motivation is what gets you started. Habit is what keeps you going.",
+    "author": "Jim Ryun"
+  },
+  {
+    "quote": "One step at a time is good walking.",
+    "author": "Lao Proverb"
+  },
+  {
+    "quote": "Tell me and I forget. Teach me and I remember. Involve me and I learn.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "The habit doesn’t make the monk.",
+    "author": "Chilean Proverb"
+  },
+  {
+    "quote": "The trouble is, you think you have time.",
+    "author": "Jack Kornfield"
+  },
+  {
+    "quote": "The two most powerful warriors are patience and time.",
+    "author": "Leo Tolstoy"
+  },
+  {
+    "quote": "They always say time changes things, but you actually have to change them yourself.",
+    "author": "Andy Warhol"
+  },
+  {
+    "quote": "Time is a created thing. To say 'I don’t have time' is like saying 'I don’t want to.'",
+    "author": "Laozi"
+  },
+  {
+    "quote": "Time is a great teacher, but unfortunately it kills all its pupils.",
+    "author": "Hector Berlioz"
+  },
+  {
+    "quote": "Time is the most valuable thing a man can spend.",
+    "author": "Theophrastus"
+  },
+  {
+    "quote": "Time isn’t the main thing. It’s the only thing.",
+    "author": "Miles Davis"
+  },
+  {
+    "quote": "Time stays long enough for anyone who will use it.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Time waits for no one.",
+    "author": "Traditional saying"
+  },
+  {
+    "quote": "Time waits for no one. Neither should you.",
+    "author": "Unknown Author"
+  },
+  {
+    "quote": "Time you enjoy wasting is not wasted time.",
+    "author": "Marthe Troly-Curtin"
+  },
+  {
+    "quote": "What is learned in the cradle lasts till the grave.",
+    "author": "Libyan Proverb"
+  },
+  {
+    "quote": "All we have to decide is what to do with the time that is given us.",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "quote": "Change might not be fast and it isn’t always easy. But with time and effort, almost any habit can be reshaped.",
+    "author": "Charles Duhigg"
+  },
+  {
+    "quote": "Don’t wait. The time will never be just right.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "He who doesn’t make time for health will have to make time for illness.",
+    "author": "Eastern Proverb"
+  },
+  {
+    "quote": "Knowledge is a treasure that follows its owner everywhere.",
+    "author": "Chinese Proverb"
+  },
+  {
+    "quote": "Learn as if you were to live forever.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Learning is a treasure that will follow its owner everywhere.",
+    "author": "Indian Proverb"
+  },
+  {
+    "quote": "Patience can cook a stone.",
+    "author": "Beninese Proverb"
+  },
+  {
+    "quote": "Patience is a bitter plant, but it has sweet fruit.",
+    "author": "Turkmen Proverb"
+  },
+  {
+    "quote": "Patience is the key to contentment.",
+    "author": "Micronesian Proverb"
+  },
+  {
+    "quote": "The beautiful thing about learning is that no one can take it away from you.",
+    "author": "B.B. King"
+  },
+  {
+    "quote": "The best time to act is now.",
+    "author": "Mark Fisher"
+  },
+  {
+    "quote": "The master has failed a thousand times before becoming a master.",
+    "author": "Zen Proverb"
+  },
+  {
+    "quote": "Time flies over us, but leaves its shadow behind.",
+    "author": "Nathaniel Hawthorne"
+  },
+  {
+    "quote": "Time is a dressmaker specializing in alterations.",
+    "author": "Faith Baldwin"
+  },
+  {
+    "quote": "Time is a storm in which we are all lost.",
+    "author": "William Carlos Williams"
+  },
+  {
+    "quote": "Time moves in one direction, memory in another.",
+    "author": "William Gibson"
+  },
+  {
+    "quote": "Time takes it all, whether you want it to or not.",
+    "author": "Stephen King"
+  },
+  {
+    "quote": "What Johnny doesn’t learn, John won’t know.",
+    "author": "Polish Proverb"
   }
 ]

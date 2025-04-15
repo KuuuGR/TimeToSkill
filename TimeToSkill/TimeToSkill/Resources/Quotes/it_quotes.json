@@ -1,7 +1,504 @@
 // Italian
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Un bambino che non viene abbracciato dal villaggio lo brucerà per sentirne il calore.",
+    "author": "Proverbio Basotho"
+  },
+  {
+    "quote": "Un singolo bastone può fumare, ma non brucerà.",
+    "author": "Proverbio Tongano"
+  },
+  {
+    "quote": "Poco a poco l'uccello costruisce il suo nido.",
+    "author": "Proverbio Dominicano"
+  },
+  {
+    "quote": "Un viaggio si misura meglio con gli amici, non con i chilometri.",
+    "author": "Detto di Capo Verde"
+  },
+  {
+    "quote": "Un uomo che chiede è un idiota per cinque minuti. Un uomo che non chiede mai è un idiota per tutta la vita.",
+    "author": "Proverbio Cinese"
+  },
+  {
+    "quote": "Una scopa nuova spazza bene, ma la vecchia conosce gli angoli.",
+    "author": "Proverbio di Saint Lucia"
+  },
+  {
+    "quote": "La saggezza è come il fuoco. Le persone la prendono dagli altri.",
+    "author": "Proverbio della Costa d'Avorio"
+  },
+  {
+    "quote": "Una persona che parla troppo ottiene poco.",
+    "author": "Proverbio Uzbeco"
+  },
+  {
+    "quote": "Un uomo saggio non sa mai tutto, solo i folli sanno tutto.",
+    "author": "Proverbio Antiguano"
+  },
+  {
+    "quote": "Meglio un passo stabile che una galoppata faticosa.",
+    "author": "Proverbio Venezuelano"
+  },
+  {
+    "quote": "Meglio tardi che mai.",
+    "author": "Proverbio Argentino"
+  },
+  {
+    "quote": "Oltre le montagne, ci sono montagne.",
+    "author": "Proverbio Haitiano"
+  },
+  {
+    "quote": "Non cominciare se hai paura, una volta iniziato non aver paura.",
+    "author": "Proverbio Mongolo"
+  },
+  {
+    "quote": "Non rimandare a domani ciò che puoi fare oggi.",
+    "author": "Proverbio Polacco"
+  },
+  {
+    "quote": "I barili vuoti fanno più rumore.",
+    "author": "Proverbio Kittitian"
+  },
+  {
+    "quote": "Anche le scimmie cadono dagli alberi.",
+    "author": "Proverbio Coreano"
+  },
+  {
+    "quote": "Dio aiuta quelli che si svegliano presto.",
+    "author": "Proverbio Polacco"
+  },
+  {
+    "quote": "Chicco dopo chicco, la gallina riempie il suo ventre.",
+    "author": "Proverbio Brasiliano"
+  },
+  {
+    "quote": "Chi arriva in ritardo fa del male a se stesso.",
+    "author": "Proverbio Ceco"
+  },
+  {
+    "quote": "Chi ha fretta inciampa.",
+    "author": "Proverbio Panamense"
+  },
+  {
+    "quote": "Chi sposta le montagne ha iniziato con piccole pietre.",
+    "author": "Proverbio Cinese"
+  },
+  {
+    "quote": "Chi aspetta qualcosa di buono non aspetta mai troppo a lungo.",
+    "author": "Proverbio Svedese"
+  },
+  {
+    "quote": "Se sali su un albero, devi scendere dallo stesso albero.",
+    "author": "Proverbio Guineano"
+  },
+  {
+    "quote": "Se non sai dove stai andando, qualsiasi strada ti porterà lì.",
+    "author": "Proverbio Bahamense"
+  },
+  {
+    "quote": "Cracovia non è stata costruita in un giorno.",
+    "author": "Proverbio Polacco"
+  },
+  {
+    "quote": "Poco e duraturo è meglio di molto e passeggero.",
+    "author": "Proverbio Marocchino"
+  },
+  {
+    "quote": "Poco a poco riempi il cesto.",
+    "author": "Proverbio Giamaicano"
+  },
+  {
+    "quote": "Poco a poco il contenitore si riempie.",
+    "author": "Proverbio Bengalese"
+  },
+  {
+    "quote": "Poco a poco, un po' diventa tanto.",
+    "author": "Proverbio Indonesiano"
+  },
+  {
+    "quote": "Non importa quanto sia pieno il fiume, vuole ancora crescere.",
+    "author": "Proverbio Guinea-Bissau"
+  },
+  {
+    "quote": "La perfezione è il nemico dell'esecuzione.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Il successo è un viaggio, non una destinazione.",
+    "author": "Detto di Singapore"
+  },
+  {
+    "quote": "Chi è paziente trova la felicità.",
+    "author": "Proverbio Lituano"
+  },
+  {
+    "quote": "La persona che sa poco, parla molto.",
+    "author": "Proverbio Dominicano"
+  },
+  {
+    "quote": "Pianta un albero di cui non vedrai mai l'ombra — questa è la vera saggezza.",
+    "author": "Proverbio Greco"
+  },
+  {
+    "quote": "Quando le ragnatele si uniscono, possono legare un leone.",
+    "author": "Proverbio Gabonese"
+  },
+  {
+    "quote": "La saggezza è come un leone. Non devi proclamarla.",
+    "author": "Proverbio Senegalese"
+  },
+  {
+    "quote": "La saggezza è come il sale — deve essere usata nella giusta misura.",
+    "author": "Proverbio Eritreo"
+  },
+  {
+    "quote": "Non devi essere grande per cominciare, ma devi cominciare per diventare grande.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Devi agire come se fosse impossibile fallire.",
+    "author": "Detto Maliano"
+  },
+  {
+    "quote": "Mieti ciò che semini.",
+    "author": "Proverbio Birmano"
+  },
+  {
+    "quote": "Non arerai mai un campo semplicemente girandolo nella tua mente.",
+    "author": "Proverbio Irlandese"
+  },
+  {
+    "quote": "Un uccello non dimentica dove ha messo le sue uova.",
+    "author": "Proverbio Swazi"
+  },
+  {
+    "quote": "Un uccello userà sempre le piume di un altro uccello per fare il proprio nido.",
+    "author": "Proverbio Santomeano"
+  },
+  {
+    "quote": "Un libro è come un giardino che porti in tasca.",
+    "author": "Proverbio Siriano"
+  },
+  {
+    "quote": "Una piccola goccia scava la pietra.",
+    "author": "Proverbio Coreano"
+  },
+  {
+    "quote": "Un albero con radici forti ride delle tempeste.",
+    "author": "Proverbio Thai"
+  },
+  {
+    "quote": "Meglio tre ore in anticipo che un minuto troppo tardi.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Non temere il progresso lento, temere la stagnazione.",
+    "author": "Proverbio Cinese"
+  },
+  {
+    "quote": "Fai oggi ciò che gli altri non faranno, così domani avrai ciò che gli altri sognano.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Non guardare l'orologio, fai come lui. Continua ad andare.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Goccia dopo goccia si riempie il vaso.",
+    "author": "Proverbio Khmer"
+  },
+  {
+    "quote": "Anche le onde più grandi cominciano da piccole.",
+    "author": "Proverbio Marshallese"
+  },
+  {
+    "quote": "Tutto dovrebbe essere reso il più semplice possibile, ma non più semplice.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Le grandi cose hanno piccoli inizi.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "La fretta raramente è buona.",
+    "author": "Proverbio Olandese"
+  },
+  {
+    "quote": "La fretta rovina il lavoro.",
+    "author": "Proverbio Rumeno"
+  },
+  {
+    "quote": "Chi fa domande non può evitare le risposte.",
+    "author": "Proverbio Camerunese"
+  },
+  {
+    "quote": "Chi non guarda avanti rimane indietro.",
+    "author": "Proverbio Cubano"
+  },
+  {
+    "quote": "Poco a poco si riempie la misura.",
+    "author": "Proverbio Zambiano"
+  },
+  {
+    "quote": "Molti piccoli corsi d'acqua fanno un grande fiume.",
+    "author": "Proverbio Danese"
+  },
+  {
+    "quote": "Mosca non è stata costruita in un giorno.",
+    "author": "Proverbio Russo"
+  },
+  {
+    "quote": "Non importa quanto lontano scorra un ruscello, non dimentica mai la sua fonte.",
+    "author": "Proverbio Belizeano"
+  },
+  {
+    "quote": "Un giorno è tanto buono quanto due per chi fa tutto al posto giusto.",
+    "author": "Proverbio Seychellois"
+  },
+  {
+    "quote": "Un dito non può sollevare una pietra.",
+    "author": "Proverbio Equatoriale Guinense"
+  },
+  {
+    "quote": "Un'ora di pianificazione risparmia dieci ore di lavoro.",
+    "author": "Proverbio Turco"
+  },
+  {
+    "quote": "Andando piano si va lontano.",
+    "author": "Proverbio Sloveno"
+  },
+  {
+    "quote": "Lento ma costante vince la gara.",
+    "author": "Proverbio Timorese"
+  },
+  {
+    "quote": "Inizia dove sei. Usa ciò che hai. Fai ciò che puoi.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Fai il primo passo con fede. Non devi vedere tutta la scala.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Più sai, meno ti serve.",
+    "author": "Proverbio Aborigeno"
+  },
+  {
+    "quote": "La vera forza è la calma.",
+    "author": "Proverbio Cinese"
+  },
+  {
+    "quote": "Ciò che viene misurato viene gestito.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Dove non c'è vergogna, non c'è onore.",
+    "author": "Proverbio Malawiano"
+  },
+  {
+    "quote": "Non raggiungerai il tuo obiettivo stando fermo.",
+    "author": "Proverbio Finlandese"
+  },
+  {
+    "quote": "Un viaggio di mille miglia inizia con un passo.",
+    "author": "Proverbio Maldiviano"
+  },
+  {
+    "quote": "Un piccolo ascia può abbattere un grande albero.",
+    "author": "Proverbio Surinamese"
+  },
+  {
+    "quote": "Non temere di andare lentamente, temere solo di fermarti.",
+    "author": "Proverbio Cinese"
+  },
+  {
+    "quote": "Meglio quindici minuti troppo tardi che quaranta anni troppo presto.",
+    "author": "Proverbio Polacco"
+  },
+  {
+    "quote": "La disciplina è il ponte tra gli obiettivi e i risultati.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Non rimandare a domani ciò che puoi fare oggi.",
+    "author": "Proverbio Uruguagio"
+  },
+  {
+    "quote": "Anche se ti svegli presto, il sole non sorge prima.",
+    "author": "Proverbio Spagnolo"
+  },
+  {
+    "quote": "Anche Salomone non può versare da un vaso vuoto.",
+    "author": "Proverbio Belga"
+  },
+  {
+    "quote": "Anche la luna ha delle macchie.",
+    "author": "Proverbio Comoriano"
+  },
+  {
+    "quote": "Dio aiuta chi si alza presto.",
+    "author": "Proverbio colombiano"
+  },
+  {
+    "quote": "Se insegui due conigli, ne perderai entrambi.",
+    "author": "Proverbio georgiano"
+  },
+  {
+    "quote": "Se vuoi andare veloce, vai da solo. Se vuoi andare lontano, vai insieme.",
+    "author": "Proverbio africano"
+  },
+  {
+    "quote": "Piccole azioni fatte sono migliori di grandi azioni pianificate.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Il successo non viene da ciò che fai occasionalmente, ma da ciò che fai costantemente.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Il futuro inizia oggi, non domani.",
+    "author": "Papa Giovanni Paolo II"
+  },
+  {
+    "quote": "Chi ha pazienza sarà salvato.",
+    "author": "Proverbio croato"
+  },
+  {
+    "quote": "La vita è più di semplicemente aumentare la sua velocità.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Gira il viso verso il sole e le ombre cadranno dietro di te.",
+    "author": "Proverbio maori"
+  },
+  {
+    "quote": "Quando le radici sono profonde, non c'è motivo di temere il vento.",
+    "author": "Proverbio botswaniano"
+  },
+  {
+    "quote": "Quando soffia il vento del cambiamento, alcuni costruiscono muri, altri costruiscono mulini a vento.",
+    "author": "Proverbio cinese"
+  },
+  {
+    "quote": "Adotta il ritmo della natura: il suo segreto è la pazienza.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Strisciando, un bambino impara a stare in piedi.",
+    "author": "Proverbio togolese"
+  },
+  {
+    "quote": "Gli orologi uccidono il tempo... il tempo è morto finché non è misurato da piccole ruote.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Non aspettare. Il tempo non sarà mai perfetto.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Cadi sette volte, rialzati otto.",
+    "author": "Proverbio giapponese"
+  },
+  {
+    "quote": "Chi non ha pazienza non ha saggezza.",
+    "author": "Proverbio qatariota"
+  },
+  {
+    "quote": "Chi domina la pazienza domina tutto il resto.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "La conoscenza è solo una voce fino a quando non entra nei muscoli.",
+    "author": "Proverbio di Papua Nuova Guinea"
+  },
+  {
+    "quote": "L'apprendimento espande le grandi anime.",
+    "author": "Proverbio namibiano"
+  },
+  {
+    "quote": "L'apprendimento è un tesoro che segue il suo proprietario ovunque.",
+    "author": "Proverbio vietnamita"
+  },
+  {
+    "quote": "L'apprendimento non esaurisce mai la mente.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "La pazienza porta rose.",
+    "author": "Proverbio svizzero"
+  },
+  {
+    "quote": "La pazienza è una virtù che porta la pace.",
+    "author": "Proverbio samoano"
+  },
+  {
+    "quote": "La pazienza è la compagna della saggezza.",
+    "author": "Proverbio malese"
+  },
+  {
+    "quote": "La pazienza è la chiave del paradiso.",
+    "author": "Proverbio austriaco"
+  },
+  {
+    "quote": "La pazienza è la chiave del sollievo.",
+    "author": "Proverbio giordano"
+  },
+  {
+    "quote": "Piccole migliorie quotidiane nel tempo portano a risultati straordinari.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "La chiave non è spendere tempo, ma investirlo.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "L'unica fonte di conoscenza è l'esperienza.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Non c'è momento migliore di adesso.",
+    "author": "Autore sconosciuto"
+  },
+  {
+    "quote": "Il tempo porta tutto a compimento.",
+    "author": "Eschilo"
+  },
+  {
+    "quote": "Il tempo è il consigliere più saggio di tutti.",
+    "author": "Pericle"
+  },
+  {
+    "quote": "Il tempo è ciò che vogliamo di più, ma usiamo peggio.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Il tempo lo dirà.",
+    "author": "Proverbio polacco"
+  },
+  {
+    "quote": "Il tempo, il divoratore di tutte le cose.",
+    "author": "Ovidio"
+  },
+  {
+    "quote": "Siamo ciò che facciamo ripetutamente. Quindi, l'eccellenza non è un atto, ma un'abitudine.",
+    "author": "Aristotele"
+  },
+  {
+    "quote": "Dove c'è pazienza, c'è pace.",
+    "author": "Proverbio bruneiano"
+  },
+  {
+    "quote": "Impari a tagliare gli alberi tagliandoli.",
+    "author": "Proverbio congolese"
+  },
+  {
+    "quote": "Puoi ritardare, ma il tempo non lo farà.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Una manciata di pazienza vale più di un cesto di cervello.",
+    "author": "Proverbio algerino"
   }
 ]
+

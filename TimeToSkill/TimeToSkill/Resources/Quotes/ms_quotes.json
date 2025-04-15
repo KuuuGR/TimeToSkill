@@ -1,7 +1,504 @@
 // Malay
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Seorang anak yang tidak dipeluk oleh kampung akan membakarnya untuk merasakan kehangatannya.",
+    "author": "Peribahasa Basotho"
+  },
+  {
+    "quote": "Sehelai kayu mungkin mengeluarkan asap, tetapi ia tidak akan terbakar.",
+    "author": "Peribahasa Tonga"
+  },
+  {
+    "quote": "Sedikit demi sedikit burung membina sarangnya.",
+    "author": "Peribahasa Dominika"
+  },
+  {
+    "quote": "Perjalanan lebih baik diukur dengan teman, bukan dengan batu perjalanannya.",
+    "author": "Peribahasa Cape Verde"
+  },
+  {
+    "quote": "Seorang yang bertanya adalah bodoh untuk lima minit. Seorang yang tidak pernah bertanya adalah bodoh sepanjang hidupnya.",
+    "author": "Peribahasa Cina"
+  },
+  {
+    "quote": "Sapu baru menyapu dengan baik, tetapi sapu lama tahu sudut-sudutnya.",
+    "author": "Peribahasa Saint Lucian"
+  },
+  {
+    "quote": "Kebijaksanaan seperti api. Orang mengambilnya daripada orang lain.",
+    "author": "Peribahasa Pantai Gading"
+  },
+  {
+    "quote": "Orang yang banyak bercakap sedikit yang dicapainya.",
+    "author": "Peribahasa Uzbekistan"
+  },
+  {
+    "quote": "Seorang yang bijak tidak tahu segalanya, hanya orang bodoh yang tahu segalanya.",
+    "author": "Peribahasa Antigua"
+  },
+  {
+    "quote": "Lebih baik satu langkah yang stabil daripada berlari yang meletihkan.",
+    "author": "Peribahasa Venezuela"
+  },
+  {
+    "quote": "Lebih baik terlambat daripada tidak pernah.",
+    "author": "Peribahasa Argentina"
+  },
+  {
+    "quote": "Di sebalik gunung, ada gunung lagi.",
+    "author": "Peribahasa Haiti"
+  },
+  {
+    "quote": "Jangan mula jika takut, tetapi selepas bermula jangan takut.",
+    "author": "Peribahasa Mongolia"
+  },
+  {
+    "quote": "Jangan tangguhkan hingga esok apa yang boleh dilakukan hari ini.",
+    "author": "Peribahasa Poland"
+  },
+  {
+    "quote": "Tong kosong menghasilkan bunyi yang paling kuat.",
+    "author": "Peribahasa Kittitian"
+  },
+  {
+    "quote": "Bahkan monyet jatuh dari pokok.",
+    "author": "Peribahasa Korea"
+  },
+  {
+    "quote": "Tuhan membantu mereka yang bangun awal.",
+    "author": "Peribahasa Poland"
+  },
+  {
+    "quote": "Bijian demi bijian, ayam mengisi perutnya.",
+    "author": "Peribahasa Brazil"
+  },
+  {
+    "quote": "Orang yang datang lewat merosakkan dirinya sendiri.",
+    "author": "Peribahasa Czech"
+  },
+  {
+    "quote": "Orang yang terburu-buru akan tersandung.",
+    "author": "Peribahasa Panama"
+  },
+  {
+    "quote": "Orang yang memindahkan gunung mula dengan batu kecil.",
+    "author": "Peribahasa Cina"
+  },
+  {
+    "quote": "Orang yang menunggu sesuatu yang baik tidak akan menunggu terlalu lama.",
+    "author": "Peribahasa Sweden"
+  },
+  {
+    "quote": "Jika kamu mendaki pokok, kamu mesti turun dari pokok yang sama.",
+    "author": "Peribahasa Guinea"
+  },
+  {
+    "quote": "Jika kamu tidak tahu kemana kamu pergi, mana-mana jalan akan membawa kamu ke sana.",
+    "author": "Peribahasa Bahama"
+  },
+  {
+    "quote": "Krakow tidak dibina dalam sehari.",
+    "author": "Peribahasa Poland"
+  },
+  {
+    "quote": "Sedikit dan tahan lama lebih baik daripada banyak dan sementara.",
+    "author": "Peribahasa Maghribi"
+  },
+  {
+    "quote": "Sedikit demi sedikit, bakul itu penuh.",
+    "author": "Peribahasa Jamaica"
+  },
+  {
+    "quote": "Sedikit demi sedikit, bekas itu terisi.",
+    "author": "Peribahasa Bengali"
+  },
+  {
+    "quote": "Sedikit demi sedikit, sedikit menjadi banyak.",
+    "author": "Peribahasa Indonesia"
+  },
+  {
+    "quote": "Tidak kira betapa penuh sungai itu, ia masih mahu berkembang.",
+    "author": "Peribahasa Guinea-Bissau"
+  },
+  {
+    "quote": "Kesempurnaan adalah musuh pelaksanaan.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Kejayaan adalah perjalanan, bukan destinasi.",
+    "author": "Peribahasa Singapura"
+  },
+  {
+    "quote": "Orang yang sabar akan menemui kebahagiaan.",
+    "author": "Peribahasa Lithuania"
+  },
+  {
+    "quote": "Orang yang sedikit tahu, banyak bercakap.",
+    "author": "Peribahasa Dominika"
+  },
+  {
+    "quote": "Menanam pokok yang tidak akan kamu lihat bayangannya — itulah kebijaksanaan yang sejati.",
+    "author": "Peribahasa Yunani"
+  },
+  {
+    "quote": "Apabila sarang labah-labah bersatu, ia dapat mengikat seekor singa.",
+    "author": "Peribahasa Gabon"
+  },
+  {
+    "quote": "Kebijaksanaan adalah seperti singa. Kamu tidak perlu mengumumkannya.",
+    "author": "Peribahasa Senegal"
+  },
+  {
+    "quote": "Kebijaksanaan adalah seperti garam — ia mesti digunakan dengan ukuran yang betul.",
+    "author": "Peribahasa Eritrea"
+  },
+  {
+    "quote": "Kamu tidak perlu hebat untuk memulakan, tetapi kamu mesti memulakan untuk menjadi hebat.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Kamu mesti bertindak seolah-olah kegagalan itu mustahil.",
+    "author": "Peribahasa Mali"
+  },
+  {
+    "quote": "Kamu menuai apa yang kamu tanam.",
+    "author": "Peribahasa Burma"
+  },
+  {
+    "quote": "Kamu tidak akan pernah membajak ladang hanya dengan memikirkannya.",
+    "author": "Peribahasa Ireland"
+  },
+  {
+    "quote": "Burung tidak lupa di mana ia meletakkan telurnya.",
+    "author": "Peribahasa Swazi"
+  },
+  {
+    "quote": "Burung akan selalu menggunakan bulu burung lain untuk membuat sarangnya.",
+    "author": "Peribahasa Santomean"
+  },
+  {
+    "quote": "Buku seperti taman yang dibawa dalam poket.",
+    "author": "Peribahasa Syria"
+  },
+  {
+    "quote": "Titisan kecil dapat mengukir batu.",
+    "author": "Peribahasa Korea"
+  },
+  {
+    "quote": "Pokok dengan akar yang kuat ketawa di hadapan ribut.",
+    "author": "Peribahasa Thai"
+  },
+  {
+    "quote": "Lebih baik tiga jam lebih awal daripada satu minit lewat.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Jangan takut kepada kemajuan yang perlahan, takutlah kepada kemunduran.",
+    "author": "Peribahasa Cina"
+  },
+  {
+    "quote": "Lakukan hari ini apa yang orang lain tidak lakukan, supaya esok kamu memiliki apa yang orang lain impikan.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Jangan lihat jam; buatlah apa yang ia lakukan. Teruskan.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Setitis demi setitis memenuhi periuk.",
+    "author": "Peribahasa Khmer"
+  },
+  {
+    "quote": "Bahkan ombak terbesar bermula dengan yang kecil.",
+    "author": "Peribahasa Marshallese"
+  },
+  {
+    "quote": "Segala-galanya harus dibuat sesederhana mungkin, tetapi bukan lebih sederhana.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Perkara besar bermula dengan permulaan kecil.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Kecemasan jarang baik.",
+    "author": "Peribahasa Belanda"
+  },
+  {
+    "quote": "Kecemasan merosakkan kerja.",
+    "author": "Peribahasa Romania"
+  },
+  {
+    "quote": "Orang yang bertanya tidak dapat mengelakkan jawapan.",
+    "author": "Peribahasa Kamerun"
+  },
+  {
+    "quote": "Orang yang tidak melihat ke depan akan tertinggal.",
+    "author": "Peribahasa Cuba"
+  },
+  {
+    "quote": "Sedikit demi sedikit mengisi ukuran.",
+    "author": "Peribahasa Zambia"
+  },
+  {
+    "quote": "Banyak aliran kecil menjadikan sungai besar.",
+    "author": "Peribahasa Denmark"
+  },
+  {
+    "quote": "Moscow tidak dibina dalam sehari.",
+    "author": "Peribahasa Rusia"
+  },
+  {
+    "quote": "Tidak kira seberapa jauh sungai mengalir, ia tidak akan melupakan sumbernya.",
+    "author": "Peribahasa Belize"
+  },
+  {
+    "quote": "Satu hari sama baiknya dengan dua hari bagi mereka yang melakukan segala-galanya pada tempatnya.",
+    "author": "Peribahasa Seychelles"
+  },
+  {
+    "quote": "Satu jari tidak boleh mengangkat batu kecil.",
+    "author": "Peribahasa Guinea Khatulistiwa"
+  },
+  {
+    "quote": "Satu jam merancang menyelamatkan sepuluh jam kerja.",
+    "author": "Peribahasa Turki"
+  },
+  {
+    "quote": "Pelan-pelan kamu akan pergi jauh.",
+    "author": "Peribahasa Slovenia"
+  },
+  {
+    "quote": "Pelan dan konsisten menang perlumbaan.",
+    "author": "Peribahasa Timor"
+  },
+  {
+    "quote": "Mulakan dari mana anda berada. Gunakan apa yang anda ada. Lakukan apa yang anda mampu.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Ambil langkah pertama dengan keyakinan. Anda tidak perlu melihat seluruh tangga.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Semakin banyak yang anda tahu, semakin sedikit yang anda perlukan.",
+    "author": "Peribahasa Aborigin"
+  },
+  {
+    "quote": "Kekuatan sejati adalah ketenangan.",
+    "author": "Peribahasa Cina"
+  },
+  {
+    "quote": "Apa yang diukur boleh dikendalikan.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Di tempat yang tidak ada rasa malu, tidak ada kehormatan.",
+    "author": "Peribahasa Malawi"
+  },
+  {
+    "quote": "Anda tidak akan mencapai tujuan anda dengan duduk diam.",
+    "author": "Peribahasa Finland"
+  },
+  {
+    "quote": "Perjalanan seribu batu bermula dengan satu langkah.",
+    "author": "Peribahasa Maldivian"
+  },
+  {
+    "quote": "Sebilah kapak kecil boleh menumbangkan pokok besar.",
+    "author": "Peribahasa Surinam"
+  },
+  {
+    "quote": "Jangan takut berjalan perlahan, hanya takut berdiri diam.",
+    "author": "Peribahasa Cina"
+  },
+  {
+    "quote": "Lebih baik lima belas minit lewat daripada empat puluh tahun awal.",
+    "author": "Peribahasa Poland"
+  },
+  {
+    "quote": "Disiplin adalah jambatan antara matlamat dan pencapaian.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Jangan tangguhkan keesokan hari apa yang boleh anda lakukan hari ini.",
+    "author": "Peribahasa Uruguay"
+  },
+  {
+    "quote": "Walaupun anda bangun awal, matahari tidak akan terbit lebih awal.",
+    "author": "Peribahasa Sepanyol"
+  },
+  {
+    "quote": "Bahkan Solomon tidak boleh menuang dari bekas yang kosong.",
+    "author": "Peribahasa Belgium"
+  },
+  {
+    "quote": "Bahkan bulan mempunyai noda.",
+    "author": "Peribahasa Comoros"
+  }
+  {
+    "quote": "Tuhan membantu mereka yang bangun awal.",
+    "author": "Peribahasa Colombia"
+  },
+  {
+    "quote": "Jika anda mengejar dua arnab, anda akan kehilangan kedua-duanya.",
+    "author": "Peribahasa Georgia"
+  },
+  {
+    "quote": "Jika anda mahu pergi dengan cepat, pergi sendirian. Jika anda mahu pergi jauh, pergi bersama.",
+    "author": "Peribahasa Afrika"
+  },
+  {
+    "quote": "Perbuatan kecil yang dilakukan lebih baik daripada perbuatan besar yang dirancang.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Kejayaan tidak datang daripada apa yang anda lakukan sekali sekala, tetapi daripada apa yang anda lakukan secara konsisten.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Masa depan bermula hari ini, bukan esok.",
+    "author": "Pope John Paul II"
+  },
+  {
+    "quote": "Yang sabar akan diselamatkan.",
+    "author": "Peribahasa Croatia"
+  },
+  {
+    "quote": "Hidup ini lebih daripada sekadar meningkatkan kelajuan.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Pusingkan wajah anda ke matahari dan bayang-bayang akan jatuh di belakang anda.",
+    "author": "Peribahasa Māori"
+  },
+  {
+    "quote": "Apabila akar dalam, tidak ada alasan untuk takut pada angin.",
+    "author": "Peribahasa Botswana"
+  },
+  {
+    "quote": "Apabila angin perubahan bertiup, sesetengah orang membina tembok, yang lain membina kincir angin.",
+    "author": "Peribahasa Cina"
+  },
+  {
+    "quote": "Ambil tempo alam: rahsianya adalah kesabaran.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Dengan merangkak, seorang kanak-kanak belajar untuk berdiri.",
+    "author": "Peribahasa Togolese"
+  },
+  {
+    "quote": "Jam membunuh masa... masa mati selagi ia dihitung oleh roda-roda kecil.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Jangan tunggu. Masa tidak akan pernah sempurna.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Jatuh tujuh kali, bangun lapan kali.",
+    "author": "Peribahasa Jepun"
+  },
+  {
+    "quote": "Orang yang tiada kesabaran tiada kebijaksanaan.",
+    "author": "Peribahasa Qatar"
+  },
+  {
+    "quote": "Orang yang menguasai kesabaran menguasai segala-galanya.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Pengetahuan hanyalah khabar angin selagi ia belum ada dalam otot.",
+    "author": "Peribahasa Papua New Guinea"
+  },
+  {
+    "quote": "Pembelajaran memperluas jiwa yang hebat.",
+    "author": "Peribahasa Namibia"
+  },
+  {
+    "quote": "Pembelajaran adalah harta yang mengikuti pemiliknya ke mana sahaja.",
+    "author": "Peribahasa Vietnam"
+  },
+  {
+    "quote": "Pembelajaran tidak pernah menguras fikiran.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Kesabaran membawa bunga mawar.",
+    "author": "Peribahasa Switzerland"
+  },
+  {
+    "quote": "Kesabaran adalah kebajikan yang membawa keamanan.",
+    "author": "Peribahasa Samoa"
+  },
+  {
+    "quote": "Kesabaran adalah teman kebijaksanaan.",
+    "author": "Peribahasa Melayu"
+  },
+  {
+    "quote": "Kesabaran adalah kunci kepada syurga.",
+    "author": "Peribahasa Austria"
+  },
+  {
+    "quote": "Kesabaran adalah kunci kepada kelegaan.",
+    "author": "Peribahasa Jordan"
+  },
+  {
+    "quote": "Penambahbaikan kecil setiap hari membawa kepada hasil yang menakjubkan.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Kunci bukanlah membelanjakan masa, tetapi melaburkannya.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Sumber pengetahuan yang tunggal adalah pengalaman.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Tiada masa yang lebih baik daripada sekarang.",
+    "author": "Penulis tidak dikenali"
+  },
+  {
+    "quote": "Masa membawa segala-galanya.",
+    "author": "Aeschylus"
+  },
+  {
+    "quote": "Masa adalah penasihat yang paling bijak.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Masa adalah apa yang kita inginkan paling banyak, tetapi yang kita gunakan paling teruk.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Masa akan memberitahu.",
+    "author": "Peribahasa Poland"
+  },
+  {
+    "quote": "Masa, pemusnah segala benda.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Kita adalah apa yang kita lakukan berulang kali. Oleh itu, kecemerlangan bukanlah satu tindakan, tetapi satu tabiat.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Di mana ada kesabaran, di situ ada keamanan.",
+    "author": "Peribahasa Brunei"
+  },
+  {
+    "quote": "Anda belajar menebang pokok dengan menebangnya.",
+    "author": "Peribahasa Congo"
+  },
+  {
+    "quote": "Anda boleh menangguhkan, tetapi masa tidak akan menangguhkan.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Segenggam kesabaran lebih berharga daripada sebuah bakul kebijaksanaan.",
+    "author": "Peribahasa Algeria"
   }
 ]
+

@@ -1,7 +1,504 @@
 // Hungarian
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Egy gyermek, akit nem ölel meg a falu, le fogja égetni, hogy érezze annak melegét.",
+    "author": "Basotho közmondás"
+  },
+  {
+    "quote": "Egyetlen bot füstölhet, de nem fog égni.",
+    "author": "Tongan közmondás"
+  },
+  {
+    "quote": "Lassan-lassan építi a madár a fészkét.",
+    "author": "Dominikai közmondás"
+  },
+  {
+    "quote": "Az utazást barátokban mérjük a legjobban, nem mérföldekben.",
+    "author": "Zöld-foki szigeti mondás"
+  },
+  {
+    "quote": "Aki kérdez, öt percig bolond. Aki soha nem kérdez, az életére bolond marad.",
+    "author": "Kínai közmondás"
+  },
+  {
+    "quote": "Az új seprű jól seper, de a régi ismeri a sarkokat.",
+    "author": "Saint Lucian közmondás"
+  },
+  {
+    "quote": "A bölcsesség olyan, mint a tűz. Az emberek elviszik másoktól.",
+    "author": "Elefántcsontparti közmondás"
+  },
+  {
+    "quote": "Aki túl sokat beszél, keveset ér el.",
+    "author": "Üzbegisztáni közmondás"
+  },
+  {
+    "quote": "A bölcs ember sosem tud mindent, csak a bolondok tudják az összes választ.",
+    "author": "Antiguai közmondás"
+  },
+  {
+    "quote": "Jobb egy biztos lépés, mint egy fárasztó galoppozás.",
+    "author": "Venezuelai közmondás"
+  },
+  {
+    "quote": "Jobb későn, mint soha.",
+    "author": "Argentin közmondás"
+  },
+  {
+    "quote": "A hegyek mögött még hegyek vannak.",
+    "author": "Haiti közmondás"
+  },
+  {
+    "quote": "Ne kezdj, ha félsz, de ha elkezdted, ne félj.",
+    "author": "Mongólia közmondás"
+  },
+  {
+    "quote": "Ne halaszd holnapra, amit ma megtehetsz.",
+    "author": "Lengyel közmondás"
+  },
+  {
+    "quote": "A üres hordók csinálják a legnagyobb zajt.",
+    "author": "Kittitian közmondás"
+  },
+  {
+    "quote": "Még a majmok is leesnek a fákról.",
+    "author": "Koreai közmondás"
+  },
+  {
+    "quote": "Isten segít azoknak, akik korán kelnek.",
+    "author": "Lengyel közmondás"
+  },
+  {
+    "quote": "Szemenként a tyúknak megtelik a hasa.",
+    "author": "Brazil közmondás"
+  },
+  {
+    "quote": "Aki késlekedik, magának árt.",
+    "author": "Cseh közmondás"
+  },
+  {
+    "quote": "Aki siet, megbotlik.",
+    "author": "Panamai közmondás"
+  },
+  {
+    "quote": "Aki hegyeket mozgat, apró kövekkel kezdte.",
+    "author": "Kínai közmondás"
+  },
+  {
+    "quote": "Aki jóra vár, soha nem vár túl sokáig.",
+    "author": "Svéd közmondás"
+  },
+  {
+    "quote": "Ha fára mászol, le is kell másznod róla.",
+    "author": "Guineai közmondás"
+  },
+  {
+    "quote": "Ha nem tudod, hová mész, bármelyik út oda visz.",
+    "author": "Bahama-szigeti közmondás"
+  },
+  {
+    "quote": "Krakkó nem egy nap alatt épült.",
+    "author": "Lengyel közmondás"
+  },
+  {
+    "quote": "A kis és tartós jobb, mint a sok és múló.",
+    "author": "Marokkói közmondás"
+  },
+  {
+    "quote": "Pici-pici, de megtelik a kosár.",
+    "author": "Jamaikai közmondás"
+  },
+  {
+    "quote": "Pici-pici, a tartály megtelik.",
+    "author": "Bengáli közmondás"
+  },
+  {
+    "quote": "Pici-pici, a kicsi sok lesz.",
+    "author": "Indonéz közmondás"
+  },
+  {
+    "quote": "Bármilyen telített is legyen a folyó, mindig szeretne növekedni.",
+    "author": "Bissau-Guineai közmondás"
+  },
+  {
+    "quote": "A tökéletesség a végrehajtás ellensége.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "A siker egy utazás, nem egy cél.",
+    "author": "Szingapúri mondás"
+  },
+  {
+    "quote": "A türelmes megtalálja a boldogságot.",
+    "author": "Litván közmondás"
+  },
+  {
+    "quote": "Aki keveset tud, sokat beszél.",
+    "author": "Dominikai közmondás"
+  },
+  {
+    "quote": "Olyan fát ültetni, aminek az árnyékát sosem látod — ez az igazi bölcsesség.",
+    "author": "Görög közmondás"
+  },
+  {
+    "quote": "Amikor a pókháló egyesül, képesek megkötni egy oroszlánt.",
+    "author": "Gabonai közmondás"
+  },
+  {
+    "quote": "A bölcsesség olyan, mint egy oroszlán. Nincs szükség rá, hogy kihirdesd.",
+    "author": "Szenegáli közmondás"
+  },
+  {
+    "quote": "A bölcsesség olyan, mint a só — megfelelő mértékben kell használni.",
+    "author": "Eritreai közmondás"
+  },
+  {
+    "quote": "Nem kell nagynak lenned, hogy elkezdj, de el kell kezdened, hogy naggyá válj.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Úgy kell cselekedned, mintha a kudarcnak lehetetlennek kellene lennie.",
+    "author": "Mali mondás"
+  },
+  {
+    "quote": "Amit vetsz, azt aratod.",
+    "author": "Burmái közmondás"
+  },
+  {
+    "quote": "Soha nem fogsz megművelni egy földet, ha csak a fejedben forogsz vele.",
+    "author": "Ír közmondás"
+  },
+  {
+    "quote": "A madár nem felejti el, hol rakta le a tojásait.",
+    "author": "Swazi közmondás"
+  },
+  {
+    "quote": "A madár mindig más madár tollait fogja használni a saját fészke megépítéséhez.",
+    "author": "Santomeai közmondás"
+  },
+  {
+    "quote": "A könyv olyan, mint egy kert, amit a zsebedben hordasz.",
+    "author": "Szíriai közmondás"
+  },
+  {
+    "quote": "Egy kis csepp kiássa a követ.",
+    "author": "Koreai közmondás"
+  },
+  {
+    "quote": "A fák, amelyeknek erős a gyökere, nevetnek a viharokon.",
+    "author": "Thaiföldi közmondás"
+  },
+  {
+    "quote": "Jobb három órával korábban érkezni, mint egy percet késni.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Ne félj a lassú előrehaladástól, félj a stagnálástól.",
+    "author": "Kínai közmondás"
+  },
+  {
+    "quote": "Tedd meg ma, amit mások nem tesznek, hogy holnap megkaphasd, amit mások csak álmodnak.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Ne nézd az órát; tedd azt, amit ő csinál. Folytasd.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Csepp csepp után tölti meg a fazekat.",
+    "author": "Khmer közmondás"
+  },
+  {
+    "quote": "Még a legnagyobb hullámok is apróval kezdődnek.",
+    "author": "Marshall-szigeteki mondás"
+  },
+  {
+    "quote": "Minden egyszerűbbé kell tenni, mint amennyire lehet, de nem egyszerűbbé.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "A nagy dolgok kis kezdetekből származnak.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "A rohanás ritkán jó.",
+    "author": "Holland közmondás"
+  },
+  {
+    "quote": "A rohanás tönkreteszi a munkát.",
+    "author": "Román közmondás"
+  },
+  {
+    "quote": "Aki kérdéseket tesz fel, nem kerülheti el a válaszokat.",
+    "author": "Kameruni közmondás"
+  },
+  {
+    "quote": "Aki nem néz előre, lemarad.",
+    "author": "Kubai közmondás"
+  },
+  {
+    "quote": "Lassacskán tölti meg az edényt.",
+    "author": "Zambiai közmondás"
+  },
+  {
+    "quote": "Sok kis patak nagy folyót alkot.",
+    "author": "Dán közmondás"
+  },
+  {
+    "quote": "Moszkvát nem építették egy nap alatt.",
+    "author": "Orosz közmondás"
+  },
+  {
+    "quote": "Bárhova is folyik egy patak, sosem felejti el a forrást.",
+    "author": "Belizei közmondás"
+  },
+  {
+    "quote": "Egy nap ugyanolyan jó, mint kettő, ha mindent a helyén csinálsz.",
+    "author": "Seychelles-i közmondás"
+  },
+  {
+    "quote": "Egy ujj nem tud felemelni egy kavicsot.",
+    "author": "Ekvatoriális-Guineai közmondás"
+  },
+  {
+    "quote": "Egy óra tervezés tíz óra munkát takarít meg.",
+    "author": "Török közmondás"
+  },
+  {
+    "quote": "Lassan mész, de messzire eljutsz.",
+    "author": "Szlovén közmondás"
+  },
+  {
+    "quote": "Lassú és biztos nyeri a versenyt.",
+    "author": "Timori közmondás"
+  },
+  {
+    "quote": "Kezdj ott, ahol vagy. Használj mindent, ami van. Tedd meg, amit tudsz.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Tedd meg az első lépést a hitben. Nem kell látnod az egész lépcsőt.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Minél többet tudsz, annál kevesebbre van szükséged.",
+    "author": "Aborigin közmondás"
+  },
+  {
+    "quote": "Igazi erő a nyugalomban van.",
+    "author": "Kínai közmondás"
+  },
+  {
+    "quote": "Amit mérnek, azt kezelhetjük.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Ahol nincs szégyen, ott nincs tisztelet.",
+    "author": "Malawi közmondás"
+  },
+  {
+    "quote": "Nem éred el a célod, ha helyben ülsz.",
+    "author": "Finn közmondás"
+  },
+  {
+    "quote": "Egy ezer mérföldes utazás egyetlen lépéssel kezdődik.",
+    "author": "Maldiv-szigeteki mondás"
+  },
+  {
+    "quote": "Egy kis baltával nagy fát vághatsz ki.",
+    "author": "Surinami közmondás"
+  },
+  {
+    "quote": "Ne félj lassan haladni, csak félj attól, hogy megállsz.",
+    "author": "Kínai közmondás"
+  },
+  {
+    "quote": "Jobb tizenöt percet késni, mint negyven évet előbb.",
+    "author": "Lengyel közmondás"
+  },
+  {
+    "quote": "A fegyelem a célok és az eredmények közötti híd.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Ne halaszd el holnapra, amit ma megtehetsz.",
+    "author": "Uruguayi közmondás"
+  },
+  {
+    "quote": "Bárhogy is kelsz fel, a nap nem fog hamarabb felkelni.",
+    "author": "Spanyol közmondás"
+  },
+  {
+    "quote": "Még Salamon sem önthet ki egy üres edényből.",
+    "author": "Belgiumi közmondás"
+  },
+  {
+    "quote": "Még a holdnak is vannak foltjai.",
+    "author": "Komori-szigeteki közmondás"
+  },
+  {
+    "quote": "Isten segít a korán kelőnek.",
+    "author": "Kolumbiai közmondás"
+  },
+  {
+    "quote": "Ha két nyúlat hajszolsz, mindkettőt elveszíted.",
+    "author": "Grúz közmondás"
+  },
+  {
+    "quote": "Ha gyorsan akarsz menni, menj egyedül. Ha messzire akarsz menni, menj együtt.",
+    "author": "Afrikai közmondás"
+  },
+  {
+    "quote": "A kis tettek jobbak, mint a nagy tervezett tettek.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "A siker nem abból ered, amit időnként teszel, hanem abból, amit folyamatosan teszel.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "A jövő ma kezdődik, nem holnap.",
+    "author": "II. János Pál pápa"
+  },
+  {
+    "quote": "A türelmesek meg lesznek mentve.",
+    "author": "Horvát közmondás"
+  },
+  {
+    "quote": "Az élet több, mint a sebesség növelése.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Fordítsd az arcodat a nap felé, és az árnyékok mögötted maradnak.",
+    "author": "Maori közmondás"
+  },
+  {
+    "quote": "Ha a gyökerek mélyek, nincs miért félni a széllel.",
+    "author": "Botswanai közmondás"
+  },
+  {
+    "quote": "Ha a változás szele fúj, egyesek falakat építenek, mások szélturbinákat.",
+    "author": "Kínai közmondás"
+  },
+  {
+    "quote": "Fogadd el a természet ütemét: titka a türelem.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "A mászással a gyermek megtanul állni.",
+    "author": "Togói közmondás"
+  },
+  {
+    "quote": "Az órák megölik az időt... az idő halott, amíg kicsi kerekek mérik.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Ne várj. Az idő sosem lesz tökéletes.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Hétszer essen, nyolcszor keljen fel.",
+    "author": "Japán közmondás"
+  },
+  {
+    "quote": "Aki nem rendelkezik türelemmel, annak nincs bölcsessége.",
+    "author": "Katar közmondás"
+  },
+  {
+    "quote": "Aki mesterévé válik a türelemnek, az minden mást is mesterévé válik.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "A tudás csak pletyka, amíg el nem éri az izmokat.",
+    "author": "Papua Új-Guineai közmondás"
+  },
+  {
+    "quote": "A tanulás kitágítja a nagy lelkeket.",
+    "author": "Namíbiai közmondás"
+  },
+  {
+    "quote": "A tanulás egy olyan kincs, amely a tulajdonosát bárhová követi.",
+    "author": "Vietnami közmondás"
+  },
+  {
+    "quote": "A tanulás soha nem kimeríti az elmét.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "A türelem rózsákat hoz.",
+    "author": "Svájci közmondás"
+  },
+  {
+    "quote": "A türelem olyan erény, amely békét hoz.",
+    "author": "Szamoai közmondás"
+  },
+  {
+    "quote": "A türelem a bölcsesség társa.",
+    "author": "Maláj közmondás"
+  },
+  {
+    "quote": "A türelem a paradicsom kulcsa.",
+    "author": "Osztrák közmondás"
+  },
+  {
+    "quote": "A türelem a megkönnyebbülés kulcsa.",
+    "author": "Jordániai közmondás"
+  },
+  {
+    "quote": "A kis napi fejlődések idővel lenyűgöző eredményekhez vezetnek.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "A kulcs nem az idő eltöltésében van, hanem annak befektetésében.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Az egyetlen tudásforrás a tapasztalat.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Nincs jobb időpont, mint most.",
+    "author": "Ismeretlen szerző"
+  },
+  {
+    "quote": "Az idő minden dolgot elhoz.",
+    "author": "Aiszkhülosz"
+  },
+  {
+    "quote": "Az idő a legbölcsebb tanácsadó.",
+    "author": "Periklész"
+  },
+  {
+    "quote": "Az idő az, amire a legjobban vágyunk, de amivel a legrosszabbul bánunk.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Az idő megmondja.",
+    "author": "Lengyel közmondás"
+  },
+  {
+    "quote": "Az idő, mindent felfaló.",
+    "author": "Ovidius"
+  },
+  {
+    "quote": "Mi vagyunk, amit ismételten csinálunk. Ezért a kiválóság nem egy cselekedet, hanem egy szokás.",
+    "author": "Arisztotelész"
+  },
+  {
+    "quote": "Ahol türelem van, ott béke van.",
+    "author": "Brunei közmondás"
+  },
+  {
+    "quote": "Fát vágni úgy tanulsz, hogy vágod a fákat.",
+    "author": "Kongói közmondás"
+  },
+  {
+    "quote": "Késleltetheted, de az idő nem késlekedik.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Egy marék türelem többet ér, mint egy kosárnyi értelem.",
+    "author": "Algériai közmondás"
   }
 ]
+

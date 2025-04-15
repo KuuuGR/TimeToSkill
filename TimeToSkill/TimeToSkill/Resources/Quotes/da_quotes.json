@@ -1,7 +1,504 @@
 // Danish
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Et barn, der ikke bliver omfavnet af landsbyen, vil brænde den ned for at føle dens varme.",
+    "author": "Basotho Ordspil"
+  },
+  {
+    "quote": "En enkelt pind kan ryge, men den vil ikke brænde.",
+    "author": "Tongan Ordspil"
+  },
+  {
+    "quote": "Lidt efter lidt bygger fuglen sit reder.",
+    "author": "Dominikansk Ordspil"
+  },
+  {
+    "quote": "En rejse måles bedst i venner, ikke i miles.",
+    "author": "Kap Verde Ordspil"
+  },
+  {
+    "quote": "En mand, der spørger, er en nar i fem minutter. En mand, der aldrig spørger, er en nar for livet.",
+    "author": "Kinesisk Ordspil"
+  },
+  {
+    "quote": "En ny kost fejer rent, men den gamle kender hjørnerne.",
+    "author": "Saint Lucian Ordspil"
+  },
+  {
+    "quote": "Visdom er som ild. Folk tager den fra andre.",
+    "author": "Ivoria Ordspil"
+  },
+  {
+    "quote": "En person, der taler for meget, opnår lidt.",
+    "author": "Usbekisk Ordspil"
+  },
+  {
+    "quote": "En klog mand ved aldrig alt, kun fjolser ved alt.",
+    "author": "Antiguansk Ordspil"
+  },
+  {
+    "quote": "Bedre et stabilt skridt end en trættende galop.",
+    "author": "Venezuelansk Ordspil"
+  },
+  {
+    "quote": "Bedre sent end aldrig.",
+    "author": "Argentinsk Ordspil"
+  },
+  {
+    "quote": "Udover bjergene er der flere bjerge.",
+    "author": "Haitiansk Ordspil"
+  },
+  {
+    "quote": "Start ikke, hvis du er bange, når du er begyndt, vær ikke bange.",
+    "author": "Mongolsk Ordspil"
+  },
+  {
+    "quote": "Vent ikke til i morgen med det, du kan gøre i dag.",
+    "author": "Polsk Ordspil"
+  },
+  {
+    "quote": "Tomme tønder laver mest støj.",
+    "author": "Kittitian Ordspil"
+  },
+  {
+    "quote": "Selv aber falder fra træer.",
+    "author": "Koreansk Ordspil"
+  },
+  {
+    "quote": "Gud hjælper dem, der står op tidligt.",
+    "author": "Polsk Ordspil"
+  },
+  {
+    "quote": "Korn for korn fylder hønen sin mave.",
+    "author": "Brasiliansk Ordspil"
+  },
+  {
+    "quote": "Den, der kommer for sent, skader sig selv.",
+    "author": "Tjekkisk Ordspil"
+  },
+  {
+    "quote": "Den, der haster, snubler.",
+    "author": "Panamansk Ordspil"
+  },
+  {
+    "quote": "Den, der flytter bjerge, startede med små sten.",
+    "author": "Kinesisk Ordspil"
+  },
+  {
+    "quote": "Den, der venter på noget godt, venter aldrig for længe.",
+    "author": "Svensk Ordspil"
+  },
+  {
+    "quote": "Hvis du klatrer op i et træ, skal du klatre ned fra det samme træ.",
+    "author": "Guineansk Ordspil"
+  },
+  {
+    "quote": "Hvis du ikke ved, hvor du skal hen, vil enhver vej føre dig derhen.",
+    "author": "Bahamansk Ordspil"
+  },
+  {
+    "quote": "Krakow blev ikke bygget på en dag.",
+    "author": "Polsk Ordspil"
+  },
+  {
+    "quote": "Lidt og varigt er bedre end meget og forbigående.",
+    "author": "Marokkansk Ordspil"
+  },
+  {
+    "quote": "Lidt efter lidt fyldes kurven.",
+    "author": "Jamaicansk Ordspil"
+  },
+  {
+    "quote": "Lidt efter lidt fyldes beholderen.",
+    "author": "Bengalsk Ordspil"
+  },
+  {
+    "quote": "Lidt efter lidt, lidt bliver meget.",
+    "author": "Indonesisk Ordspil"
+  },
+  {
+    "quote": "Uanset hvor fuld floden er, vil den stadig vokse.",
+    "author": "Bissau-Guineansk Ordspil"
+  },
+  {
+    "quote": "Perfektion er modstander af udførelse.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Succes er en rejse, ikke en destination.",
+    "author": "Singaporesk Ordspil"
+  },
+  {
+    "quote": "Den tålmodige finder lykke.",
+    "author": "Litauisk Ordspil"
+  },
+  {
+    "quote": "Den, der ved lidt, taler meget.",
+    "author": "Dominikansk Ordspil"
+  },
+  {
+    "quote": "At plante et træ, hvis skygge du aldrig vil se — det er sand visdom.",
+    "author": "Græsk Ordspil"
+  },
+  {
+    "quote": "Når edderkoppe-nettene forener sig, kan de binde en løve.",
+    "author": "Gabonisk Ordspil"
+  },
+  {
+    "quote": "Visdom er som en løve. Du behøver ikke at proklamere det.",
+    "author": "Senegalesisk Ordspil"
+  },
+  {
+    "quote": "Visdom er som salt — det skal bruges i den rette mængde.",
+    "author": "Eritreisk Ordspil"
+  },
+  {
+    "quote": "Du behøver ikke at være stor for at starte, men du skal starte for at blive stor.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Du skal handle, som om det er umuligt at fejle.",
+    "author": "Mali Ordspil"
+  },
+  {
+    "quote": "Du høster, hvad du sår.",
+    "author": "Burmesisk Ordspil"
+  },
+  {
+    "quote": "Du kan aldrig pløje et mark ved at vende det i dit sind.",
+    "author": "Irsk Ordspil"
+  },
+  {
+    "quote": "En fugl glemmer ikke, hvor den lagde sine æg.",
+    "author": "Swazi Ord"
+  },
+  {
+    "quote": "En fugl vil altid bruge en anden fugls fjer til at bygge sit eget rede.",
+    "author": "Santomeansk Ord"
+  },
+  {
+    "quote": "En bog er som en have, du bærer i lommen.",
+    "author": "Syrisk Ord"
+  },
+  {
+    "quote": "En lille dråbe huler stenen.",
+    "author": "Koreansk Ord"
+  },
+  {
+    "quote": "Et træ med stærke rødder ler ad stormene.",
+    "author": "Thailandsk Ord"
+  },
+  {
+    "quote": "Bedre tre timer for tidligt end et minut for sent.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Frygt ikke langsom fremgang, frygt stagnation.",
+    "author": "Kinesisk Ord"
+  },
+  {
+    "quote": "Gør i dag det, som andre ikke vil, så i morgen vil du have det, som andre kun drømmer om.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Se ikke på uret; gør hvad det gør. Bliv ved.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Dråbe for dråbe fyldes gryden.",
+    "author": "Khmer Ord"
+  },
+  {
+    "quote": "Selv de største bølger starter småt.",
+    "author": "Marshallesk Ord"
+  },
+  {
+    "quote": "Alt skal gøres så simpelt som muligt, men ikke simplere.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Store ting har små begyndelser.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Hast er sjældent godt.",
+    "author": "Hollandsk Ord"
+  },
+  {
+    "quote": "Hast ødelægger arbejdet.",
+    "author": "Rumænsk Ord"
+  },
+  {
+    "quote": "Den, der stiller spørgsmål, kan ikke undgå svarene.",
+    "author": "Kamerunsk Ord"
+  },
+  {
+    "quote": "Den, der ikke kigger fremad, bliver tilbage.",
+    "author": "Kubansk Ord"
+  },
+  {
+    "quote": "Lidt ad lidt fyldes målet.",
+    "author": "Zambisk Ord"
+  },
+  {
+    "quote": "Mange små strømme gør en stor flod.",
+    "author": "Dansk Ord"
+  },
+  {
+    "quote": "Moskva blev ikke bygget på en dag.",
+    "author": "Russisk Ord"
+  },
+  {
+    "quote": "Uanset hvor langt en strøm flyder, glemmer den aldrig sin kilde.",
+    "author": "Belizisk Ord"
+  },
+  {
+    "quote": "En dag er lige så god som to for den, der gør alt på det rette sted.",
+    "author": "Seychellerne Ord"
+  },
+  {
+    "quote": "En finger kan ikke løfte en lille sten.",
+    "author": "Ekvatorialguineansk Ord"
+  },
+  {
+    "quote": "En times planlægning sparer ti timers arbejde.",
+    "author": "Tyrkisk Ord"
+  },
+  {
+    "quote": "Langsomt vil du komme langt.",
+    "author": "Slovensk Ord"
+  },
+  {
+    "quote": "Langsomt og stabilt vinder løbet.",
+    "author": "Timoresisk Ord"
+  },
+  {
+    "quote": "Start hvor du er. Brug hvad du har. Gør hvad du kan.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Tag det første skridt i tro. Du behøver ikke at se hele trappen.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Jo mere du ved, jo mindre har du brug for.",
+    "author": "Aboriginal Ord"
+  },
+  {
+    "quote": "Sand styrke er ro.",
+    "author": "Kinesisk Ord"
+  },
+  {
+    "quote": "Hvad der måles, kan styres.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Hvor der ikke er skam, er der heller ingen ære.",
+    "author": "Malawisk Ord"
+  },
+  {
+    "quote": "Du når ikke dit mål ved at sidde stille.",
+    "author": "Finsk Ord"
+  },
+  {
+    "quote": "En rejse på tusind mil begynder med et enkelt skridt.",
+    "author": "Maldivisk Ord"
+  },
+  {
+    "quote": "En lille økse kan fælde et stort træ.",
+    "author": "Surinamsk Ord"
+  },
+  {
+    "quote": "Vær ikke bange for at gå langsomt, vær kun bange for at stå stille.",
+    "author": "Kinesisk Ord"
+  },
+  {
+    "quote": "Bedre femten minutter for sent end fyrre år for tidligt.",
+    "author": "Polsk Ord"
+  },
+  {
+    "quote": "Disciplin er broen mellem mål og præstationer.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Udskyd ikke til i morgen, hvad du kan gøre i dag.",
+    "author": "Uruguayansk Ord"
+  },
+  {
+    "quote": "Selv hvis du vågner tidligt, vil solen ikke stige op tidligere.",
+    "author": "Spansk Ord"
+  },
+  {
+    "quote": "Selv Salomo kan ikke hælde fra en tom beholder.",
+    "author": "Belgisk Ord"
+  },
+  {
+    "quote": "Selv månen har pletter.",
+    "author": "Komorisk Ord"
+  },
+  {
+    "quote": "Gud hjælper den, der står op tidligt.",
+    "author": "Colombiansk ordsprog"
+  },
+  {
+    "quote": "Hvis du jager to kaniner, vil du miste dem begge.",
+    "author": "Georgisk ordsprog"
+  },
+  {
+    "quote": "Hvis du vil gå hurtigt, gå alene. Hvis du vil gå langt, gå sammen.",
+    "author": "Afrikansk ordsprog"
+  },
+  {
+    "quote": "Små handlinger, der bliver gjort, er bedre end store handlinger, der bliver planlagt.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Succes kommer ikke fra det, du gør lejlighedsvis, det kommer fra det, du gør konsekvent.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Fremtiden starter i dag, ikke i morgen.",
+    "author": "Pave Johannes Paul II"
+  },
+  {
+    "quote": "Den tålmodige vil blive reddet.",
+    "author": "Kroatisk ordsprog"
+  },
+  {
+    "quote": "Livet er mere end bare at øge sin hastighed.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Vend dit ansigt mod solen, og skyggerne vil falde bag dig.",
+    "author": "Maorisk ordsprog"
+  },
+  {
+    "quote": "Når rødderne er dybe, er der ingen grund til at frygte vinden.",
+    "author": "Botswanisk ordsprog"
+  },
+  {
+    "quote": "Når forandringens vind blæser, bygger nogle mure, mens andre bygger vindmøller.",
+    "author": "Kinesisk ordsprog"
+  },
+  {
+    "quote": "Adoptér naturens tempo: dens hemmelighed er tålmodighed.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Ved at kravle lærer et barn at stå.",
+    "author": "Togo ordsprog"
+  },
+  {
+    "quote": "Ure dræber tiden... tiden er død, så længe den bliver talt af små hjul.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Vent ikke. Tiden vil aldrig være perfekt.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Fald syv gange, stå op otte.",
+    "author": "Japansk ordsprog"
+  },
+  {
+    "quote": "Den, der ikke har tålmodighed, har ikke visdom.",
+    "author": "Qatarisk ordsprog"
+  },
+  {
+    "quote": "Den, der mestre tålmodighed, mestre alt andet.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Viden er kun et rygte, indtil det er i musklerne.",
+    "author": "Papua Ny Guinea ordsprog"
+  },
+  {
+    "quote": "Læring udvider store sjæle.",
+    "author": "Namibisk ordsprog"
+  },
+  {
+    "quote": "Læring er en skat, der følger sin ejer overalt.",
+    "author": "Vietnamesisk ordsprog"
+  },
+  {
+    "quote": "Læring udmatter aldrig sindet.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Tålmodighed bringer roser.",
+    "author": "Schweizisk ordsprog"
+  },
+  {
+    "quote": "Tålmodighed er en dyd, der bringer fred.",
+    "author": "Samoansk ordsprog"
+  },
+  {
+    "quote": "Tålmodighed er visdommens ledsager.",
+    "author": "Malaysisk ordsprog"
+  },
+  {
+    "quote": "Tålmodighed er nøglen til paradis.",
+    "author": "Østrigsk ordsprog"
+  },
+  {
+    "quote": "Tålmodighed er nøglen til lindring.",
+    "author": "Jordanisk ordsprog"
+  },
+  {
+    "quote": "Små daglige forbedringer over tid fører til fantastiske resultater.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Nøglen er ikke at bruge tid, men at investere den.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Den eneste kilde til viden er erfaring.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Der er ikke noget bedre tidspunkt end nu.",
+    "author": "Ukendt forfatter"
+  },
+  {
+    "quote": "Tid bringer alt til at ske.",
+    "author": "Aiskylos"
+  },
+  {
+    "quote": "Tid er den klogeste rådgiver af alle.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Tid er det, vi ønsker mest, men hvad vi bruger dårligst.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Tid vil vise.",
+    "author": "Polsk ordsprog"
+  },
+  {
+    "quote": "Tid, den som fortærer alle ting.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Vi er, hvad vi gør gentagne gange. Derfor er excellens ikke en handling, men en vane.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Hvor der er tålmodighed, er der fred.",
+    "author": "Bruneisk ordsprog"
+  },
+  {
+    "quote": "Du lærer at hugge træer ved at hugge dem.",
+    "author": "Kongolesisk ordsprog"
+  },
+  {
+    "quote": "Du kan forsinke, men tid vil ikke.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "En håndfuld tålmodighed er mere værd end en kurv med hjerner.",
+    "author": "Algerisk ordsprog"
   }
 ]
+

@@ -1,7 +1,503 @@
 // Norwegian (Bokmål)
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Et barn som ikke blir omfavnet av landsbyen, vil brenne den ned for å føle dens varme.",
+    "author": "Basotho ordtak"
+  },
+  {
+    "quote": "En enkelt pinne kan røyke, men den vil ikke brenne.",
+    "author": "Tongan ordtak"
+  },
+  {
+    "quote": "Litt etter litt bygger fuglen sitt rede.",
+    "author": "Dominikanske ordtak"
+  },
+  {
+    "quote": "En reise måles best i venner, ikke i mil.",
+    "author": "Cape Verde ordtak"
+  },
+  {
+    "quote": "En mann som spør, er en tåpe i fem minutter. En mann som aldri spør, er en tåpe for livet.",
+    "author": "Kinesisk ordtak"
+  },
+  {
+    "quote": "En ny feie kost feier rent, men den gamle kjenner hjørnene.",
+    "author": "Saint Lucian ordtak"
+  },
+  {
+    "quote": "Visdom er som ild. Folk tar den fra andre.",
+    "author": "Ivoriansk ordtak"
+  },
+  {
+    "quote": "En person som snakker for mye oppnår lite.",
+    "author": "Uzbekisk ordtak"
+  },
+  {
+    "quote": "En vis mann vet aldri alt, bare de dumme vet alt.",
+    "author": "Antiguansk ordtak"
+  },
+  {
+    "quote": "Bedre ett stabilt skritt enn en slitsom galopp.",
+    "author": "Venezuelansk ordtak"
+  },
+  {
+    "quote": "Bedre sent enn aldri.",
+    "author": "Argentinsk ordtak"
+  },
+  {
+    "quote": "Bak fjellene, finnes det flere fjell.",
+    "author": "Haitiansk ordtak"
+  },
+  {
+    "quote": "Ikke start hvis du er redd, men når du har startet, vær ikke redd.",
+    "author": "Mongolsk ordtak"
+  },
+  {
+    "quote": "Ikke utsett til i morgen det du kan gjøre i dag.",
+    "author": "Polsk ordtak"
+  },
+  {
+    "quote": "Tomme tønner lager mest støy.",
+    "author": "Kittitian ordtak"
+  },
+  {
+    "quote": "Selv aper faller fra trær.",
+    "author": "Koreansk ordtak"
+  },
+  {
+    "quote": "Gud hjelper de som står opp tidlig.",
+    "author": "Polsk ordtak"
+  },
+  {
+    "quote": "Korn etter korn fyller høna sitt mag.",
+    "author": "Brasiliansk ordtak"
+  },
+  {
+    "quote": "Den som kommer sent, skader seg selv.",
+    "author": "Tsjekkisk ordtak"
+  },
+  {
+    "quote": "Den som haster, snubler.",
+    "author": "Panamansk ordtak"
+  },
+  {
+    "quote": "Den som flytter fjell, startet med små steiner.",
+    "author": "Kinesisk ordtak"
+  },
+  {
+    "quote": "Den som venter på noe godt, venter aldri for lenge.",
+    "author": "Svensk ordtak"
+  },
+  {
+    "quote": "Hvis du klatrer opp et tre, må du klatre ned fra det samme treet.",
+    "author": "Guineansk ordtak"
+  },
+  {
+    "quote": "Hvis du ikke vet hvor du skal, vil hvilken som helst vei ta deg dit.",
+    "author": "Bahamansk ordtak"
+  },
+  {
+    "quote": "Krakow ble ikke bygget på en dag.",
+    "author": "Polsk ordtak"
+  },
+  {
+    "quote": "Litt og varig er bedre enn mye og forbigående.",
+    "author": "Marokkansk ordtak"
+  },
+  {
+    "quote": "Litt etter litt fylles kurven.",
+    "author": "Jamaikansk ordtak"
+  },
+  {
+    "quote": "Litt etter litt fylles beholderen.",
+    "author": "Bengalsk ordtak"
+  },
+  {
+    "quote": "Litt etter litt, litt blir mye.",
+    "author": "Indonesisk ordtak"
+  },
+  {
+    "quote": "Uansett hvor full elven er, ønsker den fortsatt å vokse.",
+    "author": "Bissau-Guineansk ordtak"
+  },
+  {
+    "quote": "Perfeksjon er fienden til utførelse.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Suksess er en reise, ikke en destinasjon.",
+    "author": "Singaporiansk ordtak"
+  },
+  {
+    "quote": "Den tålmodige finner lykke.",
+    "author": "Litauisk ordtak"
+  },
+  {
+    "quote": "Den som vet lite, snakker mye.",
+    "author": "Dominikansk ordtak"
+  },
+  {
+    "quote": "Å plante et tre hvis skygge du aldri vil se — det er sann visdom.",
+    "author": "Gresk ordtak"
+  },
+  {
+    "quote": "Når edderkoppens nett forenes, kan de binde en løve.",
+    "author": "Gabonese ordtak"
+  },
+  {
+    "quote": "Visdom er som en løve. Du trenger ikke å proklamere det.",
+    "author": "Senegalesisk ordtak"
+  },
+  {
+    "quote": "Visdom er som salt — den må brukes i riktig mengde.",
+    "author": "Eritreisk ordtak"
+  },
+  {
+    "quote": "Du trenger ikke å være stor for å begynne, men du må begynne for å bli stor.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Du må handle som om det er umulig å mislykkes.",
+    "author": "Malisk ordtak"
+  },
+  {
+    "quote": "Du høster hva du sår.",
+    "author": "Burmesisk ordtak"
+  },
+  {
+    "quote": "Du vil aldri pløye et felt ved å snu det i hodet ditt.",
+    "author": "Irsk ordtak"
+  },
+  {
+    "quote": "En fugl glemmer ikke hvor den la eggene sine.",
+    "author": "Swazi Ord"
+  },
+  {
+    "quote": "En fugl vil alltid bruke en annen fugls fjær for å lage sitt eget rede.",
+    "author": "Santomean Ord"
+  },
+  {
+    "quote": "En bok er som en hage som du bærer i lommen.",
+    "author": "Syrisk Ord"
+  },
+  {
+    "quote": "En liten dråpe huler ut steinen.",
+    "author": "Koreansk Ord"
+  },
+  {
+    "quote": "Et tre med sterke røtter ler av stormene.",
+    "author": "Thai Ord"
+  },
+  {
+    "quote": "Bedre tre timer for tidlig enn ett minutt for sent.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Frykt ikke langsom fremgang, frykt stagnasjon.",
+    "author": "Kinesisk Ord"
+  },
+  {
+    "quote": "Gjør i dag det andre ikke vil gjøre, slik at du i morgen får det andre drømmer om.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Ikke se på klokken; gjør som den gjør. Fortsett å gå.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Dråpe for dråpe fyller krukken.",
+    "author": "Khmer Ord"
+  },
+  {
+    "quote": "Selv de største bølgene starter små.",
+    "author": "Marshallese Ord"
+  },
+  {
+    "quote": "Alt bør gjøres så enkelt som mulig, men ikke enklere.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Store ting har små begynnelser.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Hastverk er sjelden bra.",
+    "author": "Nederlandsk Ord"
+  },
+  {
+    "quote": "Hastverk ødelegger arbeidet.",
+    "author": "Rumensk Ord"
+  },
+  {
+    "quote": "Den som stiller spørsmål kan ikke unngå svarene.",
+    "author": "Kamerun Ord"
+  },
+  {
+    "quote": "Den som ikke ser fremover, blir etter.",
+    "author": "Cuban Ord"
+  },
+  {
+    "quote": "Litt etter litt fyller målet.",
+    "author": "Zambisk Ord"
+  },
+  {
+    "quote": "Mange små bekker gjør en stor elv.",
+    "author": "Dansk Ord"
+  },
+  {
+    "quote": "Moskva ble ikke bygget på en dag.",
+    "author": "Russisk Ord"
+  },
+  {
+    "quote": "Uansett hvor langt en bekk flyter, glemmer den aldri sin kilde.",
+    "author": "Belizisk Ord"
+  },
+  {
+    "quote": "En dag er like god som to for den som gjør alt på sitt sted.",
+    "author": "Seychellois Ord"
+  },
+  {
+    "quote": "En finger kan ikke løfte en liten stein.",
+    "author": "Ekvatorialguineansk Ord"
+  },
+  {
+    "quote": "En times planlegging sparer ti timers arbeid.",
+    "author": "Tyrkisk Ord"
+  },
+  {
+    "quote": "Langsomt vil du gå langt.",
+    "author": "Slovensk Ord"
+  },
+  {
+    "quote": "Langsom og stabil vinner løpet.",
+    "author": "Timor Ord"
+  },
+  {
+    "quote": "Start der du er. Bruk det du har. Gjør det du kan.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Ta det første steget i tro. Du trenger ikke å se hele trappen.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Jo mer du vet, desto mindre trenger du.",
+    "author": "Aboriginal Ord"
+  },
+  {
+    "quote": "Ekte styrke er ro.",
+    "author": "Kinesisk Ord"
+  },
+  {
+    "quote": "Det som blir målt, blir håndtert.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Der det ikke er skam, er det heller ingen ære.",
+    "author": "Malawiansk Ord"
+  },
+  {
+    "quote": "Du vil ikke nå målet ditt ved å sitte stille.",
+    "author": "Finsk Ord"
+  },
+  {
+    "quote": "En reise på tusen mil begynner med ett skritt.",
+    "author": "Maldivian Ord"
+  },
+  {
+    "quote": "En liten øks kan felle et stort tre.",
+    "author": "Surinam Ord"
+  },
+  {
+    "quote": "Vær ikke redd for å gå sakte, vær bare redd for å stå stille.",
+    "author": "Kinesisk Ord"
+  },
+  {
+    "quote": "Bedre femten minutter for sent enn førti år for tidlig.",
+    "author": "Polsk Ord"
+  },
+  {
+    "quote": "Disiplin er broen mellom mål og prestasjon.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Ikke utsett for i morgen det du kan gjøre i dag.",
+    "author": "Uruguaysk Ord"
+  },
+  {
+    "quote": "Selv om du står opp tidlig, vil ikke solen stige tidligere.",
+    "author": "Spansk Ord"
+  },
+  {
+    "quote": "Selv Solomon kan ikke helle fra en tom krukke.",
+    "author": "Belgisk Ord"
+  },
+  {
+    "quote": "Selv månen har flekker.",
+    "author": "Comorisk Ord"
+  },
+  {
+    "quote": "Gud hjelper den som står opp tidlig.",
+    "author": "Colombiansk ordtak"
+  },
+  {
+    "quote": "Hvis du jager to kaniner, vil du miste dem begge.",
+    "author": "Georgisk ordtak"
+  },
+  {
+    "quote": "Hvis du vil gå raskt, gå alene. Hvis du vil gå langt, gå sammen.",
+    "author": "Afrikansk ordtak"
+  },
+  {
+    "quote": "Små handlinger gjort er bedre enn store handlinger planlagt.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Suksess kommer ikke fra det du gjør av og til, men fra det du gjør konsekvent.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Fremtiden begynner i dag, ikke i morgen.",
+    "author": "Pave Johannes Paul II"
+  },
+  {
+    "quote": "Den tålmodige vil bli reddet.",
+    "author": "Kroatisk ordtak"
+  },
+  {
+    "quote": "Livet handler om mer enn bare å øke farten.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Vri ansiktet mot solen, og skyggene vil falle bak deg.",
+    "author": "Maorisk ordtak"
+  },
+  {
+    "quote": "Når røttene er dype, er det ingen grunn til å være redd for vinden.",
+    "author": "Botswansk ordtak"
+  },
+  {
+    "quote": "Når vindene av endring blåser, bygger noen vegger, andre bygger vindmøller.",
+    "author": "Kinesisk ordtak"
+  },
+  {
+    "quote": "Ta naturens tempo: dens hemmelighet er tålmodighet.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Ved å krype lærer et barn å stå.",
+    "author": "Togolesisk ordtak"
+  },
+  {
+    "quote": "Klokker dreper tid... tid er død så lenge den blir tikket av små hjul.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Vent ikke. Tiden vil aldri være perfekt.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Fall syv ganger, reis deg åtte.",
+    "author": "Japansk ordtak"
+  },
+  {
+    "quote": "Den som ikke har tålmodighet, har ikke visdom.",
+    "author": "Qatarisk ordtak"
+  },
+  {
+    "quote": "Den som behersker tålmodighet, behersker alt annet.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Kunnskap er bare et rykte til det er i musklene.",
+    "author": "Papua Ny-Guinea ordtak"
+  },
+  {
+    "quote": "Læring utvider store sjeler.",
+    "author": "Namibisk ordtak"
+  },
+  {
+    "quote": "Læring er en skatt som følger eieren overalt.",
+    "author": "Vietnamesisk ordtak"
+  },
+  {
+    "quote": "Læring utmatter aldri sinnet.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Tålmodighet gir roser.",
+    "author": "Sveitsisk ordtak"
+  },
+  {
+    "quote": "Tålmodighet er en dyd som gir fred.",
+    "author": "Samoansk ordtak"
+  },
+  {
+    "quote": "Tålmodighet er visdommens følgesvenn.",
+    "author": "Malaysisk ordtak"
+  },
+  {
+    "quote": "Tålmodighet er nøkkelen til paradis.",
+    "author": "Østerriksk ordtak"
+  },
+  {
+    "quote": "Tålmodighet er nøkkelen til lettelse.",
+    "author": "Jordanisk ordtak"
+  },
+  {
+    "quote": "Små daglige forbedringer over tid gir fantastiske resultater.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Nøkkelen er ikke å bruke tid, men å investere den.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Den eneste kilden til kunnskap er erfaring.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Det er ikke noe bedre tidspunkt enn nå.",
+    "author": "Ukjent forfatter"
+  },
+  {
+    "quote": "Tid bringer alt til oss.",
+    "author": "Aiskhylos"
+  },
+  {
+    "quote": "Tid er den klokeste rådgiveren.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Tid er det vi ønsker oss mest, men det vi bruker dårligst.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Tid vil vise.",
+    "author": "Polsk ordtak"
+  },
+  {
+    "quote": "Tid, den som fortærer alle ting.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Vi er det vi gjør gjentatte ganger. Derfor er ikke fortreffelighet en handling, men en vane.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Der det er tålmodighet, er det fred.",
+    "author": "Bruneisk ordtak"
+  },
+  {
+    "quote": "Du lærer å felle trær ved å felle dem.",
+    "author": "Kongolesisk ordtak"
+  },
+  {
+    "quote": "Du kan forsinke, men tiden vil ikke.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "En håndfull tålmodighet er mer verdt enn en kurv med hjerner.",
+    "author": "Algerisk ordtak"
   }
 ]

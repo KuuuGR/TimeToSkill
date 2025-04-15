@@ -1,7 +1,504 @@
 // Catalan
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Un nen que no és acollit pel poble, el cremarà per sentir el seu calor.",
+    "author": "Proverbi Basotho"
+  },
+  {
+    "quote": "Una sola branca pot fumar, però no es cremarà.",
+    "author": "Proverbi Tongà"
+  },
+  {
+    "quote": "Poquet a poquet l'ocell construeix el seu niu.",
+    "author": "Proverbi Dominica"
+  },
+  {
+    "quote": "El millor viatge es mesura amb amics, no amb milles.",
+    "author": "Dite de Cap Verd"
+  },
+  {
+    "quote": "Un home que pregunta és un beneit durant cinc minuts. Un home que mai pregunta és un beneit per tota la vida.",
+    "author": "Proverbi xinès"
+  },
+  {
+    "quote": "El nou escombra neteja bé, però l'escombra vella coneix els racons.",
+    "author": "Proverbi de Sant Llucia"
+  },
+  {
+    "quote": "La saviesa és com el foc. La gent la pren d'altres.",
+    "author": "Proverbi de la Costa d'Ivori"
+  },
+  {
+    "quote": "Una persona que parla massa aconsegueix poc.",
+    "author": "Proverbi uzbek"
+  },
+  {
+    "quote": "Un home savi mai no sap tot, només els ximples saben tot.",
+    "author": "Proverbi d'Antigua"
+  },
+  {
+    "quote": "Millor un pas ferm que una galopada cansada.",
+    "author": "Proverbi veneçolà"
+  },
+  {
+    "quote": "Millor tard que mai.",
+    "author": "Proverbi argentí"
+  },
+  {
+    "quote": "Després de les muntanyes, hi ha més muntanyes.",
+    "author": "Proverbi haitian"
+  },
+  {
+    "quote": "No comencis si tens por, quan comencis no tinguis por.",
+    "author": "Proverbi mongol"
+  },
+  {
+    "quote": "No deixis per demà el que pots fer avui.",
+    "author": "Proverbi polonès"
+  },
+  {
+    "quote": "Els barrils buits fan més soroll.",
+    "author": "Proverbi de Kittitians"
+  },
+  {
+    "quote": "Fins i tot els micos cauen dels arbres.",
+    "author": "Proverbi coreà"
+  },
+  {
+    "quote": "Déu ajuda els que es lleven d'hora.",
+    "author": "Proverbi polonès"
+  },
+  {
+    "quote": "Grà de gra, la gallina omple la panxa.",
+    "author": "Proverbi brasiler"
+  },
+  {
+    "quote": "Qui arriba tard es fa mal a si mateix.",
+    "author": "Proverbi txec"
+  },
+  {
+    "quote": "Qui s'anticipa, s'obre pas.",
+    "author": "Proverbi panameny"
+  },
+  {
+    "quote": "Qui mou muntanyes comença amb petites pedres.",
+    "author": "Proverbi xinès"
+  },
+  {
+    "quote": "Qui espera alguna cosa bona no espera massa temps.",
+    "author": "Proverbi suec"
+  },
+  {
+    "quote": "Si puges a un arbre, has de baixar del mateix arbre.",
+    "author": "Proverbi guineà"
+  },
+  {
+    "quote": "Si no saps on vas, qualsevol camí et portarà allà.",
+    "author": "Proverbi bahamià"
+  },
+  {
+    "quote": "Cracòvia no es va construir en un dia.",
+    "author": "Proverbi polonès"
+  },
+  {
+    "quote": "El poc i durador és millor que el molt i fugaz.",
+    "author": "Proverbi marroquí"
+  },
+  {
+    "quote": "Una mica a poc a poc omple la cistella.",
+    "author": "Proverbi jamaicà"
+  },
+  {
+    "quote": "Una mica a poc a poc la bóta es va omplint.",
+    "author": "Proverbi bengalí"
+  },
+  {
+    "quote": "Una mica a poc a poc, poc es converteix en molt.",
+    "author": "Proverbi indonèsi"
+  },
+  {
+    "quote": "No importa com estigui plena la riera, sempre vol créixer.",
+    "author": "Proverbi de Guinea-Bissau"
+  },
+  {
+    "quote": "La perfecció és l'enemic de l'execució.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "L'èxit és un viatge, no una destinació.",
+    "author": "Dite de Singapur"
+  },
+  {
+    "quote": "Qui té paciència troba la felicitat.",
+    "author": "Proverbi lituà"
+  },
+  {
+    "quote": "La persona que sap poc parla molt.",
+    "author": "Proverbi dominicà"
+  },
+  {
+    "quote": "Plantar un arbre de l'ombra del qual no veuràs mai — això és saviesa veritable.",
+    "author": "Proverbi grec"
+  },
+  {
+    "quote": "Quan les teranyines s'uneixen, poden lligar un lleó.",
+    "author": "Proverbi gabonès"
+  },
+  {
+    "quote": "La saviesa és com un lleó. No cal proclamar-la.",
+    "author": "Proverbi senegalès"
+  },
+  {
+    "quote": "La saviesa és com la sal — s'ha d'utilitzar en la quantitat correcta.",
+    "author": "Proverbi eritrei"
+  },
+  {
+    "quote": "No cal ser gran per començar, però cal començar per ser gran.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Cal actuar com si fos impossible fallar.",
+    "author": "Dite maliana"
+  },
+  {
+    "quote": "Coses que sembres, coses que reculls.",
+    "author": "Proverbi birmà"
+  },
+  {
+    "quote": "No pots llaurar un camp només pensant-hi.",
+    "author": "Proverbi irlandès"
+  },
+  {
+    "quote": "Un ocell no oblidarà on va posar els seus ous.",
+    "author": "Proverbi Swazi"
+  },
+  {
+    "quote": "Un ocell sempre utilitzarà les plomes d'un altre ocell per fer el seu propi niu.",
+    "author": "Proverbi Santomeà"
+  },
+  {
+    "quote": "Un llibre és com un jardí que portes a la butxaca.",
+    "author": "Proverbi Sirià"
+  },
+  {
+    "quote": "Una petita gota excava la pedra.",
+    "author": "Proverbi Coreà"
+  },
+  {
+    "quote": "Un arbre amb arrels fortes es riu de les tempestes.",
+    "author": "Proverbi Tailandès"
+  },
+  {
+    "quote": "Millor tres hores massa aviat que un minut massa tard.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "No temis el progrés lent, tem la stagnació.",
+    "author": "Proverbi Xinès"
+  },
+  {
+    "quote": "Fes avui el que altres no faran, perquè demà tinguis el que altres somien.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "No miris el rellotge; fes el que fa. Segueix endavant.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Gota a gota es fa ple el pot.",
+    "author": "Proverbi Khmer"
+  },
+  {
+    "quote": "Fins i tot les onades més grans comencen petites.",
+    "author": "Proverbi Marshallès"
+  },
+  {
+    "quote": "Tot s'ha de fer tan senzill com sigui possible, però no més senzill.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Les grans coses comencen amb petits inicis.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "La pressa gairebé mai és bona.",
+    "author": "Proverbi Holandès"
+  },
+  {
+    "quote": "La pressa espatlla la feina.",
+    "author": "Proverbi Romanès"
+  },
+  {
+    "quote": "Qui fa preguntes no pot evitar les respostes.",
+    "author": "Proverbi Camerunès"
+  },
+  {
+    "quote": "Qui no mira endavant es queda enrere.",
+    "author": "Proverbi Cubà"
+  },
+  {
+    "quote": "A poc a poc es fa ple el mesurador.",
+    "author": "Proverbi Zambià"
+  },
+  {
+    "quote": "Molts petits rius formen un gran riu.",
+    "author": "Proverbi Danès"
+  },
+  {
+    "quote": "Moscou no es va construir en un dia.",
+    "author": "Proverbi Rus"
+  },
+  {
+    "quote": "No importa quant de lluny flueixi un riu, mai no oblidarà la seva font.",
+    "author": "Proverbi Belizià"
+  },
+  {
+    "quote": "Un dia és tan bo com dos per a qui fa tot al seu lloc.",
+    "author": "Proverbi de les Seychelles"
+  },
+  {
+    "quote": "Un dit no pot aixecar una pedra petita.",
+    "author": "Proverbi de Guinea Equatorial"
+  },
+  {
+    "quote": "Una hora de planificació estalvia deu hores de feina.",
+    "author": "Proverbi Turc"
+  },
+  {
+    "quote": "A poc a poc arribaràs lluny.",
+    "author": "Proverbi Eslovè"
+  },
+  {
+    "quote": "Lentament i amb constància es guanya la cursa.",
+    "author": "Proverbi Timorès"
+  },
+  {
+    "quote": "Comença allà on ets. Utilitza el que tens. Fes el que pots.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Fes el primer pas en fe. No has de veure tota l'escala.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Com més saps, menys necessites.",
+    "author": "Proverbi Aborigen"
+  },
+  {
+    "quote": "La veritable força és calma.",
+    "author": "Proverbi Xinès"
+  },
+  {
+    "quote": "El que es mesura es gestiona.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Allà on no hi ha vergonya, no hi ha honor.",
+    "author": "Proverbi Malawí"
+  },
+  {
+    "quote": "No arribaràs al teu objectiu quedant-te quiet.",
+    "author": "Proverbi Finès"
+  },
+  {
+    "quote": "Un viatge de mil milles comença amb un sol pas.",
+    "author": "Proverbi Maldivi"
+  },
+  {
+    "quote": "Una petita destral pot tallar un gran arbre.",
+    "author": "Proverbi Surinamès"
+  },
+  {
+    "quote": "No tinguis por de caminar lentament, només tinguis por de quedar-te quiet.",
+    "author": "Proverbi Xinès"
+  },
+  {
+    "quote": "Millor quinze minuts massa tard que quaranta anys massa aviat.",
+    "author": "Proverbi Polonès"
+  },
+  {
+    "quote": "La disciplina és el pont entre els objectius i els assoliments.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "No deixis per a demà el que pots fer avui.",
+    "author": "Proverbi Uruguaià"
+  },
+  {
+    "quote": "Encara que et llevis d'hora, el sol no sortirà més aviat.",
+    "author": "Proverbi Espanyol"
+  },
+  {
+    "quote": "Fins i tot Salomó no pot vessar d'un recipient buit.",
+    "author": "Proverbi Belga"
+  },
+  {
+    "quote": "Fins i tot la lluna té taques.",
+    "author": "Proverbi Comorià"
+  },
+  {
+    "quote": "Déu ajuda el qui s'aixeca d'hora.",
+    "author": "Proverbi colombià"
+  },
+  {
+    "quote": "Si persegueixes dos conills, els perdràs tots dos.",
+    "author": "Proverbi georgià"
+  },
+  {
+    "quote": "Si vols anar ràpid, ves sol. Si vols arribar lluny, ves junts.",
+    "author": "Proverbi africà"
+  },
+  {
+    "quote": "Les petites accions fetes són millors que les grans accions planificades.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "L'èxit no ve del que fas de tant en tant, ve del que fas constantment.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "El futur comença avui, no demà.",
+    "author": "Papa Joan Pau II"
+  },
+  {
+    "quote": "El pacient serà salvat.",
+    "author": "Proverbi croat"
+  },
+  {
+    "quote": "La vida és més que simplement augmentar la seva velocitat.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Gira la teva cara cap al sol i les ombres cauran darrere de tu.",
+    "author": "Proverbi maori"
+  },
+  {
+    "quote": "Quan les arrels són profundes, no hi ha motiu per témer el vent.",
+    "author": "Proverbi botswanès"
+  },
+  {
+    "quote": "Quan el vent del canvi bufa, alguns construeixen murs, altres construeixen molins de vent.",
+    "author": "Proverbi xinès"
+  },
+  {
+    "quote": "Adopta el ritme de la natura: el seu secret és la paciència.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "En arrossegant-se, un nen aprèn a aixecar-se.",
+    "author": "Proverbi togolès"
+  },
+  {
+    "quote": "Els rellotges maten el temps... el temps està mort mentre es mesura amb petites rodes.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "No esperis. El temps mai serà perfecte.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Cau set vegades, aixeca't vuit.",
+    "author": "Proverbi japonès"
+  },
+  {
+    "quote": "Qui no té paciència, no té saviesa.",
+    "author": "Proverbi qatari"
+  },
+  {
+    "quote": "Qui domina la paciència, domina tot el demés.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "El coneixement és només un rumor fins que arriba als músculs.",
+    "author": "Proverbi de Papua Nova Guinea"
+  },
+  {
+    "quote": "L'aprenentatge expandeix les grans ànimes.",
+    "author": "Proverbi namibià"
+  },
+  {
+    "quote": "L'aprenentatge és un tresor que segueix al seu propietari a tot arreu.",
+    "author": "Proverbi vietnamita"
+  },
+  {
+    "quote": "L'aprenentatge mai no cansa la ment.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "La paciència porta roses.",
+    "author": "Proverbi suís"
+  },
+  {
+    "quote": "La paciència és una virtut que porta pau.",
+    "author": "Proverbi samoà"
+  },
+  {
+    "quote": "La paciència és la companya de la saviesa.",
+    "author": "Proverbi malai"
+  },
+  {
+    "quote": "La paciència és la clau del paradís.",
+    "author": "Proverbi austríac"
+  },
+  {
+    "quote": "La paciència és la clau de l'alleujament.",
+    "author": "Proverbi jordà"
+  },
+  {
+    "quote": "Les petites millores diàries amb el temps condueixen a resultats sorprenents.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "La clau no està a gastar temps, sinó a invertir-lo.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "La única font de coneixement és l'experiència.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "No hi ha millor moment que ara.",
+    "author": "Autor desconegut"
+  },
+  {
+    "quote": "El temps porta totes les coses a la seva fi.",
+    "author": "Aixíl·lus"
+  },
+  {
+    "quote": "El temps és el conseller més savi de tots.",
+    "author": "Perícles"
+  },
+  {
+    "quote": "El temps és el que més volem, però el que utilitzem pitjor.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "El temps ho dirà.",
+    "author": "Proverbi polonès"
+  },
+  {
+    "quote": "El temps, el devorador de totes les coses.",
+    "author": "Ovidi"
+  },
+  {
+    "quote": "Som el que fem repetidament. Per tant, l'excel·lència no és un acte, sinó un hàbit.",
+    "author": "Aristòtil"
+  },
+  {
+    "quote": "On hi ha paciència, hi ha pau.",
+    "author": "Proverbi bruneí"
+  },
+  {
+    "quote": "Aprens a tallar arbres tallant-los.",
+    "author": "Proverbi congolell"
+  },
+  {
+    "quote": "Pots retardar-ho, però el temps no ho farà.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Una mà de paciència val més que una cistella de cervell.",
+    "author": "Proverbi algerià"
   }
 ]
+

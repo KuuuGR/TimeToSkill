@@ -1,7 +1,676 @@
 // Turkish
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Köy tarafından kucaklanmayan bir çocuk, ısınmak için köyü yakar.",
+    "author": "Basotho Atasözü"
+  },
+  {
+    "quote": "Bir sopa duman çıkarabilir, ama yanmaz.",
+    "author": "Tongan Atasözü"
+  },
+  {
+    "quote": "Yavaş yavaş kuş yuvasını yapar.",
+    "author": "Dominikan Atasözü"
+  },
+  {
+    "quote": "Bir yolculuk, arkadaşlarla ölçülür, kilometrelerle değil.",
+    "author": "Cape Verde Atasözü"
+  },
+  {
+    "quote": "Sorular soran bir adam beş dakika salak olur. Hiç soru sormayan adam ise ömür boyu salak olur.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "Yeni bir süpürge her yeri temizler, ama eski süpürge köşeleri bilir.",
+    "author": "Saint Lucian Atasözü"
+  },
+  {
+    "quote": "Bilgelik ateş gibidir. İnsanlar ondan başkalarından alırlar.",
+    "author": "Fildişi Sahili Atasözü"
+  },
+  {
+    "quote": "Çok konuşan kişi, çok az şey başarır.",
+    "author": "Özbek Atasözü"
+  },
+  {
+    "quote": "Bilge adam her şeyi bilmez, yalnızca aptallar her şeyi bilir.",
+    "author": "Antiguan Atasözü"
+  },
+  {
+    "quote": "Duran bir adım, yorucu bir koşudan daha iyidir.",
+    "author": "Venezuela Atasözü"
+  },
+  {
+    "quote": "Geç kalmak, hiç gelmemekten iyidir.",
+    "author": "Arjantin Atasözü"
+  },
+  {
+    "quote": "Dağların ötesinde, başka dağlar vardır.",
+    "author": "Haitili Atasözü"
+  },
+  {
+    "quote": "Korkuyorsan başlama, başladıysan korkma.",
+    "author": "Moğol Atasözü"
+  },
+  {
+    "quote": "Bugün yapabileceğin şeyi yarına bırakma.",
+    "author": "Polonya Atasözü"
+  },
+  {
+    "quote": "Boş variller en fazla gürültüyü yapar.",
+    "author": "Kittitian Atasözü"
+  },
+  {
+    "quote": "Maymunlar bile ağaçlardan düşer.",
+    "author": "Kore Atasözü"
+  },
+  {
+    "quote": "Tanrı, erken kalkanlara yardım eder.",
+    "author": "Polonya Atasözü"
+  },
+  {
+    "quote": "Tane tane, tavuk karnını doldurur.",
+    "author": "Brezilya Atasözü"
+  },
+  {
+    "quote": "Geç gelen kişi, kendine zarar verir.",
+    "author": "Çek Atasözü"
+  },
+  {
+    "quote": "Acelesi olan tökezler.",
+    "author": "Panama Atasözü"
+  },
+  {
+    "quote": "Dağları hareket ettiren kişi, küçük taşlarla başlar.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "İyi bir şey bekleyen kişi, uzun süre beklemez.",
+    "author": "İsveç Atasözü"
+  },
+  {
+    "quote": "Bir ağaca tırmanırsan, aynı ağaca inmelisin.",
+    "author": "Gine Atasözü"
+  },
+  {
+    "quote": "Nereye gittiğini bilmiyorsan, her yol seni oraya götürür.",
+    "author": "Bahama Atasözü"
+  },
+  {
+    "quote": "Krakow bir günde inşa edilmedi.",
+    "author": "Polonya Atasözü"
+  },
+  {
+    "quote": "Az ama kalıcı olan, çok ama geçici olandan daha iyidir.",
+    "author": "Fas Atasözü"
+  },
+  {
+    "quote": "Yavaş yavaş, sepet dolar.",
+    "author": "Jamaika Atasözü"
+  },
+  {
+    "quote": "Yavaş yavaş, kap dolmaya başlar.",
+    "author": "Bengal Atasözü"
+  },
+  {
+    "quote": "Yavaş yavaş, az çok olur.",
+    "author": "Endonezya Atasözü"
+  },
+  {
+    "quote": "Ne kadar dolu olursa olsun, nehir hala büyümek ister.",
+    "author": "Gine-Bissau Atasözü"
+  },
+  {
+    "quote": "Mükemmellik, icranın düşmanıdır.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Başarı bir yolculuktur, varış noktası değil.",
+    "author": "Singapur Atasözü"
+  },
+  {
+    "quote": "Sabırlı olan, mutluluğu bulur.",
+    "author": "Litvanya Atasözü"
+  },
+  {
+    "quote": "Az bilen çok konuşur.",
+    "author": "Dominika Atasözü"
+  },
+  {
+    "quote": "Gölgesini göremeyeceğin bir ağaç dikmek, gerçek bilgeliği ifade eder.",
+    "author": "Yunan Atasözü"
+  },
+  {
+    "quote": "Örümcek ağları birleşirse, bir aslanı bağlayabilirler.",
+    "author": "Gabon Atasözü"
+  },
+  {
+    "quote": "Bilgelik, aslan gibidir. Onu ilan etmene gerek yoktur.",
+    "author": "Senegal Atasözü"
+  },
+  {
+    "quote": "Bilgelik tuz gibidir — doğru ölçüde kullanılmalıdır.",
+    "author": "Eritre Atasözü"
+  },
+  {
+    "quote": "Büyük olmak zorunda değilsin, ama büyük olmak için başlamalısın.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Başarısızlık imkansızmış gibi davranmalısın.",
+    "author": "Mali Atasözü"
+  },
+  {
+    "quote": "Ektiğini biçersin.",
+    "author": "Burma Atasözü"
+  },
+  {
+    "quote": "Ağını kafanda döndürerek tarlayı süremezsin.",
+    "author": "İrlanda Atasözü"
+  },
+  {
+    "quote": "Kuş, nerede yumurtladığını unutmaz.",
+    "author": "Swazi Atasözü"
+  },
+  {
+    "quote": "Bir kuş, her zaman başka bir kuşun tüylerini kendi yuvasını yapmak için kullanır.",
+    "author": "Santomean Atasözü"
+  },
+  {
+    "quote": "Bir kitap, cebinde taşıdığın bir bahçedir.",
+    "author": "Suriyeli Atasözü"
+  },
+  {
+    "quote": "Bir damla, taşı oyar.",
+    "author": "Kore Atasözü"
+  },
+  {
+    "quote": "Güçlü kökleri olan bir ağaç fırtınalara güler.",
+    "author": "Tayland Atasözü"
+  },
+  {
+    "quote": "Üç saat erken gelmek, bir dakika geç gelmekten iyidir.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Yavaş ilerlemeden korkma, durağanlıktan kork.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "Bugün başkalarının yapmadığı şeyi yap, yarın başkalarının hayal ettiği şeyi sen elde edeceksin.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Saate bakma; ne yapıyorsa onu yap. Devam et.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Damla damla testi doldurur.",
+    "author": "Khmer Atasözü"
+  },
+  {
+    "quote": "En büyük dalgalar bile küçük başlar.",
+    "author": "Marshallese Sözü"
+  },
+  {
+    "quote": "Her şey mümkün olduğunca basit yapılmalı, ama daha basit olmamalıdır.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Büyük şeyler küçük başlangıçlarla başlar.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Acele genellikle iyi değildir.",
+    "author": "Hollanda Atasözü"
+  },
+  {
+    "quote": "Acele işin içine zarar getirir.",
+    "author": "Rumen Atasözü"
+  },
+  {
+    "quote": "Soru soran kişi cevaplardan kaçamaz.",
+    "author": "Kamerun Atasözü"
+  },
+  {
+    "quote": "Önünü göremeyen kişi geride kalır.",
+    "author": "Küba Atasözü"
+  },
+  {
+    "quote": "Azar azar ölçeği doldurur.",
+    "author": "Zambiya Atasözü"
+  },
+  {
+    "quote": "Birçok küçük akarsu büyük bir nehir oluşturur.",
+    "author": "Danimarka Atasözü"
+  },
+  {
+    "quote": "Moskova bir günde inşa edilmedi.",
+    "author": "Rus Atasözü"
+  },
+  {
+    "quote": "Bir akarsu ne kadar uzak olursa olsun, kaynağını unutmaz.",
+    "author": "Belize Atasözü"
+  },
+  {
+    "quote": "Her şeyini yerli yerine koyan kişi için bir gün, iki gün gibidir.",
+    "author": "Seyşeller Atasözü"
+  },
+  {
+    "quote": "Bir parmak, bir çakıl taşı kaldıramaz.",
+    "author": "Ekvator Ginesi Atasözü"
+  },
+  {
+    "quote": "Bir saatlik planlama, on saatlik işten tasarruf sağlar.",
+    "author": "Türk Atasözü"
+  },
+  {
+    "quote": "Yavaş git, ama çok yol alırsın.",
+    "author": "Slovenya Atasözü"
+  },
+  {
+    "quote": "Yavaş ve istikrarlı yarışta kazanır.",
+    "author": "Timor Atasözü"
+  },
+  {
+    "quote": "Olduğun yerden başla. Sahip olduğunla kullan. Yapabileceğin şeyi yap.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "İlk adımı inançla at. Bütün merdiveni görmene gerek yok.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Ne kadar çok bilirsen, o kadar azına ihtiyacın olur.",
+    "author": "Aborjin Atasözü"
+  },
+  {
+    "quote": "Gerçek güç, sükunettir.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "Ölçülen şey yönetilebilir.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Ahlak yoksa onur da yoktur.",
+    "author": "Malavi Atasözü"
+  },
+  {
+    "quote": "Hareketsiz kalmak, hedefe ulaşmanı sağlamaz.",
+    "author": "Finlandiya Atasözü"
+  },
+  {
+    "quote": "Bin millik yol bir adımla başlar.",
+    "author": "Maldivler Sözü"
+  },
+  {
+    "quote": "Küçük bir balta büyük bir ağacı kesebilir.",
+    "author": "Surinam Atasözü"
+  },
+  {
+    "quote": "Yavaş gitmekten korkma, sadece durmaktan kork.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "On beş dakika geç gelmek, kırk yıl erken gelmekten daha iyidir.",
+    "author": "Polonya Atasözü"
+  },
+  {
+    "quote": "Disiplin, hedeflerle başarı arasındaki köprüdür.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Bugün yapabileceğin şeyi yarına bırakma.",
+    "author": "Uruguay Atasözü"
+  },
+  {
+    "quote": "Erken kalksan bile, güneş daha erken doğmaz.",
+    "author": "İspanya Atasözü"
+  },
+  {
+    "quote": "Süleyman bile boş bir kaptan su dökemez.",
+    "author": "Belçika Atasözü"
+  },
+  {
+    "quote": "Ayın bile lekeleri vardır.",
+    "author": "Komorlar Atasözü"
+  },
+  {
+    "quote": "Tanrı erken kalkanı yardım eder.",
+    "author": "Kolombiya Atasözü"
+  },
+  {
+    "quote": "İki tavşanı kovalarsan, ikisini de kaybedersin.",
+    "author": "Gürcistan Atasözü"
+  },
+  {
+    "quote": "Hızlı gitmek istiyorsan yalnız git. Uzak gitmek istiyorsan birlikte git.",
+    "author": "Afrika Atasözü"
+  },
+  {
+    "quote": "Yapılmış küçük işler, planlanmış büyük işlerden daha iyidir.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Başarı, ara sıra yaptığınız şeylerden değil, sürekli yaptığınız şeylerden gelir.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Gelecek bugün başlar, yarın değil.",
+    "author": "Papa II. John Paul"
+  },
+  {
+    "quote": "Sabırlı olan kurtulacaktır.",
+    "author": "Hırvat Atasözü"
+  },
+  {
+    "quote": "Hayat sadece hızını artırmaktan ibaret değildir.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Yüzünü güneşe dön, gölgeler arkanda kalır.",
+    "author": "Maori Atasözü"
+  },
+  {
+    "quote": "Kökler derin olduğunda, rüzgardan korkmanın bir nedeni yoktur.",
+    "author": "Botsvana Atasözü"
+  },
+  {
+    "quote": "Değişim rüzgarı estiğinde, bazıları duvarlar inşa eder, diğerleri yel değirmenleri inşa eder.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "Doğanın temposunu kabul et: Onun sırrı sabırdır.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Emekleyerek, bir çocuk ayakta durmayı öğrenir.",
+    "author": "Togo Atasözü"
+  },
+  {
+    "quote": "Saatler zamanı öldürür... zaman, küçük dişliler tarafından ölçüldükçe ölüdür.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Bekleme. Zaman asla mükemmel olmayacak.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Yedi kez düş, sekiz kez kalk.",
+    "author": "Japon Atasözü"
+  },
+  {
+    "quote": "Sabrı olmayan, bilgeliğe sahip olamaz.",
+    "author": "Katar Atasözü"
+  },
+  {
+    "quote": "Sabırla her şeyin üstesinden gelinir.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Bilgi, kaslarda olmadıkça sadece bir söylentidir.",
+    "author": "Papua Yeni Gine Atasözü"
+  },
+  {
+    "quote": "Öğrenmek, büyük ruhları genişletir.",
+    "author": "Namibya Atasözü"
+  },
+  {
+    "quote": "Öğrenmek, sahibini her yerde takip eden bir hazinedir.",
+    "author": "Vietnam Atasözü"
+  },
+  {
+    "quote": "Öğrenmek, aklı asla yormaz.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Sabır, gül getirir.",
+    "author": "İsviçre Atasözü"
+  },
+  {
+    "quote": "Sabır, huzur getiren bir erdemdir.",
+    "author": "Samoa Atasözü"
+  },
+  {
+    "quote": "Sabır, bilgelik arkadaşıdır.",
+    "author": "Malezya Atasözü"
+  },
+  {
+    "quote": "Sabır, cennete giden anahtardır.",
+    "author": "Avusturya Atasözü"
+  },
+  {
+    "quote": "Sabır, rahatlamanın anahtarıdır.",
+    "author": "Ürdün Atasözü"
+  },
+  {
+    "quote": "Zamanla küçük günlük iyileştirmeler, şaşırtıcı sonuçlar doğurur.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Anahtar, zaman harcamak değil, onu yatırmaktır.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Bilgeliğin tek kaynağı deneyimdir.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Şu andan daha iyi bir zaman yoktur.",
+    "author": "Bilinmeyen Yazar"
+  },
+  {
+    "quote": "Zaman her şeyi meydana getirir.",
+    "author": "Aeschylus"
+  },
+  {
+    "quote": "Zaman, en bilge danışmandır.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Zaman, en çok istediğimiz ama en kötü kullandığımız şeydir.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Zaman, her şeyi gösterecek.",
+    "author": "Polonya Atasözü"
+  },
+  {
+    "quote": "Zaman, her şeyin yiyicisi.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Biz, sürekli yaptığımız şeyiz. Bu nedenle, mükemmeliyet bir eylem değil, bir alışkanlıktır.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Sabır olan yerde, huzur vardır.",
+    "author": "Brunei Atasözü"
+  },
+  {
+    "quote": "Ağaçları kesmeyi, onları keserek öğrenirsin.",
+    "author": "Kongo Atasözü"
+  },
+  {
+    "quote": "Geciktirebilirsin, ama zaman gecikmez.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Bir avuç sabır, bir sepet akıldan daha değerlidir.",
+    "author": "Cezayir Atasözü"
+  },
+  {
+    "quote": "Durgun deniz asla yetenekli bir denizci yaratmaz.",
+    "author": "Bolivya Atasözü"
+  },
+  {
+    "quote": "Dahi, sonsuz sabırdır.",
+    "author": "Michelangelo"
+  },
+  {
+    "quote": "Bilgisine katkı yapmayan, onu eksiltir.",
+    "author": "İbranice Atasözü"
+  },
+  {
+    "quote": "Öğrenen, öğretir.",
+    "author": "Kongolu Atasözü"
+  },
+  {
+    "quote": "Bilgi bir bahçedir: Eğer işlenmezse, hasat edilemez.",
+    "author": "Gambiyalı Atasözü"
+  },
+  {
+    "quote": "Yarın ölecekmiş gibi yaşa. Sonsuza kadar yaşayacakmış gibi öğren.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Kaybedilen zaman bir daha asla bulunmaz.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Motivasyon seni başlatır. Alışkanlık seni devam ettirir.",
+    "author": "Jim Ryun"
+  },
+  {
+    "quote": "Her seferinde bir adım iyi bir yürüyüştür.",
+    "author": "Lao Atasözü"
+  },
+  {
+    "quote": "Bana söyle, unuturum. Beni öğret, hatırlarım. Beni dahil et, öğrenirim.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Bir ağacı dikmek için en iyi zaman 20 yıl önceydi. İkinci en iyi zaman ise şimdi.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "Alışkanlık keşiş yapmaz.",
+    "author": "Şili Atasözü"
+  },
+  {
+    "quote": "Sorun şu ki, zamanın olduğunu sanıyorsun.",
+    "author": "Jack Kornfield"
+  },
+  {
+    "quote": "İki en güçlü savaşçı sabır ve zamandır.",
+    "author": "Leo Tolstoy"
+  },
+  {
+    "quote": "Hep derler ki zaman her şeyi değiştirir, ama aslında onları sen değiştirmen gerekir.",
+    "author": "Andy Warhol"
+  },
+  {
+    "quote": "Zaman yaratılmış bir şeydir. 'Zamanım yok' demek, 'istemiyorum' demek gibidir.",
+    "author": "Laozi"
+  },
+  {
+    "quote": "Zaman büyük bir öğretmendir, ancak ne yazık ki tüm öğrencilerini öldürür.",
+    "author": "Hector Berlioz"
+  },
+  {
+    "quote": "Zaman, bir insanın harcayabileceği en değerli şeydir.",
+    "author": "Theophrastus"
+  },
+  {
+    "quote": "Zaman ana şey değildir. Tek ana şeydir.",
+    "author": "Miles Davis"
+  },
+  {
+    "quote": "Zaman, onu kullanmayı bilen herkes için yeterince uzundur.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Zaman hiç kimseyi beklemez.",
+    "author": "Geleneksel Söyleyiş"
+  },
+  {
+    "quote": "Zaman hiç kimseyi beklemez. Sen de beklememelisin.",
+    "author": "Bilinmeyen Yazar"
+  },
+  {
+    "quote": "Keyifle harcadığın zaman, harcanmış zaman değildir.",
+    "author": "Marthe Troly-Curtin"
+  },
+  {
+    "quote": "Beşikte öğrenilen her şey mezara kadar devam eder.",
+    "author": "Libya Atasözü"
+  },
+  {
+    "quote": "Karar vermemiz gereken tek şey, bize verilen zamanla ne yapacağımızdır.",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "quote": "Değişim hızlı olmayabilir ve her zaman kolay değildir. Ama zaman ve çabayla, hemen hemen her alışkanlık yeniden şekillendirilebilir.",
+    "author": "Charles Duhigg"
+  },
+  {
+    "quote": "Bekleme. Zaman hiçbir zaman tam doğru olmayacak.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Sağlığa zaman ayırmayan, hastalığa zaman ayırmak zorunda kalacaktır.",
+    "author": "Doğu Atasözü"
+  },
+  {
+    "quote": "Bilgi, sahibini her yerde takip eden bir hazinedir.",
+    "author": "Çin Atasözü"
+  },
+  {
+    "quote": "Sonsuza kadar yaşacakmış gibi öğren.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Öğrenmek, sahibini her yerde takip eden bir hazinedir.",
+    "author": "Hindistan Atasözü"
+  },
+  {
+    "quote": "Sabır, bir taşı pişirebilir.",
+    "author": "Benin Atasözü"
+  },
+  {
+    "quote": "Sabır acı bir bitkidir, ama tatlı meyveleri vardır.",
+    "author": "Türkmenistan Atasözü"
+  },
+  {
+    "quote": "Sabır, tatminin anahtarıdır.",
+    "author": "Mikronezya Atasözü"
+  },
+  {
+    "quote": "Öğrenmenin güzel yanı şudur ki, kimse onu senden alamaz.",
+    "author": "B.B. King"
+  },
+  {
+    "quote": "Harekete geçmek için en iyi zaman şimdidir.",
+    "author": "Mark Fisher"
+  },
+  {
+    "quote": "Usta, usta olmadan önce binlerce kez başarısız olmuştur.",
+    "author": "Zen Atasözü"
+  },
+  {
+    "quote": "Zaman üzerimizden uçar, ancak gölgesini bırakır.",
+    "author": "Nathaniel Hawthorne"
+  },
+  {
+    "quote": "Zaman, değişiklikler yapan bir terzidir.",
+    "author": "Faith Baldwin"
+  },
+  {
+    "quote": "Zaman, hepimizin kaybolduğu bir fırtınadır.",
+    "author": "William Carlos Williams"
+  },
+  {
+    "quote": "Zaman bir yönde hareket eder, hafıza başka bir yönde.",
+    "author": "William Gibson"
+  },
+  {
+    "quote": "Zaman her şeyi alır, ister bunu isteyin ister istemeyin.",
+    "author": "Stephen King"
+  },
+  {
+    "quote": "Johnny'nin öğrenemediği şeyi, John bilemez.",
+    "author": "Polonya Atasözü"
   }
 ]
+

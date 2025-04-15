@@ -1,7 +1,504 @@
 // German
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Ein Kind, das nicht von seinem Dorf umarmt wird, wird es niederbrennen, um seine Wärme zu spüren.",
+    "author": "Basotho Sprichwort"
+  },
+  {
+    "quote": "Ein einzelner Stock mag rauchen, aber er wird nicht brennen.",
+    "author": "Tonganisches Sprichwort"
+  },
+  {
+    "quote": "Schritt für Schritt baut der Vogel sein Nest.",
+    "author": "Dominikanisches Sprichwort"
+  },
+  {
+    "quote": "Eine Reise wird besser mit Freunden gemessen, nicht mit Meilen.",
+    "author": "Kapverdisches Sprichwort"
+  },
+  {
+    "quote": "Ein Mann, der fragt, ist fünf Minuten lang ein Narr. Ein Mann, der nie fragt, ist ein Narr fürs Leben.",
+    "author": "Chinesisches Sprichwort"
+  },
+  {
+    "quote": "Ein neuer Besen fegt gut, aber der alte kennt die Ecken.",
+    "author": "Saint-Lucia Sprichwort"
+  },
+  {
+    "quote": "Weisheit ist wie Feuer. Menschen nehmen sie von anderen.",
+    "author": "Elfenbeinküstens Sprichwort"
+  },
+  {
+    "quote": "Ein Mensch, der zu viel redet, erreicht wenig.",
+    "author": "Usbekisches Sprichwort"
+  },
+  {
+    "quote": "Ein weiser Mann weiß nie alles, nur Narren wissen alles.",
+    "author": "Antigua Sprichwort"
+  },
+  {
+    "quote": "Besser ein stetiger Schritt als ein ermüdender Trab.",
+    "author": "Venezolanisches Sprichwort"
+  },
+  {
+    "quote": "Besser spät als nie.",
+    "author": "Argentinisches Sprichwort"
+  },
+  {
+    "quote": "Hinter den Bergen gibt es noch Berge.",
+    "author": "Haitianisches Sprichwort"
+  },
+  {
+    "quote": "Fange nicht an, wenn du Angst hast, aber wenn du begonnen hast, habe keine Angst.",
+    "author": "Mongolisches Sprichwort"
+  },
+  {
+    "quote": "Verschiebe nicht auf morgen, was du heute tun kannst.",
+    "author": "Polnisches Sprichwort"
+  },
+  {
+    "quote": "Leere Fässer machen den meisten Lärm.",
+    "author": "Kittitianisches Sprichwort"
+  },
+  {
+    "quote": "Auch Affen fallen von Bäumen.",
+    "author": "Koreanisches Sprichwort"
+  },
+  {
+    "quote": "Gott hilft denen, die früh aufstehen.",
+    "author": "Polnisches Sprichwort"
+  },
+  {
+    "quote": "Korn für Korn füllt das Huhn seinen Bauch.",
+    "author": "Brasilianisches Sprichwort"
+  },
+  {
+    "quote": "Wer zu spät kommt, schadet sich selbst.",
+    "author": "Tschechisches Sprichwort"
+  },
+  {
+    "quote": "Wer sich beeilt, stolpert.",
+    "author": "Panamaisches Sprichwort"
+  },
+  {
+    "quote": "Wer Berge bewegt, begann mit kleinen Steinen.",
+    "author": "Chinesisches Sprichwort"
+  },
+  {
+    "quote": "Wer auf etwas Gutes wartet, wartet nie zu lange.",
+    "author": "Schwedisches Sprichwort"
+  },
+  {
+    "quote": "Wenn du auf einen Baum kletterst, musst du auch wieder denselben Baum hinunterklettern.",
+    "author": "Guineisches Sprichwort"
+  },
+  {
+    "quote": "Wenn du nicht weißt, wo du hin willst, wird dich jeder Weg dorthin bringen.",
+    "author": "Bahamas Sprichwort"
+  },
+  {
+    "quote": "Krakau wurde nicht an einem Tag gebaut.",
+    "author": "Polnisches Sprichwort"
+  },
+  {
+    "quote": "Weniger und dauerhaft ist besser als viel und vergänglich.",
+    "author": "Marokkanisches Sprichwort"
+  },
+  {
+    "quote": "Kleine Schritte füllen den Korb.",
+    "author": "Jamaikanisches Sprichwort"
+  },
+  {
+    "quote": "Kleine Schritte füllen den Behälter.",
+    "author": "Bengalisches Sprichwort"
+  },
+  {
+    "quote": "Schritt für Schritt wird aus wenig viel.",
+    "author": "Indonesisches Sprichwort"
+  },
+  {
+    "quote": "Egal, wie voll der Fluss ist, er will immer noch wachsen.",
+    "author": "Bissau-Guineisches Sprichwort"
+  },
+  {
+    "quote": "Perfektion ist der Feind der Ausführung.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Erfolg ist eine Reise, kein Ziel.",
+    "author": "Singapurisches Sprichwort"
+  },
+  {
+    "quote": "Der Geduldige findet das Glück.",
+    "author": "Litauisches Sprichwort"
+  },
+  {
+    "quote": "Wer wenig weiß, spricht viel.",
+    "author": "Dominikanisches Sprichwort"
+  },
+  {
+    "quote": "Einen Baum pflanzen, dessen Schatten du nie sehen wirst — das ist wahre Weisheit.",
+    "author": "Griechisches Sprichwort"
+  },
+  {
+    "quote": "Wenn sich Spinnennetze vereinen, können sie einen Löwen binden.",
+    "author": "Gabonesisches Sprichwort"
+  },
+  {
+    "quote": "Weisheit ist wie ein Löwe. Du musst sie nicht verkünden.",
+    "author": "Senegalesisches Sprichwort"
+  },
+  {
+    "quote": "Weisheit ist wie Salz — es muss in der richtigen Menge verwendet werden.",
+    "author": "Eritreisches Sprichwort"
+  },
+  {
+    "quote": "Du musst nicht groß sein, um zu beginnen, aber du musst anfangen, um groß zu sein.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Du musst handeln, als ob es unmöglich wäre zu scheitern.",
+    "author": "Mali Sprichwort"
+  },
+  {
+    "quote": "Du erntest, was du säst.",
+    "author": "Burmesisches Sprichwort"
+  },
+  {
+    "quote": "Du wirst kein Feld pflügen, indem du es nur in deinem Kopf wälzt.",
+    "author": "Irisches Sprichwort"
+  },
+  {
+    "quote": "Ein Vogel vergisst nicht, wo er seine Eier gelegt hat.",
+    "author": "Swazi Sprichwort"
+  },
+  {
+    "quote": "Ein Vogel wird immer die Federn eines anderen Vogels benutzen, um sein eigenes Nest zu bauen.",
+    "author": "Santomean Sprichwort"
+  },
+  {
+    "quote": "Ein Buch ist wie ein Garten, den man in der Tasche trägt.",
+    "author": "Syrisches Sprichwort"
+  },
+  {
+    "quote": "Ein kleiner Tropfen höhlt den Stein.",
+    "author": "Koreanisches Sprichwort"
+  },
+  {
+    "quote": "Ein Baum mit starken Wurzeln lacht über Stürme.",
+    "author": "Thailändisches Sprichwort"
+  },
+  {
+    "quote": "Besser drei Stunden zu früh als eine Minute zu spät.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Fürchte dich nicht vor langsamen Fortschritten, fürchte dich vor Stillstand.",
+    "author": "Chinesisches Sprichwort"
+  },
+  {
+    "quote": "Tue heute, was andere nicht tun, damit du morgen hast, was andere nur träumen.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Sieh nicht auf die Uhr; tue, was sie tut. Geh weiter.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Tropfen für Tropfen füllt der Krug.",
+    "author": "Khmer Sprichwort"
+  },
+  {
+    "quote": "Selbst die größten Wellen beginnen klein.",
+    "author": "Marshallische Redewendung"
+  },
+  {
+    "quote": "Alles sollte so einfach wie möglich gemacht werden, aber nicht einfacher.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Große Dinge haben kleine Anfange.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Eile ist selten gut.",
+    "author": "Niederländisches Sprichwort"
+  },
+  {
+    "quote": "Eile verderbt die Arbeit.",
+    "author": "Rumänisches Sprichwort"
+  },
+  {
+    "quote": "Wer Fragen stellt, kann den Antworten nicht entkommen.",
+    "author": "Kamerunisches Sprichwort"
+  },
+  {
+    "quote": "Wer nicht nach vorne schaut, bleibt zurück.",
+    "author": "Kubanesisches Sprichwort"
+  },
+  {
+    "quote": "Kleinere Schritte füllen das Maß.",
+    "author": "Sambisches Sprichwort"
+  },
+  {
+    "quote": "Viele kleine Ströme machen einen großen Fluss.",
+    "author": "Dänisches Sprichwort"
+  },
+  {
+    "quote": "Moskau wurde nicht an einem Tag gebaut.",
+    "author": "Russisches Sprichwort"
+  },
+  {
+    "quote": "Egal, wie weit ein Strom fließt, er vergisst nie seine Quelle.",
+    "author": "Belizianisches Sprichwort"
+  },
+  {
+    "quote": "Ein Tag ist genauso gut wie zwei für den, der alles an seinem Platz tut.",
+    "author": "Seychellen Sprichwort"
+  },
+  {
+    "quote": "Ein Finger kann keinen kleinen Kieselstein heben.",
+    "author": "Äquatorialguineisches Sprichwort"
+  },
+  {
+    "quote": "Eine Stunde Planung spart zehn Stunden Arbeit.",
+    "author": "Türkisches Sprichwort"
+  },
+  {
+    "quote": "Langsam wirst du weit kommen.",
+    "author": "Slowenisches Sprichwort"
+  },
+  {
+    "quote": "Langsam und stetig gewinnt das Rennen.",
+    "author": "Timoresisches Sprichwort"
+  },
+  {
+    "quote": "Fange dort an, wo du bist. Benutze, was du hast. Tu, was du kannst.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Mache den ersten Schritt im Glauben. Du musst nicht die ganze Treppe sehen.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Je mehr du weißt, desto weniger brauchst du.",
+    "author": "Aboriginal Sprichwort"
+  },
+  {
+    "quote": "Wahre Stärke ist Ruhe.",
+    "author": "Chinesisches Sprichwort"
+  },
+  {
+    "quote": "Was gemessen wird, kann verwaltet werden.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Wo es keine Scham gibt, gibt es keine Ehre.",
+    "author": "Malawisches Sprichwort"
+  },
+  {
+    "quote": "Du wirst dein Ziel nicht erreichen, indem du still sitzt.",
+    "author": "Finnisches Sprichwort"
+  },
+  {
+    "quote": "Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt.",
+    "author": "Maldivische Redewendung"
+  },
+  {
+    "quote": "Eine kleine Axt kann einen großen Baum fällen.",
+    "author": "Surinamisches Sprichwort"
+  },
+  {
+    "quote": "Fürchte dich nicht, langsam zu gehen, fürchte dich nur davor, still zu stehen.",
+    "author": "Chinesisches Sprichwort"
+  },
+  {
+    "quote": "Besser fünfzehn Minuten zu spät als vierzig Jahre zu früh.",
+    "author": "Polnisches Sprichwort"
+  },
+  {
+    "quote": "Disziplin ist die Brücke zwischen Zielen und Erfolgen.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Verschiebe nicht auf morgen, was du heute tun kannst.",
+    "author": "Uruguayisches Sprichwort"
+  },
+  {
+    "quote": "Selbst wenn du früh aufstehst, wird die Sonne nicht früher aufgehen.",
+    "author": "Spanisches Sprichwort"
+  },
+  {
+    "quote": "Selbst Salomo kann nicht aus einem leeren Gefäß gießen.",
+    "author": "Belgisches Sprichwort"
+  },
+  {
+    "quote": "Selbst der Mond hat Flecken.",
+    "author": "Komorisches Sprichwort"
+  },
+  {
+    "quote": "Gott hilft dem, der früh aufsteht.",
+    "author": "Kolumbianisches Sprichwort"
+  },
+  {
+    "quote": "Wenn du zwei Hasen jagst, wirst du beide verlieren.",
+    "author": "Georgisches Sprichwort"
+  },
+  {
+    "quote": "Wenn du schnell gehen willst, geh alleine. Wenn du weit gehen willst, geh zusammen.",
+    "author": "Afrikanisches Sprichwort"
+  },
+  {
+    "quote": "Kleine Taten, die vollbracht werden, sind besser als große Taten, die geplant werden.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Erfolg kommt nicht von dem, was du gelegentlich tust, sondern von dem, was du konsequent tust.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Die Zukunft beginnt heute, nicht morgen.",
+    "author": "Papst Johannes Paul II."
+  },
+  {
+    "quote": "Der Geduldige wird gerettet.",
+    "author": "Kroatisches Sprichwort"
+  },
+  {
+    "quote": "Das Leben ist mehr, als nur seine Geschwindigkeit zu erhöhen.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Drehe dein Gesicht zur Sonne und die Schatten fallen hinter dich.",
+    "author": "Maorisches Sprichwort"
+  },
+  {
+    "quote": "Wenn die Wurzeln tief sind, gibt es keinen Grund, den Wind zu fürchten.",
+    "author": "Botswanisches Sprichwort"
+  },
+  {
+    "quote": "Wenn der Wind der Veränderung weht, bauen einige Mauern, andere bauen Windmühlen.",
+    "author": "Chinesisches Sprichwort"
+  },
+  {
+    "quote": "Nimm das Tempo der Natur an: Ihr Geheimnis ist Geduld.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Durch Krabbeln lernt ein Kind, zu stehen.",
+    "author": "Togo Sprichwort"
+  },
+  {
+    "quote": "Uhren töten die Zeit... die Zeit ist tot, solange sie durch kleine Räder abgezählt wird.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Warte nicht. Die Zeit wird nie perfekt sein.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Falle sieben Mal, stehe acht Mal auf.",
+    "author": "Japanisches Sprichwort"
+  },
+  {
+    "quote": "Wer keine Geduld hat, hat keine Weisheit.",
+    "author": "Katarisches Sprichwort"
+  },
+  {
+    "quote": "Wer Geduld meistert, meistert alles andere.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Wissen ist nur ein Gerücht, bis es in den Muskeln ist.",
+    "author": "Papua-Neuguinea Sprichwort"
+  },
+  {
+    "quote": "Lernen erweitert große Seelen.",
+    "author": "Namibisches Sprichwort"
+  },
+  {
+    "quote": "Lernen ist ein Schatz, der seinem Besitzer überall folgt.",
+    "author": "Vietnamesisches Sprichwort"
+  },
+  {
+    "quote": "Lernen erschöpft niemals den Verstand.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Geduld bringt Rosen.",
+    "author": "Schweizer Sprichwort"
+  },
+  {
+    "quote": "Geduld ist eine Tugend, die Frieden bringt.",
+    "author": "Samoanisches Sprichwort"
+  },
+  {
+    "quote": "Geduld ist die Begleiterin der Weisheit.",
+    "author": "Malaysisches Sprichwort"
+  },
+  {
+    "quote": "Geduld ist der Schlüssel zum Paradies.",
+    "author": "Österreichisches Sprichwort"
+  },
+  {
+    "quote": "Geduld ist der Schlüssel zur Erleichterung.",
+    "author": "Jordanisches Sprichwort"
+  },
+  {
+    "quote": "Kleine tägliche Verbesserungen über die Zeit führen zu erstaunlichen Ergebnissen.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Der Schlüssel liegt nicht darin, Zeit zu verschwenden, sondern sie zu investieren.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Die einzige Quelle des Wissens ist die Erfahrung.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Es gibt keinen besseren Zeitpunkt als jetzt.",
+    "author": "Unbekannter Autor"
+  },
+  {
+    "quote": "Die Zeit bringt alles zum Abschluss.",
+    "author": "Aischylos"
+  },
+  {
+    "quote": "Die Zeit ist der weiseste Berater von allen.",
+    "author": "Perikles"
+  },
+  {
+    "quote": "Die Zeit ist das, was wir am meisten wollen, aber was wir am schlechtesten nutzen.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Die Zeit wird es zeigen.",
+    "author": "Polnisches Sprichwort"
+  },
+  {
+    "quote": "Die Zeit, der Verzehrer aller Dinge.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Wir sind, was wir wiederholt tun. Daher ist Exzellenz keine Handlung, sondern eine Gewohnheit.",
+    "author": "Aristoteles"
+  },
+  {
+    "quote": "Wo Geduld ist, ist Frieden.",
+    "author": "Bruneisches Sprichwort"
+  },
+  {
+    "quote": "Du lernst, Bäume zu fällen, indem du sie fällst.",
+    "author": "Kongolesisches Sprichwort"
+  },
+  {
+    "quote": "Du kannst dich verzögern, aber die Zeit wird es nicht.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Eine Handvoll Geduld ist mehr wert als ein Korb voller Gehirne.",
+    "author": "Algerisches Sprichwort"
   }
 ]
+

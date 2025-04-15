@@ -1,7 +1,676 @@
 // Vietnamese
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Đứa trẻ không được làng ôm ấp sẽ đốt cháy nó để cảm nhận được hơi ấm.",
+    "author": "Tục ngữ Basotho"
+  },
+  {
+    "quote": "Một cành cây có thể khói, nhưng nó sẽ không cháy.",
+    "author": "Tục ngữ Tongan"
+  },
+  {
+    "quote": "Từng chút một, con chim xây tổ của mình.",
+    "author": "Tục ngữ Dominica"
+  },
+  {
+    "quote": "Cuộc hành trình tốt nhất là đo bằng bạn bè, không phải bằng dặm.",
+    "author": "Tục ngữ Cape Verde"
+  },
+  {
+    "quote": "Một người hỏi là một kẻ ngốc trong năm phút. Một người không bao giờ hỏi là một kẻ ngốc suốt đời.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Chổi mới quét sạch, nhưng chổi cũ biết những góc khuất.",
+    "author": "Tục ngữ Saint Lucia"
+  },
+  {
+    "quote": "Trí tuệ như lửa. Mọi người lấy nó từ người khác.",
+    "author": "Tục ngữ Bờ Biển Ngà"
+  },
+  {
+    "quote": "Người nói quá nhiều thì đạt được rất ít.",
+    "author": "Tục ngữ Uzbekistan"
+  },
+  {
+    "quote": "Người khôn ngoan không bao giờ biết hết mọi thứ, chỉ có kẻ ngốc mới biết tất cả.",
+    "author": "Tục ngữ Antigua"
+  },
+  {
+    "quote": "Bước đi vững chắc còn hơn chạy mệt mỏi.",
+    "author": "Tục ngữ Venezuela"
+  },
+  {
+    "quote": "Thà đến muộn còn hơn không bao giờ đến.",
+    "author": "Tục ngữ Argentina"
+  },
+  {
+    "quote": "Vượt qua núi, còn có núi khác.",
+    "author": "Tục ngữ Haiti"
+  },
+  {
+    "quote": "Đừng bắt đầu nếu sợ hãi, đã bắt đầu thì đừng sợ.",
+    "author": "Tục ngữ Mông Cổ"
+  },
+  {
+    "quote": "Đừng trì hoãn việc gì đến ngày mai khi bạn có thể làm hôm nay.",
+    "author": "Tục ngữ Ba Lan"
+  },
+  {
+    "quote": "Thùng rỗng thường phát ra tiếng ồn lớn nhất.",
+    "author": "Tục ngữ Kittitian"
+  },
+  {
+    "quote": "Ngay cả khỉ cũng có thể rơi khỏi cây.",
+    "author": "Tục ngữ Hàn Quốc"
+  },
+  {
+    "quote": "Chúa giúp những ai thức dậy sớm.",
+    "author": "Tục ngữ Ba Lan"
+  },
+  {
+    "quote": "Hạt lúa hạt lúa, gà mẹ lấp đầy bụng.",
+    "author": "Tục ngữ Brazil"
+  },
+  {
+    "quote": "Kẻ đến muộn tự làm hại mình.",
+    "author": "Tục ngữ Séc"
+  },
+  {
+    "quote": "Kẻ vội vàng sẽ vấp ngã.",
+    "author": "Tục ngữ Panama"
+  },
+  {
+    "quote": "Kẻ di chuyển núi bắt đầu từ những viên đá nhỏ.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Ai chờ đợi điều tốt đẹp sẽ không phải chờ lâu.",
+    "author": "Tục ngữ Thụy Điển"
+  },
+  {
+    "quote": "Nếu bạn leo cây, bạn phải xuống từ cùng một cây.",
+    "author": "Tục ngữ Guinea"
+  },
+  {
+    "quote": "Nếu bạn không biết bạn đi đâu, thì con đường nào cũng sẽ đưa bạn đến đó.",
+    "author": "Tục ngữ Bahamas"
+  },
+  {
+    "quote": "Krakow không xây dựng trong một ngày.",
+    "author": "Tục ngữ Ba Lan"
+  },
+  {
+    "quote": "Ít và lâu dài tốt hơn nhiều và ngắn ngủi.",
+    "author": "Tục ngữ Maroc"
+  },
+  {
+    "quote": "Một chút một chút, cái giỏ sẽ đầy.",
+    "author": "Tục ngữ Jamaica"
+  },
+  {
+    "quote": "Một chút một chút, cái thùng sẽ đầy.",
+    "author": "Tục ngữ Bengali"
+  },
+  {
+    "quote": "Một chút một chút, ít dần trở thành nhiều.",
+    "author": "Tục ngữ Indonesia"
+  },
+  {
+    "quote": "Dù con sông đầy bao nhiêu, nó vẫn muốn phát triển.",
+    "author": "Tục ngữ Guinea-Bissau"
+  },
+  {
+    "quote": "Sự hoàn hảo là kẻ thù của hành động.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Thành công là một hành trình, không phải một điểm đến.",
+    "author": "Tục ngữ Singapore"
+  },
+  {
+    "quote": "Người kiên nhẫn sẽ tìm thấy hạnh phúc.",
+    "author": "Tục ngữ Litva"
+  },
+  {
+    "quote": "Người biết ít nói nhiều.",
+    "author": "Tục ngữ Dominica"
+  },
+  {
+    "quote": "Trồng một cây mà bạn sẽ không nhìn thấy bóng của nó — đó là trí tuệ thật sự.",
+    "author": "Tục ngữ Hy Lạp"
+  },
+  {
+    "quote": "Khi mạng nhện hợp nhất, chúng có thể buộc một con sư tử.",
+    "author": "Tục ngữ Gabon"
+  },
+  {
+    "quote": "Trí tuệ như một con sư tử. Bạn không cần phải công bố nó.",
+    "author": "Tục ngữ Senegal"
+  },
+  {
+    "quote": "Trí tuệ như muối — phải được sử dụng đúng mức.",
+    "author": "Tục ngữ Eritrea"
+  },
+  {
+    "quote": "Bạn không cần phải vĩ đại để bắt đầu, nhưng bạn phải bắt đầu để trở nên vĩ đại.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Bạn phải hành động như thể thất bại là không thể.",
+    "author": "Tục ngữ Mali"
+  },
+  {
+    "quote": "Bạn gặt hái những gì bạn gieo.",
+    "author": "Tục ngữ Myanmar"
+  },
+  {
+    "quote": "Bạn sẽ không bao giờ cày ruộng bằng cách lật nó trong đầu mình.",
+    "author": "Tục ngữ Ireland"
+  },
+  {
+    "quote": "Con chim không quên nơi nó đặt trứng.",
+    "author": "Tục ngữ Swazi"
+  },
+  {
+    "quote": "Con chim luôn sử dụng lông của con chim khác để làm tổ cho mình.",
+    "author": "Tục ngữ Santomean"
+  },
+  {
+    "quote": "Cuốn sách như là một khu vườn mang theo trong túi.",
+    "author": "Tục ngữ Syria"
+  },
+  {
+    "quote": "Một giọt nước có thể làm mòn đá.",
+    "author": "Tục ngữ Hàn Quốc"
+  },
+  {
+    "quote": "Cây có rễ mạnh sẽ cười trước bão tố.",
+    "author": "Tục ngữ Thái Lan"
+  },
+  {
+    "quote": "Thà đến sớm ba giờ còn hơn là một phút trễ.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Đừng sợ tiến độ chậm, hãy sợ sự đình trệ.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Hãy làm những gì người khác không làm hôm nay, để ngày mai bạn có được những gì người khác mơ ước.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Đừng nhìn đồng hồ; hãy làm như nó làm. Cứ tiếp tục tiến lên.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Nhỏ giọt dần dần sẽ đầy bình.",
+    "author": "Tục ngữ Khmer"
+  },
+  {
+    "quote": "Ngay cả những làn sóng lớn nhất cũng bắt đầu từ những làn sóng nhỏ.",
+    "author": "Câu nói của người Marshallese"
+  },
+  {
+    "quote": "Mọi thứ nên được đơn giản hóa đến mức tối đa, nhưng không đơn giản hơn nữa.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Những điều lớn lao có những khởi đầu nhỏ bé.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Vội vã hiếm khi mang lại kết quả tốt.",
+    "author": "Tục ngữ Hà Lan"
+  },
+  {
+    "quote": "Vội vã sẽ làm hỏng công việc.",
+    "author": "Tục ngữ Rumani"
+  },
+  {
+    "quote": "Người hỏi không thể tránh được câu trả lời.",
+    "author": "Tục ngữ Cameroon"
+  },
+  {
+    "quote": "Người không nhìn về phía trước sẽ bị bỏ lại phía sau.",
+    "author": "Tục ngữ Cuba"
+  },
+  {
+    "quote": "Dần dần sẽ đầy đủ.",
+    "author": "Tục ngữ Zambia"
+  },
+  {
+    "quote": "Nhiều con suối nhỏ tạo thành một con sông lớn.",
+    "author": "Tục ngữ Đan Mạch"
+  },
+  {
+    "quote": "Moscow không được xây dựng trong một ngày.",
+    "author": "Tục ngữ Nga"
+  },
+  {
+    "quote": "Dù con suối chảy xa đến đâu, nó cũng không quên nguồn gốc của mình.",
+    "author": "Tục ngữ Belize"
+  },
+  {
+    "quote": "Một ngày cũng tốt như hai ngày đối với người làm mọi thứ đúng chỗ.",
+    "author": "Tục ngữ Seychelles"
+  },
+  {
+    "quote": "Một ngón tay không thể nhấc một viên đá.",
+    "author": "Tục ngữ Guinea Xích Đạo"
+  },
+  {
+    "quote": "Một giờ lập kế hoạch tiết kiệm được mười giờ làm việc.",
+    "author": "Tục ngữ Thổ Nhĩ Kỳ"
+  },
+  {
+    "quote": "Đi chậm nhưng bạn sẽ đi xa.",
+    "author": "Tục ngữ Slovenia"
+  },
+  {
+    "quote": "Chậm mà chắc thắng cuộc đua.",
+    "author": "Tục ngữ Timor"
+  },
+  {
+    "quote": "Bắt đầu từ nơi bạn đang ở. Sử dụng những gì bạn có. Làm những gì bạn có thể.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Hãy bước đi bằng niềm tin. Bạn không cần phải thấy cả cầu thang.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Càng biết nhiều, bạn càng cần ít đi.",
+    "author": "Tục ngữ người bản địa"
+  },
+  {
+    "quote": "Sức mạnh thực sự là sự bình tĩnh.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Cái gì được đo lường sẽ được quản lý.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Nơi không có xấu hổ, nơi đó không có danh dự.",
+    "author": "Tục ngữ Malawi"
+  },
+  {
+    "quote": "Bạn sẽ không đạt được mục tiêu của mình nếu chỉ ngồi yên.",
+    "author": "Tục ngữ Phần Lan"
+  },
+  {
+    "quote": "Chuyến đi ngàn dặm bắt đầu từ một bước chân.",
+    "author": "Câu nói Maldivian"
+  },
+  {
+    "quote": "Một chiếc rìu nhỏ có thể chặt được cây lớn.",
+    "author": "Tục ngữ Surinam"
+  },
+  {
+    "quote": "Đừng sợ đi chậm, chỉ sợ đứng yên.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Thà muộn mười lăm phút còn hơn là sớm bốn mươi năm.",
+    "author": "Tục ngữ Ba Lan"
+  },
+  {
+    "quote": "Kỷ luật là cây cầu nối giữa mục tiêu và thành tựu.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Đừng để việc gì hôm nay cũng để lại cho ngày mai.",
+    "author": "Tục ngữ Uruguay"
+  },
+  {
+    "quote": "Dù bạn dậy sớm, mặt trời cũng không lên sớm hơn.",
+    "author": "Tục ngữ Tây Ban Nha"
+  },
+  {
+    "quote": "Ngay cả Solomon cũng không thể rót từ chiếc bình trống.",
+    "author": "Tục ngữ Bỉ"
+  },
+  {
+    "quote": "Ngay cả mặt trăng cũng có những vết đốm.",
+    "author": "Tục ngữ Comoros"
+  },
+  {
+    "quote": "Chúa giúp người dậy sớm.",
+    "author": "Tục ngữ Colombia"
+  },
+  {
+    "quote": "Nếu bạn đuổi hai con thỏ, bạn sẽ mất cả hai.",
+    "author": "Tục ngữ Gruzia"
+  },
+  {
+    "quote": "Nếu bạn muốn đi nhanh, đi một mình. Nếu bạn muốn đi xa, đi cùng nhau.",
+    "author": "Tục ngữ Châu Phi"
+  },
+  {
+    "quote": "Những hành động nhỏ đã làm thì tốt hơn là những hành động vĩ đại chỉ trong kế hoạch.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Thành công không đến từ những gì bạn làm thỉnh thoảng, mà là từ những gì bạn làm một cách nhất quán.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Tương lai bắt đầu từ hôm nay, không phải ngày mai.",
+    "author": "Giáo hoàng Gioan Phaolô II"
+  },
+  {
+    "quote": "Người kiên nhẫn sẽ được cứu.",
+    "author": "Tục ngữ Croatia"
+  },
+  {
+    "quote": "Cuộc sống là hơn thế, không chỉ là việc tăng tốc.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Hãy quay mặt về phía mặt trời và bóng tối sẽ rơi sau lưng bạn.",
+    "author": "Tục ngữ Maori"
+  },
+  {
+    "quote": "Khi rễ cây sâu, không có lý do gì để sợ gió.",
+    "author": "Tục ngữ Botswana"
+  },
+  {
+    "quote": "Khi gió thay đổi thổi, một số người xây tường, còn một số người xây cối xay gió.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Hãy đi theo nhịp độ của thiên nhiên: bí mật của bà là kiên nhẫn.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Bằng cách bò, đứa trẻ học cách đứng.",
+    "author": "Tục ngữ Togo"
+  },
+  {
+    "quote": "Đồng hồ giết chết thời gian... thời gian chết khi nó bị đo đạc bởi những bánh xe nhỏ.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Đừng chờ đợi. Thời gian sẽ không bao giờ hoàn hảo.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Ngã bảy lần, đứng dậy tám lần.",
+    "author": "Tục ngữ Nhật Bản"
+  },
+  {
+    "quote": "Ai không có kiên nhẫn sẽ không có trí tuệ.",
+    "author": "Tục ngữ Qatar"
+  },
+  {
+    "quote": "Ai làm chủ được sự kiên nhẫn sẽ làm chủ mọi thứ khác.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Kiến thức chỉ là một tin đồn cho đến khi nó được đưa vào cơ bắp.",
+    "author": "Tục ngữ Papua New Guinea"
+  },
+  {
+    "quote": "Học hỏi mở rộng tâm hồn vĩ đại.",
+    "author": "Tục ngữ Namibia"
+  },
+  {
+    "quote": "Học là một kho báu theo chủ sở hữu đi khắp mọi nơi.",
+    "author": "Tục ngữ Việt Nam"
+  },
+  {
+    "quote": "Học hỏi không bao giờ làm cạn kiệt tâm trí.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Kiên nhẫn mang lại hoa hồng.",
+    "author": "Tục ngữ Thụy Sĩ"
+  },
+  {
+    "quote": "Kiên nhẫn là một đức tính mang lại sự bình yên.",
+    "author": "Tục ngữ Samoa"
+  },
+  {
+    "quote": "Kiên nhẫn là bạn đồng hành của trí tuệ.",
+    "author": "Tục ngữ Malaysia"
+  },
+  {
+    "quote": "Kiên nhẫn là chìa khóa của thiên đường.",
+    "author": "Tục ngữ Áo"
+  },
+  {
+    "quote": "Kiên nhẫn là chìa khóa của sự nhẹ nhõm.",
+    "author": "Tục ngữ Jordan"
+  },
+  {
+    "quote": "Những cải tiến nhỏ hàng ngày theo thời gian sẽ dẫn đến những kết quả ngoạn mục.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Chìa khóa không phải là chi tiêu thời gian, mà là đầu tư thời gian.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Nguồn duy nhất của kiến thức là kinh nghiệm.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Không có thời gian nào tốt hơn bây giờ.",
+    "author": "Tác giả không xác định"
+  },
+  {
+    "quote": "Thời gian đưa tất cả mọi thứ đến.",
+    "author": "Aeschylus"
+  },
+  {
+    "quote": "Thời gian là cố vấn thông thái nhất.",
+    "author": "Pericles"
+  },
+  {
+    "quote": "Thời gian là điều chúng ta muốn nhất, nhưng lại là thứ ta sử dụng tồi nhất.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Thời gian sẽ cho thấy.",
+    "author": "Tục ngữ Ba Lan"
+  },
+  {
+    "quote": "Thời gian, kẻ tiêu diệt mọi thứ.",
+    "author": "Ovid"
+  },
+  {
+    "quote": "Chúng ta là những gì chúng ta làm đi làm lại. Vì vậy, sự xuất sắc không phải là một hành động, mà là một thói quen.",
+    "author": "Aristotle"
+  },
+  {
+    "quote": "Nơi nào có kiên nhẫn, nơi đó có sự bình yên.",
+    "author": "Tục ngữ Brunei"
+  },
+  {
+    "quote": "Bạn học cách chặt cây bằng cách chặt chúng.",
+    "author": "Tục ngữ Congo"
+  },
+  {
+    "quote": "Bạn có thể trì hoãn, nhưng thời gian thì không.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Một nắm kiên nhẫn có giá trị hơn một rổ trí óc.",
+    "author": "Tục ngữ Algeria"
+  },
+  {
+    "quote": "Biển yên ả chưa bao giờ tạo ra một thủy thủ tài ba.",
+    "author": "Tục ngữ Bolivia"
+  },
+  {
+    "quote": "Thiên tài là sự kiên nhẫn vĩnh cửu.",
+    "author": "Michelangelo"
+  },
+  {
+    "quote": "Ai không làm tăng kiến thức của mình thì cũng giống như làm giảm đi kiến thức.",
+    "author": "Tục ngữ Hebrew"
+  },
+  {
+    "quote": "Ai học hỏi thì cũng dạy bảo.",
+    "author": "Tục ngữ Congo"
+  },
+  {
+    "quote": "Kiến thức như một khu vườn: nếu không được chăm sóc, nó không thể thu hoạch.",
+    "author": "Tục ngữ Gambia"
+  },
+  {
+    "quote": "Sống như thể ngày mai bạn sẽ chết. Học như thể bạn sẽ sống mãi mãi.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Thời gian đã mất sẽ không bao giờ tìm lại được.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Động lực là thứ giúp bạn bắt đầu. Thói quen là thứ giúp bạn tiếp tục.",
+    "author": "Jim Ryun"
+  },
+  {
+    "quote": "Một bước đi một lần là bước đi tốt.",
+    "author": "Tục ngữ Lào"
+  },
+  {
+    "quote": "Hãy nói với tôi, tôi sẽ quên. Hãy dạy tôi, tôi sẽ nhớ. Hãy cho tôi tham gia, tôi sẽ học.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "Thời điểm tốt nhất để trồng một cái cây là 20 năm trước. Thời điểm tốt thứ hai là bây giờ.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Thói quen không tạo nên tu sĩ.",
+    "author": "Tục ngữ Chile"
+  },
+  {
+    "quote": "Vấn đề là, bạn nghĩ bạn có thời gian.",
+    "author": "Jack Kornfield"
+  },
+  {
+    "quote": "Hai chiến binh mạnh mẽ nhất là kiên nhẫn và thời gian.",
+    "author": "Leo Tolstoy"
+  },
+  {
+    "quote": "Họ luôn nói thời gian thay đổi mọi thứ, nhưng thực ra bạn phải tự thay đổi chúng.",
+    "author": "Andy Warhol"
+  },
+  {
+    "quote": "Thời gian là thứ được tạo ra. Nói 'Tôi không có thời gian' giống như nói 'Tôi không muốn'.",
+    "author": "Laozi"
+  },
+  {
+    "quote": "Thời gian là một người thầy vĩ đại, nhưng thật tiếc là nó giết chết tất cả học trò của mình.",
+    "author": "Hector Berlioz"
+  },
+  {
+    "quote": "Thời gian là thứ quý giá nhất mà một người có thể tiêu.",
+    "author": "Theophrastus"
+  },
+  {
+    "quote": "Thời gian không phải là thứ quan trọng nhất. Nó là thứ duy nhất quan trọng.",
+    "author": "Miles Davis"
+  },
+  {
+    "quote": "Thời gian đủ dài cho bất cứ ai biết cách sử dụng nó.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Thời gian không đợi ai.",
+    "author": "Tục ngữ truyền thống"
+  },
+  {
+    "quote": "Thời gian không đợi ai. Bạn cũng không nên như vậy.",
+    "author": "Tác giả không rõ"
+  },
+  {
+    "quote": "Thời gian bạn tận hưởng khi lãng phí không phải là thời gian lãng phí.",
+    "author": "Marthe Troly-Curtin"
+  },
+  {
+    "quote": "Những gì học được từ lúc còn trong nôi sẽ theo bạn đến tận mộ.",
+    "author": "Tục ngữ Libya"
+  },
+  {
+    "quote": "Tất cả những gì chúng ta phải quyết định là làm gì với thời gian được ban cho chúng ta.",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "quote": "Thay đổi có thể không nhanh chóng và không phải lúc nào cũng dễ dàng. Nhưng với thời gian và nỗ lực, hầu như bất kỳ thói quen nào cũng có thể được thay đổi.",
+    "author": "Charles Duhigg"
+  },
+  {
+    "quote": "Đừng chờ đợi. Thời gian sẽ không bao giờ là chính xác.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Ai không dành thời gian cho sức khỏe sẽ phải dành thời gian cho bệnh tật.",
+    "author": "Tục ngữ phương Đông"
+  },
+  {
+    "quote": "Kiến thức là một kho báu đi theo chủ nhân của nó mọi nơi.",
+    "author": "Tục ngữ Trung Quốc"
+  },
+  {
+    "quote": "Học như thể bạn sẽ sống mãi mãi.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Học là một kho báu sẽ theo chủ nhân của nó mọi nơi.",
+    "author": "Tục ngữ Ấn Độ"
+  },
+  {
+    "quote": "Kiên nhẫn có thể nấu chín một viên đá.",
+    "author": "Tục ngữ Benin"
+  },
+  {
+    "quote": "Kiên nhẫn là cây thuốc đắng, nhưng có trái ngọt.",
+    "author": "Tục ngữ Turkmenistan"
+  },
+  {
+    "quote": "Kiên nhẫn là chìa khóa của sự hài lòng.",
+    "author": "Tục ngữ Micronesia"
+  },
+  {
+    "quote": "Điều tuyệt vời về học hỏi là không ai có thể lấy đi nó khỏi bạn.",
+    "author": "B.B. King"
+  },
+  {
+    "quote": "Thời điểm tốt nhất để hành động là bây giờ.",
+    "author": "Mark Fisher"
+  },
+  {
+    "quote": "Bậc thầy đã thất bại cả ngàn lần trước khi trở thành bậc thầy.",
+    "author": "Tục ngữ Zen"
+  },
+  {
+    "quote": "Thời gian bay qua chúng ta, nhưng để lại bóng của nó.",
+    "author": "Nathaniel Hawthorne"
+  },
+  {
+    "quote": "Thời gian là một thợ may chuyên về sửa chữa.",
+    "author": "Faith Baldwin"
+  },
+  {
+    "quote": "Thời gian là một cơn bão mà trong đó tất cả chúng ta đều lạc lối.",
+    "author": "William Carlos Williams"
+  },
+  {
+    "quote": "Thời gian di chuyển theo một hướng, ký ức di chuyển theo hướng khác.",
+    "author": "William Gibson"
+  },
+  {
+    "quote": "Thời gian lấy đi tất cả, dù bạn muốn hay không.",
+    "author": "Stephen King"
+  },
+  {
+    "quote": "Những gì Johnny không học được, John sẽ không biết.",
+    "author": "Tục ngữ Ba Lan"
   }
 ]
+

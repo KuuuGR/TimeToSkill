@@ -1,7 +1,504 @@
 // Romanian
 [
   {
-    "quote": "This is a placeholder quote.",
-    "author": "System"
+    "quote": "Un copil care nu este îmbrățișat de sat, îl va incendia pentru a-i simți căldura.",
+    "author": "Proverb Basotho"
+  },
+  {
+    "quote": "Un singur băț poate fuma, dar nu va arde.",
+    "author": "Proverb Tongan"
+  },
+  {
+    "quote": "Puțin câte puțin, pasărea își construiește cuibul.",
+    "author": "Proverb Dominican"
+  },
+  {
+    "quote": "O călătorie se măsoară cel mai bine în prieteni, nu în mile.",
+    "author": "Proverb din Capul Verde"
+  },
+  {
+    "quote": "Un om care întreabă este un nebun timp de cinci minute. Un om care nu întreabă niciodată este un nebun toată viața.",
+    "author": "Proverb Chinezesc"
+  },
+  {
+    "quote": "O mătură nouă spală bine, dar cea veche cunoaște colțurile.",
+    "author": "Proverb din Saint Lucia"
+  },
+  {
+    "quote": "Înțelepciunea este ca focul. Oamenii o iau de la alții.",
+    "author": "Proverb din Coasta de Fildeș"
+  },
+  {
+    "quote": "O persoană care vorbește prea mult reușește prea puțin.",
+    "author": "Proverb Uzbek"
+  },
+  {
+    "quote": "Un om înțelept nu știe totul, doar proștii știu tot.",
+    "author": "Proverb din Antigua"
+  },
+  {
+    "quote": "Mai bine un pas stabil decât o galopare obositoare.",
+    "author": "Proverb Venezuelean"
+  },
+  {
+    "quote": "Mai bine mai târziu decât niciodată.",
+    "author": "Proverb Argentinian"
+  },
+  {
+    "quote": "Dincolo de munți, sunt alți munți.",
+    "author": "Proverb Haitiano"
+  },
+  {
+    "quote": "Nu începe dacă ți-e frică, dar odată ce ai început, nu te mai teme.",
+    "author": "Proverb Mongol"
+  },
+  {
+    "quote": "Nu amâna pentru mâine ce poți face astăzi.",
+    "author": "Proverb Polonez"
+  },
+  {
+    "quote": "Barili goale fac cel mai mare zgomot.",
+    "author": "Proverb Kittitian"
+  },
+  {
+    "quote": "Chiar și maimuțele cad din copaci.",
+    "author": "Proverb Coreean"
+  },
+  {
+    "quote": "Dumnezeu ajută pe cei care se trezesc devreme.",
+    "author": "Proverb Polonez"
+  },
+  {
+    "quote": "Grăunte cu grăunte, găina își umple burta.",
+    "author": "Proverb Brazilian"
+  },
+  {
+    "quote": "Cel care vine târziu se dăunează singur.",
+    "author": "Proverb Ceh"
+  },
+  {
+    "quote": "Cel care se grăbește, se împiedică.",
+    "author": "Proverb Panamez"
+  },
+  {
+    "quote": "Cel care mută munții a început cu pietre mici.",
+    "author": "Proverb Chinezesc"
+  },
+  {
+    "quote": "Cel care așteaptă ceva bun nu așteaptă niciodată prea mult.",
+    "author": "Proverb Suedez"
+  },
+  {
+    "quote": "Dacă urci într-un copac, trebuie să cobori din același copac.",
+    "author": "Proverb Guineean"
+  },
+  {
+    "quote": "Dacă nu știi unde mergi, orice drum te va duce acolo.",
+    "author": "Proverb din Bahamas"
+  },
+  {
+    "quote": "Cracovia nu a fost construită într-o zi.",
+    "author": "Proverb Polonez"
+  },
+  {
+    "quote": "Puțin și durabil este mai bun decât mult și trecător.",
+    "author": "Proverb Marocan"
+  },
+  {
+    "quote": "Puțin câte puțin, coșul se umple.",
+    "author": "Proverb Jamaican"
+  },
+  {
+    "quote": "Puțin câte puțin, vasul se umple.",
+    "author": "Proverb Bengalese"
+  },
+  {
+    "quote": "Puțin câte puțin, puțin devine mult.",
+    "author": "Proverb Indonezian"
+  },
+  {
+    "quote": "Nu contează cât de plină este râul, el vrea totuși să crească.",
+    "author": "Proverb din Guineea-Bissau"
+  },
+  {
+    "quote": "Perfecțiunea este dușmanul executării.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Succesul este o călătorie, nu o destinație.",
+    "author": "Proverb din Singapore"
+  },
+  {
+    "quote": "Cine are răbdare găsește fericirea.",
+    "author": "Proverb Lituanian"
+  },
+  {
+    "quote": "Persoana care știe puțin, vorbește mult.",
+    "author": "Proverb Dominican"
+  },
+  {
+    "quote": "A planta un copac a cărui umbră nu o vei vedea niciodată — aceasta este adevărata înțelepciune.",
+    "author": "Proverb Grecesc"
+  },
+  {
+    "quote": "Când pânzele de păianjen se unesc, ele pot lega un leu.",
+    "author": "Proverb Gabonez"
+  },
+  {
+    "quote": "Înțelepciunea este ca un leu. Nu trebuie să o proclami.",
+    "author": "Proverb Senegalese"
+  },
+  {
+    "quote": "Înțelepciunea este ca sarea — trebuie folosită în cantități corespunzătoare.",
+    "author": "Proverb Eritrean"
+  },
+  {
+    "quote": "Nu trebuie să fii mare pentru a începe, dar trebuie să începi pentru a deveni mare.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "quote": "Trebuie să acționezi ca și cum eșecul ar fi imposibil.",
+    "author": "Proverb Malian"
+  },
+  {
+    "quote": "Culegi ce semeni.",
+    "author": "Proverb Birman"
+  },
+  {
+    "quote": "Nu vei ara niciodată un câmp doar gândindu-te la el.",
+    "author": "Proverb Irlandez"
+  },
+  {
+    "quote": "Pasărea nu uită unde și-a pus ouăle.",
+    "author": "Proverb Swazi"
+  },
+  {
+    "quote": "O pasăre va folosi întotdeauna penele alteia pentru a-și construi cuibul.",
+    "author": "Proverb Santomean"
+  },
+  {
+    "quote": "O carte este ca o grădină purtată în buzunar.",
+    "author": "Proverb Sirian"
+  },
+  {
+    "quote": "O picătură mică sapă piatra.",
+    "author": "Proverb Coreean"
+  },
+  {
+    "quote": "Un copac cu rădăcini puternice râde de furtuni.",
+    "author": "Proverb Thai"
+  },
+  {
+    "quote": "Mai bine să ajungi cu trei ore prea devreme decât o minută prea târziu.",
+    "author": "William Shakespeare"
+  },
+  {
+    "quote": "Nu te teme de progresul lent, teme-te de stagnare.",
+    "author": "Proverb Chinezesc"
+  },
+  {
+    "quote": "Fă azi ceea ce alții nu vor, ca mâine să ai ceea ce alții visează.",
+    "author": "Jerry Rice"
+  },
+  {
+    "quote": "Nu te uita la ceas; fă ceea ce face el. Continuă să mergi.",
+    "author": "Sam Levenson"
+  },
+  {
+    "quote": "Picătură cu picătură umpli vasul.",
+    "author": "Proverb Khmer"
+  },
+  {
+    "quote": "Chiar și cele mai mari valuri încep mici.",
+    "author": "Proverb Marshallese"
+  },
+  {
+    "quote": "Totul ar trebui să fie făcut cât mai simplu posibil, dar nu mai simplu.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Lucrurile mari au începuturi mici.",
+    "author": "T. E. Lawrence"
+  },
+  {
+    "quote": "Graba este rar bună.",
+    "author": "Proverb Olandez"
+  },
+  {
+    "quote": "Graba strică lucrarea.",
+    "author": "Proverb Românesc"
+  },
+  {
+    "quote": "Cine pune întrebări nu poate evita răspunsurile.",
+    "author": "Proverb Camerunean"
+  },
+  {
+    "quote": "Cine nu se uită înainte rămâne în urmă.",
+    "author": "Proverb Cuban"
+  },
+  {
+    "quote": "Puțin câte puțin umple măsura.",
+    "author": "Proverb Zambian"
+  },
+  {
+    "quote": "Multe pâraie mici formează un râu mare.",
+    "author": "Proverb Danez"
+  },
+  {
+    "quote": "Moscova nu a fost construită într-o zi.",
+    "author": "Proverb Rus"
+  },
+  {
+    "quote": "Indiferent cât de departe curge un pârâu, el nu uită niciodată sursa sa.",
+    "author": "Proverb Belize"
+  },
+  {
+    "quote": "O zi este la fel de bună ca două pentru cel care face totul la locul său.",
+    "author": "Proverb Seychellois"
+  },
+  {
+    "quote": "Un deget nu poate ridica o piatră mică.",
+    "author": "Proverb Guineea Ecuatorială"
+  },
+  {
+    "quote": "O oră de planificare economisește zece ore de muncă.",
+    "author": "Proverb Turcesc"
+  },
+  {
+    "quote": "Mergi încet și vei ajunge departe.",
+    "author": "Proverb Sloven"
+  },
+  {
+    "quote": "Lent și constant câștigă cursa.",
+    "author": "Proverb Timorez"
+  },
+  {
+    "quote": "Începe de unde ești. Folosește ce ai. Fă ce poți.",
+    "author": "Arthur Ashe"
+  },
+  {
+    "quote": "Fă primul pas în credință. Nu trebuie să vezi întreaga scară.",
+    "author": "Martin Luther King Jr."
+  },
+  {
+    "quote": "Cu cât știi mai mult, cu atât ai mai puțin nevoie.",
+    "author": "Proverb Aborigen"
+  },
+  {
+    "quote": "Adevărata putere este liniștea.",
+    "author": "Proverb Chinezesc"
+  },
+  {
+    "quote": "Ce este măsurat, este gestionat.",
+    "author": "Peter Drucker"
+  },
+  {
+    "quote": "Unde nu este rușine, nu este nici onoare.",
+    "author": "Proverb Malawian"
+  },
+  {
+    "quote": "Nu vei ajunge la scopul tău stând pe loc.",
+    "author": "Proverb Finlandez"
+  },
+  {
+    "quote": "O călătorie de o mie de mile începe cu un singur pas.",
+    "author": "Proverb Maldivian"
+  },
+  {
+    "quote": "O mică toporișcă poate tăia un copac mare.",
+    "author": "Proverb Surinam"
+  },
+  {
+    "quote": "Nu-ți fie frică să mergi încet, doar să-ți fie frică să stai pe loc.",
+    "author": "Proverb Chinezesc"
+  },
+  {
+    "quote": "Mai bine cu cincisprezece minute mai târziu decât patruzeci de ani mai devreme.",
+    "author": "Proverb Polonez"
+  },
+  {
+    "quote": "Disciplină este puntea între scopuri și realizări.",
+    "author": "Jim Rohn"
+  },
+  {
+    "quote": "Nu amâna pentru mâine ceea ce poți face astăzi.",
+    "author": "Proverb Uruguayan"
+  },
+  {
+    "quote": "Chiar dacă te trezești devreme, soarele nu va răsări mai repede.",
+    "author": "Proverb Spaniol"
+  },
+  {
+    "quote": "Chiar și Solomon nu poate vărsa dintr-un vas gol.",
+    "author": "Proverb Belgian"
+  },
+  {
+    "quote": "Chiar și luna are pete.",
+    "author": "Proverb Comorian"
+  },
+  {
+    "quote": "Dumnezeu ajută pe cel ce se trezește devreme.",
+    "author": "Proverb columbian"
+  },
+  {
+    "quote": "Dacă alergi după două iepuri, le vei pierde pe amândouă.",
+    "author": "Proverb georgian"
+  },
+  {
+    "quote": "Dacă vrei să mergi repede, mergi singur. Dacă vrei să mergi departe, mergi împreună.",
+    "author": "Proverb african"
+  },
+  {
+    "quote": "Faptele mici făcute sunt mai bune decât faptele mari planificate.",
+    "author": "Peter Marshall"
+  },
+  {
+    "quote": "Succesul nu vine din ceea ce faci ocazional, ci din ceea ce faci constant.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Viitorul începe azi, nu mâine.",
+    "author": "Papa Ioan Paul al II-lea"
+  },
+  {
+    "quote": "Cine are răbdare va fi salvat.",
+    "author": "Proverb croat"
+  },
+  {
+    "quote": "Viața este mai mult decât a crește viteza.",
+    "author": "Mahatma Gandhi"
+  },
+  {
+    "quote": "Întoarce-ți fața spre soare și umbrele vor cădea în spatele tău.",
+    "author": "Proverb maori"
+  },
+  {
+    "quote": "Când rădăcinile sunt adânci, nu ai de ce să te temi de vânt.",
+    "author": "Proverb botswanian"
+  },
+  {
+    "quote": "Când vântul schimbării suflă, unii construiesc ziduri, alții construiesc mori de vânt.",
+    "author": "Proverb chinezesc"
+  },
+  {
+    "quote": "Adoptă ritmul naturii: secretul ei este răbdarea.",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "Prin târâre, un copil învață să stea în picioare.",
+    "author": "Proverb togolez"
+  },
+  {
+    "quote": "Ceasurile ucid timpul... timpul este mort atâta timp cât este măsurat de rotițe mici.",
+    "author": "William Faulkner"
+  },
+  {
+    "quote": "Nu aștepta. Timpul nu va fi niciodată perfect.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "quote": "Căzuți de șapte ori, ridicați-vă de opt.",
+    "author": "Proverb japonez"
+  },
+  {
+    "quote": "Cine nu are răbdare, nu are înțelepciune.",
+    "author": "Proverb qatariot"
+  },
+  {
+    "quote": "Cine stăpânește răbdarea, stăpânește totul.",
+    "author": "George Savile"
+  },
+  {
+    "quote": "Cunoștințele sunt doar un zvon până când ajung în mușchi.",
+    "author": "Proverb din Papua Noua Guinee"
+  },
+  {
+    "quote": "Învățătura extinde sufletele mari.",
+    "author": "Proverb namibian"
+  },
+  {
+    "quote": "Învățătura este o comoară care îl însoțește pe stăpânul său peste tot.",
+    "author": "Proverb vietnamez"
+  },
+  {
+    "quote": "Învățătura nu obosește niciodată mintea.",
+    "author": "Leonardo da Vinci"
+  },
+  {
+    "quote": "Răbdarea aduce trandafiri.",
+    "author": "Proverb elvețian"
+  },
+  {
+    "quote": "Răbdarea este o virtute care aduce pace.",
+    "author": "Proverb samoan"
+  },
+  {
+    "quote": "Răbdarea este tovarășul înțelepciunii.",
+    "author": "Proverb malaezian"
+  },
+  {
+    "quote": "Răbdarea este cheia spre paradis.",
+    "author": "Proverb austriac"
+  },
+  {
+    "quote": "Răbdarea este cheia ușurării.",
+    "author": "Proverb iordanian"
+  },
+  {
+    "quote": "Mici îmbunătățiri zilnice, în timp, duc la rezultate uimitoare.",
+    "author": "Robin Sharma"
+  },
+  {
+    "quote": "Cheia nu este să cheltuiești timpul, ci să-l investești.",
+    "author": "Stephen R. Covey"
+  },
+  {
+    "quote": "Singura sursă de cunoștințe este experiența.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "Nu există un moment mai bun decât acum.",
+    "author": "Autor necunoscut"
+  },
+  {
+    "quote": "Timpul aduce toate lucrurile.",
+    "author": "Eschil"
+  },
+  {
+    "quote": "Timpul este cel mai înțelept consilier.",
+    "author": "Pericle"
+  },
+  {
+    "quote": "Timpul este ceea ce vrem cel mai mult, dar ceea ce folosim cel mai prost.",
+    "author": "William Penn"
+  },
+  {
+    "quote": "Timpul va spune.",
+    "author": "Proverb polonez"
+  },
+  {
+    "quote": "Timpul, devoratorul tuturor lucrurilor.",
+    "author": "Ovidiu"
+  },
+  {
+    "quote": "Suntem ceea ce facem în mod repetat. Prin urmare, excelența nu este un act, ci un obicei.",
+    "author": "Aristotel"
+  },
+  {
+    "quote": "Unde este răbdare, acolo este pace.",
+    "author": "Proverb bruneian"
+  },
+  {
+    "quote": "Înveți să tai copaci tăindu-i.",
+    "author": "Proverb congolez"
+  },
+  {
+    "quote": "Poți amâna, dar timpul nu va amâna.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "quote": "O mână de răbdare valorează mai mult decât un coș de minte.",
+    "author": "Proverb algerian"
   }
 ]
+
