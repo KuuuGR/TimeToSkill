@@ -2,7 +2,8 @@
     {
         "quote": "Dziecko, którego nie przytuli wieś, spali ją, by poczuć jej ciepło.",
         "author": "Przysłowie Basotho",
-        "note": "Tłumaczenie oddaje sens, ale brzmi mocno metaforycznie. W polskim odpowiedniku raczej mówimy o zaniedbaniu prowadzącym do buntu."
+        "note": "Tłumaczenie oddaje sens, ale brzmi mocno metaforycznie. W polskim odpowiedniku raczej mówimy o zaniedbaniu prowadzącym do buntu.",
+        "_meta_language": "Polski"
     },
     {
         "quote": "Pojedynczy patyk może dymić, ale nie spłonie.",
@@ -117,7 +118,8 @@
     {
         "quote": "Jeśli nie wiesz, dokąd idziesz, każda droga cię tam zaprowadzi.",
         "author": "Przysłowie z Bahamów",
-        "note": "Podobne do: „Błądzenie jest rzeczą ludzką”."
+        "note": "Podobne do: „Błądzenie jest rzeczą ludzką”.",
+        "_meta_language": "English"
     },
     {
         "quote": "Kraków nie od razu zbudowano.",
@@ -1171,177 +1173,177 @@
         "quote": "Garść cierpliwości jest warta więcej niż kosz pełen rozumu.",
         "author": "Przysłowie algierskie"
     },
-  {
-    "quote": "Gładkie morze nigdy nie uczyniło dobrego marynarza.",
-    "author": "Przysłowie boliwijskie"
-  },
-  {
-    "quote": "Genialność to wieczna cierpliwość.",
-    "author": "Michał Anioł"
-  },
-  {
-    "quote": "Kto nie dodaje do swojej wiedzy, odejmuje od niej.",
-    "author": "Przysłowie hebrajskie"
-  },
-  {
-    "quote": "Kto się uczy, ten uczy innych.",
-    "author": "Przysłowie kongijskie"
-  },
-  {
-    "quote": "Wiedza jest jak ogród: jeśli nie jest uprawiana, nie może być zbierana.",
-    "author": "Przysłowie gambijskie"
-  },
-  {
-    "quote": "Żyj tak, jakbyś miał umrzeć jutro. Ucz się tak, jakbyś miał żyć wiecznie.",
-    "author": "Mahatma Gandhi"
-  },
-  {
-    "quote": "Stracony czas nigdy już nie wróci.",
-    "author": "Benjamin Franklin"
-  },
-  {
-    "quote": "Motywacja to to, co sprawia, że zaczynasz. Nałóg to to, co sprawia, że kontynuujesz.",
-    "author": "Jim Ryun"
-  },
-  {
-    "quote": "Jeden krok na raz to dobra wędrówka.",
-    "author": "Przysłowie lao"
-  },
-  {
-    "quote": "Powiedz mi, a zapomnę. Naucz mnie, a zapamiętam. Zaangażuj mnie, a nauczę się.",
-    "author": "Benjamin Franklin"
-  },
-  {
-    "quote": "Najlepszy czas na zasadzenie drzewa minął 20 lat temu. Drugi najlepszy czas jest teraz.",
-    "author": "Przysłowie chińskie"
-  },
-  {
-    "quote": "Nałóg nie czyni mnicha.",
-    "author": "Przysłowie chilijskie"
-  },
-  {
-    "quote": "Problem polega na tym, że myślisz, że masz czas.",
-    "author": "Jack Kornfield"
-  },
-  {
-    "quote": "Dwa najpotężniejsze wojowniki to cierpliwość i czas.",
-    "author": "Lew Tołstoj"
-  },
-  {
-    "quote": "Zawsze mówią, że czas zmienia rzeczy, ale w rzeczywistości to ty musisz je zmienić.",
-    "author": "Andy Warhol"
-  },
-  {
-    "quote": "Czas to stworzona rzecz. Mówić 'Nie mam czasu' to jak mówić 'Nie chcę'.",
-    "author": "Laozi"
-  },
-  {
-    "quote": "Czas to wspaniały nauczyciel, ale niestety zabija wszystkich swoich uczniów.",
-    "author": "Hector Berlioz"
-  },
-  {
-    "quote": "Czas jest najcenniejszą rzeczą, którą człowiek może wydać.",
-    "author": "Teofrast"
-  },
-  {
-    "quote": "Czas nie jest główną rzeczą. Jest jedyną rzeczą.",
-    "author": "Miles Davis"
-  },
-  {
-    "quote": "Czas zostaje wystarczająco długo dla każdego, kto potrafi go wykorzystać.",
-    "author": "Leonardo da Vinci"
-  },
-  {
-    "quote": "Czas nie czeka na nikogo.",
-    "author": "Tradycyjne powiedzenie"
-  },
-  {
-    "quote": "Czas nie czeka na nikogo. Ty także nie powinieneś.",
-    "author": "Nieznany autor"
-  },
-  {
-    "quote": "Czas, który przyjemnie marnujesz, nie jest zmarnowanym czasem.",
-    "author": "Marthe Troly-Curtin"
-  },
-  {
-    "quote": "Co jest nauczone w kołysce, trwa aż do grobu.",
-    "author": "Przysłowie libijskie"
-  },
-  {
-    "quote": "Wszystko, co musimy zdecydować, to co zrobić z czasem, który nam dany.",
-    "author": "J.R.R. Tolkien"
-  },
-  {
-    "quote": "Zmiana może nie być szybka i nie zawsze jest łatwa. Ale z czasem i wysiłkiem, prawie każdy nawyk można zmienić.",
-    "author": "Charles Duhigg"
-  },
-  {
-    "quote": "Nie czekaj. Czas nigdy nie będzie idealny.",
-    "author": "Napoleon Hill"
-  },
-  {
-    "quote": "Kto nie znajduje czasu na zdrowie, będzie musiał znaleźć czas na chorobę.",
-    "author": "Przysłowie wschodnie"
-  },
-  {
-    "quote": "Wiedza jest skarbem, który podąża za swoim właścicielem wszędzie.",
-    "author": "Przysłowie chińskie"
-  },
-  {
-    "quote": "Ucz się, jakbyś miał żyć wiecznie.",
-    "author": "Mahatma Gandhi"
-  },
-  {
-    "quote": "Uczenie się to skarb, który podąża za swoim właścicielem wszędzie.",
-    "author": "Przysłowie indyjskie"
-  },
-  {
-    "quote": "Cierpliwość może ugotować kamień.",
-    "author": "Przysłowie beninskie"
-  },
-  {
-    "quote": "Cierpliwość to gorzka roślina, ale ma słodkie owoce.",
-    "author": "Przysłowie turkmeńskie"
-  },
-  {
-    "quote": "Cierpliwość jest kluczem do zadowolenia.",
-    "author": "Przysłowie mikronezyjskie"
-  },
-  {
-    "quote": "Piękne w nauce jest to, że nikt nie może jej zabrać.",
-    "author": "B.B. King"
-  },
-  {
-    "quote": "Najlepszy czas, by działać, to teraz.",
-    "author": "Mark Fisher"
-  },
-  {
-    "quote": "Mistrz nie stał się mistrzem bez uprzednich porażek.",
-    "author": "Przysłowie zen"
-  },
-  {
-    "quote": "Czas leci nad nami, ale zostawia swój cień.",
-    "author": "Nathaniel Hawthorne"
-  },
-  {
-    "quote": "Czas to krawcowa specjalizująca się w przeróbkach.",
-    "author": "Faith Baldwin"
-  },
-  {
-    "quote": "Czas to burza, w której wszyscy jesteśmy zagubieni.",
-    "author": "William Carlos Williams"
-  },
-  {
-    "quote": "Czas płynie w jednym kierunku, pamięć w innym.",
-    "author": "William Gibson"
-  },
-  {
-    "quote": "Czas zabiera wszystko, czy tego chcesz, czy nie.",
-    "author": "Stephen King"
-  },
-  {
-    "quote": "Czego Jaś się nie nauczy, tego Jan nie będzie umiał.",
-    "author": "Przysłowie polskie"
-  }
+    {
+        "quote": "Gładkie morze nigdy nie uczyniło dobrego marynarza.",
+        "author": "Przysłowie boliwijskie"
+    },
+    {
+        "quote": "Genialność to wieczna cierpliwość.",
+        "author": "Michał Anioł"
+    },
+    {
+        "quote": "Kto nie dodaje do swojej wiedzy, odejmuje od niej.",
+        "author": "Przysłowie hebrajskie"
+    },
+    {
+        "quote": "Kto się uczy, ten uczy innych.",
+        "author": "Przysłowie kongijskie"
+    },
+    {
+        "quote": "Wiedza jest jak ogród: jeśli nie jest uprawiana, nie może być zbierana.",
+        "author": "Przysłowie gambijskie"
+    },
+    {
+        "quote": "Żyj tak, jakbyś miał umrzeć jutro. Ucz się tak, jakbyś miał żyć wiecznie.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "quote": "Stracony czas nigdy już nie wróci.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "quote": "Motywacja to to, co sprawia, że zaczynasz. Nałóg to to, co sprawia, że kontynuujesz.",
+        "author": "Jim Ryun"
+    },
+    {
+        "quote": "Jeden krok na raz to dobra wędrówka.",
+        "author": "Przysłowie lao"
+    },
+    {
+        "quote": "Powiedz mi, a zapomnę. Naucz mnie, a zapamiętam. Zaangażuj mnie, a nauczę się.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "quote": "Najlepszy czas na zasadzenie drzewa minął 20 lat temu. Drugi najlepszy czas jest teraz.",
+        "author": "Przysłowie chińskie"
+    },
+    {
+        "quote": "Nałóg nie czyni mnicha.",
+        "author": "Przysłowie chilijskie"
+    },
+    {
+        "quote": "Problem polega na tym, że myślisz, że masz czas.",
+        "author": "Jack Kornfield"
+    },
+    {
+        "quote": "Dwa najpotężniejsze wojowniki to cierpliwość i czas.",
+        "author": "Lew Tołstoj"
+    },
+    {
+        "quote": "Zawsze mówią, że czas zmienia rzeczy, ale w rzeczywistości to ty musisz je zmienić.",
+        "author": "Andy Warhol"
+    },
+    {
+        "quote": "Czas to stworzona rzecz. Mówić 'Nie mam czasu' to jak mówić 'Nie chcę'.",
+        "author": "Laozi"
+    },
+    {
+        "quote": "Czas to wspaniały nauczyciel, ale niestety zabija wszystkich swoich uczniów.",
+        "author": "Hector Berlioz"
+    },
+    {
+        "quote": "Czas jest najcenniejszą rzeczą, którą człowiek może wydać.",
+        "author": "Teofrast"
+    },
+    {
+        "quote": "Czas nie jest główną rzeczą. Jest jedyną rzeczą.",
+        "author": "Miles Davis"
+    },
+    {
+        "quote": "Czas zostaje wystarczająco długo dla każdego, kto potrafi go wykorzystać.",
+        "author": "Leonardo da Vinci"
+    },
+    {
+        "quote": "Czas nie czeka na nikogo.",
+        "author": "Tradycyjne powiedzenie"
+    },
+    {
+        "quote": "Czas nie czeka na nikogo. Ty także nie powinieneś.",
+        "author": "Nieznany autor"
+    },
+    {
+        "quote": "Czas, który przyjemnie marnujesz, nie jest zmarnowanym czasem.",
+        "author": "Marthe Troly-Curtin"
+    },
+    {
+        "quote": "Co jest nauczone w kołysce, trwa aż do grobu.",
+        "author": "Przysłowie libijskie"
+    },
+    {
+        "quote": "Wszystko, co musimy zdecydować, to co zrobić z czasem, który nam dany.",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "quote": "Zmiana może nie być szybka i nie zawsze jest łatwa. Ale z czasem i wysiłkiem, prawie każdy nawyk można zmienić.",
+        "author": "Charles Duhigg"
+    },
+    {
+        "quote": "Nie czekaj. Czas nigdy nie będzie idealny.",
+        "author": "Napoleon Hill"
+    },
+    {
+        "quote": "Kto nie znajduje czasu na zdrowie, będzie musiał znaleźć czas na chorobę.",
+        "author": "Przysłowie wschodnie"
+    },
+    {
+        "quote": "Wiedza jest skarbem, który podąża za swoim właścicielem wszędzie.",
+        "author": "Przysłowie chińskie"
+    },
+    {
+        "quote": "Ucz się, jakbyś miał żyć wiecznie.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "quote": "Uczenie się to skarb, który podąża za swoim właścicielem wszędzie.",
+        "author": "Przysłowie indyjskie"
+    },
+    {
+        "quote": "Cierpliwość może ugotować kamień.",
+        "author": "Przysłowie beninskie"
+    },
+    {
+        "quote": "Cierpliwość to gorzka roślina, ale ma słodkie owoce.",
+        "author": "Przysłowie turkmeńskie"
+    },
+    {
+        "quote": "Cierpliwość jest kluczem do zadowolenia.",
+        "author": "Przysłowie mikronezyjskie"
+    },
+    {
+        "quote": "Piękne w nauce jest to, że nikt nie może jej zabrać.",
+        "author": "B.B. King"
+    },
+    {
+        "quote": "Najlepszy czas, by działać, to teraz.",
+        "author": "Mark Fisher"
+    },
+    {
+        "quote": "Mistrz nie stał się mistrzem bez uprzednich porażek.",
+        "author": "Przysłowie zen"
+    },
+    {
+        "quote": "Czas leci nad nami, ale zostawia swój cień.",
+        "author": "Nathaniel Hawthorne"
+    },
+    {
+        "quote": "Czas to krawcowa specjalizująca się w przeróbkach.",
+        "author": "Faith Baldwin"
+    },
+    {
+        "quote": "Czas to burza, w której wszyscy jesteśmy zagubieni.",
+        "author": "William Carlos Williams"
+    },
+    {
+        "quote": "Czas płynie w jednym kierunku, pamięć w innym.",
+        "author": "William Gibson"
+    },
+    {
+        "quote": "Czas zabiera wszystko, czy tego chcesz, czy nie.",
+        "author": "Stephen King"
+    },
+    {
+        "quote": "Czego Jaś się nie nauczy, tego Jan nie będzie umiał.",
+        "author": "Przysłowie polskie"
+    }
 ]
-
+ 
