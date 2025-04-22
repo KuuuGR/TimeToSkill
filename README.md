@@ -1,23 +1,35 @@
 # TimeToSkill
-TimeToSkill – Track your mastery journey! A minimalist iOS app (SwiftUI + SwiftData) to log practice hours for skills like guitar, coding, or languages. Visual progress bars, 21/1000h rules, and multilingual support (PL/EN/ES/RU). Test-driven from day one.
 
-# TimeToSkill 🎯⏱️
+**Track your time. Learn smarter. Grow with patience.**
 
-Track time invested in mastering skills (coding, languages, instruments) with progress visualizations and motivational milestones. Built with **SwiftUI** and **SwiftData** (iOS 17+).
+TimeToSkill is a minimalistic app that helps you monitor your learning progress and achieve meaningful growth through time investment.
 
-![App Screenshot](assets/screenshot.png) <!-- Add my screenshot later -->
+🕒 Want to master a skill? Start with 20 hours. Then reach 100, 1,000... or even 10,000.  
+📈 Inspired by learning theories, TimeToSkill lets you track how far you’ve come — and motivates you to keep going.  
+🌍 Available in 40 languages, with global wisdom and motivational quotes from around the world.
 
-## Features
-- 🕒 **Skill Timer**: Start/stop sessions with persistent logging.
-- 📊 **Progress Bars**: Color-coded bars (green → orange → red) for 21h/1000h milestones.
-- 🌍 **Multilingual**: Supports English, Polish, Spanish, and Russian.
-- 📱 **Simple UI**: Intuitive "fiolki" (vials) design for skill tracking.
-- 🧪 **Test Coverage**: Unit + UI tests included.
+---
 
-## Setup
-1. **Requirements**: Xcode 15+, iOS 17+.
-2. **Clone & Run**:
-   ```bash
-   git clone https://github.com/your-username/TimeToSkill.git
-   cd TimeToSkill
-   open TimeToSkill.xcodeproj
+### ✨ Features
+
+- Track time for any skill (e.g. piano, chess, coding)
+- Visual progress inspired by learning theory thresholds (20h, 100h, 1000h...)
+- Motivational quotes from over 40 cultures
+- Works offline, no account needed
+- Dark mode only — less distractions, more focus
+
+---
+
+### 📦 Coming Soon
+
+- Cloud sync
+- Achievements
+- Better visuals & illustrations
+- Tap counters for repetitions
+
+This is a personal project by [Grzegorz Kulesza](mailto:etaosin@gmail.com).  
+If you like it, feel free to leave a ⭐ or share feedback.
+
+---
+
+© 2025 Grzegorz Kulesza
