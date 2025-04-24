@@ -28,20 +28,17 @@ struct AboutView: View {
                 ])
 
                 AboutSection(title: "ab_section_support", items: []) {
-                    NavigationLink(destination: SupportDeveloperView()) {
-                        Label(
-                            NSLocalizedString("ab_support_developer", comment: ""),
-                            systemImage: "heart.fill"
-                        )
-                        .foregroundColor(AppColors.onPrimary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(AppColors.primary)
-                        .cornerRadius(12)
+                    HStack {
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(AppColors.primary)
+                        Text("etaosin@gmail.com")
+                            .foregroundColor(AppColors.onSurface)
+                            .font(.body)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
 
-                Spacer()
+                Spacer(minLength: 32)
             }
             .padding()
         }
@@ -76,8 +73,9 @@ struct AboutSection<Content: View>: View {
             customContent()
         }
         .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(.ultraThinMaterial)
         .cornerRadius(16)
-        .shadow(color: .black.opacity(0.05), radius: 4, y: 2)
+        .shadow(color: .black.opacity(0.05), radius: 6, y: 2)
     }
 }
