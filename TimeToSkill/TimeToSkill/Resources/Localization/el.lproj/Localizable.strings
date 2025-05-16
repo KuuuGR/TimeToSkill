@@ -5,6 +5,12 @@
 "main_learning_theory" = "Θεωρία μάθησης";
 "main_about_app" = "Σχετικά με την εφαρμογή";
 
+// MARK: - OptionsView
+"options_title" = "Επιλογές";
+"options_export_section" = "Εξαγωγή Δεδομένων";
+"export_pdf_button" = "Εξαγωγή Δεξιοτήτων σε PDF";
+"skills_report_title" = "Αναφορά Προόδου Δεξιοτήτων";
+
 // MARK: - StartView
 "tracking_title" = "Παρακολούθηση δεξιοτήτων";
 "tracking_nav_title" = "Οι δεξιότητές σου";

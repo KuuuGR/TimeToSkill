@@ -5,6 +5,12 @@
 "main_learning_theory" = "תאוריית למידה";
 "main_about_app" = "אודות האפליקציה";
 
+// MARK: - OptionsView
+"options_title" = "אפשרויות";
+"options_export_section" = "ייצוא נתונים";
+"export_pdf_button" = "ייצוא מיומנויות ל-PDF";
+"skills_report_title" = "דוח התקדמות מיומנויות";
+
 // MARK: - StartView
 "tracking_title" = "מעקב מיומנויות";
 "tracking_nav_title" = "המיומנויות שלך";

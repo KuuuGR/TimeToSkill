@@ -5,6 +5,12 @@
 "main_learning_theory" = "학습 이론";
 "main_about_app" = "앱 정보";
 
+// MARK: - OptionsView
+"options_title" = "옵션";
+"options_export_section" = "데이터 내보내기";
+"export_pdf_button" = "스킬을 PDF로 내보내기";
+"skills_report_title" = "스킬 진행 보고서";
+
 // MARK: - StartView
 "tracking_title" = "스킬 추적";
 "tracking_nav_title" = "나의 스킬";

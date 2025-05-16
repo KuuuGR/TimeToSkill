@@ -5,6 +5,12 @@
 "main_learning_theory" = "Teorija učenja";
 "main_about_app" = "O aplikaciji";
 
+// MARK: - OptionsView
+"options_title" = "Opcije";
+"options_export_section" = "Izvezi podatke";
+"export_pdf_button" = "Izvezi vještine u PDF";
+"skills_report_title" = "Izvještaj o napretku vještina";
+
 // MARK: - StartView
 "tracking_title" = "Praćenje vještina";
 "tracking_nav_title" = "Tvoje vještine";

@@ -5,6 +5,12 @@
 "main_learning_theory" = "सीखने का सिद्धांत";
 "main_about_app" = "ऐप के बारे में";
 
+// MARK: - OptionsView
+"options_title" = "विकल्प";
+"options_export_section" = "डेटा निर्यात करें";
+"export_pdf_button" = "कौशल को PDF में निर्यात करें";
+"skills_report_title" = "कौशल प्रगति रिपोर्ट";
+
 // MARK: - StartView
 "tracking_title" = "कौशल ट्रैकिंग";
 "tracking_nav_title" = "आपके कौशल";

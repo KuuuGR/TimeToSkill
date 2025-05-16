@@ -5,6 +5,12 @@
 "main_learning_theory" = "Théorie d’apprentissage";
 "main_about_app" = "À propos de l’app";
 
+// MARK: - OptionsView
+"options_title" = "Options";
+"options_export_section" = "Exporter les données";
+"export_pdf_button" = "Exporter les compétences en PDF";
+"skills_report_title" = "Rapport de progression des compétences";
+
 // MARK: - StartView
 "tracking_title" = "Suivi des compétences";
 "tracking_nav_title" = "Vos compétences";

@@ -5,6 +5,12 @@
 "main_learning_theory" = "學習理論";
 "main_about_app" = "關於應用程式";
 
+// MARK: - OptionsView
+"options_title" = "選項";
+"options_export_section" = "匯出資料";
+"export_pdf_button" = "匯出技能至 PDF";
+"skills_report_title" = "技能進度報告";
+
 // MARK: - StartView
 "tracking_title" = "技能追蹤";
 "tracking_nav_title" = "你的技能";

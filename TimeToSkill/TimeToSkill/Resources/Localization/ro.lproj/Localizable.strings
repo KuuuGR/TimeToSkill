@@ -5,6 +5,12 @@
 "main_learning_theory" = "Teoria învățării";
 "main_about_app" = "Despre aplicație";
 
+// MARK: - OptionsView
+"options_title" = "Opțiuni";
+"options_export_section" = "Exportați Datele";
+"export_pdf_button" = "Exportați Abilitățile în PDF";
+"skills_report_title" = "Raport de Progres al Abilităților";
+
 // MARK: - StartView
 "tracking_title" = "Urmărirea abilităților";
 "tracking_nav_title" = "Abilitățile tale";

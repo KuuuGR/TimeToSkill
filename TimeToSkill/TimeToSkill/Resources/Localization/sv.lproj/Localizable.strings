@@ -5,6 +5,12 @@
 "main_learning_theory" = "Inlärningsteori";
 "main_about_app" = "Om appen";
 
+// MARK: - OptionsView
+"options_title" = "Alternativ";
+"options_export_section" = "Exportera data";
+"export_pdf_button" = "Exportera färdigheter till PDF";
+"skills_report_title" = "Rapport om färdighetsframsteg";
+
 // MARK: - StartView
 "tracking_title" = "Spårning av färdigheter";
 "tracking_nav_title" = "Dina färdigheter";

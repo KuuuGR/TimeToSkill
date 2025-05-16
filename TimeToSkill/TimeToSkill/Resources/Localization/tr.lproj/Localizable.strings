@@ -5,6 +5,12 @@
 "main_learning_theory" = "Öğrenme Teorisi";
 "main_about_app" = "Uygulama Hakkında";
 
+// MARK: - OptionsView
+"options_title" = "Seçenekler";
+"options_export_section" = "Veri Dışa Aktar";
+"export_pdf_button" = "Becerileri PDF Olarak Dışa Aktar";
+"skills_report_title" = "Beceri İlerleme Raporu";
+
 // MARK: - StartView
 "tracking_title" = "Beceri Takibi";
 "tracking_nav_title" = "Becerilerin";

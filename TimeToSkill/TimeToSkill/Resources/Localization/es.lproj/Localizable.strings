@@ -5,6 +5,12 @@
 "main_learning_theory" = "Teoría del Aprendizaje";
 "main_about_app" = "Sobre la App";
 
+// MARK: - OptionsView
+"options_title" = "Opciones";
+"options_export_section" = "Exportar Datos";
+"export_pdf_button" = "Exportar Habilidades a PDF";
+"skills_report_title" = "Informe de Progreso de Habilidades";
+
 // MARK: - StartView
 "tracking_title" = "Seguimiento de Habilidades";
 "tracking_nav_title" = "Tus Habilidades";

@@ -5,6 +5,12 @@
 "main_learning_theory" = "Teori Pembelajaran";
 "main_about_app" = "Mengenai Aplikasi";
 
+// MARK: - OptionsView
+"options_title" = "Pilihan";
+"options_export_section" = "Eksport Data";
+"export_pdf_button" = "Eksport Kemahiran ke PDF";
+"skills_report_title" = "Laporan Kemajuan Kemahiran";
+
 // MARK: - StartView
 "tracking_title" = "Penjejakan Kemahiran";
 "tracking_nav_title" = "Kemahiran Anda";

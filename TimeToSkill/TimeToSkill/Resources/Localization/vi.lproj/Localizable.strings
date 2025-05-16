@@ -5,6 +5,12 @@
 "main_learning_theory" = "Lý thuyết học tập";
 "main_about_app" = "Về ứng dụng";
 
+// MARK: - OptionsView
+"options_title" = "Tùy chọn";
+"options_export_section" = "Xuất dữ liệu";
+"export_pdf_button" = "Xuất kỹ năng sang PDF";
+"skills_report_title" = "Báo cáo tiến độ kỹ năng";
+
 // MARK: - StartView
 "tracking_title" = "Theo dõi kỹ năng";
 "tracking_nav_title" = "Kỹ năng của bạn";

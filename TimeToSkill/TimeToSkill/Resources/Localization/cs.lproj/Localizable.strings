@@ -4,6 +4,12 @@
 "main_learning_theory" = "Teorie učení";
 "main_about_app" = "O aplikaci";
 
+// MARK: - OptionsView
+"options_title" = "Možnosti";
+"options_export_section" = "Exportovat data";
+"export_pdf_button" = "Exportovat dovednosti do PDF";
+"skills_report_title" = "Zpráva o pokroku dovedností";
+
 // MARK: - StartView
 "tracking_title" = "Sledování dovedností";
 "tracking_nav_title" = "Tvé dovednosti";

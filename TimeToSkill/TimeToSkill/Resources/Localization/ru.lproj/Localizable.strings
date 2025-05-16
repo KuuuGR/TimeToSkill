@@ -5,6 +5,12 @@
 "main_learning_theory" = "Теория обучения";
 "main_about_app" = "О приложении";
 
+// MARK: - OptionsView
+"options_title" = "Настройки";
+"options_export_section" = "Экспорт данных";
+"export_pdf_button" = "Экспортировать навыки в PDF";
+"skills_report_title" = "Отчет о прогрессе навыков";
+
 // MARK: - StartView
 "tracking_title" = "Отслеживание навыков";
 "tracking_nav_title" = "Ваши навыки";

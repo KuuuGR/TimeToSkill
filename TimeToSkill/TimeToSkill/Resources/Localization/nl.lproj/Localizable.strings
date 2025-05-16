@@ -5,6 +5,12 @@
 "main_learning_theory" = "Leertheorie";
 "main_about_app" = "Over de app";
 
+// MARK: - OptionsView
+"options_title" = "Opties";
+"options_export_section" = "Gegevens exporteren";
+"export_pdf_button" = "Vaardigheden exporteren naar PDF";
+"skills_report_title" = "Vaardigheidsvoortgangsrapport";
+
 // MARK: - StartView
 "tracking_title" = "Vaardigheidstracking";
 "tracking_nav_title" = "Jouw vaardigheden";

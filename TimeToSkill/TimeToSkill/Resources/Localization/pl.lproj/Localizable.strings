@@ -4,6 +4,12 @@
 "main_learning_theory" = "Teoria nauki";
 "main_about_app" = "O aplikacji";
 
+// MARK: - OptionsView
+"options_title" = "Opcje";
+"options_export_section" = "Eksportuj dane";
+"export_pdf_button" = "Eksportuj umiejętności do PDF";
+"skills_report_title" = "Raport postępu umiejętności";
+
 // MARK: - StartView
 "tracking_title" = "Śledzenie umiejętności";
 "tracking_nav_title" = "Twoje umiejętności";

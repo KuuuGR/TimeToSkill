@@ -4,6 +4,12 @@
 "main_learning_theory" = "نظرية التعلم";
 "main_about_app" = "عن التطبيق";
 
+// MARK: - OptionsView
+"options_title" = "خيارات";
+"options_export_section" = "تصدير البيانات";
+"export_pdf_button" = "تصدير المهارات إلى PDF";
+"skills_report_title" = "تقرير تقدم المهارات";
+
 // MARK: - StartView
 "tracking_title" = "تتبع المهارات";
 "tracking_nav_title" = "مهاراتك";

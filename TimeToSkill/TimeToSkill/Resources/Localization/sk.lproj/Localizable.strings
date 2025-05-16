@@ -5,6 +5,12 @@
 "main_learning_theory" = "Teória učenia";
 "main_about_app" = "O aplikácii";
 
+// MARK: - OptionsView
+"options_title" = "Možnosti";
+"options_export_section" = "Exportovať údaje";
+"export_pdf_button" = "Exportovať zručnosti do PDF";
+"skills_report_title" = "Správa o pokroku zručností";
+
 // MARK: - StartView
 "tracking_title" = "Sledovanie zručností";
 "tracking_nav_title" = "Tvoje zručnosti";

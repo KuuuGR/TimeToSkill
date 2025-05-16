@@ -5,6 +5,12 @@
 "main_learning_theory" = "Læringsteori";
 "main_about_app" = "Om appen";
 
+// MARK: - OptionsView
+"options_title" = "Indstillinger";
+"options_export_section" = "Eksporter data";
+"export_pdf_button" = "Eksporter færdigheder til PDF";
+"skills_report_title" = "Rapport over færdighedsfremskridt";
+
 // MARK: - StartView
 "tracking_title" = "Færdighedssporing";
 "tracking_nav_title" = "Dine færdigheder";

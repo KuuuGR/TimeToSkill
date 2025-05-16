@@ -5,6 +5,12 @@
 "main_learning_theory" = "Teoria dell'apprendimento";
 "main_about_app" = "Informazioni sull'app";
 
+// MARK: - OptionsView
+"options_title" = "Opzioni";
+"options_export_section" = "Esporta dati";
+"export_pdf_button" = "Esporta abilità in PDF";
+"skills_report_title" = "Report di progresso delle abilità";
+
 // MARK: - StartView
 "tracking_title" = "Monitoraggio delle abilità";
 "tracking_nav_title" = "Le tue abilità";

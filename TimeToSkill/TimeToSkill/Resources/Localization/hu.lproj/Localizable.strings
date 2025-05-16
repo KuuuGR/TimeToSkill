@@ -5,6 +5,12 @@
 "main_learning_theory" = "Tanuláselmélet";
 "main_about_app" = "Az alkalmazásról";
 
+// MARK: - OptionsView
+"options_title" = "Opciók";
+"options_export_section" = "Adatok exportálása";
+"export_pdf_button" = "Készségek exportálása PDF-be";
+"skills_report_title" = "Készségfejlődési jelentés";
+
 // MARK: - StartView
 "tracking_title" = "Készségek követése";
 "tracking_nav_title" = "Készségeid";

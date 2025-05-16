@@ -5,6 +5,12 @@
 "main_learning_theory" = "ทฤษฎีการเรียนรู้";
 "main_about_app" = "เกี่ยวกับแอป";
 
+// MARK: - OptionsView
+"options_title" = "ตัวเลือก";
+"options_export_section" = "ส่งออกข้อมูล";
+"export_pdf_button" = "ส่งออกทักษะเป็น PDF";
+"skills_report_title" = "รายงานความคืบหน้าของทักษะ";
+
 // MARK: - StartView
 "tracking_title" = "การติดตามทักษะ";
 "tracking_nav_title" = "ทักษะของคุณ";

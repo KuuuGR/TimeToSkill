@@ -5,6 +5,12 @@
 "main_learning_theory" = "Oppimisteoria";
 "main_about_app" = "Tietoa sovelluksesta";
 
+// MARK: - OptionsView
+"options_title" = "Asetukset";
+"options_export_section" = "Vie Tiedot";
+"export_pdf_button" = "Vie Taidot PDF-muotoon";
+"skills_report_title" = "Taitojen Edistymisraportti";
+
 // MARK: - StartView
 "tracking_title" = "Taitojen seuranta";
 "tracking_nav_title" = "Taitosi";

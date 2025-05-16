@@ -5,6 +5,12 @@
 "main_learning_theory" = "Learning Theory";
 "main_about_app" = "About the App";
 
+// MARK: - OptionsView
+"options_title" = "Options";
+"options_export_section" = "Export Data";
+"export_pdf_button" = "Export Skills to PDF";
+"skills_report_title" = "Skills Progress Report";
+
 // MARK: - StartView
 "tracking_title" = "Skill Tracking";
 "tracking_nav_title" = "Your Skills";

@@ -5,6 +5,12 @@
 "main_learning_theory" = "学習理論";
 "main_about_app" = "アプリについて";
 
+// MARK: - OptionsView
+"options_title" = "オプション";
+"options_export_section" = "データのエクスポート";
+"export_pdf_button" = "スキルをPDFでエクスポート";
+"skills_report_title" = "スキル進捗レポート";
+
 // MARK: - StartView
 "tracking_title" = "スキルトラッキング";
 "tracking_nav_title" = "あなたのスキル";
