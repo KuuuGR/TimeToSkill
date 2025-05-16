@@ -15,6 +15,8 @@ struct MainView: View {
     @State private var showStats = false
     @AppStorage("hasSeenFABAnimation") private var hasSeenFABAnimation = false
     @State private var animateFAB = false
+    @State private var showingOptions = false
+    @State private var showingStats = false
 
     private let backgroundAnimation: BackgroundAnimationType = .staticCircle
 
@@ -98,21 +100,28 @@ struct MainView: View {
                 VStack {
                     Spacer()
                     HStack {
+                        // Options FAB (left side)
+                        FABButton(
+                            icon: "ellipsis",
+                            action: { showingOptions = true },
+                            accessibilityLabelKey: "fab_options"
+                        )
+                        .padding(20)
+                        
                         Spacer()
+                        
+                        // Stats FAB (right side)
                         FABButton(
                             icon: "chart.bar.fill",
-                            action: {
-                                showStats = true
-                                hasSeenFABAnimation = true
+                            action: { 
+                                showingStats = true
+                                hasSeenFABAnimation = true 
                             },
-                            backgroundColor: Color.warningDark,
+                            backgroundColor: .warningDark,
                             size: 64,
                             animatePulse: !hasSeenFABAnimation,
                             accessibilityLabelKey: "fab_view_stats"
                         )
-                        .sheet(isPresented: $showStats) {
-                            StatsView()
-                        }
                         .padding(20)
                     }
                 }
@@ -131,6 +140,12 @@ struct MainView: View {
                     animateFAB = true
                 }
             }
+        }
+        .sheet(isPresented: $showingStats) {
+            StatsView()
+        }
+        .sheet(isPresented: $showingOptions) {
+            OptionsView()
         }
     }
 }
