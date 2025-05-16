@@ -1,5 +1,10 @@
 # TimeToSkill – Release Notes
 
+## Version 1.1 (2025)
+• Export your skills progress to PDF reports
+• New Time Calculator: Convert hours to days and years
+• Fixed sorting performance and memory usage
+
 ## Version 1.0 (2025)
 - Initial release.
 - Skill tracker with time input and learning stage visualization.
