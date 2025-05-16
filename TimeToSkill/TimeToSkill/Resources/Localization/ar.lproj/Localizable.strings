@@ -31,7 +31,7 @@
 // MARK: - AboutView
 "ab_section_about_app" = "عن التطبيق";
 "ab_app_name" = "TimeToSkill";
-"ab_version" = "الإصدار 1.0";
+"ab_version" = ".الإصدار %@";
 "ab_developer" = "تم الإنشاء بواسطة Grzegorz Kulesza";
 
 "ab_section_purpose" = "هدف التطبيق";

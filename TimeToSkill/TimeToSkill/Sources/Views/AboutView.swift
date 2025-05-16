@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct AboutView: View {
+    private var appVersion: String {
+        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
+        return "\(version) (\(build))"
+    }
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
@@ -17,7 +23,9 @@ struct AboutView: View {
                     .padding(.top)
 
                 AboutSection(title: "ab_section_about_app", items: [
-                    "ab_app_name", "ab_version", "ab_developer"
+                    "ab_app_name",
+                    String(format: NSLocalizedString("ab_version", comment: "Version format string"), appVersion),
+                    "ab_developer"
                 ])
 
                 AboutSection(title: "ab_section_purpose", items: [
@@ -65,9 +73,15 @@ struct AboutSection<Content: View>: View {
                 .foregroundColor(AppColors.primary)
 
             ForEach(items, id: \.self) { key in
-                Text(LocalizedStringKey(key))
-                    .font(.body)
-                    .foregroundColor(AppColors.onSurface)
+                if key.hasPrefix("ab_") {
+                    Text(LocalizedStringKey(key))
+                        .font(.body)
+                        .foregroundColor(AppColors.onSurface)
+                } else {
+                    Text(key)
+                        .font(.body)
+                        .foregroundColor(AppColors.onSurface)
+                }
             }
 
             customContent()

@@ -32,7 +32,7 @@
 // MARK: - AboutView
 "ab_section_about_app" = "关于应用程序";
 "ab_app_name" = "TimeToSkill";
-"ab_version" = "版本 1.0";
+"ab_version" = "版本 %@";
 "ab_developer" = "作者：Grzegorz Kulesza";
 
 "ab_section_purpose" = "应用目的";

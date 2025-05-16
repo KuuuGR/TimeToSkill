@@ -32,7 +32,7 @@
 // MARK: - AboutView
 "ab_section_about_app" = "O aplikácii";
 "ab_app_name" = "TimeToSkill";
-"ab_version" = "Verzia 1.0";
+"ab_version" = "Verzia %@";
 "ab_developer" = "Vytvoril Grzegorz Kulesza";
 
 "ab_section_purpose" = "Účel aplikácie";

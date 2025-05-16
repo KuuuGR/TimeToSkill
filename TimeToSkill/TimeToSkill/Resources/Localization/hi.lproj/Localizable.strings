@@ -32,7 +32,7 @@
 // MARK: - AboutView
 "ab_section_about_app" = "ऐप के बारे में";
 "ab_app_name" = "TimeToSkill";
-"ab_version" = "संस्करण 1.0";
+"ab_version" = "संस्करण %@";
 "ab_developer" = "निर्माता: ग्रेज़गोर्ज कुलेशा";
 
 "ab_section_purpose" = "ऐप का उद्देश्य";
