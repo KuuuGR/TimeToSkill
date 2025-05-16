@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Προσθήκη νέας δεξιότητας";
 "fab_view_stats" = "Προβολή στατιστικών";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Μετατροπέας Χρόνου";
+"Time_Converter_Hours_Label" = "🕗 Ώρες";
+"Time_Converter_Hours_Placeholder" = "Εισάγετε ώρες";
+"Time_Converter_Days24h_Label" = "🌃 Ημέρες (24ω)";
+"Time_Converter_Days12h_Label" = "🌅 Ημέρες (12ω)";
+"Time_Converter_Days8h_Label" = "🌇 Εργάσιμες ημέρες (8ω)";
+"Time_Converter_Years_Label" = "🎆 Έτη";
+"Time_Converter_Days_Placeholder" = "Υπολογισμένες ημέρες";
+"Time_Converter_Calculate_Button" = "Υπολογισμός";

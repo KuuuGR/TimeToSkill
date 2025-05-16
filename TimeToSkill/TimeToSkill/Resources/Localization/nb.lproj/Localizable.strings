@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Legg til ny ferdighet";
 "fab_view_stats" = "Se statistikk";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Tidsomregner";
+"Time_Converter_Hours_Label" = "🕗 Timer";
+"Time_Converter_Hours_Placeholder" = "Skriv inn timer";
+"Time_Converter_Days24h_Label" = "🌃 Dager (24t)";
+"Time_Converter_Days12h_Label" = "🌅 Dager (12t)";
+"Time_Converter_Days8h_Label" = "🌇 Arbeidsdager (8t)";
+"Time_Converter_Years_Label" = "🎆 År";
+"Time_Converter_Days_Placeholder" = "Beregnede dager";
+"Time_Converter_Calculate_Button" = "Beregn";

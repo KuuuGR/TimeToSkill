@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Tambahkan keterampilan baru";
 "fab_view_stats" = "Lihat statistik";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Pengkonversi Waktu";
+"Time_Converter_Hours_Label" = "🕗 Jam";
+"Time_Converter_Hours_Placeholder" = "Masukkan jam";
+"Time_Converter_Days24h_Label" = "🌃 Hari (24j)";
+"Time_Converter_Days12h_Label" = "🌅 Hari (12j)";
+"Time_Converter_Days8h_Label" = "🌇 Hari kerja (8j)";
+"Time_Converter_Years_Label" = "🎆 Tahun";
+"Time_Converter_Days_Placeholder" = "Hari terhitung";
+"Time_Converter_Calculate_Button" = "Hitung";

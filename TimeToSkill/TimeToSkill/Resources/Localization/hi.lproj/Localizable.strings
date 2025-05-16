@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "नया कौशल जोड़ें";
 "fab_view_stats" = "सांख्यिकी देखें";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "समय परिवर्तक";
+"Time_Converter_Hours_Label" = "🕗 घंटे";
+"Time_Converter_Hours_Placeholder" = "घंटे दर्ज करें";
+"Time_Converter_Days24h_Label" = "🌃 दिन (24 घंटे)";
+"Time_Converter_Days12h_Label" = "🌅 दिन (12 घंटे)";
+"Time_Converter_Days8h_Label" = "🌇 कार्य दिवस (8 घंटे)";
+"Time_Converter_Years_Label" = "🎆 वर्ष";
+"Time_Converter_Days_Placeholder" = "गणना किए गए दिन";
+"Time_Converter_Calculate_Button" = "गणना करें";

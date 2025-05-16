@@ -139,3 +139,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "أضف مهارة جديدة";
 "fab_view_stats" = "عرض الإحصاءات";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "محول الوقت";
+"Time_Converter_Hours_Label" = "🕗 ساعات";
+"Time_Converter_Hours_Placeholder" = "أدخل الساعات";
+"Time_Converter_Days24h_Label" = "🌃 أيام (٢٤ ساعة)";
+"Time_Converter_Days12h_Label" = "🌅 أيام (١٢ ساعة)";
+"Time_Converter_Days8h_Label" = "🌇 أيام العمل (٨ ساعات)";
+"Time_Converter_Years_Label" = "🎆 سنوات";
+"Time_Converter_Days_Placeholder" = "الأيام المحسوبة";
+"Time_Converter_Calculate_Button" = "احسب";

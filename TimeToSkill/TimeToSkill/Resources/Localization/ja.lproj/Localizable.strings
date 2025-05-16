@@ -11,6 +11,17 @@
 "export_pdf_button" = "スキルをPDFでエクスポート";
 "skills_report_title" = "スキル進捗レポート";
 
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "時間換算";
+"Time_Converter_Hours_Label" = "🕗 時間";
+"Time_Converter_Hours_Placeholder" = "時間を入力";
+"Time_Converter_Days24h_Label" = "🌃 日数 (24時間)";
+"Time_Converter_Days12h_Label" = "🌅 日数 (12時間)";
+"Time_Converter_Days8h_Label" = "🌇 労働日 (8時間)";
+"Time_Converter_Years_Label" = "🎆 年数";
+"Time_Converter_Days_Placeholder" = "計算された日数";
+"Time_Converter_Calculate_Button" = "計算";
+
 // MARK: - StartView
 "tracking_title" = "スキルトラッキング";
 "tracking_nav_title" = "あなたのスキル";

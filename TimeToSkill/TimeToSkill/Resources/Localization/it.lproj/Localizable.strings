@@ -1,15 +1,26 @@
 // Italian
 
 // MARK: - MainView
-"main_manage_trackers" = "Gestisci i tracker";
-"main_learning_theory" = "Teoria dell'apprendimento";
-"main_about_app" = "Informazioni sull'app";
+"main_manage_trackers" = "Gestisci Tracker";
+"main_learning_theory" = "Teoria dell'Apprendimento";
+"main_about_app" = "Info App";
 
 // MARK: - OptionsView
 "options_title" = "Opzioni";
-"options_export_section" = "Esporta dati";
-"export_pdf_button" = "Esporta abilità in PDF";
-"skills_report_title" = "Report di progresso delle abilità";
+"options_export_section" = "Esporta Dati";
+"export_pdf_button" = "Esporta Competenze in PDF";
+"skills_report_title" = "Report Progressi Competenze";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Convertitore di Tempo";
+"Time_Converter_Hours_Label" = "🕗 Ore";
+"Time_Converter_Hours_Placeholder" = "Inserisci ore";
+"Time_Converter_Days24h_Label" = "🌃 Giorni (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Giorni (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Giorni lavorativi (8h)";
+"Time_Converter_Years_Label" = "🎆 Anni";
+"Time_Converter_Days_Placeholder" = "Giorni calcolati";
+"Time_Converter_Calculate_Button" = "Calcola";
 
 // MARK: - StartView
 "tracking_title" = "Monitoraggio delle abilità";
@@ -27,21 +38,21 @@
 "button_back" = "Indietro";
 
 // MARK: - SkillProgressView
-"SkillName" = "Nome dell’abilità";
+"SkillName" = "Nome dell'abilità";
 
 // MARK: - AddSkillView
-"enter_skill_name" = "Inserisci il nome dell’abilità";
+"enter_skill_name" = "Inserisci il nome dell'abilità";
 "add_skill" = "Aggiungi abilità";
 "new_skill" = "Nuova abilità";
 "cancel" = "Annulla";
 
 // MARK: - AboutView
-"ab_section_about_app" = "Informazioni sull’app";
+"ab_section_about_app" = "Informazioni sull'app";
 "ab_app_name" = "TimeToSkill";
 "ab_version" = "Versione %@";
 "ab_developer" = "Creato da Grzegorz Kulesza";
 
-"ab_section_purpose" = "Scopo dell’app";
+"ab_section_purpose" = "Scopo dell'app";
 "ab_purpose_major_system" = "Impara meglio monitorando il tempo che investi.";
 "ab_purpose_large_numbers" = "Tieni traccia di grandi obiettivi con feedback visivo.";
 "ab_purpose_dates" = "Usa sistemi flessibili come 20h, 100h, 1000h...";
@@ -49,11 +60,11 @@
 
 "ab_section_support" = "Supporto";
 "ab_support_developer" = "Supporta lo sviluppatore";
-"ab_navigation_title" = "Informazioni sull’app";
+"ab_navigation_title" = "Informazioni sull'app";
 
 // MARK: - SupportDeveloperView
 "support_title" = "Supporta lo sviluppo";
-"support_description" = "Se ti piace quest’app, puoi offrirmi un caffè!";
+"support_description" = "Se ti piace quest'app, puoi offrirmi un caffè!";
 "support_button" = "Supporta via PayPal";
 "support_nav_title" = "Supporto";
 
@@ -62,7 +73,7 @@
 
 "theory_10k_title" = "Regola delle 10.000 ore";
 "theory_10k_author" = "Malcolm Gladwell (basato su Anders Ericsson)";
-"theory_10k_description" = "Per raggiungere la padronanza, servono circa diecimila ore di pratica intenzionale. Vale per performer d’élite (musicisti, atleti, scacchisti). Conta non solo la quantità, ma anche la qualità. Criticata per la semplificazione.";
+"theory_10k_description" = "Per raggiungere la padronanza, servono circa diecimila ore di pratica intenzionale. Vale per performer d'élite (musicisti, atleti, scacchisti). Conta non solo la quantità, ma anche la qualità. Criticata per la semplificazione.";
 "theory_10k_works" = "✔️ Campi di precisione, carriera professionale\n✖️ Poco utile per iniziare";
 
 "theory_20_title" = "Regola delle 20/21 ore";
@@ -78,12 +89,12 @@
 "theory_1000_title" = "Regola delle 1.000 ore";
 "theory_1000_author" = "Popolare in IT, lingue, freelancing";
 "theory_1000_description" = "Mille ore di apprendimento intenso ti portano a un livello professionale — da insegnanti di musica e cuochi a traduttori e istruttori di yoga.";
-"theory_1000_works" = "✔️ Indipendenza professionale\n✖️ Non livello d’élite";
+"theory_1000_works" = "✔️ Indipendenza professionale\n✖️ Non livello d'élite";
 
 "theory_comparison_title" = "📈 Confronto";
 "theory_comparison_text" = "• 20 ore → Buon inizio (Amatore)\n• 100 ore → Solido (Intermedio)\n• 1.000 ore → Professionista\n• 10.000 ore → Esperto (Élite)";
 
-"theory_nav_title" = "Teorie dell’apprendimento";
+"theory_nav_title" = "Teorie dell'apprendimento";
 
 // MARK: - StatsView
 "stats_title_overview" = "📊 Panoramica dei progressi";
@@ -121,7 +132,7 @@
 "adjust_time_section" = "Modifica tempo";
 "adjust_hours_placeholder" = "Ore da aggiungere/sottrarre";
 "adjust_minutes_placeholder" = "Minuti da aggiungere/sottrarre";
-"adjust_time_hint" = "Inserisci valori positivi o negativi.\nEsempio: -30 minuti sottrae mezz’ora.";
+"adjust_time_hint" = "Inserisci valori positivi o negativi.\nEsempio: -30 minuti sottrae mezz'ora.";
 "adjust_time_apply" = "Applica modifiche";
 "adjust_time_success" = "Tempo aggiornato con successo!";
 

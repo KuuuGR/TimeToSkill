@@ -11,6 +11,17 @@
 "export_pdf_button" = "Экспортировать навыки в PDF";
 "skills_report_title" = "Отчет о прогрессе навыков";
 
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Конвертер времени";
+"Time_Converter_Hours_Label" = "🕗 Часы";
+"Time_Converter_Hours_Placeholder" = "Введите часы";
+"Time_Converter_Days24h_Label" = "🌃 Дни (24ч)";
+"Time_Converter_Days12h_Label" = "🌅 Дни (12ч)";
+"Time_Converter_Days8h_Label" = "🌇 Рабочие дни (8ч)";
+"Time_Converter_Years_Label" = "🎆 Годы";
+"Time_Converter_Days_Placeholder" = "Рассчитанные дни";
+"Time_Converter_Calculate_Button" = "Рассчитать";
+
 // MARK: - StartView
 "tracking_title" = "Отслеживание навыков";
 "tracking_nav_title" = "Ваши навыки";

@@ -1,15 +1,26 @@
 // Portuguese (Brazil)
 
 // MARK: - MainView
-"main_manage_trackers" = "Gerenciar rastreadores";
-"main_learning_theory" = "Teoria da aprendizagem";
-"main_about_app" = "Sobre o app";
+"main_manage_trackers" = "Gerenciar Rastreadores";
+"main_learning_theory" = "Teoria da Aprendizagem";
+"main_about_app" = "Sobre o App";
 
 // MARK: - OptionsView
 "options_title" = "Opções";
 "options_export_section" = "Exportar Dados";
 "export_pdf_button" = "Exportar Habilidades para PDF";
-"skills_report_title" = "Relatório de Progresso de Habilidades";
+"skills_report_title" = "Relatório de Progresso das Habilidades";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Conversor de Tempo";
+"Time_Converter_Hours_Label" = "🕗 Horas";
+"Time_Converter_Hours_Placeholder" = "Digite as horas";
+"Time_Converter_Days24h_Label" = "🌃 Dias (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Dias (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Dias úteis (8h)";
+"Time_Converter_Years_Label" = "🎆 Anos";
+"Time_Converter_Days_Placeholder" = "Dias calculados";
+"Time_Converter_Calculate_Button" = "Calcular";
 
 // MARK: - StartView
 "tracking_title" = "Rastreamento de habilidades";

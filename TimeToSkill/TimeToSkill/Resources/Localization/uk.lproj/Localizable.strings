@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Додати нову навичку";
 "fab_view_stats" = "Переглянути статистику";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Конвертер часу";
+"Time_Converter_Hours_Label" = "🕗 Години";
+"Time_Converter_Hours_Placeholder" = "Введіть години";
+"Time_Converter_Days24h_Label" = "🌃 Дні (24г)";
+"Time_Converter_Days12h_Label" = "🌅 Дні (12г)";
+"Time_Converter_Days8h_Label" = "🌇 Робочі дні (8г)";
+"Time_Converter_Years_Label" = "🎆 Роки";
+"Time_Converter_Days_Placeholder" = "Розраховані дні";
+"Time_Converter_Calculate_Button" = "Обчислити";

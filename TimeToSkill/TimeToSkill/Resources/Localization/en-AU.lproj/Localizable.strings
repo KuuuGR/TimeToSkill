@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Add a new skill";
 "fab_view_stats" = "View statistics";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Time Converter";
+"Time_Converter_Hours_Label" = "🕗 Hours";
+"Time_Converter_Hours_Placeholder" = "Enter hours";
+"Time_Converter_Days24h_Label" = "🌃 Days (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Days (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Work Days (8h)";
+"Time_Converter_Years_Label" = "🎆 Years";
+"Time_Converter_Days_Placeholder" = "Calculated days";
+"Time_Converter_Calculate_Button" = "Calculate";
