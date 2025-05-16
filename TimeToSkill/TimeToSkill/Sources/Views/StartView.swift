@@ -18,7 +18,8 @@ struct StartView: View {
         var id: String { self.rawValue }
     }
 
-    @State private var selectedSort: SkillSortOption = .nameAsc
+    // Using AppStorage for automatic UserDefaults persistence
+    @AppStorage("selectedSortOption") private var selectedSortRawValue: String = SkillSortOption.nameAsc.rawValue
 
     var body: some View {
         VStack {
@@ -28,9 +29,10 @@ struct StartView: View {
                 .accessibilityIdentifier("StartViewTitle")
 
             // Picker for sorting
-            Picker(LocalizedStringKey("sort_by_label"), selection: $selectedSort) {
+            Picker(LocalizedStringKey("sort_by_label"), selection: $selectedSortRawValue) {
                 ForEach(SkillSortOption.allCases) { option in
-                    Text(LocalizedStringKey(option.rawValue)).tag(option)
+                    Text(LocalizedStringKey(option.rawValue))
+                        .tag(option.rawValue)
                 }
             }
             .pickerStyle(.segmented)
@@ -118,7 +120,8 @@ struct StartView: View {
     }
 
     var sortedSkills: [Skill] {
-        switch selectedSort {
+        let currentSort = SkillSortOption(rawValue: selectedSortRawValue) ?? .nameAsc
+        switch currentSort {
         case .nameAsc:
             return skills.sorted { $0.name.lowercased() < $1.name.lowercased() }
         case .nameDesc:
