@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import PDFKit
 
 /// Displays the list of skills with progress tracking functionality.
 struct StartView: View {
@@ -8,6 +9,9 @@ struct StartView: View {
 
     @State private var selectedSkillForOptions: Skill?
     @State private var showingAddSkill = false
+    @State private var showingShareSheet = false
+    @State private var showingOptions = false
+    @State private var pdfData: Data?
 
     enum SkillSortOption: String, CaseIterable, Identifiable {
         case nameAsc = "sort_name_asc"
@@ -39,7 +43,7 @@ struct StartView: View {
             .padding(.horizontal)
             .padding(.bottom, 8)
 
-            // Content with skills and FAB
+            // Content with skills and FABs
             ZStack {
                 if sortedSkills.isEmpty {
                     VStack(spacing: 16) {
@@ -82,11 +86,21 @@ struct StartView: View {
                     }
                 }
 
-                // Floating action button
+                // Floating action buttons
                 VStack {
                     Spacer()
                     HStack {
+                        // Options FAB (left side)
+                        FABButton(
+                            icon: "ellipsis",
+                            action: { showingOptions = true },
+                            accessibilityLabelKey: "fab_options"
+                        )
+                        .padding(20)
+                        
                         Spacer()
+                        
+                        // Add skill FAB (right side)
                         FABButton(
                             icon: "plus",
                             action: { showingAddSkill = true },
@@ -104,6 +118,20 @@ struct StartView: View {
         .sheet(item: $selectedSkillForOptions) { skill in
             SkillOptionsSheet(skill: skill) {
                 context.delete(skill)
+            }
+        }
+        .sheet(isPresented: $showingShareSheet) {
+            if let data = pdfData {
+                ShareSheet(items: [data])
+            }
+        }
+        .confirmationDialog(
+            LocalizedStringKey("options_title"),
+            isPresented: $showingOptions,
+            titleVisibility: .visible
+        ) {
+            Button(LocalizedStringKey("export_pdf_button")) {
+                exportToPDF()
             }
         }
     }
@@ -132,4 +160,68 @@ struct StartView: View {
             return skills.sorted { $0.hours > $1.hours }
         }
     }
+
+    private func exportToPDF() {
+        // Create PDF document
+        let pdfMetaData = [
+            kCGPDFContextCreator: "TimeToSkill",
+            kCGPDFContextAuthor: "TimeToSkill User"
+        ]
+        let format = UIGraphicsPDFRendererFormat()
+        format.documentInfo = pdfMetaData as [String: Any]
+        
+        let pageRect = CGRect(x: 0, y: 0, width: 595.2, height: 841.8) // A4 size
+        let renderer = UIGraphicsPDFRenderer(bounds: pageRect, format: format)
+        
+        pdfData = renderer.pdfData { context in
+            context.beginPage()
+            
+            // Title
+            let titleAttributes = [
+                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 24)
+            ]
+            let titleString = NSLocalizedString("skills_report_title", comment: "")
+            titleString.draw(at: CGPoint(x: 50, y: 50), withAttributes: titleAttributes)
+            
+            // Date
+            let dateAttributes = [
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)
+            ]
+            let dateString = "Generated on: \(Date().formatted(date: .long, time: .shortened))"
+            dateString.draw(at: CGPoint(x: 50, y: 80), withAttributes: dateAttributes)
+            
+            // Skills list
+            let skillAttributes = [
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)
+            ]
+            var yPosition: CGFloat = 120
+            
+            for skill in sortedSkills {
+                let hours = Int(skill.hours)
+                let minutes = Int((skill.hours - Double(hours)) * 60)
+                let skillString = "\(skill.name): \(hours)h \(minutes)m"
+                skillString.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: skillAttributes)
+                yPosition += 30
+                
+                // Start new page if needed
+                if yPosition > pageRect.height - 100 {
+                    context.beginPage()
+                    yPosition = 50
+                }
+            }
+        }
+        
+        showingShareSheet = true
+    }
+}
+
+// Helper view for sharing
+struct ShareSheet: UIViewControllerRepresentable {
+    let items: [Any]
+    
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
+    
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }

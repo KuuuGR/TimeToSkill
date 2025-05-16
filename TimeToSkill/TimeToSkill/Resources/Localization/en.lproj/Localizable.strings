@@ -8,6 +8,11 @@
 "tracking_title" = "Skill Tracking";
 "tracking_nav_title" = "Your Skills";
 "sort_by_label" = "Sort By";
+"export_pdf_title" = "Export to PDF";
+"export_pdf_button" = "Export to PDF";
+"skills_report_title" = "Skills Progress Report";
+"options_title" = "Options";
+"fab_options" = "Show options";
 
 "sort_name_asc" = "Name ↑";
 "sort_name_desc" = "Name ↓";
