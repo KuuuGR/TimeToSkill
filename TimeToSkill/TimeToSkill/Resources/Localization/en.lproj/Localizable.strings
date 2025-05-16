@@ -10,6 +10,17 @@
 "export_pdf_button" = "Export Skills to PDF";
 "skills_report_title" = "Skills Progress Report";
 
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Time Converter";
+"Time_Converter_Hours_Label" = "🕗 Hours";
+"Time_Converter_Hours_Placeholder" = "Enter hours";
+"Time_Converter_Days24h_Label" = "🌃 Days (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Days (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Work Days (8h)";
+"Time_Converter_Years_Label" = "🎆 Years";
+"Time_Converter_Days_Placeholder" = "Calculated days";
+"Time_Converter_Calculate_Button" = "Calculate";
+
 // MARK: - StartView
 "tracking_title" = "Skill Tracking";
 "tracking_nav_title" = "Your Skills";

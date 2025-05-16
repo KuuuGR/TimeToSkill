@@ -11,6 +11,17 @@
 "export_pdf_button" = "Exportar Habilidades a PDF";
 "skills_report_title" = "Informe de Progreso de Habilidades";
 
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Conversor de Tiempo";
+"Time_Converter_Hours_Label" = "🕗 Horas";
+"Time_Converter_Hours_Placeholder" = "Introduce horas";
+"Time_Converter_Days24h_Label" = "🌃 Días (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Días (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Días laborables (8h)";
+"Time_Converter_Years_Label" = "🎆 Años";
+"Time_Converter_Days_Placeholder" = "Días calculados";
+"Time_Converter_Calculate_Button" = "Calcular";
+
 // MARK: - StartView
 "tracking_title" = "Seguimiento de Habilidades";
 "tracking_nav_title" = "Tus Habilidades";
