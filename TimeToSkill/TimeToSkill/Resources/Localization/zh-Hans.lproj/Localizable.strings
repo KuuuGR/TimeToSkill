@@ -1,15 +1,26 @@
 // Chinese (Simplified)
 
 // MARK: - MainView
-"main_manage_trackers" = "管理跟踪器";
+"main_manage_trackers" = "管理追踪器";
 "main_learning_theory" = "学习理论";
-"main_about_app" = "关于应用程序";
+"main_about_app" = "关于应用";
 
 // MARK: - OptionsView
 "options_title" = "选项";
 "options_export_section" = "导出数据";
 "export_pdf_button" = "导出技能到PDF";
 "skills_report_title" = "技能进度报告";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "时间转换器";
+"Time_Converter_Hours_Label" = "🕗 小时";
+"Time_Converter_Hours_Placeholder" = "输入小时数";
+"Time_Converter_Days24h_Label" = "🌃 天数 (24小时)";
+"Time_Converter_Days12h_Label" = "🌅 天数 (12小时)";
+"Time_Converter_Days8h_Label" = "🌇 工作日 (8小时)";
+"Time_Converter_Years_Label" = "🎆 年数";
+"Time_Converter_Days_Placeholder" = "计算出的天数";
+"Time_Converter_Calculate_Button" = "计算";
 
 // MARK: - StartView
 "tracking_title" = "技能跟踪";

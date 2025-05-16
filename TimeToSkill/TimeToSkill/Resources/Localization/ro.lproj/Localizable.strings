@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Adaugă abilitate nouă";
 "fab_view_stats" = "Vezi statistici";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Convertor de timp";
+"Time_Converter_Hours_Label" = "🕗 Ore";
+"Time_Converter_Hours_Placeholder" = "Introduceți orele";
+"Time_Converter_Days24h_Label" = "🌃 Zile (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Zile (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Zile lucrătoare (8h)";
+"Time_Converter_Years_Label" = "🎆 Ani";
+"Time_Converter_Days_Placeholder" = "Zile calculate";
+"Time_Converter_Calculate_Button" = "Calculează";

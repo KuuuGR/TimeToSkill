@@ -7,9 +7,20 @@
 
 // MARK: - OptionsView
 "options_title" = "Indstillinger";
-"options_export_section" = "Eksporter data";
-"export_pdf_button" = "Eksporter færdigheder til PDF";
-"skills_report_title" = "Rapport over færdighedsfremskridt";
+"options_export_section" = "Eksportér data";
+"export_pdf_button" = "Eksportér færdigheder til PDF";
+"skills_report_title" = "Færdighedsfremskridtsrapport";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Tidsomregner";
+"Time_Converter_Hours_Label" = "🕗 Timer";
+"Time_Converter_Hours_Placeholder" = "Indtast timer";
+"Time_Converter_Days24h_Label" = "🌃 Dage (24t)";
+"Time_Converter_Days12h_Label" = "🌅 Dage (12t)";
+"Time_Converter_Days8h_Label" = "🌇 Arbejdsdage (8t)";
+"Time_Converter_Years_Label" = "🎆 År";
+"Time_Converter_Days_Placeholder" = "Beregnede dage";
+"Time_Converter_Calculate_Button" = "Beregn";
 
 // MARK: - StartView
 "tracking_title" = "Færdighedssporing";

@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Dodaj novu vještinu";
 "fab_view_stats" = "Pogledaj statistiku";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Pretvarač vremena";
+"Time_Converter_Hours_Label" = "🕗 Sati";
+"Time_Converter_Hours_Placeholder" = "Unesite sate";
+"Time_Converter_Days24h_Label" = "🌃 Dani (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Dani (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Radni dani (8h)";
+"Time_Converter_Years_Label" = "🎆 Godine";
+"Time_Converter_Days_Placeholder" = "Izračunati dani";
+"Time_Converter_Calculate_Button" = "Izračunaj";

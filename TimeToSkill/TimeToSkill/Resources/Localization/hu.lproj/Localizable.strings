@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Új készség hozzáadása";
 "fab_view_stats" = "Statisztikák megtekintése";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Időátváltó";
+"Time_Converter_Hours_Label" = "🕗 Óra";
+"Time_Converter_Hours_Placeholder" = "Adja meg az órákat";
+"Time_Converter_Days24h_Label" = "🌃 Nap (24ó)";
+"Time_Converter_Days12h_Label" = "🌅 Nap (12ó)";
+"Time_Converter_Days8h_Label" = "🌇 Munkanap (8ó)";
+"Time_Converter_Years_Label" = "🎆 Év";
+"Time_Converter_Days_Placeholder" = "Számított napok";
+"Time_Converter_Calculate_Button" = "Számítás";

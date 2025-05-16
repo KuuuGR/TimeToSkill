@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "הוסף מיומנות חדשה";
 "fab_view_stats" = "הצג סטטיסטיקות";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "ממיר זמן";
+"Time_Converter_Hours_Label" = "🕗 שעות";
+"Time_Converter_Hours_Placeholder" = "הכנס שעות";
+"Time_Converter_Days24h_Label" = "🌃 ימים (24 שעות)";
+"Time_Converter_Days12h_Label" = "🌅 ימים (12 שעות)";
+"Time_Converter_Days8h_Label" = "🌇 ימי עבודה (8 שעות)";
+"Time_Converter_Years_Label" = "🎆 שנים";
+"Time_Converter_Days_Placeholder" = "ימים מחושבים";
+"Time_Converter_Calculate_Button" = "חשב";

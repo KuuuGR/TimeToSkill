@@ -11,6 +11,17 @@
 "export_pdf_button" = "Becerileri PDF Olarak Dışa Aktar";
 "skills_report_title" = "Beceri İlerleme Raporu";
 
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Zaman Dönüştürücü";
+"Time_Converter_Hours_Label" = "🕗 Saat";
+"Time_Converter_Hours_Placeholder" = "Saat girin";
+"Time_Converter_Days24h_Label" = "🌃 Gün (24s)";
+"Time_Converter_Days12h_Label" = "🌅 Gün (12s)";
+"Time_Converter_Days8h_Label" = "🌇 İş günü (8s)";
+"Time_Converter_Years_Label" = "🎆 Yıl";
+"Time_Converter_Days_Placeholder" = "Hesaplanan günler";
+"Time_Converter_Calculate_Button" = "Hesapla";
+
 // MARK: - StartView
 "tracking_title" = "Beceri Takibi";
 "tracking_nav_title" = "Becerilerin";

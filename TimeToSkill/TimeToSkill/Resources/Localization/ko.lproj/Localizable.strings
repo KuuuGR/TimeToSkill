@@ -11,6 +11,17 @@
 "export_pdf_button" = "스킬을 PDF로 내보내기";
 "skills_report_title" = "스킬 진행 보고서";
 
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "시간 변환기";
+"Time_Converter_Hours_Label" = "🕗 시간";
+"Time_Converter_Hours_Placeholder" = "시간 입력";
+"Time_Converter_Days24h_Label" = "🌃 일수 (24시간)";
+"Time_Converter_Days12h_Label" = "🌅 일수 (12시간)";
+"Time_Converter_Days8h_Label" = "🌇 근무일 (8시간)";
+"Time_Converter_Years_Label" = "🎆 연수";
+"Time_Converter_Days_Placeholder" = "계산된 일수";
+"Time_Converter_Calculate_Button" = "계산";
+
 // MARK: - StartView
 "tracking_title" = "스킬 추적";
 "tracking_nav_title" = "나의 스킬";

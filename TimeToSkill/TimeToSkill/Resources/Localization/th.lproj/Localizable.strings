@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "เพิ่มทักษะใหม่";
 "fab_view_stats" = "ดูสถิติ";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "เครื่องมือแปลงเวลา";
+"Time_Converter_Hours_Label" = "🕗 ชั่วโมง";
+"Time_Converter_Hours_Placeholder" = "ป้อนชั่วโมง";
+"Time_Converter_Days24h_Label" = "🌃 วัน (24 ชม.)";
+"Time_Converter_Days12h_Label" = "🌅 วัน (12 ชม.)";
+"Time_Converter_Days8h_Label" = "🌇 วันทำงาน (8 ชม.)";
+"Time_Converter_Years_Label" = "🎆 ปี";
+"Time_Converter_Days_Placeholder" = "จำนวนวันที่คำนวณได้";
+"Time_Converter_Calculate_Button" = "คำนวณ";

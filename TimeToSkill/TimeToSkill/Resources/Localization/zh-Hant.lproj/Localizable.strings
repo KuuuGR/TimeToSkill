@@ -11,6 +11,17 @@
 "export_pdf_button" = "匯出技能至 PDF";
 "skills_report_title" = "技能進度報告";
 
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "時間轉換器";
+"Time_Converter_Hours_Label" = "🕗 小時";
+"Time_Converter_Hours_Placeholder" = "輸入小時數";
+"Time_Converter_Days24h_Label" = "🌃 天數 (24小時)";
+"Time_Converter_Days12h_Label" = "🌅 天數 (12小時)";
+"Time_Converter_Days8h_Label" = "🌇 工作日 (8小時)";
+"Time_Converter_Years_Label" = "🎆 年數";
+"Time_Converter_Days_Placeholder" = "計算出的天數";
+"Time_Converter_Calculate_Button" = "計算";
+
 // MARK: - StartView
 "tracking_title" = "技能追蹤";
 "tracking_nav_title" = "你的技能";

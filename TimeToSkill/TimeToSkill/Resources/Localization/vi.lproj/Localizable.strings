@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Thêm kỹ năng mới";
 "fab_view_stats" = "Xem thống kê";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Bộ Chuyển Đổi Thời Gian";
+"Time_Converter_Hours_Label" = "🕗 Giờ";
+"Time_Converter_Hours_Placeholder" = "Nhập số giờ";
+"Time_Converter_Days24h_Label" = "🌃 Ngày (24g)";
+"Time_Converter_Days12h_Label" = "🌅 Ngày (12g)";
+"Time_Converter_Days8h_Label" = "🌇 Ngày làm việc (8g)";
+"Time_Converter_Years_Label" = "🎆 Năm";
+"Time_Converter_Days_Placeholder" = "Số ngày đã tính";
+"Time_Converter_Calculate_Button" = "Tính toán";

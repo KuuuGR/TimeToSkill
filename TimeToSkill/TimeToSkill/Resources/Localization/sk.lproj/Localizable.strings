@@ -140,3 +140,14 @@
 // MARK: - FABButton
 "fab_add_skill" = "Pridať novú zručnosť";
 "fab_view_stats" = "Zobraziť štatistiky";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Prevodník času";
+"Time_Converter_Hours_Label" = "🕗 Hodiny";
+"Time_Converter_Hours_Placeholder" = "Zadajte hodiny";
+"Time_Converter_Days24h_Label" = "🌃 Dni (24h)";
+"Time_Converter_Days12h_Label" = "🌅 Dni (12h)";
+"Time_Converter_Days8h_Label" = "🌇 Pracovné dni (8h)";
+"Time_Converter_Years_Label" = "🎆 Roky";
+"Time_Converter_Days_Placeholder" = "Vypočítané dni";
+"Time_Converter_Calculate_Button" = "Vypočítať";

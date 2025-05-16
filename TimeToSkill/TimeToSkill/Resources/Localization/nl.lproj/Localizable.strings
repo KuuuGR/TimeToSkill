@@ -9,7 +9,18 @@
 "options_title" = "Opties";
 "options_export_section" = "Gegevens exporteren";
 "export_pdf_button" = "Vaardigheden exporteren naar PDF";
-"skills_report_title" = "Vaardigheidsvoortgangsrapport";
+"skills_report_title" = "Voortgangsrapport vaardigheden";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Tijdomrekening";
+"Time_Converter_Hours_Label" = "🕗 Uren";
+"Time_Converter_Hours_Placeholder" = "Voer uren in";
+"Time_Converter_Days24h_Label" = "🌃 Dagen (24u)";
+"Time_Converter_Days12h_Label" = "🌅 Dagen (12u)";
+"Time_Converter_Days8h_Label" = "🌇 Werkdagen (8u)";
+"Time_Converter_Years_Label" = "🎆 Jaren";
+"Time_Converter_Days_Placeholder" = "Berekende dagen";
+"Time_Converter_Calculate_Button" = "Bereken";
 
 // MARK: - StartView
 "tracking_title" = "Vaardigheidstracking";
