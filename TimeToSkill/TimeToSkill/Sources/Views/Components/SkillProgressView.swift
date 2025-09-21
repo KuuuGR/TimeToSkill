@@ -27,12 +27,14 @@ struct SkillProgressView: View {
             return .warningDark
         case 1000..<10000:
             return .danger
+        case 10000..<100000:
+            return .purple
         default:
-            return .dangerDark
+            return .black
         }
     }
 
-    /// Computes progress within the current stage
+    /// Computes cumulative progress within the current stage
     private var stageProgress: Double {
         switch skill.hours {
         case ..<0:
@@ -40,11 +42,13 @@ struct SkillProgressView: View {
         case 0..<21:
             return skill.hours / 21
         case 21..<100:
-            return (skill.hours - 21) / (100 - 21)
+            return skill.hours / 100
         case 100..<1000:
-            return (skill.hours - 100) / (1000 - 100)
+            return skill.hours / 1000
         case 1000..<10000:
-            return (skill.hours - 1000) / (10000 - 1000)
+            return skill.hours / 10000
+        case 10000..<100000:
+            return skill.hours / 100000
         default:
             return 1
         }

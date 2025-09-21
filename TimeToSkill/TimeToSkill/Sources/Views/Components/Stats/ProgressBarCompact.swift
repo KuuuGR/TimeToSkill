@@ -19,7 +19,8 @@ struct ProgressBarCompact: View {
         case 21..<100: return .infoDark
         case 100..<1000: return .warningDark
         case 1000..<10000: return .danger
-        default: return .dangerDark
+        case 10000..<100000: return .purple
+        default: return .black
         }
     }
 
@@ -27,9 +28,10 @@ struct ProgressBarCompact: View {
         switch hours {
         case ..<0: return 0
         case 0..<21: return hours / 21
-        case 21..<100: return (hours - 21) / (100 - 21)
-        case 100..<1000: return (hours - 100) / (1000 - 100)
-        case 1000..<10000: return (hours - 1000) / (10000 - 1000)
+        case 21..<100: return hours / 100
+        case 100..<1000: return hours / 1000
+        case 1000..<10000: return hours / 10000
+        case 10000..<100000: return hours / 100000
         default: return 1
         }
     }
