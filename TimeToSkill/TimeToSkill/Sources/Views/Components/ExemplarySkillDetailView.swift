@@ -18,6 +18,7 @@ struct ExemplarySkillDetailView: View {
     @State private var verificationError = false
     @State private var generatedVerificationCode: String = ""
     @State private var currentVerificationCode: String = ""
+    @State private var showUpdateSection: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -30,6 +31,16 @@ struct ExemplarySkillDetailView: View {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Close") {
                         dismiss()
+                    }
+                }
+                ToolbarItem(placement: .primaryAction) {
+                    // Small gear button on the right to reveal Update & Verify
+                    if skill.isObtained {
+                        Button(action: { withAnimation { showUpdateSection.toggle() } }) {
+                            Image(systemName: "gearshape")
+                                .imageScale(.medium)
+                        }
+                        .accessibilityLabel("Change rating")
                     }
                 }
             }
@@ -169,39 +180,41 @@ struct ExemplarySkillDetailView: View {
                         .background(Color.blue.opacity(0.05))
                         .cornerRadius(12)
                         
-                        // Re-evaluation section (always available)
-                        VStack(spacing: 20) {
-                            Text("Update Your Rating")
-                                .font(.headline)
-                                .fontWeight(.semibold)
-                            
-                            VStack(spacing: 16) {
-                                StarRating(rating: selectedRating, interactive: true) { rating in
-                                    selectedRating = rating
+                        // Re-evaluation section (revealed via top-right button)
+                        if showUpdateSection {
+                            VStack(spacing: 20) {
+                                Text("Update Your Rating")
+                                    .font(.headline)
+                                    .fontWeight(.semibold)
+                                
+                                VStack(spacing: 16) {
+                                    StarRating(rating: selectedRating, interactive: true) { rating in
+                                        selectedRating = rating
+                                    }
+                                    
+                                    Text(selectedRating == 0 ? "No Stars" : "\(selectedRating) Star\(selectedRating > 1 ? "s" : "")")
+                                        .font(.subheadline)
+                                        .fontWeight(.medium)
+                                        .foregroundColor(.blue)
                                 }
                                 
-                                Text(selectedRating == 0 ? "No Stars" : "\(selectedRating) Star\(selectedRating > 1 ? "s" : "")")
-                                    .font(.subheadline)
-                                    .fontWeight(.medium)
-                                    .foregroundColor(.blue)
+                                Button("Update & Verify") {
+                                    currentVerificationCode = ""
+                                    generatedVerificationCode = ""
+                                    verificationCode = ""
+                                    showingVerification = true
+                                }
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .background(Color.blue)
+                                .cornerRadius(12)
                             }
-                            
-                            Button("Update & Verify") {
-                                currentVerificationCode = ""
-                                generatedVerificationCode = ""
-                                verificationCode = ""
-                                showingVerification = true
-                            }
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.blue)
+                            .background(Color.gray.opacity(0.05))
                             .cornerRadius(12)
                         }
-                        .padding()
-                        .background(Color.gray.opacity(0.05))
-                        .cornerRadius(12)
                     } else {
                         // Evaluation section
                         VStack(spacing: 20) {
