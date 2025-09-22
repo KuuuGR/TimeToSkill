@@ -7,9 +7,11 @@ final class Counter {
     var title: String
     var category: String
     var value: Int
-    var step: Int // increment/decrement per tap
-    var allowDecrement: Bool
-    var thresholds: [Int] // e.g. [100, 200, 500, 10000, 30000, 3000000]
+    var step: Int // legacy default step
+    var incrementStep: Int
+    var decrementStep: Int
+    var allowDecrement: Bool // legacy, no UI; decrement allowed when decrementStep > 0
+    var thresholds: [Int]
     var createdAt: Date
     var updatedAt: Date
     
@@ -27,6 +29,8 @@ final class Counter {
         self.category = category
         self.value = max(0, value)
         self.step = max(1, step)
+        self.incrementStep = max(1, step)
+        self.decrementStep = max(0, step)
         self.allowDecrement = allowDecrement
         self.thresholds = thresholds.sorted()
         self.createdAt = Date()

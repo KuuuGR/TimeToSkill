@@ -3,7 +3,7 @@ import SwiftData
 
 struct ManageCountersView: View {
     @Environment(\.modelContext) private var context
-    @Query(sort: \Counter.updatedAt, order: .reverse) private var counters: [Counter]
+    @Query(sort: \Counter.title) private var counters: [Counter]
     @State private var showingNew = false
     
     private func haptic(_ style: UIImpactFeedbackGenerator.FeedbackStyle = .medium) {
@@ -14,7 +14,7 @@ struct ManageCountersView: View {
     
     private func adjust(_ counter: Counter, by delta: Int) {
         let newValue = counter.value + delta
-        if delta < 0 && !counter.allowDecrement { return }
+        if delta < 0 && counter.decrementStep == 0 { return }
         if newValue < 0 { return }
         counter.value = newValue
         counter.updatedAt = Date()
@@ -28,17 +28,16 @@ struct ManageCountersView: View {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
                         ForEach(counters) { counter in
                             ZStack(alignment: .topTrailing) {
-                                // Tile content
                                 VStack(spacing: 8) {
                                     CounterRing(value: counter.value, stageMax: counter.currentStageMax)
                                         .frame(width: 72, height: 72)
                                         .contentShape(Circle())
                                         .onTapGesture {
-                                            adjust(counter, by: counter.step)
+                                            adjust(counter, by: counter.incrementStep)
                                             haptic(.light)
                                         }
                                         .onLongPressGesture(minimumDuration: 0.35) {
-                                            adjust(counter, by: -counter.step)
+                                            adjust(counter, by: -counter.decrementStep)
                                             haptic(.rigid)
                                         }
                                     Text(counter.title)
@@ -52,7 +51,6 @@ struct ManageCountersView: View {
                                 .padding(8)
                                 .background(RoundedRectangle(cornerRadius: 12).fill(Color.gray.opacity(0.06)))
                                 
-                                // Gear button to open settings
                                 NavigationLink(destination: CounterDetailView(counter: counter)) {
                                     Image(systemName: "gearshape")
                                         .imageScale(.small)
@@ -99,8 +97,7 @@ struct NewCounterSheet: View {
             Form {
                 Section("Details") {
                     TextField("Title", text: $title)
-                    Toggle("Allow Decrement", isOn: $allowDecrement)
-                    Stepper("Step: \(step)", value: $step, in: 1...1000)
+                    Stepper("Default Step: \(step)", value: $step, in: 1...1000)
                 }
                 Section("Thresholds (comma-separated)") {
                     TextField("e.g. 100,200,500,10000", text: $thresholdsText)
@@ -112,7 +109,7 @@ struct NewCounterSheet: View {
                 ToolbarItem(placement: .primaryAction) {
                     Button("Create") {
                         let limits = thresholdsText.split(separator: ",").compactMap { Int($0.trimmingCharacters(in: .whitespaces)) }.sorted()
-                        onCreate(title, step, allowDecrement, limits)
+                        onCreate(title, step, true, limits)
                         dismiss()
                     }
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
@@ -124,6 +121,7 @@ struct NewCounterSheet: View {
 
 struct CounterDetailView: View {
     @Bindable var counter: Counter
+    @State private var valueText: String = ""
     
     var body: some View {
         Form {
@@ -141,15 +139,28 @@ struct CounterDetailView: View {
                     Text("No thresholds set")
                         .foregroundColor(.secondary)
                 }
+                Button("Reset to 0", role: .destructive) { counter.value = 0; counter.updatedAt = Date() }
             }
             Section("Configuration") {
                 TextField("Title", text: $counter.title)
-                Stepper("Step: \(counter.step)", value: $counter.step, in: 1...1000)
-                Toggle("Allow Decrement", isOn: $counter.allowDecrement)
+                Stepper("Increment Step: \(counter.incrementStep)", value: $counter.incrementStep, in: 1...1000)
+                Stepper("Decrement Step: \(counter.decrementStep)", value: $counter.decrementStep, in: 0...1000)
                 NavigationLink("Edit Thresholds") { ThresholdEditor(thresholds: $counter.thresholds) }
+            }
+            Section("Set Value Manually") {
+                HStack {
+                    TextField("0–1000000", text: $valueText)
+                        .keyboardType(.numberPad)
+                    Button("Apply") {
+                        if let v = Int(valueText) { counter.value = max(0, v); counter.updatedAt = Date() }
+                        valueText = ""
+                    }
+                    .disabled(Int(valueText) == nil)
+                }
             }
         }
         .navigationTitle(counter.title)
+        .onAppear { valueText = "\(counter.value)" }
     }
 }
 
