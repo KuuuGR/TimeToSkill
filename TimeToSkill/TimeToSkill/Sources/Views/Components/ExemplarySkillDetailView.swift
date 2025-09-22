@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ExemplarySkillDetailView: View {
     let skill: ExemplarySkill
-    let onEvaluate: (Int) -> Void
+    let onEvaluate: (Int, String) -> Void
     
     @Environment(\.dismiss) private var dismiss
     @State private var selectedRating: Int = 1
@@ -138,28 +138,28 @@ struct ExemplarySkillDetailView: View {
                                 }
                             }
                             
-                            // Achievement History - temporarily disabled
-                            // if !skill.achievementHistory.isEmpty {
-                            //     VStack(alignment: .leading, spacing: 8) {
-                            //         Text("Achievement History")
-                            //             .font(.subheadline)
-                            //             .fontWeight(.semibold)
-                            //             .foregroundColor(.primary)
-                            //         
-                            //         ForEach(skill.achievementHistory.indices, id: \.self) { index in
-                            //             let record = skill.achievementHistory[index]
-                            //             HStack {
-                            //                 StarRating(rating: record.stars, interactive: false)
-                            //                 
-                            //                 Spacer()
-                            //                 
-                            //                 Text(record.achievedAt, style: .date)
-                            //                     .font(.caption)
-                            //                     .foregroundColor(.secondary)
-                            //             }
-                            //         }
-                            //     }
-                            // }
+                            // Achievement History
+                            if !skill.achievementHistory.isEmpty {
+                                VStack(alignment: .leading, spacing: 8) {
+                                    Text("Achievement History")
+                                        .font(.subheadline)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.primary)
+                                    
+                                    ForEach(skill.achievementHistory.indices, id: \.self) { index in
+                                        let record = skill.achievementHistory[index]
+                                        HStack {
+                                            StarRating(rating: record.stars, interactive: false)
+                                            
+                                            Spacer()
+                                            
+                                            Text(record.achievedAt, style: .date)
+                                                .font(.caption)
+                                                .foregroundColor(.secondary)
+                                        }
+                                    }
+                                }
+                            }
                         }
                         .padding()
                         .background(Color.blue.opacity(0.05))
@@ -226,7 +226,7 @@ struct ExemplarySkillDetailView: View {
         // Use the stored generated code
         if verificationCode == currentVerificationCode {
             print("  SUCCESS: Codes match!")
-            onEvaluate(selectedRating)
+            onEvaluate(selectedRating, currentVerificationCode)
             dismiss()
         } else {
             print("  FAILED: Codes don't match")
@@ -393,6 +393,6 @@ struct VerificationView: View {
             category: "Music",
             difficultyLevel: 3
         ),
-        onEvaluate: { _ in }
+        onEvaluate: { _, _ in }
     )
 }

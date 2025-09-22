@@ -21,7 +21,7 @@ final class ExemplarySkill {
     var obtainedAt: Date?
     var verificationCode: String? // The password-like code used for verification
     var isObtained: Bool
-    // var achievementHistory: [AchievementRecord] = [] // Track all achievement evaluations - temporarily disabled
+    var achievementHistory: [AchievementRecord] = [] // Track all evaluations
     
     init(
         id: UUID = UUID(),
@@ -45,7 +45,7 @@ final class ExemplarySkill {
         self.obtainedAt = obtainedAt
         self.verificationCode = verificationCode
         self.isObtained = isObtained
-        // self.achievementHistory = [] // temporarily disabled
+        self.achievementHistory = []
     }
 }
 

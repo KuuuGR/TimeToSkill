@@ -60,8 +60,8 @@ struct ExemplarySkillsView: View {
             .sheet(item: $selectedSkill) { skill in
                 ExemplarySkillDetailView(
                     skill: skill,
-                    onEvaluate: { rating in
-                        evaluateSkill(skill, rating: rating)
+                    onEvaluate: { rating, verificationCode in
+                        evaluateSkill(skill, rating: rating, verificationCode: verificationCode)
                     }
                 )
             }
@@ -73,7 +73,7 @@ struct ExemplarySkillsView: View {
         }
     }
     
-    private func evaluateSkill(_ skill: ExemplarySkill, rating: Int) {
+    private func evaluateSkill(_ skill: ExemplarySkill, rating: Int, verificationCode: String) {
         // Allow re-evaluation of already obtained skills without daily limit
         let isReEvaluation = skill.isObtained
         
@@ -85,14 +85,14 @@ struct ExemplarySkillsView: View {
             }
         }
         
-        // Generate verification code
-        let verificationCode = generateVerificationCode()
-        
         // Update skill
         skill.userRating = rating
         skill.obtainedAt = Date()
         skill.verificationCode = verificationCode
         skill.isObtained = true
+        
+        // Append achievement history record
+        skill.achievementHistory.append(AchievementRecord(stars: rating, verificationCode: verificationCode))
         
         // Only update daily count for new evaluations
         if !isReEvaluation {
