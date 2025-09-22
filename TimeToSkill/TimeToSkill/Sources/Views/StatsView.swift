@@ -26,6 +26,7 @@ struct StatsView: View {
                     TopSkillsView(skills: skills)
                     TrackedTimeView(skills: skills)
                     ActivityLogView(skills: skills)
+                    GlobalTimeDistributionView()
                 }
                 .padding()
             }
