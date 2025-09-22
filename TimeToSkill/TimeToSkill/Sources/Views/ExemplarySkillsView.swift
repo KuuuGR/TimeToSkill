@@ -17,16 +17,72 @@ struct ExemplarySkillsView: View {
     @State private var showingDailyLimitAlert = false
     @State private var dailyEvaluationsCount = 0
     
+    private enum SortOption: String, CaseIterable {
+        case name = "Name"
+        case category = "Category"
+        case starsAsc = "Stars ↑"
+        case starsDesc = "Stars ↓"
+        case difficulty = "Difficulty"
+    }
+    
+    @AppStorage("ExemplarySkillsSortOption") private var sortOptionRaw: String = SortOption.name.rawValue
+    private var sortOption: SortOption {
+        get { SortOption(rawValue: sortOptionRaw) ?? .name }
+        set { sortOptionRaw = newValue.rawValue }
+    }
+    
+    private var displayedSkills: [ExemplarySkill] {
+        switch sortOption {
+        case .name:
+            return exemplarySkills.sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
+        case .category:
+            return exemplarySkills.sorted {
+                if $0.category.caseInsensitiveCompare($1.category) == .orderedSame {
+                    return $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending
+                }
+                return $0.category.localizedCaseInsensitiveCompare($1.category) == .orderedAscending
+            }
+        case .starsAsc:
+            return exemplarySkills.sorted {
+                let a = $0.userRating ?? 0
+                let b = $1.userRating ?? 0
+                if a == b { return $0.title < $1.title }
+                return a < b
+            }
+        case .starsDesc:
+            return exemplarySkills.sorted {
+                let a = $0.userRating ?? 0
+                let b = $1.userRating ?? 0
+                if a == b { return $0.title < $1.title }
+                return a > b
+            }
+        case .difficulty:
+            return exemplarySkills.sorted {
+                if $0.difficultyLevel == $1.difficultyLevel { return $0.title < $1.title }
+                return $0.difficultyLevel < $1.difficultyLevel
+            }
+        }
+    }
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
-                // Header with daily limit info
+                // Header with daily limit info and sorting
                 HStack {
                     Text("Daily Evaluations: \(dailyEvaluationsCount)/\(ExemplarySkillConstants.dailyEvaluationLimit)")
                         .font(.caption)
                         .foregroundColor(.secondary)
                     
                     Spacer()
+                    
+                    Menu {
+                        ForEach(SortOption.allCases, id: \.self) { option in
+                            Button(option.rawValue) { sortOptionRaw = option.rawValue }
+                        }
+                    } label: {
+                        Label("Sort: \(sortOption.rawValue)", systemImage: "arrow.up.arrow.down")
+                            .font(.caption)
+                    }
                     
                     Button("Reset Daily Limit") {
                         resetDailyLimit()
@@ -40,7 +96,7 @@ struct ExemplarySkillsView: View {
                 // Skills grid
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
-                        ForEach(exemplarySkills) { skill in
+                        ForEach(displayedSkills) { skill in
                             ExemplarySkillCard(skill: skill) {
                                 selectedSkill = skill
                             }
