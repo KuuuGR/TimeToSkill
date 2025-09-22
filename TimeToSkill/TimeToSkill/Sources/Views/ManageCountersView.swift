@@ -139,7 +139,7 @@ struct CounterDetailView: View {
             }
             Section("Configuration") {
                 TextField("Title", text: $counter.title)
-                Stepper("Step: \(counter.step)", value: $counter.step, in: 1...1000)
+                Stepper("Step: \(counter.step)", value: $counter.step, in: -1000...1000)
                 NavigationLink("Edit Thresholds") { ThresholdEditor(thresholds: $counter.thresholds) }
             }
             Section("Set Value Manually") {

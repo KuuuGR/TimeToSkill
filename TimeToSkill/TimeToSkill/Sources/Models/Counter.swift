@@ -7,7 +7,7 @@ final class Counter {
     var title: String
     var category: String
     var value: Int // can be negative or positive
-    var step: Int // magnitude per tap (positive); long-press applies negative
+    var step: Int // signed per tap value
     var thresholds: [Int]
     var createdAt: Date
     var updatedAt: Date
@@ -24,7 +24,7 @@ final class Counter {
         self.title = title
         self.category = category
         self.value = value
-        self.step = max(1, step)
+        self.step = step // allow negative or positive
         self.thresholds = thresholds.sorted()
         self.createdAt = Date()
         self.updatedAt = Date()
