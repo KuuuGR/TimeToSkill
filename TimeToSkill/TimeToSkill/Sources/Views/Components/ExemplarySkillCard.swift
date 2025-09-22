@@ -26,17 +26,6 @@ struct ExemplarySkillCard: View {
                                 .fill(skill.isObtained ? Color.blue.opacity(0.1) : Color.gray.opacity(0.1))
                         )
                     
-                    // Star ribbon overlay
-                    if skill.isObtained {
-                        VStack {
-                            Spacer()
-                            HStack {
-                                Spacer()
-                                StarRibbon(rating: skill.userRating ?? skill.difficultyLevel)
-                                    .offset(x: 8, y: 8)
-                            }
-                        }
-                    }
                 }
                 
                 // Title
@@ -55,6 +44,11 @@ struct ExemplarySkillCard: View {
                     .background(Color.secondary.opacity(0.2))
                     .foregroundColor(.secondary)
                     .cornerRadius(4)
+                
+                // Star ribbon - positioned under the category
+                if skill.isObtained {
+                    StarRibbon(rating: max(0, min(3, skill.userRating ?? skill.difficultyLevel)))
+                }
             }
             .padding(8)
             .background(
@@ -75,17 +69,17 @@ struct StarRibbon: View {
     
     var body: some View {
         ZStack {
-            // Ribbon background
+            // Ribbon background - more transparent
             RoundedRectangle(cornerRadius: 8)
-                .fill(Color.yellow.opacity(0.9))
-                .frame(width: 24, height: 16)
+                .fill(Color.black.opacity(0.3))
+                .frame(width: 44, height: 20)
             
             // Stars
-            HStack(spacing: 2) {
+            HStack(spacing: 3) {
                 ForEach(1...3, id: \.self) { star in
                     Image(systemName: star <= rating ? "star.fill" : "star")
-                        .font(.system(size: 8))
-                        .foregroundColor(star <= rating ? .orange : .gray)
+                        .font(.system(size: star == 2 ? 16 : 12)) // Center star (2) is bigger
+                        .foregroundColor(star <= rating ? .yellow : .white.opacity(0.5))
                 }
             }
         }

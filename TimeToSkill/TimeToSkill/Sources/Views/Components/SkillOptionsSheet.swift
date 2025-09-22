@@ -149,7 +149,9 @@ struct SkillOptionsSheet: View {
         let hours = Double(adjustHours) ?? 0
         let minutes = Double(adjustMinutes) ?? 0
         let totalHours = hours + (minutes / 60.0)
-        guard totalHours != 0 else { return }
+        
+        // Guard against NaN, infinite values, and zero change
+        guard totalHours != 0 && totalHours.isFinite && !totalHours.isNaN else { return }
 
         skill.hours += totalHours
         adjustHours = ""

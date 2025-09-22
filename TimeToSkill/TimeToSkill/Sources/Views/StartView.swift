@@ -112,7 +112,15 @@ struct StartView: View {
     private func toggleTimer(for skill: Skill) {
         if let start = skill.activeStart {
             let elapsed = Date().timeIntervalSince(start)
-            skill.hours += elapsed / 3600
+            let hoursToAdd = elapsed / 3600
+            
+            // Guard against NaN and infinite values
+            guard hoursToAdd.isFinite && !hoursToAdd.isNaN && hoursToAdd >= 0 else {
+                skill.activeStart = nil
+                return
+            }
+            
+            skill.hours += hoursToAdd
             skill.activeStart = nil
         } else {
             skill.activeStart = Date()

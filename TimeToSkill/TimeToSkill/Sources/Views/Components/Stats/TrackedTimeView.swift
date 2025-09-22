@@ -53,11 +53,25 @@ struct TrackedTimeView: View {
     }
 
     private var totalHours: Double {
-        max(skills.reduce(0) { $0 + $1.hours }, 0.01)
+        let total = skills.reduce(0) { $0 + $1.hours }
+        // Guard against NaN and ensure minimum value
+        guard total.isFinite && !total.isNaN else {
+            return 0.01
+        }
+        return max(total, 0.01)
     }
 
     private func percentageLabel(for hours: Double) -> String {
+        // Guard against NaN and division by zero
+        guard hours.isFinite && !hours.isNaN && totalHours > 0 else {
+            return "0%"
+        }
+        
         let percentage = hours / totalHours * 100
+        guard percentage.isFinite && !percentage.isNaN else {
+            return "0%"
+        }
+        
         return String(format: "%.0f%%", percentage)
     }
 }

@@ -20,7 +20,8 @@ final class Skill {
     init(id: UUID = UUID(), name: String, hours: Double = 0) {
         self.id = id
         self.name = name
-        self.hours = hours
+        // Guard against NaN and infinite values
+        self.hours = hours.isFinite && !hours.isNaN ? hours : 0
         self.lastUpdated = Date()
     }
 }

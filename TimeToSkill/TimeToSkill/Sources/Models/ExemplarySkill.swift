@@ -39,7 +39,7 @@ final class ExemplarySkill {
         self.skillDescription = skillDescription
         self.imageName = imageName
         self.category = category
-        self.difficultyLevel = difficultyLevel
+        self.difficultyLevel = max(1, min(3, difficultyLevel))
         self.userRating = userRating
         self.obtainedAt = obtainedAt
         self.verificationCode = verificationCode

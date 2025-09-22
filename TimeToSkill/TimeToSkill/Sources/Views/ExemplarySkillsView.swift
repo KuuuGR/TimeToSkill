@@ -10,7 +10,7 @@ import SwiftData
 
 struct ExemplarySkillsView: View {
     @Environment(\.modelContext) private var context
-    @Query private var exemplarySkills: [ExemplarySkill]
+    @State private var exemplarySkills: [ExemplarySkill] = []
     
     @State private var selectedSkill: ExemplarySkill?
     @State private var showingEvaluationSheet = false
@@ -52,6 +52,7 @@ struct ExemplarySkillsView: View {
             .navigationTitle("Exemplary Skills")
             .onAppear {
                 loadDailyEvaluationsCount()
+                loadExemplarySkills()
                 if exemplarySkills.isEmpty {
                     createSampleSkills()
                 }
@@ -73,9 +74,15 @@ struct ExemplarySkillsView: View {
     }
     
     private func evaluateSkill(_ skill: ExemplarySkill, rating: Int) {
-        guard dailyEvaluationsCount < ExemplarySkillConstants.dailyEvaluationLimit else {
-            showingDailyLimitAlert = true
-            return
+        // Allow re-evaluation of already obtained skills without daily limit
+        let isReEvaluation = skill.isObtained
+        
+        if !isReEvaluation {
+            // Only check daily limit for new evaluations
+            guard dailyEvaluationsCount < ExemplarySkillConstants.dailyEvaluationLimit else {
+                showingDailyLimitAlert = true
+                return
+            }
         }
         
         // Generate verification code
@@ -87,10 +94,12 @@ struct ExemplarySkillsView: View {
         skill.verificationCode = verificationCode
         skill.isObtained = true
         
-        // Update daily count
-        dailyEvaluationsCount += 1
-        UserDefaults.standard.set(dailyEvaluationsCount, forKey: "dailyEvaluationsCount")
-        UserDefaults.standard.set(Date(), forKey: "lastEvaluationDate")
+        // Only update daily count for new evaluations
+        if !isReEvaluation {
+            dailyEvaluationsCount += 1
+            UserDefaults.standard.set(dailyEvaluationsCount, forKey: "dailyEvaluationsCount")
+            UserDefaults.standard.set(Date(), forKey: "lastEvaluationDate")
+        }
         
         try? context.save()
     }
@@ -121,6 +130,16 @@ struct ExemplarySkillsView: View {
         dailyEvaluationsCount = 0
         UserDefaults.standard.set(0, forKey: "dailyEvaluationsCount")
         UserDefaults.standard.set(Date(), forKey: "lastEvaluationDate")
+    }
+    
+    private func loadExemplarySkills() {
+        do {
+            let descriptor = FetchDescriptor<ExemplarySkill>()
+            exemplarySkills = try context.fetch(descriptor)
+        } catch {
+            print("Error loading exemplary skills: \(error)")
+            exemplarySkills = []
+        }
     }
     
     private func createSampleSkills() {

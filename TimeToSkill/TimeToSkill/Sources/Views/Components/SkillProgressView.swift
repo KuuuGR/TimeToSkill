@@ -36,19 +36,26 @@ struct SkillProgressView: View {
 
     /// Computes cumulative progress within the current stage
     private var stageProgress: Double {
-        switch skill.hours {
+        let hours = skill.hours
+        
+        // Guard against NaN and infinite values
+        guard hours.isFinite && !hours.isNaN else {
+            return 0
+        }
+        
+        switch hours {
         case ..<0:
             return 0
         case 0..<21:
-            return skill.hours / 21
+            return hours / 21
         case 21..<100:
-            return skill.hours / 100
+            return hours / 100
         case 100..<1000:
-            return skill.hours / 1000
+            return hours / 1000
         case 1000..<10000:
-            return skill.hours / 10000
+            return hours / 10000
         case 10000..<100000:
-            return skill.hours / 100000
+            return hours / 100000
         default:
             return 1
         }

@@ -25,6 +25,11 @@ struct ProgressBarCompact: View {
     }
 
     var progress: Double {
+        // Guard against NaN and infinite values
+        guard hours.isFinite && !hours.isNaN else {
+            return 0
+        }
+        
         switch hours {
         case ..<0: return 0
         case 0..<21: return hours / 21

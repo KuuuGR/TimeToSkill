@@ -16,6 +16,7 @@ struct ExemplarySkillDetailView: View {
     @State private var verificationCode: String = ""
     @State private var showingVerification = false
     @State private var verificationError = false
+    @State private var generatedVerificationCode: String = ""
     
     var body: some View {
         NavigationStack {
@@ -34,6 +35,7 @@ struct ExemplarySkillDetailView: View {
             .sheet(isPresented: $showingVerification) {
                 VerificationView(
                     verificationCode: $verificationCode,
+                    generatedCode: generatedVerificationCode.isEmpty ? generateVerificationCode() : generatedVerificationCode,
                     onVerify: {
                         verifyAndEvaluate()
                     },
@@ -149,13 +151,15 @@ struct ExemplarySkillDetailView: View {
                                     selectedRating = rating
                                 }
                                 
-                                Text("\(selectedRating) Star\(selectedRating > 1 ? "s" : "")")
+                                Text(selectedRating == 0 ? "No Stars" : "\(selectedRating) Star\(selectedRating > 1 ? "s" : "")")
                                     .font(.subheadline)
                                     .fontWeight(.medium)
                                     .foregroundColor(.blue)
                             }
                             
                             Button("Evaluate My Skill") {
+                                generatedVerificationCode = generateVerificationCode()
+                                verificationCode = "" // Clear previous input
                                 showingVerification = true
                             }
                             .font(.headline)
@@ -176,27 +180,35 @@ struct ExemplarySkillDetailView: View {
     }
     
     private func verifyAndEvaluate() {
+        print("Verification attempt:")
+        print("  User input: '\(verificationCode)'")
+        print("  Expected: '\(generatedVerificationCode)'")
+        print("  Length check: \(verificationCode.count) >= \(ExemplarySkillConstants.verificationCodeLength)")
+        
         guard verificationCode.count >= ExemplarySkillConstants.verificationCodeLength else {
+            print("  FAILED: Length too short")
             verificationError = true
             return
         }
         
-        // Generate the expected verification code (same as in main view)
-        let expectedCode = generateVerificationCode()
-        
-        if verificationCode == expectedCode {
+        // Use the stored generated code
+        if verificationCode == generatedVerificationCode {
+            print("  SUCCESS: Codes match!")
             onEvaluate(selectedRating)
             dismiss()
         } else {
+            print("  FAILED: Codes don't match")
             verificationError = true
         }
     }
     
     private func generateVerificationCode() -> String {
         let characters = Array(ExemplarySkillConstants.allowedCharacters)
-        return String((0..<ExemplarySkillConstants.verificationCodeLength).map { _ in
+        let code = String((0..<ExemplarySkillConstants.verificationCodeLength).map { _ in
             characters.randomElement()!
         })
+        print("Generated verification code: \(code)")
+        return code
     }
 }
 
@@ -216,7 +228,12 @@ struct StarRating: View {
             ForEach(1...3, id: \.self) { star in
                 Button(action: {
                     if interactive {
-                        onRatingChanged?(star)
+                        // Allow clicking on filled star to set to 0, or set to star number
+                        if star == rating {
+                            onRatingChanged?(0) // Clicking filled star sets to 0
+                        } else {
+                            onRatingChanged?(star)
+                        }
                     }
                 }) {
                     Image(systemName: star <= rating ? "star.fill" : "star")
@@ -228,14 +245,22 @@ struct StarRating: View {
             }
         }
     }
+    
+    private func generateVerificationCode() -> String {
+        let characters = Array(ExemplarySkillConstants.allowedCharacters)
+        let code = String((0..<ExemplarySkillConstants.verificationCodeLength).map { _ in
+            characters.randomElement()!
+        })
+        print("Generated verification code: \(code)")
+        return code
+    }
 }
 
 struct VerificationView: View {
     @Binding var verificationCode: String
+    let generatedCode: String
     let onVerify: () -> Void
     let onCancel: () -> Void
-    
-    @State private var generatedCode: String = ""
     @State private var showingError = false
     
     var body: some View {
@@ -300,7 +325,7 @@ struct VerificationView: View {
             .navigationTitle("Verification")
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
-                generatedCode = generateVerificationCode()
+                print("VerificationView received code: '\(generatedCode)'")
             }
             .alert("Invalid Code", isPresented: $showingError) {
                 Button("OK") { }
@@ -312,9 +337,11 @@ struct VerificationView: View {
     
     private func generateVerificationCode() -> String {
         let characters = Array(ExemplarySkillConstants.allowedCharacters)
-        return String((0..<ExemplarySkillConstants.verificationCodeLength).map { _ in
+        let code = String((0..<ExemplarySkillConstants.verificationCodeLength).map { _ in
             characters.randomElement()!
         })
+        print("Generated verification code: \(code)")
+        return code
     }
 }
 
