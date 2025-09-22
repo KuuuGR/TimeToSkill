@@ -121,6 +121,11 @@ struct StartView: View {
             }
             
             skill.hours += hoursToAdd
+            // Persist interval entry (minutes)
+            let minutes = hoursToAdd * 60.0
+            let entry = TimeIntervalEntry(skillId: skill.id, durationMinutes: minutes, source: .timer)
+            context.insert(entry)
+            
             skill.activeStart = nil
         } else {
             skill.activeStart = Date()

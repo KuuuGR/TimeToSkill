@@ -93,6 +93,10 @@ struct SkillOptionsSheet: View {
                     }
                 }
 
+                Section(header: Text("Time Distribution")) {
+                    NavigationLink("View Distribution") { TimeDistributionView(skill: skill) }
+                }
+
                 Section(header: Text(LocalizedStringKey("reset_section"))) {
                     Button(LocalizedStringKey("reset_progress"), role: .destructive) {
                         showResetConfirmation = true
@@ -154,6 +158,10 @@ struct SkillOptionsSheet: View {
         guard totalHours != 0 && totalHours.isFinite && !totalHours.isNaN else { return }
 
         skill.hours += totalHours
+        // Persist interval entry as absolute minutes for distribution
+        let entry = TimeIntervalEntry(skillId: skill.id, durationMinutes: abs(totalHours) * 60.0, source: .manual)
+        context.insert(entry)
+        
         adjustHours = ""
         adjustMinutes = ""
         showSuccessMessage = true
