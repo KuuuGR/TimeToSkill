@@ -12,11 +12,19 @@ import SwiftData
 @Model
 final class ExemplarySkill {
     @Attribute(.unique) var id: UUID
+    // Catalog identity
+    var catalogID: String? // Stable id for catalog items; nil for user-created
+    var isUserCreated: Bool = false
+    var isDeprecated: Bool = false
+    
+    // Catalog fields (safe to update by seeder)
     var title: String
     var skillDescription: String
     var imageName: String
     var category: String
     var difficultyLevel: Int // 1-3 stars
+    
+    // User fields (never overwritten by seeder)
     var userRating: Int? // 1-3 stars (user's self-evaluation)
     var obtainedAt: Date?
     var verificationCode: String? // The password-like code used for verification
@@ -25,6 +33,9 @@ final class ExemplarySkill {
     
     init(
         id: UUID = UUID(),
+        catalogID: String? = nil,
+        isUserCreated: Bool = false,
+        isDeprecated: Bool = false,
         title: String,
         skillDescription: String,
         imageName: String,
@@ -36,6 +47,9 @@ final class ExemplarySkill {
         isObtained: Bool = false
     ) {
         self.id = id
+        self.catalogID = catalogID
+        self.isUserCreated = isUserCreated
+        self.isDeprecated = isDeprecated
         self.title = title
         self.skillDescription = skillDescription
         self.imageName = imageName

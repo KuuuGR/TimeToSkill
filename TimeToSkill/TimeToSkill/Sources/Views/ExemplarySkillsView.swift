@@ -10,7 +10,7 @@ import SwiftData
 
 struct ExemplarySkillsView: View {
     @Environment(\.modelContext) private var context
-    @State private var exemplarySkills: [ExemplarySkill] = []
+    @Query(sort: \ExemplarySkill.title) private var exemplarySkills: [ExemplarySkill]
     
     @State private var selectedSkill: ExemplarySkill?
     @State private var showingEvaluationSheet = false
@@ -52,10 +52,7 @@ struct ExemplarySkillsView: View {
             .navigationTitle("Exemplary Skills")
             .onAppear {
                 loadDailyEvaluationsCount()
-                loadExemplarySkills()
-                if exemplarySkills.isEmpty {
-                    createSampleSkills()
-                }
+                SkillSeeder.seedIfNeeded(context: context)
             }
             .sheet(item: $selectedSkill) { skill in
                 ExemplarySkillDetailView(
@@ -130,73 +127,6 @@ struct ExemplarySkillsView: View {
         dailyEvaluationsCount = 0
         UserDefaults.standard.set(0, forKey: "dailyEvaluationsCount")
         UserDefaults.standard.set(Date(), forKey: "lastEvaluationDate")
-    }
-    
-    private func loadExemplarySkills() {
-        do {
-            let descriptor = FetchDescriptor<ExemplarySkill>()
-            exemplarySkills = try context.fetch(descriptor)
-            print("Loaded \(exemplarySkills.count) exemplary skills")
-            for skill in exemplarySkills {
-                print("  - \(skill.title) (obtained: \(skill.isObtained), rating: \(skill.userRating ?? 0))")
-            }
-        } catch {
-            print("Error loading exemplary skills: \(error)")
-            exemplarySkills = []
-        }
-    }
-    
-    private func createSampleSkills() {
-        let sampleSkills = [
-            ExemplarySkill(
-                title: "Guitar Master",
-                skillDescription: "Mastered guitar playing with over 1000 hours of practice. Can play complex pieces and improvise.",
-                imageName: "guitars.fill",
-                category: "Music",
-                difficultyLevel: 3
-            ),
-            ExemplarySkill(
-                title: "Language Learner",
-                skillDescription: "Achieved fluency in Spanish through dedicated study and practice.",
-                imageName: "globe",
-                category: "Language",
-                difficultyLevel: 2
-            ),
-            ExemplarySkill(
-                title: "Code Warrior",
-                skillDescription: "Became proficient in Swift programming with extensive project experience.",
-                imageName: "laptopcomputer",
-                category: "Programming",
-                difficultyLevel: 3
-            ),
-            ExemplarySkill(
-                title: "Chef Extraordinaire",
-                skillDescription: "Developed advanced cooking skills and can prepare gourmet meals.",
-                imageName: "fork.knife",
-                category: "Cooking",
-                difficultyLevel: 2
-            ),
-            ExemplarySkill(
-                title: "Fitness Enthusiast",
-                skillDescription: "Maintained consistent fitness routine and achieved personal health goals.",
-                imageName: "figure.run",
-                category: "Fitness",
-                difficultyLevel: 1
-            ),
-            ExemplarySkill(
-                title: "Art Creator",
-                skillDescription: "Developed artistic skills in painting and digital art creation.",
-                imageName: "paintbrush.fill",
-                category: "Art",
-                difficultyLevel: 2
-            )
-        ]
-        
-        for skill in sampleSkills {
-            context.insert(skill)
-        }
-        
-        try? context.save()
     }
 }
 

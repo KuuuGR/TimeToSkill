@@ -1,0 +1,61 @@
+{
+  "catalogVersion": 2,
+  "items": [
+    {
+      "id": "music.guitar_master",
+      "title": "Guitar Master",
+      "description": "Mastered guitar playing with over 1000 hours of practice. Can play complex pieces and improvise.",
+      "imageName": "guitars.fill",
+      "category": "Music",
+      "difficulty": 3
+    },
+    {
+      "id": "prog.swift_code_warrior",
+      "title": "Code Warrior",
+      "description": "Became proficient in Swift programming with extensive project experience.",
+      "imageName": "laptopcomputer",
+      "category": "Programming",
+      "difficulty": 3
+    },
+    {
+      "id": "cooking.chef_extraordinaire",
+      "title": "Chef Extraordinaire",
+      "description": "Developed advanced cooking skills and can prepare gourmet meals.",
+      "imageName": "fork.knife",
+      "category": "Cooking",
+      "difficulty": 2
+    },
+    {
+      "id": "fitness.fitness_enthusiast",
+      "title": "Fitness Enthusiast",
+      "description": "Maintained consistent fitness routine and achieved personal health goals.",
+      "imageName": "figure.run",
+      "category": "Fitness",
+      "difficulty": 1
+    },
+    {
+      "id": "art.art_creator",
+      "title": "Art Creator",
+      "description": "Developed artistic skills in painting and digital art creation.",
+      "imageName": "paintbrush.fill",
+      "category": "Art",
+      "difficulty": 2
+    },
+    {
+      "id": "language.language_learner",
+      "title": "Language Learner",
+      "description": "Achieved fluency in Spanish through dedicated study and practice.",
+      "imageName": "globe",
+      "category": "Language",
+      "difficulty": 2
+    },
+    {
+      "id": "language.language_learnerq",
+      "title": "Language Learner",
+      "description": "Achieved fluency in Spanish through dedicated study and practice.",
+      "imageName": "paintbrush.fill",
+      "category": "Language",
+      "difficulty": 2
+    }
+  ]
+}
