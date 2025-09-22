@@ -72,6 +72,17 @@ struct MainView: View {
                                 )
                             )
 
+                            NavigationLink(destination: ManageCountersView()) {
+                                Label {
+                                    Text("Manage Counters")
+                                        .font(AppTypography.headline)
+                                } icon: {
+                                    Image(systemName: "number")
+                                        .font(.headline)
+                                }
+                            }
+                            .buttonStyle(FancyButtonStyle(background: .info, gradientEnd: .infoDark))
+
                             Spacer().frame(height: 12)
 
                             NavigationLink(destination: TheoryView()) {

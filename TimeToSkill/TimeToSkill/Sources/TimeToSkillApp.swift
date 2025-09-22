@@ -18,6 +18,6 @@ struct TimeToSkillApp: App {
                 .preferredColorScheme(.dark) // Force dark
                 .environment(\.colorScheme, .dark) // Override all views
         }
-        .modelContainer(for: [Skill.self, ExemplarySkill.self])
+        .modelContainer(for: [Skill.self, ExemplarySkill.self, Counter.self])
     }
 }
