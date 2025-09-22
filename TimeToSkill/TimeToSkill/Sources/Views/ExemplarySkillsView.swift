@@ -23,6 +23,8 @@ struct ExemplarySkillsView: View {
         case starsAsc = "Stars ↑"
         case starsDesc = "Stars ↓"
         case difficulty = "Difficulty"
+        case completedAsc = "Completed ↑"
+        case completedDesc = "Completed ↓"
     }
     
     @AppStorage("ExemplarySkillsSortOption") private var sortOptionRaw: String = SortOption.name.rawValue
@@ -60,6 +62,34 @@ struct ExemplarySkillsView: View {
             return exemplarySkills.sorted {
                 if $0.difficultyLevel == $1.difficultyLevel { return $0.title < $1.title }
                 return $0.difficultyLevel < $1.difficultyLevel
+            }
+        case .completedAsc:
+            return exemplarySkills.sorted { a, b in
+                switch (a.obtainedAt, b.obtainedAt) {
+                case (nil, nil):
+                    return a.title < b.title
+                case (nil, _?):
+                    return false // nil last
+                case (_?, nil):
+                    return true  // non-nil first
+                case let (da?, db?):
+                    if da == db { return a.title < b.title }
+                    return da < db
+                }
+            }
+        case .completedDesc:
+            return exemplarySkills.sorted { a, b in
+                switch (a.obtainedAt, b.obtainedAt) {
+                case (nil, nil):
+                    return a.title < b.title
+                case (nil, _?):
+                    return false // nil last
+                case (_?, nil):
+                    return true  // non-nil first
+                case let (da?, db?):
+                    if da == db { return a.title < b.title }
+                    return da > db
+                }
             }
         }
     }
