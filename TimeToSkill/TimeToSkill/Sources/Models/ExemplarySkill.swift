@@ -21,6 +21,7 @@ final class ExemplarySkill {
     var obtainedAt: Date?
     var verificationCode: String? // The password-like code used for verification
     var isObtained: Bool
+    // var achievementHistory: [AchievementRecord] = [] // Track all achievement evaluations - temporarily disabled
     
     init(
         id: UUID = UUID(),
@@ -44,6 +45,20 @@ final class ExemplarySkill {
         self.obtainedAt = obtainedAt
         self.verificationCode = verificationCode
         self.isObtained = isObtained
+        // self.achievementHistory = [] // temporarily disabled
+    }
+}
+
+/// Represents a single achievement evaluation record
+struct AchievementRecord: Codable {
+    let stars: Int // 0-3 stars
+    let achievedAt: Date
+    let verificationCode: String
+    
+    init(stars: Int, achievedAt: Date = Date(), verificationCode: String) {
+        self.stars = max(0, min(3, stars))
+        self.achievedAt = achievedAt
+        self.verificationCode = verificationCode
     }
 }
 

@@ -136,6 +136,10 @@ struct ExemplarySkillsView: View {
         do {
             let descriptor = FetchDescriptor<ExemplarySkill>()
             exemplarySkills = try context.fetch(descriptor)
+            print("Loaded \(exemplarySkills.count) exemplary skills")
+            for skill in exemplarySkills {
+                print("  - \(skill.title) (obtained: \(skill.isObtained), rating: \(skill.userRating ?? 0))")
+            }
         } catch {
             print("Error loading exemplary skills: \(error)")
             exemplarySkills = []

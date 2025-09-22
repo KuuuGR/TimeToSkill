@@ -17,6 +17,7 @@ struct ExemplarySkillDetailView: View {
     @State private var showingVerification = false
     @State private var verificationError = false
     @State private var generatedVerificationCode: String = ""
+    @State private var currentVerificationCode: String = ""
     
     var body: some View {
         NavigationStack {
@@ -35,7 +36,7 @@ struct ExemplarySkillDetailView: View {
             .sheet(isPresented: $showingVerification) {
                 VerificationView(
                     verificationCode: $verificationCode,
-                    generatedCode: generatedVerificationCode.isEmpty ? generateVerificationCode() : generatedVerificationCode,
+                    generatedCode: $currentVerificationCode,
                     onVerify: {
                         verifyAndEvaluate()
                     },
@@ -43,6 +44,12 @@ struct ExemplarySkillDetailView: View {
                         showingVerification = false
                     }
                 )
+                .onAppear {
+                    print("Sheet appeared with generated code: '\(currentVerificationCode)'")
+                    if currentVerificationCode.isEmpty {
+                        print("WARNING: currentVerificationCode is empty!")
+                    }
+                }
             }
         }
     }
@@ -130,6 +137,29 @@ struct ExemplarySkillDetailView: View {
                                         .foregroundColor(Color.blue)
                                 }
                             }
+                            
+                            // Achievement History - temporarily disabled
+                            // if !skill.achievementHistory.isEmpty {
+                            //     VStack(alignment: .leading, spacing: 8) {
+                            //         Text("Achievement History")
+                            //             .font(.subheadline)
+                            //             .fontWeight(.semibold)
+                            //             .foregroundColor(.primary)
+                            //         
+                            //         ForEach(skill.achievementHistory.indices, id: \.self) { index in
+                            //             let record = skill.achievementHistory[index]
+                            //             HStack {
+                            //                 StarRating(rating: record.stars, interactive: false)
+                            //                 
+                            //                 Spacer()
+                            //                 
+                            //                 Text(record.achievedAt, style: .date)
+                            //                     .font(.caption)
+                            //                     .foregroundColor(.secondary)
+                            //             }
+                            //         }
+                            //     }
+                            // }
                         }
                         .padding()
                         .background(Color.blue.opacity(0.05))
@@ -158,7 +188,9 @@ struct ExemplarySkillDetailView: View {
                             }
                             
                             Button("Evaluate My Skill") {
-                                generatedVerificationCode = generateVerificationCode()
+                                currentVerificationCode = ""
+                                generatedVerificationCode = ""
+                                print("Button clicked - preparing verification")
                                 verificationCode = "" // Clear previous input
                                 showingVerification = true
                             }
@@ -182,7 +214,7 @@ struct ExemplarySkillDetailView: View {
     private func verifyAndEvaluate() {
         print("Verification attempt:")
         print("  User input: '\(verificationCode)'")
-        print("  Expected: '\(generatedVerificationCode)'")
+        print("  Expected: '\(currentVerificationCode)'")
         print("  Length check: \(verificationCode.count) >= \(ExemplarySkillConstants.verificationCodeLength)")
         
         guard verificationCode.count >= ExemplarySkillConstants.verificationCodeLength else {
@@ -192,7 +224,7 @@ struct ExemplarySkillDetailView: View {
         }
         
         // Use the stored generated code
-        if verificationCode == generatedVerificationCode {
+        if verificationCode == currentVerificationCode {
             print("  SUCCESS: Codes match!")
             onEvaluate(selectedRating)
             dismiss()
@@ -258,7 +290,7 @@ struct StarRating: View {
 
 struct VerificationView: View {
     @Binding var verificationCode: String
-    let generatedCode: String
+    @Binding var generatedCode: String
     let onVerify: () -> Void
     let onCancel: () -> Void
     @State private var showingError = false
@@ -282,12 +314,15 @@ struct VerificationView: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                     
-                    Text(generatedCode)
+                    Text(generatedCode.isEmpty ? "NO CODE RECEIVED" : generatedCode)
                         .font(.system(.title, design: .monospaced))
                         .foregroundColor(Color.blue)
                         .padding()
                         .background(Color.blue.opacity(0.1))
                         .cornerRadius(8)
+                        .onAppear {
+                            print("VerificationView displaying code: '\(generatedCode)'")
+                        }
                 }
                 
                 VStack(spacing: 12) {
@@ -325,6 +360,10 @@ struct VerificationView: View {
             .navigationTitle("Verification")
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
+                if generatedCode.isEmpty {
+                    generatedCode = generateVerificationCode()
+                    print("VerificationView generated code: \(generatedCode)")
+                }
                 print("VerificationView received code: '\(generatedCode)'")
             }
             .alert("Invalid Code", isPresented: $showingError) {
