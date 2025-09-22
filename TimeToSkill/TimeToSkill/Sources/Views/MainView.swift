@@ -79,6 +79,17 @@ struct MainView: View {
                             }
                             .buttonStyle(FancyButtonStyle(background: .mdbBlue, gradientEnd: .info))
 
+                            NavigationLink(destination: ExemplarySkillsView()) {
+                                Label {
+                                    Text("Exemplary Skills")
+                                        .font(AppTypography.headline)
+                                } icon: {
+                                    Image(systemName: "star.fill")
+                                        .font(.headline)
+                                }
+                            }
+                            .buttonStyle(FancyButtonStyle(background: .purple, gradientEnd: .purple.opacity(0.7)))
+
                             NavigationLink(destination: AboutView()) {
                                 Text(LocalizedStringKey("main_about_app"))
                             }
