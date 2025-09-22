@@ -51,6 +51,10 @@ struct ExemplarySkillDetailView: View {
                     }
                 }
             }
+            .onAppear {
+                // Initialize picker with current rating for re-evaluation
+                selectedRating = max(0, min(3, skill.userRating ?? 0))
+            }
         }
     }
     
@@ -163,6 +167,40 @@ struct ExemplarySkillDetailView: View {
                         }
                         .padding()
                         .background(Color.blue.opacity(0.05))
+                        .cornerRadius(12)
+                        
+                        // Re-evaluation section (always available)
+                        VStack(spacing: 20) {
+                            Text("Update Your Rating")
+                                .font(.headline)
+                                .fontWeight(.semibold)
+                            
+                            VStack(spacing: 16) {
+                                StarRating(rating: selectedRating, interactive: true) { rating in
+                                    selectedRating = rating
+                                }
+                                
+                                Text(selectedRating == 0 ? "No Stars" : "\(selectedRating) Star\(selectedRating > 1 ? "s" : "")")
+                                    .font(.subheadline)
+                                    .fontWeight(.medium)
+                                    .foregroundColor(.blue)
+                            }
+                            
+                            Button("Update & Verify") {
+                                currentVerificationCode = ""
+                                generatedVerificationCode = ""
+                                verificationCode = ""
+                                showingVerification = true
+                            }
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .cornerRadius(12)
+                        }
+                        .padding()
+                        .background(Color.gray.opacity(0.05))
                         .cornerRadius(12)
                     } else {
                         // Evaluation section
