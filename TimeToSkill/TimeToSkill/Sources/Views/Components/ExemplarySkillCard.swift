@@ -6,26 +6,49 @@
 //
 
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 struct ExemplarySkillCard: View {
     let skill: ExemplarySkill
     let onTap: () -> Void
+    
+    private func isAssetImage(_ name: String) -> Bool {
+        #if canImport(UIKit)
+        return UIImage(named: name) != nil
+        #else
+        return false
+        #endif
+    }
     
     var body: some View {
         Button(action: onTap) {
             VStack(spacing: 8) {
                 // Image with star ribbon overlay
                 ZStack {
-                    // Main image
-                    Image(systemName: skill.imageName)
-                        .font(.system(size: 40))
-                        .foregroundColor(skill.isObtained ? .primary : .gray)
-                        .frame(width: 80, height: 80)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(skill.isObtained ? Color.blue.opacity(0.1) : Color.gray.opacity(0.1))
-                        )
-                    
+                    // Main image (asset preferred, fallback to SF Symbol)
+                    if isAssetImage(skill.imageName) {
+                        Image(skill.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .saturation((skill.userRating ?? 0) == 0 ? 0 : 1)
+                            .opacity((skill.userRating ?? 0) == 0 ? 0.6 : 1)
+                            .frame(width: 80, height: 80)
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
+                            )
+                    } else {
+                        Image(systemName: skill.imageName)
+                            .font(.system(size: 40))
+                            .foregroundColor((skill.userRating ?? 0) == 0 ? .gray : .primary)
+                            .frame(width: 80, height: 80)
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
+                            )
+                    }
                 }
                 
                 // Title

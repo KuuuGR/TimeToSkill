@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 struct ExemplarySkillDetailView: View {
     let skill: ExemplarySkill
@@ -73,14 +76,27 @@ struct ExemplarySkillDetailView: View {
         VStack(spacing: 24) {
                     // Header with image and title
                     VStack(spacing: 16) {
-                        Image(systemName: skill.imageName)
-                            .font(.system(size: 80))
-                            .foregroundColor(skill.isObtained ? .blue : .gray)
-                            .frame(width: 120, height: 120)
-                            .background(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(skill.isObtained ? Color.blue.opacity(0.1) : Color.gray.opacity(0.1))
-                            )
+                        if UIImage(named: skill.imageName) != nil {
+                            Image(skill.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .saturation((skill.userRating ?? 0) == 0 ? 0 : 1)
+                                .opacity((skill.userRating ?? 0) == 0 ? 0.6 : 1)
+                                .frame(width: 120, height: 120)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
+                                )
+                        } else {
+                            Image(systemName: skill.imageName)
+                                .font(.system(size: 80))
+                                .foregroundColor((skill.userRating ?? 0) == 0 ? .gray : .blue)
+                                .frame(width: 120, height: 120)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
+                                )
+                        }
                         
                         VStack(spacing: 8) {
                             Text(skill.title)

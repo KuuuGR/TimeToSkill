@@ -1,5 +1,5 @@
 {
-  "catalogVersion": 2,
+  "catalogVersion": 5,
   "items": [
     {
       "id": "music.guitar_master",
@@ -55,7 +55,15 @@
       "description": "Achieved fluency in Spanish through dedicated study and practice.",
       "imageName": "paintbrush.fill",
       "category": "Language",
-      "difficulty": 2
+      "difficulty": 99
+    },
+    {
+      "id": "language.language_learnersq",
+      "title": "Language Learner",
+      "description": "Achieved fluency in Spanish through dedicated study and practice.",
+      "imageName": "app_logo",
+      "category": "Language",
+      "difficulty": 99
     }
   ]
 }

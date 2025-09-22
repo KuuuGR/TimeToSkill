@@ -39,14 +39,15 @@ struct ExemplarySkillsView: View {
                 
                 // Skills grid
                 ScrollView {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 16) {
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
                         ForEach(exemplarySkills) { skill in
                             ExemplarySkillCard(skill: skill) {
                                 selectedSkill = skill
                             }
                         }
                     }
-                    .padding()
+                    .padding(.horizontal, 3)
+                    .padding(.vertical, 3)
                 }
             }
             .navigationTitle("Exemplary Skills")
@@ -86,7 +87,7 @@ struct ExemplarySkillsView: View {
         skill.userRating = rating
         skill.obtainedAt = Date()
         skill.verificationCode = verificationCode
-        skill.isObtained = true
+        skill.isObtained = rating > 0
         
         // Append achievement history record
         skill.achievementHistory.append(AchievementRecord(stars: rating, verificationCode: verificationCode))
