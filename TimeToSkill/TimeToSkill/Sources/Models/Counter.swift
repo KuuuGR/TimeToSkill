@@ -6,11 +6,8 @@ final class Counter {
     @Attribute(.unique) var id: UUID
     var title: String
     var category: String
-    var value: Int
-    var step: Int // legacy default step
-    var incrementStep: Int
-    var decrementStep: Int
-    var allowDecrement: Bool // legacy, no UI; decrement allowed when decrementStep > 0
+    var value: Int // can be negative or positive
+    var step: Int // magnitude per tap (positive); long-press applies negative
     var thresholds: [Int]
     var createdAt: Date
     var updatedAt: Date
@@ -21,17 +18,13 @@ final class Counter {
         category: String = "General",
         value: Int = 0,
         step: Int = 1,
-        allowDecrement: Bool = true,
         thresholds: [Int] = []
     ) {
         self.id = id
         self.title = title
         self.category = category
-        self.value = max(0, value)
+        self.value = value
         self.step = max(1, step)
-        self.incrementStep = max(1, step)
-        self.decrementStep = max(0, step)
-        self.allowDecrement = allowDecrement
         self.thresholds = thresholds.sorted()
         self.createdAt = Date()
         self.updatedAt = Date()

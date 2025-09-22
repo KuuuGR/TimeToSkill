@@ -13,10 +13,7 @@ struct ManageCountersView: View {
     }
     
     private func adjust(_ counter: Counter, by delta: Int) {
-        let newValue = counter.value + delta
-        if delta < 0 && counter.decrementStep == 0 { return }
-        if newValue < 0 { return }
-        counter.value = newValue
+        counter.value += delta
         counter.updatedAt = Date()
         try? context.save()
     }
@@ -33,11 +30,11 @@ struct ManageCountersView: View {
                                         .frame(width: 72, height: 72)
                                         .contentShape(Circle())
                                         .onTapGesture {
-                                            adjust(counter, by: counter.incrementStep)
+                                            adjust(counter, by: counter.step)
                                             haptic(.light)
                                         }
                                         .onLongPressGesture(minimumDuration: 0.35) {
-                                            adjust(counter, by: -counter.decrementStep)
+                                            adjust(counter, by: -counter.step)
                                             haptic(.rigid)
                                         }
                                     Text(counter.title)
@@ -74,8 +71,8 @@ struct ManageCountersView: View {
                 }
             }
             .sheet(isPresented: $showingNew) {
-                NewCounterSheet { title, step, allowDec, thresholds in
-                    let model = Counter(title: title, step: step, allowDecrement: allowDec, thresholds: thresholds)
+                NewCounterSheet { title, step, thresholds in
+                    let model = Counter(title: title, step: step, thresholds: thresholds)
                     context.insert(model)
                     try? context.save()
                 }
@@ -88,16 +85,15 @@ struct NewCounterSheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var title: String = ""
     @State private var step: Int = 1
-    @State private var allowDecrement: Bool = true
     @State private var thresholdsText: String = "100,200,500,10000,30000,3000000"
-    let onCreate: (String, Int, Bool, [Int]) -> Void
+    let onCreate: (String, Int, [Int]) -> Void
     
     var body: some View {
         NavigationStack {
             Form {
                 Section("Details") {
                     TextField("Title", text: $title)
-                    Stepper("Default Step: \(step)", value: $step, in: 1...1000)
+                    Stepper("Step: \(step)", value: $step, in: 1...1000)
                 }
                 Section("Thresholds (comma-separated)") {
                     TextField("e.g. 100,200,500,10000", text: $thresholdsText)
@@ -109,7 +105,7 @@ struct NewCounterSheet: View {
                 ToolbarItem(placement: .primaryAction) {
                     Button("Create") {
                         let limits = thresholdsText.split(separator: ",").compactMap { Int($0.trimmingCharacters(in: .whitespaces)) }.sorted()
-                        onCreate(title, step, true, limits)
+                        onCreate(title, step, limits)
                         dismiss()
                     }
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
@@ -143,16 +139,15 @@ struct CounterDetailView: View {
             }
             Section("Configuration") {
                 TextField("Title", text: $counter.title)
-                Stepper("Increment Step: \(counter.incrementStep)", value: $counter.incrementStep, in: 1...1000)
-                Stepper("Decrement Step: \(counter.decrementStep)", value: $counter.decrementStep, in: 0...1000)
+                Stepper("Step: \(counter.step)", value: $counter.step, in: 1...1000)
                 NavigationLink("Edit Thresholds") { ThresholdEditor(thresholds: $counter.thresholds) }
             }
             Section("Set Value Manually") {
                 HStack {
-                    TextField("0–1000000", text: $valueText)
-                        .keyboardType(.numberPad)
+                    TextField("-1000000 to 1000000", text: $valueText)
+                        .keyboardType(.numbersAndPunctuation)
                     Button("Apply") {
-                        if let v = Int(valueText) { counter.value = max(0, v); counter.updatedAt = Date() }
+                        if let v = Int(valueText) { counter.value = v; counter.updatedAt = Date() }
                         valueText = ""
                     }
                     .disabled(Int(valueText) == nil)
