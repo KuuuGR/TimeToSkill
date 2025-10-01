@@ -1,69 +1,339 @@
 {
-  "catalogVersion": 5,
+  "catalogVersion": 6,
   "items": [
     {
-      "id": "music.guitar_master",
-      "title": "Guitar Master",
-      "description": "Mastered guitar playing with over 1000 hours of practice. Can play complex pieces and improvise.",
-      "imageName": "guitars.fill",
-      "category": "Music",
+      "id": "health.daniel_fasting",
+      "title": "Daniel Fasting",
+      "description": "★ Completed a 14-day cycle.\n★★ Completed a 21-day cycle.\n★★★ Completed a 77-day cycle.",
+      "imageName": "leaf.fill",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
       "difficulty": 3
     },
     {
-      "id": "prog.swift_code_warrior",
-      "title": "Code Warrior",
-      "description": "Became proficient in Swift programming with extensive project experience.",
-      "imageName": "laptopcomputer",
-      "category": "Programming",
-      "difficulty": 3
-    },
-    {
-      "id": "cooking.chef_extraordinaire",
-      "title": "Chef Extraordinaire",
-      "description": "Developed advanced cooking skills and can prepare gourmet meals.",
-      "imageName": "fork.knife",
-      "category": "Cooking",
+      "id": "health.cold_plunge",
+      "title": "Cold Plunge",
+      "description": "★ Completed 1 session.\n★★ Completed 3 sessions.\n★★★ Completed 7 sessions.",
+      "imageName": "thermometer.snowflake",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
       "difficulty": 2
     },
     {
-      "id": "fitness.fitness_enthusiast",
-      "title": "Fitness Enthusiast",
-      "description": "Maintained consistent fitness routine and achieved personal health goals.",
-      "imageName": "figure.run",
-      "category": "Fitness",
+      "id": "health.water_fasting",
+      "title": "Water Faster",
+      "description": "★ Completed a 3-day water fast.\n★★ Completed a 7-day water fast.\n★★★ Completed a 21-day water fast.",
+      "imageName": "drop.fill",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
+      "difficulty": 3
+    },
+    {
+      "id": "health.pushups",
+      "title": "Push-up Milestone",
+      "description": "★ Achieved 100 total push-ups.\n★★ Achieved 2,000 total push-ups.\n★★★ Achieved 5,000 total push-ups.",
+      "imageName": "figure.strengthtraining.traditional",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.situps",
+      "title": "Sit-up Milestone",
+      "description": "★ Achieved 1,000 total sit-ups.\n★★ Achieved 2,000 total sit-ups.\n★★★ Achieved 5,000 total sit-ups.",
+      "imageName": "figure.core.training",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.jump_rope",
+      "title": "Jump Rope Milestone",
+      "description": "★ Achieved 100 total skips.\n★★ Achieved 500 total skips.\n★★★ Achieved 1,000 total skips.",
+      "imageName": "figure.jumprope",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
       "difficulty": 1
     },
     {
-      "id": "art.art_creator",
-      "title": "Art Creator",
-      "description": "Developed artistic skills in painting and digital art creation.",
-      "imageName": "paintbrush.fill",
-      "category": "Art",
+      "id": "health.daily_steps",
+      "title": "Daily Steps",
+      "description": "★ Walked 10,000 steps in a day.\n★★ Walked 20,000 steps in a day.\n★★★ Walked 30,000 steps in a day.",
+      "imageName": "figure.walk",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "health.online_workout",
+      "title": "Online Workout Habit",
+      "description": "★ Completed 3 total hours.\n★★ Completed 9 total hours.\n★★★ Completed 21 total hours.",
+      "imageName": "play.tv.fill",
+      "category": "Health & Endurance",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "mind.silence",
+      "title": "Vow of Silence",
+      "description": "★ Maintained for 1 day.\n★★ Maintained for 2 days.\n★★★ Maintained for 3 days.",
+      "imageName": "speaker.slash.fill",
+      "category": "Mindfulness & Discipline",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
+      "id": "mind.sensory_deprivation",
+      "title": "Sensory Deprivation",
+      "description": "★ Spent 4 hours blindfolded.\n★★ Spent 12 hours blindfolded.\n★★★ Spent a full day (24h) blindfolded.",
+      "imageName": "eye.slash.fill",
+      "category": "Mindfulness & Discipline",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
+      "id": "mind.non_dominant_hand",
+      "title": "Non-Dominant Hand Training",
+      "description": "★ Used your non-dominant hand for a meal.\n★★ Used your non-dominant hand for a full day.\n★★★ Wrote a full page legibly with your non-dominant hand.",
+      "imageName": "hand.raised.fill",
+      "category": "Mindfulness & Discipline",
+      "categoryKey": "mind",
       "difficulty": 2
     },
     {
-      "id": "language.language_learner",
-      "title": "Language Learner",
-      "description": "Achieved fluency in Spanish through dedicated study and practice.",
+      "id": "mind.speed_listening",
+      "title": "Speed Listener",
+      "description": "★ Understood an hour-long video at 2x speed.\n★★ Understood an hour-long video at 3x speed.\n★★★ Understood an hour-long video at 5x speed.",
+      "imageName": "gauge.with.needle.fill",
+      "category": "Mindfulness & Discipline",
+      "categoryKey": "mind",
+      "difficulty": 2
+    },
+    {
+      "id": "outdoor.barefoot_walking",
+      "title": "Barefoot Walker",
+      "description": "★ Walked 100 steps barefoot on grass.\n★★ Walked 5,000 steps barefoot.\n★★★ Walked 10,000 steps barefoot.",
+      "imageName": "figure.walk",
+      "category": "Outdoor & Nature",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.traveler",
+      "title": "Traveler",
+      "description": "★ Took a trip to the seaside.\n★★ Took a trip to the mountains.\n★★★ Took a trip to both the sea and the mountains in one year.",
+      "imageName": "globe.europe.africa.fill",
+      "category": "Outdoor & Nature",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.forager",
+      "title": "Forager",
+      "description": "★ Went mushroom foraging in the forest.\n★★ Successfully identified and collected 3 edible mushroom species.\n★★★ Prepared a meal using foraged ingredients.",
+      "imageName": "leaf.fill",
+      "category": "Outdoor & Nature",
+      "categoryKey": "outdoor",
+      "difficulty": 2
+    },
+    {
+      "id": "outdoor.nature_observer",
+      "title": "Nature Observer",
+      "description": "★ Saw and identified a rowan tree.\n★★ Identified 5 different native tree species.\n★★★ Identified 10 different native tree species.",
+      "imageName": "tree.fill",
+      "category": "Outdoor & Nature",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.rain_enthusiast",
+      "title": "Rain Enthusiast",
+      "description": "★ Jumped in puddles in the rain.\n★★ Went for a walk in the rain without an umbrella.\n★★★ Spent an hour outdoors during a heavy rainstorm.",
+      "imageName": "cloud.rain.fill",
+      "category": "Outdoor & Nature",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "games.retro_gaming",
+      "title": "Retro Game Completionist",
+      "description": "★ Finished 1 classic 8-bit game.\n★★ Finished 2 classic 8-bit games.\n★★★ Finished 3 classic 8-bit games.",
+      "imageName": "gamecontroller.fill",
+      "category": "Games & Recreation",
+      "categoryKey": "games",
+      "difficulty": 2
+    },
+    {
+      "id": "games.petanque_player",
+      "title": "Petanque Player",
+      "description": "★ Played a game of petanque.\n★★ Won a game of petanque.\n★★★ Organized a petanque tournament with friends.",
+      "imageName": "circle.fill",
+      "category": "Games & Recreation",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.speedrun_enthusiast",
+      "title": "Speedrun Enthusiast",
+      "description": "★ Watched a game speedrun.\n★★ Watched speedruns in three different categories (Any%, 100%).\n★★★ Successfully attempted a speedrun of a simple game.",
+      "imageName": "play.rectangle.on.rectangle.fill",
+      "category": "Games & Recreation",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.hopscotch_master",
+      "title": "Hopscotch Master",
+      "description": "★ Played hopscotch 10 times.\n★★ Played hopscotch 100 times.\n★★★ Taught a child how to play hopscotch.",
+      "imageName": "square.dashed",
+      "category": "Games & Recreation",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.chess_player",
+      "title": "Chess Player",
+      "description": "★ Played in a casual chess tournament.\n★★ Played in an official rated chess tournament.\n★★★ Won a match in an official tournament.",
+      "imageName": "circle.grid.cross.fill",
+      "category": "Games & Recreation",
+      "categoryKey": "games",
+      "difficulty": 3
+    },
+    {
+      "id": "games.chess_variant_master",
+      "title": "Chess Variant Master",
+      "description": "★ Played a game of Real-Time Chess.\n★★ Played a game of Blindfold Chess.\n★★★ Won a game using a chess variant.",
+      "imageName": "clock.fill",
+      "category": "Games & Recreation",
+      "categoryKey": "games",
+      "difficulty": 3
+    },
+    {
+      "id": "creative.painting",
+      "title": "Painter",
+      "description": "★ Painted a picture on A4 paper.\n★★ Painted a picture on A3 paper.\n★★★ Painted a picture on A2 paper.",
+      "imageName": "paintbrush.fill",
+      "category": "Creative & Crafts",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "creative.piano",
+      "title": "Pianist",
+      "description": "★ Learned and played a 1-minute piece.\n★★ Learned and played a 3-minute piece.\n★★★ Learned and played a 5-minute piece.",
+      "imageName": "pianokeys",
+      "category": "Creative & Crafts",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "creative.necklace_making",
+      "title": "Necklace Maker",
+      "description": "★ Made one necklace (e.g., from rowan berries).\n★★ Made necklaces for 7 family members.",
+      "imageName": "circle.grid.cross.fill",
+      "category": "Creative & Crafts",
+      "categoryKey": "creative",
+      "difficulty": 1
+    },
+    {
+      "id": "creative.sewing",
+      "title": "Tailor",
+      "description": "★ Mended a piece of clothing.\n★★ Sewed a simple item from a pattern (e.g., a pillowcase).\n★★★ Sewed a complex item of clothing.",
+      "imageName": "scissors",
+      "category": "Creative & Crafts",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "learning.memorize_poetry",
+      "title": "Poetry Memorizer",
+      "description": "★ Memorized 1 poem.\n★★ Memorized 2 poems.\n★★★ Memorized 3 poems.",
+      "imageName": "book.fill",
+      "category": "Learning & Memory",
+      "categoryKey": "learning",
+      "difficulty": 1
+    },
+    {
+      "id": "learning.learn_esperanto",
+      "title": "Esperanto Learner",
+      "description": "★ Studied for 21 hours.\n★★ Studied for 100 hours.\n★★★ Studied for 1000 hours.",
       "imageName": "globe",
-      "category": "Language",
+      "category": "Learning & Memory",
+      "categoryKey": "learning",
       "difficulty": 2
     },
     {
-      "id": "language.language_learnerq",
-      "title": "Language Learner",
-      "description": "Achieved fluency in Spanish through dedicated study and practice.",
-      "imageName": "paintbrush.fill",
-      "category": "Language",
-      "difficulty": 99
+      "id": "learning.sign_language",
+      "title": "Sign Language Learner",
+      "description": "★ Learned 50 words.\n★★ Learned 100 words.\n★★★ Learned 256 words.",
+      "imageName": "hand.raised.fill",
+      "category": "Learning & Memory",
+      "categoryKey": "learning",
+      "difficulty": 2
     },
     {
-      "id": "language.language_learnersq",
-      "title": "Language Learner",
-      "description": "Achieved fluency in Spanish through dedicated study and practice.",
-      "imageName": "app_logo",
-      "category": "Language",
-      "difficulty": 99
+      "id": "learning.major_system",
+      "title": "Major System User",
+      "description": "★ Memorized 10 historical dates using the system.\n★★ Encoded a newspaper page using the system.\n★★★ Encoded an entire short book using the system.",
+      "imageName": "newspaper.fill",
+      "category": "Learning & Memory",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.upside_down_reading",
+      "title": "Upside-Down Reader",
+      "description": "★ Read a short article upside down.\n★★ Read a magazine upside down.\n★★★ Read an entire book upside down.",
+      "imageName": "arrow.clockwise",
+      "category": "Learning & Memory",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.ambidextrous_skills",
+      "title": "Ambidextrous Skills",
+      "description": "★ Wrote a sentence with your non-dominant hand.\n★★ Wrote a paragraph with your non-dominant hand.\n★★★ Wrote different words simultaneously with both hands.",
+      "imageName": "hand.draw.fill",
+      "category": "Learning & Memory",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.morse_code",
+      "title": "Morse Code Learner",
+      "description": "★ Transcribed a short sentence into Morse code.\n★★ Transcribed a poem into Morse code.\n★★★ Held a simple conversation using Morse code (e.g., flashing light or sound).",
+      "imageName": "network",
+      "category": "Learning & Memory",
+      "categoryKey": "learning",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.rock_climber",
+      "title": "Rock Climber",
+      "description": "★ Completed an introductory climbing course.\n★★ Completed 15 training sessions.\n★★★ Successfully climbed a specific, challenging route.",
+      "imageName": "figure.climbing",
+      "category": "Sports",
+      "categoryKey": "sports",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.swimmer",
+      "title": "Swimmer",
+      "description": "★ Learned one swimming style.\n★★ Learned three different swimming styles.\n★★★ Swam a continuous distance of 1km.",
+      "imageName": "figure.pool.swim",
+      "category": "Sports",
+      "categoryKey": "sports",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.juggler",
+      "title": "Juggler",
+      "description": "★ Learned to juggle 3 balls.\n★★ Mastered 5 tricks with 3 balls.\n★★★ Juggled 3 balls with one hand.",
+      "imageName": "circle.grid.3x3.fill",
+      "category": "Sports",
+      "categoryKey": "sports",
+      "difficulty": 2
     }
   ]
 }
+
