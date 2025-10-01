@@ -432,6 +432,9 @@ struct VerificationView: View {
                         .foregroundColor(.secondary)
                     
                     TextField(LocalizedStringKey("verification_code_title"), text: $verificationCode)
+                        .autocorrectionDisabled(true)
+                        .textInputAutocapitalization(.never)
+                        .keyboardType(.asciiCapable)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(.title3, design: .monospaced))
                         .multilineTextAlignment(.center)

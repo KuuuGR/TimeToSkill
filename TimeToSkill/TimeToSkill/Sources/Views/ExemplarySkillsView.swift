@@ -16,6 +16,8 @@ struct ExemplarySkillsView: View {
     @State private var showingEvaluationSheet = false
     @State private var showingDailyLimitAlert = false
     @State private var dailyEvaluationsCount = 0
+    @AppStorage("customSkillUnlocked") private var customSkillUnlocked: Bool = false
+    @State private var showingPaywall: Bool = false
     
     private enum SortOption: String, CaseIterable {
         case name = "sort_name"
@@ -135,11 +137,15 @@ struct ExemplarySkillsView: View {
                             .font(.caption)
                     }
                     
-                    Button(LocalizedStringKey("reset_daily_limit")) {
-                        resetDailyLimit()
+                    if customSkillUnlocked {
+                        Button(LocalizedStringKey("reset_daily_limit")) { resetDailyLimit() }
+                            .font(.caption)
+                            .foregroundColor(.blue)
+                    } else {
+                        Button(LocalizedStringKey("reset_daily_limit")) { showingPaywall = true }
+                            .font(.caption)
+                            .foregroundColor(.gray)
                     }
-                    .font(.caption)
-                    .foregroundColor(.blue)
                 }
                 .padding(.horizontal)
                 .padding(.top, 8)
@@ -222,6 +228,9 @@ struct ExemplarySkillsView: View {
                 Text(String(format: NSLocalizedString("daily_limit_reached_message_format", comment: ""), ExemplarySkillConstants.dailyEvaluationLimit))
             }
             .background(deleteConfirmDialog)
+        }
+        .sheet(isPresented: $showingPaywall) {
+            DevPaywallView(onUnlock: { customSkillUnlocked = true })
         }
     }
 
