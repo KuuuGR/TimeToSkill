@@ -153,20 +153,12 @@ struct ExemplarySkillsView: View {
                                     selectedSkill = skill
                                 }
                                 if skill.isUserCreated {
-                                    Button {
-                                        pendingDelete = skill
-                                        showingDeleteConfirm = true
-                                    } label: {
-                                        Image(systemName: "trash")
-                                            .foregroundColor(.gray)
-                                            .padding(6)
-                                            .background(.ultraThinMaterial, in: Circle())
-                                    }
-                                    .buttonStyle(.plain)
-                                    .padding(6)
-                                    // Also allow hiding user-created skills
                                     Menu {
                                         Button(LocalizedStringKey("hide")) { skill.isHidden = true; try? context.save() }
+                                        Button(LocalizedStringKey("delete_skill"), role: .destructive) {
+                                            pendingDelete = skill
+                                            showingDeleteConfirm = true
+                                        }
                                     } label: {
                                         Image(systemName: "ellipsis.circle")
                                             .foregroundColor(.gray)
