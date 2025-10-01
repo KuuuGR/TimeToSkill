@@ -93,8 +93,8 @@ struct SkillOptionsSheet: View {
                     }
                 }
 
-                Section(header: Text("Time Distribution")) {
-                    NavigationLink("View Distribution") { TimeDistributionView(skill: skill) }
+                Section(header: Text(LocalizedStringKey("time_distribution_title"))) {
+                    NavigationLink(LocalizedStringKey("view_distribution")) { TimeDistributionView(skill: skill) }
                 }
 
                 Section(header: Text(LocalizedStringKey("reset_section"))) {

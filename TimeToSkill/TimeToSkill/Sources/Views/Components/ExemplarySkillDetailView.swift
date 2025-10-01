@@ -28,11 +28,11 @@ struct ExemplarySkillDetailView: View {
             ScrollView {
                 skillDetailContent
             }
-            .navigationTitle("Skill Details")
+            .navigationTitle(LocalizedStringKey("skill_details_title"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Close") {
+                    Button(LocalizedStringKey("close")) {
                         dismiss()
                     }
                 }
@@ -43,7 +43,7 @@ struct ExemplarySkillDetailView: View {
                             Image(systemName: "gearshape")
                                 .imageScale(.medium)
                         }
-                        .accessibilityLabel("Change rating")
+                        .accessibilityLabel(LocalizedStringKey("change_rating_accessibility"))
                     }
                 }
             }
@@ -116,7 +116,7 @@ struct ExemplarySkillDetailView: View {
                     
                     // Description
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("Description")
+                        Text(LocalizedStringKey("description"))
                             .font(.headline)
                             .fontWeight(.semibold)
                         
@@ -129,24 +129,24 @@ struct ExemplarySkillDetailView: View {
                     // Current status
                     if skill.isObtained {
                         VStack(spacing: 12) {
-                            Text("Achievement Status")
+                            Text(LocalizedStringKey("achievement_status"))
                                 .font(.headline)
                                 .fontWeight(.semibold)
                             
                             HStack {
-                                Text("Obtained:")
+                                Text(LocalizedStringKey("obtained_label"))
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                                 
                                 Spacer()
                                 
-                                Text(skill.obtainedAt?.formatted(date: .abbreviated, time: .omitted) ?? "Unknown")
+                                Text(skill.obtainedAt?.formatted(date: .abbreviated, time: .omitted) ?? NSLocalizedString("unknown", comment: ""))
                                     .font(.subheadline)
                                     .fontWeight(.medium)
                             }
                             
                             HStack {
-                                Text("Your Rating:")
+                                Text(LocalizedStringKey("your_rating_label"))
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                                 
@@ -157,7 +157,7 @@ struct ExemplarySkillDetailView: View {
                             
                             if let code = skill.verificationCode {
                                 HStack {
-                                    Text("Verification Code:")
+                                    Text(LocalizedStringKey("verification_code_label"))
                                         .font(.subheadline)
                                         .foregroundColor(.secondary)
                                     
@@ -172,7 +172,7 @@ struct ExemplarySkillDetailView: View {
                             // Achievement History
                             if !skill.achievementHistory.isEmpty {
                                 VStack(alignment: .leading, spacing: 8) {
-                                    Text("Achievement History")
+                                    Text(LocalizedStringKey("achievement_history"))
                                         .font(.subheadline)
                                         .fontWeight(.semibold)
                                         .foregroundColor(.primary)
@@ -199,7 +199,7 @@ struct ExemplarySkillDetailView: View {
                         // Re-evaluation section (revealed via top-right button)
                         if showUpdateSection {
                             VStack(spacing: 20) {
-                                Text("Update Your Rating")
+                                Text(LocalizedStringKey("update_your_rating"))
                                     .font(.headline)
                                     .fontWeight(.semibold)
                                 
@@ -208,13 +208,13 @@ struct ExemplarySkillDetailView: View {
                                         selectedRating = rating
                                     }
                                     
-                                    Text(selectedRating == 0 ? "No Stars" : "\(selectedRating) Star\(selectedRating > 1 ? "s" : "")")
+                                    Text(selectedRating == 0 ? NSLocalizedString("no_stars", comment: "") : String(format: "%d %@", selectedRating, selectedRating > 1 ? "Stars" : "Star"))
                                         .font(.subheadline)
                                         .fontWeight(.medium)
                                         .foregroundColor(.blue)
                                 }
                                 
-                                Button("Update & Verify") {
+                                Button(LocalizedStringKey("update_and_verify")) {
                                     currentVerificationCode = ""
                                     generatedVerificationCode = ""
                                     verificationCode = ""
@@ -234,12 +234,12 @@ struct ExemplarySkillDetailView: View {
                     } else {
                         // Evaluation section
                         VStack(spacing: 20) {
-                            Text("Self-Evaluation")
+                            Text(LocalizedStringKey("self_evaluation"))
                                 .font(.headline)
                                 .fontWeight(.semibold)
                             
                             VStack(spacing: 16) {
-                                Text("How many stars do you deserve for this skill?")
+                                Text(LocalizedStringKey("how_many_stars_question"))
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                                     .multilineTextAlignment(.center)
@@ -248,13 +248,13 @@ struct ExemplarySkillDetailView: View {
                                     selectedRating = rating
                                 }
                                 
-                                Text(selectedRating == 0 ? "No Stars" : "\(selectedRating) Star\(selectedRating > 1 ? "s" : "")")
+                                Text(selectedRating == 0 ? NSLocalizedString("no_stars", comment: "") : String(format: "%d %@", selectedRating, selectedRating > 1 ? "Stars" : "Star"))
                                     .font(.subheadline)
                                     .fontWeight(.medium)
                                     .foregroundColor(.blue)
                             }
                             
-                            Button("Evaluate My Skill") {
+                            Button(LocalizedStringKey("evaluate_my_skill")) {
                                 currentVerificationCode = ""
                                 generatedVerificationCode = ""
                                 print("Button clicked - preparing verification")
@@ -366,22 +366,22 @@ struct VerificationView: View {
         NavigationStack {
             VStack(spacing: 24) {
                 VStack(spacing: 16) {
-                    Text("Verification Required")
+                    Text(LocalizedStringKey("verification_required_title"))
                         .font(.title2)
                         .fontWeight(.bold)
                     
-                    Text("Please enter the verification code below to confirm your self-evaluation:")
+                    Text(LocalizedStringKey("verification_required_message"))
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
                 }
                 
                 VStack(spacing: 12) {
-                    Text("Verification Code:")
+                    Text(LocalizedStringKey("verification_code_title"))
                         .font(.headline)
                         .fontWeight(.semibold)
                     
-                    Text(generatedCode.isEmpty ? "NO CODE RECEIVED" : generatedCode)
+                    Text(generatedCode.isEmpty ? NSLocalizedString("no_code_received", comment: "") : generatedCode)
                         .font(.system(.title, design: .monospaced))
                         .foregroundColor(Color.blue)
                         .padding()
@@ -393,11 +393,11 @@ struct VerificationView: View {
                 }
                 
                 VStack(spacing: 12) {
-                    Text("Enter the code above:")
+                    Text(LocalizedStringKey("enter_the_code"))
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     
-                    TextField("Verification Code", text: $verificationCode)
+                    TextField(LocalizedStringKey("verification_code_title"), text: $verificationCode)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(.title3, design: .monospaced))
                         .multilineTextAlignment(.center)
@@ -406,7 +406,7 @@ struct VerificationView: View {
                 Spacer()
                 
                 VStack(spacing: 12) {
-                    Button("Verify & Evaluate") {
+                    Button(LocalizedStringKey("verify_and_evaluate")) {
                         onVerify()
                     }
                     .font(.headline)
@@ -416,7 +416,7 @@ struct VerificationView: View {
                     .background(Color.blue)
                     .cornerRadius(12)
                     
-                    Button("Cancel") {
+                    Button(LocalizedStringKey("cancel")) {
                         onCancel()
                     }
                     .font(.subheadline)
@@ -424,7 +424,7 @@ struct VerificationView: View {
                 }
             }
             .padding()
-            .navigationTitle("Verification")
+            .navigationTitle(LocalizedStringKey("verification_nav_title"))
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
                 if generatedCode.isEmpty {
@@ -433,10 +433,10 @@ struct VerificationView: View {
                 }
                 print("VerificationView received code: '\(generatedCode)'")
             }
-            .alert("Invalid Code", isPresented: $showingError) {
-                Button("OK") { }
+            .alert(LocalizedStringKey("invalid_code_title"), isPresented: $showingError) {
+                Button(LocalizedStringKey("ok")) { }
             } message: {
-                Text("Please enter the correct verification code.")
+                Text(LocalizedStringKey("invalid_code_message"))
             }
         }
     }

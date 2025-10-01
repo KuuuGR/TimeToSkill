@@ -93,7 +93,9 @@ struct NewCounterSheet: View {
             Form {
                 Section(LocalizedStringKey("counter_details_section")) {
                     TextField(LocalizedStringKey("counter_title_placeholder"), text: $title)
-                    Stepper(LocalizedStringKey("counter_step_label\(step)"), value: $step, in: 1...1000)
+                    Stepper(value: $step, in: 1...1000) {
+                        Text(String(format: NSLocalizedString("counter_step_label%d", comment: ""), step))
+                    }
                 }
                 Section(LocalizedStringKey("counter_thresholds_section")) {
                     TextField(LocalizedStringKey("counter_thresholds_placeholder"), text: $thresholdsText)
@@ -139,7 +141,9 @@ struct CounterDetailView: View {
             }
             Section(LocalizedStringKey("counter_configuration_section")) {
                 TextField(LocalizedStringKey("counter_title_placeholder"), text: $counter.title)
-                Stepper(LocalizedStringKey("counter_step_label\(counter.step)"), value: $counter.step, in: -1000...1000)
+                Stepper(value: $counter.step, in: -1000...1000) {
+                    Text(String(format: NSLocalizedString("counter_step_label%d", comment: ""), counter.step))
+                }
                 NavigationLink(LocalizedStringKey("counter_edit_thresholds")) { ThresholdEditor(thresholds: $counter.thresholds) }
             }
             Section(LocalizedStringKey("counter_set_value_section")) {

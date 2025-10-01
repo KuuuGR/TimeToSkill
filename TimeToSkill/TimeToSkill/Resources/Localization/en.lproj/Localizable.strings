@@ -199,3 +199,42 @@
 "time_std_minutes_format" = "Std dev: %@ min";
 "distribution_nav_title" = "Distribution";
 "global_time_distribution_title" = "Global Time Distribution";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Name";
+"sort_category" = "Category";
+"sort_stars_asc" = "Stars ↑";
+"sort_stars_desc" = "Stars ↓";
+"sort_difficulty_asc" = "Difficulty ↑";
+"sort_difficulty_desc" = "Difficulty ↓";
+"sort_completed_asc" = "Completed ↑";
+"sort_completed_desc" = "Completed ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Skill Details";
+"close" = "Close";
+"change_rating_accessibility" = "Change rating";
+"description" = "Description";
+"achievement_status" = "Achievement Status";
+"obtained_label" = "Obtained:";
+"unknown" = "Unknown";
+"your_rating_label" = "Your Rating:";
+"verification_code_label" = "Verification Code:";
+"achievement_history" = "Achievement History";
+"update_your_rating" = "Update Your Rating";
+"no_stars" = "No Stars";
+"update_and_verify" = "Update & Verify";
+"self_evaluation" = "Self-Evaluation";
+"how_many_stars_question" = "How many stars do you deserve for this skill?";
+"evaluate_my_skill" = "Evaluate My Skill";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verification Required";
+"verification_required_message" = "Please enter the verification code below to confirm your self-evaluation:";
+"verification_code_title" = "Verification Code:";
+"no_code_received" = "NO CODE RECEIVED";
+"enter_the_code" = "Enter the code above:";
+"verify_and_evaluate" = "Verify & Evaluate";
+"verification_nav_title" = "Verification";
+"invalid_code_title" = "Invalid Code";
+"invalid_code_message" = "Please enter the correct verification code.";

@@ -197,3 +197,42 @@
 "time_std_minutes_format" = "Odchyl. stand.: %@ min";
 "distribution_nav_title" = "Rozkład";
 "global_time_distribution_title" = "Globalny rozkład czasu";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nazwa";
+"sort_category" = "Kategoria";
+"sort_stars_asc" = "Gwiazdy ↑";
+"sort_stars_desc" = "Gwiazdy ↓";
+"sort_difficulty_asc" = "Trudność ↑";
+"sort_difficulty_desc" = "Trudność ↓";
+"sort_completed_asc" = "Ukończone ↑";
+"sort_completed_desc" = "Ukończone ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Szczegóły umiejętności";
+"close" = "Zamknij";
+"change_rating_accessibility" = "Zmień ocenę";
+"description" = "Opis";
+"achievement_status" = "Status osiągnięcia";
+"obtained_label" = "Zdobyto:";
+"unknown" = "Nieznane";
+"your_rating_label" = "Twoja ocena:";
+"verification_code_label" = "Kod weryfikacyjny:";
+"achievement_history" = "Historia osiągnięć";
+"update_your_rating" = "Zaktualizuj ocenę";
+"no_stars" = "Brak gwiazdek";
+"update_and_verify" = "Aktualizuj i weryfikuj";
+"self_evaluation" = "Samoocena";
+"how_many_stars_question" = "Ile gwiazdek przyznajesz sobie za tę umiejętność?";
+"evaluate_my_skill" = "Oceń moją umiejętność";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Wymagana weryfikacja";
+"verification_required_message" = "Wpisz poniżej kod weryfikacyjny, aby potwierdzić samoocenę:";
+"verification_code_title" = "Kod weryfikacyjny:";
+"no_code_received" = "BRAK KODU";
+"enter_the_code" = "Wpisz powyższy kod:";
+"verify_and_evaluate" = "Weryfikuj i oceń";
+"verification_nav_title" = "Weryfikacja";
+"invalid_code_title" = "Nieprawidłowy kod";
+"invalid_code_message" = "Wprowadź poprawny kod weryfikacyjny.";

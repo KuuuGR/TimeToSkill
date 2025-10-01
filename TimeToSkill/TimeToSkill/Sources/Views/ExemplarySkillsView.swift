@@ -18,14 +18,27 @@ struct ExemplarySkillsView: View {
     @State private var dailyEvaluationsCount = 0
     
     private enum SortOption: String, CaseIterable {
-        case name = "Name"
-        case category = "Category"
-        case starsAsc = "Stars ↑"
-        case starsDesc = "Stars ↓"
-        case difficultyAsc = "Difficulty ↑"
-        case difficultyDesc = "Difficulty ↓"
-        case completedAsc = "Completed ↑"
-        case completedDesc = "Completed ↓"
+        case name = "sort_name"
+        case category = "sort_category"
+        case starsAsc = "sort_stars_asc"
+        case starsDesc = "sort_stars_desc"
+        case difficultyAsc = "sort_difficulty_asc"
+        case difficultyDesc = "sort_difficulty_desc"
+        case completedAsc = "sort_completed_asc"
+        case completedDesc = "sort_completed_desc"
+        
+        var localizedTitle: String {
+            switch self {
+            case .name: return NSLocalizedString("sort_name", comment: "")
+            case .category: return NSLocalizedString("sort_category", comment: "")
+            case .starsAsc: return NSLocalizedString("sort_stars_asc", comment: "")
+            case .starsDesc: return NSLocalizedString("sort_stars_desc", comment: "")
+            case .difficultyAsc: return NSLocalizedString("sort_difficulty_asc", comment: "")
+            case .difficultyDesc: return NSLocalizedString("sort_difficulty_desc", comment: "")
+            case .completedAsc: return NSLocalizedString("sort_completed_asc", comment: "")
+            case .completedDesc: return NSLocalizedString("sort_completed_desc", comment: "")
+            }
+        }
     }
     
     @AppStorage("ExemplarySkillsSortOption") private var sortOptionRaw: String = SortOption.name.rawValue
@@ -113,7 +126,7 @@ struct ExemplarySkillsView: View {
                     
                     Menu {
                         ForEach(SortOption.allCases, id: \.self) { option in
-                            Button(option.rawValue) { sortOptionRaw = option.rawValue }
+                            Button(option.localizedTitle) { sortOptionRaw = option.rawValue }
                         }
                     } label: {
                         Label(LocalizedStringKey("sort_menu_label"), systemImage: "arrow.up.arrow.down")
