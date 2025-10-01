@@ -407,17 +407,9 @@ struct OptionsView: View {
                 let sectionTitleAttributes = [
                     NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)
                 ]
-                let skillSectionTitle = NSLocalizedString("time_distribution_title", comment: "")
-                skillSectionTitle.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: sectionTitleAttributes)
-                yPosition += 22
-
-                let subtitleAttributes = [
-                    NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12),
-                    NSAttributedString.Key.foregroundColor: UIColor.secondaryLabel
-                ]
-                let subtitle = String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name)
-                (subtitle as NSString).draw(at: CGPoint(x: 50, y: yPosition), withAttributes: subtitleAttributes)
-                yPosition += 18
+                let skillSectionTitle = String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name)
+                (skillSectionTitle as NSString).draw(at: CGPoint(x: 50, y: yPosition), withAttributes: sectionTitleAttributes)
+                yPosition += 24
 
                 drawHistogramBars(bins: bins, pageRect: pageRect, yPosition: &yPosition, color: UIColor.systemPurple, rendererContext: context)
             }
