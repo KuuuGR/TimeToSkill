@@ -238,3 +238,6 @@
 "verification_nav_title" = "Verification";
 "invalid_code_title" = "Invalid Code";
 "invalid_code_message" = "Please enter the correct verification code.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "View distribution";

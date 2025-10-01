@@ -236,3 +236,6 @@
 "verification_nav_title" = "Weryfikacja";
 "invalid_code_title" = "Nieprawidłowy kod";
 "invalid_code_message" = "Wprowadź poprawny kod weryfikacyjny.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Zobacz rozkład";

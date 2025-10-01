@@ -7,6 +7,7 @@ import Combine
 struct OptionsView: View {
     @Environment(\.dismiss) private var dismiss
     @Query(sort: \Skill.name, animation: .default) private var skills: [Skill]
+    @Query(sort: \Counter.title, animation: .default) private var counters: [Counter]
     @State private var showingShareSheet = false
     @State private var pdfData: Data?
 
@@ -327,6 +328,113 @@ struct OptionsView: View {
                     yPosition = 50
                 }
             }
+
+            // New page for Counters section if needed
+            if yPosition > pageRect.height - 200 {
+                context.beginPage()
+                yPosition = 50
+            }
+
+            // Counters Section Title
+            let countersTitleAttributes = [
+                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)
+            ]
+            let countersTitle = NSLocalizedString("manage_counters_title", comment: "")
+            countersTitle.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: countersTitleAttributes)
+            yPosition += 28
+
+            // Counters list
+            let counterAttributes = [
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13)
+            ]
+            for counter in counters {
+                let thresholdsText: String
+                let limits = counter.thresholds
+                if limits.isEmpty {
+                    thresholdsText = NSLocalizedString("counter_no_thresholds", comment: "")
+                } else {
+                    thresholdsText = limits.map { String($0) }.joined(separator: ", ")
+                }
+                let line = "\(counter.title): \(counter.value)  [\(thresholdsText)]"
+                line.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: counterAttributes)
+                yPosition += 22
+
+                if yPosition > pageRect.height - 80 {
+                    context.beginPage()
+                    yPosition = 50
+                }
+            }
+
+            // Add Global Time Distribution Histogram (bars)
+            // Fetch data similar to GlobalTimeDistributionView
+            if let modelContainer = try? ModelContainer(for: TimeIntervalEntry.self),
+               let modelContext = try? ModelContext(modelContainer) {
+                let descriptor = FetchDescriptor<TimeIntervalEntry>()
+                let entries = (try? modelContext.fetch(descriptor)) ?? []
+                let minutes = entries.map { max(0, $0.durationMinutes) }
+                let bins: [(String, Int)] = makeBinsForPDF(values: minutes)
+
+                if !bins.isEmpty {
+                    // Ensure space
+                    if yPosition > pageRect.height - 200 {
+                        context.beginPage()
+                        yPosition = 50
+                    }
+
+                    let sectionTitleAttributes = [
+                        NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)
+                    ]
+                    let sectionTitle = NSLocalizedString("global_time_distribution_title", comment: "")
+                    sectionTitle.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: sectionTitleAttributes)
+                    yPosition += 26
+
+                    // Draw bars
+                    let leftX: CGFloat = 50
+                    let rightX: CGFloat = pageRect.width - 50
+                    let barAreaWidth: CGFloat = rightX - leftX - 120 // leave space for labels and counts
+                    let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
+                    let barHeight: CGFloat = 10
+                    let barSpacing: CGFloat = 16
+
+                    let labelAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)]
+                    let countAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor.secondaryLabel]
+
+                    for (label, count) in bins {
+                        // Label
+                        (label as NSString).draw(at: CGPoint(x: leftX, y: yPosition - 2), withAttributes: labelAttributes)
+                        // Bar rect
+                        let width = CGFloat(count) / CGFloat(maxCount) * barAreaWidth
+                        let barX = leftX + 90
+                        let barRect = CGRect(x: barX, y: yPosition, width: width, height: barHeight)
+                        UIColor.systemBlue.setFill()
+                        UIBezierPath(roundedRect: barRect, cornerRadius: 4).fill()
+                        // Count
+                        ("\(count)" as NSString).draw(at: CGPoint(x: barX + barAreaWidth + 8, y: yPosition - 2), withAttributes: countAttributes)
+
+                        yPosition += barHeight + barSpacing
+                        if yPosition > pageRect.height - 60 {
+                            context.beginPage()
+                            yPosition = 50
+                        }
+                    }
+                }
+            }
         }
+    }
+
+    // Helper to build bins for PDF rendering
+    private func makeBinsForPDF(values: [Double]) -> [(String, Int)] {
+        guard !values.isEmpty else { return [] }
+        let maxVal = values.max() ?? 0
+        let edges: [Double] = [0,5,10,15,30,60,120,240,480,960, maxVal + 1]
+        var result: [(String, Int)] = []
+        for i in 0..<(edges.count - 1) {
+            let a = edges[i]
+            let b = edges[i+1]
+            let count = values.filter { $0 >= a && $0 < b }.count
+            let label = b >= 960 ? "≥ \(Int(a))m" : "\(Int(a))–\(Int(b))m"
+            result.append((label, count))
+        }
+        return result.filter { $0.1 > 0 }
     }
 }
