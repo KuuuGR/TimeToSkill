@@ -22,8 +22,28 @@ struct ManageCountersView: View {
         NavigationStack {
             VStack(spacing: 0) {
                 ScrollView {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
-                        ForEach(counters) { counter in
+                    if counters.isEmpty {
+                        VStack(spacing: 16) {
+                            Image(systemName: "number")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 64, height: 64)
+                                .foregroundColor(.secondary)
+                            Text(LocalizedStringKey("counters_empty_title"))
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                            Text(LocalizedStringKey("counters_empty_description"))
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 24)
+                            Button(LocalizedStringKey("create")) { showingNew = true }
+                                .buttonStyle(.borderedProminent)
+                        }
+                        .padding(20)
+                    } else {
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
+                            ForEach(counters) { counter in
                             ZStack(alignment: .topTrailing) {
                                 VStack(spacing: 8) {
                                     CounterRing(value: counter.value, stageMax: counter.currentStageMax)
@@ -57,9 +77,10 @@ struct ManageCountersView: View {
                                 .buttonStyle(PlainButtonStyle())
                                 .padding(6)
                             }
+                            }
                         }
+                        .padding(3)
                     }
-                    .padding(3)
                 }
             }
             .navigationTitle(LocalizedStringKey("manage_counters_title"))

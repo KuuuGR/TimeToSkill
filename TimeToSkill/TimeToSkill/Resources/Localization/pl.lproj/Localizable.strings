@@ -304,3 +304,5 @@
 "hide" = "Ukryj";
 "unhide" = "Odkryj";
 "archived_section" = "Archiwum";
+"counters_empty_title" = "Brak liczników";
+"counters_empty_description" = "Utwórz pierwszy licznik, aby śledzić postęp liczbowy.";

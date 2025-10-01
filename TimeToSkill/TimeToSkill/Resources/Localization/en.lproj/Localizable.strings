@@ -306,3 +306,5 @@
 "hide" = "Hide";
 "unhide" = "Unhide";
 "archived_section" = "Archived";
+"counters_empty_title" = "No counters yet";
+"counters_empty_description" = "Create your first counter to start tracking numeric progress.";
