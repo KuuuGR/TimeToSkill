@@ -249,6 +249,7 @@
 "unlock_benefit_create" = "Create your own skill with title, description and difficulty";
 "unlock_benefit_delete" = "Remove custom skills if you make a mistake";
 "unlock_benefit_support" = "Support the developer";
+"unlock_benefit_reset_limit" = "Reset the daily evaluation limit";
 "restore_purchases" = "Restore Purchases";
 "buy_unlock" = "Buy Unlock (Dev)";
 "unlock_title_short" = "Unlock";

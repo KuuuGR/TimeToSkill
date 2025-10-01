@@ -247,6 +247,7 @@
 "unlock_benefit_create" = "Twórz własne umiejętności: tytuł, opis, poziom";
 "unlock_benefit_delete" = "Usuwaj własne umiejętności w razie pomyłki";
 "unlock_benefit_support" = "Wspierasz twórcę";
+"unlock_benefit_reset_limit" = "Reset dziennego limitu ocen";
 "restore_purchases" = "Przywróć zakupy";
 "buy_unlock" = "Kup odblokowanie (Dev)";
 "unlock_title_short" = "Odblokuj";

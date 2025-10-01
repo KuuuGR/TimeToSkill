@@ -15,6 +15,7 @@ struct DevPaywallView: View {
                     Label(LocalizedStringKey("unlock_benefit_create"), systemImage: "star.fill")
                     Label(LocalizedStringKey("unlock_benefit_delete"), systemImage: "trash")
                     Label(LocalizedStringKey("unlock_benefit_support"), systemImage: "heart")
+                    Label(LocalizedStringKey("unlock_benefit_reset_limit"), systemImage: "arrow.counterclockwise")
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 12).fill(Color.gray.opacity(0.08)))
