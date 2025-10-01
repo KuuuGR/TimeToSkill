@@ -6,7 +6,7 @@ struct CustomExemplarySkillSheet: View {
     @State private var title: String = ""
     @State private var description: String = ""
     @State private var category: String = ""
-    @State private var selectedPresetCategory: String = "Custom"
+    @State private var selectedPresetCategory: String = "cat_custom"
     @State private var difficulty: Int = 1
     @State private var oneStarDesc: String = ""
     @State private var twoStarDesc: String = ""
@@ -92,6 +92,11 @@ struct CustomExemplarySkillSheet: View {
                 }
             }
             .navigationTitle(LocalizedStringKey("add_skill"))
+            .onAppear {
+                if !presetCategories.contains(selectedPresetCategory) {
+                    selectedPresetCategory = "cat_custom"
+                }
+            }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button(LocalizedStringKey("cancel")) { dismiss() } }
                 ToolbarItem(placement: .primaryAction) {
