@@ -1,0 +1,339 @@
+{
+  "catalogVersion": 6,
+  "items": [
+    {
+      "id": "health.daniel_fasting",
+      "title": "Post Daniela",
+      "description": "★ Ukończono 14-dniowy cykl.\n★★ Ukończono 21-dniowy cykl.\n★★★ Ukończono 77-dniowy cykl.",
+      "imageName": "leaf.fill",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 3
+    },
+    {
+      "id": "health.cold_plunge",
+      "title": "Morsowanie",
+      "description": "★ Wykonano 1 sesję.\n★★ Wykonano 3 sesje.\n★★★ Wykonano 7 sesji.",
+      "imageName": "thermometer.snowflake",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.water_fasting",
+      "title": "Post wodny",
+      "description": "★ Ukończono 3-dniowy post wodny.\n★★ Ukończono 7-dniowy post wodny.\n★★★ Ukończono 21-dniowy post wodny.",
+      "imageName": "drop.fill",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 3
+    },
+    {
+      "id": "health.pushups",
+      "title": "Pompki – kamień milowy",
+      "description": "★ Wykonano 100 pompek łącznie.\n★★ Wykonano 2 000 pompek łącznie.\n★★★ Wykonano 5 000 pompek łącznie.",
+      "imageName": "figure.strengthtraining.traditional",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.situps",
+      "title": "Brzuszki – kamień milowy",
+      "description": "★ Wykonano 1 000 brzuszków łącznie.\n★★ Wykonano 2 000 brzuszków łącznie.\n★★★ Wykonano 5 000 brzuszków łącznie.",
+      "imageName": "figure.core.training",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.jump_rope",
+      "title": "Skakanka – kamień milowy",
+      "description": "★ Wykonano 100 skoków łącznie.\n★★ Wykonano 500 skoków łącznie.\n★★★ Wykonano 1 000 skoków łącznie.",
+      "imageName": "figure.jumprope",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "health.daily_steps",
+      "title": "Dzienne kroki",
+      "description": "★ Zrobiono 10 000 kroków w ciągu dnia.\n★★ Zrobiono 20 000 kroków w ciągu dnia.\n★★★ Zrobiono 30 000 kroków w ciągu dnia.",
+      "imageName": "figure.walk",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "health.online_workout",
+      "title": "Nawyk treningów online",
+      "description": "★ Zrealizowano 3 godziny łącznie.\n★★ Zrealizowano 9 godzin łącznie.\n★★★ Zrealizowano 21 godzin łącznie.",
+      "imageName": "play.tv.fill",
+      "category": "Zdrowie i wytrzymałość",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "mind.silence",
+      "title": "Ślub milczenia",
+      "description": "★ Utrzymano przez 1 dzień.\n★★ Utrzymano przez 2 dni.\n★★★ Utrzymano przez 3 dni.",
+      "imageName": "speaker.slash.fill",
+      "category": "Uważność i dyscyplina",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
+      "id": "mind.sensory_deprivation",
+      "title": "Deprywacja sensoryczna",
+      "description": "★ Spędzono 4 godziny z zasłoniętymi oczami.\n★★ Spędzono 12 godzin z zasłoniętymi oczami.\n★★★ Spędzono pełną dobę (24 h) z zasłoniętymi oczami.",
+      "imageName": "eye.slash.fill",
+      "category": "Uważność i dyscyplina",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
+      "id": "mind.non_dominant_hand",
+      "title": "Trening ręki niedominującej",
+      "description": "★ Używano ręki niedominującej podczas posiłku.\n★★ Używano ręki niedominującej przez cały dzień.\n★★★ Napisano całą stronę czytelnie ręką niedominującą.",
+      "imageName": "hand.raised.fill",
+      "category": "Uważność i dyscyplina",
+      "categoryKey": "mind",
+      "difficulty": 2
+    },
+    {
+      "id": "mind.speed_listening",
+      "title": "Szybkie słuchanie",
+      "description": "★ Zrozumiano godzinny materiał wideo przy prędkości 2×.\n★★ Zrozumiano godzinny materiał wideo przy prędkości 3×.\n★★★ Zrozumiano godzinny materiał wideo przy prędkości 5×.",
+      "imageName": "gauge.with.needle.fill",
+      "category": "Uważność i dyscyplina",
+      "categoryKey": "mind",
+      "difficulty": 2
+    },
+    {
+      "id": "outdoor.barefoot_walking",
+      "title": "Chodzenie boso",
+      "description": "★ Pokonano 100 kroków boso po trawie.\n★★ Pokonano 5 000 kroków boso.\n★★★ Pokonano 10 000 kroków boso.",
+      "imageName": "figure.walk",
+      "category": "Natura i aktywność na zewnątrz",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.traveler",
+      "title": "Podróżnik",
+      "description": "★ Odbyto wyjazd nad morze.\n★★ Odbyto wyjazd w góry.\n★★★ Odbyto oba wyjazdy w jednym roku.",
+      "imageName": "globe.europe.africa.fill",
+      "category": "Natura i aktywność na zewnątrz",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.forager",
+      "title": "Zbieracz",
+      "description": "★ Wybrano się na grzybobranie do lasu.\n★★ Pomyślnie rozpoznano i zebrano 3 jadalne gatunki grzybów.\n★★★ Przygotowano posiłek z wykorzystaniem zebranych składników.",
+      "imageName": "leaf.fill",
+      "category": "Natura i aktywność na zewnątrz",
+      "categoryKey": "outdoor",
+      "difficulty": 2
+    },
+    {
+      "id": "outdoor.nature_observer",
+      "title": "Obserwator natury",
+      "description": "★ Zobaczono i rozpoznano jarzębinę.\n★★ Rozpoznano 5 różnych rodzimych gatunków drzew.\n★★★ Rozpoznano 10 różnych rodzimych gatunków drzew.",
+      "imageName": "tree.fill",
+      "category": "Natura i aktywność na zewnątrz",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.rain_enthusiast",
+      "title": "Entuzjasta deszczu",
+      "description": "★ Skakano po kałużach w deszczu.\n★★ Wybrano się na spacer w deszczu bez parasola.\n★★★ Spędzono godzinę na zewnątrz podczas ulewy.",
+      "imageName": "cloud.rain.fill",
+      "category": "Natura i aktywność na zewnątrz",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "games.retro_gaming",
+      "title": "Retro – ukończenia gier",
+      "description": "★ Ukończono 1 klasyczną grę 8-bitową.\n★★ Ukończono 2 klasyczne gry 8-bitowe.\n★★★ Ukończono 3 klasyczne gry 8-bitowe.",
+      "imageName": "gamecontroller.fill",
+      "category": "Gry i rekreacja",
+      "categoryKey": "games",
+      "difficulty": 2
+    },
+    {
+      "id": "games.petanque_player",
+      "title": "Gracz w petankę",
+      "description": "★ Zagrano partię petanki.\n★★ Wygrano partię petanki.\n★★★ Zorganizowano turniej petanki ze znajomymi.",
+      "imageName": "circle.fill",
+      "category": "Gry i rekreacja",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.speedrun_enthusiast",
+      "title": "Entuzjasta speedrunów",
+      "description": "★ Obejrano speedrun gry.\n★★ Obejrano speedruny w trzech różnych kategoriach (Any%, 100%).\n★★★ Pomyślnie podjęto próbę speedruna prostej gry.",
+      "imageName": "play.rectangle.on.rectangle.fill",
+      "category": "Gry i rekreacja",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.hopscotch_master",
+      "title": "Mistrz gry w klasy",
+      "description": "★ Zagrano w klasy 10 razy.\n★★ Zagrano w klasy 100 razy.\n★★★ Nauczono dziecko gry w klasy.",
+      "imageName": "square.dashed",
+      "category": "Gry i rekreacja",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.chess_player",
+      "title": "Szachista",
+      "description": "★ Zagrano w towarzyskim turnieju szachowym.\n★★ Zagrano w oficjalnym turnieju z rankingiem.\n★★★ Wygrano partię w oficjalnym turnieju.",
+      "imageName": "circle.grid.cross.fill",
+      "category": "Gry i rekreacja",
+      "categoryKey": "games",
+      "difficulty": 3
+    },
+    {
+      "id": "games.chess_variant_master",
+      "title": "Mistrz wariantów szachowych",
+      "description": "★ Zagrano partię w Real-Time Chess.\n★★ Zagrano partię w szachy na ślepo.\n★★★ Wygrano partię w wariancie szachów.",
+      "imageName": "clock.fill",
+      "category": "Gry i rekreacja",
+      "categoryKey": "games",
+      "difficulty": 3
+    },
+    {
+      "id": "creative.painting",
+      "title": "Malarz",
+      "description": "★ Namalowano obraz na formacie A4.\n★★ Namalowano obraz na formacie A3.\n★★★ Namalowano obraz na formacie A2.",
+      "imageName": "paintbrush.fill",
+      "category": "Kreatywność i rękodzieło",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "creative.piano",
+      "title": "Pianista",
+      "description": "★ Nauczono się i zagrano 1‑minutowy utwór.\n★★ Nauczono się i zagrano 3‑minutowy utwór.\n★★★ Nauczono się i zagrano 5‑minutowy utwór.",
+      "imageName": "pianokeys",
+      "category": "Kreatywność i rękodzieło",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "creative.necklace_making",
+      "title": "Twórca naszyjników",
+      "description": "★ Wykonano jeden naszyjnik (np. z jarzębiny).\n★★ Wykonano naszyjniki dla 7 członków rodziny.",
+      "imageName": "circle.grid.cross.fill",
+      "category": "Kreatywność i rękodzieło",
+      "categoryKey": "creative",
+      "difficulty": 1
+    },
+    {
+      "id": "creative.sewing",
+      "title": "Krawiec",
+      "description": "★ Zacerowano element garderoby.\n★★ Uszyto prosty przedmiot z wykroju (np. poszewkę).\n★★★ Uszyto złożoną część garderoby.",
+      "imageName": "scissors",
+      "category": "Kreatywność i rękodzieło",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "learning.memorize_poetry",
+      "title": "Memorowanie poezji",
+      "description": "★ Nauczono się na pamięć 1 wiersza.\n★★ Nauczono się na pamięć 2 wierszy.\n★★★ Nauczono się na pamięć 3 wierszy.",
+      "imageName": "book.fill",
+      "category": "Nauka i pamięć",
+      "categoryKey": "learning",
+      "difficulty": 1
+    },
+    {
+      "id": "learning.learn_esperanto",
+      "title": "Uczący się esperanta",
+      "description": "★ Uczono się przez 21 godzin.\n★★ Uczono się przez 100 godzin.\n★★★ Uczono się przez 1000 godzin.",
+      "imageName": "globe",
+      "category": "Nauka i pamięć",
+      "categoryKey": "learning",
+      "difficulty": 2
+    },
+    {
+      "id": "learning.sign_language",
+      "title": "Uczący się języka migowego",
+      "description": "★ Nauczono się 50 słów.\n★★ Nauczono się 100 słów.\n★★★ Nauczono się 256 słów.",
+      "imageName": "hand.raised.fill",
+      "category": "Nauka i pamięć",
+      "categoryKey": "learning",
+      "difficulty": 2
+    },
+    {
+      "id": "learning.major_system",
+      "title": "Użytkownik systemu Major",
+      "description": "★ Zapamiętano 10 dat historycznych przy użyciu systemu.\n★★ Zakodowano stronę gazety przy użyciu systemu.\n★★★ Zakodowano całą krótką książkę przy użyciu systemu.",
+      "imageName": "newspaper.fill",
+      "category": "Nauka i pamięć",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.upside_down_reading",
+      "title": "Czytelnik do góry nogami",
+      "description": "★ Przeczytano krótki artykuł do góry nogami.\n★★ Przeczytano magazyn do góry nogami.\n★★★ Przeczytano całą książkę do góry nogami.",
+      "imageName": "arrow.clockwise",
+      "category": "Nauka i pamięć",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.ambidextrous_skills",
+      "title": "Umiejętności oburęczne",
+      "description": "★ Napisano zdanie ręką niedominującą.\n★★ Napisano akapit ręką niedominującą.\n★★★ Napisano równocześnie różne słowa obiema rękami.",
+      "imageName": "hand.draw.fill",
+      "category": "Nauka i pamięć",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.morse_code",
+      "title": "Uczący się kodu Morse’a",
+      "description": "★ Przepisano krótkie zdanie na kod Morse’a.\n★★ Przepisano wiersz na kod Morse’a.\n★★★ Prowadzono prostą rozmowę przy użyciu kodu Morse’a (np. światłem lub dźwiękiem).",
+      "imageName": "network",
+      "category": "Nauka i pamięć",
+      "categoryKey": "learning",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.rock_climber",
+      "title": "Wspinacz skalny",
+      "description": "★ Ukończono wprowadzający kurs wspinaczki.\n★★ Zrealizowano 15 sesji treningowych.\n★★★ Pokonano konkretną, wymagającą drogę wspinaczkową.",
+      "imageName": "figure.climbing",
+      "category": "Sport",
+      "categoryKey": "sports",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.swimmer",
+      "title": "Pływak",
+      "description": "★ Opanowano jeden styl pływacki.\n★★ Opanowano trzy różne style pływackie.\n★★★ Przepłynięto ciągiem dystans 1 km.",
+      "imageName": "figure.pool.swim",
+      "category": "Sport",
+      "categoryKey": "sports",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.juggler",
+      "title": "Żongler",
+      "description": "★ Nauczono się żonglować 3 piłkami.\n★★ Opanowano 5 trików z 3 piłkami.\n★★★ Żonglowano 3 piłkami jedną ręką.",
+      "imageName": "circle.grid.3x3.fill",
+      "category": "Sport",
+      "categoryKey": "sports",
+      "difficulty": 2
+    }
+  ]
+}
+
