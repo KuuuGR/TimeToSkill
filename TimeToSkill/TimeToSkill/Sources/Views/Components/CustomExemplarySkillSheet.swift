@@ -52,7 +52,7 @@ struct CustomExemplarySkillSheet: View {
                         PhotosPicker(selection: $selectedItem, matching: .images) {
                             Text(LocalizedStringKey("choose_image"))
                         }
-                        .onChange(of: selectedItem) { newItem in
+                        .onChange(of: selectedItem) { _, newItem in
                             guard let item = newItem else { return }
                             Task {
                                 if let raw = try? await item.loadTransferable(type: Data.self), let ui = UIImage(data: raw) {

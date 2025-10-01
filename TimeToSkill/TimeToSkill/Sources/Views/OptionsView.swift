@@ -151,7 +151,7 @@ struct OptionsView: View {
                         if let focused = focusedField {
                             activeSource = focused
                         }
-                        focusedField = .none
+                        focusedField = nil
                         updateConversions()
                     }
                     .frame(maxWidth: .infinity, alignment: .trailing)
@@ -176,7 +176,7 @@ struct OptionsView: View {
                         if let focused = focusedField {
                             activeSource = focused
                         }
-                        focusedField = .none
+                        focusedField = nil
                         updateConversions()
                     }
                 }
@@ -195,11 +195,11 @@ struct OptionsView: View {
                 ShareSheet(items: [data])
             }
         }
-        .onChange(of: pdfData) { newValue in
-            if newValue != nil {
-                showingShareSheet = true
+            .onChange(of: pdfData) { _, newValue in
+                if newValue != nil {
+                    showingShareSheet = true
+                }
             }
-        }
     }
 
     // MARK: - Time Converter Logic
