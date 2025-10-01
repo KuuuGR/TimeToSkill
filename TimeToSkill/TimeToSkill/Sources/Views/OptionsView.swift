@@ -445,7 +445,9 @@ struct OptionsView: View {
 
         for (label, count) in bins {
             (label as NSString).draw(at: CGPoint(x: leftX, y: yPosition - 2), withAttributes: labelAttributes)
-            let width = CGFloat(count) / CGFloat(maxCount) * barAreaWidth
+            let ratio = CGFloat(count) / CGFloat(maxCount)
+            let safeRatio = ratio.isNaN || !ratio.isFinite ? 0 : max(0, min(1, ratio))
+            let width = safeRatio * barAreaWidth
             let barX = leftX + 90
             let barRect = CGRect(x: barX, y: yPosition, width: width, height: barHeight)
             color.setFill()

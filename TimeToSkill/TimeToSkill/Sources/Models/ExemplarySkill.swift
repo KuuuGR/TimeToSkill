@@ -22,7 +22,10 @@ final class ExemplarySkill {
     var skillDescription: String
     var imageName: String
     var category: String
-    var difficultyLevel: Int // 1-3 stars
+    var difficultyLevel: Int // 1-10
+    var oneStarDescription: String = ""
+    var twoStarDescription: String = ""
+    var threeStarDescription: String = ""
     
     // User fields (never overwritten by seeder)
     var userRating: Int? // 1-3 stars (user's self-evaluation)
@@ -41,6 +44,9 @@ final class ExemplarySkill {
         imageName: String,
         category: String,
         difficultyLevel: Int,
+        oneStarDescription: String = "",
+        twoStarDescription: String = "",
+        threeStarDescription: String = "",
         userRating: Int? = nil,
         obtainedAt: Date? = nil,
         verificationCode: String? = nil,
@@ -54,12 +60,15 @@ final class ExemplarySkill {
         self.skillDescription = skillDescription
         self.imageName = imageName
         self.category = category
-        self.difficultyLevel = max(1, min(3, difficultyLevel))
+        self.difficultyLevel = max(1, min(10, difficultyLevel))
         self.userRating = userRating
         self.obtainedAt = obtainedAt
         self.verificationCode = verificationCode
         self.isObtained = isObtained
         self.achievementHistory = []
+        self.oneStarDescription = oneStarDescription
+        self.twoStarDescription = twoStarDescription
+        self.threeStarDescription = threeStarDescription
     }
 }
 

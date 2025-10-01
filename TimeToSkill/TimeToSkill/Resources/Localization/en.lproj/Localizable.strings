@@ -6,7 +6,7 @@
 
 // MARK: - Main menu additions
 "main_manage_counters" = "Manage Counters";
-"main_exemplary_skills" = "Exemplary Skills";
+"main_exemplary_skills" = "Skills";
 
 // MARK: - OptionsView
 "options_title" = "Options";
@@ -183,7 +183,7 @@
 "counter_thresholds_title" = "Thresholds";
 
 // MARK: - ExemplarySkillsView
-"exemplary_skills_title" = "Exemplary Skills";
+"exemplary_skills_title" = "Skills";
 "daily_evaluations_format" = "Daily Evaluations: %d/%d";
 "sort_menu_label" = "Sort";
 "reset_daily_limit" = "Reset Daily Limit";
@@ -241,3 +241,19 @@
 
 // MARK: - SkillOptions additions
 "view_distribution" = "View distribution";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Add custom skill";
+"unlock_custom_skills_title" = "Unlock Custom Skills";
+"unlock_custom_skills_subtitle" = "Create your own achievements and curate your list.";
+"unlock_benefit_create" = "Create your own skill with title, description and difficulty";
+"unlock_benefit_delete" = "Remove custom skills if you make a mistake";
+"unlock_benefit_support" = "Support the developer";
+"restore_purchases" = "Restore Purchases";
+"buy_unlock" = "Buy Unlock (Dev)";
+"unlock_title_short" = "Unlock";
+"difficulty_label" = "Difficulty";
+"star_descriptions_title" = "Star-level descriptions";
+"one_star_description" = "1★ description";
+"two_star_description" = "2★ description";
+"three_star_description" = "3★ description";

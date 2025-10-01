@@ -146,8 +146,23 @@ struct ExemplarySkillsView: View {
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
                         ForEach(displayedSkills) { skill in
-                            ExemplarySkillCard(skill: skill) {
-                                selectedSkill = skill
+                            ZStack(alignment: .topTrailing) {
+                                ExemplarySkillCard(skill: skill) {
+                                    selectedSkill = skill
+                                }
+                                if skill.isUserCreated {
+                                    Button {
+                                        pendingDelete = skill
+                                        showingDeleteConfirm = true
+                                    } label: {
+                                        Image(systemName: "trash")
+                                            .foregroundColor(.gray)
+                                            .padding(6)
+                                            .background(.ultraThinMaterial, in: Circle())
+                                    }
+                                    .buttonStyle(.plain)
+                                    .padding(6)
+                                }
                             }
                         }
                     }
@@ -173,7 +188,36 @@ struct ExemplarySkillsView: View {
             } message: {
                 Text(String(format: NSLocalizedString("daily_limit_reached_message_format", comment: ""), ExemplarySkillConstants.dailyEvaluationLimit))
             }
+            .background(deleteConfirmDialog)
         }
+    }
+
+    @State private var showingDeleteConfirm: Bool = false
+    @State private var pendingDelete: ExemplarySkill?
+    private func deleteSkill(_ skill: ExemplarySkill) {
+        context.delete(skill)
+        try? context.save()
+    }
+}
+extension ExemplarySkillsView {
+    @ViewBuilder
+    private var deleteConfirmDialog: some View {
+        EmptyView()
+            .confirmationDialog(
+                LocalizedStringKey("delete_confirm_title"),
+                isPresented: $showingDeleteConfirm,
+                titleVisibility: .visible
+            ) {
+                Button(LocalizedStringKey("delete_confirm_action"), role: .destructive) {
+                    if let skill = pendingDelete { deleteSkill(skill) }
+                    pendingDelete = nil
+                }
+                Button(LocalizedStringKey("cancel"), role: .cancel) {
+                    pendingDelete = nil
+                }
+            } message: {
+                Text(LocalizedStringKey("delete_confirm_message"))
+            }
     }
     
     private func evaluateSkill(_ skill: ExemplarySkill, rating: Int, verificationCode: String) {

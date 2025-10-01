@@ -17,6 +17,10 @@ struct MainView: View {
     @State private var animateFAB = false
     @State private var showingOptions = false
     @State private var showingStats = false
+    @AppStorage("customSkillUnlocked") private var customSkillUnlocked: Bool = false
+    @State private var showingPaywall: Bool = false
+    @State private var showingCustomSkillSheet: Bool = false
+    @Environment(\.modelContext) private var modelContext
 
     private let backgroundAnimation: BackgroundAnimationType = .staticCircle
 
@@ -132,6 +136,21 @@ struct MainView: View {
                         
                         Spacer()
                         
+                        // Center FAB (paywalled custom skill)
+                        FABButton(
+                            icon: customSkillUnlocked ? "star" : "lock",
+                            action: {
+                                if customSkillUnlocked { showingCustomSkillSheet = true } else { showingPaywall = true }
+                            },
+                            backgroundColor: customSkillUnlocked ? .purple : .gray,
+                            size: 60,
+                            animatePulse: false,
+                            accessibilityLabelKey: "fab_add_custom_skill"
+                        )
+                        .padding(.vertical, 20)
+
+                        Spacer()
+
                         // Stats FAB (right side)
                         FABButton(
                             icon: "chart.bar.fill",
@@ -168,6 +187,26 @@ struct MainView: View {
         }
         .sheet(isPresented: $showingOptions) {
             OptionsView()
+        }
+        .sheet(isPresented: $showingPaywall) {
+            DevPaywallView(onUnlock: { customSkillUnlocked = true })
+        }
+        .sheet(isPresented: $showingCustomSkillSheet) {
+            CustomExemplarySkillSheet { title, description, category, difficulty, one, two, three in
+                let model = ExemplarySkill(
+                    isUserCreated: true,
+                    title: title,
+                    skillDescription: description,
+                    imageName: "star.fill",
+                    category: category.isEmpty ? "Custom" : category,
+                    difficultyLevel: difficulty,
+                    oneStarDescription: one,
+                    twoStarDescription: two,
+                    threeStarDescription: three
+                )
+                modelContext.insert(model)
+                try? modelContext.save()
+            }
         }
     }
 }

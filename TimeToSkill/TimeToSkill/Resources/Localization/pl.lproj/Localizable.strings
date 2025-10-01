@@ -6,7 +6,7 @@
 
 // MARK: - Main menu additions
 "main_manage_counters" = "Zarządzaj licznikami";
-"main_exemplary_skills" = "Umiejętności wzorcowe";
+"main_exemplary_skills" = "Umiejętności";
 
 // MARK: - OptionsView
 "options_title" = "Opcje";
@@ -181,7 +181,7 @@
 "counter_thresholds_title" = "Progi";
 
 // MARK: - ExemplarySkillsView
-"exemplary_skills_title" = "Umiejętności wzorcowe";
+"exemplary_skills_title" = "Umiejętności";
 "daily_evaluations_format" = "Dzienne oceny: %d/%d";
 "sort_menu_label" = "Sortuj";
 "reset_daily_limit" = "Resetuj dzienny limit";
@@ -239,3 +239,19 @@
 
 // MARK: - SkillOptions additions
 "view_distribution" = "Zobacz rozkład";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Dodaj własną umiejętność";
+"unlock_custom_skills_title" = "Odblokuj własne umiejętności";
+"unlock_custom_skills_subtitle" = "Twórz własne osiągnięcia i porządkuj listę.";
+"unlock_benefit_create" = "Twórz własne umiejętności: tytuł, opis, poziom";
+"unlock_benefit_delete" = "Usuwaj własne umiejętności w razie pomyłki";
+"unlock_benefit_support" = "Wspierasz twórcę";
+"restore_purchases" = "Przywróć zakupy";
+"buy_unlock" = "Kup odblokowanie (Dev)";
+"unlock_title_short" = "Odblokuj";
+"difficulty_label" = "Trudność";
+"star_descriptions_title" = "Opisy poziomów gwiazdek";
+"one_star_description" = "Opis 1★";
+"two_star_description" = "Opis 2★";
+"three_star_description" = "Opis 3★";

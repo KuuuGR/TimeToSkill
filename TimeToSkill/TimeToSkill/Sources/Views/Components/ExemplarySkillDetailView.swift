@@ -114,15 +114,36 @@ struct ExemplarySkillDetailView: View {
                         }
                     }
                     
-                    // Description
+                    // Description and star-level descriptions
                     VStack(alignment: .leading, spacing: 12) {
                         Text(LocalizedStringKey("description"))
                             .font(.headline)
                             .fontWeight(.semibold)
-                        
                         Text(skill.skillDescription)
                             .font(.body)
                             .foregroundColor(.secondary)
+                        if !skill.oneStarDescription.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
+                            !skill.twoStarDescription.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
+                            !skill.threeStarDescription.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                            Divider().padding(.vertical, 4)
+                            VStack(alignment: .leading, spacing: 8) {
+                                if !skill.oneStarDescription.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                                    Text("1★: \(skill.oneStarDescription)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+                                if !skill.twoStarDescription.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                                    Text("2★: \(skill.twoStarDescription)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+                                if !skill.threeStarDescription.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                                    Text("3★: \(skill.threeStarDescription)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
+                        }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
