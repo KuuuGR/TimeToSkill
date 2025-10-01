@@ -30,7 +30,9 @@ struct GlobalTimeDistributionView: View {
                                 .frame(width: 90, alignment: .leading)
                             GeometryReader { geo in
                                 let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
-                                let width = CGFloat(max(1, bin.1)) / CGFloat(maxCount) * geo.size.width
+                                let ratio = CGFloat(bin.1) / CGFloat(maxCount)
+                                let safeRatio = ratio.isNaN || !ratio.isFinite ? 0 : max(0, min(1, ratio))
+                                let width = safeRatio * geo.size.width
                                 RoundedRectangle(cornerRadius: 6)
                                     .fill(LinearGradient(colors: [.green, .blue], startPoint: .leading, endPoint: .trailing))
                                     .frame(width: width, height: 12)
