@@ -8,6 +8,7 @@ struct OptionsView: View {
     @Environment(\.dismiss) private var dismiss
     @Query(sort: \Skill.name, animation: .default) private var skills: [Skill]
     @Query(sort: \Counter.title, animation: .default) private var counters: [Counter]
+    @Environment(\.modelContext) private var modelContext
     @State private var showingShareSheet = false
     @State private var pdfData: Data?
 
@@ -366,16 +367,13 @@ struct OptionsView: View {
             }
 
             // Add Global Time Distribution Histogram (bars)
-            // Fetch data similar to GlobalTimeDistributionView
-            if let modelContainer = try? ModelContainer(for: TimeIntervalEntry.self),
-               let modelContext = try? ModelContext(modelContainer) {
+            do {
                 let descriptor = FetchDescriptor<TimeIntervalEntry>()
                 let entries = (try? modelContext.fetch(descriptor)) ?? []
                 let minutes = entries.map { max(0, $0.durationMinutes) }
                 let bins: [(String, Int)] = makeBinsForPDF(values: minutes)
 
                 if !bins.isEmpty {
-                    // Ensure space
                     if yPosition > pageRect.height - 200 {
                         context.beginPage()
                         yPosition = 50
@@ -388,36 +386,40 @@ struct OptionsView: View {
                     sectionTitle.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: sectionTitleAttributes)
                     yPosition += 26
 
-                    // Draw bars
-                    let leftX: CGFloat = 50
-                    let rightX: CGFloat = pageRect.width - 50
-                    let barAreaWidth: CGFloat = rightX - leftX - 120 // leave space for labels and counts
-                    let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
-                    let barHeight: CGFloat = 10
-                    let barSpacing: CGFloat = 16
-
-                    let labelAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)]
-                    let countAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor.secondaryLabel]
-
-                    for (label, count) in bins {
-                        // Label
-                        (label as NSString).draw(at: CGPoint(x: leftX, y: yPosition - 2), withAttributes: labelAttributes)
-                        // Bar rect
-                        let width = CGFloat(count) / CGFloat(maxCount) * barAreaWidth
-                        let barX = leftX + 90
-                        let barRect = CGRect(x: barX, y: yPosition, width: width, height: barHeight)
-                        UIColor.systemBlue.setFill()
-                        UIBezierPath(roundedRect: barRect, cornerRadius: 4).fill()
-                        // Count
-                        ("\(count)" as NSString).draw(at: CGPoint(x: barX + barAreaWidth + 8, y: yPosition - 2), withAttributes: countAttributes)
-
-                        yPosition += barHeight + barSpacing
-                        if yPosition > pageRect.height - 60 {
-                            context.beginPage()
-                            yPosition = 50
-                        }
-                    }
+                    drawHistogramBars(bins: bins, pageRect: pageRect, yPosition: &yPosition, color: UIColor.systemBlue, rendererContext: context)
                 }
+            }
+
+            // Per-skill distributions
+            for skill in skills {
+                let targetId = skill.id
+                let descriptor = FetchDescriptor<TimeIntervalEntry>(predicate: #Predicate { entry in entry.skillId == targetId })
+                let entries = (try? modelContext.fetch(descriptor)) ?? []
+                let minutes = entries.map { max(0, $0.durationMinutes) }
+                let bins = makeBinsForPDF(values: minutes)
+                if bins.isEmpty { continue }
+
+                if yPosition > pageRect.height - 200 {
+                    context.beginPage()
+                    yPosition = 50
+                }
+
+                let sectionTitleAttributes = [
+                    NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)
+                ]
+                let skillSectionTitle = NSLocalizedString("time_distribution_title", comment: "")
+                skillSectionTitle.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: sectionTitleAttributes)
+                yPosition += 22
+
+                let subtitleAttributes = [
+                    NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12),
+                    NSAttributedString.Key.foregroundColor: UIColor.secondaryLabel
+                ]
+                let subtitle = String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name)
+                (subtitle as NSString).draw(at: CGPoint(x: 50, y: yPosition), withAttributes: subtitleAttributes)
+                yPosition += 18
+
+                drawHistogramBars(bins: bins, pageRect: pageRect, yPosition: &yPosition, color: UIColor.systemPurple, rendererContext: context)
             }
         }
     }
@@ -436,5 +438,33 @@ struct OptionsView: View {
             result.append((label, count))
         }
         return result.filter { $0.1 > 0 }
+    }
+
+    private func drawHistogramBars(bins: [(String, Int)], pageRect: CGRect, yPosition: inout CGFloat, color: UIColor, rendererContext: UIGraphicsPDFRendererContext) {
+        let leftX: CGFloat = 50
+        let rightX: CGFloat = pageRect.width - 50
+        let barAreaWidth: CGFloat = rightX - leftX - 120
+        let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
+        let barHeight: CGFloat = 10
+        let barSpacing: CGFloat = 16
+
+        let labelAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)]
+        let countAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor.secondaryLabel]
+
+        for (label, count) in bins {
+            (label as NSString).draw(at: CGPoint(x: leftX, y: yPosition - 2), withAttributes: labelAttributes)
+            let width = CGFloat(count) / CGFloat(maxCount) * barAreaWidth
+            let barX = leftX + 90
+            let barRect = CGRect(x: barX, y: yPosition, width: width, height: barHeight)
+            color.setFill()
+            UIBezierPath(roundedRect: barRect, cornerRadius: 4).fill()
+            ("\(count)" as NSString).draw(at: CGPoint(x: barX + barAreaWidth + 8, y: yPosition - 2), withAttributes: countAttributes)
+
+            yPosition += barHeight + barSpacing
+            if yPosition > pageRect.height - 60 {
+                rendererContext.beginPage()
+                yPosition = 50
+            }
+        }
     }
 }
