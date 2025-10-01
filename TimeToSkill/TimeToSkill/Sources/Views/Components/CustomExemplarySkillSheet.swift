@@ -6,6 +6,7 @@ struct CustomExemplarySkillSheet: View {
     @State private var title: String = ""
     @State private var description: String = ""
     @State private var category: String = ""
+    @State private var selectedPresetCategory: String = "Custom"
     @State private var difficulty: Int = 1
     @State private var oneStarDesc: String = ""
     @State private var twoStarDesc: String = ""
@@ -22,7 +23,14 @@ struct CustomExemplarySkillSheet: View {
                     TextField(LocalizedStringKey("enter_skill_name"), text: $title)
                     TextField(LocalizedStringKey("description"), text: $description, axis: .vertical)
                         .lineLimit(3...6)
-                    TextField("Category", text: $category)
+                    Picker(LocalizedStringKey("category_label"), selection: $selectedPresetCategory) {
+                        ForEach(presetCategories, id: \.self) { key in
+                            Text(LocalizedStringKey(key)).tag(key)
+                        }
+                    }
+                    if selectedPresetCategory == "cat_custom" || selectedPresetCategory == "Custom" {
+                        TextField(LocalizedStringKey("category_custom_placeholder"), text: $category)
+                    }
                     Stepper(value: $difficulty, in: 1...10) {
                         Text(LocalizedStringKey("difficulty_label")) + Text(": \(difficulty)")
                     }
@@ -92,10 +100,12 @@ struct CustomExemplarySkillSheet: View {
                         var imageName: String? = nil
                         if let data = imageData { savedPath = saveImageData(data) }
                         if let icon = builtinSelection { imageName = icon }
+                        let finalCategoryKey = (selectedPresetCategory == "cat_custom" || selectedPresetCategory == "Custom") ? nil : selectedPresetCategory
+                        let finalCategory = finalCategoryKey != nil ? NSLocalizedString(finalCategoryKey!, comment: "") : category.trimmingCharacters(in: .whitespaces)
                         onCreate(
                             title.trimmingCharacters(in: .whitespaces),
                             description.trimmingCharacters(in: .whitespacesAndNewlines),
-                            category.trimmingCharacters(in: .whitespaces),
+                            finalCategory.isEmpty ? "Custom" : finalCategory,
                             difficulty,
                             oneStarDesc.trimmingCharacters(in: .whitespacesAndNewlines),
                             twoStarDesc.trimmingCharacters(in: .whitespacesAndNewlines),
@@ -134,7 +144,57 @@ private func resizeImage(_ image: UIImage, to targetSize: CGSize) -> UIImage {
 private let bundledIcons: [String] = [
     "star.fill", "guitars.fill", "globe", "book.fill", "pencil", "paintbrush.fill",
     "camera.fill", "hammer.fill", "gamecontroller.fill", "music.note", "figure.run",
-    "laptopcomputer", "brain.head.profile"
+    "laptopcomputer", "brain.head.profile", "mic.fill", "airplane", "bicycle",
+    "lightbulb.fill", "wrench.fill", "leaf.fill", "flame.fill", "timer",
+    "doc.text.fill", "graduationcap.fill", "chart.bar.fill", "plus.slash.minus",
+    "bag.fill", "cart.fill", "banknote", "dollarsign.circle.fill", "bitcoinsign.circle",
+    "shield.checkerboard", "lock.fill", "bolt.fill", "sparkles", "paperplane.fill",
+    "mappin.and.ellipse", "house.fill", "building.2.fill", "tortoise.fill", "hare.fill",
+    "scissors", "paintpalette.fill", "fork.knife", "cup.and.saucer.fill"
+]
+
+private let presetCategories: [String] = [
+    "cat_custom",
+    "cat_music",
+    "cat_language",
+    "cat_art",
+    "cat_coding",
+    "cat_fitness",
+    "cat_cooking",
+    "cat_photography",
+    "cat_writing",
+    "cat_public_speaking",
+    "cat_science",
+    "cat_math",
+    "cat_engineering",
+    "cat_design",
+    "cat_business",
+    "cat_marketing",
+    "cat_finance",
+    "cat_investing",
+    "cat_entrepreneurship",
+    "cat_psychology",
+    "cat_education",
+    "cat_history",
+    "cat_geography",
+    "cat_health",
+    "cat_meditation",
+    "cat_yoga",
+    "cat_sports",
+    "cat_dance",
+    "cat_theatre",
+    "cat_film",
+    "cat_editing",
+    "cat_3d",
+    "cat_ai",
+    "cat_data",
+    "cat_cybersecurity",
+    "cat_gardening",
+    "cat_diy",
+    "cat_travel",
+    "cat_cars",
+    "cat_parenting",
+    "cat_animals"
 ]
 
 

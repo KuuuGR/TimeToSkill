@@ -164,6 +164,17 @@ struct ExemplarySkillsView: View {
                                     }
                                     .buttonStyle(.plain)
                                     .padding(6)
+                                    // Also allow hiding user-created skills
+                                    Menu {
+                                        Button(LocalizedStringKey("hide")) { skill.isHidden = true; try? context.save() }
+                                    } label: {
+                                        Image(systemName: "ellipsis.circle")
+                                            .foregroundColor(.gray)
+                                            .padding(6)
+                                            .background(.ultraThinMaterial, in: Circle())
+                                    }
+                                    .buttonStyle(.plain)
+                                    .padding(6)
                                 } else {
                                     Menu {
                                         Button(LocalizedStringKey("hide")) { skill.isHidden = true; try? context.save() }
