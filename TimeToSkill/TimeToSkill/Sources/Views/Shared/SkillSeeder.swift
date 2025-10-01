@@ -20,9 +20,18 @@ enum CatalogDefaults {
 }
 
 enum SkillSeeder {
+    /// Attempts to load a localized skills catalog first (e.g., `ExemplarySkills_pl.json` for Polish),
+    /// then falls back to the base `ExemplarySkills.json`.
     static func seedIfNeeded(context: ModelContext) {
-        guard let url = Bundle.main.url(forResource: "ExemplarySkills", withExtension: "json") else {
-            print("[Seeder] ExemplarySkills.json not found in bundle")
+        let preferredLang = Locale.preferredLanguages.first ?? "en"
+        let langPrefix = String(preferredLang.prefix(2)).lowercased()
+        let localizedName = "ExemplarySkills_\(langPrefix)"
+
+        let bundle = Bundle.main
+        let url = bundle.url(forResource: localizedName, withExtension: "json")
+            ?? bundle.url(forResource: "ExemplarySkills", withExtension: "json")
+        guard let url else {
+            print("[Seeder] ExemplarySkills(.json) not found in bundle")
             return
         }
         guard let data = try? Data(contentsOf: url) else {

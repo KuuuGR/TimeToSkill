@@ -22,7 +22,8 @@ struct ExemplarySkillsView: View {
         case category = "Category"
         case starsAsc = "Stars ↑"
         case starsDesc = "Stars ↓"
-        case difficulty = "Difficulty"
+        case difficultyAsc = "Difficulty ↑"
+        case difficultyDesc = "Difficulty ↓"
         case completedAsc = "Completed ↑"
         case completedDesc = "Completed ↓"
     }
@@ -58,10 +59,15 @@ struct ExemplarySkillsView: View {
                 if a == b { return $0.title < $1.title }
                 return a > b
             }
-        case .difficulty:
+        case .difficultyAsc:
             return exemplarySkills.sorted {
                 if $0.difficultyLevel == $1.difficultyLevel { return $0.title < $1.title }
                 return $0.difficultyLevel < $1.difficultyLevel
+            }
+        case .difficultyDesc:
+            return exemplarySkills.sorted {
+                if $0.difficultyLevel == $1.difficultyLevel { return $0.title < $1.title }
+                return $0.difficultyLevel > $1.difficultyLevel
             }
         case .completedAsc:
             return exemplarySkills.sorted { a, b in
