@@ -4,6 +4,10 @@
 "main_learning_theory" = "Learning Theory";
 "main_about_app" = "About App";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Manage Counters";
+"main_exemplary_skills" = "Exemplary Skills";
+
 // MARK: - OptionsView
 "options_title" = "Options";
 "options_export_section" = "Export Data";
@@ -152,3 +156,46 @@
 // MARK: - FABButton
 "fab_add_skill" = "Add a new skill";
 "fab_view_stats" = "View statistics";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Manage Counters";
+"counter_details_section" = "Details";
+"counter_title_placeholder" = "Title";
+"counter_step_label%d" = "Step: %d";
+"counter_thresholds_section" = "Thresholds (comma-separated)";
+"counter_thresholds_placeholder" = "e.g. 100,200,500,10000";
+"counter_new_title" = "New Counter";
+"create" = "Create";
+"apply" = "Apply";
+"value" = "Value";
+"add" = "Add";
+"counter_progress_section" = "Progress";
+"counter_value_label" = "Value";
+"counter_stage_max_label" = "Stage Max";
+"counter_no_thresholds" = "No thresholds set";
+"counter_reset_to_zero" = "Reset to 0";
+"counter_configuration_section" = "Configuration";
+"counter_edit_thresholds" = "Edit Thresholds";
+"counter_set_value_section" = "Set Value Manually";
+"counter_set_value_placeholder" = "-1000000 to 1000000";
+"counter_current_thresholds" = "Current Thresholds";
+"counter_add_threshold" = "Add Threshold";
+"counter_thresholds_title" = "Thresholds";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Exemplary Skills";
+"daily_evaluations_format" = "Daily Evaluations: %d/%d";
+"sort_menu_label" = "Sort";
+"reset_daily_limit" = "Reset Daily Limit";
+"daily_limit_reached_title" = "Daily Limit Reached";
+"daily_limit_reached_message_format" = "You've reached your daily limit of %d skill evaluations. Try again tomorrow!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Time Distribution";
+"time_distribution_skill_format" = "Skill: %@";
+"time_total_hours_format" = "Total time: %@ h";
+"time_mean_minutes_format" = "Mean interval: %@ min";
+"time_std_minutes_format" = "Std dev: %@ min";
+"distribution_nav_title" = "Distribution";
+"global_time_distribution_title" = "Global Time Distribution";

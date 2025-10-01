@@ -12,18 +12,18 @@ struct TimeDistributionView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text("Time Distribution")
+                Text(LocalizedStringKey("time_distribution_title"))
                     .font(.title2)
                     .bold()
-                Text("Skill: \(skill.name)")
+                Text(String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 
                 // Stats
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("Total time: \(formatHours(totalMinutes / 60)) h")
-                    Text("Mean interval: \(formatMinutes(meanMinutes)) min")
-                    Text("Std dev: \(formatMinutes(stdMinutes)) min")
+                    Text(String(format: NSLocalizedString("time_total_hours_format", comment: ""), formatHours(totalMinutes / 60)))
+                    Text(String(format: NSLocalizedString("time_mean_minutes_format", comment: ""), formatMinutes(meanMinutes)))
+                    Text(String(format: NSLocalizedString("time_std_minutes_format", comment: ""), formatMinutes(stdMinutes)))
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 12).fill(Color.gray.opacity(0.08)))
@@ -54,7 +54,7 @@ struct TimeDistributionView: View {
             }
             .padding()
         }
-        .navigationTitle("Distribution")
+        .navigationTitle(LocalizedStringKey("distribution_nav_title"))
         .onAppear { load() }
     }
     

@@ -74,7 +74,7 @@ struct MainView: View {
 
                             NavigationLink(destination: ManageCountersView()) {
                                 Label {
-                                    Text("Manage Counters")
+                                    Text(LocalizedStringKey("main_manage_counters"))
                                         .font(AppTypography.headline)
                                 } icon: {
                                     Image(systemName: "number")
@@ -92,7 +92,7 @@ struct MainView: View {
 
                             NavigationLink(destination: ExemplarySkillsView()) {
                                 Label {
-                                    Text("Exemplary Skills")
+                                    Text(LocalizedStringKey("main_exemplary_skills"))
                                         .font(AppTypography.headline)
                                 } icon: {
                                     Image(systemName: "star.fill")

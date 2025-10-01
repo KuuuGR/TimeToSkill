@@ -4,6 +4,10 @@
 "main_learning_theory" = "Teoria nauki";
 "main_about_app" = "O aplikacji";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Zarządzaj licznikami";
+"main_exemplary_skills" = "Umiejętności wzorcowe";
+
 // MARK: - OptionsView
 "options_title" = "Opcje";
 "options_export_section" = "Eksportuj dane";
@@ -150,3 +154,46 @@
 // MARK: - FABButton
 "fab_add_skill" = "Dodaj nową umiejętność";
 "fab_view_stats" = "Zobacz statystyki";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Zarządzaj licznikami";
+"counter_details_section" = "Szczegóły";
+"counter_title_placeholder" = "Tytuł";
+"counter_step_label%d" = "Krok: %d";
+"counter_thresholds_section" = "Progi (rozdzielone przecinkami)";
+"counter_thresholds_placeholder" = "np. 100,200,500,10000";
+"counter_new_title" = "Nowy licznik";
+"create" = "Utwórz";
+"apply" = "Zastosuj";
+"value" = "Wartość";
+"add" = "Dodaj";
+"counter_progress_section" = "Postęp";
+"counter_value_label" = "Wartość";
+"counter_stage_max_label" = "Maks. etap";
+"counter_no_thresholds" = "Brak ustawionych progów";
+"counter_reset_to_zero" = "Zresetuj do 0";
+"counter_configuration_section" = "Konfiguracja";
+"counter_edit_thresholds" = "Edytuj progi";
+"counter_set_value_section" = "Ustaw wartość ręcznie";
+"counter_set_value_placeholder" = "-1000000 do 1000000";
+"counter_current_thresholds" = "Obecne progi";
+"counter_add_threshold" = "Dodaj próg";
+"counter_thresholds_title" = "Progi";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Umiejętności wzorcowe";
+"daily_evaluations_format" = "Dzienne oceny: %d/%d";
+"sort_menu_label" = "Sortuj";
+"reset_daily_limit" = "Resetuj dzienny limit";
+"daily_limit_reached_title" = "Osiągnięto dzienny limit";
+"daily_limit_reached_message_format" = "Osiągnąłeś dzienny limit %d ocen umiejętności. Spróbuj jutro!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Rozkład czasu";
+"time_distribution_skill_format" = "Umiejętność: %@";
+"time_total_hours_format" = "Łączny czas: %@ h";
+"time_mean_minutes_format" = "Średni interwał: %@ min";
+"time_std_minutes_format" = "Odchyl. stand.: %@ min";
+"distribution_nav_title" = "Rozkład";
+"global_time_distribution_title" = "Globalny rozkład czasu";

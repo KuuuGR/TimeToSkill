@@ -62,7 +62,7 @@ struct ManageCountersView: View {
                     .padding(3)
                 }
             }
-            .navigationTitle("Manage Counters")
+            .navigationTitle(LocalizedStringKey("manage_counters_title"))
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button(action: { showingNew = true }) {
@@ -91,19 +91,19 @@ struct NewCounterSheet: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Details") {
-                    TextField("Title", text: $title)
-                    Stepper("Step: \(step)", value: $step, in: 1...1000)
+                Section(LocalizedStringKey("counter_details_section")) {
+                    TextField(LocalizedStringKey("counter_title_placeholder"), text: $title)
+                    Stepper(LocalizedStringKey("counter_step_label\(step)"), value: $step, in: 1...1000)
                 }
-                Section("Thresholds (comma-separated)") {
-                    TextField("e.g. 100,200,500,10000", text: $thresholdsText)
+                Section(LocalizedStringKey("counter_thresholds_section")) {
+                    TextField(LocalizedStringKey("counter_thresholds_placeholder"), text: $thresholdsText)
                 }
             }
-            .navigationTitle("New Counter")
+            .navigationTitle(LocalizedStringKey("counter_new_title"))
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }
+                ToolbarItem(placement: .cancellationAction) { Button(LocalizedStringKey("cancel")) { dismiss() } }
                 ToolbarItem(placement: .primaryAction) {
-                    Button("Create") {
+                    Button(LocalizedStringKey("create")) {
                         let limits = thresholdsText.split(separator: ",").compactMap { Int($0.trimmingCharacters(in: .whitespaces)) }.sorted()
                         onCreate(title, step, limits)
                         dismiss()
@@ -121,32 +121,32 @@ struct CounterDetailView: View {
     
     var body: some View {
         Form {
-            Section("Progress") {
+            Section(LocalizedStringKey("counter_progress_section")) {
                 HStack {
                     Spacer()
                     CounterRing(value: counter.value, stageMax: counter.currentStageMax)
                         .frame(width: 140, height: 140)
                     Spacer()
                 }
-                Text("Value: \(counter.value)")
+                Text(LocalizedStringKey("counter_value_label")) + Text(": \(counter.value)")
                 if let maxStage = counter.currentStageMax {
-                    Text("Stage Max: \(maxStage)")
+                    Text(LocalizedStringKey("counter_stage_max_label")) + Text(": \(maxStage)")
                 } else {
-                    Text("No thresholds set")
+                    Text(LocalizedStringKey("counter_no_thresholds"))
                         .foregroundColor(.secondary)
                 }
-                Button("Reset to 0", role: .destructive) { counter.value = 0; counter.updatedAt = Date() }
+                Button(LocalizedStringKey("counter_reset_to_zero"), role: .destructive) { counter.value = 0; counter.updatedAt = Date() }
             }
-            Section("Configuration") {
-                TextField("Title", text: $counter.title)
-                Stepper("Step: \(counter.step)", value: $counter.step, in: -1000...1000)
-                NavigationLink("Edit Thresholds") { ThresholdEditor(thresholds: $counter.thresholds) }
+            Section(LocalizedStringKey("counter_configuration_section")) {
+                TextField(LocalizedStringKey("counter_title_placeholder"), text: $counter.title)
+                Stepper(LocalizedStringKey("counter_step_label\(counter.step)"), value: $counter.step, in: -1000...1000)
+                NavigationLink(LocalizedStringKey("counter_edit_thresholds")) { ThresholdEditor(thresholds: $counter.thresholds) }
             }
-            Section("Set Value Manually") {
+            Section(LocalizedStringKey("counter_set_value_section")) {
                 HStack {
-                    TextField("-1000000 to 1000000", text: $valueText)
+                    TextField(LocalizedStringKey("counter_set_value_placeholder"), text: $valueText)
                         .keyboardType(.numbersAndPunctuation)
-                    Button("Apply") {
+                    Button(LocalizedStringKey("apply")) {
                         if let v = Int(valueText) { counter.value = v; counter.updatedAt = Date() }
                         valueText = ""
                     }
@@ -165,26 +165,26 @@ struct ThresholdEditor: View {
     
     var body: some View {
         Form {
-            Section("Current Thresholds") {
+            Section(LocalizedStringKey("counter_current_thresholds")) {
                 if thresholds.isEmpty {
-                    Text("No thresholds configured")
+                    Text(LocalizedStringKey("counter_no_thresholds"))
                         .foregroundColor(.secondary)
                 } else {
                     ForEach(thresholds, id: \.self) { t in Text("\(t)") }
                         .onDelete { indexSet in thresholds.remove(atOffsets: indexSet) }
                 }
             }
-            Section("Add Threshold") {
+            Section(LocalizedStringKey("counter_add_threshold")) {
                 HStack {
-                    TextField("Value", text: $newValue)
+                    TextField(LocalizedStringKey("value"), text: $newValue)
                         .keyboardType(.numberPad)
-                    Button("Add") {
+                    Button(LocalizedStringKey("add")) {
                         if let v = Int(newValue) { thresholds.append(v); thresholds.sort(); newValue = "" }
                     }
                     .disabled(Int(newValue) == nil)
                 }
             }
         }
-        .navigationTitle("Thresholds")
+        .navigationTitle(LocalizedStringKey("counter_thresholds_title"))
     }
 }

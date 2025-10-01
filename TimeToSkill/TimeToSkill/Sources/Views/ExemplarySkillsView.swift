@@ -105,7 +105,7 @@ struct ExemplarySkillsView: View {
             VStack(spacing: 0) {
                 // Header with daily limit info and sorting
                 HStack {
-                    Text("Daily Evaluations: \(dailyEvaluationsCount)/\(ExemplarySkillConstants.dailyEvaluationLimit)")
+                    Text(String(format: NSLocalizedString("daily_evaluations_format", comment: ""), dailyEvaluationsCount, ExemplarySkillConstants.dailyEvaluationLimit))
                         .font(.caption)
                         .foregroundColor(.secondary)
                     
@@ -116,11 +116,11 @@ struct ExemplarySkillsView: View {
                             Button(option.rawValue) { sortOptionRaw = option.rawValue }
                         }
                     } label: {
-                        Label("Sort: \(sortOption.rawValue)", systemImage: "arrow.up.arrow.down")
+                        Label(LocalizedStringKey("sort_menu_label"), systemImage: "arrow.up.arrow.down")
                             .font(.caption)
                     }
                     
-                    Button("Reset Daily Limit") {
+                    Button(LocalizedStringKey("reset_daily_limit")) {
                         resetDailyLimit()
                     }
                     .font(.caption)
@@ -142,7 +142,7 @@ struct ExemplarySkillsView: View {
                     .padding(.vertical, 3)
                 }
             }
-            .navigationTitle("Exemplary Skills")
+            .navigationTitle(LocalizedStringKey("exemplary_skills_title"))
             .onAppear {
                 loadDailyEvaluationsCount()
                 SkillSeeder.seedIfNeeded(context: context)
@@ -155,10 +155,10 @@ struct ExemplarySkillsView: View {
                     }
                 )
             }
-            .alert("Daily Limit Reached", isPresented: $showingDailyLimitAlert) {
-                Button("OK") { }
+            .alert(LocalizedStringKey("daily_limit_reached_title"), isPresented: $showingDailyLimitAlert) {
+                Button(LocalizedStringKey("ok")) { }
             } message: {
-                Text("You've reached your daily limit of \(ExemplarySkillConstants.dailyEvaluationLimit) skill evaluations. Try again tomorrow!")
+                Text(String(format: NSLocalizedString("daily_limit_reached_message_format", comment: ""), ExemplarySkillConstants.dailyEvaluationLimit))
             }
         }
     }
