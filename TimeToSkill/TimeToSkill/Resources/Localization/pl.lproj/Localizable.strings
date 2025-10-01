@@ -255,3 +255,8 @@
 "one_star_description" = "Opis 1★";
 "two_star_description" = "Opis 2★";
 "three_star_description" = "Opis 3★";
+"image_label" = "Obraz";
+"choose_image" = "Wybierz obraz";
+"hide" = "Ukryj";
+"unhide" = "Odkryj";
+"archived_section" = "Archiwum";

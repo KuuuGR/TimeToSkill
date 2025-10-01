@@ -257,3 +257,8 @@
 "one_star_description" = "1★ description";
 "two_star_description" = "2★ description";
 "three_star_description" = "3★ description";
+"image_label" = "Image";
+"choose_image" = "Choose Image";
+"hide" = "Hide";
+"unhide" = "Unhide";
+"archived_section" = "Archived";

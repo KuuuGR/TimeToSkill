@@ -23,6 +23,19 @@ struct ExemplarySkillDetailView: View {
     @State private var currentVerificationCode: String = ""
     @State private var showUpdateSection: Bool = false
     
+    private func loadUIImage() -> UIImage? {
+        #if canImport(UIKit)
+        let name = skill.imageName
+        if FileManager.default.fileExists(atPath: name) {
+            return UIImage(contentsOfFile: name)
+        }
+        if let ui = UIImage(named: name) { return ui }
+        return nil
+        #else
+        return nil
+        #endif
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -76,8 +89,8 @@ struct ExemplarySkillDetailView: View {
         VStack(spacing: 24) {
                     // Header with image and title
                     VStack(spacing: 16) {
-                        if UIImage(named: skill.imageName) != nil {
-                            Image(skill.imageName)
+                        if let ui = loadUIImage() {
+                            Image(uiImage: ui)
                                 .resizable()
                                 .scaledToFit()
                                 .saturation((skill.userRating ?? 0) == 0 ? 0 : 1)
@@ -88,7 +101,7 @@ struct ExemplarySkillDetailView: View {
                                         .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
                                 )
                         } else {
-                            Image(systemName: skill.imageName)
+                            Image(systemName: UIImage(systemName: skill.imageName) != nil ? skill.imageName : "star.fill")
                                 .font(.system(size: 80))
                                 .foregroundColor((skill.userRating ?? 0) == 0 ? .gray : .blue)
                                 .frame(width: 120, height: 120)

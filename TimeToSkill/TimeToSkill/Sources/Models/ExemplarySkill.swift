@@ -16,6 +16,7 @@ final class ExemplarySkill {
     var catalogID: String? // Stable id for catalog items; nil for user-created
     var isUserCreated: Bool = false
     var isDeprecated: Bool = false
+    var isHidden: Bool = false
     
     // Catalog fields (safe to update by seeder)
     var title: String
@@ -39,6 +40,7 @@ final class ExemplarySkill {
         catalogID: String? = nil,
         isUserCreated: Bool = false,
         isDeprecated: Bool = false,
+        isHidden: Bool = false,
         title: String,
         skillDescription: String,
         imageName: String,
@@ -69,6 +71,7 @@ final class ExemplarySkill {
         self.oneStarDescription = oneStarDescription
         self.twoStarDescription = twoStarDescription
         self.threeStarDescription = threeStarDescription
+        self.isHidden = isHidden
     }
 }
 

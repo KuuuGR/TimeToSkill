@@ -112,6 +112,8 @@ struct ExemplarySkillsView: View {
             }
         }
     }
+    private var visibleSkills: [ExemplarySkill] { displayedSkills.filter { !$0.isHidden } }
+    private var archivedSkills: [ExemplarySkill] { displayedSkills.filter { $0.isHidden } }
     
     var body: some View {
         NavigationStack {
@@ -145,7 +147,7 @@ struct ExemplarySkillsView: View {
                 // Skills grid
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
-                        ForEach(displayedSkills) { skill in
+                        ForEach(visibleSkills) { skill in
                             ZStack(alignment: .topTrailing) {
                                 ExemplarySkillCard(skill: skill) {
                                     selectedSkill = skill
@@ -162,12 +164,40 @@ struct ExemplarySkillsView: View {
                                     }
                                     .buttonStyle(.plain)
                                     .padding(6)
+                                } else {
+                                    Menu {
+                                        Button(LocalizedStringKey("hide")) { skill.isHidden = true; try? context.save() }
+                                    } label: {
+                                        Image(systemName: "ellipsis.circle")
+                                            .foregroundColor(.gray)
+                                            .padding(6)
+                                            .background(.ultraThinMaterial, in: Circle())
+                                    }
+                                    .buttonStyle(.plain)
+                                    .padding(6)
                                 }
                             }
                         }
                     }
                     .padding(.horizontal, 3)
                     .padding(.vertical, 3)
+                    if !archivedSkills.isEmpty {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text(LocalizedStringKey("archived_section")).font(.headline).padding(.horizontal)
+                            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
+                                ForEach(archivedSkills) { skill in
+                                    ZStack(alignment: .topTrailing) {
+                                        ExemplarySkillCard(skill: skill) { selectedSkill = skill }
+                                        Button(LocalizedStringKey("unhide")) { skill.isHidden = false; try? context.save() }
+                                            .buttonStyle(.bordered)
+                                            .tint(.gray)
+                                            .padding(6)
+                                    }
+                                }
+                            }
+                            .padding(.horizontal, 3)
+                        }
+                    }
                 }
             }
             .navigationTitle(LocalizedStringKey("exemplary_skills_title"))

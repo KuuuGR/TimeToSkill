@@ -192,12 +192,12 @@ struct MainView: View {
             DevPaywallView(onUnlock: { customSkillUnlocked = true })
         }
         .sheet(isPresented: $showingCustomSkillSheet) {
-            CustomExemplarySkillSheet { title, description, category, difficulty, one, two, three in
+            CustomExemplarySkillSheet { title, description, category, difficulty, one, two, three, imagePath in
                 let model = ExemplarySkill(
                     isUserCreated: true,
                     title: title,
                     skillDescription: description,
-                    imageName: "star.fill",
+                    imageName: imagePath ?? "star.fill",
                     category: category.isEmpty ? "Custom" : category,
                     difficultyLevel: difficulty,
                     oneStarDescription: one,
