@@ -5,6 +5,10 @@
 "main_learning_theory" = "Теорія навчання";
 "main_about_app" = "Про застосунок";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Керування лічильниками";
+"main_exemplary_skills" = "Навички";
+
 // MARK: - OptionsView
 "options_title" = "Опції";
 "options_export_section" = "Експорт даних";
@@ -238,3 +242,72 @@
 "Time_Converter_Years_Label" = "🎆 Роки";
 "Time_Converter_Days_Placeholder" = "Розраховані дні";
 "Time_Converter_Calculate_Button" = "Обчислити";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Додати власну навичку";
+"unlock_custom_skills_title" = "Розблокувати власні навички";
+"unlock_custom_skills_subtitle" = "Створюйте власні досягнення та керуйте своїм списком.";
+"unlock_benefit_create" = "Створіть власну навичку з назвою, описом та складністю";
+"unlock_benefit_delete" = "Видаляйте власні навички, якщо припустилися помилки";
+"unlock_benefit_support" = "Підтримайте розробника";
+"unlock_benefit_reset_limit" = "Скиньте денний ліміт оцінювання";
+"restore_purchases" = "Відновити покупки";
+"buy_unlock" = "Купити розблокування (Dev)";
+"unlock_title_short" = "Розблокувати";
+"difficulty_label" = "Складність";
+"star_descriptions_title" = "Описи рівнів зірок";
+"one_star_description" = "Опис 1★";
+"two_star_description" = "Опис 2★";
+"three_star_description" = "Опис 3★";
+"image_label" = "Зображення";
+"choose_image" = "Обрати зображення";
+"category_label" = "Категорія";
+"category_custom_placeholder" = "Власна категорія";
+
+// MARK: - Preset Categories
+"cat_custom" = "Власна";
+"cat_music" = "Музика";
+"cat_language" = "Мова";
+"cat_art" = "Мистецтво";
+"cat_coding" = "Програмування";
+"cat_fitness" = "Фітнес";
+"cat_cooking" = "Кулінарія";
+"cat_photography" = "Фотографія";
+"cat_writing" = "Письмо";
+"cat_public_speaking" = "Публічні виступи";
+"cat_science" = "Наука";
+"cat_math" = "Математика";
+"cat_engineering" = "Інженерія";
+"cat_design" = "Дизайн";
+"cat_business" = "Бізнес";
+"cat_marketing" = "Маркетинг";
+"cat_finance" = "Фінанси";
+"cat_investing" = "Інвестування";
+"cat_entrepreneurship" = "Підприємництво";
+"cat_psychology" = "Психологія";
+"cat_education" = "Освіта";
+"cat_history" = "Історія";
+"cat_geography" = "Географія";
+"cat_health" = "Здоров'я";
+"cat_meditation" = "Медитація";
+"cat_yoga" = "Йога";
+"cat_sports" = "Спорт";
+"cat_dance" = "Танці";
+"cat_theatre" = "Театр";
+"cat_film" = "Кіно";
+"cat_editing" = "Відеомонтаж";
+"cat_3d" = "3D-моделювання";
+"cat_ai" = "ШІ/ML";
+"cat_data" = "Наука про дані";
+"cat_cybersecurity" = "Кібербезпека";
+"cat_gardening" = "Садівництво";
+"cat_diy" = "Зроби сам";
+"cat_travel" = "Подорожі";
+"cat_cars" = "Автомобілі";
+"cat_parenting" = "Батьківство";
+"cat_animals" = "Тварини";
+"hide" = "Сховати";
+"unhide" = "Показати";
+"archived_section" = "Архівовані";
+"counters_empty_title" = "Лічильників ще немає";
+"counters_empty_description" = "Створіть свій перший лічильник, щоб почати відстежувати числовий прогрес.";

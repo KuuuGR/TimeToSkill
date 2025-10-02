@@ -5,6 +5,10 @@
 "main_learning_theory" = "学習理論";
 "main_about_app" = "アプリについて";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "カウンターを管理";
+"main_exemplary_skills" = "スキル";
+
 // MARK: - OptionsView
 "options_title" = "オプション";
 "options_export_section" = "データのエクスポート";

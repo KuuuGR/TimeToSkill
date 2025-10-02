@@ -5,6 +5,10 @@
 "main_learning_theory" = "Lý thuyết học tập";
 "main_about_app" = "Về ứng dụng";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Quản lý bộ đếm";
+"main_exemplary_skills" = "Kỹ năng";
+
 // MARK: - OptionsView
 "options_title" = "Tùy chọn";
 "options_export_section" = "Xuất dữ liệu";
@@ -238,3 +242,72 @@
 "Time_Converter_Years_Label" = "🎆 Năm";
 "Time_Converter_Days_Placeholder" = "Số ngày đã tính";
 "Time_Converter_Calculate_Button" = "Tính toán";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Thêm kỹ năng tùy chỉnh";
+"unlock_custom_skills_title" = "Mở khóa kỹ năng tùy chỉnh";
+"unlock_custom_skills_subtitle" = "Tạo thành tựu của riêng bạn và quản lý danh sách.";
+"unlock_benefit_create" = "Tạo kỹ năng riêng với tiêu đề, mô tả và độ khó";
+"unlock_benefit_delete" = "Xóa kỹ năng tùy chỉnh nếu bạn mắc lỗi";
+"unlock_benefit_support" = "Hỗ trợ nhà phát triển";
+"unlock_benefit_reset_limit" = "Đặt lại giới hạn đánh giá hàng ngày";
+"restore_purchases" = "Khôi phục mua hàng";
+"buy_unlock" = "Mua mở khóa (Dev)";
+"unlock_title_short" = "Mở khóa";
+"difficulty_label" = "Độ khó";
+"star_descriptions_title" = "Mô tả cấp độ sao";
+"one_star_description" = "Mô tả 1★";
+"two_star_description" = "Mô tả 2★";
+"three_star_description" = "Mô tả 3★";
+"image_label" = "Hình ảnh";
+"choose_image" = "Chọn hình ảnh";
+"category_label" = "Danh mục";
+"category_custom_placeholder" = "Danh mục tùy chỉnh";
+
+// MARK: - Preset Categories
+"cat_custom" = "Tùy chỉnh";
+"cat_music" = "Âm nhạc";
+"cat_language" = "Ngôn ngữ";
+"cat_art" = "Nghệ thuật";
+"cat_coding" = "Lập trình";
+"cat_fitness" = "Thể dục";
+"cat_cooking" = "Nấu ăn";
+"cat_photography" = "Nhiếp ảnh";
+"cat_writing" = "Viết lách";
+"cat_public_speaking" = "Diễn thuyết";
+"cat_science" = "Khoa học";
+"cat_math" = "Toán học";
+"cat_engineering" = "Kỹ thuật";
+"cat_design" = "Thiết kế";
+"cat_business" = "Kinh doanh";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Tài chính";
+"cat_investing" = "Đầu tư";
+"cat_entrepreneurship" = "Khởi nghiệp";
+"cat_psychology" = "Tâm lý học";
+"cat_education" = "Giáo dục";
+"cat_history" = "Lịch sử";
+"cat_geography" = "Địa lý";
+"cat_health" = "Sức khỏe";
+"cat_meditation" = "Thiền định";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Thể thao";
+"cat_dance" = "Khiêu vũ";
+"cat_theatre" = "Sân khấu";
+"cat_film" = "Điện ảnh";
+"cat_editing" = "Chỉnh sửa video";
+"cat_3d" = "Mô hình 3D";
+"cat_ai" = "AI/ML";
+"cat_data" = "Khoa học dữ liệu";
+"cat_cybersecurity" = "An ninh mạng";
+"cat_gardening" = "Làm vườn";
+"cat_diy" = "Tự làm";
+"cat_travel" = "Du lịch";
+"cat_cars" = "Ô tô";
+"cat_parenting" = "Nuôi dạy con";
+"cat_animals" = "Động vật";
+"hide" = "Ẩn";
+"unhide" = "Hiện";
+"archived_section" = "Đã lưu trữ";
+"counters_empty_title" = "Chưa có bộ đếm nào";
+"counters_empty_description" = "Tạo bộ đếm đầu tiên để bắt đầu theo dõi tiến độ số.";

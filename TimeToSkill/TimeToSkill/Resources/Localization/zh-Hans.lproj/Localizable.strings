@@ -5,6 +5,10 @@
 "main_learning_theory" = "学习理论";
 "main_about_app" = "关于应用";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "管理计数器";
+"main_exemplary_skills" = "技能";
+
 // MARK: - OptionsView
 "options_title" = "选项";
 "options_export_section" = "导出数据";

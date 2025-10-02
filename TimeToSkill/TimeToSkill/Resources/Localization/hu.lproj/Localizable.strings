@@ -5,6 +5,10 @@
 "main_learning_theory" = "Tanuláselmélet";
 "main_about_app" = "Az alkalmazásról";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Számlálók kezelése";
+"main_exemplary_skills" = "Készségek";
+
 // MARK: - OptionsView
 "options_title" = "Opciók";
 "options_export_section" = "Adatok exportálása";

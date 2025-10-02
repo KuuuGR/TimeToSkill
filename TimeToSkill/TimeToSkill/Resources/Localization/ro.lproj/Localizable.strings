@@ -5,6 +5,10 @@
 "main_learning_theory" = "Teoria învățării";
 "main_about_app" = "Despre aplicație";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Gestionare contoare";
+"main_exemplary_skills" = "Abilități";
+
 // MARK: - OptionsView
 "options_title" = "Opțiuni";
 "options_export_section" = "Exportați Datele";

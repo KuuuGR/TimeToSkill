@@ -5,6 +5,10 @@
 "main_learning_theory" = "תאוריית למידה";
 "main_about_app" = "אודות האפליקציה";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "ניהול מונים";
+"main_exemplary_skills" = "מיומנויות";
+
 // MARK: - OptionsView
 "options_title" = "אפשרויות";
 "options_export_section" = "ייצוא נתונים";

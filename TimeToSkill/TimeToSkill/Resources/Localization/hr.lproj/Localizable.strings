@@ -5,6 +5,10 @@
 "main_learning_theory" = "Teorija učenja";
 "main_about_app" = "O aplikaciji";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Upravljaj brojačima";
+"main_exemplary_skills" = "Vještine";
+
 // MARK: - OptionsView
 "options_title" = "Opcije";
 "options_export_section" = "Izvezi podatke";

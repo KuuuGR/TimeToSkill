@@ -2,8 +2,12 @@
 
 // MARK: - MainView
 "main_manage_trackers" = "Gérer les suivis";
-"main_learning_theory" = "Théorie d’apprentissage";
-"main_about_app" = "À propos de l’app";
+"main_learning_theory" = "Théorie d'apprentissage";
+"main_about_app" = "À propos de l'app";
+
+// MARK: - Main menu additions
+"main_manage_counters" = "Gérer les compteurs";
+"main_exemplary_skills" = "Compétences";
 
 // MARK: - OptionsView
 "options_title" = "Options";
@@ -238,3 +242,72 @@
 "Time_Converter_Years_Label" = "🎆 Années";
 "Time_Converter_Days_Placeholder" = "Jours calculés";
 "Time_Converter_Calculate_Button" = "Calculer";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Ajouter une compétence personnalisée";
+"unlock_custom_skills_title" = "Déverrouiller les compétences personnalisées";
+"unlock_custom_skills_subtitle" = "Créez vos propres réalisations et organisez votre liste.";
+"unlock_benefit_create" = "Créez votre propre compétence avec titre, description et difficulté";
+"unlock_benefit_delete" = "Supprimez les compétences personnalisées si vous faites une erreur";
+"unlock_benefit_support" = "Soutenez le développeur";
+"unlock_benefit_reset_limit" = "Réinitialisez la limite quotidienne d'évaluation";
+"restore_purchases" = "Restaurer les achats";
+"buy_unlock" = "Acheter le déverrouillage (Dev)";
+"unlock_title_short" = "Déverrouiller";
+"difficulty_label" = "Difficulté";
+"star_descriptions_title" = "Descriptions par niveau d'étoiles";
+"one_star_description" = "Description 1★";
+"two_star_description" = "Description 2★";
+"three_star_description" = "Description 3★";
+"image_label" = "Image";
+"choose_image" = "Choisir une image";
+"category_label" = "Catégorie";
+"category_custom_placeholder" = "Catégorie personnalisée";
+
+// MARK: - Preset Categories
+"cat_custom" = "Personnalisée";
+"cat_music" = "Musique";
+"cat_language" = "Langue";
+"cat_art" = "Art";
+"cat_coding" = "Programmation";
+"cat_fitness" = "Conditionnement physique";
+"cat_cooking" = "Cuisine";
+"cat_photography" = "Photographie";
+"cat_writing" = "Écriture";
+"cat_public_speaking" = "Prise de parole en public";
+"cat_science" = "Science";
+"cat_math" = "Mathématiques";
+"cat_engineering" = "Ingénierie";
+"cat_design" = "Design";
+"cat_business" = "Affaires";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finance";
+"cat_investing" = "Investissement";
+"cat_entrepreneurship" = "Entrepreneuriat";
+"cat_psychology" = "Psychologie";
+"cat_education" = "Éducation";
+"cat_history" = "Histoire";
+"cat_geography" = "Géographie";
+"cat_health" = "Santé";
+"cat_meditation" = "Méditation";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sports";
+"cat_dance" = "Danse";
+"cat_theatre" = "Théâtre";
+"cat_film" = "Cinéma";
+"cat_editing" = "Montage vidéo";
+"cat_3d" = "Modélisation 3D";
+"cat_ai" = "IA/ML";
+"cat_data" = "Science des données";
+"cat_cybersecurity" = "Cybersécurité";
+"cat_gardening" = "Jardinage";
+"cat_diy" = "Bricolage";
+"cat_travel" = "Voyages";
+"cat_cars" = "Automobile";
+"cat_parenting" = "Parentalité";
+"cat_animals" = "Animaux";
+"hide" = "Masquer";
+"unhide" = "Afficher";
+"archived_section" = "Archivés";
+"counters_empty_title" = "Aucun compteur pour l'instant";
+"counters_empty_description" = "Créez votre premier compteur pour commencer à suivre les progrès numériques.";

@@ -9,6 +9,10 @@
 "main_learning_theory" = "نظرية التعلم";
 "main_about_app" = "عن التطبيق";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "إدارة العدّادات";
+"main_exemplary_skills" = "المهارات";
+
 // MARK: - OptionsView
 "options_title" = "خيارات";
 "options_export_section" = "تصدير البيانات";

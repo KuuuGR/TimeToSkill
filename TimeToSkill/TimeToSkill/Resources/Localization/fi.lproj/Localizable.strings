@@ -5,6 +5,10 @@
 "main_learning_theory" = "Oppimisteoria";
 "main_about_app" = "Tietoa sovelluksesta";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Hallitse laskureita";
+"main_exemplary_skills" = "Taidot";
+
 // MARK: - OptionsView
 "options_title" = "Asetukset";
 "options_export_section" = "Vie Tiedot";

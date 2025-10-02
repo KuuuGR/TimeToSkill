@@ -5,6 +5,10 @@
 "main_learning_theory" = "सीखने का सिद्धांत";
 "main_about_app" = "ऐप के बारे में";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "काउंटर प्रबंधित करें";
+"main_exemplary_skills" = "कौशल";
+
 // MARK: - OptionsView
 "options_title" = "विकल्प";
 "options_export_section" = "डेटा निर्यात करें";

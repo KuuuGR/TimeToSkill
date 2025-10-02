@@ -5,6 +5,10 @@
 "main_learning_theory" = "Теория обучения";
 "main_about_app" = "О приложении";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Управление счетчиками";
+"main_exemplary_skills" = "Навыки";
+
 // MARK: - OptionsView
 "options_title" = "Настройки";
 "options_export_section" = "Экспорт данных";

@@ -5,6 +5,10 @@
 "main_learning_theory" = "Öğrenme Teorisi";
 "main_about_app" = "Uygulama Hakkında";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Sayaçları Yönet";
+"main_exemplary_skills" = "Beceriler";
+
 // MARK: - OptionsView
 "options_title" = "Seçenekler";
 "options_export_section" = "Veri Dışa Aktar";
@@ -238,3 +242,72 @@
 
 // MARK: - SkillOptions additions
 "view_distribution" = "Dağılımı görüntüle";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Özel beceri ekle";
+"unlock_custom_skills_title" = "Özel Becerilerin Kilidini Aç";
+"unlock_custom_skills_subtitle" = "Kendi başarılarınızı oluşturun ve listenizi düzenleyin.";
+"unlock_benefit_create" = "Başlık, açıklama ve zorluk ile kendi becerinizi oluşturun";
+"unlock_benefit_delete" = "Hata yaparsanız özel becerileri kaldırın";
+"unlock_benefit_support" = "Geliştiriciye destek olun";
+"unlock_benefit_reset_limit" = "Günlük değerlendirme limitini sıfırlayın";
+"restore_purchases" = "Satın Alımları Geri Yükle";
+"buy_unlock" = "Kilit Açma Satın Al (Dev)";
+"unlock_title_short" = "Kilit Aç";
+"difficulty_label" = "Zorluk";
+"star_descriptions_title" = "Yıldız seviyesi açıklamaları";
+"one_star_description" = "1★ açıklama";
+"two_star_description" = "2★ açıklama";
+"three_star_description" = "3★ açıklama";
+"image_label" = "Görsel";
+"choose_image" = "Görsel Seç";
+"category_label" = "Kategori";
+"category_custom_placeholder" = "Özel kategori";
+
+// MARK: - Preset Categories
+"cat_custom" = "Özel";
+"cat_music" = "Müzik";
+"cat_language" = "Dil";
+"cat_art" = "Sanat";
+"cat_coding" = "Kodlama";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Yemek Pişirme";
+"cat_photography" = "Fotoğrafçılık";
+"cat_writing" = "Yazarlık";
+"cat_public_speaking" = "Topluluk Önünde Konuşma";
+"cat_science" = "Bilim";
+"cat_math" = "Matematik";
+"cat_engineering" = "Mühendislik";
+"cat_design" = "Tasarım";
+"cat_business" = "İşletme";
+"cat_marketing" = "Pazarlama";
+"cat_finance" = "Finans";
+"cat_investing" = "Yatırım";
+"cat_entrepreneurship" = "Girişimcilik";
+"cat_psychology" = "Psikoloji";
+"cat_education" = "Eğitim";
+"cat_history" = "Tarih";
+"cat_geography" = "Coğrafya";
+"cat_health" = "Sağlık";
+"cat_meditation" = "Meditasyon";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Spor";
+"cat_dance" = "Dans";
+"cat_theatre" = "Tiyatro";
+"cat_film" = "Film";
+"cat_editing" = "Video Düzenleme";
+"cat_3d" = "3D Modelleme";
+"cat_ai" = "Yapay Zeka/ML";
+"cat_data" = "Veri Bilimi";
+"cat_cybersecurity" = "Siber Güvenlik";
+"cat_gardening" = "Bahçıvanlık";
+"cat_diy" = "Kendin Yap";
+"cat_travel" = "Seyahat";
+"cat_cars" = "Otomotiv";
+"cat_parenting" = "Ebeveynlik";
+"cat_animals" = "Hayvanlar";
+"hide" = "Gizle";
+"unhide" = "Göster";
+"archived_section" = "Arşivlenmiş";
+"counters_empty_title" = "Henüz sayaç yok";
+"counters_empty_description" = "Sayısal ilerlemeyi izlemeye başlamak için ilk sayacınızı oluşturun.";

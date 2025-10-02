@@ -5,6 +5,10 @@
 "main_learning_theory" = "Læringsteori";
 "main_about_app" = "Om appen";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Administrer tællere";
+"main_exemplary_skills" = "Færdigheder";
+
 // MARK: - OptionsView
 "options_title" = "Indstillinger";
 "options_export_section" = "Eksportér data";
@@ -239,3 +243,72 @@
 
 // MARK: - SkillOptions additions
 "view_distribution" = "Se fordeling";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Tilføj brugerdefineret færdighed";
+"unlock_custom_skills_title" = "Lås brugerdefinerede færdigheder op";
+"unlock_custom_skills_subtitle" = "Opret dine egne præstationer og kurér din liste.";
+"unlock_benefit_create" = "Opret din egen færdighed med titel, beskrivelse og sværhedsgrad";
+"unlock_benefit_delete" = "Fjern brugerdefinerede færdigheder, hvis du laver en fejl";
+"unlock_benefit_support" = "Støt udvikleren";
+"unlock_benefit_reset_limit" = "Nulstil det daglige evalueringsloft";
+"restore_purchases" = "Gendan køb";
+"buy_unlock" = "Køb oprydning (Udvikler)";
+"unlock_title_short" = "Lås op";
+"difficulty_label" = "Sværhedsgrad";
+"star_descriptions_title" = "Stjerneniveau-beskrivelser";
+"one_star_description" = "1★ beskrivelse";
+"two_star_description" = "2★ beskrivelse";
+"three_star_description" = "3★ beskrivelse";
+"image_label" = "Billede";
+"choose_image" = "Vælg billede";
+"category_label" = "Kategori";
+"category_custom_placeholder" = "Brugerdefineret kategori";
+
+// MARK: - Preset Categories
+"cat_custom" = "Brugerdefineret";
+"cat_music" = "Musik";
+"cat_language" = "Sprog";
+"cat_art" = "Kunst";
+"cat_coding" = "Programmering";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Madlavning";
+"cat_photography" = "Fotografering";
+"cat_writing" = "Skrivning";
+"cat_public_speaking" = "Offentlig tale";
+"cat_science" = "Videnskab";
+"cat_math" = "Matematik";
+"cat_engineering" = "Ingeniørvidenskab";
+"cat_design" = "Design";
+"cat_business" = "Forretning";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finans";
+"cat_investing" = "Investering";
+"cat_entrepreneurship" = "Entreprenørskab";
+"cat_psychology" = "Psykologi";
+"cat_education" = "Uddannelse";
+"cat_history" = "Historie";
+"cat_geography" = "Geografi";
+"cat_health" = "Sundhed";
+"cat_meditation" = "Meditation";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sport";
+"cat_dance" = "Dans";
+"cat_theatre" = "Teater";
+"cat_film" = "Film";
+"cat_editing" = "Videoredigering";
+"cat_3d" = "3D-modellering";
+"cat_ai" = "AI/ML";
+"cat_data" = "Datavidenskab";
+"cat_cybersecurity" = "Cybersikkerhed";
+"cat_gardening" = "Havebrug";
+"cat_diy" = "Gør det selv";
+"cat_travel" = "Rejse";
+"cat_cars" = "Bil";
+"cat_parenting" = "Forældreskab";
+"cat_animals" = "Dyr";
+"hide" = "Skjul";
+"unhide" = "Vis";
+"archived_section" = "Arkiveret";
+"counters_empty_title" = "Ingen tællere endnu";
+"counters_empty_description" = "Opret din første tæller for at begynde at spore numerisk fremskridt.";

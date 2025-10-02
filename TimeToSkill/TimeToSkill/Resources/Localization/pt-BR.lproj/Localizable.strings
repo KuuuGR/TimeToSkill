@@ -5,6 +5,10 @@
 "main_learning_theory" = "Teoria da Aprendizagem";
 "main_about_app" = "Sobre o App";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Gerenciar Contadores";
+"main_exemplary_skills" = "Habilidades";
+
 // MARK: - OptionsView
 "options_title" = "Opções";
 "options_export_section" = "Exportar Dados";

@@ -5,6 +5,10 @@
 "main_learning_theory" = "Inlärningsteori";
 "main_about_app" = "Om appen";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Hantera räknare";
+"main_exemplary_skills" = "Färdigheter";
+
 // MARK: - OptionsView
 "options_title" = "Alternativ";
 "options_export_section" = "Exportera data";

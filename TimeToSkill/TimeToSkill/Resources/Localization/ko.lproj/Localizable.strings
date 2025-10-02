@@ -5,6 +5,10 @@
 "main_learning_theory" = "학습 이론";
 "main_about_app" = "앱 정보";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "카운터 관리";
+"main_exemplary_skills" = "스킬";
+
 // MARK: - OptionsView
 "options_title" = "옵션";
 "options_export_section" = "데이터 내보내기";

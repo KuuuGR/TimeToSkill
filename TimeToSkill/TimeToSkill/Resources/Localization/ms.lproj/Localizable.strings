@@ -5,6 +5,10 @@
 "main_learning_theory" = "Teori Pembelajaran";
 "main_about_app" = "Mengenai Aplikasi";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Urus Kaunter";
+"main_exemplary_skills" = "Kemahiran";
+
 // MARK: - OptionsView
 "options_title" = "Pilihan";
 "options_export_section" = "Eksport Data";

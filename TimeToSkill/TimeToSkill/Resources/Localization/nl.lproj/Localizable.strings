@@ -5,6 +5,10 @@
 "main_learning_theory" = "Leertheorie";
 "main_about_app" = "Over de app";
 
+// MARK: - Main menu additions
+"main_manage_counters" = "Tellers beheren";
+"main_exemplary_skills" = "Vaardigheden";
+
 // MARK: - OptionsView
 "options_title" = "Opties";
 "options_export_section" = "Gegevens exporteren";
