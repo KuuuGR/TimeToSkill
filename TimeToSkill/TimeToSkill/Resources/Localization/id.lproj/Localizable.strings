@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Dukung pengembang";
 "unlock_benefit_reset_limit" = "Setel ulang batas evaluasi harian";
 "restore_purchases" = "Pulihkan pembelian";
-"buy_unlock" = "Beli buka kunci (Dev)";
+"buy_unlock" = "Beli buka kunci";
 "unlock_title_short" = "Buka";
 "difficulty_label" = "Kesulitan";
 "star_descriptions_title" = "Deskripsi tingkat bintang";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 Tahun";
 "Time_Converter_Days_Placeholder" = "Hari terhitung";
 "Time_Converter_Calculate_Button" = "Hitung";
+
+"paywall_price_format" = "Pembelian sekali: %@";
+
+"privacy_policy_link" = "Kebijakan Privasi";
+
+"terms_of_use_link" = "Ketentuan Penggunaan";

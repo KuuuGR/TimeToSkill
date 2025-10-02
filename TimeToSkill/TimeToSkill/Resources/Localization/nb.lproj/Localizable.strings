@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Støtt utvikleren";
 "unlock_benefit_reset_limit" = "Tilbakestill daglig vurderingsgrense";
 "restore_purchases" = "Gjenopprett kjøp";
-"buy_unlock" = "Kjøp opplåsing (Dev)";
+"buy_unlock" = "Kjøp opplåsing";
 "unlock_title_short" = "Lås opp";
 "difficulty_label" = "Vanskelighet";
 "star_descriptions_title" = "Stjernenivåbeskrivelser";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 År";
 "Time_Converter_Days_Placeholder" = "Beregnede dager";
 "Time_Converter_Calculate_Button" = "Beregn";
+
+"paywall_price_format" = "Engangskjøp: %@";
+
+"privacy_policy_link" = "Personvernerklæring";
+
+"terms_of_use_link" = "Bruksvilkår";

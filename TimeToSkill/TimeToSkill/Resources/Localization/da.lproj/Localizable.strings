@@ -312,3 +312,9 @@
 "archived_section" = "Arkiveret";
 "counters_empty_title" = "Ingen tællere endnu";
 "counters_empty_description" = "Opret din første tæller for at begynde at spore numerisk fremskridt.";
+
+"paywall_price_format" = "Engangskøb: %@";
+
+"privacy_policy_link" = "Privatlivspolitik";
+
+"terms_of_use_link" = "Vilkår for brug";

@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Steun de ontwikkelaar";
 "unlock_benefit_reset_limit" = "Stel de dagelijkse evaluatielimiet opnieuw in";
 "restore_purchases" = "Aankopen herstellen";
-"buy_unlock" = "Ontgrendeling kopen (Dev)";
+"buy_unlock" = "Ontgrendeling kopen";
 "unlock_title_short" = "Ontgrendelen";
 "difficulty_label" = "Moeilijkheid";
 "star_descriptions_title" = "Sterrenniveau-beschrijvingen";
@@ -311,3 +311,9 @@
 "archived_section" = "Gearchiveerd";
 "counters_empty_title" = "Nog geen tellers";
 "counters_empty_description" = "Maak je eerste teller om numerieke voortgang bij te houden.";
+
+"paywall_price_format" = "Eenmalige aankoop: %@";
+
+"privacy_policy_link" = "Privacybeleid";
+
+"terms_of_use_link" = "Gebruiksvoorwaarden";

@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "개발자 지원";
 "unlock_benefit_reset_limit" = "일일 평가 제한 재설정";
 "restore_purchases" = "구매 복원";
-"buy_unlock" = "잠금 해제 구매 (Dev)";
+"buy_unlock" = "잠금 해제 구매";
 "unlock_title_short" = "해제";
 "difficulty_label" = "난이도";
 "star_descriptions_title" = "별 등급 설명";
@@ -311,3 +311,9 @@
 "archived_section" = "보관됨";
 "counters_empty_title" = "카운터 없음";
 "counters_empty_description" = "숫자 진행 상황을 추적하려면 첫 카운터를 생성하세요.";
+
+"paywall_price_format" = "일회성 구매: %@";
+
+"privacy_policy_link" = "개인정보처리방침";
+
+"terms_of_use_link" = "이용약관";

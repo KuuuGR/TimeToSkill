@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "תמוך במפתח";
 "unlock_benefit_reset_limit" = "אפס מגבלת הערכה יומית";
 "restore_purchases" = "שחזור רכישות";
-"buy_unlock" = "רכישת פתיחה (Dev)";
+"buy_unlock" = "רכישת פתיחה";
 "unlock_title_short" = "פתח";
 "difficulty_label" = "דרגת קושי";
 "star_descriptions_title" = "תיאורי רמות כוכבים";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 שנים";
 "Time_Converter_Days_Placeholder" = "ימים מחושבים";
 "Time_Converter_Calculate_Button" = "חשב";
+
+"paywall_price_format" = "רכישה חד-פעמית: %@";
+
+"privacy_policy_link" = "מדיניות פרטיות";
+
+"terms_of_use_link" = "תנאי שימוש";

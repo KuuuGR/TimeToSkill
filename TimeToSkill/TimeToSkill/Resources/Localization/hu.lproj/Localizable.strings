@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Támogasd a fejlesztőt";
 "unlock_benefit_reset_limit" = "Napi értékelési limit visszaállítása";
 "restore_purchases" = "Vásárlások visszaállítása";
-"buy_unlock" = "Feloldás vásárlása (Dev)";
+"buy_unlock" = "Feloldás vásárlása";
 "unlock_title_short" = "Feloldás";
 "difficulty_label" = "Nehézség";
 "star_descriptions_title" = "Csillagszintek leírása";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 Év";
 "Time_Converter_Days_Placeholder" = "Számított napok";
 "Time_Converter_Calculate_Button" = "Számítás";
+
+"paywall_price_format" = "Egyszeri vásárlás: %@";
+
+"privacy_policy_link" = "Adatvédelmi szabályzat";
+
+"terms_of_use_link" = "Felhasználási feltételek";

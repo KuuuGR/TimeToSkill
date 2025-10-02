@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Stöd utvecklaren";
 "unlock_benefit_reset_limit" = "Återställ daglig utvärderingsgräns";
 "restore_purchases" = "Återställ köp";
-"buy_unlock" = "Köp upplåsning (Dev)";
+"buy_unlock" = "Köp upplåsning";
 "unlock_title_short" = "Lås upp";
 "difficulty_label" = "Svårighet";
 "star_descriptions_title" = "Beskrivningar av stjärnnivåer";
@@ -311,3 +311,9 @@
 "archived_section" = "Arkiverat";
 "counters_empty_title" = "Inga räknare";
 "counters_empty_description" = "Skapa din första räknare för att spåra numeriska framsteg.";
+
+"paywall_price_format" = "Engångsköp: %@";
+
+"privacy_policy_link" = "Integritetspolicy";
+
+"terms_of_use_link" = "Användarvillkor";

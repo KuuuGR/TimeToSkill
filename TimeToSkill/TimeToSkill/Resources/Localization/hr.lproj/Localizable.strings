@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Podrži razvoj";
 "unlock_benefit_reset_limit" = "Resetiraj dnevni limit procjena";
 "restore_purchases" = "Vrati kupnje";
-"buy_unlock" = "Kupi otključavanje (Dev)";
+"buy_unlock" = "Kupi otključavanje";
 "unlock_title_short" = "Otključaj";
 "difficulty_label" = "Težina";
 "star_descriptions_title" = "Opisi razina zvjezdica";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 Godine";
 "Time_Converter_Days_Placeholder" = "Izračunati dani";
 "Time_Converter_Calculate_Button" = "Izračunaj";
+
+"paywall_price_format" = "Jednokratna kupnja: %@";
+
+"privacy_policy_link" = "Pravila privatnosti";
+
+"terms_of_use_link" = "Uvjeti korištenja";

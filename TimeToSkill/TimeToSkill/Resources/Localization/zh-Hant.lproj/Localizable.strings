@@ -311,3 +311,9 @@
 "archived_section" = "已封存";
 "counters_empty_title" = "沒有計數器";
 "counters_empty_description" = "建立第一個計數器以開始追蹤數值進度。";
+
+"paywall_price_format" = "一次性購買：%@";
+
+"privacy_policy_link" = "隱私權政策";
+
+"terms_of_use_link" = "使用條款";

@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "開発者を支援";
 "unlock_benefit_reset_limit" = "1日の評価上限をリセット";
 "restore_purchases" = "購入を復元";
-"buy_unlock" = "ロック解除を購入 (Dev)";
+"buy_unlock" = "ロック解除を購入";
 "unlock_title_short" = "解除";
 "difficulty_label" = "難易度";
 "star_descriptions_title" = "星レベルの説明";
@@ -311,3 +311,9 @@
 "archived_section" = "アーカイブ";
 "counters_empty_title" = "カウンターなし";
 "counters_empty_description" = "最初のカウンターを作成して数値の進捗を追跡しましょう。";
+
+"paywall_price_format" = "買い切り: %@";
+
+"privacy_policy_link" = "プライバシーポリシー";
+
+"terms_of_use_link" = "利用規約";

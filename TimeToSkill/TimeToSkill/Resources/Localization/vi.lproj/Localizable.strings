@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Hỗ trợ nhà phát triển";
 "unlock_benefit_reset_limit" = "Đặt lại giới hạn đánh giá hàng ngày";
 "restore_purchases" = "Khôi phục mua hàng";
-"buy_unlock" = "Mua mở khóa (Dev)";
+"buy_unlock" = "Mua mở khóa";
 "unlock_title_short" = "Mở khóa";
 "difficulty_label" = "Độ khó";
 "star_descriptions_title" = "Mô tả cấp độ sao";
@@ -311,3 +311,9 @@
 "archived_section" = "Đã lưu trữ";
 "counters_empty_title" = "Chưa có bộ đếm nào";
 "counters_empty_description" = "Tạo bộ đếm đầu tiên để bắt đầu theo dõi tiến độ số.";
+
+"paywall_price_format" = "Mua một lần: %@";
+
+"privacy_policy_link" = "Chính sách quyền riêng tư";
+
+"terms_of_use_link" = "Điều khoản sử dụng";

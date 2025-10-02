@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Geliştiriciye destek olun";
 "unlock_benefit_reset_limit" = "Günlük değerlendirme limitini sıfırlayın";
 "restore_purchases" = "Satın Alımları Geri Yükle";
-"buy_unlock" = "Kilit Açma Satın Al (Dev)";
+"buy_unlock" = "Kilit Açma Satın Al";
 "unlock_title_short" = "Kilit Aç";
 "difficulty_label" = "Zorluk";
 "star_descriptions_title" = "Yıldız seviyesi açıklamaları";
@@ -311,3 +311,9 @@
 "archived_section" = "Arşivlenmiş";
 "counters_empty_title" = "Henüz sayaç yok";
 "counters_empty_description" = "Sayısal ilerlemeyi izlemeye başlamak için ilk sayacınızı oluşturun.";
+
+"paywall_price_format" = "Tek seferlik satın alma: %@";
+
+"privacy_policy_link" = "Gizlilik Politikası";
+
+"terms_of_use_link" = "Kullanım Şartları";

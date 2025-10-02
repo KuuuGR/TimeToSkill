@@ -230,7 +230,7 @@ struct ExemplarySkillsView: View {
             .background(deleteConfirmDialog)
         }
         .sheet(isPresented: $showingPaywall) {
-            DevPaywallView(onUnlock: { customSkillUnlocked = true })
+            PaywallView()
         }
     }
 

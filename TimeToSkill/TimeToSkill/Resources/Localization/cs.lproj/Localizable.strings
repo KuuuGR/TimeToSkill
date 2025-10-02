@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Podpořte vývojáře";
 "unlock_benefit_reset_limit" = "Resetujte denní limit hodnocení";
 "restore_purchases" = "Obnovit nákupy";
-"buy_unlock" = "Koupit odemčení (Dev)";
+"buy_unlock" = "Koupit odemčení";
 "unlock_title_short" = "Odemknout";
 "difficulty_label" = "Obtížnost";
 "star_descriptions_title" = "Popisy úrovní hvězdiček";
@@ -311,3 +311,9 @@
 "archived_section" = "Archivováno";
 "counters_empty_title" = "Zatím žádné čítače";
 "counters_empty_description" = "Vytvořte svůj první čítač pro sledování číselného pokroku.";
+
+"paywall_price_format" = "Jednorázový nákup: %@";
+
+"privacy_policy_link" = "Zásady ochrany osobních údajů";
+
+"terms_of_use_link" = "Podmínky používání";

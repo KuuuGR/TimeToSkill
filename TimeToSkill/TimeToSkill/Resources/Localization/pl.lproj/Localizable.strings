@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Wspierasz twórcę";
 "unlock_benefit_reset_limit" = "Reset dziennego limitu ocen";
 "restore_purchases" = "Przywróć zakupy";
-"buy_unlock" = "Kup odblokowanie (Dev)";
+"buy_unlock" = "Kup odblokowanie";
 "unlock_title_short" = "Odblokuj";
 "difficulty_label" = "Trudność";
 "star_descriptions_title" = "Opisy poziomów gwiazdek";
@@ -310,3 +310,9 @@
 "archived_section" = "Archiwum";
 "counters_empty_title" = "Brak liczników";
 "counters_empty_description" = "Utwórz pierwszy licznik, aby śledzić postęp liczbowy.";
+
+"paywall_price_format" = "Zakup jednorazowy: %@";
+
+"privacy_policy_link" = "Polityka prywatności";
+
+"terms_of_use_link" = "Warunki korzystania";

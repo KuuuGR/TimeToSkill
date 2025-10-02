@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Unterstütze den Entwickler";
 "unlock_benefit_reset_limit" = "Tageslimit für Bewertungen zurücksetzen";
 "restore_purchases" = "Käufe wiederherstellen";
-"buy_unlock" = "Freischaltung kaufen (Dev)";
+"buy_unlock" = "Freischaltung kaufen";
 "unlock_title_short" = "Freischalten";
 "difficulty_label" = "Schwierigkeit";
 "star_descriptions_title" = "Sternbeschreibungen";
@@ -311,3 +311,9 @@
 "archived_section" = "Archiviert";
 "counters_empty_title" = "Keine Zähler";
 "counters_empty_description" = "Erstelle deinen ersten Zähler, um numerischen Fortschritt zu verfolgen.";
+
+"paywall_price_format" = "Einmalkauf: %@";
+
+"privacy_policy_link" = "Datenschutzrichtlinie";
+
+"terms_of_use_link" = "Nutzungsbedingungen";

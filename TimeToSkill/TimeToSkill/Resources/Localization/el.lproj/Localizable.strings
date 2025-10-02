@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Υποστηρίξτε τον προγραμματιστή";
 "unlock_benefit_reset_limit" = "Επαναφέρετε το ημερήσιο όριο αξιολόγησης";
 "restore_purchases" = "Επαναφορά αγορών";
-"buy_unlock" = "Αγορά ξεκλειδώματος (Dev)";
+"buy_unlock" = "Αγορά ξεκλειδώματος";
 "unlock_title_short" = "Ξεκλείδωμα";
 "difficulty_label" = "Δυσκολία";
 "star_descriptions_title" = "Περιγραφές επιπέδων αστεριών";
@@ -311,3 +311,9 @@
 "archived_section" = "Αρχειοθετημένα";
 "counters_empty_title" = "Δεν υπάρχουν μετρητές ακόμα";
 "counters_empty_description" = "Δημιουργήστε τον πρώτο σας μετρητή για να ξεκινήσετε την παρακολούθηση της αριθμητικής προόδου.";
+
+"paywall_price_format" = "Εφάπαξ αγορά: %@";
+
+"privacy_policy_link" = "Πολιτική απορρήτου";
+
+"terms_of_use_link" = "Όροι χρήσης";

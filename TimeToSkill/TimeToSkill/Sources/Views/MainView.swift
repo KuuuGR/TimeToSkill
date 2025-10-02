@@ -189,7 +189,7 @@ struct MainView: View {
             OptionsView()
         }
         .sheet(isPresented: $showingPaywall) {
-            DevPaywallView(onUnlock: { customSkillUnlocked = true })
+            PaywallView()
         }
         .sheet(isPresented: $showingCustomSkillSheet) {
             CustomExemplarySkillSheet { title, description, category, difficulty, one, two, three, imagePath in

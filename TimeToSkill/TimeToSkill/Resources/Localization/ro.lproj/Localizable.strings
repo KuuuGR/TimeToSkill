@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Susține dezvoltatorul";
 "unlock_benefit_reset_limit" = "Resetează limita zilnică de evaluări";
 "restore_purchases" = "Restabilește achizițiile";
-"buy_unlock" = "Cumpără deblocare (Dev)";
+"buy_unlock" = "Cumpără deblocare";
 "unlock_title_short" = "Deblochează";
 "difficulty_label" = "Dificultate";
 "star_descriptions_title" = "Descrieri nivel stele";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 Ani";
 "Time_Converter_Days_Placeholder" = "Zile calculate";
 "Time_Converter_Calculate_Button" = "Calculează";
+
+"paywall_price_format" = "Achiziție unică: %@";
+
+"privacy_policy_link" = "Politica de confidențialitate";
+
+"terms_of_use_link" = "Termeni de utilizare";

@@ -251,7 +251,7 @@
 "unlock_benefit_support" = "Support the developer";
 "unlock_benefit_reset_limit" = "Reset the daily evaluation limit";
 "restore_purchases" = "Restore Purchases";
-"buy_unlock" = "Buy Unlock (Dev)";
+"buy_unlock" = "Buy Unlock";
 "unlock_title_short" = "Unlock";
 "difficulty_label" = "Difficulty";
 "star_descriptions_title" = "Star-level descriptions";
@@ -309,3 +309,9 @@
 "archived_section" = "Archived";
 "counters_empty_title" = "No counters yet";
 "counters_empty_description" = "Create your first counter to start tracking numeric progress.";
+
+"paywall_price_format" = "One-time purchase: %@";
+
+"privacy_policy_link" = "Privacy Policy";
+
+"terms_of_use_link" = "Terms of Use";

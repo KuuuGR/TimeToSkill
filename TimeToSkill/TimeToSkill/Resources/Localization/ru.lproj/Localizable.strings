@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Поддержите разработчика";
 "unlock_benefit_reset_limit" = "Сброс дневного лимита оценок";
 "restore_purchases" = "Восстановить покупки";
-"buy_unlock" = "Купить разблокировку (Dev)";
+"buy_unlock" = "Купить разблокировку";
 "unlock_title_short" = "Разблокировать";
 "difficulty_label" = "Сложность";
 "star_descriptions_title" = "Описание уровней звезд";
@@ -311,3 +311,9 @@
 "archived_section" = "Архив";
 "counters_empty_title" = "Нет счетчиков";
 "counters_empty_description" = "Создайте первый счетчик, чтобы отслеживать числовой прогресс.";
+
+"paywall_price_format" = "Единовременная покупка: %@";
+
+"privacy_policy_link" = "Политика конфиденциальности";
+
+"terms_of_use_link" = "Условия использования";

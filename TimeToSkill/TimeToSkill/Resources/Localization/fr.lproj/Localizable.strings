@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "Soutenir le développeur";
 "unlock_benefit_reset_limit" = "Réinitialiser la limite quotidienne d'évaluations";
 "restore_purchases" = "Restaurer les achats";
-"buy_unlock" = "Acheter le déblocage (Dev)";
+"buy_unlock" = "Acheter le déblocage";
 "unlock_title_short" = "Débloquer";
 "difficulty_label" = "Difficulté";
 "star_descriptions_title" = "Descriptions par niveau d'étoiles";
@@ -311,3 +311,9 @@
 "archived_section" = "Archivés";
 "counters_empty_title" = "Aucun compteur";
 "counters_empty_description" = "Crée ton premier compteur pour suivre un progrès numérique.";
+
+"paywall_price_format" = "Achat unique : %@";
+
+"privacy_policy_link" = "Politique de confidentialité";
+
+"terms_of_use_link" = "Conditions d’utilisation";

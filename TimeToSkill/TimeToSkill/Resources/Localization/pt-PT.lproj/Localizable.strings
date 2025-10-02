@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Apoia o desenvolvedor";
 "unlock_benefit_reset_limit" = "Repor o limite diário de avaliações";
 "restore_purchases" = "Restaurar compras";
-"buy_unlock" = "Comprar desbloqueio (Dev)";
+"buy_unlock" = "Comprar desbloqueio";
 "unlock_title_short" = "Desbloquear";
 "difficulty_label" = "Dificuldade";
 "star_descriptions_title" = "Descrições dos níveis de estrelas";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 Anos";
 "Time_Converter_Days_Placeholder" = "Dias calculados";
 "Time_Converter_Calculate_Button" = "Calcular";
+
+"paywall_price_format" = "Compra única: %@";
+
+"privacy_policy_link" = "Política de Privacidade";
+
+"terms_of_use_link" = "Termos de Utilização";

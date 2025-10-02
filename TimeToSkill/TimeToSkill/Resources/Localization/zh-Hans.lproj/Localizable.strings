@@ -311,3 +311,9 @@
 "archived_section" = "已归档";
 "counters_empty_title" = "暂无计数器";
 "counters_empty_description" = "创建你的第一个计数器以开始跟踪数值进度。";
+
+"paywall_price_format" = "一次性购买：%@";
+
+"privacy_policy_link" = "隐私政策";
+
+"terms_of_use_link" = "使用条款";

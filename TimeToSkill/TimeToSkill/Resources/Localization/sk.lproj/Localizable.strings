@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Podpor vývojára";
 "unlock_benefit_reset_limit" = "Resetuj denný limit hodnotení";
 "restore_purchases" = "Obnoviť nákupy";
-"buy_unlock" = "Kúpiť odomknutie (Dev)";
+"buy_unlock" = "Kúpiť odomknutie";
 "unlock_title_short" = "Odomknúť";
 "difficulty_label" = "Náročnosť";
 "star_descriptions_title" = "Popisy úrovní hviezd";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 Roky";
 "Time_Converter_Days_Placeholder" = "Vypočítané dni";
 "Time_Converter_Calculate_Button" = "Vypočítať";
+
+"paywall_price_format" = "Jednorazový nákup: %@";
+
+"privacy_policy_link" = "Zásady ochrany osobných údajov";
+
+"terms_of_use_link" = "Podmienky používania";

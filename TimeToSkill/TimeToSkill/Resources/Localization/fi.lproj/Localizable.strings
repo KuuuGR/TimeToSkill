@@ -241,7 +241,7 @@
 "unlock_benefit_support" = "Tue kehittäjää";
 "unlock_benefit_reset_limit" = "Nollaa päivittäinen arviointiraja";
 "restore_purchases" = "Palauta ostot";
-"buy_unlock" = "Osta avaus (Dev)";
+"buy_unlock" = "Osta avaus";
 "unlock_title_short" = "Avaa";
 "difficulty_label" = "Vaikeus";
 "star_descriptions_title" = "Tähtitasojen kuvaukset";
@@ -311,3 +311,9 @@
 "Time_Converter_Years_Label" = "🎆 Vuotta";
 "Time_Converter_Days_Placeholder" = "Lasketut päivät";
 "Time_Converter_Calculate_Button" = "Laske";
+
+"paywall_price_format" = "Kertamaksu: %@";
+
+"privacy_policy_link" = "Tietosuojakäytäntö";
+
+"terms_of_use_link" = "Käyttöehdot";

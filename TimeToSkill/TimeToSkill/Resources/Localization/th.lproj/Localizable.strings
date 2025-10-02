@@ -252,7 +252,7 @@
 "unlock_benefit_support" = "สนับสนุนนักพัฒนา";
 "unlock_benefit_reset_limit" = "รีเซ็ตขีดจำกัดการประเมินรายวัน";
 "restore_purchases" = "กู้คืนการซื้อ";
-"buy_unlock" = "ซื้อปลดล็อก (Dev)";
+"buy_unlock" = "ซื้อปลดล็อก";
 "unlock_title_short" = "ปลดล็อก";
 "difficulty_label" = "ระดับความยาก";
 "star_descriptions_title" = "คำอธิบายระดับดาว";
@@ -311,3 +311,9 @@
 "archived_section" = "เก็บถาวร";
 "counters_empty_title" = "ยังไม่มีตัวนับ";
 "counters_empty_description" = "สร้างตัวนับแรกของคุณเพื่อเริ่มติดตามความคืบหน้าตัวเลข";
+
+"paywall_price_format" = "ซื้อครั้งเดียว: %@";
+
+"privacy_policy_link" = "นโยบายความเป็นส่วนตัว";
+
+"terms_of_use_link" = "ข้อกำหนดการใช้งาน";
