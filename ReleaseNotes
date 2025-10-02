@@ -1,13 +1,27 @@
-# TimeToSkill – Release Notes
+---
+title: "TimeToSkill – Release Notes"
+app: TimeToSkill
+current_version: "1.4"
+date: 2025-10-03
+tags: [release-notes, changelog]
+---
+
+## Version 1.4 (2025)
+• **Lifetime Pro** (one-time, non-consumable) unlocks all premium features forever  
+• New **paywall** with localized price, **Buy** and **Restore Purchases** buttons  
+• **Exemplary Skills**: localized skill content in 40+ languages  
+• New **Statistics** views: **Time Distribution** and **Global Time Distribution**  
+• **Counters & Progress UI**: Counter Ring component and **Manage Counters** screen  
+• General performance improvements and bug fixes
 
 ## Version 1.1 (2025)
-• Export your skills progress to PDF reports
-• New Time Calculator: Convert hours to days and years
+• Export your skills progress to PDF reports  
+• New Time Calculator: Convert hours to days and years  
 • Fixed sorting performance and memory usage
 
 ## Version 1.0 (2025)
-- Initial release.
-- Skill tracker with time input and learning stage visualization.
-- Randomized global quotes with 40+ language support.
-- Fully localized user interface.
+- Initial release.  
+- Skill tracker with time input and learning stage visualization.  
+- Randomized global quotes with 40+ language support.  
+- Fully localized user interface.  
 - Offline-first design.
