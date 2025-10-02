@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Ψηφιακή Αποτοξίνωση",
+      "description": "★ Έζησε 2 ημέρες χωρίς κινητό τηλέφωνο.\n★★ Έζησε 2 εβδομάδες χωρίς κινητό τηλέφωνο.\n★★★ Έζησε 2 μήνες χωρίς κινητό τηλέφωνο (χρησιμοποιήθηκε μόνο για κλήσεις, μέγιστο 10 κλήσεις που ξεκίνησε, χωρίς εφαρμογές/κοινωνικά δίκτυα).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Συνείδηση και Πειθαρχία",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

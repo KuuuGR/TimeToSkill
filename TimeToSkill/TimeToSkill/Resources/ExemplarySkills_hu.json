@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Digitális Detox",
+      "description": "★ 2 napot élt mobiltelefon nélkül.\n★★ 2 hetet élt mobiltelefon nélkül.\n★★★ 2 hónapot élt mobiltelefon nélkül (csak hívásokhoz használta, max 10 kezdeményezett hívás, nincs alkalmazás/közösségi média).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Tudatosság és Fegyelem",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

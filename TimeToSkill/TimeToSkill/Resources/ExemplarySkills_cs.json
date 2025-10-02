@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Digitální Detox",
+      "description": "★ Žil 2 dny bez mobilního telefonu.\n★★ Žil 2 týdny bez mobilního telefonu.\n★★★ Žil 2 měsíce bez mobilního telefonu (používal pouze pro hovory, max 10 iniciovaných hovorů, bez aplikací/sociálních sítí).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Všímavost a Disciplína",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

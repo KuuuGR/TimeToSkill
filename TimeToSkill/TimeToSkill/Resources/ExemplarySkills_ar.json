@@ -1,0 +1,347 @@
+{
+  "catalogVersion": 6,
+  "items": [
+    {
+      "id": "health.daniel_fasting",
+      "title": "صيام دانيال",
+      "description": "★ أكمل دورة 14 يومًا.\n★★ أكمل دورة 21 يومًا.\n★★★ أكمل دورة 77 يومًا.",
+      "imageName": "leaf.fill",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 3
+    },
+    {
+      "id": "health.cold_plunge",
+      "title": "الغطس البارد",
+      "description": "★ أكمل جلسة واحدة.\n★★ أكمل 3 جلسات.\n★★★ أكمل 7 جلسات.",
+      "imageName": "thermometer.snowflake",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.water_fasting",
+      "title": "صيام الماء",
+      "description": "★ أكمل صيام ماء لمدة 3 أيام.\n★★ أكمل صيام ماء لمدة 7 أيام.\n★★★ أكمل صيام ماء لمدة 21 يومًا.",
+      "imageName": "drop.fill",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 3
+    },
+    {
+      "id": "health.pushups",
+      "title": "معلم الضغط",
+      "description": "★ حقق 100 ضغط إجمالي.\n★★ حقق 2,000 ضغط إجمالي.\n★★★ حقق 5,000 ضغط إجمالي.",
+      "imageName": "figure.strengthtraining.traditional",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.situps",
+      "title": "معلم الجلوس",
+      "description": "★ حقق 1,000 جلوس إجمالي.\n★★ حقق 2,000 جلوس إجمالي.\n★★★ حقق 5,000 جلوس إجمالي.",
+      "imageName": "figure.core.training",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 2
+    },
+    {
+      "id": "health.jump_rope",
+      "title": "معلم القفز بالحبل",
+      "description": "★ حقق 100 قفزة إجمالية.\n★★ حقق 500 قفزة إجمالية.\n★★★ حقق 1,000 قفزة إجمالية.",
+      "imageName": "figure.jumprope",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "health.daily_steps",
+      "title": "الخطوات اليومية",
+      "description": "★ مشى 10,000 خطوة في يوم.\n★★ مشى 20,000 خطوة في يوم.\n★★★ مشى 30,000 خطوة في يوم.",
+      "imageName": "figure.walk",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "health.online_workout",
+      "title": "عادة التمرين عبر الإنترنت",
+      "description": "★ أكمل 3 ساعات إجمالية.\n★★ أكمل 9 ساعات إجمالية.\n★★★ أكمل 21 ساعة إجمالية.",
+      "imageName": "play.tv.fill",
+      "category": "الصحة والتحمل",
+      "categoryKey": "health",
+      "difficulty": 1
+    },
+    {
+      "id": "mind.silence",
+      "title": "نذر الصمت",
+      "description": "★ حافظ عليه لمدة يوم واحد.\n★★ حافظ عليه لمدة يومين.\n★★★ حافظ عليه لمدة 3 أيام.",
+      "imageName": "speaker.slash.fill",
+      "category": "اليقظة والانضباط",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
+      "id": "mind.sensory_deprivation",
+      "title": "الحرمان الحسي",
+      "description": "★ قضى 4 ساعات معصوب العينين.\n★★ قضى 12 ساعة معصوب العينين.\n★★★ قضى يومًا كاملاً (24 ساعة) معصوب العينين.",
+      "imageName": "eye.slash.fill",
+      "category": "اليقظة والانضباط",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
+      "id": "mind.non_dominant_hand",
+      "title": "تدريب اليد غير المهيمنة",
+      "description": "★ استخدم يدك غير المهيمنة لتناول وجبة.\n★★ استخدم يدك غير المهيمنة ليوم كامل.\n★★★ كتب صفحة كاملة بخط واضح بيدك غير المهيمنة.",
+      "imageName": "hand.raised.fill",
+      "category": "اليقظة والانضباط",
+      "categoryKey": "mind",
+      "difficulty": 2
+    },
+    {
+      "id": "mind.speed_listening",
+      "title": "المستمع السريع",
+      "description": "★ فهم فيديو مدته ساعة بسرعة 2×.\n★★ فهم فيديو مدته ساعة بسرعة 3×.\n★★★ فهم فيديو مدته ساعة بسرعة 5×.",
+      "imageName": "gauge.with.needle.fill",
+      "category": "اليقظة والانضباط",
+      "categoryKey": "mind",
+      "difficulty": 2
+    },
+    {
+      "id": "mind.digital_detox",
+      "title": "التخلص من السموم الرقمية",
+      "description": "★ عاش يومين بدون هاتف محمول.\n★★ عاش أسبوعين بدون هاتف محمول.\n★★★ عاش شهرين بدون هاتف محمول (استخدم فقط للمكالمات، بحد أقصى 10 مكالمات مبدوءة، بدون تطبيقات/وسائل التواصل الاجتماعي).",
+      "imageName": "iphone.slash",
+      "category": "اليقظة والانضباط",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
+      "id": "outdoor.barefoot_walking",
+      "title": "الماشي حافي القدمين",
+      "description": "★ مشى 100 خطوة حافي القدمين على العشب.\n★★ مشى 5,000 خطوة حافي القدمين.\n★★★ مشى 10,000 خطوة حافي القدمين.",
+      "imageName": "figure.walk",
+      "category": "الخارج والطبيعة",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.traveler",
+      "title": "المسافر",
+      "description": "★ قام برحلة إلى شاطئ البحر.\n★★ قام برحلة إلى الجبال.\n★★★ قام برحلة إلى كل من البحر والجبال في عام واحد.",
+      "imageName": "globe.europe.africa.fill",
+      "category": "الخارج والطبيعة",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.forager",
+      "title": "جامع الطعام",
+      "description": "★ ذهب لجمع الفطر في الغابة.\n★★ حدد بنجاح وجمع 3 أنواع من الفطر الصالح للأكل.\n★★★ أعد وجبة باستخدام مكونات مجمعة.",
+      "imageName": "leaf.fill",
+      "category": "الخارج والطبيعة",
+      "categoryKey": "outdoor",
+      "difficulty": 2
+    },
+    {
+      "id": "outdoor.nature_observer",
+      "title": "مراقب الطبيعة",
+      "description": "★ رأى وحدد شجرة روان.\n★★ حدد 5 أنواع مختلفة من الأشجار المحلية.\n★★★ حدد 10 أنواع مختلفة من الأشجار المحلية.",
+      "imageName": "tree.fill",
+      "category": "الخارج والطبيعة",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "outdoor.rain_enthusiast",
+      "title": "عاشق المطر",
+      "description": "★ قفز في البرك تحت المطر.\n★★ ذهب في نزهة تحت المطر بدون مظلة.\n★★★ قضى ساعة في الهواء الطلق أثناء عاصفة مطرية شديدة.",
+      "imageName": "cloud.rain.fill",
+      "category": "الخارج والطبيعة",
+      "categoryKey": "outdoor",
+      "difficulty": 1
+    },
+    {
+      "id": "games.retro_gaming",
+      "title": "مكمل الألعاب الرجعية",
+      "description": "★ أنهى لعبة كلاسيكية 8 بت واحدة.\n★★ أنهى لعبتين كلاسيكيتين 8 بت.\n★★★ أنهى 3 ألعاب كلاسيكية 8 بت.",
+      "imageName": "gamecontroller.fill",
+      "category": "الألعاب والترفيه",
+      "categoryKey": "games",
+      "difficulty": 2
+    },
+    {
+      "id": "games.petanque_player",
+      "title": "لاعب البيتانك",
+      "description": "★ لعب مباراة بيتانك.\n★★ فاز بمباراة بيتانك.\n★★★ نظم بطولة بيتانك مع الأصدقاء.",
+      "imageName": "circle.fill",
+      "category": "الألعاب والترفيه",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.speedrun_enthusiast",
+      "title": "عاشق السرعة",
+      "description": "★ شاهد تشغيل لعبة سريع.\n★★ شاهد تشغيلات سريعة في ثلاث فئات مختلفة (Any%, 100%).\n★★★ حاول بنجاح تشغيل لعبة بسيطة بسرعة.",
+      "imageName": "play.rectangle.on.rectangle.fill",
+      "category": "الألعاب والترفيه",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.hopscotch_master",
+      "title": "سيد الحجلة",
+      "description": "★ لعب الحجلة 10 مرات.\n★★ لعب الحجلة 100 مرة.\n★★★ علم طفلاً كيفية لعب الحجلة.",
+      "imageName": "square.dashed",
+      "category": "الألعاب والترفيه",
+      "categoryKey": "games",
+      "difficulty": 1
+    },
+    {
+      "id": "games.chess_player",
+      "title": "لاعب الشطرنج",
+      "description": "★ لعب في بطولة شطرنج غير رسمية.\n★★ لعب في بطولة شطرنج رسمية مصنفة.\n★★★ فاز بمباراة في بطولة رسمية.",
+      "imageName": "circle.grid.cross.fill",
+      "category": "الألعاب والترفيه",
+      "categoryKey": "games",
+      "difficulty": 3
+    },
+    {
+      "id": "games.chess_variant_master",
+      "title": "سيد متغيرات الشطرنج",
+      "description": "★ لعب مباراة شطرنج في الوقت الفعلي.\n★★ لعب مباراة شطرنج معصوب العينين.\n★★★ فاز بمباراة باستخدام متغير شطرنج.",
+      "imageName": "clock.fill",
+      "category": "الألعاب والترفيه",
+      "categoryKey": "games",
+      "difficulty": 3
+    },
+    {
+      "id": "creative.painting",
+      "title": "الرسام",
+      "description": "★ رسم صورة على ورق A4.\n★★ رسم صورة على ورق A3.\n★★★ رسم صورة على ورق A2.",
+      "imageName": "paintbrush.fill",
+      "category": "الإبداع والحرف اليدوية",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "creative.piano",
+      "title": "عازف البيانو",
+      "description": "★ تعلم وعزف قطعة مدتها دقيقة واحدة.\n★★ تعلم وعزف قطعة مدتها 3 دقائق.\n★★★ تعلم وعزف قطعة مدتها 5 دقائق.",
+      "imageName": "pianokeys",
+      "category": "الإبداع والحرف اليدوية",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "creative.necklace_making",
+      "title": "صانع القلائد",
+      "description": "★ صنع قلادة واحدة (مثل من ثمار روان).\n★★ صنع قلائد لـ 7 أفراد من العائلة.",
+      "imageName": "circle.grid.cross.fill",
+      "category": "الإبداع والحرف اليدوية",
+      "categoryKey": "creative",
+      "difficulty": 1
+    },
+    {
+      "id": "creative.sewing",
+      "title": "الخياط",
+      "description": "★ أصلح قطعة ملابس.\n★★ خاط عنصرًا بسيطًا من نمط (مثل غطاء وسادة).\n★★★ خاط عنصر ملابس معقد.",
+      "imageName": "scissors",
+      "category": "الإبداع والحرف اليدوية",
+      "categoryKey": "creative",
+      "difficulty": 2
+    },
+    {
+      "id": "learning.memorize_poetry",
+      "title": "حافظ الشعر",
+      "description": "★ حفظ قصيدة واحدة.\n★★ حفظ قصيدتين.\n★★★ حفظ 3 قصائد.",
+      "imageName": "book.fill",
+      "category": "التعلم والذاكرة",
+      "categoryKey": "learning",
+      "difficulty": 1
+    },
+    {
+      "id": "learning.learn_esperanto",
+      "title": "متعلم الإسبرانتو",
+      "description": "★ درس لمدة 21 ساعة.\n★★ درس لمدة 100 ساعة.\n★★★ درس لمدة 1000 ساعة.",
+      "imageName": "globe",
+      "category": "التعلم والذاكرة",
+      "categoryKey": "learning",
+      "difficulty": 2
+    },
+    {
+      "id": "learning.sign_language",
+      "title": "متعلم لغة الإشارة",
+      "description": "★ تعلم 50 كلمة.\n★★ تعلم 100 كلمة.\n★★★ تعلم 256 كلمة.",
+      "imageName": "hand.raised.fill",
+      "category": "التعلم والذاكرة",
+      "categoryKey": "learning",
+      "difficulty": 2
+    },
+    {
+      "id": "learning.major_system",
+      "title": "مستخدم النظام الرئيسي",
+      "description": "★ حفظ 10 تواريخ تاريخية باستخدام النظام.\n★★ كود صفحة صحيفة باستخدام النظام.\n★★★ كود كتاب قصير كامل باستخدام النظام.",
+      "imageName": "newspaper.fill",
+      "category": "التعلم والذاكرة",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.upside_down_reading",
+      "title": "القارئ المقلوب",
+      "description": "★ قرأ مقالاً قصيراً مقلوباً.\n★★ قرأ مجلة مقلوبة.\n★★★ قرأ كتاباً كاملاً مقلوباً.",
+      "imageName": "arrow.clockwise",
+      "category": "التعلم والذاكرة",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.ambidextrous_skills",
+      "title": "مهارات ثنائية اليد",
+      "description": "★ كتب جملة بيدك غير المهيمنة.\n★★ كتب فقرة بيدك غير المهيمنة.\n★★★ كتب كلمات مختلفة بكلتا اليدين في نفس الوقت.",
+      "imageName": "hand.draw.fill",
+      "category": "التعلم والذاكرة",
+      "categoryKey": "learning",
+      "difficulty": 3
+    },
+    {
+      "id": "learning.morse_code",
+      "title": "متعلم شفرة مورس",
+      "description": "★ نسخ جملة قصيرة إلى شفرة مورس.\n★★ نسخ قصيدة إلى شفرة مورس.\n★★★ أجرى محادثة بسيطة باستخدام شفرة مورس (مثل وميض الضوء أو الصوت).",
+      "imageName": "network",
+      "category": "التعلم والذاكرة",
+      "categoryKey": "learning",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.rock_climber",
+      "title": "متسلق الصخور",
+      "description": "★ أكمل دورة تسلق تمهيدية.\n★★ أكمل 15 جلسة تدريبية.\n★★★ تسلق بنجاح طريقًا محددًا وصعبًا.",
+      "imageName": "figure.climbing",
+      "category": "الرياضة",
+      "categoryKey": "sports",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.swimmer",
+      "title": "السباح",
+      "description": "★ تعلم أسلوب سباحة واحد.\n★★ تعلم ثلاثة أساليب سباحة مختلفة.\n★★★ سبح مسافة مستمرة 1 كم.",
+      "imageName": "figure.pool.swim",
+      "category": "الرياضة",
+      "categoryKey": "sports",
+      "difficulty": 2
+    },
+    {
+      "id": "sports.juggler",
+      "title": "لاعب الخفة",
+      "description": "★ تعلم التلاعب بـ 3 كرات.\n★★ أتقن 5 حيل بـ 3 كرات.\n★★★ تلاعب بـ 3 كرات بيد واحدة.",
+      "imageName": "circle.grid.3x3.fill",
+      "category": "الرياضة",
+      "categoryKey": "sports",
+      "difficulty": 2
+    }
+  ]
+}

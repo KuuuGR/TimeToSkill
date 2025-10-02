@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Digital Afvænning",
+      "description": "★ Levede 2 dage uden mobiltelefon.\n★★ Levede 2 uger uden mobiltelefon.\n★★★ Levede 2 måneder uden mobiltelefon (kun brugt til opkald, max 10 opkald initieret, ingen apps/sociale medier).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Opmærksomhed og Disciplin",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

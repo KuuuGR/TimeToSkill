@@ -110,6 +110,15 @@
       "difficulty": 2
     },
     {
+      "id": "mind.digital_detox",
+      "title": "Detoks cyfrowy",
+      "description": "★ Przeżyto 2 dni bez telefonu komórkowego.\n★★ Przeżyto 2 tygodnie bez telefonu komórkowego.\n★★★ Przeżyto 2 miesiące bez telefonu komórkowego (używano tylko do rozmów, maksymalnie 10 połączeń inicjowanych, bez aplikacji/mediów społecznościowych).",
+      "imageName": "iphone.slash",
+      "category": "Uważność i dyscyplina",
+      "categoryKey": "mind",
+      "difficulty": 3
+    },
+    {
       "id": "outdoor.barefoot_walking",
       "title": "Chodzenie boso",
       "description": "★ Pokonano 100 kroków boso po trawie.\n★★ Pokonano 5 000 kroków boso.\n★★★ Pokonano 10 000 kroków boso.",

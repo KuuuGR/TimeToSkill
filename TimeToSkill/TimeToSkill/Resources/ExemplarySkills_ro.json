@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Detox Digital",
+      "description": "★ A trăit 2 zile fără telefon mobil.\n★★ A trăit 2 săptămâni fără telefon mobil.\n★★★ A trăit 2 luni fără telefon mobil (folosit doar pentru apeluri, maxim 10 apeluri inițiate, fără aplicații/rețele sociale).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Conștientizare și Disciplină",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

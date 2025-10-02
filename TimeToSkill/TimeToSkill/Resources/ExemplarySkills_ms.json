@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Detoks Digital",
+      "description": "★ Hidup 2 hari tanpa telefon bimbit.\n★★ Hidup 2 minggu tanpa telefon bimbit.\n★★★ Hidup 2 bulan tanpa telefon bimbit (hanya digunakan untuk panggilan, maksimum 10 panggilan dimulakan, tiada aplikasi/media sosial).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Kesedaran dan Disiplin",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

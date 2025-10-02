@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Giải Độc Số",
+      "description": "★ Sống 2 ngày không có điện thoại di động.\n★★ Sống 2 tuần không có điện thoại di động.\n★★★ Sống 2 tháng không có điện thoại di động (chỉ dùng để gọi, tối đa 10 cuộc gọi khởi tạo, không có ứng dụng/mạng xã hội).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Chánh Niệm và Kỷ Luật",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

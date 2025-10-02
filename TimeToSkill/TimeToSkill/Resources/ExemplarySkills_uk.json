@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Цифрова Детоксикація",
+      "description": "★ Прожив 2 дні без мобільного телефону.\n★★ Прожив 2 тижні без мобільного телефону.\n★★★ Прожив 2 місяці без мобільного телефону (використовувався лише для дзвінків, максимум 10 ініційованих дзвінків, без додатків/соціальних мереж).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Усвідомленість і Дисципліна",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "디지털 디톡스",
+      "description": "★ 휴대폰 없이 2일을 살았다.\n★★ 휴대폰 없이 2주를 살았다.\n★★★ 휴대폰 없이 2개월을 살았다 (통화만 사용, 최대 10회 발신, 앱/소셜미디어 없음).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "마음챙김과 규율",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

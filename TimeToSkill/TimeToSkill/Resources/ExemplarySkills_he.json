@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "גמילה דיגיטלית",
+      "description": "★ חי 2 ימים בלי טלפון נייד.\n★★ חי 2 שבועות בלי טלפון נייד.\n★★★ חי 2 חודשים בלי טלפון נייד (השתמש רק לשיחות, מקסימום 10 שיחות שיזם, בלי אפליקציות/רשתות חברתיות).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "מיינדפולנס ומשמעת",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

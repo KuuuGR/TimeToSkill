@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Dijital Detoks",
+      "description": "★ Cep telefonu olmadan 2 gün yaşadı.\n★★ Cep telefonu olmadan 2 hafta yaşadı.\n★★★ Cep telefonu olmadan 2 ay yaşadı (sadece aramalar için kullanıldı, en fazla 10 başlatılan arama, uygulama/sosyal medya yok).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Farkındalık ve Disiplin",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

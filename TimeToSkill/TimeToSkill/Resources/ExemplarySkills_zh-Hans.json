@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "数字排毒",
+      "description": "★ 在没有手机的情况下生活了2天。\n★★ 在没有手机的情况下生活了2周。\n★★★ 在没有手机的情况下生活了2个月（仅用于通话，最多10次主动通话，无应用/社交媒体）。",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "正念与纪律",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "การล้างพิษดิจิทัล",
+      "description": "★ ใช้ชีวิต 2 วันโดยไม่มีโทรศัพท์มือถือ\n★★ ใช้ชีวิต 2 สัปดาห์โดยไม่มีโทรศัพท์มือถือ\n★★★ ใช้ชีวิต 2 เดือนโดยไม่มีโทรศัพท์มือถือ (ใช้เฉพาะการโทร สูงสุด 10 ครั้งที่เริ่มต้น ไม่มีแอป/โซเชียลมีเดีย)",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "สติและวินัย",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

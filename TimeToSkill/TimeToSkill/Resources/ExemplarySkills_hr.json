@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Digitalni Detoks",
+      "description": "★ Živio 2 dana bez mobilnog telefona.\n★★ Živio 2 tjedna bez mobilnog telefona.\n★★★ Živio 2 mjeseca bez mobilnog telefona (korišten samo za pozive, maksimalno 10 pokrenutih poziva, bez aplikacija/društvenih mreža).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Svjesnost i Disciplina",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-

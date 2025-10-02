@@ -111,10 +111,10 @@
     },
     {
       "id": "mind.digital_detox",
-      "title": "Digital Detox",
-      "description": "★ Lived 2 days without a mobile phone.\n★★ Lived 2 weeks without a mobile phone.\n★★★ Lived 2 months without a mobile phone (only used for calls, max 10 calls initiated, no apps/social media).",
+      "title": "Desintoxicação Digital",
+      "description": "★ Viveu 2 dias sem telemóvel.\n★★ Viveu 2 semanas sem telemóvel.\n★★★ Viveu 2 meses sem telemóvel (usado apenas para chamadas, máximo 10 chamadas iniciadas, sem apps/redes sociais).",
       "imageName": "iphone.slash",
-      "category": "Mindfulness & Discipline",
+      "category": "Atenção Plena e Disciplina",
       "categoryKey": "mind",
       "difficulty": 3
     },
@@ -345,4 +345,3 @@
     }
   ]
 }
-
