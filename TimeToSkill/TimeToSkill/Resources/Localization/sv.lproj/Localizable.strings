@@ -26,6 +26,8 @@
 "tracking_title" = "Spårning av färdigheter";
 "tracking_nav_title" = "Dina färdigheter";
 "sort_by_label" = "Sortera efter";
+"export_pdf_title" = "Exportera till PDF";
+"fab_options" = "Visa alternativ";
 
 "sort_name_asc" = "Namn ↑";
 "sort_name_desc" = "Namn ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "Lägg till ny färdighet";
 "fab_view_stats" = "Visa statistik";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Hantera räknare";
+"counter_details_section" = "Detaljer";
+"counter_title_placeholder" = "Titel";
+"counter_step_label%d" = "Steg: %d";
+"counter_thresholds_section" = "Trösklar (komma-separerade)";
+"counter_thresholds_placeholder" = "t.ex. 100,200,500,10000";
+"counter_new_title" = "Ny räknare";
+"create" = "Skapa";
+"apply" = "Tillämpa";
+"value" = "Värde";
+"add" = "Lägg till";
+"counter_progress_section" = "Framsteg";
+"counter_value_label" = "Värde";
+"counter_stage_max_label" = "Maxnivå";
+"counter_no_thresholds" = "Inga trösklar satta";
+"counter_reset_to_zero" = "Återställ till 0";
+"counter_configuration_section" = "Konfiguration";
+"counter_edit_thresholds" = "Redigera trösklar";
+"counter_set_value_section" = "Sätt värde manuellt";
+"counter_set_value_placeholder" = "-1000000 till 1000000";
+"counter_current_thresholds" = "Aktuella trösklar";
+"counter_add_threshold" = "Lägg till tröskel";
+"counter_thresholds_title" = "Trösklar";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Färdigheter";
+"daily_evaluations_format" = "Dagliga utvärderingar: %d/%d";
+"sort_menu_label" = "Sortera";
+"reset_daily_limit" = "Återställ daglig gräns";
+"daily_limit_reached_title" = "Daglig gräns nådd";
+"daily_limit_reached_message_format" = "Du har nått din dagliga gräns på %d färdighetsutvärderingar. Försök igen i morgon!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Tidsfördelning";
+"time_distribution_skill_format" = "Färdighet: %@";
+"time_total_hours_format" = "Total tid: %@ h";
+"time_mean_minutes_format" = "Genomsnittligt intervall: %@ min";
+"time_std_minutes_format" = "Std.avvikelse: %@ min";
+"distribution_nav_title" = "Fördelning";
+"global_time_distribution_title" = "Global tidsfördelning";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Namn";
+"sort_category" = "Kategori";
+"sort_stars_asc" = "Stjärnor ↑";
+"sort_stars_desc" = "Stjärnor ↓";
+"sort_difficulty_asc" = "Svårighet ↑";
+"sort_difficulty_desc" = "Svårighet ↓";
+"sort_completed_asc" = "Slutförd ↑";
+"sort_completed_desc" = "Slutförd ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Färdighetsdetaljer";
+"close" = "Stäng";
+"change_rating_accessibility" = "Ändra betyg";
+"description" = "Beskrivning";
+"achievement_status" = "Prestationsstatus";
+"obtained_label" = "Uppnådd:";
+"unknown" = "Okänd";
+"your_rating_label" = "Ditt betyg:";
+"verification_code_label" = "Verifikationskod:";
+"achievement_history" = "Prestationer-historik";
+"update_your_rating" = "Uppdatera ditt betyg";
+"no_stars" = "Inga stjärnor";
+"update_and_verify" = "Uppdatera & verifiera";
+"self_evaluation" = "Självutvärdering";
+"how_many_stars_question" = "Hur många stjärnor förtjänar du för denna färdighet?";
+"evaluate_my_skill" = "Utvärdera min färdighet";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verifikation krävs";
+"verification_required_message" = "Ange verifikationskoden för att bekräfta din självutvärdering:";
+"verification_code_title" = "Verifikationskod:";
+"no_code_received" = "INGEN KOD MOTTAGEN";
+"enter_the_code" = "Ange koden:";
+"verify_and_evaluate" = "Verifiera & utvärdera";
+"verification_nav_title" = "Verifikation";
+"invalid_code_title" = "Ogiltig kod";
+"invalid_code_message" = "Ange korrekt kod.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Visa fördelning";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Lägg till anpassad färdighet";
+"unlock_custom_skills_title" = "Lås upp anpassade färdigheter";
+"unlock_custom_skills_subtitle" = "Skapa egna prestationer och hantera listan.";
+"unlock_benefit_create" = "Skapa färdighet med titel, beskrivning och svårighet";
+"unlock_benefit_delete" = "Ta bort anpassade färdigheter vid fel";
+"unlock_benefit_support" = "Stöd utvecklaren";
+"unlock_benefit_reset_limit" = "Återställ daglig utvärderingsgräns";
+"restore_purchases" = "Återställ köp";
+"buy_unlock" = "Köp upplåsning (Dev)";
+"unlock_title_short" = "Lås upp";
+"difficulty_label" = "Svårighet";
+"star_descriptions_title" = "Beskrivningar av stjärnnivåer";
+"one_star_description" = "1★ beskrivning";
+"two_star_description" = "2★ beskrivning";
+"three_star_description" = "3★ beskrivning";
+"image_label" = "Bild";
+"choose_image" = "Välj bild";
+"category_label" = "Kategori";
+"category_custom_placeholder" = "Anpassad kategori";
+
+// MARK: - Preset Categories
+"cat_custom" = "Anpassad";
+"cat_music" = "Musik";
+"cat_language" = "Språk";
+"cat_art" = "Konst";
+"cat_coding" = "Kodning";
+"cat_fitness" = "Träning";
+"cat_cooking" = "Matlagning";
+"cat_photography" = "Fotografi";
+"cat_writing" = "Skrivande";
+"cat_public_speaking" = "Retorik";
+"cat_science" = "Vetenskap";
+"cat_math" = "Matematik";
+"cat_engineering" = "Ingenjörsvetenskap";
+"cat_design" = "Design";
+"cat_business" = "Affärer";
+"cat_marketing" = "Marknadsföring";
+"cat_finance" = "Finans";
+"cat_investing" = "Investering";
+"cat_entrepreneurship" = "Entreprenörskap";
+"cat_psychology" = "Psykologi";
+"cat_education" = "Utbildning";
+"cat_history" = "Historia";
+"cat_geography" = "Geografi";
+"cat_health" = "Hälsa";
+"cat_meditation" = "Meditation";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sport";
+"cat_dance" = "Dans";
+"cat_theatre" = "Teater";
+"cat_film" = "Film";
+"cat_editing" = "Videoredigering";
+"cat_3d" = "3D-modellering";
+"cat_ai" = "AI/ML";
+"cat_data" = "Data Science";
+"cat_cybersecurity" = "Cybersäkerhet";
+"cat_gardening" = "Trädgårdsarbete";
+"cat_diy" = "Gör det själv";
+"cat_travel" = "Resor";
+"cat_cars" = "Bil";
+"cat_parenting" = "Föräldraskap";
+"cat_animals" = "Djur";
+"hide" = "Dölj";
+"unhide" = "Visa";
+"archived_section" = "Arkiverat";
+"counters_empty_title" = "Inga räknare";
+"counters_empty_description" = "Skapa din första räknare för att spåra numeriska framsteg.";

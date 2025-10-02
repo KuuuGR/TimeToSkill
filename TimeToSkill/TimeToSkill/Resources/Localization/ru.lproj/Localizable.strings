@@ -26,6 +26,8 @@
 "tracking_title" = "Отслеживание навыков";
 "tracking_nav_title" = "Ваши навыки";
 "sort_by_label" = "Сортировать по";
+"export_pdf_title" = "Экспорт в PDF";
+"fab_options" = "Показать опции";
 
 "sort_name_asc" = "Имя ↑";
 "sort_name_desc" = "Имя ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "Добавить новый навык";
 "fab_view_stats" = "Просмотр статистики";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Управление счетчиками";
+"counter_details_section" = "Подробности";
+"counter_title_placeholder" = "Название";
+"counter_step_label%d" = "Шаг: %d";
+"counter_thresholds_section" = "Пороги (через запятую)";
+"counter_thresholds_placeholder" = "напр. 100,200,500,10000";
+"counter_new_title" = "Новый счетчик";
+"create" = "Создать";
+"apply" = "Применить";
+"value" = "Значение";
+"add" = "Добавить";
+"counter_progress_section" = "Прогресс";
+"counter_value_label" = "Значение";
+"counter_stage_max_label" = "Макс. этап";
+"counter_no_thresholds" = "Пороги не заданы";
+"counter_reset_to_zero" = "Сбросить в 0";
+"counter_configuration_section" = "Конфигурация";
+"counter_edit_thresholds" = "Изменить пороги";
+"counter_set_value_section" = "Задать значение вручную";
+"counter_set_value_placeholder" = "-1000000 до 1000000";
+"counter_current_thresholds" = "Текущие пороги";
+"counter_add_threshold" = "Добавить порог";
+"counter_thresholds_title" = "Пороги";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Навыки";
+"daily_evaluations_format" = "Ежедневные оценки: %d/%d";
+"sort_menu_label" = "Сортировать";
+"reset_daily_limit" = "Сбросить дневной лимит";
+"daily_limit_reached_title" = "Дневной лимит достигнут";
+"daily_limit_reached_message_format" = "Вы достигли дневного лимита в %d оценок навыков. Попробуйте завтра!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Распределение времени";
+"time_distribution_skill_format" = "Навык: %@";
+"time_total_hours_format" = "Общее время: %@ ч";
+"time_mean_minutes_format" = "Средний интервал: %@ мин";
+"time_std_minutes_format" = "Ст. отклонение: %@ мин";
+"distribution_nav_title" = "Распределение";
+"global_time_distribution_title" = "Глобальное распределение времени";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Имя";
+"sort_category" = "Категория";
+"sort_stars_asc" = "Звезды ↑";
+"sort_stars_desc" = "Звезды ↓";
+"sort_difficulty_asc" = "Сложность ↑";
+"sort_difficulty_desc" = "Сложность ↓";
+"sort_completed_asc" = "Завершено ↑";
+"sort_completed_desc" = "Завершено ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Подробности навыка";
+"close" = "Закрыть";
+"change_rating_accessibility" = "Изменить оценку";
+"description" = "Описание";
+"achievement_status" = "Статус достижения";
+"obtained_label" = "Получено:";
+"unknown" = "Неизвестно";
+"your_rating_label" = "Ваша оценка:";
+"verification_code_label" = "Код подтверждения:";
+"achievement_history" = "История достижений";
+"update_your_rating" = "Обновить оценку";
+"no_stars" = "Без звезд";
+"update_and_verify" = "Обновить и подтвердить";
+"self_evaluation" = "Самооценка";
+"how_many_stars_question" = "Сколько звезд вы заслужили за этот навык?";
+"evaluate_my_skill" = "Оценить мой навык";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Требуется подтверждение";
+"verification_required_message" = "Введите код подтверждения, чтобы подтвердить самооценку:";
+"verification_code_title" = "Код подтверждения:";
+"no_code_received" = "КОД НЕ ПОЛУЧЕН";
+"enter_the_code" = "Введите код:";
+"verify_and_evaluate" = "Подтвердить и оценить";
+"verification_nav_title" = "Подтверждение";
+"invalid_code_title" = "Неверный код";
+"invalid_code_message" = "Введите правильный код.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Просмотр распределения";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Добавить пользовательский навык";
+"unlock_custom_skills_title" = "Разблокировать пользовательские навыки";
+"unlock_custom_skills_subtitle" = "Создавайте собственные достижения и управляйте списком.";
+"unlock_benefit_create" = "Создайте навык с названием, описанием и сложностью";
+"unlock_benefit_delete" = "Удаляйте пользовательские навыки, если ошиблись";
+"unlock_benefit_support" = "Поддержите разработчика";
+"unlock_benefit_reset_limit" = "Сброс дневного лимита оценок";
+"restore_purchases" = "Восстановить покупки";
+"buy_unlock" = "Купить разблокировку (Dev)";
+"unlock_title_short" = "Разблокировать";
+"difficulty_label" = "Сложность";
+"star_descriptions_title" = "Описание уровней звезд";
+"one_star_description" = "Описание 1★";
+"two_star_description" = "Описание 2★";
+"three_star_description" = "Описание 3★";
+"image_label" = "Изображение";
+"choose_image" = "Выбрать изображение";
+"category_label" = "Категория";
+"category_custom_placeholder" = "Пользовательская категория";
+
+// MARK: - Preset Categories
+"cat_custom" = "Пользовательская";
+"cat_music" = "Музыка";
+"cat_language" = "Язык";
+"cat_art" = "Искусство";
+"cat_coding" = "Программирование";
+"cat_fitness" = "Фитнес";
+"cat_cooking" = "Кулинария";
+"cat_photography" = "Фотография";
+"cat_writing" = "Письмо";
+"cat_public_speaking" = "Ораторское искусство";
+"cat_science" = "Наука";
+"cat_math" = "Математика";
+"cat_engineering" = "Инженерия";
+"cat_design" = "Дизайн";
+"cat_business" = "Бизнес";
+"cat_marketing" = "Маркетинг";
+"cat_finance" = "Финансы";
+"cat_investing" = "Инвестиции";
+"cat_entrepreneurship" = "Предпринимательство";
+"cat_psychology" = "Психология";
+"cat_education" = "Образование";
+"cat_history" = "История";
+"cat_geography" = "География";
+"cat_health" = "Здоровье";
+"cat_meditation" = "Медитация";
+"cat_yoga" = "Йога";
+"cat_sports" = "Спорт";
+"cat_dance" = "Танцы";
+"cat_theatre" = "Театр";
+"cat_film" = "Кино";
+"cat_editing" = "Видеомонтаж";
+"cat_3d" = "3D-моделирование";
+"cat_ai" = "ИИ/ML";
+"cat_data" = "Data Science";
+"cat_cybersecurity" = "Кибербезопасность";
+"cat_gardening" = "Садоводство";
+"cat_diy" = "Сделай сам";
+"cat_travel" = "Путешествия";
+"cat_cars" = "Автомобили";
+"cat_parenting" = "Родительство";
+"cat_animals" = "Животные";
+"hide" = "Скрыть";
+"unhide" = "Показать";
+"archived_section" = "Архив";
+"counters_empty_title" = "Нет счетчиков";
+"counters_empty_description" = "Создайте первый счетчик, чтобы отслеживать числовой прогресс.";

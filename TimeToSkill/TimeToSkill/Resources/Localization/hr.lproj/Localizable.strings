@@ -15,6 +15,8 @@
 "tracking_title" = "Praćenje vještina";
 "tracking_nav_title" = "Tvoje vještine";
 "sort_by_label" = "Sortiraj prema";
+"export_pdf_title" = "Izvezi u PDF";
+"fab_options" = "Prikaži opcije";
 
 "sort_name_asc" = "Naziv ↑";
 "sort_name_desc" = "Naziv ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Dodaj novu vještinu";
 "fab_view_stats" = "Pogledaj statistiku";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Upravljaj brojačima";
+"counter_details_section" = "Detalji";
+"counter_title_placeholder" = "Naslov";
+"counter_step_label%d" = "Korak: %d";
+"counter_thresholds_section" = "Pragovi (odvojeni zarezima)";
+"counter_thresholds_placeholder" = "npr. 100,200,500,10000";
+"counter_new_title" = "Novi brojač";
+"create" = "Kreiraj";
+"apply" = "Primijeni";
+"value" = "Vrijednost";
+"add" = "Dodaj";
+"counter_progress_section" = "Napredak";
+"counter_value_label" = "Vrijednost";
+"counter_stage_max_label" = "Maks. faza";
+"counter_no_thresholds" = "Nema pragova";
+"counter_reset_to_zero" = "Resetiraj na 0";
+"counter_configuration_section" = "Konfiguracija";
+"counter_edit_thresholds" = "Uredi pragove";
+"counter_set_value_section" = "Postavi vrijednost ručno";
+"counter_set_value_placeholder" = "-1000000 do 1000000";
+"counter_current_thresholds" = "Trenutni pragovi";
+"counter_add_threshold" = "Dodaj prag";
+"counter_thresholds_title" = "Pragovi";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Vještine";
+"daily_evaluations_format" = "Dnevne procjene: %d/%d";
+"sort_menu_label" = "Sortiraj";
+"reset_daily_limit" = "Resetiraj dnevni limit";
+"daily_limit_reached_title" = "Dnevni limit dosegnut";
+"daily_limit_reached_message_format" = "Dosegnuo/dosegnula si dnevni limit od %d procjena vještina. Pokušaj sutra!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Raspodjela vremena";
+"time_distribution_skill_format" = "Vještina: %@";
+"time_total_hours_format" = "Ukupno vrijeme: %@ h";
+"time_mean_minutes_format" = "Prosječni interval: %@ min";
+"time_std_minutes_format" = "Std. devijacija: %@ min";
+"distribution_nav_title" = "Raspodjela";
+"global_time_distribution_title" = "Globalna raspodjela vremena";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Naziv";
+"sort_category" = "Kategorija";
+"sort_stars_asc" = "Zvijezde ↑";
+"sort_stars_desc" = "Zvijezde ↓";
+"sort_difficulty_asc" = "Težina ↑";
+"sort_difficulty_desc" = "Težina ↓";
+"sort_completed_asc" = "Završeno ↑";
+"sort_completed_desc" = "Završeno ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detalji vještine";
+"close" = "Zatvori";
+"change_rating_accessibility" = "Promijeni ocjenu";
+"description" = "Opis";
+"achievement_status" = "Status postignuća";
+"obtained_label" = "Dobiveno:";
+"unknown" = "Nepoznato";
+"your_rating_label" = "Tvoja ocjena:";
+"verification_code_label" = "Verifikacijski kod:";
+"achievement_history" = "Povijest postignuća";
+"update_your_rating" = "Ažuriraj svoju ocjenu";
+"no_stars" = "Bez zvjezdica";
+"update_and_verify" = "Ažuriraj i verificiraj";
+"self_evaluation" = "Samo-procjena";
+"how_many_stars_question" = "Koliko zvjezdica zaslužuješ za ovu vještinu?";
+"evaluate_my_skill" = "Procijeni moju vještinu";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Potrebna verifikacija";
+"verification_required_message" = "Unesi verifikacijski kod kako bi potvrdio/la samo-procjenu:";
+"verification_code_title" = "Verifikacijski kod:";
+"no_code_received" = "KOD NIJE ZAPRIMLJEN";
+"enter_the_code" = "Unesi kod:";
+"verify_and_evaluate" = "Verificiraj i procijeni";
+"verification_nav_title" = "Verifikacija";
+"invalid_code_title" = "Neispravan kod";
+"invalid_code_message" = "Unesi ispravan verifikacijski kod.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Prikaži raspodjelu";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Dodaj prilagođenu vještinu";
+"unlock_custom_skills_title" = "Otključaj prilagođene vještine";
+"unlock_custom_skills_subtitle" = "Kreiraj vlastita postignuća i uredi svoju listu.";
+"unlock_benefit_create" = "Kreiraj vlastitu vještinu s naslovom, opisom i težinom";
+"unlock_benefit_delete" = "Ukloni prilagođene vještine u slučaju pogreške";
+"unlock_benefit_support" = "Podrži razvoj";
+"unlock_benefit_reset_limit" = "Resetiraj dnevni limit procjena";
+"restore_purchases" = "Vrati kupnje";
+"buy_unlock" = "Kupi otključavanje (Dev)";
+"unlock_title_short" = "Otključaj";
+"difficulty_label" = "Težina";
+"star_descriptions_title" = "Opisi razina zvjezdica";
+"one_star_description" = "Opis 1★";
+"two_star_description" = "Opis 2★";
+"three_star_description" = "Opis 3★";
+"image_label" = "Slika";
+"choose_image" = "Odaberi sliku";
+"category_label" = "Kategorija";
+"category_custom_placeholder" = "Prilagođena kategorija";
+
+// MARK: - Preset Categories
+"cat_custom" = "Prilagođeno";
+"cat_music" = "Glazba";
+"cat_language" = "Jezik";
+"cat_art" = "Umjetnost";
+"cat_coding" = "Programiranje";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Kuhanje";
+"cat_photography" = "Fotografija";
+"cat_writing" = "Pisanje";
+"cat_public_speaking" = "Javno nastupanje";
+"cat_science" = "Znanost";
+"cat_math" = "Matematika";
+"cat_engineering" = "Inženjerstvo";
+"cat_design" = "Dizajn";
+"cat_business" = "Poslovanje";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Financije";
+"cat_investing" = "Ulaganje";
+"cat_entrepreneurship" = "Poduzetništvo";
+"cat_psychology" = "Psihologija";
+"cat_education" = "Obrazovanje";
+"cat_history" = "Povijest";
+"cat_geography" = "Geografija";
+"cat_health" = "Zdravlje";
+"cat_meditation" = "Meditacija";
+"cat_yoga" = "Joga";
+"cat_sports" = "Sport";
+"cat_dance" = "Ples";
+"cat_theatre" = "Kazalište";
+"cat_film" = "Film";
+"cat_editing" = "Uređivanje videa";
+"cat_3d" = "3D modeliranje";
+"cat_ai" = "AI/ML";
+"cat_data" = "Data Science";
+"cat_cybersecurity" = "Kibernetička sigurnost";
+"cat_gardening" = "Vrtlarstvo";
+"cat_diy" = "Uradi sam";
+"cat_travel" = "Putovanja";
+"cat_cars" = "Automobili";
+"cat_parenting" = "Roditeljstvo";
+"cat_animals" = "Životinje";
+"hide" = "Sakrij";
+"unhide" = "Prikaži";
+"archived_section" = "Arhivirano";
+"counters_empty_title" = "Nema brojača";
+"counters_empty_description" = "Kreiraj prvi brojač kako bi pratio/la numerički napredak.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Pretvarač vremena";

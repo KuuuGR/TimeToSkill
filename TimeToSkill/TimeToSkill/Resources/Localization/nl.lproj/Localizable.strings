@@ -26,6 +26,8 @@
 "tracking_title" = "Vaardigheidstracking";
 "tracking_nav_title" = "Jouw vaardigheden";
 "sort_by_label" = "Sorteren op";
+"export_pdf_title" = "Exporteren naar PDF";
+"fab_options" = "Opties tonen";
 
 "sort_name_asc" = "Naam ↑";
 "sort_name_desc" = "Naam ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "Nieuwe vaardigheid toevoegen";
 "fab_view_stats" = "Bekijk statistieken";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Tellers beheren";
+"counter_details_section" = "Details";
+"counter_title_placeholder" = "Titel";
+"counter_step_label%d" = "Stap: %d";
+"counter_thresholds_section" = "Drempels (komma-gescheiden)";
+"counter_thresholds_placeholder" = "bijv. 100,200,500,10000";
+"counter_new_title" = "Nieuwe teller";
+"create" = "Maken";
+"apply" = "Toepassen";
+"value" = "Waarde";
+"add" = "Toevoegen";
+"counter_progress_section" = "Voortgang";
+"counter_value_label" = "Waarde";
+"counter_stage_max_label" = "Max. fase";
+"counter_no_thresholds" = "Geen drempels ingesteld";
+"counter_reset_to_zero" = "Reset naar 0";
+"counter_configuration_section" = "Configuratie";
+"counter_edit_thresholds" = "Drempels bewerken";
+"counter_set_value_section" = "Waarde handmatig instellen";
+"counter_set_value_placeholder" = "-1000000 tot 1000000";
+"counter_current_thresholds" = "Huidige drempels";
+"counter_add_threshold" = "Drempel toevoegen";
+"counter_thresholds_title" = "Drempels";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Vaardigheden";
+"daily_evaluations_format" = "Dagelijkse beoordelingen: %d/%d";
+"sort_menu_label" = "Sorteren";
+"reset_daily_limit" = "Dagelijkse limiet resetten";
+"daily_limit_reached_title" = "Dagelijkse limiet bereikt";
+"daily_limit_reached_message_format" = "Je hebt je dagelijkse limiet van %d vaardigheidsbeoordelingen bereikt. Probeer het morgen opnieuw!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Tijdsverdeling";
+"time_distribution_skill_format" = "Vaardigheid: %@";
+"time_total_hours_format" = "Totale tijd: %@ u";
+"time_mean_minutes_format" = "Gemiddeld interval: %@ min";
+"time_std_minutes_format" = "Standaardafw.: %@ min";
+"distribution_nav_title" = "Verdeling";
+"global_time_distribution_title" = "Globale tijdsverdeling";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Naam";
+"sort_category" = "Categorie";
+"sort_stars_asc" = "Sterren ↑";
+"sort_stars_desc" = "Sterren ↓";
+"sort_difficulty_asc" = "Moeilijkheid ↑";
+"sort_difficulty_desc" = "Moeilijkheid ↓";
+"sort_completed_asc" = "Voltooid ↑";
+"sort_completed_desc" = "Voltooid ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Vaardigheidsdetails";
+"close" = "Sluiten";
+"change_rating_accessibility" = "Beoordeling wijzigen";
+"description" = "Beschrijving";
+"achievement_status" = "Status van prestatie";
+"obtained_label" = "Behaald:";
+"unknown" = "Onbekend";
+"your_rating_label" = "Jouw beoordeling:";
+"verification_code_label" = "Verificatiecode:";
+"achievement_history" = "Prestatiegeschiedenis";
+"update_your_rating" = "Werk je beoordeling bij";
+"no_stars" = "Geen sterren";
+"update_and_verify" = "Bijwerken & verifiëren";
+"self_evaluation" = "Zelfevaluatie";
+"how_many_stars_question" = "Hoeveel sterren verdien je voor deze vaardigheid?";
+"evaluate_my_skill" = "Beoordeel mijn vaardigheid";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verificatie vereist";
+"verification_required_message" = "Voer de verificatiecode hieronder in om je zelfevaluatie te bevestigen:";
+"verification_code_title" = "Verificatiecode:";
+"no_code_received" = "GEEN CODE ONTVANGEN";
+"enter_the_code" = "Voer de code hierboven in:";
+"verify_and_evaluate" = "Verifiëren & beoordelen";
+"verification_nav_title" = "Verificatie";
+"invalid_code_title" = "Ongeldige code";
+"invalid_code_message" = "Voer de juiste verificatiecode in.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Verdeling bekijken";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Aangepaste vaardigheid toevoegen";
+"unlock_custom_skills_title" = "Aangepaste vaardigheden ontgrendelen";
+"unlock_custom_skills_subtitle" = "Maak je eigen prestaties en beheer je lijst.";
+"unlock_benefit_create" = "Maak je eigen vaardigheid met titel, beschrijving en moeilijkheid";
+"unlock_benefit_delete" = "Verwijder aangepaste vaardigheden als je een fout maakt";
+"unlock_benefit_support" = "Steun de ontwikkelaar";
+"unlock_benefit_reset_limit" = "Stel de dagelijkse evaluatielimiet opnieuw in";
+"restore_purchases" = "Aankopen herstellen";
+"buy_unlock" = "Ontgrendeling kopen (Dev)";
+"unlock_title_short" = "Ontgrendelen";
+"difficulty_label" = "Moeilijkheid";
+"star_descriptions_title" = "Sterrenniveau-beschrijvingen";
+"one_star_description" = "1★ beschrijving";
+"two_star_description" = "2★ beschrijving";
+"three_star_description" = "3★ beschrijving";
+"image_label" = "Afbeelding";
+"choose_image" = "Afbeelding kiezen";
+"category_label" = "Categorie";
+"category_custom_placeholder" = "Aangepaste categorie";
+
+// MARK: - Preset Categories
+"cat_custom" = "Aangepast";
+"cat_music" = "Muziek";
+"cat_language" = "Taal";
+"cat_art" = "Kunst";
+"cat_coding" = "Programmeren";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Koken";
+"cat_photography" = "Fotografie";
+"cat_writing" = "Schrijven";
+"cat_public_speaking" = "Publiek spreken";
+"cat_science" = "Wetenschap";
+"cat_math" = "Wiskunde";
+"cat_engineering" = "Techniek";
+"cat_design" = "Design";
+"cat_business" = "Bedrijf";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Financiën";
+"cat_investing" = "Beleggen";
+"cat_entrepreneurship" = "Ondernemerschap";
+"cat_psychology" = "Psychologie";
+"cat_education" = "Onderwijs";
+"cat_history" = "Geschiedenis";
+"cat_geography" = "Geografie";
+"cat_health" = "Gezondheid";
+"cat_meditation" = "Meditatie";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sport";
+"cat_dance" = "Dans";
+"cat_theatre" = "Theater";
+"cat_film" = "Film";
+"cat_editing" = "Videobewerking";
+"cat_3d" = "3D-modellering";
+"cat_ai" = "AI/ML";
+"cat_data" = "Datawetenschap";
+"cat_cybersecurity" = "Cybersecurity";
+"cat_gardening" = "Tuinieren";
+"cat_diy" = "Doe-het-zelf";
+"cat_travel" = "Reizen";
+"cat_cars" = "Auto's";
+"cat_parenting" = "Ouderschap";
+"cat_animals" = "Dieren";
+"hide" = "Verbergen";
+"unhide" = "Tonen";
+"archived_section" = "Gearchiveerd";
+"counters_empty_title" = "Nog geen tellers";
+"counters_empty_description" = "Maak je eerste teller om numerieke voortgang bij te houden.";

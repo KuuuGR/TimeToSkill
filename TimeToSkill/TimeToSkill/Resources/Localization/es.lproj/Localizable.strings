@@ -26,6 +26,8 @@
 "tracking_title" = "Seguimiento de Habilidades";
 "tracking_nav_title" = "Tus Habilidades";
 "sort_by_label" = "Ordenar por";
+"export_pdf_title" = "Exportar a PDF";
+"fab_options" = "Mostrar opciones";
 
 "sort_name_asc" = "Nombre ↑";
 "sort_name_desc" = "Nombre ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "Añadir nueva habilidad";
 "fab_view_stats" = "Ver estadísticas";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Gestionar Contadores";
+"counter_details_section" = "Detalles";
+"counter_title_placeholder" = "Título";
+"counter_step_label%d" = "Paso: %d";
+"counter_thresholds_section" = "Umbrales (separados por comas)";
+"counter_thresholds_placeholder" = "p. ej. 100,200,500,10000";
+"counter_new_title" = "Nuevo Contador";
+"create" = "Crear";
+"apply" = "Aplicar";
+"value" = "Valor";
+"add" = "Añadir";
+"counter_progress_section" = "Progreso";
+"counter_value_label" = "Valor";
+"counter_stage_max_label" = "Etapa Máxima";
+"counter_no_thresholds" = "Sin umbrales";
+"counter_reset_to_zero" = "Reiniciar a 0";
+"counter_configuration_section" = "Configuración";
+"counter_edit_thresholds" = "Editar Umbrales";
+"counter_set_value_section" = "Establecer Valor Manualmente";
+"counter_set_value_placeholder" = "-1000000 a 1000000";
+"counter_current_thresholds" = "Umbrales Actuales";
+"counter_add_threshold" = "Añadir Umbral";
+"counter_thresholds_title" = "Umbrales";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Habilidades";
+"daily_evaluations_format" = "Evaluaciones diarias: %d/%d";
+"sort_menu_label" = "Ordenar";
+"reset_daily_limit" = "Restablecer límite diario";
+"daily_limit_reached_title" = "Límite diario alcanzado";
+"daily_limit_reached_message_format" = "Has alcanzado tu límite diario de %d evaluaciones de habilidades. ¡Inténtalo mañana!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Distribución de tiempo";
+"time_distribution_skill_format" = "Habilidad: %@";
+"time_total_hours_format" = "Tiempo total: %@ h";
+"time_mean_minutes_format" = "Intervalo medio: %@ min";
+"time_std_minutes_format" = "Desv. estándar: %@ min";
+"distribution_nav_title" = "Distribución";
+"global_time_distribution_title" = "Distribución global del tiempo";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nombre";
+"sort_category" = "Categoría";
+"sort_stars_asc" = "Estrellas ↑";
+"sort_stars_desc" = "Estrellas ↓";
+"sort_difficulty_asc" = "Dificultad ↑";
+"sort_difficulty_desc" = "Dificultad ↓";
+"sort_completed_asc" = "Completado ↑";
+"sort_completed_desc" = "Completado ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detalles de la habilidad";
+"close" = "Cerrar";
+"change_rating_accessibility" = "Cambiar valoración";
+"description" = "Descripción";
+"achievement_status" = "Estado del logro";
+"obtained_label" = "Obtenido:";
+"unknown" = "Desconocido";
+"your_rating_label" = "Tu valoración:";
+"verification_code_label" = "Código de verificación:";
+"achievement_history" = "Historial de logros";
+"update_your_rating" = "Actualiza tu valoración";
+"no_stars" = "Sin estrellas";
+"update_and_verify" = "Actualizar y verificar";
+"self_evaluation" = "Autoevaluación";
+"how_many_stars_question" = "¿Cuántas estrellas mereces por esta habilidad?";
+"evaluate_my_skill" = "Evaluar mi habilidad";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Se requiere verificación";
+"verification_required_message" = "Introduce el código de verificación para confirmar tu autoevaluación:";
+"verification_code_title" = "Código de verificación:";
+"no_code_received" = "NO SE RECIBIÓ CÓDIGO";
+"enter_the_code" = "Introduce el código:";
+"verify_and_evaluate" = "Verificar y evaluar";
+"verification_nav_title" = "Verificación";
+"invalid_code_title" = "Código inválido";
+"invalid_code_message" = "Introduce el código correcto.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Ver distribución";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Añadir habilidad personalizada";
+"unlock_custom_skills_title" = "Desbloquear habilidades personalizadas";
+"unlock_custom_skills_subtitle" = "Crea tus propios logros y organiza tu lista.";
+"unlock_benefit_create" = "Crea tu propia habilidad con título, descripción y dificultad";
+"unlock_benefit_delete" = "Elimina habilidades personalizadas si te equivocas";
+"unlock_benefit_support" = "Apoya al desarrollador";
+"unlock_benefit_reset_limit" = "Restablece el límite diario de evaluaciones";
+"restore_purchases" = "Restaurar compras";
+"buy_unlock" = "Comprar desbloqueo (Dev)";
+"unlock_title_short" = "Desbloquear";
+"difficulty_label" = "Dificultad";
+"star_descriptions_title" = "Descripciones por nivel de estrellas";
+"one_star_description" = "Descripción 1★";
+"two_star_description" = "Descripción 2★";
+"three_star_description" = "Descripción 3★";
+"image_label" = "Imagen";
+"choose_image" = "Elegir imagen";
+"category_label" = "Categoría";
+"category_custom_placeholder" = "Categoría personalizada";
+
+// MARK: - Preset Categories
+"cat_custom" = "Personalizada";
+"cat_music" = "Música";
+"cat_language" = "Idioma";
+"cat_art" = "Arte";
+"cat_coding" = "Programación";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Cocina";
+"cat_photography" = "Fotografía";
+"cat_writing" = "Escritura";
+"cat_public_speaking" = "Oratoria";
+"cat_science" = "Ciencia";
+"cat_math" = "Matemáticas";
+"cat_engineering" = "Ingeniería";
+"cat_design" = "Diseño";
+"cat_business" = "Negocios";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finanzas";
+"cat_investing" = "Inversión";
+"cat_entrepreneurship" = "Emprendimiento";
+"cat_psychology" = "Psicología";
+"cat_education" = "Educación";
+"cat_history" = "Historia";
+"cat_geography" = "Geografía";
+"cat_health" = "Salud";
+"cat_meditation" = "Meditación";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Deportes";
+"cat_dance" = "Danza";
+"cat_theatre" = "Teatro";
+"cat_film" = "Cine";
+"cat_editing" = "Edición de video";
+"cat_3d" = "Modelado 3D";
+"cat_ai" = "IA/ML";
+"cat_data" = "Ciencia de datos";
+"cat_cybersecurity" = "Ciberseguridad";
+"cat_gardening" = "Jardinería";
+"cat_diy" = "Bricolaje";
+"cat_travel" = "Viajes";
+"cat_cars" = "Automoción";
+"cat_parenting" = "Parentalidad";
+"cat_animals" = "Animales";
+"hide" = "Ocultar";
+"unhide" = "Mostrar";
+"archived_section" = "Archivado";
+"counters_empty_title" = "No hay contadores";
+"counters_empty_description" = "Crea tu primer contador para empezar a registrar progreso numérico.";

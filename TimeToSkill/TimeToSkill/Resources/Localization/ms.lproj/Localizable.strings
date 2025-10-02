@@ -15,6 +15,8 @@
 "tracking_title" = "Penjejakan Kemahiran";
 "tracking_nav_title" = "Kemahiran Anda";
 "sort_by_label" = "Isih Mengikut";
+"export_pdf_title" = "Eksport ke PDF";
+"fab_options" = "Tunjuk pilihan";
 
 "sort_name_asc" = "Nama ↑";
 "sort_name_desc" = "Nama ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Tambah kemahiran baru";
 "fab_view_stats" = "Lihat statistik";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Urus kaunter";
+"counter_details_section" = "Butiran";
+"counter_title_placeholder" = "Tajuk";
+"counter_step_label%d" = "Langkah: %d";
+"counter_thresholds_section" = "Ambang (dipisahkan koma)";
+"counter_thresholds_placeholder" = "cth. 100,200,500,10000";
+"counter_new_title" = "Kaunter baharu";
+"create" = "Cipta";
+"apply" = "Laksana";
+"value" = "Nilai";
+"add" = "Tambah";
+"counter_progress_section" = "Kemajuan";
+"counter_value_label" = "Nilai";
+"counter_stage_max_label" = "Peringkat maks";
+"counter_no_thresholds" = "Tiada ambang ditetapkan";
+"counter_reset_to_zero" = "Tetapkan ke 0";
+"counter_configuration_section" = "Konfigurasi";
+"counter_edit_thresholds" = "Sunting ambang";
+"counter_set_value_section" = "Tetapkan nilai secara manual";
+"counter_set_value_placeholder" = "-1000000 hingga 1000000";
+"counter_current_thresholds" = "Ambang semasa";
+"counter_add_threshold" = "Tambah ambang";
+"counter_thresholds_title" = "Ambang";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Kemahiran";
+"daily_evaluations_format" = "Penilaian harian: %d/%d";
+"sort_menu_label" = "Isih";
+"reset_daily_limit" = "Tetap semula had harian";
+"daily_limit_reached_title" = "Had harian dicapai";
+"daily_limit_reached_message_format" = "Anda telah mencapai had harian %d penilaian kemahiran. Cuba lagi esok!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Taburan masa";
+"time_distribution_skill_format" = "Kemahiran: %@";
+"time_total_hours_format" = "Jumlah masa: %@ j";
+"time_mean_minutes_format" = "Selang purata: %@ min";
+"time_std_minutes_format" = "Sisihan piawai: %@ min";
+"distribution_nav_title" = "Taburan";
+"global_time_distribution_title" = "Taburan masa global";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nama";
+"sort_category" = "Kategori";
+"sort_stars_asc" = "Bintang ↑";
+"sort_stars_desc" = "Bintang ↓";
+"sort_difficulty_asc" = "Kesukaran ↑";
+"sort_difficulty_desc" = "Kesukaran ↓";
+"sort_completed_asc" = "Selesai ↑";
+"sort_completed_desc" = "Selesai ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Butiran kemahiran";
+"close" = "Tutup";
+"change_rating_accessibility" = "Tukar penarafan";
+"description" = "Penerangan";
+"achievement_status" = "Status pencapaian";
+"obtained_label" = "Diperoleh:";
+"unknown" = "Tidak diketahui";
+"your_rating_label" = "Penarafan anda:";
+"verification_code_label" = "Kod pengesahan:";
+"achievement_history" = "Sejarah pencapaian";
+"update_your_rating" = "Kemas kini penarafan anda";
+"no_stars" = "Tiada bintang";
+"update_and_verify" = "Kemas kini & sahkan";
+"self_evaluation" = "Penilaian kendiri";
+"how_many_stars_question" = "Berapa bintang layak untuk kemahiran ini?";
+"evaluate_my_skill" = "Nilai kemahiran saya";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Pengesahan diperlukan";
+"verification_required_message" = "Masukkan kod pengesahan untuk mengesahkan penilaian kendiri:";
+"verification_code_title" = "Kod pengesahan:";
+"no_code_received" = "TIADA KOD DITERIMA";
+"enter_the_code" = "Masukkan kod:";
+"verify_and_evaluate" = "Sahkan & nilai";
+"verification_nav_title" = "Pengesahan";
+"invalid_code_title" = "Kod tidak sah";
+"invalid_code_message" = "Masukkan kod yang betul.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Lihat taburan";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Tambah kemahiran tersuai";
+"unlock_custom_skills_title" = "Buka kunci kemahiran tersuai";
+"unlock_custom_skills_subtitle" = "Cipta pencapaian sendiri dan urus senarai.";
+"unlock_benefit_create" = "Cipta kemahiran dengan tajuk, penerangan dan kesukaran";
+"unlock_benefit_delete" = "Buang kemahiran tersuai jika tersilap";
+"unlock_benefit_support" = "Sokong pembangun";
+"unlock_benefit_reset_limit" = "Tetap semula had penilaian harian";
+"restore_purchases" = "Pulihkan pembelian";
+"buy_unlock" = "Beli buka kunci (Dev)";
+"unlock_title_short" = "Buka";
+"difficulty_label" = "Kesukaran";
+"star_descriptions_title" = "Penerangan tahap bintang";
+"one_star_description" = "Penerangan 1★";
+"two_star_description" = "Penerangan 2★";
+"three_star_description" = "Penerangan 3★";
+"image_label" = "Imej";
+"choose_image" = "Pilih imej";
+"category_label" = "Kategori";
+"category_custom_placeholder" = "Kategori tersuai";
+
+// MARK: - Preset Categories
+"cat_custom" = "Tersuai";
+"cat_music" = "Muzik";
+"cat_language" = "Bahasa";
+"cat_art" = "Seni";
+"cat_coding" = "Pengaturcaraan";
+"cat_fitness" = "Kecergasan";
+"cat_cooking" = "Memasak";
+"cat_photography" = "Fotografi";
+"cat_writing" = "Penulisan";
+"cat_public_speaking" = "Pengucapan awam";
+"cat_science" = "Sains";
+"cat_math" = "Matematik";
+"cat_engineering" = "Kejuruteraan";
+"cat_design" = "Reka bentuk";
+"cat_business" = "Perniagaan";
+"cat_marketing" = "Pemasaran";
+"cat_finance" = "Kewangan";
+"cat_investing" = "Pelaburan";
+"cat_entrepreneurship" = "Keusahawanan";
+"cat_psychology" = "Psikologi";
+"cat_education" = "Pendidikan";
+"cat_history" = "Sejarah";
+"cat_geography" = "Geografi";
+"cat_health" = "Kesihatan";
+"cat_meditation" = "Meditasi";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sukan";
+"cat_dance" = "Tarian";
+"cat_theatre" = "Teater";
+"cat_film" = "Filem";
+"cat_editing" = "Suntingan video";
+"cat_3d" = "Permodelan 3D";
+"cat_ai" = "AI/ML";
+"cat_data" = "Sains Data";
+"cat_cybersecurity" = "Keselamatan Siber";
+"cat_gardening" = "Berkebun";
+"cat_diy" = "DIY";
+"cat_travel" = "Perjalanan";
+"cat_cars" = "Automotif";
+"cat_parenting" = "Keibubapaan";
+"cat_animals" = "Haiwan";
+"hide" = "Sembunyi";
+"unhide" = "Tunjuk";
+"archived_section" = "Diarkib";
+"counters_empty_title" = "Tiada kaunter";
+"counters_empty_description" = "Cipta kaunter pertama anda untuk menjejak kemajuan berangka.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Penukar Masa";

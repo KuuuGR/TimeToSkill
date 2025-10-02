@@ -15,6 +15,8 @@
 "tracking_title" = "कौशल ट्रैकिंग";
 "tracking_nav_title" = "आपके कौशल";
 "sort_by_label" = "क्रमबद्ध करें";
+"export_pdf_title" = "PDF में निर्यात करें";
+"fab_options" = "विकल्प दिखाएं";
 
 "sort_name_asc" = "नाम ↑";
 "sort_name_desc" = "नाम ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "नया कौशल जोड़ें";
 "fab_view_stats" = "सांख्यिकी देखें";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "काउंटर प्रबंधित करें";
+"counter_details_section" = "विवरण";
+"counter_title_placeholder" = "शीर्षक";
+"counter_step_label%d" = "कदम: %d";
+"counter_thresholds_section" = "थ्रेशहोल्ड (कॉमा से अलग)";
+"counter_thresholds_placeholder" = "जैसे 100,200,500,10000";
+"counter_new_title" = "नया काउंटर";
+"create" = "बनाएं";
+"apply" = "लागू करें";
+"value" = "मान";
+"add" = "जोड़ें";
+"counter_progress_section" = "प्रगति";
+"counter_value_label" = "मान";
+"counter_stage_max_label" = "अधिकतम चरण";
+"counter_no_thresholds" = "कोई थ्रेशहोल्ड नहीं";
+"counter_reset_to_zero" = "0 पर रीसेट";
+"counter_configuration_section" = "कॉन्फ़िगरेशन";
+"counter_edit_thresholds" = "थ्रेशहोल्ड संपादित करें";
+"counter_set_value_section" = "मान मैन्युअली सेट करें";
+"counter_set_value_placeholder" = "-1000000 से 1000000";
+"counter_current_thresholds" = "वर्तमान थ्रेशहोल्ड";
+"counter_add_threshold" = "थ्रेशहोल्ड जोड़ें";
+"counter_thresholds_title" = "थ्रेशहोल्ड";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "कौशल";
+"daily_evaluations_format" = "दैनिक मूल्यांकन: %d/%d";
+"sort_menu_label" = "क्रमबद्ध करें";
+"reset_daily_limit" = "दैनिक सीमा रीसेट करें";
+"daily_limit_reached_title" = "दैनिक सीमा पूरी";
+"daily_limit_reached_message_format" = "आपने %d दैनिक कौशल मूल्यांकन की सीमा प्राप्त कर ली है। कल फिर प्रयास करें!";
+"ok" = "ठीक";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "समय वितरण";
+"time_distribution_skill_format" = "कौशल: %@";
+"time_total_hours_format" = "कुल समय: %@ घं";
+"time_mean_minutes_format" = "औसत अंतराल: %@ मि";
+"time_std_minutes_format" = "मानक विचलन: %@ मि";
+"distribution_nav_title" = "वितरण";
+"global_time_distribution_title" = "वैश्विक समय वितरण";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "नाम";
+"sort_category" = "श्रेणी";
+"sort_stars_asc" = "सितारे ↑";
+"sort_stars_desc" = "सितारे ↓";
+"sort_difficulty_asc" = "कठिनाई ↑";
+"sort_difficulty_desc" = "कठिनाई ↓";
+"sort_completed_asc" = "पूर्ण ↑";
+"sort_completed_desc" = "पूर्ण ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "कौशल विवरण";
+"close" = "बंद करें";
+"change_rating_accessibility" = "रेटिंग बदलें";
+"description" = "विवरण";
+"achievement_status" = "उपलब्धि स्थिति";
+"obtained_label" = "प्राप्त:";
+"unknown" = "अज्ञात";
+"your_rating_label" = "आपकी रेटिंग:";
+"verification_code_label" = "सत्यापन कोड:";
+"achievement_history" = "उपलब्धि इतिहास";
+"update_your_rating" = "अपनी रेटिंग अपडेट करें";
+"no_stars" = "कोई सितारे नहीं";
+"update_and_verify" = "अपडेट और सत्यापित करें";
+"self_evaluation" = "स्वयं-मूल्यांकन";
+"how_many_stars_question" = "इस कौशल के लिए आप कितने सितारे डिज़र्व करते हैं?";
+"evaluate_my_skill" = "मेरा कौशल मूल्यांकित करें";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "सत्यापन आवश्यक";
+"verification_required_message" = "स्वयं-मूल्यांकन की पुष्टि करने के लिए सत्यापन कोड दर्ज करें:";
+"verification_code_title" = "सत्यापन कोड:";
+"no_code_received" = "कोड प्राप्त नहीं हुआ";
+"enter_the_code" = "कोड दर्ज करें:";
+"verify_and_evaluate" = "सत्यापित करें और मूल्यांकित करें";
+"verification_nav_title" = "सत्यापन";
+"invalid_code_title" = "अमान्य कोड";
+"invalid_code_message" = "सही कोड दर्ज करें।";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "वितरण देखें";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "कस्टम कौशल जोड़ें";
+"unlock_custom_skills_title" = "कस्टम कौशल अनलॉक करें";
+"unlock_custom_skills_subtitle" = "अपने उपलब्धियां बनाएं और सूची को व्यवस्थित करें।";
+"unlock_benefit_create" = "शीर्षक, विवरण और कठिनाई के साथ कौशल बनाएं";
+"unlock_benefit_delete" = "गलती होने पर कस्टम कौशल हटाएं";
+"unlock_benefit_support" = "डेवलपर को समर्थन दें";
+"unlock_benefit_reset_limit" = "दैनिक मूल्यांकन सीमा रीसेट करें";
+"restore_purchases" = "खरीदारी पुनर्स्थापित करें";
+"buy_unlock" = "अनलॉक खरीदें (Dev)";
+"unlock_title_short" = "अनलॉक";
+"difficulty_label" = "कठिनाई";
+"star_descriptions_title" = "सितारा-स्तर विवरण";
+"one_star_description" = "1★ विवरण";
+"two_star_description" = "2★ विवरण";
+"three_star_description" = "3★ विवरण";
+"image_label" = "छवि";
+"choose_image" = "छवि चुनें";
+"category_label" = "श्रेणी";
+"category_custom_placeholder" = "कस्टम श्रेणी";
+
+// MARK: - Preset Categories
+"cat_custom" = "कस्टम";
+"cat_music" = "संगीत";
+"cat_language" = "भाषा";
+"cat_art" = "कला";
+"cat_coding" = "कोडिंग";
+"cat_fitness" = "फिटनेस";
+"cat_cooking" = "पाक कला";
+"cat_photography" = "फोटोग्राफी";
+"cat_writing" = "लेखन";
+"cat_public_speaking" = "जन-भाषण";
+"cat_science" = "विज्ञान";
+"cat_math" = "गणित";
+"cat_engineering" = "इंजीनियरिंग";
+"cat_design" = "डिज़ाइन";
+"cat_business" = "व्यवसाय";
+"cat_marketing" = "मार्केटिंग";
+"cat_finance" = "वित्त";
+"cat_investing" = "निवेश";
+"cat_entrepreneurship" = "उद्यमिता";
+"cat_psychology" = "मनोविज्ञान";
+"cat_education" = "शिक्षा";
+"cat_history" = "इतिहास";
+"cat_geography" = "भूगोल";
+"cat_health" = "स्वास्थ्य";
+"cat_meditation" = "ध्यान";
+"cat_yoga" = "योग";
+"cat_sports" = "खेल";
+"cat_dance" = "नृत्य";
+"cat_theatre" = "थियेटर";
+"cat_film" = "फिल्म";
+"cat_editing" = "वीडियो संपादन";
+"cat_3d" = "3D मॉडलिंग";
+"cat_ai" = "एआई/एमएल";
+"cat_data" = "डेटा साइंस";
+"cat_cybersecurity" = "साइबरसुरक्षा";
+"cat_gardening" = "बागवानी";
+"cat_diy" = "खुद करो";
+"cat_travel" = "यात्रा";
+"cat_cars" = "ऑटोमोबाइल";
+"cat_parenting" = "पालन-पोषण";
+"cat_animals" = "जानवर";
+"hide" = "छुपाएँ";
+"unhide" = "दिखाएँ";
+"archived_section" = "आर्काइव्ड";
+"counters_empty_title" = "कोई काउंटर नहीं";
+"counters_empty_description" = "संख्यात्मक प्रगति को ट्रैक करने के लिए अपना पहला काउंटर बनाएं।";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "समय परिवर्तक";

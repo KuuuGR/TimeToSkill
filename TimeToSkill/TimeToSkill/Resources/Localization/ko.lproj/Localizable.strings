@@ -26,6 +26,8 @@
 "tracking_title" = "스킬 추적";
 "tracking_nav_title" = "나의 스킬";
 "sort_by_label" = "정렬 기준";
+"export_pdf_title" = "PDF로 내보내기";
+"fab_options" = "옵션 보기";
 
 "sort_name_asc" = "이름 ↑";
 "sort_name_desc" = "이름 ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "새 스킬 추가";
 "fab_view_stats" = "통계 보기";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "카운터 관리";
+"counter_details_section" = "세부 정보";
+"counter_title_placeholder" = "제목";
+"counter_step_label%d" = "단계: %d";
+"counter_thresholds_section" = "임계값 (쉼표로 구분)";
+"counter_thresholds_placeholder" = "예: 100,200,500,10000";
+"counter_new_title" = "새 카운터";
+"create" = "생성";
+"apply" = "적용";
+"value" = "값";
+"add" = "추가";
+"counter_progress_section" = "진행";
+"counter_value_label" = "값";
+"counter_stage_max_label" = "최대 단계";
+"counter_no_thresholds" = "설정된 임계값 없음";
+"counter_reset_to_zero" = "0으로 초기화";
+"counter_configuration_section" = "구성";
+"counter_edit_thresholds" = "임계값 편집";
+"counter_set_value_section" = "값 수동 설정";
+"counter_set_value_placeholder" = "-1000000 ~ 1000000";
+"counter_current_thresholds" = "현재 임계값";
+"counter_add_threshold" = "임계값 추가";
+"counter_thresholds_title" = "임계값";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "스킬";
+"daily_evaluations_format" = "일일 평가: %d/%d";
+"sort_menu_label" = "정렬";
+"reset_daily_limit" = "일일 제한 재설정";
+"daily_limit_reached_title" = "일일 제한 도달";
+"daily_limit_reached_message_format" = "하루 %d번의 스킬 평가 제한에 도달했습니다. 내일 다시 시도하세요!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "시간 분포";
+"time_distribution_skill_format" = "스킬: %@";
+"time_total_hours_format" = "총 시간: %@ 시간";
+"time_mean_minutes_format" = "평균 간격: %@ 분";
+"time_std_minutes_format" = "표준편차: %@ 분";
+"distribution_nav_title" = "분포";
+"global_time_distribution_title" = "전체 시간 분포";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "이름";
+"sort_category" = "카테고리";
+"sort_stars_asc" = "별 ↑";
+"sort_stars_desc" = "별 ↓";
+"sort_difficulty_asc" = "난이도 ↑";
+"sort_difficulty_desc" = "난이도 ↓";
+"sort_completed_asc" = "완료 ↑";
+"sort_completed_desc" = "완료 ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "스킬 상세";
+"close" = "닫기";
+"change_rating_accessibility" = "평가 변경";
+"description" = "설명";
+"achievement_status" = "업적 상태";
+"obtained_label" = "획득:";
+"unknown" = "알 수 없음";
+"your_rating_label" = "내 평가:";
+"verification_code_label" = "인증 코드:";
+"achievement_history" = "업적 기록";
+"update_your_rating" = "평가 업데이트";
+"no_stars" = "별 없음";
+"update_and_verify" = "업데이트 및 인증";
+"self_evaluation" = "자기 평가";
+"how_many_stars_question" = "이 스킬에 몇 개의 별을 받을 만하신가요?";
+"evaluate_my_skill" = "내 스킬 평가";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "인증 필요";
+"verification_required_message" = "자기 평가를 확인하려면 인증 코드를 입력하세요:";
+"verification_code_title" = "인증 코드:";
+"no_code_received" = "코드 수신 안 됨";
+"enter_the_code" = "코드를 입력:";
+"verify_and_evaluate" = "인증 및 평가";
+"verification_nav_title" = "인증";
+"invalid_code_title" = "잘못된 코드";
+"invalid_code_message" = "올바른 코드를 입력하세요.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "분포 보기";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "사용자 지정 스킬 추가";
+"unlock_custom_skills_title" = "사용자 지정 스킬 잠금 해제";
+"unlock_custom_skills_subtitle" = "나만의 업적을 만들고 목록을 관리하세요.";
+"unlock_benefit_create" = "제목, 설명, 난이도로 스킬 만들기";
+"unlock_benefit_delete" = "실수 시 사용자 지정 스킬 삭제";
+"unlock_benefit_support" = "개발자 지원";
+"unlock_benefit_reset_limit" = "일일 평가 제한 재설정";
+"restore_purchases" = "구매 복원";
+"buy_unlock" = "잠금 해제 구매 (Dev)";
+"unlock_title_short" = "해제";
+"difficulty_label" = "난이도";
+"star_descriptions_title" = "별 등급 설명";
+"one_star_description" = "1★ 설명";
+"two_star_description" = "2★ 설명";
+"three_star_description" = "3★ 설명";
+"image_label" = "이미지";
+"choose_image" = "이미지 선택";
+"category_label" = "카테고리";
+"category_custom_placeholder" = "사용자 지정 카테고리";
+
+// MARK: - Preset Categories
+"cat_custom" = "사용자 지정";
+"cat_music" = "음악";
+"cat_language" = "언어";
+"cat_art" = "예술";
+"cat_coding" = "코딩";
+"cat_fitness" = "피트니스";
+"cat_cooking" = "요리";
+"cat_photography" = "사진";
+"cat_writing" = "글쓰기";
+"cat_public_speaking" = "연설";
+"cat_science" = "과학";
+"cat_math" = "수학";
+"cat_engineering" = "공학";
+"cat_design" = "디자인";
+"cat_business" = "비즈니스";
+"cat_marketing" = "마케팅";
+"cat_finance" = "재무";
+"cat_investing" = "투자";
+"cat_entrepreneurship" = "기업가정신";
+"cat_psychology" = "심리학";
+"cat_education" = "교육";
+"cat_history" = "역사";
+"cat_geography" = "지리";
+"cat_health" = "건강";
+"cat_meditation" = "명상";
+"cat_yoga" = "요가";
+"cat_sports" = "스포츠";
+"cat_dance" = "댄스";
+"cat_theatre" = "연극";
+"cat_film" = "영화";
+"cat_editing" = "영상 편집";
+"cat_3d" = "3D 모델링";
+"cat_ai" = "AI/ML";
+"cat_data" = "데이터 사이언스";
+"cat_cybersecurity" = "사이버 보안";
+"cat_gardening" = "원예";
+"cat_diy" = "DIY";
+"cat_travel" = "여행";
+"cat_cars" = "자동차";
+"cat_parenting" = "육아";
+"cat_animals" = "동물";
+"hide" = "숨기기";
+"unhide" = "표시";
+"archived_section" = "보관됨";
+"counters_empty_title" = "카운터 없음";
+"counters_empty_description" = "숫자 진행 상황을 추적하려면 첫 카운터를 생성하세요.";

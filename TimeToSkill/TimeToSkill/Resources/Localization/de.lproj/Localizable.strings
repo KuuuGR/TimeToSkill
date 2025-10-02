@@ -26,6 +26,8 @@
 "tracking_title" = "Fähigkeiten verfolgen";
 "tracking_nav_title" = "Deine Fähigkeiten";
 "sort_by_label" = "Sortieren nach";
+"export_pdf_title" = "Als PDF exportieren";
+"fab_options" = "Optionen anzeigen";
 
 "sort_name_asc" = "Name ↑";
 "sort_name_desc" = "Name ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "Neue Fähigkeit hinzufügen";
 "fab_view_stats" = "Statistiken anzeigen";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Zähler verwalten";
+"counter_details_section" = "Details";
+"counter_title_placeholder" = "Titel";
+"counter_step_label%d" = "Schritt: %d";
+"counter_thresholds_section" = "Schwellenwerte (durch Komma getrennt)";
+"counter_thresholds_placeholder" = "z. B. 100,200,500,10000";
+"counter_new_title" = "Neuer Zähler";
+"create" = "Erstellen";
+"apply" = "Anwenden";
+"value" = "Wert";
+"add" = "Hinzufügen";
+"counter_progress_section" = "Fortschritt";
+"counter_value_label" = "Wert";
+"counter_stage_max_label" = "Max. Stufe";
+"counter_no_thresholds" = "Keine Schwellenwerte festgelegt";
+"counter_reset_to_zero" = "Auf 0 zurücksetzen";
+"counter_configuration_section" = "Konfiguration";
+"counter_edit_thresholds" = "Schwellenwerte bearbeiten";
+"counter_set_value_section" = "Wert manuell setzen";
+"counter_set_value_placeholder" = "-1000000 bis 1000000";
+"counter_current_thresholds" = "Aktuelle Schwellenwerte";
+"counter_add_threshold" = "Schwellenwert hinzufügen";
+"counter_thresholds_title" = "Schwellenwerte";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Fähigkeiten";
+"daily_evaluations_format" = "Tägliche Bewertungen: %d/%d";
+"sort_menu_label" = "Sortieren";
+"reset_daily_limit" = "Tageslimit zurücksetzen";
+"daily_limit_reached_title" = "Tageslimit erreicht";
+"daily_limit_reached_message_format" = "Du hast dein Tageslimit von %d Fähigkeitsbewertungen erreicht. Versuche es morgen erneut!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Zeitverteilung";
+"time_distribution_skill_format" = "Fähigkeit: %@";
+"time_total_hours_format" = "Gesamtzeit: %@ h";
+"time_mean_minutes_format" = "Mittleres Intervall: %@ min";
+"time_std_minutes_format" = "Std.-Abw.: %@ min";
+"distribution_nav_title" = "Verteilung";
+"global_time_distribution_title" = "Globale Zeitverteilung";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Name";
+"sort_category" = "Kategorie";
+"sort_stars_asc" = "Sterne ↑";
+"sort_stars_desc" = "Sterne ↓";
+"sort_difficulty_asc" = "Schwierigkeit ↑";
+"sort_difficulty_desc" = "Schwierigkeit ↓";
+"sort_completed_asc" = "Abgeschlossen ↑";
+"sort_completed_desc" = "Abgeschlossen ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Fähigkeitsdetails";
+"close" = "Schließen";
+"change_rating_accessibility" = "Bewertung ändern";
+"description" = "Beschreibung";
+"achievement_status" = "Erfolgsstatus";
+"obtained_label" = "Erreicht:";
+"unknown" = "Unbekannt";
+"your_rating_label" = "Deine Bewertung:";
+"verification_code_label" = "Verifizierungscode:";
+"achievement_history" = "Erfolgshistorie";
+"update_your_rating" = "Bewertung aktualisieren";
+"no_stars" = "Keine Sterne";
+"update_and_verify" = "Aktualisieren & verifizieren";
+"self_evaluation" = "Selbsteinschätzung";
+"how_many_stars_question" = "Wie viele Sterne verdienst du für diese Fähigkeit?";
+"evaluate_my_skill" = "Meine Fähigkeit bewerten";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verifizierung erforderlich";
+"verification_required_message" = "Bitte gib unten den Verifizierungscode ein, um deine Selbsteinschätzung zu bestätigen:";
+"verification_code_title" = "Verifizierungscode:";
+"no_code_received" = "KEIN CODE ERHALTEN";
+"enter_the_code" = "Code oben eingeben:";
+"verify_and_evaluate" = "Verifizieren & bewerten";
+"verification_nav_title" = "Verifizierung";
+"invalid_code_title" = "Ungültiger Code";
+"invalid_code_message" = "Bitte gib den richtigen Code ein.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Verteilung anzeigen";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Eigene Fähigkeit hinzufügen";
+"unlock_custom_skills_title" = "Eigene Fähigkeiten freischalten";
+"unlock_custom_skills_subtitle" = "Erstelle eigene Erfolge und kuratiere deine Liste.";
+"unlock_benefit_create" = "Erstelle eigene Fähigkeit mit Titel, Beschreibung und Schwierigkeit";
+"unlock_benefit_delete" = "Eigene Fähigkeiten bei Fehlern entfernen";
+"unlock_benefit_support" = "Unterstütze den Entwickler";
+"unlock_benefit_reset_limit" = "Tageslimit für Bewertungen zurücksetzen";
+"restore_purchases" = "Käufe wiederherstellen";
+"buy_unlock" = "Freischaltung kaufen (Dev)";
+"unlock_title_short" = "Freischalten";
+"difficulty_label" = "Schwierigkeit";
+"star_descriptions_title" = "Sternbeschreibungen";
+"one_star_description" = "Beschreibung 1★";
+"two_star_description" = "Beschreibung 2★";
+"three_star_description" = "Beschreibung 3★";
+"image_label" = "Bild";
+"choose_image" = "Bild wählen";
+"category_label" = "Kategorie";
+"category_custom_placeholder" = "Eigene Kategorie";
+
+// MARK: - Preset Categories
+"cat_custom" = "Eigen";
+"cat_music" = "Musik";
+"cat_language" = "Sprache";
+"cat_art" = "Kunst";
+"cat_coding" = "Programmierung";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Kochen";
+"cat_photography" = "Fotografie";
+"cat_writing" = "Schreiben";
+"cat_public_speaking" = "Rhetorik";
+"cat_science" = "Wissenschaft";
+"cat_math" = "Mathematik";
+"cat_engineering" = "Ingenieurwesen";
+"cat_design" = "Design";
+"cat_business" = "Business";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finanzen";
+"cat_investing" = "Investieren";
+"cat_entrepreneurship" = "Unternehmertum";
+"cat_psychology" = "Psychologie";
+"cat_education" = "Bildung";
+"cat_history" = "Geschichte";
+"cat_geography" = "Geografie";
+"cat_health" = "Gesundheit";
+"cat_meditation" = "Meditation";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sport";
+"cat_dance" = "Tanz";
+"cat_theatre" = "Theater";
+"cat_film" = "Film";
+"cat_editing" = "Videoschnitt";
+"cat_3d" = "3D-Modellierung";
+"cat_ai" = "KI/ML";
+"cat_data" = "Datenwissenschaft";
+"cat_cybersecurity" = "Cybersicherheit";
+"cat_gardening" = "Gartenarbeit";
+"cat_diy" = "Heimwerken";
+"cat_travel" = "Reisen";
+"cat_cars" = "Automobil";
+"cat_parenting" = "Elternschaft";
+"cat_animals" = "Tiere";
+"hide" = "Ausblenden";
+"unhide" = "Einblenden";
+"archived_section" = "Archiviert";
+"counters_empty_title" = "Keine Zähler";
+"counters_empty_description" = "Erstelle deinen ersten Zähler, um numerischen Fortschritt zu verfolgen.";

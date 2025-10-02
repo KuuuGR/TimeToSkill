@@ -15,6 +15,8 @@
 "tracking_title" = "Sledovanie zručností";
 "tracking_nav_title" = "Tvoje zručnosti";
 "sort_by_label" = "Zoradiť podľa";
+"export_pdf_title" = "Exportovať do PDF";
+"fab_options" = "Zobraziť možnosti";
 
 "sort_name_asc" = "Názov ↑";
 "sort_name_desc" = "Názov ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Pridať novú zručnosť";
 "fab_view_stats" = "Zobraziť štatistiky";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Spravovať počítadlá";
+"counter_details_section" = "Detaily";
+"counter_title_placeholder" = "Názov";
+"counter_step_label%d" = "Krok: %d";
+"counter_thresholds_section" = "Prahové hodnoty (oddelené čiarkami)";
+"counter_thresholds_placeholder" = "napr. 100,200,500,10000";
+"counter_new_title" = "Nové počítadlo";
+"create" = "Vytvoriť";
+"apply" = "Použiť";
+"value" = "Hodnota";
+"add" = "Pridať";
+"counter_progress_section" = "Pokrok";
+"counter_value_label" = "Hodnota";
+"counter_stage_max_label" = "Max. fáza";
+"counter_no_thresholds" = "Žiadne prahy";
+"counter_reset_to_zero" = "Vynulovať na 0";
+"counter_configuration_section" = "Konfigurácia";
+"counter_edit_thresholds" = "Upraviť prahy";
+"counter_set_value_section" = "Nastaviť hodnotu manuálne";
+"counter_set_value_placeholder" = "-1000000 až 1000000";
+"counter_current_thresholds" = "Aktuálne prahy";
+"counter_add_threshold" = "Pridať prah";
+"counter_thresholds_title" = "Prahy";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Zručnosti";
+"daily_evaluations_format" = "Denné hodnotenia: %d/%d";
+"sort_menu_label" = "Zoradiť";
+"reset_daily_limit" = "Resetovať denný limit";
+"daily_limit_reached_title" = "Denný limit dosiahnutý";
+"daily_limit_reached_message_format" = "Dosiahol si denný limit %d hodnotení zručností. Skús zajtra!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Rozdelenie času";
+"time_distribution_skill_format" = "Zručnosť: %@";
+"time_total_hours_format" = "Celkový čas: %@ h";
+"time_mean_minutes_format" = "Priemerný interval: %@ min";
+"time_std_minutes_format" = "Št. odchýlka: %@ min";
+"distribution_nav_title" = "Rozdelenie";
+"global_time_distribution_title" = "Globálne rozdelenie času";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Názov";
+"sort_category" = "Kategória";
+"sort_stars_asc" = "Hviezdy ↑";
+"sort_stars_desc" = "Hviezdy ↓";
+"sort_difficulty_asc" = "Náročnosť ↑";
+"sort_difficulty_desc" = "Náročnosť ↓";
+"sort_completed_asc" = "Dokončené ↑";
+"sort_completed_desc" = "Dokončené ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detaily zručnosti";
+"close" = "Zavrieť";
+"change_rating_accessibility" = "Zmeniť hodnotenie";
+"description" = "Popis";
+"achievement_status" = "Stav dosiahnutia";
+"obtained_label" = "Získané:";
+"unknown" = "Neznáme";
+"your_rating_label" = "Tvoje hodnotenie:";
+"verification_code_label" = "Overovací kód:";
+"achievement_history" = "História dosiahnutí";
+"update_your_rating" = "Aktualizuj svoje hodnotenie";
+"no_stars" = "Žiadne hviezdy";
+"update_and_verify" = "Aktualizovať a overiť";
+"self_evaluation" = "Seba-hodnotenie";
+"how_many_stars_question" = "Koľko hviezd si zaslúžiš za túto zručnosť?";
+"evaluate_my_skill" = "Ohodnoť moju zručnosť";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Vyžaduje sa overenie";
+"verification_required_message" = "Zadaj overovací kód na potvrdenie seba-hodnotenia:";
+"verification_code_title" = "Overovací kód:";
+"no_code_received" = "KÓD NEBOL DORUČENÝ";
+"enter_the_code" = "Zadaj kód:";
+"verify_and_evaluate" = "Overiť a ohodnotiť";
+"verification_nav_title" = "Overenie";
+"invalid_code_title" = "Neplatný kód";
+"invalid_code_message" = "Zadaj správny overovací kód.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Zobraziť rozdelenie";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Pridať vlastnú zručnosť";
+"unlock_custom_skills_title" = "Odomknúť vlastné zručnosti";
+"unlock_custom_skills_subtitle" = "Vytváraj si vlastné úspechy a spravuj zoznam.";
+"unlock_benefit_create" = "Vytvor zručnosť s názvom, popisom a náročnosťou";
+"unlock_benefit_delete" = "Odstráň vlastné zručnosti v prípade omylu";
+"unlock_benefit_support" = "Podpor vývojára";
+"unlock_benefit_reset_limit" = "Resetuj denný limit hodnotení";
+"restore_purchases" = "Obnoviť nákupy";
+"buy_unlock" = "Kúpiť odomknutie (Dev)";
+"unlock_title_short" = "Odomknúť";
+"difficulty_label" = "Náročnosť";
+"star_descriptions_title" = "Popisy úrovní hviezd";
+"one_star_description" = "Popis 1★";
+"two_star_description" = "Popis 2★";
+"three_star_description" = "Popis 3★";
+"image_label" = "Obrázok";
+"choose_image" = "Vybrať obrázok";
+"category_label" = "Kategória";
+"category_custom_placeholder" = "Vlastná kategória";
+
+// MARK: - Preset Categories
+"cat_custom" = "Vlastné";
+"cat_music" = "Hudba";
+"cat_language" = "Jazyk";
+"cat_art" = "Umenie";
+"cat_coding" = "Programovanie";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Varenie";
+"cat_photography" = "Fotografia";
+"cat_writing" = "Písanie";
+"cat_public_speaking" = "Verejné vystupovanie";
+"cat_science" = "Veda";
+"cat_math" = "Matematika";
+"cat_engineering" = "Inžinierstvo";
+"cat_design" = "Dizajn";
+"cat_business" = "Biznis";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Financie";
+"cat_investing" = "Investovanie";
+"cat_entrepreneurship" = "Podnikanie";
+"cat_psychology" = "Psychológia";
+"cat_education" = "Vzdelávanie";
+"cat_history" = "História";
+"cat_geography" = "Geografia";
+"cat_health" = "Zdravie";
+"cat_meditation" = "Meditácia";
+"cat_yoga" = "Joga";
+"cat_sports" = "Šport";
+"cat_dance" = "Tanec";
+"cat_theatre" = "Divadlo";
+"cat_film" = "Film";
+"cat_editing" = "Strih videa";
+"cat_3d" = "3D modelovanie";
+"cat_ai" = "AI/ML";
+"cat_data" = "Dátová veda";
+"cat_cybersecurity" = "Kybernetická bezpečnosť";
+"cat_gardening" = "Záhradkárstvo";
+"cat_diy" = "Kutilstvo";
+"cat_travel" = "Cestovanie";
+"cat_cars" = "Automobily";
+"cat_parenting" = "Rodičovstvo";
+"cat_animals" = "Zvieratá";
+"hide" = "Skryť";
+"unhide" = "Zobraziť";
+"archived_section" = "Archivované";
+"counters_empty_title" = "Žiadne počítadlá";
+"counters_empty_description" = "Vytvor prvé počítadlo na sledovanie číselného pokroku.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Prevodník času";

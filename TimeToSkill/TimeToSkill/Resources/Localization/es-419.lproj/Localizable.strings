@@ -15,6 +15,8 @@
 "tracking_title" = "Seguimiento de Habilidades";
 "tracking_nav_title" = "Tus Habilidades";
 "sort_by_label" = "Ordenar por";
+"export_pdf_title" = "Exportar a PDF";
+"fab_options" = "Mostrar opciones";
 
 "sort_name_asc" = "Nombre ↑";
 "sort_name_desc" = "Nombre ↓";
@@ -141,6 +143,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "Agregar nueva habilidad";
 "fab_view_stats" = "Ver estadísticas";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Administrar Contadores";
+"counter_details_section" = "Detalles";
+"counter_title_placeholder" = "Título";
+"counter_step_label%d" = "Paso: %d";
+"counter_thresholds_section" = "Umbrales (separados por comas)";
+"counter_thresholds_placeholder" = "p. ej. 100,200,500,10000";
+"counter_new_title" = "Nuevo Contador";
+"create" = "Crear";
+"apply" = "Aplicar";
+"value" = "Valor";
+"add" = "Agregar";
+"counter_progress_section" = "Progreso";
+"counter_value_label" = "Valor";
+"counter_stage_max_label" = "Etapa Máxima";
+"counter_no_thresholds" = "Sin umbrales";
+"counter_reset_to_zero" = "Reiniciar a 0";
+"counter_configuration_section" = "Configuración";
+"counter_edit_thresholds" = "Editar Umbrales";
+"counter_set_value_section" = "Establecer Valor Manualmente";
+"counter_set_value_placeholder" = "-1000000 a 1000000";
+"counter_current_thresholds" = "Umbrales Actuales";
+"counter_add_threshold" = "Agregar Umbral";
+"counter_thresholds_title" = "Umbrales";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Habilidades";
+"daily_evaluations_format" = "Evaluaciones diarias: %d/%d";
+"sort_menu_label" = "Ordenar";
+"reset_daily_limit" = "Restablecer límite diario";
+"daily_limit_reached_title" = "Límite diario alcanzado";
+"daily_limit_reached_message_format" = "Has alcanzado tu límite diario de %d evaluaciones de habilidades. ¡Inténtalo mañana!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Distribución del tiempo";
+"time_distribution_skill_format" = "Habilidad: %@";
+"time_total_hours_format" = "Tiempo total: %@ h";
+"time_mean_minutes_format" = "Intervalo medio: %@ min";
+"time_std_minutes_format" = "Desv. estándar: %@ min";
+"distribution_nav_title" = "Distribución";
+"global_time_distribution_title" = "Distribución global del tiempo";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nombre";
+"sort_category" = "Categoría";
+"sort_stars_asc" = "Estrellas ↑";
+"sort_stars_desc" = "Estrellas ↓";
+"sort_difficulty_asc" = "Dificultad ↑";
+"sort_difficulty_desc" = "Dificultad ↓";
+"sort_completed_asc" = "Completado ↑";
+"sort_completed_desc" = "Completado ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detalles de la habilidad";
+"close" = "Cerrar";
+"change_rating_accessibility" = "Cambiar calificación";
+"description" = "Descripción";
+"achievement_status" = "Estado del logro";
+"obtained_label" = "Obtenido:";
+"unknown" = "Desconocido";
+"your_rating_label" = "Tu calificación:";
+"verification_code_label" = "Código de verificación:";
+"achievement_history" = "Historial de logros";
+"update_your_rating" = "Actualiza tu calificación";
+"no_stars" = "Sin estrellas";
+"update_and_verify" = "Actualizar y verificar";
+"self_evaluation" = "Autoevaluación";
+"how_many_stars_question" = "¿Cuántas estrellas mereces por esta habilidad?";
+"evaluate_my_skill" = "Evaluar mi habilidad";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Se requiere verificación";
+"verification_required_message" = "Ingresa el código de verificación para confirmar tu autoevaluación:";
+"verification_code_title" = "Código de verificación:";
+"no_code_received" = "NO SE RECIBIÓ CÓDIGO";
+"enter_the_code" = "Ingresa el código:";
+"verify_and_evaluate" = "Verificar y evaluar";
+"verification_nav_title" = "Verificación";
+"invalid_code_title" = "Código inválido";
+"invalid_code_message" = "Ingresa el código correcto.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Ver distribución";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Convertidor de Tiempo";

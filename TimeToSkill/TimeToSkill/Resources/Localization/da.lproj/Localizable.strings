@@ -26,6 +26,8 @@
 "tracking_title" = "Færdighedssporing";
 "tracking_nav_title" = "Dine færdigheder";
 "sort_by_label" = "Sorter efter";
+"export_pdf_title" = "Eksportér til PDF";
+"fab_options" = "Vis indstillinger";
 
 "sort_name_asc" = "Navn ↑";
 "sort_name_desc" = "Navn ↓";
@@ -152,3 +154,88 @@
 // MARK: - FABButton
 "fab_add_skill" = "Tilføj ny færdighed";
 "fab_view_stats" = "Vis statistik";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Administrer tællere";
+"counter_details_section" = "Detaljer";
+"counter_title_placeholder" = "Titel";
+"counter_step_label%d" = "Trin: %d";
+"counter_thresholds_section" = "Tærskler (kommasepareret)";
+"counter_thresholds_placeholder" = "fx 100,200,500,10000";
+"counter_new_title" = "Ny tæller";
+"create" = "Opret";
+"apply" = "Anvend";
+"value" = "Værdi";
+"add" = "Tilføj";
+"counter_progress_section" = "Fremskridt";
+"counter_value_label" = "Værdi";
+"counter_stage_max_label" = "Max trin";
+"counter_no_thresholds" = "Ingen tærskler sat";
+"counter_reset_to_zero" = "Nulstil til 0";
+"counter_configuration_section" = "Konfiguration";
+"counter_edit_thresholds" = "Redigér tærskler";
+"counter_set_value_section" = "Sæt værdi manuelt";
+"counter_set_value_placeholder" = "-1000000 til 1000000";
+"counter_current_thresholds" = "Aktuelle tærskler";
+"counter_add_threshold" = "Tilføj tærskel";
+"counter_thresholds_title" = "Tærskler";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Færdigheder";
+"daily_evaluations_format" = "Daglige evalueringer: %d/%d";
+"sort_menu_label" = "Sorter";
+"reset_daily_limit" = "Nulstil dagligt loft";
+"daily_limit_reached_title" = "Dagligt loft nået";
+"daily_limit_reached_message_format" = "Du har nået dit daglige loft på %d færdighedsevalueringer. Prøv igen i morgen!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Tidsfordeling";
+"time_distribution_skill_format" = "Færdighed: %@";
+"time_total_hours_format" = "Samlet tid: %@ t";
+"time_mean_minutes_format" = "Gennemsnitligt interval: %@ min";
+"time_std_minutes_format" = "Std.afv.: %@ min";
+"distribution_nav_title" = "Fordeling";
+"global_time_distribution_title" = "Global tidsfordeling";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Navn";
+"sort_category" = "Kategori";
+"sort_stars_asc" = "Stjerner ↑";
+"sort_stars_desc" = "Stjerner ↓";
+"sort_difficulty_asc" = "Sværhedsgrad ↑";
+"sort_difficulty_desc" = "Sværhedsgrad ↓";
+"sort_completed_asc" = "Fuldført ↑";
+"sort_completed_desc" = "Fuldført ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Færdighedsdetaljer";
+"close" = "Luk";
+"change_rating_accessibility" = "Skift vurdering";
+"description" = "Beskrivelse";
+"achievement_status" = "Præstationsstatus";
+"obtained_label" = "Opnået:";
+"unknown" = "Ukendt";
+"your_rating_label" = "Din vurdering:";
+"verification_code_label" = "Verifikationskode:";
+"achievement_history" = "Præstationshistorik";
+"update_your_rating" = "Opdatér din vurdering";
+"no_stars" = "Ingen stjerner";
+"update_and_verify" = "Opdatér & verificér";
+"self_evaluation" = "Selvevaluering";
+"how_many_stars_question" = "Hvor mange stjerner fortjener du for denne færdighed?";
+"evaluate_my_skill" = "Vurdér min færdighed";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verifikation påkrævet";
+"verification_required_message" = "Indtast verifikationskoden for at bekræfte din selvevaluering:";
+"verification_code_title" = "Verifikationskode:";
+"no_code_received" = "INGEN KODE MODTAGET";
+"enter_the_code" = "Indtast koden:";
+"verify_and_evaluate" = "Verificér og vurder";
+"verification_nav_title" = "Verifikation";
+"invalid_code_title" = "Ugyldig kode";
+"invalid_code_message" = "Indtast den korrekte kode.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Se fordeling";

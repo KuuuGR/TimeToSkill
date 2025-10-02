@@ -30,6 +30,9 @@
 "tracking_nav_title" = "Twoje umiejętności";
 "sort_by_label" = "Sortuj według";
 
+"export_pdf_title" = "Eksportuj do PDF";
+"fab_options" = "Pokaż opcje";
+
 "sort_name_asc" = "Nazwa ↑";
 "sort_name_desc" = "Nazwa ↓";
 "sort_time_asc" = "Czas ↑";

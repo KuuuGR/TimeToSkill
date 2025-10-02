@@ -15,6 +15,8 @@
 "tracking_title" = "Taitojen seuranta";
 "tracking_nav_title" = "Taitosi";
 "sort_by_label" = "Lajittele";
+"export_pdf_title" = "Vie PDF:ään";
+"fab_options" = "Näytä vaihtoehdot";
 
 "sort_name_asc" = "Nimi ↑";
 "sort_name_desc" = "Nimi ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Lisää uusi taito";
 "fab_view_stats" = "Näytä tilastot";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Hallitse laskureita";
+"counter_details_section" = "Tiedot";
+"counter_title_placeholder" = "Otsikko";
+"counter_step_label%d" = "Askel: %d";
+"counter_thresholds_section" = "Kynnykset (pilkuin eroteltuna)";
+"counter_thresholds_placeholder" = "esim. 100,200,500,10000";
+"counter_new_title" = "Uusi laskuri";
+"create" = "Luo";
+"apply" = "Käytä";
+"value" = "Arvo";
+"add" = "Lisää";
+"counter_progress_section" = "Edistyminen";
+"counter_value_label" = "Arvo";
+"counter_stage_max_label" = "Vaiheen maksimi";
+"counter_no_thresholds" = "Ei kynnyksiä";
+"counter_reset_to_zero" = "Nollaa arvo";
+"counter_configuration_section" = "Määritykset";
+"counter_edit_thresholds" = "Muokkaa kynnyksiä";
+"counter_set_value_section" = "Aseta arvo käsin";
+"counter_set_value_placeholder" = "-1000000 – 1000000";
+"counter_current_thresholds" = "Nykyiset kynnykset";
+"counter_add_threshold" = "Lisää kynnys";
+"counter_thresholds_title" = "Kynnykset";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Taidot";
+"daily_evaluations_format" = "Päivittäiset arviot: %d/%d";
+"sort_menu_label" = "Lajittele";
+"reset_daily_limit" = "Nollaa päiväkohtainen raja";
+"daily_limit_reached_title" = "Päiväraja saavutettu";
+"daily_limit_reached_message_format" = "Olet saavuttanut %d taitoarvion päiväkohtaisen rajan. Yritä uudelleen huomenna!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Ajanjakauma";
+"time_distribution_skill_format" = "Taito: %@";
+"time_total_hours_format" = "Aika yhteensä: %@ h";
+"time_mean_minutes_format" = "Keskimääräinen väli: %@ min";
+"time_std_minutes_format" = "Keskihajonta: %@ min";
+"distribution_nav_title" = "Jakauma";
+"global_time_distribution_title" = "Globaali ajanjakauma";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nimi";
+"sort_category" = "Kategoria";
+"sort_stars_asc" = "Tähdet ↑";
+"sort_stars_desc" = "Tähdet ↓";
+"sort_difficulty_asc" = "Vaikeus ↑";
+"sort_difficulty_desc" = "Vaikeus ↓";
+"sort_completed_asc" = "Valmiit ↑";
+"sort_completed_desc" = "Valmiit ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Taido n yksityiskohdat";
+"close" = "Sulje";
+"change_rating_accessibility" = "Vaihda arviota";
+"description" = "Kuvaus";
+"achievement_status" = "Saavutuksen tila";
+"obtained_label" = "Saavutettu:";
+"unknown" = "Tuntematon";
+"your_rating_label" = "Arviosi:";
+"verification_code_label" = "Vahvistuskoodi:";
+"achievement_history" = "Saavutushistoria";
+"update_your_rating" = "Päivitä arviosi";
+"no_stars" = "Ei tähtiä";
+"update_and_verify" = "Päivitä ja vahvista";
+"self_evaluation" = "Itsearviointi";
+"how_many_stars_question" = "Kuinka monta tähteä ansaitset tästä taidosta?";
+"evaluate_my_skill" = "Arvioi taitoni";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Vahvistus vaaditaan";
+"verification_required_message" = "Anna vahvistuskoodi itsearvioinnin vahvistamiseksi:";
+"verification_code_title" = "Vahvistuskoodi:";
+"no_code_received" = "KOODIA EI SAATU";
+"enter_the_code" = "Syötä koodi:";
+"verify_and_evaluate" = "Vahvista ja arvioi";
+"verification_nav_title" = "Vahvistus";
+"invalid_code_title" = "Virheellinen koodi";
+"invalid_code_message" = "Syötä oikea koodi.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Näytä jakauma";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Lisää mukautettu taito";
+"unlock_custom_skills_title" = "Avaa mukautetut taidot";
+"unlock_custom_skills_subtitle" = "Luo omia saavutuksia ja kuratoi listaasi.";
+"unlock_benefit_create" = "Luo oma taito nimellä, kuvauksella ja vaikeudella";
+"unlock_benefit_delete" = "Poista mukautettu taito virheen sattuessa";
+"unlock_benefit_support" = "Tue kehittäjää";
+"unlock_benefit_reset_limit" = "Nollaa päivittäinen arviointiraja";
+"restore_purchases" = "Palauta ostot";
+"buy_unlock" = "Osta avaus (Dev)";
+"unlock_title_short" = "Avaa";
+"difficulty_label" = "Vaikeus";
+"star_descriptions_title" = "Tähtitasojen kuvaukset";
+"one_star_description" = "1★ kuvaus";
+"two_star_description" = "2★ kuvaus";
+"three_star_description" = "3★ kuvaus";
+"image_label" = "Kuva";
+"choose_image" = "Valitse kuva";
+"category_label" = "Kategoria";
+"category_custom_placeholder" = "Mukautettu kategoria";
+
+// MARK: - Preset Categories
+"cat_custom" = "Mukautettu";
+"cat_music" = "Musiikki";
+"cat_language" = "Kieli";
+"cat_art" = "Taide";
+"cat_coding" = "Ohjelmointi";
+"cat_fitness" = "Kuntoilu";
+"cat_cooking" = "Ruoanlaitto";
+"cat_photography" = "Valokuvaus";
+"cat_writing" = "Kirjoittaminen";
+"cat_public_speaking" = "Esiintyminen";
+"cat_science" = "Tiede";
+"cat_math" = "Matematiikka";
+"cat_engineering" = "Tekniikka";
+"cat_design" = "Design";
+"cat_business" = "Liiketoiminta";
+"cat_marketing" = "Markkinointi";
+"cat_finance" = "Rahoitus";
+"cat_investing" = "Sijoittaminen";
+"cat_entrepreneurship" = "Yrittäjyys";
+"cat_psychology" = "Psykologia";
+"cat_education" = "Koulutus";
+"cat_history" = "Historia";
+"cat_geography" = "Maantiede";
+"cat_health" = "Terveys";
+"cat_meditation" = "Meditaatio";
+"cat_yoga" = "Jooga";
+"cat_sports" = "Urheilu";
+"cat_dance" = "Tanssi";
+"cat_theatre" = "Teatteri";
+"cat_film" = "Elokuva";
+"cat_editing" = "Videon editointi";
+"cat_3d" = "3D-mallinnus";
+"cat_ai" = "AI/ML";
+"cat_data" = "Data Science";
+"cat_cybersecurity" = "Kyberturvallisuus";
+"cat_gardening" = "Puutarhanhoito";
+"cat_diy" = "Tee se itse";
+"cat_travel" = "Matkailu";
+"cat_cars" = "Autoilu";
+"cat_parenting" = "Vanhemmuus";
+"cat_animals" = "Eläimet";
+"hide" = "Piilota";
+"unhide" = "Näytä";
+"archived_section" = "Arkistoidut";
+"counters_empty_title" = "Ei laskureita";
+"counters_empty_description" = "Luo ensimmäinen laskuri numerisen edistymisen seuraamiseen.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Aikamuunnin";

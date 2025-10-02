@@ -1,3 +1,69 @@
+// Fallback English for new keys (to be translated)
+"fab_add_custom_skill" = "Afegeix habilitat personalitzada";
+"unlock_custom_skills_title" = "Desbloqueja habilitats personalitzades";
+"unlock_custom_skills_subtitle" = "Crea els teus propis assoliments i organitza la llista.";
+"unlock_benefit_create" = "Crea la teva habilitat amb títol, descripció i dificultat";
+"unlock_benefit_delete" = "Elimina habilitats personalitzades si t'equivoques";
+"unlock_benefit_support" = "Dóna suport al desenvolupador";
+"unlock_benefit_reset_limit" = "Restableix el límit diari d'avaluacions";
+"restore_purchases" = "Restaura compres";
+"buy_unlock" = "Comprar desbloqueig (Dev)";
+"unlock_title_short" = "Desbloqueja";
+"difficulty_label" = "Dificultat";
+"star_descriptions_title" = "Descripcions per nivell d'estrelles";
+"one_star_description" = "Descripció 1★";
+"two_star_description" = "Descripció 2★";
+"three_star_description" = "Descripció 3★";
+"image_label" = "Imatge";
+"choose_image" = "Triar imatge";
+"category_label" = "Categoria";
+"category_custom_placeholder" = "Categoria personalitzada";
+"cat_custom" = "Personalitzada";
+"cat_music" = "Música";
+"cat_language" = "Llengua";
+"cat_art" = "Art";
+"cat_coding" = "Programació";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Cuina";
+"cat_photography" = "Fotografia";
+"cat_writing" = "Escriptura";
+"cat_public_speaking" = "Oratòria";
+"cat_science" = "Ciència";
+"cat_math" = "Matemàtiques";
+"cat_engineering" = "Enginyeria";
+"cat_design" = "Disseny";
+"cat_business" = "Negocis";
+"cat_marketing" = "Màrqueting";
+"cat_finance" = "Finances";
+"cat_investing" = "Inversió";
+"cat_entrepreneurship" = "Emprenedoria";
+"cat_psychology" = "Psicologia";
+"cat_education" = "Educació";
+"cat_history" = "Història";
+"cat_geography" = "Geografia";
+"cat_health" = "Salut";
+"cat_meditation" = "Meditació";
+"cat_yoga" = "Ioga";
+"cat_sports" = "Esports";
+"cat_dance" = "Dansa";
+"cat_theatre" = "Teatre";
+"cat_film" = "Cinema";
+"cat_editing" = "Edició de vídeo";
+"cat_3d" = "Modelatge 3D";
+"cat_ai" = "IA/ML";
+"cat_data" = "Ciència de dades";
+"cat_cybersecurity" = "Ciberseguretat";
+"cat_gardening" = "Jardineria";
+"cat_diy" = "Bricolatge";
+"cat_travel" = "Viatges";
+"cat_cars" = "Automoció";
+"cat_parenting" = "Pares i mares";
+"cat_animals" = "Animals";
+"archived_section" = "Arxivats";
+"hide" = "Amaga";
+"unhide" = "Mostra";
+"counters_empty_title" = "Encara no hi ha comptadors";
+"counters_empty_description" = "Crea el teu primer comptador per començar a registrar el progrés numèric.";
 // Catalan
 
 // MARK: - MainView
@@ -15,6 +81,8 @@
 "tracking_title" = "Seguiment de les habilitats";
 "tracking_nav_title" = "Les teves habilitats";
 "sort_by_label" = "Ordena per";
+"export_pdf_title" = "Exportar a PDF";
+"fab_options" = "Mostrar opcions";
 
 "sort_name_asc" = "Nom ↑";
 "sort_name_desc" = "Nom ↓";
@@ -141,6 +209,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "Afegeix una nova habilitat";
 "fab_view_stats" = "Veure estadístiques";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Gestiona comptadors";
+"counter_details_section" = "Detalls";
+"counter_title_placeholder" = "Títol";
+"counter_step_label%d" = "Pas: %d";
+"counter_thresholds_section" = "Llindars (separats per comes)";
+"counter_thresholds_placeholder" = "p. ex. 100,200,500,10000";
+"counter_new_title" = "Nou comptador";
+"create" = "Crea";
+"apply" = "Aplica";
+"value" = "Valor";
+"add" = "Afegeix";
+"counter_progress_section" = "Progrés";
+"counter_value_label" = "Valor";
+"counter_stage_max_label" = "Màx. fase";
+"counter_no_thresholds" = "Sense llindars";
+"counter_reset_to_zero" = "Restableix a 0";
+"counter_configuration_section" = "Configuració";
+"counter_edit_thresholds" = "Edita llindars";
+"counter_set_value_section" = "Estableix valor manualment";
+"counter_set_value_placeholder" = "-1000000 a 1000000";
+"counter_current_thresholds" = "Llindars actuals";
+"counter_add_threshold" = "Afegeix llindar";
+"counter_thresholds_title" = "Llindars";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Habilitats";
+"daily_evaluations_format" = "Avaluacions diàries: %d/%d";
+"sort_menu_label" = "Ordena";
+"reset_daily_limit" = "Restableix límit diari";
+"daily_limit_reached_title" = "S'ha assolit el límit diari";
+"daily_limit_reached_message_format" = "Has arribat al límit diari de %d avaluacions d'habilitats. Torna-ho a provar demà!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Distribució del temps";
+"time_distribution_skill_format" = "Habilitat: %@";
+"time_total_hours_format" = "Temps total: %@ h";
+"time_mean_minutes_format" = "Interval mitjà: %@ min";
+"time_std_minutes_format" = "Desv. estàndard: %@ min";
+"distribution_nav_title" = "Distribució";
+"global_time_distribution_title" = "Distribució global del temps";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nom";
+"sort_category" = "Categoria";
+"sort_stars_asc" = "Estrelles ↑";
+"sort_stars_desc" = "Estrelles ↓";
+"sort_difficulty_asc" = "Dificultat ↑";
+"sort_difficulty_desc" = "Dificultat ↓";
+"sort_completed_asc" = "Completat ↑";
+"sort_completed_desc" = "Completat ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detalls de l'habilitat";
+"close" = "Tancar";
+"change_rating_accessibility" = "Canvia la valoració";
+"description" = "Descripció";
+"achievement_status" = "Estat de l'assoliment";
+"obtained_label" = "Obtingut:";
+"unknown" = "Desconegut";
+"your_rating_label" = "La teva valoració:";
+"verification_code_label" = "Codi de verificació:";
+"achievement_history" = "Historial d'assoliments";
+"update_your_rating" = "Actualitza la teva valoració";
+"no_stars" = "Sense estrelles";
+"update_and_verify" = "Actualitza i verifica";
+"self_evaluation" = "Autoavaluació";
+"how_many_stars_question" = "Quantes estrelles et mereixes per aquesta habilitat?";
+"evaluate_my_skill" = "Avalua la meva habilitat";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verificació necessària";
+"verification_required_message" = "Introdueix el codi de verificació per confirmar la teva autoavaluació:";
+"verification_code_title" = "Codi de verificació:";
+"no_code_received" = "NO S'HA REBUT CAP CODI";
+"enter_the_code" = "Introdueix el codi:";
+"verify_and_evaluate" = "Verifica i avalua";
+"verification_nav_title" = "Verificació";
+"invalid_code_title" = "Codi invàlid";
+"invalid_code_message" = "Introdueix el codi correcte.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Veure distribució";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Convertidor de temps";

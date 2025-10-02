@@ -26,6 +26,8 @@
 "tracking_title" = "技能追蹤";
 "tracking_nav_title" = "你的技能";
 "sort_by_label" = "排序依據";
+"export_pdf_title" = "匯出為 PDF";
+"fab_options" = "顯示選項";
 
 "sort_name_asc" = "名稱 ↑";
 "sort_name_desc" = "名稱 ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "新增技能";
 "fab_view_stats" = "查看統計資料";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "管理計數器";
+"counter_details_section" = "詳細資料";
+"counter_title_placeholder" = "標題";
+"counter_step_label%d" = "步驟：%d";
+"counter_thresholds_section" = "臨界值（以逗號分隔）";
+"counter_thresholds_placeholder" = "例如 100,200,500,10000";
+"counter_new_title" = "新計數器";
+"create" = "建立";
+"apply" = "套用";
+"value" = "數值";
+"add" = "新增";
+"counter_progress_section" = "進度";
+"counter_value_label" = "數值";
+"counter_stage_max_label" = "最大階段";
+"counter_no_thresholds" = "尚未設定臨界值";
+"counter_reset_to_zero" = "重設為 0";
+"counter_configuration_section" = "設定";
+"counter_edit_thresholds" = "編輯臨界值";
+"counter_set_value_section" = "手動設定數值";
+"counter_set_value_placeholder" = "-1000000 到 1000000";
+"counter_current_thresholds" = "目前的臨界值";
+"counter_add_threshold" = "新增臨界值";
+"counter_thresholds_title" = "臨界值";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "技能";
+"daily_evaluations_format" = "每日評估：%d/%d";
+"sort_menu_label" = "排序";
+"reset_daily_limit" = "重設每日上限";
+"daily_limit_reached_title" = "已達每日上限";
+"daily_limit_reached_message_format" = "你已達到每日 %d 次技能評估的上限。請明天再試！";
+"ok" = "確定";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "時間分佈";
+"time_distribution_skill_format" = "技能：%@";
+"time_total_hours_format" = "總時間：%@ 小時";
+"time_mean_minutes_format" = "平均間隔：%@ 分鐘";
+"time_std_minutes_format" = "標準差：%@ 分鐘";
+"distribution_nav_title" = "分佈";
+"global_time_distribution_title" = "全球時間分佈";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "名稱";
+"sort_category" = "類別";
+"sort_stars_asc" = "星級 ↑";
+"sort_stars_desc" = "星級 ↓";
+"sort_difficulty_asc" = "難度 ↑";
+"sort_difficulty_desc" = "難度 ↓";
+"sort_completed_asc" = "完成度 ↑";
+"sort_completed_desc" = "完成度 ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "技能詳細資訊";
+"close" = "關閉";
+"change_rating_accessibility" = "變更評分";
+"description" = "描述";
+"achievement_status" = "成就狀態";
+"obtained_label" = "已取得：";
+"unknown" = "未知";
+"your_rating_label" = "你的評分：";
+"verification_code_label" = "驗證碼：";
+"achievement_history" = "成就歷史";
+"update_your_rating" = "更新你的評分";
+"no_stars" = "無星";
+"update_and_verify" = "更新並驗證";
+"self_evaluation" = "自我評估";
+"how_many_stars_question" = "你為此技能應得幾顆星？";
+"evaluate_my_skill" = "評估我的技能";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "需要驗證";
+"verification_required_message" = "請輸入驗證碼以確認自我評估：";
+"verification_code_title" = "驗證碼：";
+"no_code_received" = "未收到驗證碼";
+"enter_the_code" = "輸入驗證碼：";
+"verify_and_evaluate" = "驗證並評估";
+"verification_nav_title" = "驗證";
+"invalid_code_title" = "無效的驗證碼";
+"invalid_code_message" = "請輸入正確的驗證碼。";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "查看分佈";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "新增自訂技能";
+"unlock_custom_skills_title" = "解鎖自訂技能";
+"unlock_custom_skills_subtitle" = "建立你的成就並管理清單。";
+"unlock_benefit_create" = "以標題、描述與難度建立技能";
+"unlock_benefit_delete" = "若有錯誤可移除自訂技能";
+"unlock_benefit_support" = "支持開發者";
+"unlock_benefit_reset_limit" = "重設每日評估上限";
+"restore_purchases" = "恢復購買";
+"buy_unlock" = "購買解鎖（開發）";
+"unlock_title_short" = "解鎖";
+"difficulty_label" = "難度";
+"star_descriptions_title" = "星級說明";
+"one_star_description" = "1★ 說明";
+"two_star_description" = "2★ 說明";
+"three_star_description" = "3★ 說明";
+"image_label" = "圖片";
+"choose_image" = "選擇圖片";
+"category_label" = "類別";
+"category_custom_placeholder" = "自訂類別";
+
+// MARK: - Preset Categories
+"cat_custom" = "自訂";
+"cat_music" = "音樂";
+"cat_language" = "語言";
+"cat_art" = "藝術";
+"cat_coding" = "程式設計";
+"cat_fitness" = "健身";
+"cat_cooking" = "烹飪";
+"cat_photography" = "攝影";
+"cat_writing" = "寫作";
+"cat_public_speaking" = "公開演說";
+"cat_science" = "科學";
+"cat_math" = "數學";
+"cat_engineering" = "工程";
+"cat_design" = "設計";
+"cat_business" = "商業";
+"cat_marketing" = "行銷";
+"cat_finance" = "財務";
+"cat_investing" = "投資";
+"cat_entrepreneurship" = "創業";
+"cat_psychology" = "心理學";
+"cat_education" = "教育";
+"cat_history" = "歷史";
+"cat_geography" = "地理";
+"cat_health" = "健康";
+"cat_meditation" = "冥想";
+"cat_yoga" = "瑜伽";
+"cat_sports" = "運動";
+"cat_dance" = "舞蹈";
+"cat_theatre" = "劇場";
+"cat_film" = "電影";
+"cat_editing" = "影片剪輯";
+"cat_3d" = "3D 建模";
+"cat_ai" = "AI/ML";
+"cat_data" = "資料科學";
+"cat_cybersecurity" = "資安";
+"cat_gardening" = "園藝";
+"cat_diy" = "DIY";
+"cat_travel" = "旅遊";
+"cat_cars" = "汽車";
+"cat_parenting" = "親職教養";
+"cat_animals" = "動物";
+"hide" = "隱藏";
+"unhide" = "顯示";
+"archived_section" = "已封存";
+"counters_empty_title" = "沒有計數器";
+"counters_empty_description" = "建立第一個計數器以開始追蹤數值進度。";

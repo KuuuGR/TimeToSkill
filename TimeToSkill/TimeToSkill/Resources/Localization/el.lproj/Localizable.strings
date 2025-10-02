@@ -15,6 +15,8 @@
 "tracking_title" = "Παρακολούθηση δεξιοτήτων";
 "tracking_nav_title" = "Οι δεξιότητές σου";
 "sort_by_label" = "Ταξινόμηση κατά";
+"export_pdf_title" = "Εξαγωγή σε PDF";
+"fab_options" = "Εμφάνιση επιλογών";
 
 "sort_name_asc" = "Όνομα ↑";
 "sort_name_desc" = "Όνομα ↓";
@@ -140,6 +142,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "Προσθήκη νέας δεξιότητας";
 "fab_view_stats" = "Προβολή στατιστικών";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Διαχείριση μετρητών";
+"counter_details_section" = "Λεπτομέρειες";
+"counter_title_placeholder" = "Τίτλος";
+"counter_step_label%d" = "Βήμα: %d";
+"counter_thresholds_section" = "Κατώφλια (χωρισμένα με κόμμα)";
+"counter_thresholds_placeholder" = "π.χ. 100,200,500,10000";
+"counter_new_title" = "Νέος μετρητής";
+"create" = "Δημιουργία";
+"apply" = "Εφαρμογή";
+"value" = "Τιμή";
+"add" = "Προσθήκη";
+"counter_progress_section" = "Πρόοδος";
+"counter_value_label" = "Τιμή";
+"counter_stage_max_label" = "Μέγιστο στάδιο";
+"counter_no_thresholds" = "Δεν έχουν οριστεί κατώφλια";
+"counter_reset_to_zero" = "Επαναφορά σε 0";
+"counter_configuration_section" = "Ρύθμιση";
+"counter_edit_thresholds" = "Επεξεργασία κατωφλίων";
+"counter_set_value_section" = "Ορισμός τιμής χειροκίνητα";
+"counter_set_value_placeholder" = "-1000000 έως 1000000";
+"counter_current_thresholds" = "Τρέχοντα κατώφλια";
+"counter_add_threshold" = "Προσθήκη κατωφλίου";
+"counter_thresholds_title" = "Κατώφλια";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Δεξιότητες";
+"daily_evaluations_format" = "Ημερήσιες αξιολογήσεις: %d/%d";
+"sort_menu_label" = "Ταξινόμηση";
+"reset_daily_limit" = "Επαναφορά ημερήσιου ορίου";
+"daily_limit_reached_title" = "Έχει επιτευχθεί το ημερήσιο όριο";
+"daily_limit_reached_message_format" = "Έχεις φτάσει το ημερήσιο όριο %d αξιολογήσεων δεξιοτήτων. Δοκίμασε ξανά αύριο!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Κατανομή χρόνου";
+"time_distribution_skill_format" = "Δεξιότητα: %@";
+"time_total_hours_format" = "Συνολικός χρόνος: %@ ω";
+"time_mean_minutes_format" = "Μέσο διάστημα: %@ λ";
+"time_std_minutes_format" = "Τυπ. απόκλιση: %@ λ";
+"distribution_nav_title" = "Κατανομή";
+"global_time_distribution_title" = "Καθολική κατανομή χρόνου";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Όνομα";
+"sort_category" = "Κατηγορία";
+"sort_stars_asc" = "Αστέρια ↑";
+"sort_stars_desc" = "Αστέρια ↓";
+"sort_difficulty_asc" = "Δυσκολία ↑";
+"sort_difficulty_desc" = "Δυσκολία ↓";
+"sort_completed_asc" = "Ολοκληρωμένα ↑";
+"sort_completed_desc" = "Ολοκληρωμένα ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Λεπτομέρειες δεξιότητας";
+"close" = "Κλείσιμο";
+"change_rating_accessibility" = "Αλλαγή αξιολόγησης";
+"description" = "Περιγραφή";
+"achievement_status" = "Κατάσταση επιτεύγματος";
+"obtained_label" = "Αποκτήθηκε:";
+"unknown" = "Άγνωστο";
+"your_rating_label" = "Η αξιολόγησή σου:";
+"verification_code_label" = "Κωδικός επιβεβαίωσης:";
+"achievement_history" = "Ιστορικό επιτευγμάτων";
+"update_your_rating" = "Ενημέρωση αξιολόγησης";
+"no_stars" = "Χωρίς αστέρια";
+"update_and_verify" = "Ενημέρωση & επιβεβαίωση";
+"self_evaluation" = "Αυτοαξιολόγηση";
+"how_many_stars_question" = "Πόσα αστέρια αξίζεις για αυτή τη δεξιότητα;";
+"evaluate_my_skill" = "Αξιολόγησε τη δεξιότητά μου";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Απαιτείται επιβεβαίωση";
+"verification_required_message" = "Εισήγαγε τον κωδικό επιβεβαίωσης για να επιβεβαιώσεις την αυτοαξιολόγηση:";
+"verification_code_title" = "Κωδικός επιβεβαίωσης:";
+"no_code_received" = "ΔΕΝ ΕΛΗΦΘΗ ΚΩΔΙΚΟΣ";
+"enter_the_code" = "Εισήγαγε τον κωδικό:";
+"verify_and_evaluate" = "Επιβεβαίωση & αξιολόγηση";
+"verification_nav_title" = "Επιβεβαίωση";
+"invalid_code_title" = "Μη έγκυρος κωδικός";
+"invalid_code_message" = "Εισήγαγε τον σωστό κωδικό.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Προβολή κατανομής";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Μετατροπέας Χρόνου";

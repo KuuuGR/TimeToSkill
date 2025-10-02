@@ -1,3 +1,69 @@
+// Fallback English for new keys (to be translated)
+"fab_add_custom_skill" = "Add custom skill";
+"unlock_custom_skills_title" = "Unlock Custom Skills";
+"unlock_custom_skills_subtitle" = "Create your own achievements and curate your list.";
+"unlock_benefit_create" = "Create your own skill with title, description and difficulty";
+"unlock_benefit_delete" = "Remove custom skills if you make a mistake";
+"unlock_benefit_support" = "Support the developer";
+"unlock_benefit_reset_limit" = "Reset the daily evaluation limit";
+"restore_purchases" = "Restore Purchases";
+"buy_unlock" = "Buy Unlock (Dev)";
+"unlock_title_short" = "Unlock";
+"difficulty_label" = "Difficulty";
+"star_descriptions_title" = "Star-level descriptions";
+"one_star_description" = "1★ description";
+"two_star_description" = "2★ description";
+"three_star_description" = "3★ description";
+"image_label" = "Image";
+"choose_image" = "Choose Image";
+"category_label" = "Category";
+"category_custom_placeholder" = "Custom category";
+"cat_custom" = "Custom";
+"cat_music" = "Music";
+"cat_language" = "Language";
+"cat_art" = "Art";
+"cat_coding" = "Coding";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Cooking";
+"cat_photography" = "Photography";
+"cat_writing" = "Writing";
+"cat_public_speaking" = "Public Speaking";
+"cat_science" = "Science";
+"cat_math" = "Mathematics";
+"cat_engineering" = "Engineering";
+"cat_design" = "Design";
+"cat_business" = "Business";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finance";
+"cat_investing" = "Investing";
+"cat_entrepreneurship" = "Entrepreneurship";
+"cat_psychology" = "Psychology";
+"cat_education" = "Education";
+"cat_history" = "History";
+"cat_geography" = "Geography";
+"cat_health" = "Health";
+"cat_meditation" = "Meditation";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sports";
+"cat_dance" = "Dance";
+"cat_theatre" = "Theatre";
+"cat_film" = "Film";
+"cat_editing" = "Video Editing";
+"cat_3d" = "3D Modeling";
+"cat_ai" = "AI/ML";
+"cat_data" = "Data Science";
+"cat_cybersecurity" = "Cybersecurity";
+"cat_gardening" = "Gardening";
+"cat_diy" = "DIY";
+"cat_travel" = "Travel";
+"cat_cars" = "Automotive";
+"cat_parenting" = "Parenting";
+"cat_animals" = "Animals";
+"archived_section" = "Archived";
+"hide" = "Hide";
+"unhide" = "Unhide";
+"counters_empty_title" = "No counters yet";
+"counters_empty_description" = "Create your first counter to start tracking numeric progress.";
 // Czech
 // MARK: - MainView
 "main_manage_trackers" = "Spravovat sledování";
@@ -14,6 +80,8 @@
 "tracking_title" = "Sledování dovedností";
 "tracking_nav_title" = "Tvé dovednosti";
 "sort_by_label" = "Řadit podle";
+"export_pdf_title" = "Exportovat do PDF";
+"fab_options" = "Zobrazit možnosti";
 
 "sort_name_asc" = "Název ↑";
 "sort_name_desc" = "Název ↓";
@@ -139,6 +207,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "Přidat novou dovednost";
 "fab_view_stats" = "Zobrazit statistiky";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Spravovat počítadla";
+"counter_details_section" = "Detaily";
+"counter_title_placeholder" = "Název";
+"counter_step_label%d" = "Krok: %d";
+"counter_thresholds_section" = "Prahy (oddělené čárkami)";
+"counter_thresholds_placeholder" = "např. 100,200,500,10000";
+"counter_new_title" = "Nové počítadlo";
+"create" = "Vytvořit";
+"apply" = "Použít";
+"value" = "Hodnota";
+"add" = "Přidat";
+"counter_progress_section" = "Postup";
+"counter_value_label" = "Hodnota";
+"counter_stage_max_label" = "Max. fáze";
+"counter_no_thresholds" = "Žádné prahy";
+"counter_reset_to_zero" = "Vynulovat";
+"counter_configuration_section" = "Konfigurace";
+"counter_edit_thresholds" = "Upravit prahy";
+"counter_set_value_section" = "Nastavit hodnotu ručně";
+"counter_set_value_placeholder" = "-1000000 až 1000000";
+"counter_current_thresholds" = "Aktuální prahy";
+"counter_add_threshold" = "Přidat práh";
+"counter_thresholds_title" = "Prahy";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Dovednosti";
+"daily_evaluations_format" = "Denní hodnocení: %d/%d";
+"sort_menu_label" = "Řadit";
+"reset_daily_limit" = "Resetovat denní limit";
+"daily_limit_reached_title" = "Dosažen denní limit";
+"daily_limit_reached_message_format" = "Dosáhl(a) jsi denního limitu %d hodnocení dovedností. Zkus zítra!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Rozdělení času";
+"time_distribution_skill_format" = "Dovednost: %@";
+"time_total_hours_format" = "Celkový čas: %@ h";
+"time_mean_minutes_format" = "Průměrný interval: %@ min";
+"time_std_minutes_format" = "Směrodatná odchylka: %@ min";
+"distribution_nav_title" = "Rozdělení";
+"global_time_distribution_title" = "Globální rozdělení času";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Název";
+"sort_category" = "Kategorie";
+"sort_stars_asc" = "Hvězdy ↑";
+"sort_stars_desc" = "Hvězdy ↓";
+"sort_difficulty_asc" = "Obtížnost ↑";
+"sort_difficulty_desc" = "Obtížnost ↓";
+"sort_completed_asc" = "Dokončené ↑";
+"sort_completed_desc" = "Dokončené ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detaily dovednosti";
+"close" = "Zavřít";
+"change_rating_accessibility" = "Změnit hodnocení";
+"description" = "Popis";
+"achievement_status" = "Stav dosažení";
+"obtained_label" = "Získáno:";
+"unknown" = "Neznámé";
+"your_rating_label" = "Tvé hodnocení:";
+"verification_code_label" = "Ověřovací kód:";
+"achievement_history" = "Historie dosažení";
+"update_your_rating" = "Aktualizuj hodnocení";
+"no_stars" = "Bez hvězdiček";
+"update_and_verify" = "Aktualizuj & ověř";
+"self_evaluation" = "Sebe-hodnocení";
+"how_many_stars_question" = "Kolik hvězd si zasloužíš za tuto dovednost?";
+"evaluate_my_skill" = "Ohodnoť mou dovednost";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Vyžadováno ověření";
+"verification_required_message" = "Zadej ověřovací kód pro potvrzení sebe-hodnocení:";
+"verification_code_title" = "Ověřovací kód:";
+"no_code_received" = "NEOBDRŽEN ŽÁDNÝ KÓD";
+"enter_the_code" = "Zadej kód:";
+"verify_and_evaluate" = "Ověřit a ohodnotit";
+"verification_nav_title" = "Ověření";
+"invalid_code_title" = "Neplatný kód";
+"invalid_code_message" = "Zadej správný ověřovací kód.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Zobrazit rozdělení";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Převodník času";

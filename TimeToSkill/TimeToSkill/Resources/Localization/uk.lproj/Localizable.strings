@@ -15,6 +15,8 @@
 "tracking_title" = "Відстеження навичок";
 "tracking_nav_title" = "Твої навички";
 "sort_by_label" = "Сортувати за";
+"export_pdf_title" = "Експорт у PDF";
+"fab_options" = "Показати опції";
 
 "sort_name_asc" = "Назва ↑";
 "sort_name_desc" = "Назва ↓";
@@ -140,6 +142,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "Додати нову навичку";
 "fab_view_stats" = "Переглянути статистику";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Керування лічильниками";
+"counter_details_section" = "Деталі";
+"counter_title_placeholder" = "Назва";
+"counter_step_label%d" = "Крок: %d";
+"counter_thresholds_section" = "Пороги (через кому)";
+"counter_thresholds_placeholder" = "наприклад, 100,200,500,10000";
+"counter_new_title" = "Новий лічильник";
+"create" = "Створити";
+"apply" = "Застосувати";
+"value" = "Значення";
+"add" = "Додати";
+"counter_progress_section" = "Прогрес";
+"counter_value_label" = "Значення";
+"counter_stage_max_label" = "Макс. етап";
+"counter_no_thresholds" = "Пороги не задані";
+"counter_reset_to_zero" = "Скинути до 0";
+"counter_configuration_section" = "Конфігурація";
+"counter_edit_thresholds" = "Редагувати пороги";
+"counter_set_value_section" = "Задати значення вручну";
+"counter_set_value_placeholder" = "-1000000 до 1000000";
+"counter_current_thresholds" = "Поточні пороги";
+"counter_add_threshold" = "Додати поріг";
+"counter_thresholds_title" = "Пороги";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Навички";
+"daily_evaluations_format" = "Щоденні оцінювання: %d/%d";
+"sort_menu_label" = "Сортувати";
+"reset_daily_limit" = "Скинути денний ліміт";
+"daily_limit_reached_title" = "Денний ліміт досягнуто";
+"daily_limit_reached_message_format" = "Ти досяг(ла) денного ліміту %d оцінювань навичок. Спробуй завтра!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Розподіл часу";
+"time_distribution_skill_format" = "Навичка: %@";
+"time_total_hours_format" = "Загальний час: %@ год";
+"time_mean_minutes_format" = "Середній інтервал: %@ хв";
+"time_std_minutes_format" = "Сер. відхилення: %@ хв";
+"distribution_nav_title" = "Розподіл";
+"global_time_distribution_title" = "Глобальний розподіл часу";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Назва";
+"sort_category" = "Категорія";
+"sort_stars_asc" = "Зірки ↑";
+"sort_stars_desc" = "Зірки ↓";
+"sort_difficulty_asc" = "Складність ↑";
+"sort_difficulty_desc" = "Складність ↓";
+"sort_completed_asc" = "Завершено ↑";
+"sort_completed_desc" = "Завершено ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Деталі навички";
+"close" = "Закрити";
+"change_rating_accessibility" = "Змінити оцінку";
+"description" = "Опис";
+"achievement_status" = "Статус досягнення";
+"obtained_label" = "Отримано:";
+"unknown" = "Невідомо";
+"your_rating_label" = "Твоя оцінка:";
+"verification_code_label" = "Код підтвердження:";
+"achievement_history" = "Історія досягнень";
+"update_your_rating" = "Онови свою оцінку";
+"no_stars" = "Без зірок";
+"update_and_verify" = "Оновити та підтвердити";
+"self_evaluation" = "Самооцінювання";
+"how_many_stars_question" = "Скільки зірок ти заслуговуєш за цю навичку?";
+"evaluate_my_skill" = "Оціни мою навичку";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Потрібне підтвердження";
+"verification_required_message" = "Введи код підтвердження, щоб підтвердити самооцінювання:";
+"verification_code_title" = "Код підтвердження:";
+"no_code_received" = "КОД НЕ ОТРИМАНО";
+"enter_the_code" = "Введи код:";
+"verify_and_evaluate" = "Підтвердити та оцінити";
+"verification_nav_title" = "Підтвердження";
+"invalid_code_title" = "Невірний код";
+"invalid_code_message" = "Введи правильний код.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Переглянути розподіл";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Конвертер часу";

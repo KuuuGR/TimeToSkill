@@ -15,6 +15,8 @@
 "tracking_title" = "Urmărirea abilităților";
 "tracking_nav_title" = "Abilitățile tale";
 "sort_by_label" = "Sortare după";
+"export_pdf_title" = "Exportă în PDF";
+"fab_options" = "Afișează opțiuni";
 
 "sort_name_asc" = "Nume ↑";
 "sort_name_desc" = "Nume ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Adaugă abilitate nouă";
 "fab_view_stats" = "Vezi statistici";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Gestionează contoare";
+"counter_details_section" = "Detalii";
+"counter_title_placeholder" = "Titlu";
+"counter_step_label%d" = "Pas: %d";
+"counter_thresholds_section" = "Praguri (separate prin virgulă)";
+"counter_thresholds_placeholder" = "ex.: 100,200,500,10000";
+"counter_new_title" = "Contor nou";
+"create" = "Creează";
+"apply" = "Aplică";
+"value" = "Valoare";
+"add" = "Adaugă";
+"counter_progress_section" = "Progres";
+"counter_value_label" = "Valoare";
+"counter_stage_max_label" = "Etapă max.";
+"counter_no_thresholds" = "Fără praguri";
+"counter_reset_to_zero" = "Resetează la 0";
+"counter_configuration_section" = "Configurație";
+"counter_edit_thresholds" = "Editează praguri";
+"counter_set_value_section" = "Setează valoare manual";
+"counter_set_value_placeholder" = "-1000000 la 1000000";
+"counter_current_thresholds" = "Praguri actuale";
+"counter_add_threshold" = "Adaugă prag";
+"counter_thresholds_title" = "Praguri";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Abilități";
+"daily_evaluations_format" = "Evaluări zilnice: %d/%d";
+"sort_menu_label" = "Sortează";
+"reset_daily_limit" = "Resetează limita zilnică";
+"daily_limit_reached_title" = "Limită zilnică atinsă";
+"daily_limit_reached_message_format" = "Ai atins limita zilnică de %d evaluări ale abilităților. Încearcă mâine!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Distribuția timpului";
+"time_distribution_skill_format" = "Abilitate: %@";
+"time_total_hours_format" = "Timp total: %@ h";
+"time_mean_minutes_format" = "Interval mediu: %@ min";
+"time_std_minutes_format" = "Abatere standard: %@ min";
+"distribution_nav_title" = "Distribuție";
+"global_time_distribution_title" = "Distribuția globală a timpului";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nume";
+"sort_category" = "Categorie";
+"sort_stars_asc" = "Stele ↑";
+"sort_stars_desc" = "Stele ↓";
+"sort_difficulty_asc" = "Dificultate ↑";
+"sort_difficulty_desc" = "Dificultate ↓";
+"sort_completed_asc" = "Finalizat ↑";
+"sort_completed_desc" = "Finalizat ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detalii abilitate";
+"close" = "Închide";
+"change_rating_accessibility" = "Schimbă evaluarea";
+"description" = "Descriere";
+"achievement_status" = "Starea realizării";
+"obtained_label" = "Obținut:";
+"unknown" = "Necunoscut";
+"your_rating_label" = "Evaluarea ta:";
+"verification_code_label" = "Cod de verificare:";
+"achievement_history" = "Istoric realizări";
+"update_your_rating" = "Actualizează-ți evaluarea";
+"no_stars" = "Fără stele";
+"update_and_verify" = "Actualizează și verifică";
+"self_evaluation" = "Autoevaluare";
+"how_many_stars_question" = "Câte stele meriți pentru această abilitate?";
+"evaluate_my_skill" = "Evaluează-mi abilitatea";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verificare necesară";
+"verification_required_message" = "Introdu codul de verificare pentru a confirma autoevaluarea:";
+"verification_code_title" = "Cod de verificare:";
+"no_code_received" = "NU S-A PRIMIT COD";
+"enter_the_code" = "Introdu codul:";
+"verify_and_evaluate" = "Verifică și evaluează";
+"verification_nav_title" = "Verificare";
+"invalid_code_title" = "Cod invalid";
+"invalid_code_message" = "Introdu codul corect.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Vezi distribuția";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Adaugă abilitate personalizată";
+"unlock_custom_skills_title" = "Deblochează abilități personalizate";
+"unlock_custom_skills_subtitle" = "Creează-ți propriile realizări și organizează-ți lista.";
+"unlock_benefit_create" = "Creează abilitate cu titlu, descriere și dificultate";
+"unlock_benefit_delete" = "Elimină abilități personalizate dacă greșești";
+"unlock_benefit_support" = "Susține dezvoltatorul";
+"unlock_benefit_reset_limit" = "Resetează limita zilnică de evaluări";
+"restore_purchases" = "Restabilește achizițiile";
+"buy_unlock" = "Cumpără deblocare (Dev)";
+"unlock_title_short" = "Deblochează";
+"difficulty_label" = "Dificultate";
+"star_descriptions_title" = "Descrieri nivel stele";
+"one_star_description" = "Descriere 1★";
+"two_star_description" = "Descriere 2★";
+"three_star_description" = "Descriere 3★";
+"image_label" = "Imagine";
+"choose_image" = "Alege imagine";
+"category_label" = "Categorie";
+"category_custom_placeholder" = "Categorie personalizată";
+
+// MARK: - Preset Categories
+"cat_custom" = "Personalizată";
+"cat_music" = "Muzică";
+"cat_language" = "Limbă";
+"cat_art" = "Artă";
+"cat_coding" = "Programare";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Gătit";
+"cat_photography" = "Fotografie";
+"cat_writing" = "Scriere";
+"cat_public_speaking" = "Vorbit în public";
+"cat_science" = "Știință";
+"cat_math" = "Matematică";
+"cat_engineering" = "Inginerie";
+"cat_design" = "Design";
+"cat_business" = "Afaceri";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finanțe";
+"cat_investing" = "Investiții";
+"cat_entrepreneurship" = "Antreprenoriat";
+"cat_psychology" = "Psihologie";
+"cat_education" = "Educație";
+"cat_history" = "Istorie";
+"cat_geography" = "Geografie";
+"cat_health" = "Sănătate";
+"cat_meditation" = "Meditație";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sport";
+"cat_dance" = "Dans";
+"cat_theatre" = "Teatru";
+"cat_film" = "Film";
+"cat_editing" = "Editare video";
+"cat_3d" = "Modelare 3D";
+"cat_ai" = "IA/ML";
+"cat_data" = "Știința datelor";
+"cat_cybersecurity" = "Securitate cibernetică";
+"cat_gardening" = "Grădinărit";
+"cat_diy" = "DIY";
+"cat_travel" = "Călătorii";
+"cat_cars" = "Automobile";
+"cat_parenting" = "Părinți";
+"cat_animals" = "Animale";
+"hide" = "Ascunde";
+"unhide" = "Afișează";
+"archived_section" = "Arhivat";
+"counters_empty_title" = "Niciun contor";
+"counters_empty_description" = "Creează primul tău contor pentru a urmări progresul numeric.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Convertor de timp";

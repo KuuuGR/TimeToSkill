@@ -15,6 +15,8 @@
 "tracking_title" = "Theo dõi kỹ năng";
 "tracking_nav_title" = "Kỹ năng của bạn";
 "sort_by_label" = "Sắp xếp theo";
+"export_pdf_title" = "Xuất ra PDF";
+"fab_options" = "Hiển thị tùy chọn";
 
 "sort_name_asc" = "Tên ↑";
 "sort_name_desc" = "Tên ↓";
@@ -140,6 +142,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "Thêm kỹ năng mới";
 "fab_view_stats" = "Xem thống kê";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Quản lý bộ đếm";
+"counter_details_section" = "Chi tiết";
+"counter_title_placeholder" = "Tiêu đề";
+"counter_step_label%d" = "Bước: %d";
+"counter_thresholds_section" = "Ngưỡng (phân tách bằng dấu phẩy)";
+"counter_thresholds_placeholder" = "vd. 100,200,500,10000";
+"counter_new_title" = "Bộ đếm mới";
+"create" = "Tạo";
+"apply" = "Áp dụng";
+"value" = "Giá trị";
+"add" = "Thêm";
+"counter_progress_section" = "Tiến độ";
+"counter_value_label" = "Giá trị";
+"counter_stage_max_label" = "Mức tối đa";
+"counter_no_thresholds" = "Chưa đặt ngưỡng";
+"counter_reset_to_zero" = "Đặt về 0";
+"counter_configuration_section" = "Cấu hình";
+"counter_edit_thresholds" = "Sửa ngưỡng";
+"counter_set_value_section" = "Đặt giá trị thủ công";
+"counter_set_value_placeholder" = "-1000000 đến 1000000";
+"counter_current_thresholds" = "Ngưỡng hiện tại";
+"counter_add_threshold" = "Thêm ngưỡng";
+"counter_thresholds_title" = "Ngưỡng";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Kỹ năng";
+"daily_evaluations_format" = "Đánh giá hằng ngày: %d/%d";
+"sort_menu_label" = "Sắp xếp";
+"reset_daily_limit" = "Đặt lại giới hạn hằng ngày";
+"daily_limit_reached_title" = "Đạt giới hạn hằng ngày";
+"daily_limit_reached_message_format" = "Bạn đã đạt giới hạn %d đánh giá kỹ năng mỗi ngày. Hãy thử lại vào ngày mai!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Phân bố thời gian";
+"time_distribution_skill_format" = "Kỹ năng: %@";
+"time_total_hours_format" = "Tổng thời gian: %@ giờ";
+"time_mean_minutes_format" = "Khoảng trung bình: %@ phút";
+"time_std_minutes_format" = "Độ lệch chuẩn: %@ phút";
+"distribution_nav_title" = "Phân bố";
+"global_time_distribution_title" = "Phân bố thời gian toàn cục";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Tên";
+"sort_category" = "Danh mục";
+"sort_stars_asc" = "Sao ↑";
+"sort_stars_desc" = "Sao ↓";
+"sort_difficulty_asc" = "Độ khó ↑";
+"sort_difficulty_desc" = "Độ khó ↓";
+"sort_completed_asc" = "Hoàn thành ↑";
+"sort_completed_desc" = "Hoàn thành ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Chi tiết kỹ năng";
+"close" = "Đóng";
+"change_rating_accessibility" = "Thay đổi đánh giá";
+"description" = "Mô tả";
+"achievement_status" = "Trạng thái thành tựu";
+"obtained_label" = "Đạt được:";
+"unknown" = "Chưa rõ";
+"your_rating_label" = "Đánh giá của bạn:";
+"verification_code_label" = "Mã xác minh:";
+"achievement_history" = "Lịch sử thành tựu";
+"update_your_rating" = "Cập nhật đánh giá";
+"no_stars" = "Không có sao";
+"update_and_verify" = "Cập nhật & xác minh";
+"self_evaluation" = "Tự đánh giá";
+"how_many_stars_question" = "Bạn xứng đáng bao nhiêu sao cho kỹ năng này?";
+"evaluate_my_skill" = "Đánh giá kỹ năng của tôi";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Cần xác minh";
+"verification_required_message" = "Nhập mã xác minh để xác nhận tự đánh giá:";
+"verification_code_title" = "Mã xác minh:";
+"no_code_received" = "KHÔNG NHẬN ĐƯỢC MÃ";
+"enter_the_code" = "Nhập mã:";
+"verify_and_evaluate" = "Xác minh & đánh giá";
+"verification_nav_title" = "Xác minh";
+"invalid_code_title" = "Mã không hợp lệ";
+"invalid_code_message" = "Nhập mã chính xác.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Xem phân bố";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Bộ Chuyển Đổi Thời Gian";

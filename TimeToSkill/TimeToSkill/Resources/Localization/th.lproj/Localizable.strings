@@ -15,6 +15,8 @@
 "tracking_title" = "การติดตามทักษะ";
 "tracking_nav_title" = "ทักษะของคุณ";
 "sort_by_label" = "เรียงตาม";
+"export_pdf_title" = "ส่งออกเป็น PDF";
+"fab_options" = "แสดงตัวเลือก";
 
 "sort_name_asc" = "ชื่อ ↑";
 "sort_name_desc" = "ชื่อ ↓";
@@ -140,6 +142,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "เพิ่มทักษะใหม่";
 "fab_view_stats" = "ดูสถิติ";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "จัดการตัวนับ";
+"counter_details_section" = "รายละเอียด";
+"counter_title_placeholder" = "ชื่อเรื่อง";
+"counter_step_label%d" = "ขั้นตอน: %d";
+"counter_thresholds_section" = "ค่าเกณฑ์ (คั่นด้วยจุลภาค)";
+"counter_thresholds_placeholder" = "เช่น 100,200,500,10000";
+"counter_new_title" = "ตัวนับใหม่";
+"create" = "สร้าง";
+"apply" = "นำไปใช้";
+"value" = "ค่า";
+"add" = "เพิ่ม";
+"counter_progress_section" = "ความคืบหน้า";
+"counter_value_label" = "ค่า";
+"counter_stage_max_label" = "ขั้นสูงสุด";
+"counter_no_thresholds" = "ยังไม่ได้ตั้งค่าเกณฑ์";
+"counter_reset_to_zero" = "รีเซ็ตเป็น 0";
+"counter_configuration_section" = "การกำหนดค่า";
+"counter_edit_thresholds" = "แก้ไขค่าเกณฑ์";
+"counter_set_value_section" = "ตั้งค่าด้วยตนเอง";
+"counter_set_value_placeholder" = "-1000000 ถึง 1000000";
+"counter_current_thresholds" = "ค่าเกณฑ์ปัจจุบัน";
+"counter_add_threshold" = "เพิ่มค่าเกณฑ์";
+"counter_thresholds_title" = "ค่าเกณฑ์";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "ทักษะ";
+"daily_evaluations_format" = "การประเมินรายวัน: %d/%d";
+"sort_menu_label" = "เรียงลำดับ";
+"reset_daily_limit" = "รีเซ็ตขีดจำกัดรายวัน";
+"daily_limit_reached_title" = "ถึงขีดจำกัดรายวันแล้ว";
+"daily_limit_reached_message_format" = "คุณถึงขีดจำกัด %d การประเมินทักษะต่อวันแล้ว ลองใหม่พรุ่งนี้!";
+"ok" = "ตกลง";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "การกระจายเวลา";
+"time_distribution_skill_format" = "ทักษะ: %@";
+"time_total_hours_format" = "เวลารวม: %@ ชม.";
+"time_mean_minutes_format" = "ช่วงเวลาเฉลี่ย: %@ นาที";
+"time_std_minutes_format" = "ส่วนเบี่ยงเบนมาตรฐาน: %@ นาที";
+"distribution_nav_title" = "การกระจาย";
+"global_time_distribution_title" = "การกระจายเวลาทั้งหมด";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "ชื่อ";
+"sort_category" = "หมวดหมู่";
+"sort_stars_asc" = "ดาว ↑";
+"sort_stars_desc" = "ดาว ↓";
+"sort_difficulty_asc" = "ความยาก ↑";
+"sort_difficulty_desc" = "ความยาก ↓";
+"sort_completed_asc" = "เสร็จสิ้น ↑";
+"sort_completed_desc" = "เสร็จสิ้น ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "รายละเอียดทักษะ";
+"close" = "ปิด";
+"change_rating_accessibility" = "เปลี่ยนการให้คะแนน";
+"description" = "คำอธิบาย";
+"achievement_status" = "สถานะความสำเร็จ";
+"obtained_label" = "ได้รับ:";
+"unknown" = "ไม่ทราบ";
+"your_rating_label" = "การให้คะแนนของคุณ:";
+"verification_code_label" = "รหัสยืนยัน:";
+"achievement_history" = "ประวัติความสำเร็จ";
+"update_your_rating" = "อัปเดตการให้คะแนน";
+"no_stars" = "ไม่มีดาว";
+"update_and_verify" = "อัปเดตและยืนยัน";
+"self_evaluation" = "ประเมินตนเอง";
+"how_many_stars_question" = "คุณสมควรได้กี่ดาวสำหรับทักษะนี้?";
+"evaluate_my_skill" = "ประเมินทักษะของฉัน";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "ต้องยืนยัน";
+"verification_required_message" = "ป้อนรหัสยืนยันเพื่อยืนยันการประเมินตนเอง:";
+"verification_code_title" = "รหัสยืนยัน:";
+"no_code_received" = "ไม่ได้รับรหัส";
+"enter_the_code" = "ป้อนรหัส:";
+"verify_and_evaluate" = "ยืนยันและประเมิน";
+"verification_nav_title" = "การยืนยัน";
+"invalid_code_title" = "รหัสไม่ถูกต้อง";
+"invalid_code_message" = "ป้อนรหัสที่ถูกต้อง";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "ดูการกระจาย";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "เครื่องมือแปลงเวลา";

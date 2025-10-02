@@ -26,6 +26,8 @@
 "tracking_title" = "Beceri Takibi";
 "tracking_nav_title" = "Becerilerin";
 "sort_by_label" = "Sıralama Kriteri";
+"export_pdf_title" = "PDF olarak dışa aktar";
+"fab_options" = "Seçenekleri göster";
 
 "sort_name_asc" = "İsim ↑";
 "sort_name_desc" = "İsim ↓";
@@ -151,3 +153,88 @@
 // MARK: - FABButton
 "fab_add_skill" = "Yeni beceri ekle";
 "fab_view_stats" = "İstatistikleri Görüntüle";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Sayaçları Yönet";
+"counter_details_section" = "Ayrıntılar";
+"counter_title_placeholder" = "Başlık";
+"counter_step_label%d" = "Adım: %d";
+"counter_thresholds_section" = "Eşikler (virgülle ayrılmış)";
+"counter_thresholds_placeholder" = "örn. 100,200,500,10000";
+"counter_new_title" = "Yeni Sayaç";
+"create" = "Oluştur";
+"apply" = "Uygula";
+"value" = "Değer";
+"add" = "Ekle";
+"counter_progress_section" = "İlerleme";
+"counter_value_label" = "Değer";
+"counter_stage_max_label" = "Maks. aşama";
+"counter_no_thresholds" = "Eşik ayarlı değil";
+"counter_reset_to_zero" = "0'a sıfırla";
+"counter_configuration_section" = "Yapılandırma";
+"counter_edit_thresholds" = "Eşikleri düzenle";
+"counter_set_value_section" = "Değeri manuel ayarla";
+"counter_set_value_placeholder" = "-1000000 ile 1000000";
+"counter_current_thresholds" = "Mevcut eşikler";
+"counter_add_threshold" = "Eşik ekle";
+"counter_thresholds_title" = "Eşikler";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Beceriler";
+"daily_evaluations_format" = "Günlük değerlendirmeler: %d/%d";
+"sort_menu_label" = "Sırala";
+"reset_daily_limit" = "Günlük sınırı sıfırla";
+"daily_limit_reached_title" = "Günlük sınır aşıldı";
+"daily_limit_reached_message_format" = "%d günlük beceri değerlendirme sınırına ulaştın. Yarın tekrar dene!";
+"ok" = "Tamam";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Zaman dağılımı";
+"time_distribution_skill_format" = "Beceri: %@";
+"time_total_hours_format" = "Toplam süre: %@ sa";
+"time_mean_minutes_format" = "Ortalama aralık: %@ dk";
+"time_std_minutes_format" = "Std. sapma: %@ dk";
+"distribution_nav_title" = "Dağılım";
+"global_time_distribution_title" = "Küresel zaman dağılımı";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "İsim";
+"sort_category" = "Kategori";
+"sort_stars_asc" = "Yıldızlar ↑";
+"sort_stars_desc" = "Yıldızlar ↓";
+"sort_difficulty_asc" = "Zorluk ↑";
+"sort_difficulty_desc" = "Zorluk ↓";
+"sort_completed_asc" = "Tamamlanan ↑";
+"sort_completed_desc" = "Tamamlanan ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Beceri ayrıntıları";
+"close" = "Kapat";
+"change_rating_accessibility" = "Puanı değiştir";
+"description" = "Açıklama";
+"achievement_status" = "Başarı durumu";
+"obtained_label" = "Elde edildi:";
+"unknown" = "Bilinmiyor";
+"your_rating_label" = "Puanın:";
+"verification_code_label" = "Doğrulama Kodu:";
+"achievement_history" = "Başarı geçmişi";
+"update_your_rating" = "Puanını güncelle";
+"no_stars" = "Yıldız yok";
+"update_and_verify" = "Güncelle & doğrula";
+"self_evaluation" = "Öz değerlendirme";
+"how_many_stars_question" = "Bu beceri için kaç yıldız hak ediyorsun?";
+"evaluate_my_skill" = "Becerimi değerlendir";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Doğrulama gerekli";
+"verification_required_message" = "Öz değerlendirmeni onaylamak için doğrulama kodunu gir:";
+"verification_code_title" = "Doğrulama Kodu:";
+"no_code_received" = "KOD GELMEDİ";
+"enter_the_code" = "Kodu gir:";
+"verify_and_evaluate" = "Doğrula & değerlendir";
+"verification_nav_title" = "Doğrulama";
+"invalid_code_title" = "Geçersiz kod";
+"invalid_code_message" = "Doğru kodu gir.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Dağılımı görüntüle";

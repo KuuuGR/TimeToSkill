@@ -15,6 +15,8 @@
 "tracking_title" = "Készségek követése";
 "tracking_nav_title" = "Készségeid";
 "sort_by_label" = "Rendezés szerint";
+"export_pdf_title" = "Exportálás PDF-be";
+"fab_options" = "Beállítások megjelenítése";
 
 "sort_name_asc" = "Név ↑";
 "sort_name_desc" = "Név ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Új készség hozzáadása";
 "fab_view_stats" = "Statisztikák megtekintése";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Számlálók kezelése";
+"counter_details_section" = "Részletek";
+"counter_title_placeholder" = "Cím";
+"counter_step_label%d" = "Lépés: %d";
+"counter_thresholds_section" = "Küszöbök (vesszővel elválasztva)";
+"counter_thresholds_placeholder" = "pl. 100,200,500,10000";
+"counter_new_title" = "Új számláló";
+"create" = "Létrehozás";
+"apply" = "Alkalmaz";
+"value" = "Érték";
+"add" = "Hozzáadás";
+"counter_progress_section" = "Előrehaladás";
+"counter_value_label" = "Érték";
+"counter_stage_max_label" = "Max. szint";
+"counter_no_thresholds" = "Nincsenek küszöbök";
+"counter_reset_to_zero" = "Vissza 0-ra";
+"counter_configuration_section" = "Konfiguráció";
+"counter_edit_thresholds" = "Küszöbök szerkesztése";
+"counter_set_value_section" = "Érték megadása kézzel";
+"counter_set_value_placeholder" = "-1000000 – 1000000";
+"counter_current_thresholds" = "Jelenlegi küszöbök";
+"counter_add_threshold" = "Küszöb hozzáadása";
+"counter_thresholds_title" = "Küszöbök";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Készségek";
+"daily_evaluations_format" = "Napi értékelések: %d/%d";
+"sort_menu_label" = "Rendezés";
+"reset_daily_limit" = "Napi limit visszaállítása";
+"daily_limit_reached_title" = "Napi limit elérve";
+"daily_limit_reached_message_format" = "Elérted a %d napi készségértékelés limitet. Próbáld meg holnap!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Időeloszlás";
+"time_distribution_skill_format" = "Készség: %@";
+"time_total_hours_format" = "Összidő: %@ óra";
+"time_mean_minutes_format" = "Átlagos intervallum: %@ perc";
+"time_std_minutes_format" = "Szórás: %@ perc";
+"distribution_nav_title" = "Eloszlás";
+"global_time_distribution_title" = "Globális időeloszlás";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Név";
+"sort_category" = "Kategória";
+"sort_stars_asc" = "Csillagok ↑";
+"sort_stars_desc" = "Csillagok ↓";
+"sort_difficulty_asc" = "Nehézség ↑";
+"sort_difficulty_desc" = "Nehézség ↓";
+"sort_completed_asc" = "Kész ↑";
+"sort_completed_desc" = "Kész ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Készség részletei";
+"close" = "Bezárás";
+"change_rating_accessibility" = "Értékelés módosítása";
+"description" = "Leírás";
+"achievement_status" = "Teljesítmény állapota";
+"obtained_label" = "Elérve:";
+"unknown" = "Ismeretlen";
+"your_rating_label" = "Értékelésed:";
+"verification_code_label" = "Ellenőrzőkód:";
+"achievement_history" = "Teljesítmények története";
+"update_your_rating" = "Értékelés frissítése";
+"no_stars" = "Nincs csillag";
+"update_and_verify" = "Frissítés és ellenőrzés";
+"self_evaluation" = "Önértékelés";
+"how_many_stars_question" = "Hány csillagot érdemelsz ezért a készségért?";
+"evaluate_my_skill" = "Készségem értékelése";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Ellenőrzés szükséges";
+"verification_required_message" = "Írd be az ellenőrzőkódot az önértékelés megerősítéséhez:";
+"verification_code_title" = "Ellenőrzőkód:";
+"no_code_received" = "NEM ÉRKEZETT KÓD";
+"enter_the_code" = "Írd be a kódot:";
+"verify_and_evaluate" = "Ellenőrizd és értékeld";
+"verification_nav_title" = "Ellenőrzés";
+"invalid_code_title" = "Érvénytelen kód";
+"invalid_code_message" = "Írj be helyes kódot.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Eloszlás megtekintése";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Egyedi készség hozzáadása";
+"unlock_custom_skills_title" = "Egyedi készségek feloldása";
+"unlock_custom_skills_subtitle" = "Hozz létre saját teljesítményeket és kezeld a listád.";
+"unlock_benefit_create" = "Hozz létre készséget cím, leírás és nehézség megadásával";
+"unlock_benefit_delete" = "Távolíts el egyedi készségeket hiba esetén";
+"unlock_benefit_support" = "Támogasd a fejlesztőt";
+"unlock_benefit_reset_limit" = "Napi értékelési limit visszaállítása";
+"restore_purchases" = "Vásárlások visszaállítása";
+"buy_unlock" = "Feloldás vásárlása (Dev)";
+"unlock_title_short" = "Feloldás";
+"difficulty_label" = "Nehézség";
+"star_descriptions_title" = "Csillagszintek leírása";
+"one_star_description" = "1★ leírás";
+"two_star_description" = "2★ leírás";
+"three_star_description" = "3★ leírás";
+"image_label" = "Kép";
+"choose_image" = "Kép választása";
+"category_label" = "Kategória";
+"category_custom_placeholder" = "Egyedi kategória";
+
+// MARK: - Preset Categories
+"cat_custom" = "Egyedi";
+"cat_music" = "Zene";
+"cat_language" = "Nyelv";
+"cat_art" = "Művészet";
+"cat_coding" = "Programozás";
+"cat_fitness" = "Fitnesz";
+"cat_cooking" = "Főzés";
+"cat_photography" = "Fotózás";
+"cat_writing" = "Írás";
+"cat_public_speaking" = "Nyilvános beszéd";
+"cat_science" = "Tudomány";
+"cat_math" = "Matematika";
+"cat_engineering" = "Mérnöki";
+"cat_design" = "Dizájn";
+"cat_business" = "Üzlet";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Pénzügy";
+"cat_investing" = "Befektetés";
+"cat_entrepreneurship" = "Vállalkozás";
+"cat_psychology" = "Pszichológia";
+"cat_education" = "Oktatás";
+"cat_history" = "Történelem";
+"cat_geography" = "Földrajz";
+"cat_health" = "Egészség";
+"cat_meditation" = "Meditáció";
+"cat_yoga" = "Jóga";
+"cat_sports" = "Sport";
+"cat_dance" = "Tánc";
+"cat_theatre" = "Színház";
+"cat_film" = "Film";
+"cat_editing" = "Videószerkesztés";
+"cat_3d" = "3D modellezés";
+"cat_ai" = "AI/ML";
+"cat_data" = "Adattudomány";
+"cat_cybersecurity" = "Kiberbiztonság";
+"cat_gardening" = "Kertészkedés";
+"cat_diy" = "Barkács";
+"cat_travel" = "Utazás";
+"cat_cars" = "Autózás";
+"cat_parenting" = "Szülőség";
+"cat_animals" = "Állatok";
+"hide" = "Elrejtés";
+"unhide" = "Megjelenítés";
+"archived_section" = "Archivált";
+"counters_empty_title" = "Nincsenek számlálók";
+"counters_empty_description" = "Hozd létre az első számlálót a számszerű előrehaladás követéséhez.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Időátváltó";

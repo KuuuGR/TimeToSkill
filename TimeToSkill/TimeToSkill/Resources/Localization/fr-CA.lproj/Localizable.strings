@@ -15,6 +15,8 @@
 "tracking_title" = "Suivi des compétences";
 "tracking_nav_title" = "Vos compétences";
 "sort_by_label" = "Trier par";
+"export_pdf_title" = "Exporter en PDF";
+"fab_options" = "Afficher les options";
 
 "sort_name_asc" = "Nom ↑";
 "sort_name_desc" = "Nom ↓";
@@ -140,6 +142,91 @@
 // MARK: - FABButton
 "fab_add_skill" = "Ajouter une compétence";
 "fab_view_stats" = "Voir les statistiques";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Gérer les compteurs";
+"counter_details_section" = "Détails";
+"counter_title_placeholder" = "Titre";
+"counter_step_label%d" = "Étape : %d";
+"counter_thresholds_section" = "Seuils (séparés par des virgules)";
+"counter_thresholds_placeholder" = "ex. 100,200,500,10000";
+"counter_new_title" = "Nouveau compteur";
+"create" = "Créer";
+"apply" = "Appliquer";
+"value" = "Valeur";
+"add" = "Ajouter";
+"counter_progress_section" = "Progression";
+"counter_value_label" = "Valeur";
+"counter_stage_max_label" = "Étape max";
+"counter_no_thresholds" = "Aucun seuil défini";
+"counter_reset_to_zero" = "Réinitialiser à 0";
+"counter_configuration_section" = "Configuration";
+"counter_edit_thresholds" = "Modifier les seuils";
+"counter_set_value_section" = "Définir la valeur manuellement";
+"counter_set_value_placeholder" = "-1000000 à 1000000";
+"counter_current_thresholds" = "Seuils actuels";
+"counter_add_threshold" = "Ajouter un seuil";
+"counter_thresholds_title" = "Seuils";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Compétences";
+"daily_evaluations_format" = "Évaluations quotidiennes : %d/%d";
+"sort_menu_label" = "Trier";
+"reset_daily_limit" = "Réinitialiser la limite quotidienne";
+"daily_limit_reached_title" = "Limite quotidienne atteinte";
+"daily_limit_reached_message_format" = "Tu as atteint la limite quotidienne de %d évaluations de compétences. Réessaie demain !";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Répartition du temps";
+"time_distribution_skill_format" = "Compétence : %@";
+"time_total_hours_format" = "Temps total : %@ h";
+"time_mean_minutes_format" = "Intervalle moyen : %@ min";
+"time_std_minutes_format" = "Écart-type : %@ min";
+"distribution_nav_title" = "Répartition";
+"global_time_distribution_title" = "Répartition globale du temps";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nom";
+"sort_category" = "Catégorie";
+"sort_stars_asc" = "Étoiles ↑";
+"sort_stars_desc" = "Étoiles ↓";
+"sort_difficulty_asc" = "Difficulté ↑";
+"sort_difficulty_desc" = "Difficulté ↓";
+"sort_completed_asc" = "Terminé ↑";
+"sort_completed_desc" = "Terminé ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Détails de la compétence";
+"close" = "Fermer";
+"change_rating_accessibility" = "Changer la note";
+"description" = "Description";
+"achievement_status" = "Statut de l'accomplissement";
+"obtained_label" = "Obtenu :";
+"unknown" = "Inconnu";
+"your_rating_label" = "Ta note :";
+"verification_code_label" = "Code de vérification :";
+"achievement_history" = "Historique des accomplissements";
+"update_your_rating" = "Met à jour ta note";
+"no_stars" = "Aucune étoile";
+"update_and_verify" = "Mettre à jour & vérifier";
+"self_evaluation" = "Autoévaluation";
+"how_many_stars_question" = "Combien d'étoiles mérites-tu pour cette compétence ?";
+"evaluate_my_skill" = "Évaluer ma compétence";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Vérification requise";
+"verification_required_message" = "Entre le code de vérification pour confirmer ton autoévaluation :";
+"verification_code_title" = "Code de vérification :";
+"no_code_received" = "AUCUN CODE REÇU";
+"enter_the_code" = "Entre le code :";
+"verify_and_evaluate" = "Vérifier & évaluer";
+"verification_nav_title" = "Vérification";
+"invalid_code_title" = "Code invalide";
+"invalid_code_message" = "Entre le bon code.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Voir la répartition";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Convertisseur de temps";

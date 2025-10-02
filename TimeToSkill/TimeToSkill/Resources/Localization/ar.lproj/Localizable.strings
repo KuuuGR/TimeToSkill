@@ -1,3 +1,8 @@
+"archived_section" = "مؤرشف";
+"hide" = "إخفاء";
+"unhide" = "إظهار";
+"counters_empty_title" = "لا توجد عدّادات";
+"counters_empty_description" = "أنشئ أول عدّاد لبدء تتبع التقدم الرقمي.";
 // Arabic
 // MARK: - MainView
 "main_manage_trackers" = "إدارة المتابعات";
@@ -14,6 +19,8 @@
 "tracking_title" = "تتبع المهارات";
 "tracking_nav_title" = "مهاراتك";
 "sort_by_label" = "ترتيب حسب";
+"export_pdf_title" = "تصدير إلى PDF";
+"fab_options" = "عرض الخيارات";
 
 "sort_name_asc" = "الاسم ↑";
 "sort_name_desc" = "الاسم ↓";
@@ -139,6 +146,155 @@
 // MARK: - FABButton
 "fab_add_skill" = "أضف مهارة جديدة";
 "fab_view_stats" = "عرض الإحصاءات";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "إدارة العدّادات";
+"counter_details_section" = "التفاصيل";
+"counter_title_placeholder" = "العنوان";
+"counter_step_label%d" = "الخطوة: %d";
+"counter_thresholds_section" = "العتبات (مفصولة بفواصل)";
+"counter_thresholds_placeholder" = "مثال: 100,200,500,10000";
+"counter_new_title" = "عدّاد جديد";
+"create" = "إنشاء";
+"apply" = "تطبيق";
+"value" = "القيمة";
+"add" = "إضافة";
+"counter_progress_section" = "التقدم";
+"counter_value_label" = "القيمة";
+"counter_stage_max_label" = "المرحلة القصوى";
+"counter_no_thresholds" = "لم يتم تعيين عتبات";
+"counter_reset_to_zero" = "إعادة التعيين إلى 0";
+"counter_configuration_section" = "الإعداد";
+"counter_edit_thresholds" = "تعديل العتبات";
+"counter_set_value_section" = "تعيين القيمة يدويًا";
+"counter_set_value_placeholder" = "-1000000 إلى 1000000";
+"counter_current_thresholds" = "العتبات الحالية";
+"counter_add_threshold" = "إضافة عتبة";
+"counter_thresholds_title" = "العتبات";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "المهارات";
+"daily_evaluations_format" = "التقييمات اليومية: %d/%d";
+"sort_menu_label" = "ترتيب";
+"reset_daily_limit" = "إعادة تعيين الحد اليومي";
+"daily_limit_reached_title" = "تم بلوغ الحد اليومي";
+"daily_limit_reached_message_format" = "لقد بلغت حد %d تقييمًا يوميًا للمهارات. جرّب مجددًا غدًا!";
+"ok" = "حسنًا";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "توزيع الوقت";
+"time_distribution_skill_format" = "المهارة: %@";
+"time_total_hours_format" = "الوقت الكلي: %@ س";
+"time_mean_minutes_format" = "المتوسط: %@ د";
+"time_std_minutes_format" = "الانحراف المعياري: %@ د";
+"distribution_nav_title" = "التوزيع";
+"global_time_distribution_title" = "التوزيع العالمي للوقت";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "الاسم";
+"sort_category" = "الفئة";
+"sort_stars_asc" = "النجوم ↑";
+"sort_stars_desc" = "النجوم ↓";
+"sort_difficulty_asc" = "الصعوبة ↑";
+"sort_difficulty_desc" = "الصعوبة ↓";
+"sort_completed_asc" = "المكتمل ↑";
+"sort_completed_desc" = "المكتمل ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "تفاصيل المهارة";
+"close" = "إغلاق";
+"change_rating_accessibility" = "تغيير التقييم";
+"description" = "الوصف";
+"achievement_status" = "حالة الإنجاز";
+"obtained_label" = "تم الحصول عليه:";
+"unknown" = "غير معروف";
+"your_rating_label" = "تقييمك:";
+"verification_code_label" = "رمز التحقق:";
+"achievement_history" = "سجل الإنجازات";
+"update_your_rating" = "حدّث تقييمك";
+"no_stars" = "بدون نجوم";
+"update_and_verify" = "تحديث والتحقق";
+"self_evaluation" = "تقييم ذاتي";
+"how_many_stars_question" = "كم نجمة تستحق لهذه المهارة؟";
+"evaluate_my_skill" = "قيّم مهارتي";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "التحقق مطلوب";
+"verification_required_message" = "أدخل رمز التحقق لتأكيد التقييم الذاتي:";
+"verification_code_title" = "رمز التحقق:";
+"no_code_received" = "لم يُستلم رمز";
+"enter_the_code" = "أدخل الرمز:";
+"verify_and_evaluate" = "تحقق وقيّم";
+"verification_nav_title" = "التحقق";
+"invalid_code_title" = "رمز غير صحيح";
+"invalid_code_message" = "يرجى إدخال الرمز الصحيح.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "عرض التوزيع";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "أضف مهارة مخصصة";
+"unlock_custom_skills_title" = "افتح المهارات المخصصة";
+"unlock_custom_skills_subtitle" = "أنشئ إنجازاتك الخاصة وأدر قائمتك.";
+"unlock_benefit_create" = "أنشئ مهارة بعنوان ووصف وصعوبة";
+"unlock_benefit_delete" = "أزل المهارات المخصصة عند الخطأ";
+"unlock_benefit_support" = "ادعم المطور";
+"unlock_benefit_reset_limit" = "أعد تعيين حد التقييم اليومي";
+"restore_purchases" = "استعادة المشتريات";
+"buy_unlock" = "شراء الفتح (Dev)";
+"unlock_title_short" = "فتح";
+"difficulty_label" = "الصعوبة";
+"star_descriptions_title" = "أوصاف مستويات النجوم";
+"one_star_description" = "وصف 1★";
+"two_star_description" = "وصف 2★";
+"three_star_description" = "وصف 3★";
+"image_label" = "صورة";
+"choose_image" = "اختر صورة";
+"category_label" = "الفئة";
+"category_custom_placeholder" = "فئة مخصصة";
+
+// MARK: - Preset Categories
+"cat_custom" = "مخصص";
+"cat_music" = "موسيقى";
+"cat_language" = "لغة";
+"cat_art" = "فن";
+"cat_coding" = "برمجة";
+"cat_fitness" = "لياقة";
+"cat_cooking" = "طبخ";
+"cat_photography" = "تصوير";
+"cat_writing" = "كتابة";
+"cat_public_speaking" = "التحدث أمام الجمهور";
+"cat_science" = "علوم";
+"cat_math" = "رياضيات";
+"cat_engineering" = "هندسة";
+"cat_design" = "تصميم";
+"cat_business" = "أعمال";
+"cat_marketing" = "تسويق";
+"cat_finance" = "تمويل";
+"cat_investing" = "استثمار";
+"cat_entrepreneurship" = "ريادة أعمال";
+"cat_psychology" = "علم النفس";
+"cat_education" = "تعليم";
+"cat_history" = "تاريخ";
+"cat_geography" = "جغرافيا";
+"cat_health" = "صحة";
+"cat_meditation" = "تأمل";
+"cat_yoga" = "يوغا";
+"cat_sports" = "رياضة";
+"cat_dance" = "رقص";
+"cat_theatre" = "مسرح";
+"cat_film" = "فيلم";
+"cat_editing" = "تحرير فيديو";
+"cat_3d" = "نمذجة ثلاثية الأبعاد";
+"cat_ai" = "ذكاء اصطناعي/تعلم آلي";
+"cat_data" = "علوم البيانات";
+"cat_cybersecurity" = "أمن سيبراني";
+"cat_gardening" = "بستنة";
+"cat_diy" = "اصنعها بنفسك";
+"cat_travel" = "سفر";
+"cat_cars" = "سيارات";
+"cat_parenting" = "تربية";
+"cat_animals" = "حيوانات";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "محول الوقت";

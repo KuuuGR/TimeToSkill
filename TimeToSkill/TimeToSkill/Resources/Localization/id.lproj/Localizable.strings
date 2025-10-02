@@ -15,6 +15,8 @@
 "tracking_title" = "Pelacakan Keterampilan";
 "tracking_nav_title" = "Keterampilanmu";
 "sort_by_label" = "Urutkan berdasarkan";
+"export_pdf_title" = "Ekspor ke PDF";
+"fab_options" = "Tampilkan opsi";
 
 "sort_name_asc" = "Nama ↑";
 "sort_name_desc" = "Nama ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Tambahkan keterampilan baru";
 "fab_view_stats" = "Lihat statistik";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Kelola Penghitung";
+"counter_details_section" = "Detail";
+"counter_title_placeholder" = "Judul";
+"counter_step_label%d" = "Langkah: %d";
+"counter_thresholds_section" = "Ambang (dipisahkan koma)";
+"counter_thresholds_placeholder" = "mis. 100,200,500,10000";
+"counter_new_title" = "Penghitung Baru";
+"create" = "Buat";
+"apply" = "Terapkan";
+"value" = "Nilai";
+"add" = "Tambah";
+"counter_progress_section" = "Kemajuan";
+"counter_value_label" = "Nilai";
+"counter_stage_max_label" = "Tahap Maks";
+"counter_no_thresholds" = "Belum ada ambang";
+"counter_reset_to_zero" = "Setel ke 0";
+"counter_configuration_section" = "Konfigurasi";
+"counter_edit_thresholds" = "Ubah Ambang";
+"counter_set_value_section" = "Atur Nilai Manual";
+"counter_set_value_placeholder" = "-1000000 hingga 1000000";
+"counter_current_thresholds" = "Ambang Saat Ini";
+"counter_add_threshold" = "Tambah Ambang";
+"counter_thresholds_title" = "Ambang";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Keterampilan";
+"daily_evaluations_format" = "Evaluasi harian: %d/%d";
+"sort_menu_label" = "Urutkan";
+"reset_daily_limit" = "Setel ulang batas harian";
+"daily_limit_reached_title" = "Batas harian tercapai";
+"daily_limit_reached_message_format" = "Kamu telah mencapai batas harian %d evaluasi keterampilan. Coba lagi besok!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Distribusi waktu";
+"time_distribution_skill_format" = "Keterampilan: %@";
+"time_total_hours_format" = "Total waktu: %@ j";
+"time_mean_minutes_format" = "Rata-rata interval: %@ mnt";
+"time_std_minutes_format" = "Dev. standar: %@ mnt";
+"distribution_nav_title" = "Distribusi";
+"global_time_distribution_title" = "Distribusi waktu global";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nama";
+"sort_category" = "Kategori";
+"sort_stars_asc" = "Bintang ↑";
+"sort_stars_desc" = "Bintang ↓";
+"sort_difficulty_asc" = "Tingkat kesulitan ↑";
+"sort_difficulty_desc" = "Tingkat kesulitan ↓";
+"sort_completed_asc" = "Selesai ↑";
+"sort_completed_desc" = "Selesai ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detail keterampilan";
+"close" = "Tutup";
+"change_rating_accessibility" = "Ubah penilaian";
+"description" = "Deskripsi";
+"achievement_status" = "Status pencapaian";
+"obtained_label" = "Didapat:";
+"unknown" = "Tidak diketahui";
+"your_rating_label" = "Penilaianmu:";
+"verification_code_label" = "Kode verifikasi:";
+"achievement_history" = "Riwayat pencapaian";
+"update_your_rating" = "Perbarui penilaianmu";
+"no_stars" = "Tidak ada bintang";
+"update_and_verify" = "Perbarui & verifikasi";
+"self_evaluation" = "Evaluasi diri";
+"how_many_stars_question" = "Berapa bintang yang pantas kamu dapat untuk keterampilan ini?";
+"evaluate_my_skill" = "Nilai keterampilanku";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verifikasi diperlukan";
+"verification_required_message" = "Masukkan kode verifikasi untuk mengonfirmasi evaluasi diri:";
+"verification_code_title" = "Kode verifikasi:";
+"no_code_received" = "TIDAK ADA KODE";
+"enter_the_code" = "Masukkan kode:";
+"verify_and_evaluate" = "Verifikasi & nilai";
+"verification_nav_title" = "Verifikasi";
+"invalid_code_title" = "Kode tidak valid";
+"invalid_code_message" = "Masukkan kode yang benar.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Lihat distribusi";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Tambah keterampilan khusus";
+"unlock_custom_skills_title" = "Buka kunci keterampilan khusus";
+"unlock_custom_skills_subtitle" = "Buat pencapaianmu sendiri dan kelola daftar.";
+"unlock_benefit_create" = "Buat keterampilan dengan judul, deskripsi, dan tingkat kesulitan";
+"unlock_benefit_delete" = "Hapus keterampilan khusus jika salah";
+"unlock_benefit_support" = "Dukung pengembang";
+"unlock_benefit_reset_limit" = "Setel ulang batas evaluasi harian";
+"restore_purchases" = "Pulihkan pembelian";
+"buy_unlock" = "Beli buka kunci (Dev)";
+"unlock_title_short" = "Buka";
+"difficulty_label" = "Kesulitan";
+"star_descriptions_title" = "Deskripsi tingkat bintang";
+"one_star_description" = "Deskripsi 1★";
+"two_star_description" = "Deskripsi 2★";
+"three_star_description" = "Deskripsi 3★";
+"image_label" = "Gambar";
+"choose_image" = "Pilih gambar";
+"category_label" = "Kategori";
+"category_custom_placeholder" = "Kategori khusus";
+
+// MARK: - Preset Categories
+"cat_custom" = "Khusus";
+"cat_music" = "Musik";
+"cat_language" = "Bahasa";
+"cat_art" = "Seni";
+"cat_coding" = "Pemrograman";
+"cat_fitness" = "Kebugaran";
+"cat_cooking" = "Memasak";
+"cat_photography" = "Fotografi";
+"cat_writing" = "Menulis";
+"cat_public_speaking" = "Berbicara di depan umum";
+"cat_science" = "Sains";
+"cat_math" = "Matematika";
+"cat_engineering" = "Teknik";
+"cat_design" = "Desain";
+"cat_business" = "Bisnis";
+"cat_marketing" = "Pemasaran";
+"cat_finance" = "Keuangan";
+"cat_investing" = "Investasi";
+"cat_entrepreneurship" = "Kewirausahaan";
+"cat_psychology" = "Psikologi";
+"cat_education" = "Pendidikan";
+"cat_history" = "Sejarah";
+"cat_geography" = "Geografi";
+"cat_health" = "Kesehatan";
+"cat_meditation" = "Meditasi";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Olahraga";
+"cat_dance" = "Tari";
+"cat_theatre" = "Teater";
+"cat_film" = "Film";
+"cat_editing" = "Pengeditan video";
+"cat_3d" = "Pemodelan 3D";
+"cat_ai" = "AI/ML";
+"cat_data" = "Ilmu Data";
+"cat_cybersecurity" = "Keamanan Siber";
+"cat_gardening" = "Berkebun";
+"cat_diy" = "DIY";
+"cat_travel" = "Perjalanan";
+"cat_cars" = "Otomotif";
+"cat_parenting" = "Pengasuhan";
+"cat_animals" = "Hewan";
+"hide" = "Sembunyikan";
+"unhide" = "Tampilkan";
+"archived_section" = "Diarsipkan";
+"counters_empty_title" = "Belum ada penghitung";
+"counters_empty_description" = "Buat penghitung pertama untuk melacak kemajuan numerik.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Pengkonversi Waktu";

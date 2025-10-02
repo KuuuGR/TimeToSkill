@@ -15,6 +15,8 @@
 "tracking_title" = "Skill Tracking";
 "tracking_nav_title" = "Your Skills";
 "sort_by_label" = "Sort by";
+"export_pdf_title" = "Export to PDF";
+"fab_options" = "Show options";
 
 "sort_name_asc" = "Name ↑";
 "sort_name_desc" = "Name ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "Add a new skill";
 "fab_view_stats" = "View statistics";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Manage Counters";
+"counter_details_section" = "Details";
+"counter_title_placeholder" = "Title";
+"counter_step_label%d" = "Step: %d";
+"counter_thresholds_section" = "Thresholds (comma-separated)";
+"counter_thresholds_placeholder" = "e.g. 100,200,500,10000";
+"counter_new_title" = "New Counter";
+"create" = "Create";
+"apply" = "Apply";
+"value" = "Value";
+"add" = "Add";
+"counter_progress_section" = "Progress";
+"counter_value_label" = "Value";
+"counter_stage_max_label" = "Stage Max";
+"counter_no_thresholds" = "No thresholds set";
+"counter_reset_to_zero" = "Reset to 0";
+"counter_configuration_section" = "Configuration";
+"counter_edit_thresholds" = "Edit Thresholds";
+"counter_set_value_section" = "Set Value Manually";
+"counter_set_value_placeholder" = "-1000000 to 1000000";
+"counter_current_thresholds" = "Current Thresholds";
+"counter_add_threshold" = "Add Threshold";
+"counter_thresholds_title" = "Thresholds";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Skills";
+"daily_evaluations_format" = "Daily Evaluations: %d/%d";
+"sort_menu_label" = "Sort";
+"reset_daily_limit" = "Reset Daily Limit";
+"daily_limit_reached_title" = "Daily Limit Reached";
+"daily_limit_reached_message_format" = "You've reached your daily limit of %d skill evaluations. Try again tomorrow!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Time Distribution";
+"time_distribution_skill_format" = "Skill: %@";
+"time_total_hours_format" = "Total time: %@ h";
+"time_mean_minutes_format" = "Mean interval: %@ min";
+"time_std_minutes_format" = "Std dev: %@ min";
+"distribution_nav_title" = "Distribution";
+"global_time_distribution_title" = "Global Time Distribution";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Name";
+"sort_category" = "Category";
+"sort_stars_asc" = "Stars ↑";
+"sort_stars_desc" = "Stars ↓";
+"sort_difficulty_asc" = "Difficulty ↑";
+"sort_difficulty_desc" = "Difficulty ↓";
+"sort_completed_asc" = "Completed ↑";
+"sort_completed_desc" = "Completed ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Skill Details";
+"close" = "Close";
+"change_rating_accessibility" = "Change rating";
+"description" = "Description";
+"achievement_status" = "Achievement Status";
+"obtained_label" = "Obtained:";
+"unknown" = "Unknown";
+"your_rating_label" = "Your Rating:";
+"verification_code_label" = "Verification Code:";
+"achievement_history" = "Achievement History";
+"update_your_rating" = "Update Your Rating";
+"no_stars" = "No Stars";
+"update_and_verify" = "Update & Verify";
+"self_evaluation" = "Self-Evaluation";
+"how_many_stars_question" = "How many stars do you deserve for this skill?";
+"evaluate_my_skill" = "Evaluate My Skill";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Verification Required";
+"verification_required_message" = "Please enter the verification code below to confirm your self-evaluation:";
+"verification_code_title" = "Verification Code:";
+"no_code_received" = "NO CODE RECEIVED";
+"enter_the_code" = "Enter the code above:";
+"verify_and_evaluate" = "Verify & Evaluate";
+"verification_nav_title" = "Verification";
+"invalid_code_title" = "Invalid Code";
+"invalid_code_message" = "Please enter the correct verification code.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "View distribution";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "Add custom skill";
+"unlock_custom_skills_title" = "Unlock Custom Skills";
+"unlock_custom_skills_subtitle" = "Create your own achievements and curate your list.";
+"unlock_benefit_create" = "Create your own skill with title, description and difficulty";
+"unlock_benefit_delete" = "Remove custom skills if you make a mistake";
+"unlock_benefit_support" = "Support the developer";
+"unlock_benefit_reset_limit" = "Reset the daily evaluation limit";
+"restore_purchases" = "Restore Purchases";
+"buy_unlock" = "Buy Unlock (Dev)";
+"unlock_title_short" = "Unlock";
+"difficulty_label" = "Difficulty";
+"star_descriptions_title" = "Star-level descriptions";
+"one_star_description" = "1★ description";
+"two_star_description" = "2★ description";
+"three_star_description" = "3★ description";
+"image_label" = "Image";
+"choose_image" = "Choose Image";
+"category_label" = "Category";
+"category_custom_placeholder" = "Custom category";
+
+// MARK: - Preset Categories
+"cat_custom" = "Custom";
+"cat_music" = "Music";
+"cat_language" = "Language";
+"cat_art" = "Art";
+"cat_coding" = "Coding";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Cooking";
+"cat_photography" = "Photography";
+"cat_writing" = "Writing";
+"cat_public_speaking" = "Public Speaking";
+"cat_science" = "Science";
+"cat_math" = "Mathematics";
+"cat_engineering" = "Engineering";
+"cat_design" = "Design";
+"cat_business" = "Business";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finance";
+"cat_investing" = "Investing";
+"cat_entrepreneurship" = "Entrepreneurship";
+"cat_psychology" = "Psychology";
+"cat_education" = "Education";
+"cat_history" = "History";
+"cat_geography" = "Geography";
+"cat_health" = "Health";
+"cat_meditation" = "Meditation";
+"cat_yoga" = "Yoga";
+"cat_sports" = "Sports";
+"cat_dance" = "Dance";
+"cat_theatre" = "Theatre";
+"cat_film" = "Film";
+"cat_editing" = "Video Editing";
+"cat_3d" = "3D Modeling";
+"cat_ai" = "AI/ML";
+"cat_data" = "Data Science";
+"cat_cybersecurity" = "Cybersecurity";
+"cat_gardening" = "Gardening";
+"cat_diy" = "DIY";
+"cat_travel" = "Travel";
+"cat_cars" = "Automotive";
+"cat_parenting" = "Parenting";
+"cat_animals" = "Animals";
+"hide" = "Hide";
+"unhide" = "Unhide";
+"archived_section" = "Archived";
+"counters_empty_title" = "No counters yet";
+"counters_empty_description" = "Create your first counter to start tracking numeric progress.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "Time Converter";

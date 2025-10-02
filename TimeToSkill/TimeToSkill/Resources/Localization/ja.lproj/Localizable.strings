@@ -26,6 +26,8 @@
 "tracking_title" = "スキルトラッキング";
 "tracking_nav_title" = "あなたのスキル";
 "sort_by_label" = "並び替え";
+"export_pdf_title" = "PDFにエクスポート";
+"fab_options" = "オプションを表示";
 
 "sort_name_asc" = "名前 ↑";
 "sort_name_desc" = "名前 ↓";
@@ -151,3 +153,157 @@
 // MARK: - FABButton
 "fab_add_skill" = "新しいスキルを追加";
 "fab_view_stats" = "統計を見る";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "カウンターを管理";
+"counter_details_section" = "詳細";
+"counter_title_placeholder" = "タイトル";
+"counter_step_label%d" = "ステップ: %d";
+"counter_thresholds_section" = "しきい値（カンマ区切り）";
+"counter_thresholds_placeholder" = "例: 100,200,500,10000";
+"counter_new_title" = "新しいカウンター";
+"create" = "作成";
+"apply" = "適用";
+"value" = "値";
+"add" = "追加";
+"counter_progress_section" = "進捗";
+"counter_value_label" = "値";
+"counter_stage_max_label" = "最大ステージ";
+"counter_no_thresholds" = "しきい値なし";
+"counter_reset_to_zero" = "0にリセット";
+"counter_configuration_section" = "設定";
+"counter_edit_thresholds" = "しきい値を編集";
+"counter_set_value_section" = "値を手動で設定";
+"counter_set_value_placeholder" = "-1000000 〜 1000000";
+"counter_current_thresholds" = "現在のしきい値";
+"counter_add_threshold" = "しきい値を追加";
+"counter_thresholds_title" = "しきい値";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "スキル";
+"daily_evaluations_format" = "1日の評価: %d/%d";
+"sort_menu_label" = "並び替え";
+"reset_daily_limit" = "1日の上限をリセット";
+"daily_limit_reached_title" = "1日の上限に達しました";
+"daily_limit_reached_message_format" = "1日のスキル評価上限 %d に達しました。明日もう一度お試しください！";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "時間分布";
+"time_distribution_skill_format" = "スキル: %@";
+"time_total_hours_format" = "合計時間: %@ 時";
+"time_mean_minutes_format" = "平均間隔: %@ 分";
+"time_std_minutes_format" = "標準偏差: %@ 分";
+"distribution_nav_title" = "分布";
+"global_time_distribution_title" = "全体の時間分布";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "名前";
+"sort_category" = "カテゴリ";
+"sort_stars_asc" = "星 ↑";
+"sort_stars_desc" = "星 ↓";
+"sort_difficulty_asc" = "難易度 ↑";
+"sort_difficulty_desc" = "難易度 ↓";
+"sort_completed_asc" = "完了 ↑";
+"sort_completed_desc" = "完了 ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "スキルの詳細";
+"close" = "閉じる";
+"change_rating_accessibility" = "評価を変更";
+"description" = "説明";
+"achievement_status" = "達成状況";
+"obtained_label" = "獲得:";
+"unknown" = "不明";
+"your_rating_label" = "あなたの評価:";
+"verification_code_label" = "確認コード:";
+"achievement_history" = "達成履歴";
+"update_your_rating" = "評価を更新";
+"no_stars" = "星なし";
+"update_and_verify" = "更新して確認";
+"self_evaluation" = "自己評価";
+"how_many_stars_question" = "このスキルには何個の星がふさわしいですか？";
+"evaluate_my_skill" = "私のスキルを評価";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "確認が必要です";
+"verification_required_message" = "自己評価を確認するため、確認コードを入力してください:";
+"verification_code_title" = "確認コード:";
+"no_code_received" = "コードが届かない";
+"enter_the_code" = "コードを入力:";
+"verify_and_evaluate" = "確認して評価";
+"verification_nav_title" = "確認";
+"invalid_code_title" = "無効なコード";
+"invalid_code_message" = "正しいコードを入力してください。";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "分布を表示";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "カスタムスキルを追加";
+"unlock_custom_skills_title" = "カスタムスキルのロック解除";
+"unlock_custom_skills_subtitle" = "自分の実績を作成してリストを管理。";
+"unlock_benefit_create" = "タイトル・説明・難易度付きでスキルを作成";
+"unlock_benefit_delete" = "間違えたカスタムスキルを削除";
+"unlock_benefit_support" = "開発者を支援";
+"unlock_benefit_reset_limit" = "1日の評価上限をリセット";
+"restore_purchases" = "購入を復元";
+"buy_unlock" = "ロック解除を購入 (Dev)";
+"unlock_title_short" = "解除";
+"difficulty_label" = "難易度";
+"star_descriptions_title" = "星レベルの説明";
+"one_star_description" = "1★ の説明";
+"two_star_description" = "2★ の説明";
+"three_star_description" = "3★ の説明";
+"image_label" = "画像";
+"choose_image" = "画像を選択";
+"category_label" = "カテゴリ";
+"category_custom_placeholder" = "カスタムカテゴリ";
+
+// MARK: - Preset Categories
+"cat_custom" = "カスタム";
+"cat_music" = "音楽";
+"cat_language" = "言語";
+"cat_art" = "アート";
+"cat_coding" = "コーディング";
+"cat_fitness" = "フィットネス";
+"cat_cooking" = "料理";
+"cat_photography" = "写真";
+"cat_writing" = "執筆";
+"cat_public_speaking" = "スピーチ";
+"cat_science" = "科学";
+"cat_math" = "数学";
+"cat_engineering" = "工学";
+"cat_design" = "デザイン";
+"cat_business" = "ビジネス";
+"cat_marketing" = "マーケティング";
+"cat_finance" = "ファイナンス";
+"cat_investing" = "投資";
+"cat_entrepreneurship" = "起業";
+"cat_psychology" = "心理学";
+"cat_education" = "教育";
+"cat_history" = "歴史";
+"cat_geography" = "地理";
+"cat_health" = "健康";
+"cat_meditation" = "瞑想";
+"cat_yoga" = "ヨガ";
+"cat_sports" = "スポーツ";
+"cat_dance" = "ダンス";
+"cat_theatre" = "劇場";
+"cat_film" = "映画";
+"cat_editing" = "動画編集";
+"cat_3d" = "3Dモデリング";
+"cat_ai" = "AI/ML";
+"cat_data" = "データサイエンス";
+"cat_cybersecurity" = "サイバーセキュリティ";
+"cat_gardening" = "ガーデニング";
+"cat_diy" = "DIY";
+"cat_travel" = "旅行";
+"cat_cars" = "自動車";
+"cat_parenting" = "子育て";
+"cat_animals" = "動物";
+"hide" = "非表示";
+"unhide" = "表示";
+"archived_section" = "アーカイブ";
+"counters_empty_title" = "カウンターなし";
+"counters_empty_description" = "最初のカウンターを作成して数値の進捗を追跡しましょう。";

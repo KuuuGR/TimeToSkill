@@ -15,6 +15,8 @@
 "tracking_title" = "מעקב מיומנויות";
 "tracking_nav_title" = "המיומנויות שלך";
 "sort_by_label" = "מיין לפי";
+"export_pdf_title" = "ייצא ל-PDF";
+"fab_options" = "הצג אפשרויות";
 
 "sort_name_asc" = "שם ↑";
 "sort_name_desc" = "שם ↓";
@@ -140,6 +142,160 @@
 // MARK: - FABButton
 "fab_add_skill" = "הוסף מיומנות חדשה";
 "fab_view_stats" = "הצג סטטיסטיקות";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "נהל מונים";
+"counter_details_section" = "פרטים";
+"counter_title_placeholder" = "כותרת";
+"counter_step_label%d" = "שלב: %d";
+"counter_thresholds_section" = "ספים (מופרדים בפסיקים)";
+"counter_thresholds_placeholder" = "לדוגמה: 100,200,500,10000";
+"counter_new_title" = "מונה חדש";
+"create" = "צור";
+"apply" = "החל";
+"value" = "ערך";
+"add" = "הוסף";
+"counter_progress_section" = "התקדמות";
+"counter_value_label" = "ערך";
+"counter_stage_max_label" = "שלב מקס'";
+"counter_no_thresholds" = "לא הוגדרו ספים";
+"counter_reset_to_zero" = "איפוס ל-0";
+"counter_configuration_section" = "הגדרות";
+"counter_edit_thresholds" = "ערוך ספים";
+"counter_set_value_section" = "קבע ערך ידנית";
+"counter_set_value_placeholder" = "-1000000 עד 1000000";
+"counter_current_thresholds" = "ספים נוכחיים";
+"counter_add_threshold" = "הוסף סף";
+"counter_thresholds_title" = "ספים";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "מיומנויות";
+"daily_evaluations_format" = "הערכות יומיות: %d/%d";
+"sort_menu_label" = "מיין";
+"reset_daily_limit" = "אפס מגבלה יומית";
+"daily_limit_reached_title" = "המגבלה היומית הושגה";
+"daily_limit_reached_message_format" = "הגעת למגבלה היומית של %d הערכות מיומנויות. נסה שוב מחר!";
+"ok" = "אישור";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "התפלגות זמן";
+"time_distribution_skill_format" = "מיומנות: %@";
+"time_total_hours_format" = "זמן כולל: %@ שעות";
+"time_mean_minutes_format" = "מרווח ממוצע: %@ דק'";
+"time_std_minutes_format" = "סטיית תקן: %@ דק'";
+"distribution_nav_title" = "התפלגות";
+"global_time_distribution_title" = "התפלגות זמן גלובלית";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "שם";
+"sort_category" = "קטגוריה";
+"sort_stars_asc" = "כוכבים ↑";
+"sort_stars_desc" = "כוכבים ↓";
+"sort_difficulty_asc" = "קושי ↑";
+"sort_difficulty_desc" = "קושי ↓";
+"sort_completed_asc" = "הושלמו ↑";
+"sort_completed_desc" = "הושלמו ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "פרטי מיומנות";
+"close" = "סגור";
+"change_rating_accessibility" = "שנה דירוג";
+"description" = "תיאור";
+"achievement_status" = "סטטוס הישג";
+"obtained_label" = "הושג:";
+"unknown" = "לא ידוע";
+"your_rating_label" = "הדירוג שלך:";
+"verification_code_label" = "קוד אימות:";
+"achievement_history" = "היסטוריית הישגים";
+"update_your_rating" = "עדכן את הדירוג";
+"no_stars" = "ללא כוכבים";
+"update_and_verify" = "עדכן ואמת";
+"self_evaluation" = "הערכת עצמי";
+"how_many_stars_question" = "כמה כוכבים מגיעים לך על מיומנות זו?";
+"evaluate_my_skill" = "הערך את המיומנות שלי";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "נדרשת אימות";
+"verification_required_message" = "הזן את קוד האימות כדי לאשר את הערכת העצמי:";
+"verification_code_title" = "קוד אימות:";
+"no_code_received" = "לא התקבל קוד";
+"enter_the_code" = "הזן את הקוד:";
+"verify_and_evaluate" = "אמת והערך";
+"verification_nav_title" = "אימות";
+"invalid_code_title" = "קוד שגוי";
+"invalid_code_message" = "הזן את הקוד הנכון.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "הצג התפלגות";
+
+// MARK: - Paywall & Custom Skill
+"fab_add_custom_skill" = "הוסף מיומנות מותאמת";
+"unlock_custom_skills_title" = "פתח מיומנויות מותאמות";
+"unlock_custom_skills_subtitle" = "צור הישגים משלך ונהל את הרשימה.";
+"unlock_benefit_create" = "צור מיומנות עם כותרת, תיאור ורמת קושי";
+"unlock_benefit_delete" = "מחק מיומנויות מותאמות אם טעית";
+"unlock_benefit_support" = "תמוך במפתח";
+"unlock_benefit_reset_limit" = "אפס מגבלת הערכה יומית";
+"restore_purchases" = "שחזור רכישות";
+"buy_unlock" = "רכישת פתיחה (Dev)";
+"unlock_title_short" = "פתח";
+"difficulty_label" = "דרגת קושי";
+"star_descriptions_title" = "תיאורי רמות כוכבים";
+"one_star_description" = "תיאור 1★";
+"two_star_description" = "תיאור 2★";
+"three_star_description" = "תיאור 3★";
+"image_label" = "תמונה";
+"choose_image" = "בחר תמונה";
+"category_label" = "קטגוריה";
+"category_custom_placeholder" = "קטגוריה מותאמת";
+
+// MARK: - Preset Categories
+"cat_custom" = "מותאם";
+"cat_music" = "מוזיקה";
+"cat_language" = "שפה";
+"cat_art" = "אמנות";
+"cat_coding" = "תכנות";
+"cat_fitness" = "כושר";
+"cat_cooking" = "בישול";
+"cat_photography" = "צילום";
+"cat_writing" = "כתיבה";
+"cat_public_speaking" = "דיבור בפני קהל";
+"cat_science" = "מדע";
+"cat_math" = "מתמטיקה";
+"cat_engineering" = "הנדסה";
+"cat_design" = "עיצוב";
+"cat_business" = "עסקים";
+"cat_marketing" = "שיווק";
+"cat_finance" = "פיננסים";
+"cat_investing" = "השקעות";
+"cat_entrepreneurship" = "יזמות";
+"cat_psychology" = "פסיכולוגיה";
+"cat_education" = "חינוך";
+"cat_history" = "היסטוריה";
+"cat_geography" = "גאוגרפיה";
+"cat_health" = "בריאות";
+"cat_meditation" = "מדיטציה";
+"cat_yoga" = "יוגה";
+"cat_sports" = "ספורט";
+"cat_dance" = "מחול";
+"cat_theatre" = "תיאטרון";
+"cat_film" = "קולנוע";
+"cat_editing" = "עריכת וידאו";
+"cat_3d" = "מידול 3D";
+"cat_ai" = "בינה מלאכותית/ML";
+"cat_data" = "מדעי הנתונים";
+"cat_cybersecurity" = "אבטחת מידע";
+"cat_gardening" = "גינון";
+"cat_diy" = "עשה זאת בעצמך";
+"cat_travel" = "טיולים";
+"cat_cars" = "רכב";
+"cat_parenting" = "הורות";
+"cat_animals" = "בעלי חיים";
+"hide" = "הסתר";
+"unhide" = "הצג";
+"archived_section" = "בארכיון";
+"counters_empty_title" = "אין מונים";
+"counters_empty_description" = "צור את המונה הראשון למעקב התקדמות מספרית.";
 
 // MARK: - Time Converter
 "Time_Converter_Section_Header" = "ממיר זמן";
