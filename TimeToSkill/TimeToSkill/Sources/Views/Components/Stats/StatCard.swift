@@ -2,7 +2,7 @@
 //  StatCard.swift
 //  TimeToSkill
 //
-//  Created by admin on 10/04/2025.
+//  Created by Grzegorz Kulesza on 10/04/2025.
 //
 
 import SwiftUI

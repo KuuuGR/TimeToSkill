@@ -2,7 +2,7 @@
 //  ProgressBarCompact.swift
 //  TimeToSkill
 //
-//  Created by admin on 10/04/2025.
+//  Created by Grzegorz Kulesza on 10/04/2025.
 //
 
 /// Compact progress bar used in Top Skills
