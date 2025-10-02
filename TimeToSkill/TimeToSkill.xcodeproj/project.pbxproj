@@ -317,6 +317,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0713ACBD2DA29292005F9E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0713ACC72DA29292005F9E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		0713AE2F2DA32000005F9E07 /* Run Script: Bump catalogVersion on app version change */ = {
@@ -335,24 +350,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\n# Expose MARKETING_VERSION to script\nexport MARKETING_VERSION=\"${MARKETING_VERSION}\"\n# Strategy: bump by +1 on version change\nexport CATALOG_VERSION_STRATEGY=\"bump\"\n\n# Run bump script\nSCRIPT=\"${PROJECT_DIR}/scripts/bump_catalog_version.py\"\nif [ -f \"$SCRIPT\" ]; then\n  /usr/bin/env python3 \"$SCRIPT\"\nelse\n  echo \"[catalog-version] Script not found: $SCRIPT\"\nfi\n";
+			shellScript = "set -e\n\n# Determine MARKETING_VERSION (prefer build setting; fallback to built Info.plist)\nMV=\"${MARKETING_VERSION}\"\nif [ -z \"$MV\" ] && [ -n \"${TARGET_BUILD_DIR}\" ] && [ -n \"${INFOPLIST_PATH}\" ]; then\n  if [ -f \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\" ]; then\n    MV=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\" || true)\n  fi\nfi\nexport MARKETING_VERSION=\"$MV\"\necho \"[catalog-version] MARKETING_VERSION='$MARKETING_VERSION'\"\n\n# Strategy: bump by +1 on version change\nexport CATALOG_VERSION_STRATEGY=\"bump\"\n\n# Run bump script (correct path is at repo root /scripts)\nSCRIPT=\"${PROJECT_DIR%/TimeToSkill}/scripts/bump_catalog_version.py\"\nif [ -f \"$SCRIPT\" ]; then\n  /usr/bin/env python3 \"$SCRIPT\"\nelse\n  echo \"[catalog-version] Script not found: $SCRIPT\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
-		0713ACBD2DA29292005F9E07 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0713ACC72DA29292005F9E07 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0713ACA92DA29289005F9E07 /* Sources */ = {
@@ -521,8 +521,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -532,7 +533,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -547,8 +548,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

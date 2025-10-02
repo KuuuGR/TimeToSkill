@@ -22,12 +22,36 @@ def is_version_increase(old: str, new: str) -> bool:
 
 
 def main() -> int:
-    project_dir = os.environ.get("PROJECT_DIR")
-    if not project_dir:
-        # Fallback when running manually
-        project_dir = str(Path(__file__).resolve().parents[1])
+    project_dir_env = os.environ.get("PROJECT_DIR")
+    # Fallback when running manually (repo root)
+    repo_root = Path(__file__).resolve().parents[1]
 
-    resources_dir = Path(project_dir) / "TimeToSkill" / "TimeToSkill" / "Resources"
+    # Probe possible locations of the Resources folder to support both CLI and Xcode runs
+    candidate_roots = []
+    if project_dir_env:
+        p = Path(project_dir_env)
+        candidate_roots += [
+            p / "TimeToSkill" / "Resources",               # PROJECT_DIR points at repo subdir (common in Xcode)
+            p / "TimeToSkill" / "TimeToSkill" / "Resources",  # Safety for different nesting
+        ]
+    # Manual runs from repo root
+    candidate_roots += [
+        repo_root / "TimeToSkill" / "TimeToSkill" / "Resources",
+        repo_root / "TimeToSkill" / "Resources",
+    ]
+
+    resources_dir: Path | None = None
+    for cand in candidate_roots:
+        if cand.exists():
+            resources_dir = cand
+            break
+
+    if resources_dir is None:
+        print("[catalog-version] ERROR: Could not locate Resources directory. Checked:", file=sys.stderr)
+        for cand in candidate_roots:
+            print(f"  - {cand}", file=sys.stderr)
+        return 0
+
     state_file = resources_dir / ".last_marketing_version"
 
     # Read MARKETING_VERSION from env (available in Xcode build phases)
