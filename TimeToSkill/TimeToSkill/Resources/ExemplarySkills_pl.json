@@ -1,5 +1,5 @@
 {
-  "catalogVersion": 6,
+  "catalogVersion": 1,
   "items": [
     {
       "id": "health.daniel_fasting",
@@ -345,4 +345,3 @@
     }
   ]
 }
-

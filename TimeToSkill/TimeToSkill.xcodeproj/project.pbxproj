@@ -168,6 +168,7 @@
 				0713ACA92DA29289005F9E07 /* Sources */,
 				0713ACAA2DA29289005F9E07 /* Frameworks */,
 				0713ACAB2DA29289005F9E07 /* Resources */,
+				0713AE2F2DA32000005F9E07 /* Run Script: Bump catalogVersion on app version change */,
 				0713AE272DA3077B005F9E07 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -316,6 +317,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
+/* Begin PBXShellScriptBuildPhase section */
+		0713AE2F2DA32000005F9E07 /* Run Script: Bump catalogVersion on app version change */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Bump catalogVersion on app version change";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# Expose MARKETING_VERSION to script\nexport MARKETING_VERSION=\"${MARKETING_VERSION}\"\n# Strategy: bump by +1 on version change\nexport CATALOG_VERSION_STRATEGY=\"bump\"\n\n# Run bump script\nSCRIPT=\"${PROJECT_DIR}/scripts/bump_catalog_version.py\"\nif [ -f \"$SCRIPT\" ]; then\n  /usr/bin/env python3 \"$SCRIPT\"\nelse\n  echo \"[catalog-version] Script not found: $SCRIPT\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 		0713ACBD2DA29292005F9E07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
