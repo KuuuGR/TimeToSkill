@@ -65,8 +65,8 @@ struct PaywallView: View {
                 }
 
                 HStack(spacing: 16) {
-                    Link(LocalizedStringKey("privacy_policy_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/blob/main/PrivacyPolicy.md")!)
-                    Link(LocalizedStringKey("terms_of_use_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/blob/main/TERMS.md")!)
+                    Link(LocalizedStringKey("privacy_policy_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/wiki/Privacy-Policy")!)
+                    Link(LocalizedStringKey("terms_of_use_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/wiki/Terms-of-Use")!)
                 }
                 .font(.footnote)
                 .foregroundColor(.secondary)
