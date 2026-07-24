@@ -1,0 +1,380 @@
+[
+  {
+    "id": "light_in_space",
+    "thresholdMinutes": 1,
+    "icon": "☀",
+    "category": "Astronomy"
+  },
+  {
+    "id": "sunlight_earth",
+    "thresholdMinutes": 8,
+    "icon": "🌍",
+    "category": "Astronomy"
+  },
+  {
+    "id": "hard_boiled_egg",
+    "thresholdMinutes": 10,
+    "icon": "🥚",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "sunlight_mars",
+    "thresholdMinutes": 13,
+    "icon": "🔴",
+    "category": "Astronomy"
+  },
+  {
+    "id": "coffee_break",
+    "thresholdMinutes": 15,
+    "icon": "☕",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "rice_cooking",
+    "thresholdMinutes": 20,
+    "icon": "🍚",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "pizza_delivery",
+    "thresholdMinutes": 30,
+    "icon": "🍕",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "sunlight_jupiter",
+    "thresholdMinutes": 43,
+    "icon": "🟠",
+    "category": "Astronomy"
+  },
+  {
+    "id": "butterfly_emergence",
+    "thresholdMinutes": 45,
+    "icon": "🦋",
+    "category": "Biology"
+  },
+  {
+    "id": "haircut",
+    "thresholdMinutes": 60,
+    "icon": "✂",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "bread_dough",
+    "thresholdMinutes": 60,
+    "icon": "🍞",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "movie",
+    "thresholdMinutes": 120,
+    "icon": "🎬",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "helicopter_flight",
+    "thresholdMinutes": 120,
+    "icon": "🚁",
+    "category": "Travel"
+  },
+  {
+    "id": "laundry",
+    "thresholdMinutes": 120,
+    "icon": "🧺",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "short_haul_flight",
+    "thresholdMinutes": 180,
+    "icon": "✈",
+    "category": "Travel"
+  },
+  {
+    "id": "sunlight_neptune",
+    "thresholdMinutes": 240,
+    "icon": "🔵",
+    "category": "Astronomy"
+  },
+  {
+    "id": "shinkansen",
+    "thresholdMinutes": 240,
+    "icon": "🚄",
+    "category": "Travel"
+  },
+  {
+    "id": "sunlight_pluto",
+    "thresholdMinutes": 330,
+    "icon": "❄",
+    "category": "Astronomy"
+  },
+  {
+    "id": "sleep",
+    "thresholdMinutes": 480,
+    "icon": "😴",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "transatlantic_flight",
+    "thresholdMinutes": 480,
+    "icon": "✈",
+    "category": "Travel"
+  },
+  {
+    "id": "slow_cooked_brisket",
+    "thresholdMinutes": 600,
+    "icon": "🥩",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "novel",
+    "thresholdMinutes": 600,
+    "icon": "📖",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "long_haul_flight",
+    "thresholdMinutes": 720,
+    "icon": "✈",
+    "category": "Travel"
+  },
+  {
+    "id": "cold_brew_coffee",
+    "thresholdMinutes": 720,
+    "icon": "☕",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "video_game",
+    "thresholdMinutes": 900,
+    "icon": "🎮",
+    "category": "Everyday Life"
+  },
+  {
+    "id": "scenic_road_trip",
+    "thresholdMinutes": 1440,
+    "icon": "🚗",
+    "category": "Travel"
+  },
+  {
+    "id": "moon_journey",
+    "thresholdMinutes": 4320,
+    "icon": "🌙",
+    "category": "Space Exploration"
+  },
+  {
+    "id": "coast_to_coast",
+    "thresholdMinutes": 7200,
+    "icon": "🚗",
+    "category": "Travel"
+  },
+  {
+    "id": "camino_de_santiago",
+    "thresholdMinutes": 10080,
+    "icon": "🥾",
+    "category": "Travel"
+  },
+  {
+    "id": "cycling_adventure",
+    "thresholdMinutes": 20160,
+    "icon": "🚲",
+    "category": "Travel"
+  },
+  {
+    "id": "chicken_egg",
+    "thresholdMinutes": 30240,
+    "icon": "🐣",
+    "category": "Biology"
+  },
+  {
+    "id": "around_the_world",
+    "thresholdMinutes": 115200,
+    "icon": "🌍",
+    "category": "Travel"
+  },
+  {
+    "id": "sunflower",
+    "thresholdMinutes": 131400,
+    "icon": "🌻",
+    "category": "Nature"
+  },
+  {
+    "id": "wheat_harvest",
+    "thresholdMinutes": 175200,
+    "icon": "🌾",
+    "category": "Nature"
+  },
+  {
+    "id": "kangaroo_joey",
+    "thresholdMinutes": 219000,
+    "icon": "🦘",
+    "category": "Biology"
+  },
+  {
+    "id": "mars_journey",
+    "thresholdMinutes": 302400,
+    "icon": "🔴",
+    "category": "Space Exploration"
+  },
+  {
+    "id": "human_pregnancy",
+    "thresholdMinutes": 394200,
+    "icon": "👶",
+    "category": "Biology"
+  },
+  {
+    "id": "parmesan_cheese",
+    "thresholdMinutes": 525600,
+    "icon": "🧀",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "blue_whale_calf",
+    "thresholdMinutes": 525600,
+    "icon": "🐋",
+    "category": "Biology"
+  },
+  {
+    "id": "bamboo_growth",
+    "thresholdMinutes": 1051200,
+    "icon": "🌱",
+    "category": "Nature"
+  },
+  {
+    "id": "red_wine",
+    "thresholdMinutes": 1051200,
+    "icon": "🍷",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "scotch_whisky",
+    "thresholdMinutes": 1576800,
+    "icon": "🥃",
+    "category": "Food & Cooking"
+  },
+  {
+    "id": "proxima_centauri",
+    "thresholdMinutes": 2233800,
+    "icon": "⭐",
+    "category": "Astronomy"
+  },
+  {
+    "id": "jupiter_journey",
+    "thresholdMinutes": 2628000,
+    "icon": "🪐",
+    "category": "Space Exploration"
+  },
+  {
+    "id": "christmas_tree",
+    "thresholdMinutes": 2628000,
+    "icon": "🌲",
+    "category": "Nature"
+  },
+  {
+    "id": "saturn_journey",
+    "thresholdMinutes": 3679200,
+    "icon": "💍",
+    "category": "Space Exploration"
+  },
+  {
+    "id": "sirius",
+    "thresholdMinutes": 4521960,
+    "icon": "✨",
+    "category": "Astronomy"
+  },
+  {
+    "id": "pluto_journey",
+    "thresholdMinutes": 4993200,
+    "icon": "❄",
+    "category": "Space Exploration"
+  },
+  {
+    "id": "apple_tree",
+    "thresholdMinutes": 5256000,
+    "icon": "🍎",
+    "category": "Nature"
+  },
+  {
+    "id": "black_belt",
+    "thresholdMinutes": 5256000,
+    "icon": "🥋",
+    "category": "Human Activities"
+  },
+  {
+    "id": "oak_tree_maturity",
+    "thresholdMinutes": 10512000,
+    "icon": "🌳",
+    "category": "Nature"
+  },
+  {
+    "id": "elephant_pregnancy",
+    "thresholdMinutes": 11563200,
+    "icon": "🐘",
+    "category": "Biology"
+  },
+  {
+    "id": "coconut_palm",
+    "thresholdMinutes": 15768000,
+    "icon": "🌴",
+    "category": "Nature"
+  },
+  {
+    "id": "solar_system_edge",
+    "thresholdMinutes": 18396000,
+    "icon": "☀",
+    "category": "Space Exploration"
+  },
+  {
+    "id": "interstellar_space",
+    "thresholdMinutes": 24703200,
+    "icon": "🌌",
+    "category": "Space Exploration"
+  },
+  {
+    "id": "niagara_falls",
+    "thresholdMinutes": 26280000,
+    "icon": "🌊",
+    "category": "Earth"
+  },
+  {
+    "id": "giant_sequoia_youth",
+    "thresholdMinutes": 42048000,
+    "icon": "🌲",
+    "category": "Nature"
+  },
+  {
+    "id": "ancient_oak",
+    "thresholdMinutes": 262800000,
+    "icon": "🌳",
+    "category": "Nature"
+  },
+  {
+    "id": "gamma_cephei",
+    "thresholdMinutes": 525600000,
+    "icon": "⭐",
+    "category": "Earth"
+  },
+  {
+    "id": "giant_sequoia_lifespan",
+    "thresholdMinutes": 1051200000,
+    "icon": "🌲",
+    "category": "Nature"
+  },
+  {
+    "id": "vega_pole_star",
+    "thresholdMinutes": 6149520000,
+    "icon": "⭐",
+    "category": "Earth"
+  },
+  {
+    "id": "green_sahara",
+    "thresholdMinutes": 7884000000,
+    "icon": "🌴",
+    "category": "Earth"
+  },
+  {
+    "id": "milky_way_center",
+    "thresholdMinutes": 13665360000,
+    "icon": "🌌",
+    "category": "Astronomy"
+  }
+]

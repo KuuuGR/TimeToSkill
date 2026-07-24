@@ -78,6 +78,7 @@
 			membershipExceptions = (
 				Tests/TimeToSkillTests/SkillTests.swift,
 				Tests/TimeToSkillTests/StatsSessionActivityTests.swift,
+				Tests/TimeToSkillTests/TimePerspectiveMatcherTests.swift,
 				Tests/TimeToSkillTests/TrackedTimeCalculationTests.swift,
 				Tests/TimeToSkillUITests/StartViewUITests.swift,
 				Tests/TimeToSkillUITests/TimeToSkillUITestsLaunchTests.swift,
@@ -89,6 +90,7 @@
 			membershipExceptions = (
 				Tests/TimeToSkillTests/SkillTests.swift,
 				Tests/TimeToSkillTests/StatsSessionActivityTests.swift,
+				Tests/TimeToSkillTests/TimePerspectiveMatcherTests.swift,
 				Tests/TimeToSkillTests/TrackedTimeCalculationTests.swift,
 			);
 			target = 0713ACBE2DA29292005F9E07 /* TimeToSkillTests */;
