@@ -17,19 +17,34 @@ final class SkillTests: XCTestCase {
 
     func testSkillProgressColorLow() {
         let skill = Skill(name: "Test", hours: 10)
-        let view = SkillProgressView(skill: skill, isActive: false, onToggleTimer: {})
-        XCTAssertEqual(view.progressColor, .green.opacity(0.7))
+        let view = SkillProgressView(
+            skill: skill,
+            isActive: false,
+            onToggleTimer: {},
+            onShowOptions: {}
+        )
+        XCTAssertEqual(view.progressColor, .success)
     }
 
     func testSkillProgressColorMedium() {
         let skill = Skill(name: "Test", hours: 50)
-        let view = SkillProgressView(skill: skill, isActive: false, onToggleTimer: {})
-        XCTAssertEqual(view.progressColor, .orange.opacity(0.7))
+        let view = SkillProgressView(
+            skill: skill,
+            isActive: false,
+            onToggleTimer: {},
+            onShowOptions: {}
+        )
+        XCTAssertEqual(view.progressColor, .infoDark)
     }
 
     func testSkillProgressColorHigh() {
         let skill = Skill(name: "Test", hours: 500)
-        let view = SkillProgressView(skill: skill, isActive: false, onToggleTimer: {})
-        XCTAssertEqual(view.progressColor, .red.opacity(0.7))
+        let view = SkillProgressView(
+            skill: skill,
+            isActive: false,
+            onToggleTimer: {},
+            onShowOptions: {}
+        )
+        XCTAssertEqual(view.progressColor, .warningDark)
     }
 }
