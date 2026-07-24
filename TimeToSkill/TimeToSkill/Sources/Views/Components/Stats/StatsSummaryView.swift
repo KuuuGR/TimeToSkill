@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
-/// Summary block with total hours, skill count, active timers, and first skill date
+/// Summary block with total hours, skill count, active timers, and first session date
 struct StatsSummaryView: View {
     let skills: [Skill]
+    @Query private var entries: [TimeIntervalEntry]
 
     var totalHours: Double {
         skills.reduce(0) { $0 + $1.hours }
@@ -23,8 +25,8 @@ struct StatsSummaryView: View {
         skills.filter { $0.activeStart != nil }.count
     }
 
-    var firstSkillDate: Date? {
-        skills.map(\.lastUpdated).min()
+    var firstSessionDate: Date? {
+        StatsSessionActivity.firstSessionDate(createdAtDates: entries.map(\.createdAt))
     }
 
     var body: some View {
@@ -49,7 +51,7 @@ struct StatsSummaryView: View {
                     label: NSLocalizedString("stats_active_timers", comment: ""),
                     value: "\(activeTimers)"
                 )
-                if let date = firstSkillDate {
+                if let date = firstSessionDate {
                     StatCard(
                         label: NSLocalizedString("stats_first_tracked", comment: ""),
                         value: formatted(date: date)
@@ -57,7 +59,7 @@ struct StatsSummaryView: View {
                 } else {
                     StatCard(
                         label: NSLocalizedString("stats_first_tracked", comment: ""),
-                        value: "-"
+                        value: "—"
                     )
                 }
             }

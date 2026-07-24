@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+import SwiftData
 
-/// Displays recently edited skills with hours and date
+/// Recent committed sessions from `TimeIntervalEntry` (timer + manual).
 struct ActivityLogView: View {
     let skills: [Skill]
+    @Query private var entries: [TimeIntervalEntry]
 
-    var recentSkills: [Skill] {
-        Array(
-            skills
-                .sorted(by: { $0.lastUpdated > $1.lastUpdated })
-                .prefix(3)
+    private var recentSessions: [StatsSessionActivity.SessionRow] {
+        let names = Dictionary(uniqueKeysWithValues: skills.map { ($0.id, $0.name) })
+        let mapped = entries.map { ($0.id, $0.skillId, $0.durationMinutes, $0.createdAt) }
+        return StatsSessionActivity.recentSessions(
+            entries: mapped,
+            skillNames: names,
+            limit: 5
         )
     }
 
@@ -32,26 +36,26 @@ struct ActivityLogView: View {
                 .font(.title2)
                 .fontWeight(.semibold)
 
-            if recentSkills.isEmpty {
+            if recentSessions.isEmpty {
                 Text(LocalizedStringKey("activity_log_empty_message"))
                     .foregroundColor(.secondary)
                     .font(.footnote)
                     .padding(.top, 8)
             } else {
-                ForEach(recentSkills, id: \.id) { skill in
+                ForEach(recentSessions, id: \.id) { session in
                     HStack {
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(skill.name)
+                            Text(session.skillName)
                                 .font(.headline)
 
-                            Text(dateFormatter.string(from: skill.lastUpdated))
+                            Text(dateFormatter.string(from: session.createdAt))
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                         }
 
                         Spacer()
 
-                        Text(formattedTime(skill.hours))
+                        Text(StatsSessionActivity.formattedDuration(minutes: session.durationMinutes))
                             .font(.subheadline)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 4)
@@ -65,11 +69,5 @@ struct ActivityLogView: View {
                 }
             }
         }
-    }
-
-    private func formattedTime(_ hours: Double) -> String {
-        let h = Int(hours)
-        let m = Int((hours - Double(h)) * 60)
-        return "\(h)h \(m)m"
     }
 }
