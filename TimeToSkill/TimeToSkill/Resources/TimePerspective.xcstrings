@@ -1,1392 +1,1425 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "perspective.ancient_oak.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Some oak trees can live for more than five centuries."
+  "sourceLanguage" : "en",
+  "strings" : {
+    "time_perspective.card.empty_prompt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Convert any duration to discover real-world time comparisons."
           }
         }
       }
     },
-    "perspective.ancient_oak.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ancient Oak"
+    "time_perspective.card.empty_tagline" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time flies faster than we think."
           }
         }
       }
     },
-    "perspective.apple_tree.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "An apple tree usually reaches full fruit production after about ten years."
+    "time_perspective.card.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What takes about this long?"
           }
         }
       }
     },
-    "perspective.apple_tree.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apple Tree"
+    "perspective.ancient_oak.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Some oak trees can live for more than five centuries."
           }
         }
       }
     },
-    "perspective.around_the_world.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A classic round-the-world journey takes about eighty days."
+    "perspective.ancient_oak.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancient Oak"
           }
         }
       }
     },
-    "perspective.around_the_world.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Around the World"
+    "perspective.apple_tree.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An apple tree usually reaches full fruit production after about ten years."
           }
         }
       }
     },
-    "perspective.bamboo_growth.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Some bamboo species reach full height in about two years."
+    "perspective.apple_tree.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Tree"
           }
         }
       }
     },
-    "perspective.bamboo_growth.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bamboo Growth"
+    "perspective.around_the_world.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A classic round-the-world journey takes about eighty days."
           }
         }
       }
     },
-    "perspective.black_belt.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Earning a martial arts black belt takes about ten years of practice."
+    "perspective.around_the_world.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Around the World"
           }
         }
       }
     },
-    "perspective.black_belt.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Black Belt"
+    "perspective.bamboo_growth.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Some bamboo species reach full height in about two years."
           }
         }
       }
     },
-    "perspective.blue_whale_calf.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A blue whale calf is usually weaned after about one year."
+    "perspective.bamboo_growth.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bamboo Growth"
           }
         }
       }
     },
-    "perspective.blue_whale_calf.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Blue Whale Calf"
+    "perspective.black_belt.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earning a martial arts black belt takes about ten years of practice."
           }
         }
       }
     },
-    "perspective.bread_dough.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bread dough usually rises in about one hour."
+    "perspective.black_belt.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Black Belt"
           }
         }
       }
     },
-    "perspective.bread_dough.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bread Dough"
+    "perspective.blue_whale_calf.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A blue whale calf is usually weaned after about one year."
           }
         }
       }
     },
-    "perspective.butterfly_emergence.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A butterfly can emerge from its chrysalis in about 45 minutes."
+    "perspective.blue_whale_calf.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blue Whale Calf"
           }
         }
       }
     },
-    "perspective.butterfly_emergence.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Butterfly Emergence"
+    "perspective.bread_dough.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bread dough usually rises in about one hour."
           }
         }
       }
     },
-    "perspective.camino_de_santiago.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Walking a legendary historic pilgrimage trail takes about one week."
+    "perspective.bread_dough.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bread Dough"
           }
         }
       }
     },
-    "perspective.camino_de_santiago.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Camino de Santiago"
+    "perspective.butterfly_emergence.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A butterfly can emerge from its chrysalis in about 45 minutes."
           }
         }
       }
     },
-    "perspective.chicken_egg.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A chicken egg hatches in about 21 days."
+    "perspective.butterfly_emergence.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butterfly Emergence"
           }
         }
       }
     },
-    "perspective.chicken_egg.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chicken Egg"
+    "perspective.camino_de_santiago.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Walking a legendary historic pilgrimage trail takes about one week."
           }
         }
       }
     },
-    "perspective.christmas_tree.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A Christmas tree grows to harvest size in about five years."
+    "perspective.camino_de_santiago.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camino de Santiago"
           }
         }
       }
     },
-    "perspective.christmas_tree.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Christmas Tree"
+    "perspective.chicken_egg.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A chicken egg hatches in about 21 days."
           }
         }
       }
     },
-    "perspective.coast_to_coast.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Driving across a major continental landmass takes about five days."
+    "perspective.chicken_egg.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chicken Egg"
           }
         }
       }
     },
-    "perspective.coast_to_coast.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Coast to Coast"
+    "perspective.christmas_tree.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Christmas tree grows to harvest size in about five years."
           }
         }
       }
     },
-    "perspective.coconut_palm.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A coconut palm reaches full productivity after about thirty years."
+    "perspective.christmas_tree.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Christmas Tree"
           }
         }
       }
     },
-    "perspective.coconut_palm.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Coconut Palm"
+    "perspective.coast_to_coast.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Driving across a major continental landmass takes about five days."
           }
         }
       }
     },
-    "perspective.coffee_break.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Taking a short coffee break usually takes about fifteen minutes."
+    "perspective.coast_to_coast.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coast to Coast"
           }
         }
       }
     },
-    "perspective.coffee_break.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Coffee Break"
+    "perspective.coconut_palm.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A coconut palm reaches full productivity after about thirty years."
           }
         }
       }
     },
-    "perspective.cold_brew_coffee.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Brewing cold brew coffee takes about twelve hours."
+    "perspective.coconut_palm.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coconut Palm"
           }
         }
       }
     },
-    "perspective.cold_brew_coffee.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cold Brew Coffee"
+    "perspective.coffee_break.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taking a short coffee break usually takes about fifteen minutes."
           }
         }
       }
     },
-    "perspective.cycling_adventure.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A two-week cycling tour can cross an entire country."
+    "perspective.coffee_break.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coffee Break"
           }
         }
       }
     },
-    "perspective.cycling_adventure.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cycling Adventure"
+    "perspective.cold_brew_coffee.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brewing cold brew coffee takes about twelve hours."
           }
         }
       }
     },
-    "perspective.elephant_pregnancy.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "An elephant pregnancy lasts about 22 months."
+    "perspective.cold_brew_coffee.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cold Brew Coffee"
           }
         }
       }
     },
-    "perspective.elephant_pregnancy.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elephant Pregnancy"
+    "perspective.cycling_adventure.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A two-week cycling tour can cross an entire country."
           }
         }
       }
     },
-    "perspective.gamma_cephei.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gamma Cephei naturally becomes Earth's North Star over time."
+    "perspective.cycling_adventure.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cycling Adventure"
           }
         }
       }
     },
-    "perspective.gamma_cephei.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gamma Cephei"
+    "perspective.elephant_pregnancy.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An elephant pregnancy lasts about 22 months."
           }
         }
       }
     },
-    "perspective.giant_sequoia_lifespan.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Giant sequoias can live for more than two thousand years."
+    "perspective.elephant_pregnancy.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elephant Pregnancy"
           }
         }
       }
     },
-    "perspective.giant_sequoia_lifespan.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Giant Sequoia Lifespan"
+    "perspective.gamma_cephei.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gamma Cephei naturally becomes Earth's North Star over time."
           }
         }
       }
     },
-    "perspective.giant_sequoia_youth.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A giant sequoia takes about eighty years to become well established."
+    "perspective.gamma_cephei.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gamma Cephei"
           }
         }
       }
     },
-    "perspective.giant_sequoia_youth.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Giant Sequoia Youth"
+    "perspective.giant_sequoia_lifespan.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giant sequoias can live for more than two thousand years."
           }
         }
       }
     },
-    "perspective.green_sahara.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The Sahara naturally becomes green again as Earth's climate cycles continue."
+    "perspective.giant_sequoia_lifespan.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giant Sequoia Lifespan"
           }
         }
       }
     },
-    "perspective.green_sahara.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Green Sahara"
+    "perspective.giant_sequoia_youth.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A giant sequoia takes about eighty years to become well established."
           }
         }
       }
     },
-    "perspective.haircut.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Getting a haircut usually takes about one hour."
+    "perspective.giant_sequoia_youth.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giant Sequoia Youth"
           }
         }
       }
     },
-    "perspective.haircut.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Haircut"
+    "perspective.green_sahara.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Sahara naturally becomes green again as Earth's climate cycles continue."
           }
         }
       }
     },
-    "perspective.hard_boiled_egg.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A hard-boiled egg is ready in about ten minutes."
+    "perspective.green_sahara.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Green Sahara"
           }
         }
       }
     },
-    "perspective.hard_boiled_egg.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hard-Boiled Egg"
+    "perspective.haircut.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Getting a haircut usually takes about one hour."
           }
         }
       }
     },
-    "perspective.helicopter_flight.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A sightseeing helicopter flight usually lasts about two hours."
+    "perspective.haircut.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haircut"
           }
         }
       }
     },
-    "perspective.helicopter_flight.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Helicopter Flight"
+    "perspective.hard_boiled_egg.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A hard-boiled egg is ready in about ten minutes."
           }
         }
       }
     },
-    "perspective.human_pregnancy.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A human pregnancy lasts about nine months."
+    "perspective.hard_boiled_egg.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hard-Boiled Egg"
           }
         }
       }
     },
-    "perspective.human_pregnancy.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Human Pregnancy"
+    "perspective.helicopter_flight.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A sightseeing helicopter flight usually lasts about two hours."
           }
         }
       }
     },
-    "perspective.interstellar_space.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Voyager 1 has traveled through interstellar space for nearly half a century."
+    "perspective.helicopter_flight.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helicopter Flight"
           }
         }
       }
     },
-    "perspective.interstellar_space.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Interstellar Space"
+    "perspective.human_pregnancy.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A human pregnancy lasts about nine months."
           }
         }
       }
     },
-    "perspective.jupiter_journey.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A mission to Jupiter takes about five years."
+    "perspective.human_pregnancy.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Human Pregnancy"
           }
         }
       }
     },
-    "perspective.jupiter_journey.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Jupiter Journey"
+    "perspective.interstellar_space.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voyager 1 has traveled through interstellar space for nearly half a century."
           }
         }
       }
     },
-    "perspective.kangaroo_joey.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A kangaroo joey leaves its mother's pouch after about five months."
+    "perspective.interstellar_space.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interstellar Space"
           }
         }
       }
     },
-    "perspective.kangaroo_joey.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kangaroo Joey"
+    "perspective.jupiter_journey.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A mission to Jupiter takes about five years."
           }
         }
       }
     },
-    "perspective.laundry.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Running a full laundry cycle usually takes about two hours."
+    "perspective.jupiter_journey.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jupiter Journey"
           }
         }
       }
     },
-    "perspective.laundry.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Laundry"
+    "perspective.kangaroo_joey.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A kangaroo joey leaves its mother's pouch after about five months."
           }
         }
       }
     },
-    "perspective.light_in_space.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light travels about 18 million km in one minute."
+    "perspective.kangaroo_joey.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kangaroo Joey"
           }
         }
       }
     },
-    "perspective.light_in_space.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light in Space"
+    "perspective.laundry.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Running a full laundry cycle usually takes about two hours."
           }
         }
       }
     },
-    "perspective.long_haul_flight.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A long-haul international flight often lasts about twelve hours."
+    "perspective.laundry.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laundry"
           }
         }
       }
     },
-    "perspective.long_haul_flight.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Long-Haul Flight"
+    "perspective.light_in_space.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light travels about 18 million km in one minute."
           }
         }
       }
     },
-    "perspective.mars_journey.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A spacecraft typically reaches Mars in about seven months."
+    "perspective.light_in_space.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light in Space"
           }
         }
       }
     },
-    "perspective.mars_journey.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mars Journey"
+    "perspective.long_haul_flight.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A long-haul international flight often lasts about twelve hours."
           }
         }
       }
     },
-    "perspective.milky_way_center.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from Earth reaches the center of the Milky Way in about 26,000 years."
+    "perspective.long_haul_flight.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Long-Haul Flight"
           }
         }
       }
     },
-    "perspective.milky_way_center.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Milky Way Center"
+    "perspective.mars_journey.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A spacecraft typically reaches Mars in about seven months."
           }
         }
       }
     },
-    "perspective.moon_journey.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apollo astronauts reached the Moon in about three days."
+    "perspective.mars_journey.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mars Journey"
           }
         }
       }
     },
-    "perspective.moon_journey.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Moon Journey"
+    "perspective.milky_way_center.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from Earth reaches the center of the Milky Way in about 26,000 years."
           }
         }
       }
     },
-    "perspective.movie.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Watching a feature film usually takes about two hours."
+    "perspective.milky_way_center.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Milky Way Center"
           }
         }
       }
     },
-    "perspective.movie.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Movie"
+    "perspective.moon_journey.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apollo astronauts reached the Moon in about three days."
           }
         }
       }
     },
-    "perspective.niagara_falls.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Niagara Falls takes about fifty years to erode one meter."
+    "perspective.moon_journey.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moon Journey"
           }
         }
       }
     },
-    "perspective.niagara_falls.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Niagara Falls"
+    "perspective.movie.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watching a feature film usually takes about two hours."
           }
         }
       }
     },
-    "perspective.novel.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reading an average novel takes about ten hours."
+    "perspective.movie.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Movie"
           }
         }
       }
     },
-    "perspective.novel.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Novel"
+    "perspective.niagara_falls.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niagara Falls takes about fifty years to erode one meter."
           }
         }
       }
     },
-    "perspective.oak_tree_maturity.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "An oak tree becomes mature after about twenty years."
+    "perspective.niagara_falls.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niagara Falls"
           }
         }
       }
     },
-    "perspective.oak_tree_maturity.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Oak Tree Maturity"
+    "perspective.novel.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading an average novel takes about ten hours."
           }
         }
       }
     },
-    "perspective.parmesan_cheese.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A wheel of Parmesan matures in about 12 months."
+    "perspective.novel.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novel"
           }
         }
       }
     },
-    "perspective.parmesan_cheese.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Parmesan Cheese"
+    "perspective.oak_tree_maturity.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An oak tree becomes mature after about twenty years."
           }
         }
       }
     },
-    "perspective.pizza_delivery.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pizza is often delivered within about 30 minutes."
+    "perspective.oak_tree_maturity.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oak Tree Maturity"
           }
         }
       }
     },
-    "perspective.pizza_delivery.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pizza Delivery"
+    "perspective.parmesan_cheese.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A wheel of Parmesan matures in about 12 months."
           }
         }
       }
     },
-    "perspective.pluto_journey.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "New Horizons reached Pluto in about nine and a half years."
+    "perspective.parmesan_cheese.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parmesan Cheese"
           }
         }
       }
     },
-    "perspective.pluto_journey.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pluto Journey"
+    "perspective.pizza_delivery.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pizza is often delivered within about 30 minutes."
           }
         }
       }
     },
-    "perspective.proxima_centauri.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from Earth reaches Proxima Centauri in about 4.25 years."
+    "perspective.pizza_delivery.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pizza Delivery"
           }
         }
       }
     },
-    "perspective.proxima_centauri.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Proxima Centauri"
+    "perspective.pluto_journey.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Horizons reached Pluto in about nine and a half years."
           }
         }
       }
     },
-    "perspective.red_wine.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Many red wines mature for about two years."
+    "perspective.pluto_journey.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluto Journey"
           }
         }
       }
     },
-    "perspective.red_wine.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Red Wine"
+    "perspective.proxima_centauri.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from Earth reaches Proxima Centauri in about 4.25 years."
           }
         }
       }
     },
-    "perspective.rice_cooking.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rice cooks on the stove in about twenty minutes."
+    "perspective.proxima_centauri.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proxima Centauri"
           }
         }
       }
     },
-    "perspective.rice_cooking.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rice Cooking"
+    "perspective.red_wine.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Many red wines mature for about two years."
           }
         }
       }
     },
-    "perspective.saturn_journey.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A mission to Saturn takes about seven years."
+    "perspective.red_wine.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Red Wine"
           }
         }
       }
     },
-    "perspective.saturn_journey.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Saturn Journey"
+    "perspective.rice_cooking.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rice cooks on the stove in about twenty minutes."
           }
         }
       }
     },
-    "perspective.scenic_road_trip.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A full-day road trip covers hundreds of kilometers."
+    "perspective.rice_cooking.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rice Cooking"
           }
         }
       }
     },
-    "perspective.scenic_road_trip.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scenic Road Trip"
+    "perspective.saturn_journey.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A mission to Saturn takes about seven years."
           }
         }
       }
     },
-    "perspective.scotch_whisky.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scotch whisky must mature for at least three years."
+    "perspective.saturn_journey.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saturn Journey"
           }
         }
       }
     },
-    "perspective.scotch_whisky.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scotch Whisky"
+    "perspective.scenic_road_trip.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A full-day road trip covers hundreds of kilometers."
           }
         }
       }
     },
-    "perspective.shinkansen.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A high-speed bullet train journey covers immense regional distances."
+    "perspective.scenic_road_trip.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scenic Road Trip"
           }
         }
       }
     },
-    "perspective.shinkansen.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Shinkansen"
+    "perspective.scotch_whisky.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scotch whisky must mature for at least three years."
           }
         }
       }
     },
-    "perspective.short_haul_flight.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A typical short-haul flight lasts about three hours."
+    "perspective.scotch_whisky.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scotch Whisky"
           }
         }
       }
     },
-    "perspective.short_haul_flight.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Short-Haul Flight"
+    "perspective.shinkansen.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A high-speed bullet train journey covers immense regional distances."
           }
         }
       }
     },
-    "perspective.sirius.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from Earth reaches Sirius in about 8.6 years."
+    "perspective.shinkansen.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shinkansen"
           }
         }
       }
     },
-    "perspective.sirius.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sirius"
+    "perspective.short_haul_flight.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A typical short-haul flight lasts about three hours."
           }
         }
       }
     },
-    "perspective.sleep.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Getting a healthy night's sleep lasts about eight hours."
+    "perspective.short_haul_flight.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Short-Haul Flight"
           }
         }
       }
     },
-    "perspective.sleep.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sleep"
+    "perspective.sirius.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from Earth reaches Sirius in about 8.6 years."
           }
         }
       }
     },
-    "perspective.slow_cooked_brisket.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Slow-cooking brisket takes about ten hours."
+    "perspective.sirius.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sirius"
           }
         }
       }
     },
-    "perspective.slow_cooked_brisket.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Slow-Cooked Brisket"
+    "perspective.sleep.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Getting a healthy night's sleep lasts about eight hours."
           }
         }
       }
     },
-    "perspective.solar_system_edge.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Voyager 1 reached the edge of the Solar System after about thirty-five years."
+    "perspective.sleep.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sleep"
           }
         }
       }
     },
-    "perspective.solar_system_edge.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Solar System Edge"
+    "perspective.slow_cooked_brisket.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slow-cooking brisket takes about ten hours."
           }
         }
       }
     },
-    "perspective.sunflower.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A sunflower completes its life cycle in about three months."
+    "perspective.slow_cooked_brisket.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slow-Cooked Brisket"
           }
         }
       }
     },
-    "perspective.sunflower.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunflower"
+    "perspective.solar_system_edge.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voyager 1 reached the edge of the Solar System after about thirty-five years."
           }
         }
       }
     },
-    "perspective.sunlight_earth.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from the Sun reaches Earth in about 8 minutes."
+    "perspective.solar_system_edge.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solar System Edge"
           }
         }
       }
     },
-    "perspective.sunlight_earth.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunlight Reaches Earth"
+    "perspective.sunflower.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A sunflower completes its life cycle in about three months."
           }
         }
       }
     },
-    "perspective.sunlight_jupiter.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from the Sun reaches Jupiter in about 43 minutes."
+    "perspective.sunflower.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunflower"
           }
         }
       }
     },
-    "perspective.sunlight_jupiter.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunlight Reaches Jupiter"
+    "perspective.sunlight_earth.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from the Sun reaches Earth in about 8 minutes."
           }
         }
       }
     },
-    "perspective.sunlight_mars.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from the Sun reaches Mars in about 13 minutes."
+    "perspective.sunlight_earth.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunlight Reaches Earth"
           }
         }
       }
     },
-    "perspective.sunlight_mars.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunlight Reaches Mars"
+    "perspective.sunlight_jupiter.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from the Sun reaches Jupiter in about 43 minutes."
           }
         }
       }
     },
-    "perspective.sunlight_neptune.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from the Sun reaches Neptune in about 4 hours."
+    "perspective.sunlight_jupiter.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunlight Reaches Jupiter"
           }
         }
       }
     },
-    "perspective.sunlight_neptune.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunlight Reaches Neptune"
+    "perspective.sunlight_mars.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from the Sun reaches Mars in about 13 minutes."
           }
         }
       }
     },
-    "perspective.sunlight_pluto.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Light from the Sun reaches Pluto in about five and a half hours."
+    "perspective.sunlight_mars.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunlight Reaches Mars"
           }
         }
       }
     },
-    "perspective.sunlight_pluto.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunlight Reaches Pluto"
+    "perspective.sunlight_neptune.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from the Sun reaches Neptune in about 4 hours."
           }
         }
       }
     },
-    "perspective.transatlantic_flight.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A nonstop flight across the Atlantic takes about eight hours."
+    "perspective.sunlight_neptune.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunlight Reaches Neptune"
           }
         }
       }
     },
-    "perspective.transatlantic_flight.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transatlantic Flight"
+    "perspective.sunlight_pluto.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light from the Sun reaches Pluto in about five and a half hours."
           }
         }
       }
     },
-    "perspective.vega_pole_star.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vega naturally shifts to become Earth's North Star."
+    "perspective.sunlight_pluto.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunlight Reaches Pluto"
           }
         }
       }
     },
-    "perspective.vega_pole_star.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vega Pole Star"
+    "perspective.transatlantic_flight.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A nonstop flight across the Atlantic takes about eight hours."
           }
         }
       }
     },
-    "perspective.video_game.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Completing many video games takes about fifteen hours."
+    "perspective.transatlantic_flight.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transatlantic Flight"
           }
         }
       }
     },
-    "perspective.video_game.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Video Game"
+    "perspective.vega_pole_star.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vega naturally shifts to become Earth's North Star."
           }
         }
       }
     },
-    "perspective.wheat_harvest.description": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wheat grows from seed to harvest in about four months."
+    "perspective.vega_pole_star.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vega Pole Star"
           }
         }
       }
     },
-    "perspective.wheat_harvest.title": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wheat Harvest"
+    "perspective.video_game.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completing many video games takes about fifteen hours."
+          }
+        }
+      }
+    },
+    "perspective.video_game.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video Game"
+          }
+        }
+      }
+    },
+    "perspective.wheat_harvest.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wheat grows from seed to harvest in about four months."
+          }
+        }
+      }
+    },
+    "perspective.wheat_harvest.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wheat Harvest"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

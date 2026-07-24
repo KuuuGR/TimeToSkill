@@ -11,15 +11,22 @@ struct TimePerspective: Identifiable, Codable {
     let category: PerspectiveCategory
 
     var title: String {
-        String(
-            localized: String.LocalizationValue("perspective.\(id).title"),
-            table: "TimePerspective"
-        )
+        localizedString(key: "perspective.\(id).title")
     }
 
     var description: String {
-        String(
-            localized: String.LocalizationValue("perspective.\(id).description"),
+        localizedString(key: "perspective.\(id).description")
+    }
+
+    /// Looks up a fully formed catalog key in the `TimePerspective` strings table.
+    ///
+    /// Dynamic keys must use `Bundle.localizedString(forKey:value:table:)`.
+    /// `String.LocalizationValue("…\(id)…")` interpolates to format key
+    /// `perspective.%@.title` and returns the raw key when lookup fails.
+    private func localizedString(key: String) -> String {
+        Bundle.main.localizedString(
+            forKey: key,
+            value: nil,
             table: "TimePerspective"
         )
     }

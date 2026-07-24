@@ -75,4 +75,25 @@ final class TimePerspectiveMatcherTests: XCTestCase {
         XCTAssertEqual(library.first?.thresholdMinutes, 15)
         XCTAssertEqual(library.first?.category, .everydayLife)
     }
+
+    func testLocalizedTitlesAndDescriptionsResolve() throws {
+        let library = try TimePerspectiveLoader.loadLibrary()
+        let byID = Dictionary(uniqueKeysWithValues: library.map { ($0.id, $0) })
+
+        let expected: [(String, String, String)] = [
+            ("coffee_break", "Coffee Break", "Taking a short coffee break usually takes about fifteen minutes."),
+            ("scotch_whisky", "Scotch Whisky", "Scotch whisky must mature for at least three years."),
+            ("coconut_palm", "Coconut Palm", "A coconut palm reaches full productivity after about thirty years."),
+            ("proxima_centauri", "Proxima Centauri", "Light from Earth reaches Proxima Centauri in about 4.25 years."),
+            ("light_in_space", "Light in Space", "Light travels about 18 million km in one minute.")
+        ]
+
+        for (id, title, description) in expected {
+            let item = try XCTUnwrap(byID[id], "Missing library entry \(id)")
+            XCTAssertEqual(item.title, title, "title for \(id)")
+            XCTAssertEqual(item.description, description, "description for \(id)")
+            XCTAssertFalse(item.title.hasPrefix("perspective."), "raw key leaked for \(id) title")
+            XCTAssertFalse(item.description.hasPrefix("perspective."), "raw key leaked for \(id) description")
+        }
+    }
 }

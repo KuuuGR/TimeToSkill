@@ -35,6 +35,10 @@ struct OptionsView: View {
     // Stores the input field that should be the source of calculations
     @State private var activeSource: Field = .none
     @State private var calculationInProgress: Bool = false
+
+    // Time Perspective (duration comparisons)
+    @State private var perspectiveLibrary: [TimePerspective] = []
+    @State private var matchedPerspective: TimePerspective?
     
     var body: some View {
         NavigationStack {
@@ -156,6 +160,9 @@ struct OptionsView: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .trailing)
                     .padding(.top, 8)
+
+                    TimePerspectiveCard(perspective: matchedPerspective)
+                        .padding(.top, 4)
                     
                 } header: {
                     Text(LocalizedStringKey("Time_Converter_Section_Header"))
@@ -163,6 +170,13 @@ struct OptionsView: View {
             }
             .navigationTitle(LocalizedStringKey("options_title"))
             .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                if perspectiveLibrary.isEmpty {
+                    perspectiveLibrary = (try? TimePerspectiveLoader.loadLibrary())?
+                        .sorted { $0.thresholdMinutes < $1.thresholdMinutes }
+                        ?? []
+                }
+            }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(LocalizedStringKey("button_done")) {
@@ -276,6 +290,15 @@ struct OptionsView: View {
         if activeSource != .years {
             let years = totalHoursValue / (365 * 24)
             yearsOutput = "\(years)"
+        }
+
+        let totalMinutes = totalHoursValue * 60
+        let match = TimePerspectiveMatcher.findBestPerspective(
+            for: totalMinutes,
+            in: perspectiveLibrary
+        )
+        withAnimation(.easeInOut(duration: 0.28)) {
+            matchedPerspective = match
         }
         
         calculationInProgress = false
