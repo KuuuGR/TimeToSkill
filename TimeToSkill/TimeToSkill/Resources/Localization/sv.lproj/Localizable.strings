@@ -112,7 +112,7 @@
 "stats_total_hours" = "Totala timmar";
 "stats_skill_count" = "Färdigheter";
 "stats_active_timers" = "Aktiva timrar";
-"stats_first_tracked" = "Första spårning";
+"stats_first_tracked" = "Första sessionen";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Toppfärdigheter";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Spårad tid";
-"stats_week_label" = "Vecka";
-"stats_month_label" = "Månad";
-"stats_total_label" = "Totalt";
+"stats_week_label" = "Senaste 7 dagarna";
+"stats_month_label" = "Senaste 30 dagarna";
+"stats_total_label" = "All tid";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Aktivitetslogg";

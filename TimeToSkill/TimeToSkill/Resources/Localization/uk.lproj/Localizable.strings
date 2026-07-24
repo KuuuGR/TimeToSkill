@@ -101,7 +101,7 @@
 "stats_total_hours" = "Усього годин";
 "stats_skill_count" = "Навички";
 "stats_active_timers" = "Активні трекери";
-"stats_first_tracked" = "Перший запис";
+"stats_first_tracked" = "Перша сесія";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Топ навичок";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Відстежений час";
-"stats_week_label" = "Тиждень";
-"stats_month_label" = "Місяць";
-"stats_total_label" = "Усього";
+"stats_week_label" = "Останні 7 днів";
+"stats_month_label" = "Останні 30 днів";
+"stats_total_label" = "Весь час";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Журнал активності";

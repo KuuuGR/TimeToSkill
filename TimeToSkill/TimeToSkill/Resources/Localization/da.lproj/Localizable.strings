@@ -113,7 +113,7 @@
 "stats_total_hours" = "Samlede timer";
 "stats_skill_count" = "Færdigheder";
 "stats_active_timers" = "Aktive trackere";
-"stats_first_tracked" = "Første optegnelse";
+"stats_first_tracked" = "Første session";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Topfærdigheder";
@@ -121,9 +121,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Tid sporet";
-"stats_week_label" = "Uge";
-"stats_month_label" = "Måned";
-"stats_total_label" = "I alt";
+"stats_week_label" = "Seneste 7 dage";
+"stats_month_label" = "Seneste 30 dage";
+"stats_total_label" = "Al tid";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Aktivitetslog";

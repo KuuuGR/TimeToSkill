@@ -101,7 +101,7 @@
 "stats_total_hours" = "Összes óra";
 "stats_skill_count" = "Készségek";
 "stats_active_timers" = "Aktív trackerek";
-"stats_first_tracked" = "Első követés";
+"stats_first_tracked" = "Első munkamenet";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Legjobb készségek";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Követett idő";
-"stats_week_label" = "Hét";
-"stats_month_label" = "Hónap";
-"stats_total_label" = "Összesen";
+"stats_week_label" = "Elmúlt 7 nap";
+"stats_month_label" = "Elmúlt 30 nap";
+"stats_total_label" = "Összes idő";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Aktivitásnapló";

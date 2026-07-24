@@ -112,7 +112,7 @@
 "stats_total_hours" = "총 시간";
 "stats_skill_count" = "스킬 수";
 "stats_active_timers" = "활성 타이머";
-"stats_first_tracked" = "첫 기록";
+"stats_first_tracked" = "첫 세션";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 최고 스킬";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 추적된 시간";
-"stats_week_label" = "주";
-"stats_month_label" = "월";
-"stats_total_label" = "합계";
+"stats_week_label" = "최근 7일";
+"stats_month_label" = "최근 30일";
+"stats_total_label" = "전체 기간";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 활동 로그";

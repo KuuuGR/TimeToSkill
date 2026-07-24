@@ -112,7 +112,7 @@
 "stats_total_hours" = "Всего часов";
 "stats_skill_count" = "Навыки";
 "stats_active_timers" = "Активные таймеры";
-"stats_first_tracked" = "Первое отслеживание";
+"stats_first_tracked" = "Первая сессия";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Топ навыков";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Отслеженное время";
-"stats_week_label" = "Неделя";
-"stats_month_label" = "Месяц";
-"stats_total_label" = "Всего";
+"stats_week_label" = "Последние 7 дней";
+"stats_month_label" = "Последние 30 дней";
+"stats_total_label" = "Всё время";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Журнал активности";

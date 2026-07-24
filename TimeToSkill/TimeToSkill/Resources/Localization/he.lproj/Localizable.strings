@@ -101,7 +101,7 @@
 "stats_total_hours" = "סה\"כ שעות";
 "stats_skill_count" = "מיומנויות";
 "stats_active_timers" = "טיימרים פעילים";
-"stats_first_tracked" = "מעקב ראשון";
+"stats_first_tracked" = "הפעלה ראשונה";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 מיומנויות מובילות";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 זמן במעקב";
-"stats_week_label" = "שבוע";
-"stats_month_label" = "חודש";
-"stats_total_label" = "סה\"כ";
+"stats_week_label" = "7 הימים האחרונים";
+"stats_month_label" = "30 הימים האחרונים";
+"stats_total_label" = "כל הזמן";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 יומן פעילות";

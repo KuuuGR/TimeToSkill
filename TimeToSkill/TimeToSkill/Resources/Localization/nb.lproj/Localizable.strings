@@ -101,7 +101,7 @@
 "stats_total_hours" = "Totalt antall timer";
 "stats_skill_count" = "Ferdigheter";
 "stats_active_timers" = "Aktive timere";
-"stats_first_tracked" = "Første registrering";
+"stats_first_tracked" = "Første økt";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Toppferdigheter";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Tid Sporet";
-"stats_week_label" = "Uke";
-"stats_month_label" = "Måned";
-"stats_total_label" = "Totalt";
+"stats_week_label" = "Siste 7 dager";
+"stats_month_label" = "Siste 30 dager";
+"stats_total_label" = "All tid";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Aktivitetslogg";

@@ -101,7 +101,7 @@
 "stats_total_hours" = "Total Jam";
 "stats_skill_count" = "Jumlah Keterampilan";
 "stats_active_timers" = "Timer Aktif";
-"stats_first_tracked" = "Pertama Dicatat";
+"stats_first_tracked" = "Sesi Pertama";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Keterampilan Teratas";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Waktu yang Dilacak";
-"stats_week_label" = "Minggu";
-"stats_month_label" = "Bulan";
-"stats_total_label" = "Total";
+"stats_week_label" = "7 Hari Terakhir";
+"stats_month_label" = "30 Hari Terakhir";
+"stats_total_label" = "Semua Waktu";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Riwayat Aktivitas";

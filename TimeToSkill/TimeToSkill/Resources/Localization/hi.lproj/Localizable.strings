@@ -101,7 +101,7 @@
 "stats_total_hours" = "कुल घंटे";
 "stats_skill_count" = "कौशल";
 "stats_active_timers" = "सक्रिय टाइमर";
-"stats_first_tracked" = "पहली ट्रैकिंग";
+"stats_first_tracked" = "पहला सत्र";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 शीर्ष कौशल";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 ट्रैक किया गया समय";
-"stats_week_label" = "सप्ताह";
-"stats_month_label" = "माह";
-"stats_total_label" = "कुल";
+"stats_week_label" = "पिछले 7 दिन";
+"stats_month_label" = "पिछले 30 दिन";
+"stats_total_label" = "सभी समय";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 गतिविधि लॉग";

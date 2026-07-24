@@ -101,7 +101,7 @@
 "stats_total_hours" = "Tổng số giờ";
 "stats_skill_count" = "Kỹ năng";
 "stats_active_timers" = "Trình theo dõi đang hoạt động";
-"stats_first_tracked" = "Bản ghi đầu tiên";
+"stats_first_tracked" = "Phiên đầu tiên";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Kỹ năng hàng đầu";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Thời gian đã theo dõi";
-"stats_week_label" = "Tuần";
-"stats_month_label" = "Tháng";
-"stats_total_label" = "Tổng cộng";
+"stats_week_label" = "7 ngày qua";
+"stats_month_label" = "30 ngày qua";
+"stats_total_label" = "Tất cả thời gian";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Nhật ký hoạt động";

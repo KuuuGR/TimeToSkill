@@ -112,7 +112,7 @@
 "stats_total_hours" = "总小时数";
 "stats_skill_count" = "技能数量";
 "stats_active_timers" = "活跃计时器";
-"stats_first_tracked" = "首次记录";
+"stats_first_tracked" = "首次会话";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 顶级技能";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 跟踪时间";
-"stats_week_label" = "周";
-"stats_month_label" = "月";
-"stats_total_label" = "总计";
+"stats_week_label" = "最近7天";
+"stats_month_label" = "最近30天";
+"stats_total_label" = "全部时间";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 活动记录";

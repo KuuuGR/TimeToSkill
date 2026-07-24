@@ -101,7 +101,7 @@
 "stats_total_hours" = "Συνολικές ώρες";
 "stats_skill_count" = "Δεξιότητες";
 "stats_active_timers" = "Ενεργά χρονόμετρα";
-"stats_first_tracked" = "Πρώτη καταγραφή";
+"stats_first_tracked" = "Πρώτη συνεδρία";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Κορυφαίες δεξιότητες";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Χρόνος που παρακολουθήθηκε";
-"stats_week_label" = "Εβδομάδα";
-"stats_month_label" = "Μήνας";
-"stats_total_label" = "Σύνολο";
+"stats_week_label" = "Τελευταίες 7 ημέρες";
+"stats_month_label" = "Τελευταίες 30 ημέρες";
+"stats_total_label" = "Όλος ο χρόνος";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Ιστορικό δραστηριοτήτων";

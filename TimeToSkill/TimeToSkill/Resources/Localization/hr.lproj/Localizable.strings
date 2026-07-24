@@ -101,7 +101,7 @@
 "stats_total_hours" = "Ukupno sati";
 "stats_skill_count" = "Vještine";
 "stats_active_timers" = "Aktivni trackeri";
-"stats_first_tracked" = "Prvi zapis";
+"stats_first_tracked" = "Prva sesija";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Najbolje vještine";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Praćeno vrijeme";
-"stats_week_label" = "Tjedan";
-"stats_month_label" = "Mjesec";
-"stats_total_label" = "Ukupno";
+"stats_week_label" = "Zadnjih 7 dana";
+"stats_month_label" = "Zadnjih 30 dana";
+"stats_total_label" = "Cijelo vrijeme";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Dnevnik aktivnosti";

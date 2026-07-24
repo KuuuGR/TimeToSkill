@@ -112,7 +112,7 @@
 "stats_total_hours" = "Toplam Saat";
 "stats_skill_count" = "Beceriler";
 "stats_active_timers" = "Aktif Zamanlayıcılar";
-"stats_first_tracked" = "İlk Kayıt";
+"stats_first_tracked" = "İlk Oturum";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 En İyi Beceriler";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Takip Edilen Süre";
-"stats_week_label" = "Hafta";
-"stats_month_label" = "Ay";
-"stats_total_label" = "Toplam";
+"stats_week_label" = "Son 7 Gün";
+"stats_month_label" = "Son 30 Gün";
+"stats_total_label" = "Tüm Zamanlar";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Aktivite Günlüğü";

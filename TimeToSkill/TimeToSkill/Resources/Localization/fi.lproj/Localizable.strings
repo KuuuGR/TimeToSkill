@@ -101,7 +101,7 @@
 "stats_total_hours" = "Tunteja yhteensä";
 "stats_skill_count" = "Taidot";
 "stats_active_timers" = "Aktiiviset ajastimet";
-"stats_first_tracked" = "Ensimmäinen seuranta";
+"stats_first_tracked" = "Ensimmäinen istunto";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Parhaat taidot";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Seurattu aika";
-"stats_week_label" = "Viikko";
-"stats_month_label" = "Kuukausi";
-"stats_total_label" = "Yhteensä";
+"stats_week_label" = "Viimeiset 7 päivää";
+"stats_month_label" = "Viimeiset 30 päivää";
+"stats_total_label" = "Koko aika";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Aktiviteettiloki";

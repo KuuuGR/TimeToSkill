@@ -101,7 +101,7 @@
 "stats_total_hours" = "Total ore";
 "stats_skill_count" = "Abilități";
 "stats_active_timers" = "Cronometre active";
-"stats_first_tracked" = "Primul înregistrat";
+"stats_first_tracked" = "Prima sesiune";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Abilități de top";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Timp urmărit";
-"stats_week_label" = "Săptămână";
-"stats_month_label" = "Lună";
-"stats_total_label" = "Total";
+"stats_week_label" = "Ultimele 7 zile";
+"stats_month_label" = "Ultimele 30 de zile";
+"stats_total_label" = "Tot timpul";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Jurnal de activitate";

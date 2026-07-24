@@ -112,7 +112,7 @@
 "stats_total_hours" = "合計時間";
 "stats_skill_count" = "スキル数";
 "stats_active_timers" = "アクティブなタイマー";
-"stats_first_tracked" = "最初の記録";
+"stats_first_tracked" = "最初のセッション";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 トップスキル";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 記録された時間";
-"stats_week_label" = "週";
-"stats_month_label" = "月";
-"stats_total_label" = "合計";
+"stats_week_label" = "過去7日";
+"stats_month_label" = "過去30日";
+"stats_total_label" = "全期間";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 アクティビティログ";

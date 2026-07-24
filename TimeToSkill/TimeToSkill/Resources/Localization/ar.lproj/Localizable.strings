@@ -105,7 +105,7 @@
 "stats_total_hours" = "إجمالي الساعات";
 "stats_skill_count" = "المهارات";
 "stats_active_timers" = "المؤقتات النشطة";
-"stats_first_tracked" = "أول تتبع";
+"stats_first_tracked" = "أول جلسة";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 أفضل المهارات";
@@ -113,9 +113,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 الوقت المتتبع";
-"stats_week_label" = "أسبوع";
-"stats_month_label" = "شهر";
-"stats_total_label" = "الإجمالي";
+"stats_week_label" = "آخر 7 أيام";
+"stats_month_label" = "آخر 30 يومًا";
+"stats_total_label" = "كل الوقت";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 سجل النشاطات";

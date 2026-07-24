@@ -101,7 +101,7 @@
 "stats_total_hours" = "ชั่วโมงทั้งหมด";
 "stats_skill_count" = "ทักษะ";
 "stats_active_timers" = "ตัวจับเวลาใช้งานอยู่";
-"stats_first_tracked" = "รายการแรก";
+"stats_first_tracked" = "เซสชันแรก";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 ทักษะเด่น";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 เวลาที่ติดตาม";
-"stats_week_label" = "สัปดาห์";
-"stats_month_label" = "เดือน";
-"stats_total_label" = "ทั้งหมด";
+"stats_week_label" = "7 วันล่าสุด";
+"stats_month_label" = "30 วันล่าสุด";
+"stats_total_label" = "ตลอดเวลา";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 บันทึกกิจกรรม";

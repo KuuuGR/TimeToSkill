@@ -102,7 +102,7 @@
 "stats_total_hours" = "Total d'hores";
 "stats_skill_count" = "Habilitats";
 "stats_active_timers" = "Timers actius";
-"stats_first_tracked" = "Primera habilitat";
+"stats_first_tracked" = "Primera sessió";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Millors habilitats";
@@ -110,9 +110,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Temps registrat";
-"stats_week_label" = "Setmana";
-"stats_month_label" = "Mes";
-"stats_total_label" = "Total";
+"stats_week_label" = "Últims 7 dies";
+"stats_month_label" = "Últims 30 dies";
+"stats_total_label" = "Tot el temps";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Registre d’activitat";

@@ -101,7 +101,7 @@
 "stats_total_hours" = "Celkový čas";
 "stats_skill_count" = "Dovednosti";
 "stats_active_timers" = "Aktivní trackery";
-"stats_first_tracked" = "První záznam";
+"stats_first_tracked" = "První relace";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Nejlepší dovednosti";
@@ -109,9 +109,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Sledovaný čas";
-"stats_week_label" = "Týden";
-"stats_month_label" = "Měsíc";
-"stats_total_label" = "Celkem";
+"stats_week_label" = "Posledních 7 dní";
+"stats_month_label" = "Posledních 30 dní";
+"stats_total_label" = "Celá doba";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Historie aktivit";

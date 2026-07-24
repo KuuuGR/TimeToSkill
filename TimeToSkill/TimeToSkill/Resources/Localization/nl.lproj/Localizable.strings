@@ -112,7 +112,7 @@
 "stats_total_hours" = "Totaal aantal uren";
 "stats_skill_count" = "Vaardigheden";
 "stats_active_timers" = "Actieve timers";
-"stats_first_tracked" = "Eerste registratie";
+"stats_first_tracked" = "Eerste sessie";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Topvaardigheden";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Tijd gevolgd";
-"stats_week_label" = "Week";
-"stats_month_label" = "Maand";
-"stats_total_label" = "Totaal";
+"stats_week_label" = "Laatste 7 dagen";
+"stats_month_label" = "Laatste 30 dagen";
+"stats_total_label" = "Alle tijd";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Activiteitenlogboek";

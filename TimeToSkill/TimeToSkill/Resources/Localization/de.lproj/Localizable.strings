@@ -112,7 +112,7 @@
 "stats_total_hours" = "Gesamtstunden";
 "stats_skill_count" = "Fähigkeiten";
 "stats_active_timers" = "Aktive Timer";
-"stats_first_tracked" = "Erster Eintrag";
+"stats_first_tracked" = "Erste Sitzung";
 
 // MARK: - TopSkillsView
 "stats_top_skills_title" = "🏆 Top-Fähigkeiten";
@@ -120,9 +120,9 @@
 
 // MARK: - TrackedTimeView
 "stats_tracked_time_title" = "📅 Verfolgte Zeit";
-"stats_week_label" = "Woche";
-"stats_month_label" = "Monat";
-"stats_total_label" = "Gesamt";
+"stats_week_label" = "Letzte 7 Tage";
+"stats_month_label" = "Letzte 30 Tage";
+"stats_total_label" = "Gesamte Zeit";
 
 // MARK: - ActivityLogView
 "activity_log_title" = "📅 Aktivitätsverlauf";
