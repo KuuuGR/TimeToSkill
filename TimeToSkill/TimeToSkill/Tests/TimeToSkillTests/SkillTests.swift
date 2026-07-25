@@ -15,6 +15,21 @@ final class SkillTests: XCTestCase {
         XCTAssertEqual(skill.hours, 12.5, accuracy: 0.01)
     }
 
+    func testEffectiveHoursIncludesRunningSession() {
+        let skill = Skill(name: "Piano", hours: 1.0)
+        let start = Date().addingTimeInterval(-3600) // 1 hour ago
+        skill.activeStart = start
+
+        let effective = skill.effectiveHours(at: start.addingTimeInterval(3600))
+        XCTAssertEqual(effective, 2.0, accuracy: 0.01)
+        XCTAssertEqual(skill.hours, 1.0, accuracy: 0.01, "persisted hours must stay unchanged")
+    }
+
+    func testEffectiveHoursWithoutSessionEqualsPersisted() {
+        let skill = Skill(name: "Drums", hours: 3.5)
+        XCTAssertEqual(skill.effectiveHours(), 3.5, accuracy: 0.01)
+    }
+
     func testSkillProgressColorLow() {
         let skill = Skill(name: "Test", hours: 10)
         let view = SkillProgressView(

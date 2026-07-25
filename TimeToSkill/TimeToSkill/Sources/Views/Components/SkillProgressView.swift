@@ -10,13 +10,24 @@ import SwiftUI
 /// Horizontal progress bar for a single skill
 struct SkillProgressView: View {
     @Bindable var skill: Skill
+    /// Clock used for live effective progress while a session is running.
+    var now: Date = .now
     var isActive: Bool
     var onToggleTimer: () -> Void
     var onShowOptions: () -> Void
 
+    /// Hours shown in the UI (persisted + live session when active).
+    private var displayHours: Double {
+        skill.effectiveHours(at: now)
+    }
+
     /// Determines the color based on current learning stage
     internal var progressColor: Color {
-        switch skill.hours {
+        Self.progressColor(for: displayHours)
+    }
+
+    internal static func progressColor(for hours: Double) -> Color {
+        switch hours {
         case ..<0:
             return .trueGray
         case 0..<21:
@@ -36,13 +47,13 @@ struct SkillProgressView: View {
 
     /// Computes cumulative progress within the current stage
     private var stageProgress: Double {
-        let hours = skill.hours
-        
+        let hours = displayHours
+
         // Guard against NaN and infinite values
         guard hours.isFinite && !hours.isNaN else {
             return 0
         }
-        
+
         switch hours {
         case ..<0:
             return 0
@@ -63,10 +74,10 @@ struct SkillProgressView: View {
 
     /// Converts hours into human-friendly label
     private var formattedTimeLabel: String {
-        let absHours = abs(skill.hours)
+        let absHours = abs(displayHours)
         let hours = Int(absHours)
         let minutes = Int((absHours - Double(hours)) * 60)
-        let sign = skill.hours < 0 ? "-" : ""
+        let sign = displayHours < 0 ? "-" : ""
         return "\(sign)\(hours)h \(minutes)m"
     }
 
@@ -106,7 +117,7 @@ struct SkillProgressView: View {
                             height: 25
                         )
                         .foregroundColor(progressColor)
-                        .animation(.easeInOut(duration: 0.6), value: skill.hours)
+                        .animation(isActive ? nil : .easeInOut(duration: 0.6), value: displayHours)
                 }
             }
             .frame(height: 25)

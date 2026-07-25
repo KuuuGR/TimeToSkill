@@ -27,4 +27,18 @@ final class Skill {
         self.hours = hours.isFinite && !hours.isNaN ? hours : 0
         self.lastUpdated = Date()
     }
+
+    /// Persisted hours plus the current running session (if any), as of `date`.
+    ///
+    /// This is display-only — persistence still writes to `hours` on Stop.
+    func effectiveHours(at date: Date = .now) -> Double {
+        var total = hours
+        if let start = activeStart {
+            let elapsedHours = date.timeIntervalSince(start) / 3600.0
+            if elapsedHours.isFinite && !elapsedHours.isNaN && elapsedHours > 0 {
+                total += elapsedHours
+            }
+        }
+        return total
+    }
 }

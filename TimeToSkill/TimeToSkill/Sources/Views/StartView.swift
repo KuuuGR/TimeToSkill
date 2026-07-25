@@ -21,7 +21,34 @@ struct StartView: View {
         var id: String { self.rawValue }
     }
 
+    private var anyTimerRunning: Bool {
+        skills.contains { $0.activeStart != nil }
+    }
+
     var body: some View {
+        Group {
+            if anyTimerRunning {
+                // Single shared tick for live progress + progress-based sorting.
+                TimelineView(.periodic(from: .now, by: 1)) { context in
+                    mainContent(now: context.date)
+                }
+            } else {
+                mainContent(now: .now)
+            }
+        }
+        .navigationTitle(LocalizedStringKey("tracking_nav_title"))
+        .sheet(isPresented: $showingAddSkill) {
+            AddSkillView()
+        }
+        .sheet(item: $selectedSkillForOptions) { skill in
+            SkillOptionsSheet(skill: skill) {
+                context.delete(skill)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func mainContent(now: Date) -> some View {
         VStack {
             // Title
             Text(LocalizedStringKey("tracking_title"))
@@ -41,7 +68,8 @@ struct StartView: View {
 
             // Content with skills and FAB
             ZStack {
-                if sortedSkills.isEmpty {
+                let sorted = sortedSkills(at: now)
+                if sorted.isEmpty {
                     VStack(spacing: 16) {
                         Image(systemName: "lightbulb")
                             .resizable()
@@ -64,9 +92,10 @@ struct StartView: View {
                 } else {
                     ScrollView {
                         VStack(spacing: 20) {
-                            ForEach(sortedSkills) { skill in
+                            ForEach(sorted) { skill in
                                 SkillProgressView(
                                     skill: skill,
+                                    now: now,
                                     isActive: skill.activeStart != nil,
                                     onToggleTimer: {
                                         toggleTimer(for: skill)
@@ -97,15 +126,6 @@ struct StartView: View {
                 }
             }
         }
-        .navigationTitle(LocalizedStringKey("tracking_nav_title"))
-        .sheet(isPresented: $showingAddSkill) {
-            AddSkillView()
-        }
-        .sheet(item: $selectedSkillForOptions) { skill in
-            SkillOptionsSheet(skill: skill) {
-                context.delete(skill)
-            }
-        }
     }
 
     /// Toggles the timer state for a given skill.
@@ -113,26 +133,26 @@ struct StartView: View {
         if let start = skill.activeStart {
             let elapsed = Date().timeIntervalSince(start)
             let hoursToAdd = elapsed / 3600
-            
+
             // Guard against NaN and infinite values
             guard hoursToAdd.isFinite && !hoursToAdd.isNaN && hoursToAdd >= 0 else {
                 skill.activeStart = nil
                 return
             }
-            
+
             skill.hours += hoursToAdd
             // Persist interval entry (minutes)
             let minutes = hoursToAdd * 60.0
             let entry = TimeIntervalEntry(skillId: skill.id, durationMinutes: minutes, source: .timer)
             context.insert(entry)
-            
+
             skill.activeStart = nil
         } else {
             skill.activeStart = Date()
         }
     }
 
-    var sortedSkills: [Skill] {
+    private func sortedSkills(at now: Date) -> [Skill] {
         let currentSort = SkillSortOption(rawValue: selectedSortRawValue) ?? .nameAsc
         switch currentSort {
         case .nameAsc:
@@ -140,9 +160,13 @@ struct StartView: View {
         case .nameDesc:
             return skills.sorted { $0.name.lowercased() > $1.name.lowercased() }
         case .hoursAsc:
-            return skills.sorted { $0.hours < $1.hours }
+            return skills.sorted {
+                $0.effectiveHours(at: now) < $1.effectiveHours(at: now)
+            }
         case .hoursDesc:
-            return skills.sorted { $0.hours > $1.hours }
+            return skills.sorted {
+                $0.effectiveHours(at: now) > $1.effectiveHours(at: now)
+            }
         }
     }
 }
