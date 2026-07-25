@@ -6,17 +6,22 @@ struct AddSkillView: View {
     @Environment(\.modelContext) private var context
 
     @State private var skillName: String = ""
+    @State private var skillIcon: String = ""
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
-                TextField(LocalizedStringKey("enter_skill_name"), text: $skillName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+                HStack(spacing: 12) {
+                    SkillEmojiPickerButton(selection: $skillIcon)
+
+                    TextField(LocalizedStringKey("enter_skill_name"), text: $skillName)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                .padding()
 
                 Button(action: {
                     guard !skillName.isEmpty else { return }
-                    let newSkill = Skill(name: skillName)
+                    let newSkill = Skill(name: skillName, icon: skillIcon)
                     context.insert(newSkill)
                     dismiss()
                 }) {

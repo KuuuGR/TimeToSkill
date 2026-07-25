@@ -16,6 +16,7 @@ struct SkillOptionsSheet: View {
     var onDelete: () -> Void
 
     @State private var newName: String
+    @State private var skillIcon: String
     @State private var showResetConfirmation = false
     @State private var showDeleteConfirmation = false
     @State private var adjustHours: String = ""
@@ -29,6 +30,7 @@ struct SkillOptionsSheet: View {
     init(skill: Skill, onDelete: @escaping () -> Void) {
         self._skill = .init(wrappedValue: skill)
         self._newName = State(initialValue: skill.name)
+        self._skillIcon = State(initialValue: skill.icon)
         self.onDelete = onDelete
     }
 
@@ -36,6 +38,12 @@ struct SkillOptionsSheet: View {
         NavigationStack {
             Form {
                 Section(header: Text(LocalizedStringKey("skill_name_section"))) {
+                    Text(LocalizedStringKey("skill_icon_label"))
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+
+                    SkillEmojiPickerButton(selection: $skillIcon)
+
                     Text(LocalizedStringKey("skill_name_label"))
                         .font(.caption)
                         .foregroundColor(.secondary)
@@ -132,6 +140,7 @@ struct SkillOptionsSheet: View {
                     Button(LocalizedStringKey("done")) {
                         if !newName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                             skill.name = newName
+                            skill.icon = skillIcon
                             dismiss()
                         }
                     }

@@ -73,6 +73,12 @@ struct SkillProgressView: View {
     var body: some View {
         VStack(spacing: 12) {
             HStack {
+                if !skill.icon.isEmpty {
+                    Text(skill.icon)
+                        .font(.title2)
+                        .accessibilityHidden(true)
+                }
+
                 Text(skill.name)
                     .font(.headline)
                     .frame(maxWidth: .infinity, alignment: .leading)
