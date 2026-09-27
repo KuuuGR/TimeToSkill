@@ -21,20 +21,15 @@ struct StartView: View {
         var id: String { self.rawValue }
     }
 
-    private var anyTimerRunning: Bool {
-        skills.contains { $0.activeStart != nil }
-    }
-
     var body: some View {
-        Group {
-            if anyTimerRunning {
-                // Single shared tick for live progress + progress-based sorting.
-                TimelineView(.periodic(from: .now, by: 1)) { context in
-                    mainContent(now: context.date)
-                }
-            } else {
-                mainContent(now: .now)
-            }
+        // A single, always-present TimelineView keeps the view identity stable.
+        // Previously the content switched between `TimelineView { ... }` and a
+        // plain view depending on whether a timer was running; that identity
+        // change tore down and recreated the ScrollView, so tapping Start/Stop
+        // scrolled the skills list back to the top. Keeping one TimelineView at
+        // a fixed position means the ScrollView is preserved across toggles.
+        TimelineView(.periodic(from: .now, by: 1)) { context in
+            mainContent(now: context.date)
         }
         .navigationTitle(LocalizedStringKey("tracking_nav_title"))
         .sheet(isPresented: $showingAddSkill) {
