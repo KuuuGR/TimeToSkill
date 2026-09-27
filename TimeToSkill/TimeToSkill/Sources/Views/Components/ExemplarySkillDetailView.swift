@@ -23,17 +23,8 @@ struct ExemplarySkillDetailView: View {
     @State private var currentVerificationCode: String = ""
     @State private var showUpdateSection: Bool = false
     
-    private func loadUIImage() -> UIImage? {
-        #if canImport(UIKit)
-        let name = skill.imageName
-        if FileManager.default.fileExists(atPath: name) {
-            return UIImage(contentsOfFile: name)
-        }
-        if let ui = UIImage(named: name) { return ui }
-        return nil
-        #else
-        return nil
-        #endif
+    private func loadUIImage() -> PlatformImage? {
+        PlatformImageLoader.image(namedOrPath: skill.imageName)
     }
     
     var body: some View {
@@ -42,7 +33,7 @@ struct ExemplarySkillDetailView: View {
                 skillDetailContent
             }
             .navigationTitle(LocalizedStringKey("skill_details_title"))
-            .navigationBarTitleDisplayMode(.inline)
+            .inlineNavigationBarTitle()
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(LocalizedStringKey("close")) {
@@ -90,7 +81,7 @@ struct ExemplarySkillDetailView: View {
                     // Header with image and title
                     VStack(spacing: 16) {
                         if let ui = loadUIImage() {
-                            Image(uiImage: ui)
+                            Image(platformImage: ui)
                                 .resizable()
                                 .scaledToFit()
                                 .saturation((skill.userRating ?? 0) == 0 ? 0 : 1)
@@ -101,7 +92,7 @@ struct ExemplarySkillDetailView: View {
                                         .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
                                 )
                         } else {
-                            Image(systemName: UIImage(systemName: skill.imageName) != nil ? skill.imageName : "star.fill")
+                            Image(systemName: PlatformImageLoader.systemSymbolExists(skill.imageName) ? skill.imageName : "star.fill")
                                 .font(.system(size: 80))
                                 .foregroundColor((skill.userRating ?? 0) == 0 ? .gray : .blue)
                                 .frame(width: 120, height: 120)
@@ -433,8 +424,8 @@ struct VerificationView: View {
                     
                     TextField(LocalizedStringKey("verification_code_title"), text: $verificationCode)
                         .autocorrectionDisabled(true)
-                        .textInputAutocapitalization(.never)
-                        .keyboardType(.asciiCapable)
+                        .neverAutocapitalization()
+                        .asciiCapableKeyboard()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(.title3, design: .monospaced))
                         .multilineTextAlignment(.center)
@@ -462,7 +453,7 @@ struct VerificationView: View {
             }
             .padding()
             .navigationTitle(LocalizedStringKey("verification_nav_title"))
-            .navigationBarTitleDisplayMode(.inline)
+            .inlineNavigationBarTitle()
             .onAppear {
                 if generatedCode.isEmpty {
                     generatedCode = generateVerificationCode()

@@ -14,6 +14,14 @@ struct SplashView: View {
     @State private var glowRadius: CGFloat = 0
     @State private var cornerRadius: CGFloat = 0 // For animation
     
+    private var splashLogoDiameter: CGFloat {
+        #if canImport(UIKit)
+        return min(UIScreen.main.bounds.width, UIScreen.main.bounds.height) * 0.8 // Smaller for circle
+        #else
+        return 420
+        #endif
+    }
+
     private var transparentGradient: LinearGradient {
         LinearGradient(
             gradient: Gradient(colors: [
@@ -36,7 +44,7 @@ struct SplashView: View {
             Image("app_logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: min(UIScreen.main.bounds.width, UIScreen.main.bounds.height) * 0.8) // Smaller for circle
+                .frame(width: splashLogoDiameter)
                 .clipShape(Circle()) // Makes it perfectly round
                 .overlay(
                     Circle() // Circular overlay for gradient
@@ -79,8 +87,28 @@ struct SplashView: View {
                     }
                 }
         }
-        .fullScreenCover(isPresented: $isActive) {
+        .modifier(SplashPresentation(isActive: $isActive))
+    }
+}
+
+/// Presents the main flow with a full-screen cover on iOS; on macOS the splash
+/// content is simply replaced by the main view.
+private struct SplashPresentation: ViewModifier {
+    @Binding var isActive: Bool
+
+    func body(content: Content) -> some View {
+        #if canImport(UIKit)
+        content.fullScreenCover(isPresented: $isActive) {
             MainView()
         }
+        #else
+        Group {
+            if isActive {
+                MainView()
+            } else {
+                content
+            }
+        }
+        #endif
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SupportDeveloperView: View {
+    @Environment(\.openURL) private var openURL
+
     var body: some View {
         VStack(spacing: 24) {
             Spacer()
@@ -46,7 +48,7 @@ struct SupportDeveloperView: View {
 
     private func openPayPal() {
         guard let url = URL(string: "https://www.paypal.me/etaosin") else { return }
-        UIApplication.shared.open(url)
+        openURL(url)
     }
 }
 

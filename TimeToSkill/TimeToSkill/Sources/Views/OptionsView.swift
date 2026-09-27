@@ -1,8 +1,10 @@
 import SwiftUI
 import SwiftData
 import PDFKit
-import UIKit
 import Combine
+#if canImport(UIKit)
+import UIKit
+#endif
 
 struct OptionsView: View {
     @Environment(\.dismiss) private var dismiss
@@ -65,7 +67,7 @@ struct OptionsView: View {
                             .foregroundColor(.secondary)
                         
                         TextField(LocalizedStringKey("Time_Converter_Hours_Placeholder"), text: $hoursInput)
-                            .keyboardType(.numberPad)
+                            .numberPadKeyboard()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .focused($focusedField, equals: .hours)
                             .onChange(of: hoursInput) { _, newValue in
@@ -86,7 +88,7 @@ struct OptionsView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $days8hOutput)
-                                .keyboardType(.numberPad)
+                                .numberPadKeyboard()
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .focused($focusedField, equals: .days8)
                                 .onChange(of: days8hOutput) { _, newValue in
@@ -103,7 +105,7 @@ struct OptionsView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $days12hOutput)
-                                .keyboardType(.numberPad)
+                                .numberPadKeyboard()
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .focused($focusedField, equals: .days12)
                                 .onChange(of: days12hOutput) { _, newValue in
@@ -120,7 +122,7 @@ struct OptionsView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $days24hOutput)
-                                .keyboardType(.numberPad)
+                                .numberPadKeyboard()
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .focused($focusedField, equals: .days24)
                                 .onChange(of: days24hOutput) { _, newValue in
@@ -137,7 +139,7 @@ struct OptionsView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $yearsOutput)
-                                .keyboardType(.numberPad)
+                                .numberPadKeyboard()
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .focused($focusedField, equals: .years)
                                 .onChange(of: yearsOutput) { _, newValue in
@@ -169,7 +171,7 @@ struct OptionsView: View {
                 }
             }
             .navigationTitle(LocalizedStringKey("options_title"))
-            .navigationBarTitleDisplayMode(.inline)
+            .inlineNavigationBarTitle()
             .onAppear {
                 if perspectiveLibrary.isEmpty {
                     perspectiveLibrary = (try? TimePerspectiveLoader.loadLibrary())?
@@ -184,6 +186,7 @@ struct OptionsView: View {
                     }
                 }
                 
+                #if canImport(UIKit)
                 ToolbarItem(placement: .keyboard) {
                     Button(LocalizedStringKey("Time_Converter_Calculate_Button")) {
                         // If a field is currently focused, use that as the active source
@@ -194,6 +197,7 @@ struct OptionsView: View {
                         updateConversions()
                     }
                 }
+                #endif
             }
             // Apply calculations when a field loses focus
             .onChange(of: focusedField) { oldValue, newValue in
@@ -304,6 +308,7 @@ struct OptionsView: View {
         calculationInProgress = false
     }
     
+#if canImport(UIKit)
     private func generatePDF() {
         // Create PDF document
         let pdfMetaData = [
@@ -438,6 +443,100 @@ struct OptionsView: View {
             }
         }
     }
+#else
+    // macOS implementation built on Core Graphics + Core Text.
+    private func generatePDF() {
+        let pageRect = CGRect(x: 0, y: 0, width: 595.2, height: 841.8) // A4 size
+        let builder = PDFReportBuilder(pageSize: pageRect.size)
+        builder.begin()
+        builder.newPage()
+
+        let titleFont = "Helvetica-Bold"
+        let bodyFont = "Helvetica"
+
+        let titleString = NSLocalizedString("skills_report_title", comment: "")
+        builder.drawText(titleString, topLeft: CGPoint(x: 50, y: 50), fontName: titleFont, fontSize: 24, color: .black)
+
+        let dateString = "Generated on: \(Date().formatted(date: .long, time: .shortened))"
+        builder.drawText(dateString, topLeft: CGPoint(x: 50, y: 80), fontName: bodyFont, fontSize: 12, color: .black)
+
+        var yPosition: CGFloat = 120
+
+        for skill in skills {
+            let hours = Int(skill.hours)
+            let minutes = Int((skill.hours - Double(hours)) * 60)
+            let skillString = "\(skill.name): \(hours)h \(minutes)m"
+            builder.drawText(skillString, topLeft: CGPoint(x: 50, y: yPosition), fontName: bodyFont, fontSize: 14, color: .black)
+            yPosition += 30
+            if yPosition > pageRect.height - 100 {
+                builder.newPage()
+                yPosition = 50
+            }
+        }
+
+        if yPosition > pageRect.height - 200 {
+            builder.newPage()
+            yPosition = 50
+        }
+
+        let countersTitle = NSLocalizedString("manage_counters_title", comment: "")
+        builder.drawText(countersTitle, topLeft: CGPoint(x: 50, y: yPosition), fontName: titleFont, fontSize: 18, color: .black)
+        yPosition += 28
+
+        for counter in counters {
+            let thresholdsText: String
+            let limits = counter.thresholds
+            if limits.isEmpty {
+                thresholdsText = NSLocalizedString("counter_no_thresholds", comment: "")
+            } else {
+                thresholdsText = limits.map { String($0) }.joined(separator: ", ")
+            }
+            let line = "\(counter.title): \(counter.value)  [\(thresholdsText)]"
+            builder.drawText(line, topLeft: CGPoint(x: 50, y: yPosition), fontName: bodyFont, fontSize: 13, color: .black)
+            yPosition += 22
+            if yPosition > pageRect.height - 80 {
+                builder.newPage()
+                yPosition = 50
+            }
+        }
+
+        do {
+            let descriptor = FetchDescriptor<TimeIntervalEntry>()
+            let entries = (try? modelContext.fetch(descriptor)) ?? []
+            let minutes = entries.map { max(0, $0.durationMinutes) }
+            let bins = makeBinsForPDF(values: minutes)
+            if !bins.isEmpty {
+                if yPosition > pageRect.height - 200 {
+                    builder.newPage()
+                    yPosition = 50
+                }
+                let sectionTitle = NSLocalizedString("global_time_distribution_title", comment: "")
+                builder.drawText(sectionTitle, topLeft: CGPoint(x: 50, y: yPosition), fontName: titleFont, fontSize: 18, color: .black)
+                yPosition += 26
+                drawHistogramBars(bins: bins, pageRect: pageRect, yPosition: &yPosition, color: .systemBlue, builder: builder)
+            }
+        }
+
+        for skill in skills {
+            let targetId = skill.id
+            let descriptor = FetchDescriptor<TimeIntervalEntry>(predicate: #Predicate { entry in entry.skillId == targetId })
+            let entries = (try? modelContext.fetch(descriptor)) ?? []
+            let minutes = entries.map { max(0, $0.durationMinutes) }
+            let bins = makeBinsForPDF(values: minutes)
+            if bins.isEmpty { continue }
+            if yPosition > pageRect.height - 200 {
+                builder.newPage()
+                yPosition = 50
+            }
+            let skillSectionTitle = String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name)
+            builder.drawText(skillSectionTitle, topLeft: CGPoint(x: 50, y: yPosition), fontName: titleFont, fontSize: 18, color: .black)
+            yPosition += 24
+            drawHistogramBars(bins: bins, pageRect: pageRect, yPosition: &yPosition, color: .systemPurple, builder: builder)
+        }
+
+        pdfData = builder.finish()
+    }
+#endif
 
     // Helper to build bins for PDF rendering
     private func makeBinsForPDF(values: [Double]) -> [(String, Int)] {
@@ -455,6 +554,7 @@ struct OptionsView: View {
         return result.filter { $0.1 > 0 }
     }
 
+#if canImport(UIKit)
     private func drawHistogramBars(bins: [(String, Int)], pageRect: CGRect, yPosition: inout CGFloat, color: UIColor, rendererContext: UIGraphicsPDFRendererContext) {
         let leftX: CGFloat = 50
         let rightX: CGFloat = pageRect.width - 50
@@ -484,4 +584,31 @@ struct OptionsView: View {
             }
         }
     }
+#else
+    private func drawHistogramBars(bins: [(String, Int)], pageRect: CGRect, yPosition: inout CGFloat, color: PlatformColor, builder: PDFReportBuilder) {
+        let leftX: CGFloat = 50
+        let rightX: CGFloat = pageRect.width - 50
+        let barAreaWidth: CGFloat = rightX - leftX - 120
+        let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
+        let barHeight: CGFloat = 10
+        let barSpacing: CGFloat = 16
+
+        for (label, count) in bins {
+            builder.drawText(label, topLeft: CGPoint(x: leftX, y: yPosition - 2), fontName: "Helvetica", fontSize: 10, color: .black)
+            let ratio = CGFloat(count) / CGFloat(maxCount)
+            let safeRatio = ratio.isNaN || !ratio.isFinite ? 0 : max(0, min(1, ratio))
+            let width = safeRatio * barAreaWidth
+            let barX = leftX + 90
+            let barRect = CGRect(x: barX, y: yPosition, width: width, height: barHeight)
+            builder.drawBar(rect: barRect, cornerRadius: 4, color: color)
+            builder.drawText("\(count)", topLeft: CGPoint(x: barX + barAreaWidth + 8, y: yPosition - 2), fontName: "Helvetica", fontSize: 10, color: .secondaryLabelColor)
+
+            yPosition += barHeight + barSpacing
+            if yPosition > pageRect.height - 60 {
+                builder.newPage()
+                yPosition = 50
+            }
+        }
+    }
+#endif
 }

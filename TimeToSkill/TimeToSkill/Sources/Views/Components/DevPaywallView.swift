@@ -38,7 +38,7 @@ struct DevPaywallView: View {
             }
             .padding()
             .navigationTitle(LocalizedStringKey("unlock_title_short"))
-            .navigationBarTitleDisplayMode(.inline)
+            .inlineNavigationBarTitle()
             .toolbar { ToolbarItem(placement: .cancellationAction) { Button(LocalizedStringKey("cancel")) { dismiss() } } }
         }
     }

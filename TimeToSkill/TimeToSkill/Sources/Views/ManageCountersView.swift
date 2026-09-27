@@ -6,10 +6,8 @@ struct ManageCountersView: View {
     @Query(sort: \Counter.title) private var counters: [Counter]
     @State private var showingNew = false
     
-    private func haptic(_ style: UIImpactFeedbackGenerator.FeedbackStyle = .medium) {
-        #if canImport(UIKit)
-        UIImpactFeedbackGenerator(style: style).impactOccurred()
-        #endif
+    private func haptic(_ style: HapticStyle = .medium) {
+        triggerHaptic(style)
     }
     
     private func adjust(_ counter: Counter, by delta: Int) {
@@ -170,7 +168,7 @@ struct CounterDetailView: View {
             Section(LocalizedStringKey("counter_set_value_section")) {
                 HStack {
                     TextField(LocalizedStringKey("counter_set_value_placeholder"), text: $valueText)
-                        .keyboardType(.numbersAndPunctuation)
+                        .numbersAndPunctuationKeyboard()
                     Button(LocalizedStringKey("apply")) {
                         if let v = Int(valueText) { counter.value = v; counter.updatedAt = Date() }
                         valueText = ""
@@ -202,7 +200,7 @@ struct ThresholdEditor: View {
             Section(LocalizedStringKey("counter_add_threshold")) {
                 HStack {
                     TextField(LocalizedStringKey("value"), text: $newValue)
-                        .keyboardType(.numberPad)
+                        .numberPadKeyboard()
                     Button(LocalizedStringKey("add")) {
                         if let v = Int(newValue) { thresholds.append(v); thresholds.sort(); newValue = "" }
                     }

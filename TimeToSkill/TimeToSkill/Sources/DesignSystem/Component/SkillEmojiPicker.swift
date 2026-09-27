@@ -126,7 +126,18 @@ enum SkillEmojiCatalog {
 struct SkillEmojiPickerButton: View {
     @Binding var selection: String
     @State private var isPresented = false
+    #if canImport(UIKit)
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    #endif
+
+    /// Present as a popover on regular-width iOS layouts; use a sheet elsewhere.
+    private var usePopover: Bool {
+        #if canImport(UIKit)
+        return horizontalSizeClass == .regular
+        #else
+        return false
+        #endif
+    }
 
     var body: some View {
         Button {
@@ -154,7 +165,7 @@ struct SkillEmojiPickerButton: View {
             : selection)
         .modifier(EmojiPickerPresentation(
             isPresented: $isPresented,
-            usePopover: horizontalSizeClass == .regular,
+            usePopover: usePopover,
             selection: $selection
         ))
     }
@@ -176,7 +187,7 @@ private struct EmojiPickerPresentation: ViewModifier {
                 NavigationStack {
                     SkillEmojiPickerView(selection: $selection, isPresented: $isPresented)
                         .navigationTitle(LocalizedStringKey("skill_emoji_picker_title"))
-                        .navigationBarTitleDisplayMode(.inline)
+                        .inlineNavigationBarTitle()
                         .toolbar {
                             ToolbarItem(placement: .cancellationAction) {
                                 Button(LocalizedStringKey("cancel")) {
@@ -185,7 +196,7 @@ private struct EmojiPickerPresentation: ViewModifier {
                             }
                         }
                 }
-                .presentationDetents([.medium, .large])
+                .mediumLargePresentationDetents()
             }
         }
     }

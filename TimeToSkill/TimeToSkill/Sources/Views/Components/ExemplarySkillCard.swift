@@ -14,19 +14,8 @@ struct ExemplarySkillCard: View {
     let skill: ExemplarySkill
     let onTap: () -> Void
     
-    private func loadUIImage() -> UIImage? {
-        #if canImport(UIKit)
-        let name = skill.imageName
-        // If file exists at path, load from disk
-        if FileManager.default.fileExists(atPath: name) {
-            return UIImage(contentsOfFile: name)
-        }
-        // Else try asset image
-        if let ui = UIImage(named: name) { return ui }
-        return nil
-        #else
-        return nil
-        #endif
+    private func loadUIImage() -> PlatformImage? {
+        PlatformImageLoader.image(namedOrPath: skill.imageName)
     }
     
     var body: some View {
@@ -36,7 +25,7 @@ struct ExemplarySkillCard: View {
                 ZStack {
                     // Main image: try file or asset first, fallback to SF Symbol
                     if let ui = loadUIImage() {
-                        Image(uiImage: ui)
+                        Image(platformImage: ui)
                             .resizable()
                             .scaledToFit()
                             .saturation((skill.userRating ?? 0) == 0 ? 0 : 1)
@@ -47,7 +36,7 @@ struct ExemplarySkillCard: View {
                                     .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
                             )
                     } else {
-                        Image(systemName: UIImage(systemName: skill.imageName) != nil ? skill.imageName : "star.fill")
+                        Image(systemName: PlatformImageLoader.systemSymbolExists(skill.imageName) ? skill.imageName : "star.fill")
                             .font(.system(size: 40))
                             .foregroundColor((skill.userRating ?? 0) == 0 ? .gray : .primary)
                             .frame(width: 80, height: 80)

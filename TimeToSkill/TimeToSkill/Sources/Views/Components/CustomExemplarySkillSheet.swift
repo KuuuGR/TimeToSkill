@@ -37,8 +37,8 @@ struct CustomExemplarySkillSheet: View {
                 }
                 Section(header: Text(LocalizedStringKey("image_label"))) {
                     HStack {
-                        if let data = imageData, let ui = UIImage(data: data) {
-                            Image(uiImage: ui)
+                        if let data = imageData, let ui = PlatformImageLoader.image(data: data) {
+                            Image(platformImage: ui)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 80)
@@ -55,9 +55,9 @@ struct CustomExemplarySkillSheet: View {
                         .onChange(of: selectedItem) { _, newItem in
                             guard let item = newItem else { return }
                             Task {
-                                if let raw = try? await item.loadTransferable(type: Data.self), let ui = UIImage(data: raw) {
-                                    let resized = resizeImage(ui, to: CGSize(width: 300, height: 300))
-                                    imageData = resized.pngData()
+                                if let raw = try? await item.loadTransferable(type: Data.self), let ui = PlatformImageLoader.image(data: raw) {
+                                    let resized = PlatformImageLoader.resized(ui, to: CGSize(width: 300, height: 300))
+                                    imageData = PlatformImageLoader.pngData(from: resized)
                                 } else {
                                     imageData = try? await item.loadTransferable(type: Data.self)
                                 }
@@ -131,19 +131,12 @@ private func saveImageData(_ data: Data) -> String? {
     guard let dir = fm.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
     let filename = "skill_\(UUID().uuidString).png"
     let url = dir.appendingPathComponent(filename)
-    if let ui = UIImage(data: data), let png = ui.pngData() {
+    if let ui = PlatformImageLoader.image(data: data), let png = PlatformImageLoader.pngData(from: ui) {
         try? png.write(to: url)
     } else {
         try? data.write(to: url)
     }
     return url.path
-}
-
-private func resizeImage(_ image: UIImage, to targetSize: CGSize) -> UIImage {
-    let renderer = UIGraphicsImageRenderer(size: targetSize)
-    return renderer.image { _ in
-        image.draw(in: CGRect(origin: .zero, size: targetSize))
-    }
 }
 
 private let bundledIcons: [String] = [

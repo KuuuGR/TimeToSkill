@@ -62,8 +62,13 @@ struct AppColors {
     static let secondary = Color.orange
     static let tertiary = Color.green
 
+    #if canImport(UIKit)
     static let background = Color(.systemBackground)
     static let surface = Color(.systemGray6)
+    #else
+    static let background = Color(nsColor: .windowBackgroundColor)
+    static let surface = Color(nsColor: .controlBackgroundColor)
+    #endif
 
     static let onPrimary = Color.white
     static let onSecondary = Color.black

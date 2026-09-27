@@ -73,11 +73,11 @@ struct SkillOptionsSheet: View {
                 Section(header: Text(LocalizedStringKey("adjust_time_section"))) {
                     VStack(alignment: .leading, spacing: 8) {
                         TextField(LocalizedStringKey("adjust_hours_placeholder"), text: $adjustHours)
-                            .keyboardType(.numbersAndPunctuation)
+                            .numbersAndPunctuationKeyboard()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
 
                         TextField(LocalizedStringKey("adjust_minutes_placeholder"), text: $adjustMinutes)
-                            .keyboardType(.numbersAndPunctuation)
+                            .numbersAndPunctuationKeyboard()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
 
                         Text(LocalizedStringKey("adjust_time_hint"))
@@ -134,7 +134,7 @@ struct SkillOptionsSheet: View {
                 }
             }
             .navigationTitle(LocalizedStringKey("skill_options_title"))
-            .navigationBarTitleDisplayMode(.inline)
+            .inlineNavigationBarTitle()
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(LocalizedStringKey("done")) {

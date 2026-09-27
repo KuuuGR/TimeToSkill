@@ -31,7 +31,7 @@ struct StatsView: View {
                 .padding()
             }
             .navigationTitle(LocalizedStringKey("stats_nav_title"))
-            .navigationBarTitleDisplayMode(.inline)
+            .inlineNavigationBarTitle()
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(LocalizedStringKey("button_done")) {

@@ -167,7 +167,7 @@ struct MainView: View {
                     }
                 }
             }
-            .navigationBarHidden(true)
+            .hiddenNavigationBar()
         }
         .onAppear {
             let quotes = QuoteLoader.loadLocalizedQuotes()
