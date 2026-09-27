@@ -55,6 +55,7 @@ struct TimeDistributionView: View {
                 }
             }
             .padding()
+            .macOSContentWidth(700)
         }
         .navigationTitle(LocalizedStringKey("distribution_nav_title"))
         .onAppear { load() }

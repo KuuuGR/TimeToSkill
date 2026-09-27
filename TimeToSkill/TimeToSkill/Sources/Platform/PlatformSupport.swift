@@ -183,4 +183,119 @@ extension View {
         self
         #endif
     }
+
+    // MARK: - macOS layout helpers
+
+    /// Caps the content width on macOS so text and cards keep a readable,
+    /// Mac-like measure instead of stretching across a very wide window.
+    /// No-op on iOS, where the viewport is already phone sized.
+    @ViewBuilder func macOSContentWidth(_ maxWidth: CGFloat) -> some View {
+        #if os(macOS)
+        self.frame(maxWidth: maxWidth)
+        #else
+        self
+        #endif
+    }
+
+    /// Gives a macOS sheet a comfortable minimum size so it does not open as a
+    /// tiny phone-sized panel. No-op on iOS.
+    @ViewBuilder func macOSSheetMinSize(width: CGFloat, height: CGFloat) -> some View {
+        #if os(macOS)
+        self.frame(minWidth: width, minHeight: height)
+        #else
+        self
+        #endif
+    }
+
+    /// Adds pointer hover feedback to custom-drawn controls (cards, floating
+    /// buttons, gradient buttons) that have no system hover appearance of their
+    /// own. No-op on iOS.
+    @ViewBuilder func macOSHoverFeedback(scale: CGFloat = 1.012) -> some View {
+        #if os(macOS)
+        modifier(MacHoverFeedbackModifier(scale: scale))
+        #else
+        self
+        #endif
+    }
+
+    /// Adds a native macOS toolbar action (with an optional keyboard shortcut).
+    /// No-op on iOS, where the same action is offered in-content.
+    @ViewBuilder func macOSToolbarAction(
+        title: LocalizedStringKey,
+        systemImage: String,
+        shortcut: KeyboardShortcut? = nil,
+        action: @escaping () -> Void
+    ) -> some View {
+        #if os(macOS)
+        self.toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button(action: action) {
+                    Label(title, systemImage: systemImage)
+                }
+                .help(title)
+                .modifier(OptionalKeyboardShortcut(shortcut: shortcut))
+            }
+        }
+        #else
+        self
+        #endif
+    }
+
+    /// Renders a text-only action as a macOS link-style button (blue text with
+    /// hover feedback). No-op on iOS.
+    @ViewBuilder func macOSLinkButtonStyle() -> some View {
+        #if os(macOS)
+        self.buttonStyle(.link)
+        #else
+        self
+        #endif
+    }
 }
+
+extension Scene {
+    /// Opens the macOS window at a comfortable size instead of the tiny default.
+    /// No-op on iOS.
+    @SceneBuilder func macOSDefaultWindowSize(width: CGFloat, height: CGFloat) -> some Scene {
+        #if os(macOS)
+        self.defaultSize(width: width, height: height)
+        #else
+        self
+        #endif
+    }
+}
+
+#if os(macOS)
+/// macOS-only hover highlight used by custom-drawn controls.
+private struct MacHoverFeedbackModifier: ViewModifier {
+    let scale: CGFloat
+
+    @State private var isHovering = false
+
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(isHovering ? scale : 1)
+            .shadow(
+                color: .black.opacity(isHovering ? 0.18 : 0),
+                radius: isHovering ? 8 : 0,
+                y: 2
+            )
+            .animation(.easeOut(duration: 0.12), value: isHovering)
+            .onHover { hovering in
+                isHovering = hovering
+            }
+    }
+}
+
+/// Applies a keyboard shortcut only when one was provided.
+private struct OptionalKeyboardShortcut: ViewModifier {
+    let shortcut: KeyboardShortcut?
+
+    func body(content: Content) -> some View {
+        if let shortcut {
+            content.keyboardShortcut(shortcut)
+        } else {
+            content
+        }
+    }
+}
+#endif

@@ -29,6 +29,7 @@ struct StatsView: View {
                     GlobalTimeDistributionView()
                 }
                 .padding()
+                .macOSContentWidth(820)
             }
             .navigationTitle(LocalizedStringKey("stats_nav_title"))
             .inlineNavigationBarTitle()
@@ -39,6 +40,7 @@ struct StatsView: View {
                     }
                 }
             }
+            .macOSSheetMinSize(width: 640, height: 660)
         }
     }
 }

@@ -68,6 +68,7 @@ struct TheoryView: View {
                 .padding(.bottom, 40)
             }
             .padding(.horizontal)
+            .macOSContentWidth(700)
         }
         .navigationTitle(LocalizedStringKey("theory_nav_title"))
     }

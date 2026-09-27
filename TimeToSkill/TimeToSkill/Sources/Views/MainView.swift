@@ -17,8 +17,6 @@ struct MainView: View {
     @State private var animateFAB = false
     @State private var showingOptions = false
     @State private var showingStats = false
-    @AppStorage("customSkillUnlocked") private var customSkillUnlocked: Bool = false
-    @State private var showingPaywall: Bool = false
     @State private var showingCustomSkillSheet: Bool = false
     @Environment(\.modelContext) private var modelContext
 
@@ -75,6 +73,7 @@ struct MainView: View {
                                     shadowRadius: 10
                                 )
                             )
+                            .macOSHoverFeedback(scale: 1.008)
 
                             NavigationLink(destination: ManageCountersView()) {
                                 Label {
@@ -86,6 +85,7 @@ struct MainView: View {
                                 }
                             }
                             .buttonStyle(FancyButtonStyle(background: .info, gradientEnd: .infoDark))
+                            .macOSHoverFeedback(scale: 1.008)
 
                             Spacer().frame(height: 12)
 
@@ -93,6 +93,7 @@ struct MainView: View {
                                 Text(LocalizedStringKey("main_learning_theory"))
                             }
                             .buttonStyle(FancyButtonStyle(background: .mdbBlue, gradientEnd: .info))
+                            .macOSHoverFeedback(scale: 1.008)
 
                             NavigationLink(destination: ExemplarySkillsView()) {
                                 Label {
@@ -104,11 +105,13 @@ struct MainView: View {
                                 }
                             }
                             .buttonStyle(FancyButtonStyle(background: .purple, gradientEnd: .purple.opacity(0.7)))
+                            .macOSHoverFeedback(scale: 1.008)
 
                             NavigationLink(destination: AboutView()) {
                                 Text(LocalizedStringKey("main_about_app"))
                             }
                             .buttonStyle(FancyButtonStyle(background: .mdbBlue, gradientEnd: .infoDark))
+                            .macOSHoverFeedback(scale: 1.008)
                         }
                         .padding(20)
                         .background(
@@ -121,6 +124,7 @@ struct MainView: View {
 
                         Spacer()
                     }
+                    .macOSContentWidth(560)
                 }
 
                 VStack {
@@ -136,13 +140,11 @@ struct MainView: View {
                         
                         Spacer()
                         
-                        // Center FAB (paywalled custom skill)
+                        // Center FAB (create custom skill)
                         FABButton(
-                            icon: customSkillUnlocked ? "star" : "lock",
-                            action: {
-                                if customSkillUnlocked { showingCustomSkillSheet = true } else { showingPaywall = true }
-                            },
-                            backgroundColor: customSkillUnlocked ? .purple : .gray,
+                            icon: "star",
+                            action: { showingCustomSkillSheet = true },
+                            backgroundColor: .purple,
                             size: 60,
                             animatePulse: false,
                             accessibilityLabelKey: "fab_add_custom_skill"
@@ -165,6 +167,7 @@ struct MainView: View {
                         )
                         .padding(20)
                     }
+                    .macOSContentWidth(560)
                 }
             }
             .hiddenNavigationBar()
@@ -187,9 +190,6 @@ struct MainView: View {
         }
         .sheet(isPresented: $showingOptions) {
             OptionsView()
-        }
-        .sheet(isPresented: $showingPaywall) {
-            PaywallView()
         }
         .sheet(isPresented: $showingCustomSkillSheet) {
             CustomExemplarySkillSheet { title, description, category, difficulty, one, two, three, imagePath in

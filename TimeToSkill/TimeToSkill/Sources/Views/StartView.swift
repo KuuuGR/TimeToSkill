@@ -32,6 +32,13 @@ struct StartView: View {
             mainContent(now: context.date)
         }
         .navigationTitle(LocalizedStringKey("tracking_nav_title"))
+        .macOSToolbarAction(
+            title: LocalizedStringKey("fab_add_skill"),
+            systemImage: "plus",
+            shortcut: KeyboardShortcut("n", modifiers: .command)
+        ) {
+            showingAddSkill = true
+        }
         .sheet(isPresented: $showingAddSkill) {
             AddSkillView()
         }
@@ -103,10 +110,13 @@ struct StartView: View {
                         }
                         .padding()
                         .padding(.bottom, 100)
+                        .macOSContentWidth(760)
                     }
                 }
 
-                // Floating action button
+                #if !os(macOS)
+                // Floating action button (iOS pattern; on macOS the same action
+                // lives in the window toolbar as ⌘N).
                 VStack {
                     Spacer()
                     HStack {
@@ -119,6 +129,7 @@ struct StartView: View {
                         .padding(20)
                     }
                 }
+                #endif
             }
         }
     }

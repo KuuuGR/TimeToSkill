@@ -15,6 +15,16 @@ struct ManageCountersView: View {
         counter.updatedAt = Date()
         try? context.save()
     }
+
+    /// macOS windows can be much wider than a phone, so the grid adapts its
+    /// column count to the available width.
+    private var gridColumns: [GridItem] {
+        #if os(macOS)
+        [GridItem(.adaptive(minimum: 120, maximum: 160), spacing: 8)]
+        #else
+        Array(repeating: GridItem(.flexible(), spacing: 3), count: 3)
+        #endif
+    }
     
     var body: some View {
         NavigationStack {
@@ -40,7 +50,7 @@ struct ManageCountersView: View {
                         }
                         .padding(20)
                     } else {
-                        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
+                        LazyVGrid(columns: gridColumns, spacing: 3) {
                             ForEach(counters) { counter in
                             ZStack(alignment: .topTrailing) {
                                 VStack(spacing: 8) {
@@ -55,6 +65,7 @@ struct ManageCountersView: View {
                                             adjust(counter, by: -counter.step)
                                             haptic(.rigid)
                                         }
+                                        .macOSHoverFeedback(scale: 1.04)
                                     Text(counter.title)
                                         .font(.caption)
                                         .multilineTextAlignment(.center)
@@ -78,6 +89,7 @@ struct ManageCountersView: View {
                             }
                         }
                         .padding(3)
+                        .macOSContentWidth(760)
                     }
                 }
             }

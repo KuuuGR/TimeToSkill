@@ -40,6 +40,7 @@ struct FABButton: View {
                 .shadow(color: .black.opacity(0.25), radius: 8, y: 4)
         }
         .buttonStyle(.plain)
+        .macOSHoverFeedback(scale: 1.06)
         .accessibilityLabel(accessibilityLabelKey != nil ? LocalizedStringKey(accessibilityLabelKey!) : "")
         .onAppear {
             // Run a one-time gentle animation

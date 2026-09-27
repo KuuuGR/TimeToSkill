@@ -32,6 +32,7 @@ struct ExemplarySkillDetailView: View {
             ScrollView {
                 skillDetailContent
             }
+            .macOSSheetMinSize(width: 560, height: 620)
             .navigationTitle(LocalizedStringKey("skill_details_title"))
             .inlineNavigationBarTitle()
             .toolbar {

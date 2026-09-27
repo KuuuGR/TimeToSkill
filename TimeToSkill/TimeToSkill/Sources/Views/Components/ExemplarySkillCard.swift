@@ -80,6 +80,7 @@ struct ExemplarySkillCard: View {
             )
         }
         .buttonStyle(PlainButtonStyle())
+        .macOSHoverFeedback(scale: 1.01)
     }
 }
 

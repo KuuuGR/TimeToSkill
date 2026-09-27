@@ -16,8 +16,6 @@ struct ExemplarySkillsView: View {
     @State private var showingEvaluationSheet = false
     @State private var showingDailyLimitAlert = false
     @State private var dailyEvaluationsCount = 0
-    @AppStorage("customSkillUnlocked") private var customSkillUnlocked: Bool = false
-    @State private var showingPaywall: Bool = false
     
     private enum SortOption: String, CaseIterable {
         case name = "sort_name"
@@ -116,6 +114,16 @@ struct ExemplarySkillsView: View {
     }
     private var visibleSkills: [ExemplarySkill] { displayedSkills.filter { !$0.isHidden } }
     private var archivedSkills: [ExemplarySkill] { displayedSkills.filter { $0.isHidden } }
+
+    /// macOS lets the window be any width, so the number of grid columns follows
+    /// the available space instead of always forcing a phone-style three-across.
+    private var gridColumns: [GridItem] {
+        #if os(macOS)
+        [GridItem(.adaptive(minimum: 140, maximum: 190), spacing: 8)]
+        #else
+        Array(repeating: GridItem(.flexible(), spacing: 3), count: 3)
+        #endif
+    }
     
     var body: some View {
         NavigationStack {
@@ -137,22 +145,17 @@ struct ExemplarySkillsView: View {
                             .font(.caption)
                     }
                     
-                    if customSkillUnlocked {
-                        Button(LocalizedStringKey("reset_daily_limit")) { resetDailyLimit() }
-                            .font(.caption)
-                            .foregroundColor(.blue)
-                    } else {
-                        Button(LocalizedStringKey("reset_daily_limit")) { showingPaywall = true }
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                    }
+                    Button(LocalizedStringKey("reset_daily_limit")) { resetDailyLimit() }
+                        .font(.caption)
+                        .foregroundColor(.blue)
+                        .macOSLinkButtonStyle()
                 }
                 .padding(.horizontal)
                 .padding(.top, 8)
                 
                 // Skills grid
                 ScrollView {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
+                    LazyVGrid(columns: gridColumns, spacing: 3) {
                         ForEach(visibleSkills) { skill in
                             ZStack(alignment: .topTrailing) {
                                 ExemplarySkillCard(skill: skill) {
@@ -190,10 +193,11 @@ struct ExemplarySkillsView: View {
                     }
                     .padding(.horizontal, 3)
                     .padding(.vertical, 3)
+                    .macOSContentWidth(760)
                     if !archivedSkills.isEmpty {
                         VStack(alignment: .leading, spacing: 8) {
                             Text(LocalizedStringKey("archived_section")).font(.headline).padding(.horizontal)
-                            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 3), count: 3), spacing: 3) {
+                            LazyVGrid(columns: gridColumns, spacing: 3) {
                                 ForEach(archivedSkills) { skill in
                                     ZStack(alignment: .topTrailing) {
                                         ExemplarySkillCard(skill: skill) { selectedSkill = skill }
@@ -206,6 +210,7 @@ struct ExemplarySkillsView: View {
                             }
                             .padding(.horizontal, 3)
                         }
+                        .macOSContentWidth(760)
                     }
                 }
             }
@@ -228,9 +233,6 @@ struct ExemplarySkillsView: View {
                 Text(String(format: NSLocalizedString("daily_limit_reached_message_format", comment: ""), ExemplarySkillConstants.dailyEvaluationLimit))
             }
             .background(deleteConfirmDialog)
-        }
-        .sheet(isPresented: $showingPaywall) {
-            PaywallView()
         }
     }
 

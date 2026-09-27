@@ -37,6 +37,7 @@ struct AddSkillView: View {
 
                 Spacer()
             }
+            .macOSSheetMinSize(width: 460, height: 260)
             .navigationTitle(LocalizedStringKey("new_skill"))
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {

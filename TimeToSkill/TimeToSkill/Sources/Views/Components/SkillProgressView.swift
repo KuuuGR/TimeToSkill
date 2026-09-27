@@ -82,6 +82,15 @@ struct SkillProgressView: View {
     }
 
     var body: some View {
+        #if os(macOS)
+        macLayout
+        #else
+        phoneLayout
+        #endif
+    }
+
+    /// iPhone/iPad layout: title row, full-width bar, centred Start/Stop button.
+    private var phoneLayout: some View {
         VStack(spacing: 12) {
             HStack {
                 if !skill.icon.isEmpty {
@@ -146,4 +155,75 @@ struct SkillProgressView: View {
         .cornerRadius(16)
         .shadow(color: .black.opacity(0.05), radius: 4, y: 2)
     }
+
+    #if os(macOS)
+    /// macOS layout: one compact row per skill so a long list stays scannable,
+    /// with the Start/Stop control pinned to the trailing edge and a slim
+    /// progress bar underneath.
+    private var macLayout: some View {
+        VStack(spacing: 10) {
+            HStack(spacing: 12) {
+                if !skill.icon.isEmpty {
+                    Text(skill.icon)
+                        .font(.title2)
+                        .accessibilityHidden(true)
+                }
+
+                Text(skill.name)
+                    .font(.headline)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                Text(formattedTimeLabel)
+                    .font(.callout)
+                    .monospacedDigit()
+                    .foregroundColor(.secondary)
+                    .frame(minWidth: 76, alignment: .trailing)
+                    .accessibilityIdentifier("SkillProgressLabel_\(skill.id.hashValue)")
+
+                // Native push button: the system draws its own background, so
+                // the tinted pill is no longer double-drawn on macOS.
+                Button(action: onToggleTimer) {
+                    Text(isActive ? "Stop" : "Start")
+                        .frame(minWidth: 52)
+                }
+                .buttonStyle(.bordered)
+                .tint(isActive ? Color.red : Color.blue)
+                .accessibilityIdentifier(isActive ? "StopButton_\(skill.id.hashValue)" : "StartButton_\(skill.id.hashValue)")
+
+                Button(action: onShowOptions) {
+                    Image(systemName: "ellipsis")
+                        .rotationEffect(.degrees(90)) // ⋯ horizontally
+                }
+                .buttonStyle(.borderless)
+                .accessibilityIdentifier("OptionsButton_\(skill.id.hashValue)")
+            }
+
+            // Animated progress bar
+            GeometryReader { geo in
+                ZStack(alignment: .leading) {
+                    Capsule()
+                        .frame(height: 12)
+                        .foregroundColor(.gray.opacity(0.15))
+
+                    Capsule()
+                        .frame(
+                            width: geo.size.width * CGFloat(min(stageProgress, 1)),
+                            height: 12
+                        )
+                        .foregroundColor(progressColor)
+                        .animation(isActive ? nil : .easeInOut(duration: 0.6), value: displayHours)
+                }
+            }
+            .frame(height: 12)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(.ultraThinMaterial)
+        .cornerRadius(16)
+        .shadow(color: .black.opacity(0.05), radius: 4, y: 2)
+        .macOSHoverFeedback(scale: 1.005)
+    }
+    #endif
 }

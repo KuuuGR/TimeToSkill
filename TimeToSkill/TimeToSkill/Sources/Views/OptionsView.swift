@@ -208,6 +208,7 @@ struct OptionsView: View {
                 }
             }
         }
+        .macOSSheetMinSize(width: 620, height: 660)
         .sheet(isPresented: $showingShareSheet) {
             if let data = pdfData {
                 ShareSheet(items: [data])

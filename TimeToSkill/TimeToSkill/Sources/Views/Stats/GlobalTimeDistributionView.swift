@@ -20,35 +20,44 @@ struct GlobalTimeDistributionView: View {
             .padding()
             .background(RoundedRectangle(cornerRadius: 12).fill(Color.gray.opacity(0.08)))
             
-            ScrollView {
-                VStack(alignment: .leading, spacing: 8) {
-                    ForEach(bins.indices, id: \.self) { i in
-                        let bin = bins[i]
-                        HStack {
-                            Text(bin.0)
-                                .font(.caption)
-                                .frame(width: 90, alignment: .leading)
-                            GeometryReader { geo in
-                                let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
-                                let ratio = CGFloat(bin.1) / CGFloat(maxCount)
-                                let safeRatio = ratio.isNaN || !ratio.isFinite ? 0 : max(0, min(1, ratio))
-                                let width = safeRatio * geo.size.width
-                                RoundedRectangle(cornerRadius: 6)
-                                    .fill(LinearGradient(colors: [.green, .blue], startPoint: .leading, endPoint: .trailing))
-                                    .frame(width: width, height: 12)
-                            }
-                            .frame(height: 12)
-                            Text("\(bin.1)")
-                                .font(.caption2)
-                                .foregroundColor(.secondary)
-                                .frame(width: 36, alignment: .trailing)
-                        }
+            // On macOS StatsView already provides the outer ScrollView, so a
+            // nested one here would compete for the scroll gesture.
+            #if os(macOS)
+            binsList
+            #else
+            ScrollView { binsList }
+            #endif
+        }
+        .macOSContentWidth(700)
+        .onAppear { load() }
+    }
+
+    private var binsList: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            ForEach(bins.indices, id: \.self) { i in
+                let bin = bins[i]
+                HStack {
+                    Text(bin.0)
+                        .font(.caption)
+                        .frame(width: 90, alignment: .leading)
+                    GeometryReader { geo in
+                        let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
+                        let ratio = CGFloat(bin.1) / CGFloat(maxCount)
+                        let safeRatio = ratio.isNaN || !ratio.isFinite ? 0 : max(0, min(1, ratio))
+                        let width = safeRatio * geo.size.width
+                        RoundedRectangle(cornerRadius: 6)
+                            .fill(LinearGradient(colors: [.green, .blue], startPoint: .leading, endPoint: .trailing))
+                            .frame(width: width, height: 12)
                     }
+                    .frame(height: 12)
+                    Text("\(bin.1)")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                        .frame(width: 36, alignment: .trailing)
                 }
-                .padding(.vertical)
             }
         }
-        .onAppear { load() }
+        .padding(.vertical)
     }
     
     private func load() {

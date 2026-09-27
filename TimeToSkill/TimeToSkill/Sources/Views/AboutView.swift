@@ -36,19 +36,29 @@ struct AboutView: View {
                 ])
 
                 AboutSection(title: "ab_section_support", items: []) {
-                    HStack {
-                        Image(systemName: "envelope.fill")
-                            .foregroundColor(AppColors.primary)
-                        Text("etaosin@gmail.com")
-                            .foregroundColor(AppColors.onSurface)
-                            .font(.body)
+                    VStack(alignment: .leading, spacing: 12) {
+                        HStack {
+                            Image(systemName: "envelope.fill")
+                                .foregroundColor(AppColors.primary)
+                            Text("etaosin@gmail.com")
+                                .foregroundColor(AppColors.onSurface)
+                                .font(.body)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                        HStack(spacing: 16) {
+                            Link(LocalizedStringKey("privacy_policy_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/wiki/Privacy-Policy")!)
+                            Link(LocalizedStringKey("terms_of_use_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/wiki/Terms-of-Use")!)
+                        }
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
 
                 Spacer(minLength: 32)
             }
             .padding()
+            .macOSContentWidth(700)
         }
         .navigationTitle(LocalizedStringKey("ab_navigation_title"))
     }
