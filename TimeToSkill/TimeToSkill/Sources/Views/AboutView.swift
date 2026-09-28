@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct AboutView: View {
+    private static let wikiURL = "https://github.com/GKulesza/Time4Skill/wiki"
+    private static let privacyPolicyURL = URL(string: "\(wikiURL)#privacy")!
+    private static let termsOfUseURL = URL(string: "\(wikiURL)#welcome-to-time4skill")!
+    private static let supportURL = URL(string: "\(wikiURL)/Support")!
+
     private var appVersion: String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
         let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
@@ -44,9 +49,11 @@ struct AboutView: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
 
-                        HStack(spacing: 16) {
-                            Link(LocalizedStringKey("privacy_policy_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/wiki/Privacy-Policy")!)
-                            Link(LocalizedStringKey("terms_of_use_link"), destination: URL(string: "https://github.com/KuuuGR/TimeToSkill/wiki/Terms-of-Use")!)
+                        // Three wiki links do not fit on one row in every locale
+                        // (German, Slovak, ...), so stack them when needed.
+                        ViewThatFits(in: .horizontal) {
+                            HStack(spacing: 16) { supportLinks }
+                            VStack(alignment: .leading, spacing: 8) { supportLinks }
                         }
                         .font(.footnote)
                         .foregroundColor(.secondary)
@@ -59,6 +66,15 @@ struct AboutView: View {
             .macOSContentWidth(700)
         }
         .navigationTitle(LocalizedStringKey("ab_navigation_title"))
+    }
+
+    /// The three public wiki links, rendered either in a row or stacked
+    /// depending on the width available (see `ViewThatFits` above).
+    @ViewBuilder
+    private var supportLinks: some View {
+        Link(LocalizedStringKey("privacy_policy_link"), destination: Self.privacyPolicyURL)
+        Link(LocalizedStringKey("terms_of_use_link"), destination: Self.termsOfUseURL)
+        Link(LocalizedStringKey("support_link"), destination: Self.supportURL)
     }
 }
 
