@@ -137,18 +137,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "Ansikten";
+"skill_emoji_section_work" = "Arbete";
+"skill_emoji_section_creativity" = "Kreativitet";
+"skill_emoji_section_fitness" = "Träning";
+"skill_emoji_section_learning" = "Inlärning";
+"skill_emoji_section_gaming" = "Spel";
+"skill_emoji_section_music" = "Musik";
+"skill_emoji_section_food" = "Mat";
+"skill_emoji_section_nature" = "Natur";
+"skill_emoji_section_technology" = "Teknik";
+"skill_emoji_section_achievement" = "Prestationer";
+"skill_emoji_section_lifestyle" = "Livsstil";
 
 "adjust_time_section" = "Justera tid";
 "adjust_hours_placeholder" = "Timmar att lägga till/ta bort";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Användarvillkor";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Följ tiden för fokuserad träning och se hur små vanor summeras.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Översikt";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "פנים";
+"skill_emoji_section_work" = "עבודה";
+"skill_emoji_section_creativity" = "יצירתיות";
+"skill_emoji_section_fitness" = "כושר";
+"skill_emoji_section_learning" = "למידה";
+"skill_emoji_section_gaming" = "משחקים";
+"skill_emoji_section_music" = "מוזיקה";
+"skill_emoji_section_food" = "אוכל";
+"skill_emoji_section_nature" = "טבע";
+"skill_emoji_section_technology" = "טכנולוגיה";
+"skill_emoji_section_achievement" = "הישגים";
+"skill_emoji_section_lifestyle" = "סגנון חיים";
 
 "adjust_time_section" = "כוונון זמן";
 "adjust_hours_placeholder" = "שעות להוספה/הפחתה";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "תנאי שימוש";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "עקוב אחר זמן תרגול ממוקד וראה כיצד הרגלים קטנים מצטברים.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "סקירה כללית";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

@@ -137,18 +137,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "表情";
+"skill_emoji_section_work" = "工作";
+"skill_emoji_section_creativity" = "創意";
+"skill_emoji_section_fitness" = "健身";
+"skill_emoji_section_learning" = "學習";
+"skill_emoji_section_gaming" = "遊戲";
+"skill_emoji_section_music" = "音樂";
+"skill_emoji_section_food" = "美食";
+"skill_emoji_section_nature" = "自然";
+"skill_emoji_section_technology" = "科技";
+"skill_emoji_section_achievement" = "成就";
+"skill_emoji_section_lifestyle" = "生活風格";
 
 "adjust_time_section" = "調整時間";
 "adjust_hours_placeholder" = "要新增/減少的時數";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "使用條款";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "記錄專注練習的時間，看著小習慣慢慢累積。";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "總覽";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

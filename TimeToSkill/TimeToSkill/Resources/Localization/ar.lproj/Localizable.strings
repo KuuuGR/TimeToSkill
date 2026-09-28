@@ -130,18 +130,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "الوجوه";
+"skill_emoji_section_work" = "العمل";
+"skill_emoji_section_creativity" = "الإبداع";
+"skill_emoji_section_fitness" = "اللياقة";
+"skill_emoji_section_learning" = "التعلّم";
+"skill_emoji_section_gaming" = "الألعاب";
+"skill_emoji_section_music" = "الموسيقى";
+"skill_emoji_section_food" = "الطعام";
+"skill_emoji_section_nature" = "الطبيعة";
+"skill_emoji_section_technology" = "التقنية";
+"skill_emoji_section_achievement" = "الإنجازات";
+"skill_emoji_section_lifestyle" = "نمط الحياة";
 
 "adjust_time_section" = "تعديل الوقت";
 "adjust_hours_placeholder" = "الساعات التي تريد إضافتها/طرحها";
@@ -321,9 +321,9 @@
 
 "terms_of_use_link" = "شروط الاستخدام";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "تابع وقت التدريب المركّز وشاهد كيف تتراكم العادات الصغيرة.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "نظرة عامة";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

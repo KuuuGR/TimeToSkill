@@ -138,18 +138,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_faces" = "Ansigter";
+"skill_emoji_section_work" = "Arbejde";
+"skill_emoji_section_creativity" = "Kreativitet";
 "skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
+"skill_emoji_section_learning" = "Læring";
 "skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_music" = "Musik";
+"skill_emoji_section_food" = "Mad";
+"skill_emoji_section_nature" = "Natur";
+"skill_emoji_section_technology" = "Teknologi";
+"skill_emoji_section_achievement" = "Præstationer";
+"skill_emoji_section_lifestyle" = "Livsstil";
 
 "adjust_time_section" = "Justér tid";
 "adjust_hours_placeholder" = "Timer at tilføje/trække fra";
@@ -323,9 +323,9 @@
 
 "terms_of_use_link" = "Vilkår for brug";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Følg tiden med fokuseret træning, og se hvordan små vaner summer sig op.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Oversigt";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

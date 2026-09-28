@@ -137,18 +137,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "顔";
+"skill_emoji_section_work" = "仕事";
+"skill_emoji_section_creativity" = "創造性";
+"skill_emoji_section_fitness" = "フィットネス";
+"skill_emoji_section_learning" = "学習";
+"skill_emoji_section_gaming" = "ゲーム";
+"skill_emoji_section_music" = "音楽";
+"skill_emoji_section_food" = "食べ物";
+"skill_emoji_section_nature" = "自然";
+"skill_emoji_section_technology" = "テクノロジー";
+"skill_emoji_section_achievement" = "達成";
+"skill_emoji_section_lifestyle" = "ライフスタイル";
 
 "adjust_time_section" = "時間の調整";
 "adjust_hours_placeholder" = "追加/削除する時間（時間）";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "利用規約";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "集中して練習した時間を記録し、小さな習慣が積み重なるのを見守りましょう。";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "概要";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

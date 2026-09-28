@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "Обличчя";
+"skill_emoji_section_work" = "Робота";
+"skill_emoji_section_creativity" = "Творчість";
+"skill_emoji_section_fitness" = "Фітнес";
+"skill_emoji_section_learning" = "Навчання";
+"skill_emoji_section_gaming" = "Ігри";
+"skill_emoji_section_music" = "Музика";
+"skill_emoji_section_food" = "Їжа";
+"skill_emoji_section_nature" = "Природа";
+"skill_emoji_section_technology" = "Технології";
+"skill_emoji_section_achievement" = "Досягнення";
+"skill_emoji_section_lifestyle" = "Стиль життя";
 
 "adjust_time_section" = "Коригування часу";
 "adjust_hours_placeholder" = "Години для додавання/віднімання";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Умови використання";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Відстежуйте час зосередженої практики й дивіться, як додаються маленькі звички.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Огляд";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

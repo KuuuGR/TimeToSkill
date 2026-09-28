@@ -137,18 +137,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_faces" = "Volti";
+"skill_emoji_section_work" = "Lavoro";
+"skill_emoji_section_creativity" = "Creatività";
 "skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_learning" = "Apprendimento";
+"skill_emoji_section_gaming" = "Videogiochi";
+"skill_emoji_section_music" = "Musica";
+"skill_emoji_section_food" = "Cibo";
+"skill_emoji_section_nature" = "Natura";
+"skill_emoji_section_technology" = "Tecnologia";
+"skill_emoji_section_achievement" = "Obiettivi";
+"skill_emoji_section_lifestyle" = "Stile di vita";
 
 "adjust_time_section" = "Modifica tempo";
 "adjust_hours_placeholder" = "Ore da aggiungere/sottrarre";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Termini di utilizzo";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Monitora il tempo di pratica concentrata e osserva come si sommano le piccole abitudini.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Panoramica";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

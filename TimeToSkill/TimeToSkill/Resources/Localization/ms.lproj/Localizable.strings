@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "Wajah";
+"skill_emoji_section_work" = "Kerja";
+"skill_emoji_section_creativity" = "Kreativiti";
+"skill_emoji_section_fitness" = "Kecergasan";
+"skill_emoji_section_learning" = "Pembelajaran";
+"skill_emoji_section_gaming" = "Permainan";
+"skill_emoji_section_music" = "Muzik";
+"skill_emoji_section_food" = "Makanan";
+"skill_emoji_section_nature" = "Alam semula jadi";
+"skill_emoji_section_technology" = "Teknologi";
+"skill_emoji_section_achievement" = "Pencapaian";
+"skill_emoji_section_lifestyle" = "Gaya hidup";
 
 "adjust_time_section" = "Laraskan Masa";
 "adjust_hours_placeholder" = "Jam untuk tambah/tolak";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Syarat Penggunaan";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Jejak masa latihan yang fokus dan lihat tabiat kecil semakin bertambah.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Gambaran keseluruhan";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

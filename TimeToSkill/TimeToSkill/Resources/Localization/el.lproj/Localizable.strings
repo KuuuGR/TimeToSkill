@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "Πρόσωπα";
+"skill_emoji_section_work" = "Εργασία";
+"skill_emoji_section_creativity" = "Δημιουργικότητα";
+"skill_emoji_section_fitness" = "Φυσική κατάσταση";
+"skill_emoji_section_learning" = "Μάθηση";
+"skill_emoji_section_gaming" = "Παιχνίδια";
+"skill_emoji_section_music" = "Μουσική";
+"skill_emoji_section_food" = "Φαγητό";
+"skill_emoji_section_nature" = "Φύση";
+"skill_emoji_section_technology" = "Τεχνολογία";
+"skill_emoji_section_achievement" = "Επιτεύγματα";
+"skill_emoji_section_lifestyle" = "Τρόπος ζωής";
 
 "adjust_time_section" = "Προσαρμογή χρόνου";
 "adjust_hours_placeholder" = "Ώρες προς προσθήκη/αφαίρεση";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Όροι χρήσης";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Κατέγραψε χρόνο συγκεντρωμένης εξάσκησης και δες τις μικρές συνήθειες να αθροίζονται.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Επισκόπηση";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_faces" = "Tváře";
+"skill_emoji_section_work" = "Práce";
+"skill_emoji_section_creativity" = "Kreativita";
 "skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_learning" = "Učení";
+"skill_emoji_section_gaming" = "Hry";
+"skill_emoji_section_music" = "Hudba";
+"skill_emoji_section_food" = "Jídlo";
+"skill_emoji_section_nature" = "Příroda";
+"skill_emoji_section_technology" = "Technologie";
+"skill_emoji_section_achievement" = "Úspěchy";
+"skill_emoji_section_lifestyle" = "Životní styl";
 
 "adjust_time_section" = "Upravit čas";
 "adjust_hours_placeholder" = "Hodiny k přidání/odečtení";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Podmínky používání";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Sledujte čas soustředěného cvičení a sledujte, jak se malé návyky sčítají.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Přehled";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

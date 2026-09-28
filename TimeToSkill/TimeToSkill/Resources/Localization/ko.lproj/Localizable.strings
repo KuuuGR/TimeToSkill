@@ -137,18 +137,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "표정";
+"skill_emoji_section_work" = "업무";
+"skill_emoji_section_creativity" = "창의성";
+"skill_emoji_section_fitness" = "피트니스";
+"skill_emoji_section_learning" = "학습";
+"skill_emoji_section_gaming" = "게임";
+"skill_emoji_section_music" = "음악";
+"skill_emoji_section_food" = "음식";
+"skill_emoji_section_nature" = "자연";
+"skill_emoji_section_technology" = "기술";
+"skill_emoji_section_achievement" = "업적";
+"skill_emoji_section_lifestyle" = "라이프스타일";
 
 "adjust_time_section" = "시간 조정";
 "adjust_hours_placeholder" = "추가/제거할 시간(시)";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "이용약관";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "집중 연습 시간을 기록하고 작은 습관이 쌓이는 모습을 지켜보세요.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "개요";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

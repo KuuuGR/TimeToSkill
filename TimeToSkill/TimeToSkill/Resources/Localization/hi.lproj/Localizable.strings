@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "चेहरे";
+"skill_emoji_section_work" = "काम";
+"skill_emoji_section_creativity" = "रचनात्मकता";
+"skill_emoji_section_fitness" = "फ़िटनेस";
+"skill_emoji_section_learning" = "सीखना";
+"skill_emoji_section_gaming" = "गेमिंग";
+"skill_emoji_section_music" = "संगीत";
+"skill_emoji_section_food" = "भोजन";
+"skill_emoji_section_nature" = "प्रकृति";
+"skill_emoji_section_technology" = "तकनीक";
+"skill_emoji_section_achievement" = "उपलब्धियाँ";
+"skill_emoji_section_lifestyle" = "जीवनशैली";
 
 "adjust_time_section" = "समय समायोजित करें";
 "adjust_hours_placeholder" = "घंटे जोड़ें/घटाएं";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "उपयोग की शर्तें";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "केंद्रित अभ्यास का समय ट्रैक करें और देखें कि छोटी आदतें कैसे जुड़ती जाती हैं।";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "अवलोकन";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

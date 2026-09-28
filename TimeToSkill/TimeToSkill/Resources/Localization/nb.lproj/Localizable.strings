@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
+"skill_emoji_section_faces" = "Ansikter";
+"skill_emoji_section_work" = "Arbeid";
+"skill_emoji_section_creativity" = "Kreativitet";
+"skill_emoji_section_fitness" = "Trening";
+"skill_emoji_section_learning" = "Læring";
 "skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_music" = "Musikk";
+"skill_emoji_section_food" = "Mat";
+"skill_emoji_section_nature" = "Natur";
+"skill_emoji_section_technology" = "Teknologi";
+"skill_emoji_section_achievement" = "Prestasjoner";
+"skill_emoji_section_lifestyle" = "Livsstil";
 
 "adjust_time_section" = "Juster tid";
 "adjust_hours_placeholder" = "Timer å legge til/trekke fra";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Bruksvilkår";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Følg tiden du bruker på fokusert øving, og se hvordan små vaner summerer seg opp.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Oversikt";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

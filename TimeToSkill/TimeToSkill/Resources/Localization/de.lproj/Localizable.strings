@@ -137,17 +137,17 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_faces" = "Gesichter";
+"skill_emoji_section_work" = "Arbeit";
+"skill_emoji_section_creativity" = "Kreativität";
 "skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
+"skill_emoji_section_learning" = "Lernen";
 "skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
+"skill_emoji_section_music" = "Musik";
+"skill_emoji_section_food" = "Essen";
+"skill_emoji_section_nature" = "Natur";
+"skill_emoji_section_technology" = "Technologie";
+"skill_emoji_section_achievement" = "Erfolge";
 "skill_emoji_section_lifestyle" = "Lifestyle";
 
 "adjust_time_section" = "Zeit anpassen";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Nutzungsbedingungen";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Erfasse fokussierte Übungszeit und sieh zu, wie kleine Gewohnheiten sich summieren.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Übersicht";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

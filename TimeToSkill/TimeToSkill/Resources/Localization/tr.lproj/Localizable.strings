@@ -137,18 +137,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_faces" = "Yüzler";
+"skill_emoji_section_work" = "İş";
+"skill_emoji_section_creativity" = "Yaratıcılık";
 "skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_learning" = "Öğrenme";
+"skill_emoji_section_gaming" = "Oyun";
+"skill_emoji_section_music" = "Müzik";
+"skill_emoji_section_food" = "Yemek";
+"skill_emoji_section_nature" = "Doğa";
+"skill_emoji_section_technology" = "Teknoloji";
+"skill_emoji_section_achievement" = "Başarılar";
+"skill_emoji_section_lifestyle" = "Yaşam tarzı";
 
 "adjust_time_section" = "Zamanı Ayarla";
 "adjust_hours_placeholder" = "Eklenecek/çıkarılacak saat";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Kullanım Şartları";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Odaklanmış pratik süresini takip et ve küçük alışkanlıkların nasıl biriktiğini gör.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Genel Bakış";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

@@ -127,18 +127,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "Cares";
+"skill_emoji_section_work" = "Feina";
+"skill_emoji_section_creativity" = "Creativitat";
+"skill_emoji_section_fitness" = "Forma física";
+"skill_emoji_section_learning" = "Aprenentatge";
+"skill_emoji_section_gaming" = "Videojocs";
+"skill_emoji_section_music" = "Música";
+"skill_emoji_section_food" = "Menjar";
+"skill_emoji_section_nature" = "Natura";
+"skill_emoji_section_technology" = "Tecnologia";
+"skill_emoji_section_achievement" = "Assoliments";
+"skill_emoji_section_lifestyle" = "Estil de vida";
 
 "adjust_time_section" = "Ajustar el temps";
 "adjust_hours_placeholder" = "Hores a afegir/restar";
@@ -323,9 +323,9 @@
 
 "terms_of_use_link" = "Termes d'ús";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Registra el temps de pràctica concentrada i mira com es van sumant els petits hàbits.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Resum";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

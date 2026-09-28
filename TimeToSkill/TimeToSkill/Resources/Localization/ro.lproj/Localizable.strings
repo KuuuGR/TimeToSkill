@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_faces" = "Fețe";
+"skill_emoji_section_work" = "Muncă";
+"skill_emoji_section_creativity" = "Creativitate";
 "skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_learning" = "Învățare";
+"skill_emoji_section_gaming" = "Jocuri";
+"skill_emoji_section_music" = "Muzică";
+"skill_emoji_section_food" = "Mâncare";
+"skill_emoji_section_nature" = "Natură";
+"skill_emoji_section_technology" = "Tehnologie";
+"skill_emoji_section_achievement" = "Realizări";
+"skill_emoji_section_lifestyle" = "Stil de viață";
 
 "adjust_time_section" = "Ajustează timpul";
 "adjust_hours_placeholder" = "Ore de adăugat/scăzut";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Termeni de utilizare";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Urmărește timpul de practică concentrată și vezi cum se adună obiceiurile mici.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Prezentare generală";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

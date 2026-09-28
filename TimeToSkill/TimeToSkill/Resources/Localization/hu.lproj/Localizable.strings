@@ -126,18 +126,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
-"skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
-"skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_faces" = "Arcok";
+"skill_emoji_section_work" = "Munka";
+"skill_emoji_section_creativity" = "Kreativitás";
+"skill_emoji_section_fitness" = "Fitnesz";
+"skill_emoji_section_learning" = "Tanulás";
+"skill_emoji_section_gaming" = "Játékok";
+"skill_emoji_section_music" = "Zene";
+"skill_emoji_section_food" = "Étel";
+"skill_emoji_section_nature" = "Természet";
+"skill_emoji_section_technology" = "Technológia";
+"skill_emoji_section_achievement" = "Teljesítmények";
+"skill_emoji_section_lifestyle" = "Életmód";
 
 "adjust_time_section" = "Idő módosítása";
 "adjust_hours_placeholder" = "Hozzáadandó/levonandó órák";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Felhasználási feltételek";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Kövesd a fókuszált gyakorlás idejét, és figyeld, hogyan adódnak össze a kis szokások.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Áttekintés";
 
 // MARK: - SplashView
 "splash_presents" = "presents";

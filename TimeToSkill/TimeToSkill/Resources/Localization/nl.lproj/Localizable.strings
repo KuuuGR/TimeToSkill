@@ -137,18 +137,18 @@
 "skill_icon_label" = "Icon";
 "skill_emoji_picker_title" = "Choose Icon";
 "skill_emoji_picker_none" = "None";
-"skill_emoji_section_faces" = "Faces";
-"skill_emoji_section_work" = "Work";
-"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_faces" = "Gezichten";
+"skill_emoji_section_work" = "Werk";
+"skill_emoji_section_creativity" = "Creativiteit";
 "skill_emoji_section_fitness" = "Fitness";
-"skill_emoji_section_learning" = "Learning";
+"skill_emoji_section_learning" = "Leren";
 "skill_emoji_section_gaming" = "Gaming";
-"skill_emoji_section_music" = "Music";
-"skill_emoji_section_food" = "Food";
-"skill_emoji_section_nature" = "Nature";
-"skill_emoji_section_technology" = "Technology";
-"skill_emoji_section_achievement" = "Achievement";
-"skill_emoji_section_lifestyle" = "Lifestyle";
+"skill_emoji_section_music" = "Muziek";
+"skill_emoji_section_food" = "Eten";
+"skill_emoji_section_nature" = "Natuur";
+"skill_emoji_section_technology" = "Technologie";
+"skill_emoji_section_achievement" = "Prestaties";
+"skill_emoji_section_lifestyle" = "Levensstijl";
 
 "adjust_time_section" = "Tijd aanpassen";
 "adjust_hours_placeholder" = "Uren toe-/aftrekken";
@@ -322,9 +322,9 @@
 
 "terms_of_use_link" = "Gebruiksvoorwaarden";
 
-"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+"home_hero_intro" = "Houd je gerichte oefentijd bij en zie hoe kleine gewoontes zich opstapelen.";
 
-"sidebar_overview" = "Overview";
+"sidebar_overview" = "Overzicht";
 
 // MARK: - SplashView
 "splash_presents" = "presents";
