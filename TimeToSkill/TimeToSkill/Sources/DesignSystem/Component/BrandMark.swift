@@ -16,6 +16,9 @@ struct BrandMark: View {
     var wordmarkFont: Font = .headline
     var wordmarkColor: Color = AppColors.onSurface
     var cornerRadiusRatio: CGFloat = 0.24
+    /// Draws a thin accent-coloured edge around the icon. Turn it off on
+    /// surfaces where the artwork should float on its own (e.g. About).
+    var showsBorder: Bool = true
 
     private var cornerRadius: CGFloat { size * cornerRadiusRatio }
 
@@ -27,8 +30,12 @@ struct BrandMark: View {
                 .frame(width: size, height: size)
                 .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
                 .overlay(
-                    RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                        .strokeBorder(AppColors.accent.opacity(0.35), lineWidth: 1)
+                    Group {
+                        if showsBorder {
+                            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                                .strokeBorder(AppColors.accent.opacity(0.35), lineWidth: 1)
+                        }
+                    }
                 )
                 .accessibilityHidden(true)
 

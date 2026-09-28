@@ -17,7 +17,7 @@ struct AboutView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                BrandMark(size: 56, wordmarkFont: .largeTitle.bold())
+                BrandMark(size: 84, wordmarkFont: .largeTitle.bold(), showsBorder: false)
                     .padding(.top)
 
                 AboutSection(title: "ab_section_about_app", items: [
