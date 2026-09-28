@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Se fordeling";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Legg til egendefinert ferdighet";
-"unlock_custom_skills_title" = "Lås opp egendefinerte ferdigheter";
-"unlock_custom_skills_subtitle" = "Lag egne prestasjoner og administrer listen.";
-"unlock_benefit_create" = "Lag ferdighet med tittel, beskrivelse og vanskelighet";
-"unlock_benefit_delete" = "Fjern egendefinert ferdighet ved feil";
-"unlock_benefit_support" = "Støtt utvikleren";
-"unlock_benefit_reset_limit" = "Tilbakestill daglig vurderingsgrense";
-"restore_purchases" = "Gjenopprett kjøp";
-"buy_unlock" = "Kjøp opplåsing";
-"unlock_title_short" = "Lås opp";
 "difficulty_label" = "Vanskelighet";
 "star_descriptions_title" = "Stjernenivåbeskrivelser";
 "one_star_description" = "1★ beskrivelse";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 År";
 "Time_Converter_Days_Placeholder" = "Beregnede dager";
 "Time_Converter_Calculate_Button" = "Beregn";
-
-"paywall_price_format" = "Engangskjøp: %@";
 
 "privacy_policy_link" = "Personvernerklæring";
 

@@ -243,17 +243,8 @@
 "Time_Converter_Days_Placeholder" = "Vypočtené dny";
 "Time_Converter_Calculate_Button" = "Vypočítat";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Přidat vlastní dovednost";
-"unlock_custom_skills_title" = "Odemknout vlastní dovednosti";
-"unlock_custom_skills_subtitle" = "Vytvořte si vlastní úspěchy a spravujte svůj seznam.";
-"unlock_benefit_create" = "Vytvořte si vlastní dovednost s názvem, popisem a obtížností";
-"unlock_benefit_delete" = "Odstraňte vlastní dovednosti, pokud uděláte chybu";
-"unlock_benefit_support" = "Podpořte vývojáře";
-"unlock_benefit_reset_limit" = "Resetujte denní limit hodnocení";
-"restore_purchases" = "Obnovit nákupy";
-"buy_unlock" = "Koupit odemčení";
-"unlock_title_short" = "Odemknout";
 "difficulty_label" = "Obtížnost";
 "star_descriptions_title" = "Popisy úrovní hvězdiček";
 "one_star_description" = "Popis 1★";
@@ -311,8 +302,6 @@
 "archived_section" = "Archivováno";
 "counters_empty_title" = "Zatím žádné čítače";
 "counters_empty_description" = "Vytvořte svůj první čítač pro sledování číselného pokroku.";
-
-"paywall_price_format" = "Jednorázový nákup: %@";
 
 "privacy_policy_link" = "Zásady ochrany osobních údajů";
 

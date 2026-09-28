@@ -243,17 +243,8 @@
 "Time_Converter_Days_Placeholder" = "Jours calculés";
 "Time_Converter_Calculate_Button" = "Calculer";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Ajouter une compétence personnalisée";
-"unlock_custom_skills_title" = "Déverrouiller les compétences personnalisées";
-"unlock_custom_skills_subtitle" = "Créez vos propres réalisations et organisez votre liste.";
-"unlock_benefit_create" = "Créez votre propre compétence avec titre, description et difficulté";
-"unlock_benefit_delete" = "Supprimez les compétences personnalisées si vous faites une erreur";
-"unlock_benefit_support" = "Soutenez le développeur";
-"unlock_benefit_reset_limit" = "Réinitialisez la limite quotidienne d'évaluation";
-"restore_purchases" = "Restaurer les achats";
-"buy_unlock" = "Acheter le déverrouillage";
-"unlock_title_short" = "Déverrouiller";
 "difficulty_label" = "Difficulté";
 "star_descriptions_title" = "Descriptions par niveau d'étoiles";
 "one_star_description" = "Description 1★";
@@ -311,8 +302,6 @@
 "archived_section" = "Archivés";
 "counters_empty_title" = "Aucun compteur pour l'instant";
 "counters_empty_description" = "Créez votre premier compteur pour commencer à suivre les progrès numériques.";
-
-"paywall_price_format" = "Achat unique : %@";
 
 "privacy_policy_link" = "Politique de confidentialité";
 

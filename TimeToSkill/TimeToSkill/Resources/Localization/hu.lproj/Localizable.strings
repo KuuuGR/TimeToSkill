@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Eloszlás megtekintése";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Egyedi készség hozzáadása";
-"unlock_custom_skills_title" = "Egyedi készségek feloldása";
-"unlock_custom_skills_subtitle" = "Hozz létre saját teljesítményeket és kezeld a listád.";
-"unlock_benefit_create" = "Hozz létre készséget cím, leírás és nehézség megadásával";
-"unlock_benefit_delete" = "Távolíts el egyedi készségeket hiba esetén";
-"unlock_benefit_support" = "Támogasd a fejlesztőt";
-"unlock_benefit_reset_limit" = "Napi értékelési limit visszaállítása";
-"restore_purchases" = "Vásárlások visszaállítása";
-"buy_unlock" = "Feloldás vásárlása";
-"unlock_title_short" = "Feloldás";
 "difficulty_label" = "Nehézség";
 "star_descriptions_title" = "Csillagszintek leírása";
 "one_star_description" = "1★ leírás";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 Év";
 "Time_Converter_Days_Placeholder" = "Számított napok";
 "Time_Converter_Calculate_Button" = "Számítás";
-
-"paywall_price_format" = "Egyszeri vásárlás: %@";
 
 "privacy_policy_link" = "Adatvédelmi szabályzat";
 

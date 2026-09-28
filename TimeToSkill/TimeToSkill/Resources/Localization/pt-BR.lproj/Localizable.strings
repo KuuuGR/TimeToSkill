@@ -243,17 +243,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Ver distribuição";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Adicionar habilidade personalizada";
-"unlock_custom_skills_title" = "Desbloquear habilidades personalizadas";
-"unlock_custom_skills_subtitle" = "Crie suas próprias conquistas e organize sua lista.";
-"unlock_benefit_create" = "Crie habilidade com título, descrição e dificuldade";
-"unlock_benefit_delete" = "Remova habilidades personalizadas se errar";
-"unlock_benefit_support" = "Apoie o desenvolvedor";
-"unlock_benefit_reset_limit" = "Redefinir limite diário de avaliações";
-"restore_purchases" = "Restaurar compras";
-"buy_unlock" = "Comprar desbloqueio";
-"unlock_title_short" = "Desbloquear";
 "difficulty_label" = "Dificuldade";
 "star_descriptions_title" = "Descrições por nível de estrelas";
 "one_star_description" = "Descrição 1★";
@@ -311,8 +302,6 @@
 "archived_section" = "Arquivado";
 "counters_empty_title" = "Nenhum contador";
 "counters_empty_description" = "Crie seu primeiro contador para acompanhar o progresso numérico.";
-
-"paywall_price_format" = "Compra única: %@";
 
 "privacy_policy_link" = "Política de Privacidade";
 

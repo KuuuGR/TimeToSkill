@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Lihat taburan";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Tambah kemahiran tersuai";
-"unlock_custom_skills_title" = "Buka kunci kemahiran tersuai";
-"unlock_custom_skills_subtitle" = "Cipta pencapaian sendiri dan urus senarai.";
-"unlock_benefit_create" = "Cipta kemahiran dengan tajuk, penerangan dan kesukaran";
-"unlock_benefit_delete" = "Buang kemahiran tersuai jika tersilap";
-"unlock_benefit_support" = "Sokong pembangun";
-"unlock_benefit_reset_limit" = "Tetap semula had penilaian harian";
-"restore_purchases" = "Pulihkan pembelian";
-"buy_unlock" = "Beli buka kunci";
-"unlock_title_short" = "Buka";
 "difficulty_label" = "Kesukaran";
 "star_descriptions_title" = "Penerangan tahap bintang";
 "one_star_description" = "Penerangan 1★";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 Tahun";
 "Time_Converter_Days_Placeholder" = "Hari yang dikira";
 "Time_Converter_Calculate_Button" = "Kira";
-
-"paywall_price_format" = "Pembelian sekali: %@";
 
 "privacy_policy_link" = "Dasar Privasi";
 

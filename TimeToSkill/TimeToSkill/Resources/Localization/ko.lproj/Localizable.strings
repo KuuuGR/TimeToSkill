@@ -243,17 +243,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "분포 보기";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "사용자 지정 스킬 추가";
-"unlock_custom_skills_title" = "사용자 지정 스킬 잠금 해제";
-"unlock_custom_skills_subtitle" = "나만의 업적을 만들고 목록을 관리하세요.";
-"unlock_benefit_create" = "제목, 설명, 난이도로 스킬 만들기";
-"unlock_benefit_delete" = "실수 시 사용자 지정 스킬 삭제";
-"unlock_benefit_support" = "개발자 지원";
-"unlock_benefit_reset_limit" = "일일 평가 제한 재설정";
-"restore_purchases" = "구매 복원";
-"buy_unlock" = "잠금 해제 구매";
-"unlock_title_short" = "해제";
 "difficulty_label" = "난이도";
 "star_descriptions_title" = "별 등급 설명";
 "one_star_description" = "1★ 설명";
@@ -311,8 +302,6 @@
 "archived_section" = "보관됨";
 "counters_empty_title" = "카운터 없음";
 "counters_empty_description" = "숫자 진행 상황을 추적하려면 첫 카운터를 생성하세요.";
-
-"paywall_price_format" = "일회성 구매: %@";
 
 "privacy_policy_link" = "개인정보처리방침";
 

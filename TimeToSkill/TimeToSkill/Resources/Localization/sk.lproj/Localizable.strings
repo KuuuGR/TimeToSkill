@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Zobraziť rozdelenie";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Pridať vlastnú zručnosť";
-"unlock_custom_skills_title" = "Odomknúť vlastné zručnosti";
-"unlock_custom_skills_subtitle" = "Vytváraj si vlastné úspechy a spravuj zoznam.";
-"unlock_benefit_create" = "Vytvor zručnosť s názvom, popisom a náročnosťou";
-"unlock_benefit_delete" = "Odstráň vlastné zručnosti v prípade omylu";
-"unlock_benefit_support" = "Podpor vývojára";
-"unlock_benefit_reset_limit" = "Resetuj denný limit hodnotení";
-"restore_purchases" = "Obnoviť nákupy";
-"buy_unlock" = "Kúpiť odomknutie";
-"unlock_title_short" = "Odomknúť";
 "difficulty_label" = "Náročnosť";
 "star_descriptions_title" = "Popisy úrovní hviezd";
 "one_star_description" = "Popis 1★";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 Roky";
 "Time_Converter_Days_Placeholder" = "Vypočítané dni";
 "Time_Converter_Calculate_Button" = "Vypočítať";
-
-"paywall_price_format" = "Jednorazový nákup: %@";
 
 "privacy_policy_link" = "Zásady ochrany osobných údajov";
 

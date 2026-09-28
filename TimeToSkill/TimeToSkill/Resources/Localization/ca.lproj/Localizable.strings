@@ -244,17 +244,8 @@
 "Time_Converter_Days_Placeholder" = "Dies calculats";
 "Time_Converter_Calculate_Button" = "Calcular";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Afegeix habilitat personalitzada";
-"unlock_custom_skills_title" = "Desbloqueja habilitats personalitzades";
-"unlock_custom_skills_subtitle" = "Crea els teus propis assoliments i organitza la llista.";
-"unlock_benefit_create" = "Crea la teva habilitat amb títol, descripció i dificultat";
-"unlock_benefit_delete" = "Elimina habilitats personalitzades si t'equivoques";
-"unlock_benefit_support" = "Dóna suport al desenvolupador";
-"unlock_benefit_reset_limit" = "Restableix el límit diari d'avaluacions";
-"restore_purchases" = "Restaura compres";
-"buy_unlock" = "Comprar desbloqueig";
-"unlock_title_short" = "Desbloqueja";
 "difficulty_label" = "Dificultat";
 "star_descriptions_title" = "Descripcions per nivell d'estrelles";
 "one_star_description" = "Descripció 1★";
@@ -312,8 +303,6 @@
 "archived_section" = "Arxivats";
 "counters_empty_title" = "Encara no hi ha comptadors";
 "counters_empty_description" = "Crea el teu primer comptador per començar a registrar el progrés numèric.";
-
-"paywall_price_format" = "Compra única: %@";
 
 "privacy_policy_link" = "Política de privacitat";
 

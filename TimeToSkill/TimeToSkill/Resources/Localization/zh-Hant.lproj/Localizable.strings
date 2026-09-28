@@ -243,17 +243,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "查看分佈";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "新增自訂技能";
-"unlock_custom_skills_title" = "解鎖自訂技能";
-"unlock_custom_skills_subtitle" = "建立你的成就並管理清單。";
-"unlock_benefit_create" = "以標題、描述與難度建立技能";
-"unlock_benefit_delete" = "若有錯誤可移除自訂技能";
-"unlock_benefit_support" = "支持開發者";
-"unlock_benefit_reset_limit" = "重設每日評估上限";
-"restore_purchases" = "恢復購買";
-"buy_unlock" = "購買解鎖（開發）";
-"unlock_title_short" = "解鎖";
 "difficulty_label" = "難度";
 "star_descriptions_title" = "星級說明";
 "one_star_description" = "1★ 說明";
@@ -311,8 +302,6 @@
 "archived_section" = "已封存";
 "counters_empty_title" = "沒有計數器";
 "counters_empty_description" = "建立第一個計數器以開始追蹤數值進度。";
-
-"paywall_price_format" = "一次性購買：%@";
 
 "privacy_policy_link" = "隱私權政策";
 

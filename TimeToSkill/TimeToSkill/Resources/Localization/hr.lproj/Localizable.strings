@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Prikaži raspodjelu";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Dodaj prilagođenu vještinu";
-"unlock_custom_skills_title" = "Otključaj prilagođene vještine";
-"unlock_custom_skills_subtitle" = "Kreiraj vlastita postignuća i uredi svoju listu.";
-"unlock_benefit_create" = "Kreiraj vlastitu vještinu s naslovom, opisom i težinom";
-"unlock_benefit_delete" = "Ukloni prilagođene vještine u slučaju pogreške";
-"unlock_benefit_support" = "Podrži razvoj";
-"unlock_benefit_reset_limit" = "Resetiraj dnevni limit procjena";
-"restore_purchases" = "Vrati kupnje";
-"buy_unlock" = "Kupi otključavanje";
-"unlock_title_short" = "Otključaj";
 "difficulty_label" = "Težina";
 "star_descriptions_title" = "Opisi razina zvjezdica";
 "one_star_description" = "Opis 1★";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 Godine";
 "Time_Converter_Days_Placeholder" = "Izračunati dani";
 "Time_Converter_Calculate_Button" = "Izračunaj";
-
-"paywall_price_format" = "Jednokratna kupnja: %@";
 
 "privacy_policy_link" = "Pravila privatnosti";
 

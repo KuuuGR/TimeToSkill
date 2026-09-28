@@ -243,17 +243,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Просмотр распределения";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Добавить пользовательский навык";
-"unlock_custom_skills_title" = "Разблокировать пользовательские навыки";
-"unlock_custom_skills_subtitle" = "Создавайте собственные достижения и управляйте списком.";
-"unlock_benefit_create" = "Создайте навык с названием, описанием и сложностью";
-"unlock_benefit_delete" = "Удаляйте пользовательские навыки, если ошиблись";
-"unlock_benefit_support" = "Поддержите разработчика";
-"unlock_benefit_reset_limit" = "Сброс дневного лимита оценок";
-"restore_purchases" = "Восстановить покупки";
-"buy_unlock" = "Купить разблокировку";
-"unlock_title_short" = "Разблокировать";
 "difficulty_label" = "Сложность";
 "star_descriptions_title" = "Описание уровней звезд";
 "one_star_description" = "Описание 1★";
@@ -311,8 +302,6 @@
 "archived_section" = "Архив";
 "counters_empty_title" = "Нет счетчиков";
 "counters_empty_description" = "Создайте первый счетчик, чтобы отслеживать числовой прогресс.";
-
-"paywall_price_format" = "Единовременная покупка: %@";
 
 "privacy_policy_link" = "Политика конфиденциальности";
 

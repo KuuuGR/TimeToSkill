@@ -244,17 +244,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Se fordeling";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Tilføj brugerdefineret færdighed";
-"unlock_custom_skills_title" = "Lås brugerdefinerede færdigheder op";
-"unlock_custom_skills_subtitle" = "Opret dine egne præstationer og kurér din liste.";
-"unlock_benefit_create" = "Opret din egen færdighed med titel, beskrivelse og sværhedsgrad";
-"unlock_benefit_delete" = "Fjern brugerdefinerede færdigheder, hvis du laver en fejl";
-"unlock_benefit_support" = "Støt udvikleren";
-"unlock_benefit_reset_limit" = "Nulstil det daglige evalueringsloft";
-"restore_purchases" = "Gendan køb";
-"buy_unlock" = "Køb oprydning (Udvikler)";
-"unlock_title_short" = "Lås op";
 "difficulty_label" = "Sværhedsgrad";
 "star_descriptions_title" = "Stjerneniveau-beskrivelser";
 "one_star_description" = "1★ beskrivelse";
@@ -312,8 +303,6 @@
 "archived_section" = "Arkiveret";
 "counters_empty_title" = "Ingen tællere endnu";
 "counters_empty_description" = "Opret din første tæller for at begynde at spore numerisk fremskridt.";
-
-"paywall_price_format" = "Engangskøb: %@";
 
 "privacy_policy_link" = "Privatlivspolitik";
 

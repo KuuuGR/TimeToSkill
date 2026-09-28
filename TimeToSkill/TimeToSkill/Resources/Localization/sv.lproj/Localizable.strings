@@ -243,17 +243,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Visa fördelning";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Lägg till anpassad färdighet";
-"unlock_custom_skills_title" = "Lås upp anpassade färdigheter";
-"unlock_custom_skills_subtitle" = "Skapa egna prestationer och hantera listan.";
-"unlock_benefit_create" = "Skapa färdighet med titel, beskrivning och svårighet";
-"unlock_benefit_delete" = "Ta bort anpassade färdigheter vid fel";
-"unlock_benefit_support" = "Stöd utvecklaren";
-"unlock_benefit_reset_limit" = "Återställ daglig utvärderingsgräns";
-"restore_purchases" = "Återställ köp";
-"buy_unlock" = "Köp upplåsning";
-"unlock_title_short" = "Lås upp";
 "difficulty_label" = "Svårighet";
 "star_descriptions_title" = "Beskrivningar av stjärnnivåer";
 "one_star_description" = "1★ beskrivning";
@@ -311,8 +302,6 @@
 "archived_section" = "Arkiverat";
 "counters_empty_title" = "Inga räknare";
 "counters_empty_description" = "Skapa din första räknare för att spåra numeriska framsteg.";
-
-"paywall_price_format" = "Engångsköp: %@";
 
 "privacy_policy_link" = "Integritetspolicy";
 

@@ -236,17 +236,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "عرض التوزيع";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "أضف مهارة مخصصة";
-"unlock_custom_skills_title" = "افتح المهارات المخصصة";
-"unlock_custom_skills_subtitle" = "أنشئ إنجازاتك الخاصة وأدر قائمتك.";
-"unlock_benefit_create" = "أنشئ مهارة بعنوان ووصف وصعوبة";
-"unlock_benefit_delete" = "أزل المهارات المخصصة عند الخطأ";
-"unlock_benefit_support" = "ادعم المطور";
-"unlock_benefit_reset_limit" = "أعد تعيين حد التقييم اليومي";
-"restore_purchases" = "استعادة المشتريات";
-"buy_unlock" = "شراء الفتح";
-"unlock_title_short" = "فتح";
 "difficulty_label" = "الصعوبة";
 "star_descriptions_title" = "أوصاف مستويات النجوم";
 "one_star_description" = "وصف 1★";
@@ -310,8 +301,6 @@
 "Time_Converter_Years_Label" = "🎆 سنوات";
 "Time_Converter_Days_Placeholder" = "الأيام المحسوبة";
 "Time_Converter_Calculate_Button" = "احسب";
-
-"paywall_price_format" = "شراء لمرة واحدة: %@";
 
 "privacy_policy_link" = "سياسة الخصوصية";
 

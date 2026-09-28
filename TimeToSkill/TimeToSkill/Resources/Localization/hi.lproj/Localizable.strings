@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "वितरण देखें";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "कस्टम कौशल जोड़ें";
-"unlock_custom_skills_title" = "कस्टम कौशल अनलॉक करें";
-"unlock_custom_skills_subtitle" = "अपने उपलब्धियां बनाएं और सूची को व्यवस्थित करें।";
-"unlock_benefit_create" = "शीर्षक, विवरण और कठिनाई के साथ कौशल बनाएं";
-"unlock_benefit_delete" = "गलती होने पर कस्टम कौशल हटाएं";
-"unlock_benefit_support" = "डेवलपर को समर्थन दें";
-"unlock_benefit_reset_limit" = "दैनिक मूल्यांकन सीमा रीसेट करें";
-"restore_purchases" = "खरीदारी पुनर्स्थापित करें";
-"buy_unlock" = "अनलॉक खरीदें";
-"unlock_title_short" = "अनलॉक";
 "difficulty_label" = "कठिनाई";
 "star_descriptions_title" = "सितारा-स्तर विवरण";
 "one_star_description" = "1★ विवरण";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 वर्ष";
 "Time_Converter_Days_Placeholder" = "गणना किए गए दिन";
 "Time_Converter_Calculate_Button" = "गणना करें";
-
-"paywall_price_format" = "एकबारगी खरीद: %@";
 
 "privacy_policy_link" = "गोपनीयता नीति";
 

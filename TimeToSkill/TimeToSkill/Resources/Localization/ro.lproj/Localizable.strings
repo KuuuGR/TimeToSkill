@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Vezi distribuția";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Adaugă abilitate personalizată";
-"unlock_custom_skills_title" = "Deblochează abilități personalizate";
-"unlock_custom_skills_subtitle" = "Creează-ți propriile realizări și organizează-ți lista.";
-"unlock_benefit_create" = "Creează abilitate cu titlu, descriere și dificultate";
-"unlock_benefit_delete" = "Elimină abilități personalizate dacă greșești";
-"unlock_benefit_support" = "Susține dezvoltatorul";
-"unlock_benefit_reset_limit" = "Resetează limita zilnică de evaluări";
-"restore_purchases" = "Restabilește achizițiile";
-"buy_unlock" = "Cumpără deblocare";
-"unlock_title_short" = "Deblochează";
 "difficulty_label" = "Dificultate";
 "star_descriptions_title" = "Descrieri nivel stele";
 "one_star_description" = "Descriere 1★";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 Ani";
 "Time_Converter_Days_Placeholder" = "Zile calculate";
 "Time_Converter_Calculate_Button" = "Calculează";
-
-"paywall_price_format" = "Achiziție unică: %@";
 
 "privacy_policy_link" = "Politica de confidențialitate";
 

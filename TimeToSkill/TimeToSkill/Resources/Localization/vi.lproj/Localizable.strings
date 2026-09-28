@@ -243,17 +243,8 @@
 "Time_Converter_Days_Placeholder" = "Số ngày đã tính";
 "Time_Converter_Calculate_Button" = "Tính toán";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Thêm kỹ năng tùy chỉnh";
-"unlock_custom_skills_title" = "Mở khóa kỹ năng tùy chỉnh";
-"unlock_custom_skills_subtitle" = "Tạo thành tựu của riêng bạn và quản lý danh sách.";
-"unlock_benefit_create" = "Tạo kỹ năng riêng với tiêu đề, mô tả và độ khó";
-"unlock_benefit_delete" = "Xóa kỹ năng tùy chỉnh nếu bạn mắc lỗi";
-"unlock_benefit_support" = "Hỗ trợ nhà phát triển";
-"unlock_benefit_reset_limit" = "Đặt lại giới hạn đánh giá hàng ngày";
-"restore_purchases" = "Khôi phục mua hàng";
-"buy_unlock" = "Mua mở khóa";
-"unlock_title_short" = "Mở khóa";
 "difficulty_label" = "Độ khó";
 "star_descriptions_title" = "Mô tả cấp độ sao";
 "one_star_description" = "Mô tả 1★";
@@ -311,8 +302,6 @@
 "archived_section" = "Đã lưu trữ";
 "counters_empty_title" = "Chưa có bộ đếm nào";
 "counters_empty_description" = "Tạo bộ đếm đầu tiên để bắt đầu theo dõi tiến độ số.";
-
-"paywall_price_format" = "Mua một lần: %@";
 
 "privacy_policy_link" = "Chính sách quyền riêng tư";
 

@@ -243,17 +243,8 @@
 "Time_Converter_Days_Placeholder" = "จำนวนวันที่คำนวณได้";
 "Time_Converter_Calculate_Button" = "คำนวณ";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "เพิ่มทักษะที่กำหนดเอง";
-"unlock_custom_skills_title" = "ปลดล็อกทักษะที่กำหนดเอง";
-"unlock_custom_skills_subtitle" = "สร้างความสำเร็จของคุณเองและจัดการรายการ";
-"unlock_benefit_create" = "สร้างทักษะของคุณเองด้วยชื่อ คำอธิบาย และระดับความยาก";
-"unlock_benefit_delete" = "ลบทักษะที่กำหนดเองหากคุณทำผิดพลาด";
-"unlock_benefit_support" = "สนับสนุนนักพัฒนา";
-"unlock_benefit_reset_limit" = "รีเซ็ตขีดจำกัดการประเมินรายวัน";
-"restore_purchases" = "กู้คืนการซื้อ";
-"buy_unlock" = "ซื้อปลดล็อก";
-"unlock_title_short" = "ปลดล็อก";
 "difficulty_label" = "ระดับความยาก";
 "star_descriptions_title" = "คำอธิบายระดับดาว";
 "one_star_description" = "คำอธิบาย 1★";
@@ -311,8 +302,6 @@
 "archived_section" = "เก็บถาวร";
 "counters_empty_title" = "ยังไม่มีตัวนับ";
 "counters_empty_description" = "สร้างตัวนับแรกของคุณเพื่อเริ่มติดตามความคืบหน้าตัวเลข";
-
-"paywall_price_format" = "ซื้อครั้งเดียว: %@";
 
 "privacy_policy_link" = "นโยบายความเป็นส่วนตัว";
 

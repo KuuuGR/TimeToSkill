@@ -232,17 +232,8 @@
 // MARK: - SkillOptions additions
 "view_distribution" = "Näytä jakauma";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Lisää mukautettu taito";
-"unlock_custom_skills_title" = "Avaa mukautetut taidot";
-"unlock_custom_skills_subtitle" = "Luo omia saavutuksia ja kuratoi listaasi.";
-"unlock_benefit_create" = "Luo oma taito nimellä, kuvauksella ja vaikeudella";
-"unlock_benefit_delete" = "Poista mukautettu taito virheen sattuessa";
-"unlock_benefit_support" = "Tue kehittäjää";
-"unlock_benefit_reset_limit" = "Nollaa päivittäinen arviointiraja";
-"restore_purchases" = "Palauta ostot";
-"buy_unlock" = "Osta avaus";
-"unlock_title_short" = "Avaa";
 "difficulty_label" = "Vaikeus";
 "star_descriptions_title" = "Tähtitasojen kuvaukset";
 "one_star_description" = "1★ kuvaus";
@@ -311,8 +302,6 @@
 "Time_Converter_Years_Label" = "🎆 Vuotta";
 "Time_Converter_Days_Placeholder" = "Lasketut päivät";
 "Time_Converter_Calculate_Button" = "Laske";
-
-"paywall_price_format" = "Kertamaksu: %@";
 
 "privacy_policy_link" = "Tietosuojakäytäntö";
 

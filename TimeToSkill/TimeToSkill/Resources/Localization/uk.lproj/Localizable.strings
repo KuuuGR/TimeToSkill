@@ -243,17 +243,8 @@
 "Time_Converter_Days_Placeholder" = "Розраховані дні";
 "Time_Converter_Calculate_Button" = "Обчислити";
 
-// MARK: - Paywall & Custom Skill
+// MARK: - Custom Skill
 "fab_add_custom_skill" = "Додати власну навичку";
-"unlock_custom_skills_title" = "Розблокувати власні навички";
-"unlock_custom_skills_subtitle" = "Створюйте власні досягнення та керуйте своїм списком.";
-"unlock_benefit_create" = "Створіть власну навичку з назвою, описом та складністю";
-"unlock_benefit_delete" = "Видаляйте власні навички, якщо припустилися помилки";
-"unlock_benefit_support" = "Підтримайте розробника";
-"unlock_benefit_reset_limit" = "Скиньте денний ліміт оцінювання";
-"restore_purchases" = "Відновити покупки";
-"buy_unlock" = "Купити розблокування";
-"unlock_title_short" = "Розблокувати";
 "difficulty_label" = "Складність";
 "star_descriptions_title" = "Описи рівнів зірок";
 "one_star_description" = "Опис 1★";
@@ -311,8 +302,6 @@
 "archived_section" = "Архівовані";
 "counters_empty_title" = "Лічильників ще немає";
 "counters_empty_description" = "Створіть свій перший лічильник, щоб почати відстежувати числовий прогрес.";
-
-"paywall_price_format" = "Одноразова покупка: %@";
 
 "privacy_policy_link" = "Політика конфіденційності";
 
