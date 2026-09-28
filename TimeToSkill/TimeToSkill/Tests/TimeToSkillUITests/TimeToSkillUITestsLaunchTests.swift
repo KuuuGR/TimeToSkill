@@ -25,9 +25,10 @@ final class TimeToSkillUITestsLaunchTests: XCTestCase {
         let appLogo = app.images["app_logo"]
         XCTAssertTrue(appLogo.waitForExistence(timeout: 5), "App logo not found")
 
-        // Tap the Theory button using accessibility label
+        // Tap the Theory button using accessibility label.
+        // The splash choreography runs for ~12s before the main flow appears.
         let theoryButton = app.buttons["Learning Theory"]
-        XCTAssertTrue(theoryButton.waitForExistence(timeout: 5), "Theory button not found")
+        XCTAssertTrue(theoryButton.waitForExistence(timeout: 20), "Theory button not found")
         theoryButton.tap()
 
         // Use a predicate to match a localized title (based on theory_nav_title = "Learning Theory")

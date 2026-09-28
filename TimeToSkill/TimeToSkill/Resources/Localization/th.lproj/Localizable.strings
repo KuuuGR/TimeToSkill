@@ -43,7 +43,7 @@
 
 // MARK: - AboutView
 "ab_section_about_app" = "เกี่ยวกับแอป";
-"ab_app_name" = "TimeToSkill";
+"ab_app_name" = "Time4Skill";
 "ab_version" = "เวอร์ชัน %@";
 "ab_developer" = "สร้างโดย Grzegorz Kulesza";
 
@@ -123,6 +123,21 @@
 
 "skill_name_section" = "ชื่อ";
 "skill_name_label" = "ชื่อทักษะ";
+"skill_icon_label" = "Icon";
+"skill_emoji_picker_title" = "Choose Icon";
+"skill_emoji_picker_none" = "None";
+"skill_emoji_section_faces" = "Faces";
+"skill_emoji_section_work" = "Work";
+"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_fitness" = "Fitness";
+"skill_emoji_section_learning" = "Learning";
+"skill_emoji_section_gaming" = "Gaming";
+"skill_emoji_section_music" = "Music";
+"skill_emoji_section_food" = "Food";
+"skill_emoji_section_nature" = "Nature";
+"skill_emoji_section_technology" = "Technology";
+"skill_emoji_section_achievement" = "Achievement";
+"skill_emoji_section_lifestyle" = "Lifestyle";
 
 "adjust_time_section" = "ปรับเวลา";
 "adjust_hours_placeholder" = "ชั่วโมงที่ต้องเพิ่ม/ลด";
@@ -306,3 +321,16 @@
 "privacy_policy_link" = "นโยบายความเป็นส่วนตัว";
 
 "terms_of_use_link" = "ข้อกำหนดการใช้งาน";
+
+"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+
+"sidebar_overview" = "Overview";
+
+// MARK: - SplashView
+"splash_presents" = "presents";
+"splash_tagline" = "Track your time. Learn smarter. Grow with patience.";
+"splash_reflection_1" = "Every hour you practice is a step toward mastery.";
+"splash_reflection_2" = "Skill is the reward of time well spent.";
+"splash_reflection_3" = "Small hours, repeated, become mastery.";
+"splash_reflection_4" = "Progress is patience made visible.";
+"splash_reflection_5" = "Time invested in learning is never wasted.";

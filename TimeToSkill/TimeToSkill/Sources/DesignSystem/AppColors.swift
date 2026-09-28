@@ -35,6 +35,15 @@ extension Color {
     static let mdbBlue = Color(hex: "#4285f4")
     static let mdbPurple = Color(hex: "#9c27b0")
 
+    // MARK: - Brand accent
+    //
+    // Single brand accent taken from the hourglass outline of the app icon.
+    // Backed by the `AccentColor` asset, so native controls (selection, prominent
+    // buttons, links, pickers) pick it up automatically in both appearances.
+    // Use it sparingly: active state, the single most important action and small
+    // highlights only - never as a full-width background.
+    static let brandAccent = Color("AccentColor")
+
     // Helper: initialize color from hex string
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -73,6 +82,12 @@ struct AppColors {
     static let onPrimary = Color.white
     static let onSecondary = Color.black
     static let onSurface = Color.primary
+
+    /// The single brand accent (gold, from the icon's hourglass outline).
+    static let accent = Color.brandAccent
+
+    /// Hairline strokes for cards / surfaces that need a quiet edge.
+    static let hairline = Color.primary.opacity(0.09)
 
     static let error = Color.dangerDark
 }

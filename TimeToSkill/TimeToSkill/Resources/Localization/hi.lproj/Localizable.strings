@@ -43,7 +43,7 @@
 
 // MARK: - AboutView
 "ab_section_about_app" = "ऐप के बारे में";
-"ab_app_name" = "TimeToSkill";
+"ab_app_name" = "Time4Skill";
 "ab_version" = "संस्करण %@";
 "ab_developer" = "निर्माता: ग्रेज़गोर्ज कुलेशा";
 
@@ -123,6 +123,21 @@
 
 "skill_name_section" = "नाम";
 "skill_name_label" = "कौशल का नाम";
+"skill_icon_label" = "Icon";
+"skill_emoji_picker_title" = "Choose Icon";
+"skill_emoji_picker_none" = "None";
+"skill_emoji_section_faces" = "Faces";
+"skill_emoji_section_work" = "Work";
+"skill_emoji_section_creativity" = "Creativity";
+"skill_emoji_section_fitness" = "Fitness";
+"skill_emoji_section_learning" = "Learning";
+"skill_emoji_section_gaming" = "Gaming";
+"skill_emoji_section_music" = "Music";
+"skill_emoji_section_food" = "Food";
+"skill_emoji_section_nature" = "Nature";
+"skill_emoji_section_technology" = "Technology";
+"skill_emoji_section_achievement" = "Achievement";
+"skill_emoji_section_lifestyle" = "Lifestyle";
 
 "adjust_time_section" = "समय समायोजित करें";
 "adjust_hours_placeholder" = "घंटे जोड़ें/घटाएं";
@@ -306,3 +321,16 @@
 "privacy_policy_link" = "गोपनीयता नीति";
 
 "terms_of_use_link" = "उपयोग की शर्तें";
+
+"home_hero_intro" = "Track focused practice time and watch small habits add up.";
+
+"sidebar_overview" = "Overview";
+
+// MARK: - SplashView
+"splash_presents" = "presents";
+"splash_tagline" = "Track your time. Learn smarter. Grow with patience.";
+"splash_reflection_1" = "Every hour you practice is a step toward mastery.";
+"splash_reflection_2" = "Skill is the reward of time well spent.";
+"splash_reflection_3" = "Small hours, repeated, become mastery.";
+"splash_reflection_4" = "Progress is patience made visible.";
+"splash_reflection_5" = "Time invested in learning is never wasted.";

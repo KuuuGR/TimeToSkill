@@ -13,6 +13,10 @@ struct StatsView: View {
     @Environment(\.dismiss) private var dismiss
     @Query private var skills: [Skill]
 
+    /// iOS presents this view as a sheet (with a Done button); macOS hosts it as
+    /// a sidebar section in the detail column, where "Done" makes no sense.
+    var showsDoneButton: Bool = true
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -34,9 +38,11 @@ struct StatsView: View {
             .navigationTitle(LocalizedStringKey("stats_nav_title"))
             .inlineNavigationBarTitle()
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(LocalizedStringKey("button_done")) {
-                        dismiss()
+                if showsDoneButton {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button(LocalizedStringKey("button_done")) {
+                            dismiss()
+                        }
                     }
                 }
             }

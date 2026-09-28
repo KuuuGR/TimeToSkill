@@ -1,0 +1,3 @@
+/* Localized bundle names: the name shown in the macOS menu bar/Dock and on the iOS home screen. */
+"CFBundleDisplayName" = "Time4Skill";
+"CFBundleName" = "Time4Skill";

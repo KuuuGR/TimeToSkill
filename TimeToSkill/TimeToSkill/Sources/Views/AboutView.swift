@@ -17,9 +17,7 @@ struct AboutView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                Text("TimeToSkill")
-                    .font(.largeTitle.bold())
-                    .foregroundColor(AppColors.primary)
+                BrandMark(size: 56, wordmarkFont: .largeTitle.bold())
                     .padding(.top)
 
                 AboutSection(title: "ab_section_about_app", items: [

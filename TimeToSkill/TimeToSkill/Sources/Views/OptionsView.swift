@@ -14,6 +14,10 @@ struct OptionsView: View {
     @State private var showingShareSheet = false
     @State private var pdfData: Data?
 
+    /// iOS presents this view as a sheet (with a Done button); macOS hosts it as
+    /// the "Settings" sidebar section, where "Done" makes no sense.
+    var showsDoneButton: Bool = true
+
     // MARK: - Time Converter State Variables
     @State private var hoursInput: String = ""
     @State private var days8hOutput: String = ""
@@ -180,9 +184,11 @@ struct OptionsView: View {
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(LocalizedStringKey("button_done")) {
-                        dismiss()
+                if showsDoneButton {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button(LocalizedStringKey("button_done")) {
+                            dismiss()
+                        }
                     }
                 }
                 
@@ -313,8 +319,8 @@ struct OptionsView: View {
     private func generatePDF() {
         // Create PDF document
         let pdfMetaData = [
-            kCGPDFContextCreator: "TimeToSkill",
-            kCGPDFContextAuthor: "TimeToSkill User"
+            kCGPDFContextCreator: "Time4Skill",
+            kCGPDFContextAuthor: "Time4Skill User"
         ]
         let format = UIGraphicsPDFRendererFormat()
         format.documentInfo = pdfMetaData as [String: Any]

@@ -604,6 +604,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
+				INFOPLIST_KEY_CFBundleName = Time4Skill;
 				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -631,6 +633,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
+				INFOPLIST_KEY_CFBundleName = Time4Skill;
 				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -721,6 +725,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
 				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.etaosin.time4skill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -744,6 +749,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
 				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.etaosin.time4skill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
