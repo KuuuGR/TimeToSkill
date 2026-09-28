@@ -23,6 +23,11 @@ struct SkillOptionsSheet: View {
     @State private var adjustMinutes: String = ""
     @State private var showSuccessMessage = false
 
+    #if os(macOS)
+    /// Whether the distribution chart sheet is open.
+    @State private var showingDistribution = false
+    #endif
+
     private let maxFieldHours = 10_000.0
     private let maxTotalHours = 876_000.0
     private let minTotalHours = -876_000.0
@@ -104,7 +109,19 @@ struct SkillOptionsSheet: View {
                 }
 
                 Section(header: Text(LocalizedStringKey("time_distribution_title"))) {
+                    #if os(macOS)
+                    // A macOS sheet is sized from the top of its navigation stack,
+                    // and a *pushed* screen reserves a navigation bar the sheet
+                    // does not account for: the bottom of the histogram (the last
+                    // bucket) ended up below the sheet's bottom edge. Presenting
+                    // the chart as its own sheet keeps the whole histogram, last
+                    // bar and its inset included, inside the window.
+                    Button(LocalizedStringKey("view_distribution")) {
+                        showingDistribution = true
+                    }
+                    #else
                     NavigationLink(LocalizedStringKey("view_distribution")) { TimeDistributionView(skill: skill) }
+                    #endif
                 }
 
                 Section(header: Text(LocalizedStringKey("reset_section"))) {
@@ -137,6 +154,15 @@ struct SkillOptionsSheet: View {
             }
             .navigationTitle(LocalizedStringKey("skill_options_title"))
             .inlineNavigationBarTitle()
+            #if os(macOS)
+            // The chart is a sheet of its own (see the section above), so no
+            // pushed screen is involved.
+            .sheet(isPresented: $showingDistribution) {
+                NavigationStack {
+                    TimeDistributionView(skill: skill, showsDoneButton: true)
+                }
+            }
+            #endif
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(LocalizedStringKey("done")) {

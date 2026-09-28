@@ -14,6 +14,13 @@ import SwiftData
 struct TimeDistributionView: View {
     let skill: Skill
 
+    /// Adds the in-content "Gotowe" button used when the chart is presented as
+    /// its own macOS sheet (see `SkillOptionsSheet`). iOS presents this screen
+    /// as a pushed page with the standard back button, so it stays off there.
+    var showsDoneButton: Bool = false
+
+    @Environment(\.dismiss) private var dismiss
+
     /// Sessions of this skill. A live query instead of a one-off fetch keeps the
     /// histogram current when a session ends while the screen is still open.
     @Query private var entries: [TimeIntervalEntry]
@@ -22,8 +29,9 @@ struct TimeDistributionView: View {
     /// trailing open-ended bucket.
     private static let bucketEdges: [Double] = [0, 5, 10, 15, 30, 60, 120, 240, 480, 960]
 
-    init(skill: Skill) {
+    init(skill: Skill, showsDoneButton: Bool = false) {
         self.skill = skill
+        self.showsDoneButton = showsDoneButton
         let skillId = skill.id
         _entries = Query(filter: #Predicate<TimeIntervalEntry> { $0.skillId == skillId })
     }
@@ -32,9 +40,8 @@ struct TimeDistributionView: View {
         #if os(macOS)
         // A macOS sheet resizes itself to its content, and a scroll view has no
         // intrinsic height: with one here the window shrank to a thin strip
-        // around the title bar as soon as this screen was pushed. Laying the
-        // rows out at their natural height instead lets the sheet grow until the
-        // last bucket is visible.
+        // around the title bar. Laying the rows out at their natural height
+        // instead lets the sheet grow until the last bucket is visible.
         layout
             .navigationTitle(LocalizedStringKey("distribution_nav_title"))
         #else
@@ -53,11 +60,32 @@ struct TimeDistributionView: View {
             header
             summary
             histogram
+            #if os(macOS)
+            // Part of the content on purpose: the sheet is sized from the
+            // content, so an in-content button can never be clipped or push the
+            // histogram out of the window.
+            if showsDoneButton {
+                doneRow
+            }
+            #endif
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .macOSContentWidth(700)
     }
+
+    #if os(macOS)
+    private var doneRow: some View {
+        HStack {
+            Spacer()
+
+            Button(LocalizedStringKey("button_done")) {
+                dismiss()
+            }
+            .keyboardShortcut(.cancelAction)
+        }
+    }
+    #endif
 
     // MARK: - Header
 
@@ -296,3 +324,4 @@ struct TimeDistributionView: View {
         String(format: "%.2f", h)
     }
 }
+

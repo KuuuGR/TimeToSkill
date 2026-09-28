@@ -156,7 +156,9 @@ Same math as global, filtered by `skillId == skill.id`. Same include/exclude rul
 
 **Reworked since this audit:** the view reads its rows through a skill-filtered `@Query` (instead of a one-off `onAppear` fetch), so it stays current while the options sheet is open — **fixes S-9 for this view** — and buckets use fixed edges with a trailing `≥ 960m` bucket instead of `[…, 960, maxVal + 1]`, which removes the invalid interval — **fixes S-10 for this view**. The layout is now a horizontal bar chart (label · track + fill · count · share) with an empty state; `GlobalTimeDistributionView` and the PDF export still use the old binning.
 
-**Window sizing:** on macOS the histogram is rendered without a surrounding `ScrollView` so the options sheet can size itself to the chart (a macOS sheet fits its content, and a `ScrollView` has no intrinsic height — the window used to shrink to a strip around the title bar). The window therefore grows until the last bucket is visible and keeps the same 16 pt inset above the skill name and below the histogram. iOS keeps the scroll view.
+**Window sizing:** on macOS the histogram is rendered without a surrounding `ScrollView` so the sheet can size itself to the chart (a macOS sheet fits its content, and a `ScrollView` has no intrinsic height — the window used to shrink to a strip around the title bar). The window therefore grows until the last bucket is visible and keeps the same 16 pt inset above the skill name and below the histogram. iOS keeps the scroll view.
+
+**Presentation (macOS):** the chart is opened as its own sheet from the skill options (`Button` → `.sheet`), not as a pushed page. A pushed screen reserves a navigation bar that the sheet does not account for in its height (measured: sheet 492 pt vs 444 pt of chart starting at y = 64.85), which clipped the last bucket. As a sheet root the height adds up exactly: navigation bar 48 pt + layout 488 pt (chart + summary + "Gotowe" row) = 528 × 536 pt window, bottom flush. The "Gotowe" button lives inside the content so it can never be clipped; Escape also closes the sheet.
 
 ---
 
