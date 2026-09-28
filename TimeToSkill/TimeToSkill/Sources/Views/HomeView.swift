@@ -128,12 +128,11 @@ struct HomeView: View {
     }
     // MARK: - Hero
 
-    /// Small brand mark, headline, one-line introduction and a single primary
-    /// action / progress point.
+    /// Headline, one-line introduction and a single primary action / progress
+    /// point. The brand mark lives on the splash screen only, so the title sits
+    /// as high as possible on small iPhones.
     private var hero: some View {
         VStack(spacing: 14) {
-            BrandMark(size: isWideLayout ? 64 : 56, showsWordmark: false)
-
             Text("ab_app_name")
                 .font(AppTypography.display)
                 .foregroundColor(AppColors.onSurface)

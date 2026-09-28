@@ -25,10 +25,8 @@ struct MacOverviewView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                // Hero: small brand mark, app name and a one-line introduction.
+                // Hero: app name and a one-line introduction.
                 VStack(alignment: .leading, spacing: 12) {
-                    BrandMark(size: 44, showsWordmark: false)
-
                     Text("ab_app_name")
                         .font(.system(.largeTitle, weight: .bold))
                         .foregroundColor(AppColors.onSurface)
