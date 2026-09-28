@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "Zresetuj do 0";
 "counter_configuration_section" = "Konfiguracja";
 "counter_edit_thresholds" = "Edytuj progi";
-"counter_set_value_section" = "Ustaw wartość ręcznie";
-"counter_set_value_placeholder" = "-1000000 do 1000000";
+"counter_set_value_section" = "Ustaw wartość ręcznie (zakres -1M do 1M)";
 "counter_current_thresholds" = "Obecne progi";
 "counter_add_threshold" = "Dodaj próg";
 "counter_thresholds_title" = "Progi";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "Średni interwał: %@ min";
 "time_std_minutes_format" = "Odchyl. stand.: %@ min";
 "distribution_nav_title" = "Rozkład";
+"distribution_empty_message" = "Brak zapisanych sesji dla tej umiejętności.";
 "global_time_distribution_title" = "Globalny rozkład czasu";
 
 // MARK: - Sort options (Exemplary)

@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "Reset naar 0";
 "counter_configuration_section" = "Configuratie";
 "counter_edit_thresholds" = "Drempels bewerken";
-"counter_set_value_section" = "Waarde handmatig instellen";
-"counter_set_value_placeholder" = "-1000000 tot 1000000";
+"counter_set_value_section" = "Waarde handmatig instellen (bereik -1M tot 1M)";
 "counter_current_thresholds" = "Huidige drempels";
 "counter_add_threshold" = "Drempel toevoegen";
 "counter_thresholds_title" = "Drempels";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "Gemiddeld interval: %@ min";
 "time_std_minutes_format" = "Standaardafw.: %@ min";
 "distribution_nav_title" = "Verdeling";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Globale tijdsverdeling";
 
 // MARK: - Sort options (Exemplary)

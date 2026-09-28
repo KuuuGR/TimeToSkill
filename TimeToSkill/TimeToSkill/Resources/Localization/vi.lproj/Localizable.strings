@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Đặt về 0";
 "counter_configuration_section" = "Cấu hình";
 "counter_edit_thresholds" = "Sửa ngưỡng";
-"counter_set_value_section" = "Đặt giá trị thủ công";
-"counter_set_value_placeholder" = "-1000000 đến 1000000";
+"counter_set_value_section" = "Đặt giá trị thủ công (phạm vi -1M đến 1M)";
 "counter_current_thresholds" = "Ngưỡng hiện tại";
 "counter_add_threshold" = "Thêm ngưỡng";
 "counter_thresholds_title" = "Ngưỡng";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Khoảng trung bình: %@ phút";
 "time_std_minutes_format" = "Độ lệch chuẩn: %@ phút";
 "distribution_nav_title" = "Phân bố";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Phân bố thời gian toàn cục";
 
 // MARK: - Sort options (Exemplary)

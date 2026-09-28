@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "重置为 0";
 "counter_configuration_section" = "配置";
 "counter_edit_thresholds" = "编辑阈值";
-"counter_set_value_section" = "手动设置数值";
-"counter_set_value_placeholder" = "-1000000 到 1000000";
+"counter_set_value_section" = "手动设置数值 (范围 -1M 到 1M)";
 "counter_current_thresholds" = "当前阈值";
 "counter_add_threshold" = "添加阈值";
 "counter_thresholds_title" = "阈值";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "平均间隔：%@ 分钟";
 "time_std_minutes_format" = "标准差：%@ 分钟";
 "distribution_nav_title" = "分布";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "全局时间分布";
 
 // MARK: - Sort options (Exemplary)

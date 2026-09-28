@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Скинути до 0";
 "counter_configuration_section" = "Конфігурація";
 "counter_edit_thresholds" = "Редагувати пороги";
-"counter_set_value_section" = "Задати значення вручну";
-"counter_set_value_placeholder" = "-1000000 до 1000000";
+"counter_set_value_section" = "Задати значення вручну (діапазон -1M до 1M)";
 "counter_current_thresholds" = "Поточні пороги";
 "counter_add_threshold" = "Додати поріг";
 "counter_thresholds_title" = "Пороги";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Середній інтервал: %@ хв";
 "time_std_minutes_format" = "Сер. відхилення: %@ хв";
 "distribution_nav_title" = "Розподіл";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Глобальний розподіл часу";
 
 // MARK: - Sort options (Exemplary)

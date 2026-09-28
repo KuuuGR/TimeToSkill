@@ -182,8 +182,7 @@
 "counter_reset_to_zero" = "Restableix a 0";
 "counter_configuration_section" = "Configuració";
 "counter_edit_thresholds" = "Edita llindars";
-"counter_set_value_section" = "Estableix valor manualment";
-"counter_set_value_placeholder" = "-1000000 a 1000000";
+"counter_set_value_section" = "Estableix valor manualment (rang -1M a 1M)";
 "counter_current_thresholds" = "Llindars actuals";
 "counter_add_threshold" = "Afegeix llindar";
 "counter_thresholds_title" = "Llindars";
@@ -204,6 +203,7 @@
 "time_mean_minutes_format" = "Interval mitjà: %@ min";
 "time_std_minutes_format" = "Desv. estàndard: %@ min";
 "distribution_nav_title" = "Distribució";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Distribució global del temps";
 
 // MARK: - Sort options (Exemplary)

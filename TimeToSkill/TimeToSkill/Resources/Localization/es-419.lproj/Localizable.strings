@@ -182,8 +182,7 @@
 "counter_reset_to_zero" = "Reiniciar a 0";
 "counter_configuration_section" = "Configuración";
 "counter_edit_thresholds" = "Editar Umbrales";
-"counter_set_value_section" = "Establecer Valor Manualmente";
-"counter_set_value_placeholder" = "-1000000 a 1000000";
+"counter_set_value_section" = "Establecer Valor Manualmente (intervalo -1M a 1M)";
 "counter_current_thresholds" = "Umbrales Actuales";
 "counter_add_threshold" = "Agregar Umbral";
 "counter_thresholds_title" = "Umbrales";
@@ -204,6 +203,7 @@
 "time_mean_minutes_format" = "Intervalo medio: %@ min";
 "time_std_minutes_format" = "Desv. estándar: %@ min";
 "distribution_nav_title" = "Distribución";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Distribución global del tiempo";
 
 // MARK: - Sort options (Exemplary)

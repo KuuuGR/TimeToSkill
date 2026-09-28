@@ -4,9 +4,13 @@
 //
 //  Created by Grzegorz Kulesza on 06/04/2025.
 //
-//  Launch splash, ported from the ContextForge first-launch intro.
-//  The layout, element order, spacing and fade-in choreography mirror
-//  ContextForge; only the labels are TimeToSkill's.
+//  Launch splash, ported from the ContextForge intro. The layout, element
+//  order, spacing and fade-in choreography mirror ContextForge; only the
+//  labels are TimeToSkill's.
+//
+//  The screen itself is only presented on selected launches (1st, 32nd, 64th
+//  and 128th) - that decision lives in `AppLaunch` and `RootView`, which owns
+//  the hand-off to the main flow through `onFinish`.
 //
 //  Choreography (seconds):
 //  1. Logo          0.0 - 0.8
@@ -21,7 +25,9 @@
 import SwiftUI
 
 struct SplashView: View {
-    @State private var isActive = false
+    /// Called once the choreography has finished so the owner can swap in the
+    /// main flow. Left empty by default so the view can be previewed alone.
+    var onFinish: () -> Void = {}
 
     // Fade-in progress for each element (0 = hidden, 1 = fully visible).
     @State private var logoOpacity: Double = 0
@@ -96,7 +102,6 @@ struct SplashView: View {
             }
             .onAppear(perform: playChoreography)
         }
-        .modifier(SplashPresentation(isActive: $isActive))
     }
 
     /// Fades each element in over the same window ContextForge uses, then hands
@@ -110,9 +115,7 @@ struct SplashView: View {
         withAnimation(.linear(duration: 0.6).delay(8.0)) { reflectionOpacity = 1 }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) {
-            withAnimation(.easeOut(duration: 0.4)) {
-                isActive = true
-            }
+            onFinish()
         }
     }
 }
@@ -137,24 +140,3 @@ private enum SplashReflections {
     }
 }
 
-/// Presents the main flow with a full-screen cover on iOS; on macOS the splash
-/// content is simply replaced by the main view.
-private struct SplashPresentation: ViewModifier {
-    @Binding var isActive: Bool
-
-    func body(content: Content) -> some View {
-        #if canImport(UIKit)
-        content.fullScreenCover(isPresented: $isActive) {
-            MainView()
-        }
-        #else
-        Group {
-            if isActive {
-                MainView()
-            } else {
-                content
-            }
-        }
-        #endif
-    }
-}

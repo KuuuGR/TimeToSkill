@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "Auf 0 zurücksetzen";
 "counter_configuration_section" = "Konfiguration";
 "counter_edit_thresholds" = "Schwellenwerte bearbeiten";
-"counter_set_value_section" = "Wert manuell setzen";
-"counter_set_value_placeholder" = "-1000000 bis 1000000";
+"counter_set_value_section" = "Wert manuell setzen (Bereich -1M bis 1M)";
 "counter_current_thresholds" = "Aktuelle Schwellenwerte";
 "counter_add_threshold" = "Schwellenwert hinzufügen";
 "counter_thresholds_title" = "Schwellenwerte";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "Mittleres Intervall: %@ min";
 "time_std_minutes_format" = "Std.-Abw.: %@ min";
 "distribution_nav_title" = "Verteilung";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Globale Zeitverteilung";
 
 // MARK: - Sort options (Exemplary)

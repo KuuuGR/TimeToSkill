@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "0'a sıfırla";
 "counter_configuration_section" = "Yapılandırma";
 "counter_edit_thresholds" = "Eşikleri düzenle";
-"counter_set_value_section" = "Değeri manuel ayarla";
-"counter_set_value_placeholder" = "-1000000 ile 1000000";
+"counter_set_value_section" = "Değeri manuel ayarla (aralık -1M ile 1M)";
 "counter_current_thresholds" = "Mevcut eşikler";
 "counter_add_threshold" = "Eşik ekle";
 "counter_thresholds_title" = "Eşikler";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "Ortalama aralık: %@ dk";
 "time_std_minutes_format" = "Std. sapma: %@ dk";
 "distribution_nav_title" = "Dağılım";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Küresel zaman dağılımı";
 
 // MARK: - Sort options (Exemplary)

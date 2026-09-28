@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Nollaa arvo";
 "counter_configuration_section" = "Määritykset";
 "counter_edit_thresholds" = "Muokkaa kynnyksiä";
-"counter_set_value_section" = "Aseta arvo käsin";
-"counter_set_value_placeholder" = "-1000000 – 1000000";
+"counter_set_value_section" = "Aseta arvo käsin (vaihteluväli -1M – 1M)";
 "counter_current_thresholds" = "Nykyiset kynnykset";
 "counter_add_threshold" = "Lisää kynnys";
 "counter_thresholds_title" = "Kynnykset";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Keskimääräinen väli: %@ min";
 "time_std_minutes_format" = "Keskihajonta: %@ min";
 "distribution_nav_title" = "Jakauma";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Globaali ajanjakauma";
 
 // MARK: - Sort options (Exemplary)

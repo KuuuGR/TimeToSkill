@@ -193,8 +193,7 @@
 "counter_reset_to_zero" = "Nulstil til 0";
 "counter_configuration_section" = "Konfiguration";
 "counter_edit_thresholds" = "Redigér tærskler";
-"counter_set_value_section" = "Sæt værdi manuelt";
-"counter_set_value_placeholder" = "-1000000 til 1000000";
+"counter_set_value_section" = "Sæt værdi manuelt (interval -1M til 1M)";
 "counter_current_thresholds" = "Aktuelle tærskler";
 "counter_add_threshold" = "Tilføj tærskel";
 "counter_thresholds_title" = "Tærskler";
@@ -215,6 +214,7 @@
 "time_mean_minutes_format" = "Gennemsnitligt interval: %@ min";
 "time_std_minutes_format" = "Std.afv.: %@ min";
 "distribution_nav_title" = "Fordeling";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Global tidsfordeling";
 
 // MARK: - Sort options (Exemplary)

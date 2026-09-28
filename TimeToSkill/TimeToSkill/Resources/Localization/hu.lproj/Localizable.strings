@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Vissza 0-ra";
 "counter_configuration_section" = "Konfiguráció";
 "counter_edit_thresholds" = "Küszöbök szerkesztése";
-"counter_set_value_section" = "Érték megadása kézzel";
-"counter_set_value_placeholder" = "-1000000 – 1000000";
+"counter_set_value_section" = "Érték megadása kézzel (tartomány -1M – 1M)";
 "counter_current_thresholds" = "Jelenlegi küszöbök";
 "counter_add_threshold" = "Küszöb hozzáadása";
 "counter_thresholds_title" = "Küszöbök";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Átlagos intervallum: %@ perc";
 "time_std_minutes_format" = "Szórás: %@ perc";
 "distribution_nav_title" = "Eloszlás";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Globális időeloszlás";
 
 // MARK: - Sort options (Exemplary)

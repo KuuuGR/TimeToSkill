@@ -177,9 +177,11 @@ struct CounterDetailView: View {
                 }
                 NavigationLink(LocalizedStringKey("counter_edit_thresholds")) { ThresholdEditor(thresholds: $counter.thresholds) }
             }
+            // The allowed range lives in the section title, not in the field's
+            // placeholder, so the input row stays a plain field + Apply button.
             Section(LocalizedStringKey("counter_set_value_section")) {
                 HStack {
-                    TextField(LocalizedStringKey("counter_set_value_placeholder"), text: $valueText)
+                    TextField(LocalizedStringKey("counter_value_label"), text: $valueText)
                         .numbersAndPunctuationKeyboard()
                     Button(LocalizedStringKey("apply")) {
                         if let v = Int(valueText) { counter.value = v; counter.updatedAt = Date() }

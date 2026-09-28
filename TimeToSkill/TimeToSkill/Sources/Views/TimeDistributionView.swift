@@ -1,96 +1,297 @@
+//
+//  TimeDistributionView.swift
+//  TimeToSkill
+//
+//  How long the individual sessions of one skill last ("Zobacz rozkład" in the
+//  skill options), drawn as a horizontal bar chart: one row per duration
+//  bucket, the bar length is the bucket's share of the busiest bucket and the
+//  trailing numbers are the session count plus its share of all sessions.
+//
+
 import SwiftUI
 import SwiftData
 
 struct TimeDistributionView: View {
     let skill: Skill
-    @Environment(\.modelContext) private var context
-    @State private var bins: [(range: String, count: Int)] = []
-    @State private var totalMinutes: Double = 0
-    @State private var meanMinutes: Double = 0
-    @State private var stdMinutes: Double = 0
-    
+
+    /// Sessions of this skill. A live query instead of a one-off fetch keeps the
+    /// histogram current when a session ends while the screen is still open.
+    @Query private var entries: [TimeIntervalEntry]
+
+    /// Upper edges (in minutes) of the fixed buckets. Longer sessions land in a
+    /// trailing open-ended bucket.
+    private static let bucketEdges: [Double] = [0, 5, 10, 15, 30, 60, 120, 240, 480, 960]
+
+    init(skill: Skill) {
+        self.skill = skill
+        let skillId = skill.id
+        _entries = Query(filter: #Predicate<TimeIntervalEntry> { $0.skillId == skillId })
+    }
+
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                Text(LocalizedStringKey("time_distribution_title"))
-                    .font(.title2)
-                    .bold()
-                Text(String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name))
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                
-                // Stats
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(String(format: NSLocalizedString("time_total_hours_format", comment: ""), formatHours(totalMinutes / 60)))
-                    Text(String(format: NSLocalizedString("time_mean_minutes_format", comment: ""), formatMinutes(meanMinutes)))
-                    Text(String(format: NSLocalizedString("time_std_minutes_format", comment: ""), formatMinutes(stdMinutes)))
+        #if os(macOS)
+        // A macOS sheet resizes itself to its content, and a scroll view has no
+        // intrinsic height: with one here the window shrank to a thin strip
+        // around the title bar as soon as this screen was pushed. Laying the
+        // rows out at their natural height instead lets the sheet grow until the
+        // last bucket is visible.
+        layout
+            .navigationTitle(LocalizedStringKey("distribution_nav_title"))
+        #else
+        // On iOS the screen keeps scrolling so long histograms stay reachable on
+        // short devices.
+        ScrollView { layout }
+            .navigationTitle(LocalizedStringKey("distribution_nav_title"))
+        #endif
+    }
+
+    /// Header, summary tiles and histogram, inset by the sheet's standard 16pt on
+    /// every side - the inset below the histogram therefore matches the gap
+    /// between the skill name and the window's title bar.
+    private var layout: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            header
+            summary
+            histogram
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .macOSContentWidth(700)
+    }
+
+    // MARK: - Header
+
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack(spacing: 8) {
+                if !skill.icon.isEmpty {
+                    Text(skill.icon)
+                        .accessibilityHidden(true)
                 }
-                .padding()
-                .background(RoundedRectangle(cornerRadius: 12).fill(Color.gray.opacity(0.08)))
-                
-                // Histogram bars
-                VStack(alignment: .leading, spacing: 8) {
-                    ForEach(bins.indices, id: \.self) { i in
-                        let bin = bins[i]
-                        HStack {
-                            Text(bin.range)
-                                .font(.caption)
-                                .frame(width: 90, alignment: .leading)
-                            GeometryReader { geo in
-                                let maxCount = max(1, bins.map { $0.1 }.max() ?? 1)
-                                let ratio = CGFloat(bin.count) / CGFloat(maxCount)
-                                let safeRatio = ratio.isNaN || !ratio.isFinite ? 0 : max(0, min(1, ratio))
-                                let width = safeRatio * geo.size.width
-                                RoundedRectangle(cornerRadius: 6)
-                                    .fill(LinearGradient(colors: [.blue, .purple], startPoint: .leading, endPoint: .trailing))
-                                    .frame(width: width, height: 12)
-                            }
-                            .frame(height: 12)
-                            Text("\(bin.count)")
-                                .font(.caption2)
-                                .foregroundColor(.secondary)
-                                .frame(width: 36, alignment: .trailing)
-                        }
-                    }
+
+                Text(skill.name)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .lineLimit(2)
+            }
+
+            Text(LocalizedStringKey("time_distribution_title"))
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    // MARK: - Summary
+
+    private var summary: some View {
+        LazyVGrid(
+            columns: [GridItem(.adaptive(minimum: 165), spacing: 12)],
+            alignment: .leading,
+            spacing: 12
+        ) {
+            summaryTile(
+                String(
+                    format: NSLocalizedString("time_total_hours_format", comment: ""),
+                    formatHours(totalMinutes / 60)
+                ),
+                systemImage: "clock"
+            )
+            summaryTile(
+                String(
+                    format: NSLocalizedString("time_mean_minutes_format", comment: ""),
+                    formatMinutes(meanMinutes)
+                ),
+                systemImage: "chart.bar"
+            )
+            summaryTile(
+                String(
+                    format: NSLocalizedString("time_std_minutes_format", comment: ""),
+                    formatMinutes(stdMinutes)
+                ),
+                systemImage: "waveform.path"
+            )
+        }
+    }
+
+    private func summaryTile(_ text: String, systemImage: String) -> some View {
+        HStack(spacing: 10) {
+            Image(systemName: systemImage)
+                .font(.callout)
+                .foregroundStyle(AppColors.primary)
+
+            Text(text)
+                .font(.callout)
+                .monospacedDigit()
+                .lineLimit(2)
+                .minimumScaleFactor(0.8)
+
+            Spacer(minLength: 0)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(AppColors.surface)
+        )
+        .shadow(radius: 2, y: 1)
+    }
+
+    // MARK: - Histogram
+
+    private var histogram: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            if buckets.isEmpty {
+                emptyState
+            } else {
+                ForEach(buckets) { bucket in
+                    barRow(bucket)
                 }
             }
-            .padding()
-            .macOSContentWidth(700)
         }
-        .navigationTitle(LocalizedStringKey("distribution_nav_title"))
-        .onAppear { load() }
     }
-    
-    private func load() {
-        let targetId = skill.id
-        let descriptor = FetchDescriptor<TimeIntervalEntry>(predicate: #Predicate { entry in entry.skillId == targetId })
-        let entries = (try? context.fetch(descriptor)) ?? []
-        let minutes = entries.map { max(0, $0.durationMinutes) }
-        totalMinutes = minutes.reduce(0, +)
-        meanMinutes = minutes.isEmpty ? 0 : minutes.reduce(0, +) / Double(minutes.count)
-        let variance = minutes.isEmpty ? 0 : minutes.reduce(0) { $0 + pow($1 - meanMinutes, 2) } / Double(minutes.count)
-        stdMinutes = sqrt(variance)
-        bins = makeBins(values: minutes)
-    }
-    
-    private func makeBins(values: [Double]) -> [(String, Int)] {
-        guard !values.isEmpty else { return [] }
-        let maxVal = values.max() ?? 0
-        let edges: [Double] = [0,5,10,15,30,60,120,240,480,960, maxVal + 1]
-        var result: [(String, Int)] = []
-        for i in 0..<(edges.count - 1) {
-            let a = edges[i]
-            let b = edges[i+1]
-            let count = values.filter { $0 >= a && $0 < b }.count
-            let label = b >= 960 ? "≥ \(Int(a))m" : "\(Int(a))–\(Int(b))m"
-            result.append((label, count))
+
+    private func barRow(_ bucket: Bucket) -> some View {
+        HStack(spacing: 12) {
+            Text(bucket.label)
+                .font(.caption)
+                .monospacedDigit()
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+                .frame(width: 74, alignment: .leading)
+
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+                    Capsule(style: .continuous)
+                        .fill(Color.primary.opacity(0.08))
+
+                    Capsule(style: .continuous)
+                        .fill(
+                            LinearGradient(
+                                colors: [.info, .mdbPurple],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        // Keep the shortest bar visible instead of a sliver.
+                        .frame(width: max(6, geometry.size.width * bucket.share))
+                }
+            }
+            .frame(height: 16)
+
+            Text("\(bucket.count)")
+                .font(.caption)
+                .fontWeight(.semibold)
+                .monospacedDigit()
+                .frame(width: 30, alignment: .trailing)
+
+            Text(bucket.frequency.formatted(.percent.precision(.fractionLength(0))))
+                .font(.caption2)
+                .monospacedDigit()
+                .foregroundStyle(.secondary)
+                .frame(width: 40, alignment: .trailing)
         }
-        return result.filter { $0.1 > 0 }
+        .accessibilityElement(children: .combine)
     }
-    
+
+    private var emptyState: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "chart.bar.xaxis")
+                .foregroundStyle(.secondary)
+
+            Text(LocalizedStringKey("distribution_empty_message"))
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(AppColors.surface)
+        )
+        .shadow(radius: 2, y: 1)
+    }
+
+    // MARK: - Data
+
+    /// One bar of the histogram.
+    private struct Bucket: Identifiable {
+        let id = UUID()
+        let label: String
+        let count: Int
+        /// Bar length relative to the busiest bucket (0…1).
+        let share: Double
+        /// Sessions in this bucket relative to all sessions (0…1).
+        let frequency: Double
+    }
+
+    private var sessionDurations: [Double] {
+        entries.map { max(0, $0.durationMinutes) }
+    }
+
+    private var totalMinutes: Double {
+        sessionDurations.reduce(0, +)
+    }
+
+    private var meanMinutes: Double {
+        let durations = sessionDurations
+        guard !durations.isEmpty else { return 0 }
+        return durations.reduce(0, +) / Double(durations.count)
+    }
+
+    private var stdMinutes: Double {
+        let durations = sessionDurations
+        guard !durations.isEmpty else { return 0 }
+        let mean = durations.reduce(0, +) / Double(durations.count)
+        let variance = durations.reduce(0) { $0 + pow($1 - mean, 2) } / Double(durations.count)
+        return sqrt(variance)
+    }
+
+    private var buckets: [Bucket] {
+        let durations = sessionDurations
+        guard !durations.isEmpty else { return [] }
+
+        let edges = Self.bucketEdges
+        var counts: [(label: String, count: Int)] = []
+
+        for index in 0..<(edges.count - 1) {
+            let lower = edges[index]
+            let upper = edges[index + 1]
+            let count = durations.filter { $0 >= lower && $0 < upper }.count
+            counts.append(("\(Int(lower))–\(Int(upper))m", count))
+        }
+
+        if let lastEdge = edges.last {
+            let overflow = durations.filter { $0 >= lastEdge }.count
+            if overflow > 0 {
+                counts.append(("≥ \(Int(lastEdge))m", overflow))
+            }
+        }
+
+        let busiest = max(1, counts.map(\.count).max() ?? 1)
+        let total = max(1, durations.count)
+
+        // Buckets without sessions are hidden so the chart only shows data that
+        // actually exists.
+        return counts
+            .filter { $0.count > 0 }
+            .map { bucket in
+                Bucket(
+                    label: bucket.label,
+                    count: bucket.count,
+                    share: Double(bucket.count) / Double(busiest),
+                    frequency: Double(bucket.count) / Double(total)
+                )
+            }
+    }
+
+    // MARK: - Formatting
+
     private func formatMinutes(_ m: Double) -> String {
         String(format: "%.1f", m)
     }
+
     private func formatHours(_ h: Double) -> String {
         String(format: "%.2f", h)
     }

@@ -76,7 +76,7 @@ TimeToSkill/                          # Git repository root
 
 ### `Sources/TimeToSkillApp.swift`
 
-App entry: SwiftData container, dark mode, IAP environment object, root `SplashView`.
+App entry: SwiftData container, dark mode, records the launch (`AppLaunch`) and roots at `RootView` (splash on selected launches, App Store review on launches 16 & 256).
 
 ### `Sources/Models/`
 
@@ -98,7 +98,7 @@ App entry: SwiftData container, dark mode, IAP environment object, root `SplashV
 
 | Subfolder / area | Purpose |
 |------------------|---------|
-| Root view files | Splash, Main, Start, Options, Stats, Theory, About, Exemplary, Counters, Support |
+| Root view files | Root, Splash, Main, Start, Options, Stats, Theory, About, Exemplary, Counters, Support |
 | `Components/` | Reusable feature widgets (progress, paywall, cards, sheets) |
 | `Components/Stats/` | Stats section widgets |
 | `Stats/` | Global distribution chart view |

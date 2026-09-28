@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Resetează la 0";
 "counter_configuration_section" = "Configurație";
 "counter_edit_thresholds" = "Editează praguri";
-"counter_set_value_section" = "Setează valoare manual";
-"counter_set_value_placeholder" = "-1000000 la 1000000";
+"counter_set_value_section" = "Setează valoare manual (interval -1M la 1M)";
 "counter_current_thresholds" = "Praguri actuale";
 "counter_add_threshold" = "Adaugă prag";
 "counter_thresholds_title" = "Praguri";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Interval mediu: %@ min";
 "time_std_minutes_format" = "Abatere standard: %@ min";
 "distribution_nav_title" = "Distribuție";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Distribuția globală a timpului";
 
 // MARK: - Sort options (Exemplary)

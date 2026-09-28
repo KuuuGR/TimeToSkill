@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "重設為 0";
 "counter_configuration_section" = "設定";
 "counter_edit_thresholds" = "編輯臨界值";
-"counter_set_value_section" = "手動設定數值";
-"counter_set_value_placeholder" = "-1000000 到 1000000";
+"counter_set_value_section" = "手動設定數值 (範圍 -1M 到 1M)";
 "counter_current_thresholds" = "目前的臨界值";
 "counter_add_threshold" = "新增臨界值";
 "counter_thresholds_title" = "臨界值";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "平均間隔：%@ 分鐘";
 "time_std_minutes_format" = "標準差：%@ 分鐘";
 "distribution_nav_title" = "分佈";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "全球時間分佈";
 
 // MARK: - Sort options (Exemplary)

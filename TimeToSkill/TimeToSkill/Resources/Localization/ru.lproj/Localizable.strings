@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "Сбросить в 0";
 "counter_configuration_section" = "Конфигурация";
 "counter_edit_thresholds" = "Изменить пороги";
-"counter_set_value_section" = "Задать значение вручную";
-"counter_set_value_placeholder" = "-1000000 до 1000000";
+"counter_set_value_section" = "Задать значение вручную (диапазон -1M до 1M)";
 "counter_current_thresholds" = "Текущие пороги";
 "counter_add_threshold" = "Добавить порог";
 "counter_thresholds_title" = "Пороги";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "Средний интервал: %@ мин";
 "time_std_minutes_format" = "Ст. отклонение: %@ мин";
 "distribution_nav_title" = "Распределение";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Глобальное распределение времени";
 
 // MARK: - Sort options (Exemplary)

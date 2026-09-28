@@ -154,6 +154,10 @@ Because Week/Month can equal Total when every skill’s `lastUpdated` falls in t
 
 Same math as global, filtered by `skillId == skill.id`. Same include/exclude rules.
 
+**Reworked since this audit:** the view reads its rows through a skill-filtered `@Query` (instead of a one-off `onAppear` fetch), so it stays current while the options sheet is open — **fixes S-9 for this view** — and buckets use fixed edges with a trailing `≥ 960m` bucket instead of `[…, 960, maxVal + 1]`, which removes the invalid interval — **fixes S-10 for this view**. The layout is now a horizontal bar chart (label · track + fill · count · share) with an empty state; `GlobalTimeDistributionView` and the PDF export still use the old binning.
+
+**Window sizing:** on macOS the histogram is rendered without a surrounding `ScrollView` so the options sheet can size itself to the chart (a macOS sheet fits its content, and a `ScrollView` has no intrinsic height — the window used to shrink to a strip around the title bar). The window therefore grows until the last bucket is visible and keeps the same 16 pt inset above the skill name and below the histogram. iOS keeps the scroll view.
+
 ---
 
 ### 7. PDF export (Options)
@@ -296,8 +300,8 @@ Same pattern in unused `RecentTrackingView`.
 | **S-6** | **Medium** | Activity Log presents lifetime hours + stale dates as “activity” | `ActivityLogView.swift` |
 | **S-7** | **Medium** | First Tracked ≠ first tracking; uses `min(lastUpdated)` | `StatsSummaryView.swift` |
 | **S-8** | **Medium** | Tracked Time Total uses `max(total, 0.01)` — empty/zero shows 0.01 h and distorts % | `TrackedTimeView.swift` |
-| **S-9** | **Medium** | Histograms/`onAppear` only — stale while Stats sheet remains open | `GlobalTimeDistributionView.swift`, `TimeDistributionView.swift` |
-| **S-10** | **Low** | Histogram edges `[…, 960, maxVal+1]` when `maxVal < 960` create invalid interval (usually empty) | distribution views + `OptionsView` |
+| **S-9** | **Medium** | Histograms/`onAppear` only — stale while Stats sheet remains open (`TimeDistributionView` now uses `@Query`) | `GlobalTimeDistributionView.swift` |
+| **S-10** | **Low** | Histogram edges `[…, 960, maxVal+1]` when `maxVal < 960` create invalid interval (usually empty) (`TimeDistributionView` now uses fixed edges) | `GlobalTimeDistributionView.swift` + `OptionsView` |
 | **S-11** | **Low** | Dead duplicate logic in `RecentTrackingView` (same bugs, unused) | `RecentTrackingView.swift` |
 | **S-12** | **Low** | File comment claims Picker; no picker exists | `TrackedTimeView.swift` |
 

@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "Azzera a 0";
 "counter_configuration_section" = "Configurazione";
 "counter_edit_thresholds" = "Modifica soglie";
-"counter_set_value_section" = "Imposta valore manualmente";
-"counter_set_value_placeholder" = "-1000000 a 1000000";
+"counter_set_value_section" = "Imposta valore manualmente (intervallo -1M a 1M)";
 "counter_current_thresholds" = "Soglie correnti";
 "counter_add_threshold" = "Aggiungi soglia";
 "counter_thresholds_title" = "Soglie";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "Intervallo medio: %@ min";
 "time_std_minutes_format" = "Dev. standard: %@ min";
 "distribution_nav_title" = "Distribuzione";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Distribuzione globale del tempo";
 
 // MARK: - Sort options (Exemplary)

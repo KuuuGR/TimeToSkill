@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Setel ke 0";
 "counter_configuration_section" = "Konfigurasi";
 "counter_edit_thresholds" = "Ubah Ambang";
-"counter_set_value_section" = "Atur Nilai Manual";
-"counter_set_value_placeholder" = "-1000000 hingga 1000000";
+"counter_set_value_section" = "Atur Nilai Manual (rentang -1M hingga 1M)";
 "counter_current_thresholds" = "Ambang Saat Ini";
 "counter_add_threshold" = "Tambah Ambang";
 "counter_thresholds_title" = "Ambang";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Rata-rata interval: %@ mnt";
 "time_std_minutes_format" = "Dev. standar: %@ mnt";
 "distribution_nav_title" = "Distribusi";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Distribusi waktu global";
 
 // MARK: - Sort options (Exemplary)

@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Επαναφορά σε 0";
 "counter_configuration_section" = "Ρύθμιση";
 "counter_edit_thresholds" = "Επεξεργασία κατωφλίων";
-"counter_set_value_section" = "Ορισμός τιμής χειροκίνητα";
-"counter_set_value_placeholder" = "-1000000 έως 1000000";
+"counter_set_value_section" = "Ορισμός τιμής χειροκίνητα (εύρος -1M έως 1M)";
 "counter_current_thresholds" = "Τρέχοντα κατώφλια";
 "counter_add_threshold" = "Προσθήκη κατωφλίου";
 "counter_thresholds_title" = "Κατώφλια";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Μέσο διάστημα: %@ λ";
 "time_std_minutes_format" = "Τυπ. απόκλιση: %@ λ";
 "distribution_nav_title" = "Κατανομή";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Καθολική κατανομή χρόνου";
 
 // MARK: - Sort options (Exemplary)

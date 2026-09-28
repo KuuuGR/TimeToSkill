@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "0으로 초기화";
 "counter_configuration_section" = "구성";
 "counter_edit_thresholds" = "임계값 편집";
-"counter_set_value_section" = "값 수동 설정";
-"counter_set_value_placeholder" = "-1000000 ~ 1000000";
+"counter_set_value_section" = "값 수동 설정 (범위 -1M ~ 1M)";
 "counter_current_thresholds" = "현재 임계값";
 "counter_add_threshold" = "임계값 추가";
 "counter_thresholds_title" = "임계값";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "평균 간격: %@ 분";
 "time_std_minutes_format" = "표준편차: %@ 분";
 "distribution_nav_title" = "분포";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "전체 시간 분포";
 
 // MARK: - Sort options (Exemplary)

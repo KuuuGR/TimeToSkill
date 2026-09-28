@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "Återställ till 0";
 "counter_configuration_section" = "Konfiguration";
 "counter_edit_thresholds" = "Redigera trösklar";
-"counter_set_value_section" = "Sätt värde manuellt";
-"counter_set_value_placeholder" = "-1000000 till 1000000";
+"counter_set_value_section" = "Sätt värde manuellt (intervall -1M till 1M)";
 "counter_current_thresholds" = "Aktuella trösklar";
 "counter_add_threshold" = "Lägg till tröskel";
 "counter_thresholds_title" = "Trösklar";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "Genomsnittligt intervall: %@ min";
 "time_std_minutes_format" = "Std.avvikelse: %@ min";
 "distribution_nav_title" = "Fördelning";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Global tidsfördelning";
 
 // MARK: - Sort options (Exemplary)

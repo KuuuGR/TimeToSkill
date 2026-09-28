@@ -62,7 +62,7 @@ Severity scale: **Critical** → **High** → **Medium** → **Low**.
 | | |
 |--|--|
 | **Severity** | High |
-| **Description** | Nested stacks + splash `fullScreenCover` root. |
+| **Description** | Nested stacks. (The splash `fullScreenCover` root was replaced by a `RootView` `@State` gate — see `AppLaunch`.) |
 | **Why it matters** | Blocks scalable navigation, deep links, state restoration. |
 | **Suggested solution** | One app-level `NavigationStack` + path; replace splash with root `@State` enum (`splash` / `main`). |
 

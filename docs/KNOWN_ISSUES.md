@@ -48,9 +48,9 @@ Audit performed by static inspection only. **Nothing was fixed.** Compiler warni
 
 Multiple presented screens create their own stacks inside `MainView`’s stack/sheets. Risk of broken back navigation, double bars, and poor deep-link readiness.
 
-### 8. Splash retained under `fullScreenCover`
+### 8. Splash retained under `fullScreenCover` — **fixed**
 
-`MainView` is presented from `SplashView` without replacing root. Splash view hierarchy stays alive underneath for the session.
+`RootView` now owns the splash/main switch in one root `Group` and removes `SplashView` from the hierarchy once the choreography ends, so nothing stays alive underneath. The splash also only runs on the 1st, 32nd, 64th and 128th launch (`AppLaunch`); other launches go straight to `MainView`.
 
 ---
 
@@ -78,11 +78,12 @@ Even if `lastUpdated` worked, filtering skills by lastUpdated then summing **lif
 
 ### 12. Duplicate histogram / binning logic
 
-Nearly identical `makeBins` / stats math in:
+Nearly identical stats math and bar drawing in:
 
-- `TimeDistributionView`
 - `GlobalTimeDistributionView`
 - `OptionsView` PDF helpers
+
+`TimeDistributionView` no longer duplicates the old binning: it filters with `@Query`, uses fixed bucket edges `[0, 5, 10, 15, 30, 60, 120, 240, 480, 960]` plus a trailing `≥ 960m` bucket, and draws a horizontal bar chart. On macOS the chart is laid out at its natural height instead of inside a `ScrollView`, because a macOS sheet sizes itself to its content: with a scroll view the options window collapsed to a thin strip around the title bar when the screen was pushed. The sheet now grows until the last bucket is visible, keeping the same inset above the skill name and below the histogram; iOS keeps the scroll view for short devices. The two remaining spots still carry the old `[0 … 960, maxVal + 1]` edges.
 
 ### 13. Duplicate verification-code generators
 

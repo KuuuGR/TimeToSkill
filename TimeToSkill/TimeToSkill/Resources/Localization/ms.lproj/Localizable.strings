@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Tetapkan ke 0";
 "counter_configuration_section" = "Konfigurasi";
 "counter_edit_thresholds" = "Sunting ambang";
-"counter_set_value_section" = "Tetapkan nilai secara manual";
-"counter_set_value_placeholder" = "-1000000 hingga 1000000";
+"counter_set_value_section" = "Tetapkan nilai secara manual (julat -1M hingga 1M)";
 "counter_current_thresholds" = "Ambang semasa";
 "counter_add_threshold" = "Tambah ambang";
 "counter_thresholds_title" = "Ambang";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Selang purata: %@ min";
 "time_std_minutes_format" = "Sisihan piawai: %@ min";
 "distribution_nav_title" = "Taburan";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Taburan masa global";
 
 // MARK: - Sort options (Exemplary)

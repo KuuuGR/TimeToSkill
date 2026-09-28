@@ -192,8 +192,7 @@
 "counter_reset_to_zero" = "0にリセット";
 "counter_configuration_section" = "設定";
 "counter_edit_thresholds" = "しきい値を編集";
-"counter_set_value_section" = "値を手動で設定";
-"counter_set_value_placeholder" = "-1000000 〜 1000000";
+"counter_set_value_section" = "値を手動で設定 (範囲 -1M 〜 1M)";
 "counter_current_thresholds" = "現在のしきい値";
 "counter_add_threshold" = "しきい値を追加";
 "counter_thresholds_title" = "しきい値";
@@ -214,6 +213,7 @@
 "time_mean_minutes_format" = "平均間隔: %@ 分";
 "time_std_minutes_format" = "標準偏差: %@ 分";
 "distribution_nav_title" = "分布";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "全体の時間分布";
 
 // MARK: - Sort options (Exemplary)

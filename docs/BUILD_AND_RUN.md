@@ -16,7 +16,7 @@
 3. Pick an **iOS 18.2+** simulator or device.
 4. Build & Run (⌘R).
 
-Expected launch path: splash logo → `MainView` after ~2.5 seconds.
+Expected launch path: on the 1st, 32nd, 64th and 128th launch the animated splash plays for ~12s before `MainView`; every other launch goes straight to `MainView`. On the 16th and 256th launch a native App Store rating prompt is requested once the main UI settles.
 
 ---
 

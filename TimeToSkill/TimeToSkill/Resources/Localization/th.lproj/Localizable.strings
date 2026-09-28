@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "รีเซ็ตเป็น 0";
 "counter_configuration_section" = "การกำหนดค่า";
 "counter_edit_thresholds" = "แก้ไขค่าเกณฑ์";
-"counter_set_value_section" = "ตั้งค่าด้วยตนเอง";
-"counter_set_value_placeholder" = "-1000000 ถึง 1000000";
+"counter_set_value_section" = "ตั้งค่าด้วยตนเอง (ช่วง -1M ถึง 1M)";
 "counter_current_thresholds" = "ค่าเกณฑ์ปัจจุบัน";
 "counter_add_threshold" = "เพิ่มค่าเกณฑ์";
 "counter_thresholds_title" = "ค่าเกณฑ์";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "ช่วงเวลาเฉลี่ย: %@ นาที";
 "time_std_minutes_format" = "ส่วนเบี่ยงเบนมาตรฐาน: %@ นาที";
 "distribution_nav_title" = "การกระจาย";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "การกระจายเวลาทั้งหมด";
 
 // MARK: - Sort options (Exemplary)

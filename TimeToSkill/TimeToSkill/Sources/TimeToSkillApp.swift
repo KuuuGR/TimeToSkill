@@ -11,10 +11,18 @@ import SwiftData
 @main
 struct TimeToSkillApp: App {
     @Environment(\.colorScheme) var colorScheme
-    
+
+    /// Launch number captured before any view is built, so `RootView` can decide
+    /// whether to show the splash and/or ask for an App Store review.
+    private let launchCount: Int
+
+    init() {
+        launchCount = AppLaunch.recordLaunch()
+    }
+
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            RootView(launchCount: launchCount)
                 .preferredColorScheme(.dark) // Force dark
                 .environment(\.colorScheme, .dark) // Override all views
         }

@@ -27,9 +27,9 @@ Closest labels:
 │  • preferredColorScheme(.dark)                          │
 └──────────────────────────┬──────────────────────────────┘
                            │
-                     SplashView
-                           │ fullScreenCover
-                     MainView (NavigationStack)
+                    RootView (AppLaunch gate)
+                   ╱                        ╲
+     SplashView (1/32/64/128)        MainView (NavigationStack)
            ┌───────────────┼────────────────┐
            │               │                │
      Nav destinations   FAB sheets     local @State
@@ -50,7 +50,7 @@ Closest labels:
 
 - **Primary:** `NavigationStack` in `MainView` + `NavigationLink` to feature screens.
 - **Modal:** `.sheet` for Options, Stats, Paywall, Add Skill, Skill Options, Custom Skill, Exemplary detail.
-- **Launch:** `SplashView` presents `MainView` via `.fullScreenCover` after delay (splash remains under the cover).
+- **Launch:** `RootView` reads the persisted launch counter (`AppLaunch`) and shows either `SplashView` (launches 1, 32, 64, 128) or `MainView` directly. The splash is dropped from the hierarchy once it finishes — no `fullScreenCover`. On launches 16 and 256 `RootView` asks for an App Store rating via StoreKit's `\.requestReview` environment action after the main UI settles.
 - **Nested stacks:** Several child screens (`ExemplarySkillsView`, `ManageCountersView`, `OptionsView`, `StatsView`, sheets) create **additional** `NavigationStack`s. Works for small apps; harder to scale (deep links, coordinated paths, single source of truth).
 
 There is **no** `NavigationPath`, coordinator, or router.

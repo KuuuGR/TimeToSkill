@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Repor para 0";
 "counter_configuration_section" = "Configuração";
 "counter_edit_thresholds" = "Editar limiares";
-"counter_set_value_section" = "Definir valor manualmente";
-"counter_set_value_placeholder" = "-1000000 a 1000000";
+"counter_set_value_section" = "Definir valor manualmente (intervalo -1M a 1M)";
 "counter_current_thresholds" = "Limiar atuais";
 "counter_add_threshold" = "Adicionar limiar";
 "counter_thresholds_title" = "Limiar";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Intervalo médio: %@ min";
 "time_std_minutes_format" = "Desvio padrão: %@ min";
 "distribution_nav_title" = "Distribuição";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Distribuição global do tempo";
 
 // MARK: - Sort options (Exemplary)

@@ -91,9 +91,11 @@ struct SkillOptionsSheet: View {
                         }
 
                         Button(LocalizedStringKey("adjust_time_apply")) {
+                            guard isValidInput else { return }
                             applyTimeChange()
                         }
                         .disabled(!isValidInput)
+                        .keyboardShortcut(.defaultAction)
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(isValidInput ? Color.green.opacity(0.2) : Color.gray.opacity(0.2))
@@ -144,6 +146,9 @@ struct SkillOptionsSheet: View {
                             dismiss()
                         }
                     }
+                    // Return applies the time change instead of closing the whole
+                    // sheet; the sheet itself is closed with Shift-Return.
+                    .keyboardShortcut(KeyboardShortcut(.return, modifiers: .shift))
                 }
             }
         }

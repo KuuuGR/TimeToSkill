@@ -106,7 +106,7 @@ struct MacRootView: View {
 
     private var sidebarHeader: some View {
         VStack(alignment: .leading, spacing: 0) {
-            BrandMark(size: 26, wordmarkFont: .headline)
+            BrandMark(size: 26, wordmarkFont: .headline, symbol: .glyph(BrandMark.sidebarGlyph))
                 .padding(.leading, 14)
                 .padding(.vertical, 10)
 

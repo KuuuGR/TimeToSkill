@@ -191,8 +191,7 @@
 "counter_reset_to_zero" = "Reset to 0";
 "counter_configuration_section" = "Configuration";
 "counter_edit_thresholds" = "Edit Thresholds";
-"counter_set_value_section" = "Set Value Manually";
-"counter_set_value_placeholder" = "-1000000 to 1000000";
+"counter_set_value_section" = "Set Value Manually (range -1M to 1M)";
 "counter_current_thresholds" = "Current Thresholds";
 "counter_add_threshold" = "Add Threshold";
 "counter_thresholds_title" = "Thresholds";
@@ -213,6 +212,7 @@
 "time_mean_minutes_format" = "Mean interval: %@ min";
 "time_std_minutes_format" = "Std dev: %@ min";
 "distribution_nav_title" = "Distribution";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Global Time Distribution";
 
 // MARK: - Sort options (Exemplary)

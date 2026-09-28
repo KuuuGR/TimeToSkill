@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "Vynulovať na 0";
 "counter_configuration_section" = "Konfigurácia";
 "counter_edit_thresholds" = "Upraviť prahy";
-"counter_set_value_section" = "Nastaviť hodnotu manuálne";
-"counter_set_value_placeholder" = "-1000000 až 1000000";
+"counter_set_value_section" = "Nastaviť hodnotu manuálne (rozsah -1M až 1M)";
 "counter_current_thresholds" = "Aktuálne prahy";
 "counter_add_threshold" = "Pridať prah";
 "counter_thresholds_title" = "Prahy";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "Priemerný interval: %@ min";
 "time_std_minutes_format" = "Št. odchýlka: %@ min";
 "distribution_nav_title" = "Rozdelenie";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "Globálne rozdelenie času";
 
 // MARK: - Sort options (Exemplary)

@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "איפוס ל-0";
 "counter_configuration_section" = "הגדרות";
 "counter_edit_thresholds" = "ערוך ספים";
-"counter_set_value_section" = "קבע ערך ידנית";
-"counter_set_value_placeholder" = "-1000000 עד 1000000";
+"counter_set_value_section" = "קבע ערך ידנית (טווח -1M עד 1M)";
 "counter_current_thresholds" = "ספים נוכחיים";
 "counter_add_threshold" = "הוסף סף";
 "counter_thresholds_title" = "ספים";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "מרווח ממוצע: %@ דק'";
 "time_std_minutes_format" = "סטיית תקן: %@ דק'";
 "distribution_nav_title" = "התפלגות";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "התפלגות זמן גלובלית";
 
 // MARK: - Sort options (Exemplary)

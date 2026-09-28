@@ -181,8 +181,7 @@
 "counter_reset_to_zero" = "0 पर रीसेट";
 "counter_configuration_section" = "कॉन्फ़िगरेशन";
 "counter_edit_thresholds" = "थ्रेशहोल्ड संपादित करें";
-"counter_set_value_section" = "मान मैन्युअली सेट करें";
-"counter_set_value_placeholder" = "-1000000 से 1000000";
+"counter_set_value_section" = "मान मैन्युअली सेट करें (सीमा -1M से 1M)";
 "counter_current_thresholds" = "वर्तमान थ्रेशहोल्ड";
 "counter_add_threshold" = "थ्रेशहोल्ड जोड़ें";
 "counter_thresholds_title" = "थ्रेशहोल्ड";
@@ -203,6 +202,7 @@
 "time_mean_minutes_format" = "औसत अंतराल: %@ मि";
 "time_std_minutes_format" = "मानक विचलन: %@ मि";
 "distribution_nav_title" = "वितरण";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "वैश्विक समय वितरण";
 
 // MARK: - Sort options (Exemplary)

@@ -6,7 +6,7 @@
 
 Tagline (from README): *Track your time. Learn smarter. Grow with patience.*
 
-**Current marketed version:** 1.4 (build 5)  
+**Current marketed version:** 1.6 (build 14)  
 **Developer:** Grzegorz Kulesza (`etaosin@gmail.com`)  
 **License / legal:** see repo-root `LICENSE.md`, `TERMS.md`, `PRIVACY.md` / `PrivacyPolicy.md`
 
@@ -58,8 +58,9 @@ Help users build deliberate practice habits by:
 
 ```text
 App launch
-    → SplashView (animated logo ~2.5s)
-        → MainView (home)
+    → RootView (launch gate, `AppLaunch`)
+        → SplashView (animated logo, ~12s) on launches 1, 32, 64, 128
+            → MainView (home) — every other launch, and after the splash
             ├─ Manage Trackers → StartView → SkillProgressView / SkillOptionsSheet
             ├─ Manage Counters → ManageCountersView → CounterDetailView
             ├─ Learning Theory → TheoryView
@@ -78,8 +79,9 @@ Persistence is local SwiftData. No login. No backend API.
 
 | Screen / surface | File | Entry |
 |------------------|------|--------|
-| Splash | `SplashView.swift` | App root |
-| Home / hub | `MainView.swift` | After splash |
+| Launch gate | `RootView.swift` + `AppLaunch.swift` | App root: splash vs. main, App Store review on launches 16 & 256 |
+| Splash | `SplashView.swift` | Root, on launches 1, 32, 64, 128 |
+| Home / hub | `MainView.swift` | After splash / on other launches |
 | Skill list / timers | `StartView.swift` | Nav from home |
 | Add skill | `AddSkillView.swift` | Sheet |
 | Skill options | `SkillOptionsSheet.swift` | Sheet |

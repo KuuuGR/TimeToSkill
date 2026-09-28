@@ -185,8 +185,7 @@
 "counter_reset_to_zero" = "إعادة التعيين إلى 0";
 "counter_configuration_section" = "الإعداد";
 "counter_edit_thresholds" = "تعديل العتبات";
-"counter_set_value_section" = "تعيين القيمة يدويًا";
-"counter_set_value_placeholder" = "-1000000 إلى 1000000";
+"counter_set_value_section" = "تعيين القيمة يدويًا (نطاق -1M إلى 1M)";
 "counter_current_thresholds" = "العتبات الحالية";
 "counter_add_threshold" = "إضافة عتبة";
 "counter_thresholds_title" = "العتبات";
@@ -207,6 +206,7 @@
 "time_mean_minutes_format" = "المتوسط: %@ د";
 "time_std_minutes_format" = "الانحراف المعياري: %@ د";
 "distribution_nav_title" = "التوزيع";
+"distribution_empty_message" = "No sessions recorded for this skill yet.";
 "global_time_distribution_title" = "التوزيع العالمي للوقت";
 
 // MARK: - Sort options (Exemplary)
