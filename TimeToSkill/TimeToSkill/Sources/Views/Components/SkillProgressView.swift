@@ -15,6 +15,7 @@ struct SkillProgressView: View {
     var isActive: Bool
     var onToggleTimer: () -> Void
     var onShowOptions: () -> Void
+    var onShowChart: () -> Void = {}
 
     /// Hours shown in the UI (persisted + live session when active).
     private var displayHours: Double {
@@ -89,6 +90,21 @@ struct SkillProgressView: View {
         #endif
     }
 
+    /// Opens the timer-session chart without going through skill options.
+    private var sessionChartButton: some View {
+        Button(action: onShowChart) {
+            Image(systemName: "chart.bar.xaxis")
+                #if !os(macOS)
+                .padding(.leading, 4)
+                #endif
+        }
+        #if os(macOS)
+        .buttonStyle(.borderless)
+        #endif
+        .accessibilityLabel(Text(LocalizedStringKey("session_chart_open")))
+        .accessibilityIdentifier("SessionChartButton_\(skill.id.hashValue)")
+    }
+
     /// iPhone/iPad layout: title row, full-width bar, centred Start/Stop button.
     private var phoneLayout: some View {
         VStack(spacing: 12) {
@@ -104,6 +120,8 @@ struct SkillProgressView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .lineLimit(1)
                     .truncationMode(.tail)
+
+                sessionChartButton
 
                 Button(action: onShowOptions) {
                     Image(systemName: "ellipsis")
@@ -191,6 +209,8 @@ struct SkillProgressView: View {
                 .buttonStyle(.bordered)
                 .tint(isActive ? Color.red : Color.blue)
                 .accessibilityIdentifier(isActive ? "StopButton_\(skill.id.hashValue)" : "StartButton_\(skill.id.hashValue)")
+
+                sessionChartButton
 
                 Button(action: onShowOptions) {
                     Image(systemName: "ellipsis")

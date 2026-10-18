@@ -122,9 +122,9 @@ Uses first two letters of preferred language (`pl`, `en`) — may miss region-sp
 
 Catalog bump Run Script can dirty git on version bumps — surprising for CI/local builds.
 
-### 18. No shared scheme / entitlements / StoreKit config in repo
+### 18. StoreKit config, iOS entitlements and shared scheme not in repo
 
-See `BUILD_AND_RUN.md` — onboarding and IAP local testing friction.
+The macOS App Sandbox entitlements file is present in the working tree and referenced by the macOS target in Debug and Release (`TimeToSkill/Time4SkillMacOS.entitlements`, see `BUILD_AND_RUN.md`). It is still untracked, as are the shared schemes under `TimeToSkill.xcodeproj/xcshareddata`. A StoreKit configuration file is also absent.
 
 ---
 

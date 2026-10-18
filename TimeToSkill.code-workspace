@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ContextForge"
+		},
+		{
+			"path": "../Time4Skill/time4skill-wiki"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {}
+	}
+}

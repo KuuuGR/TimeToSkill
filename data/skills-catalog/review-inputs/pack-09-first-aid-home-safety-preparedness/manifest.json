@@ -1,0 +1,57 @@
+{
+  "prepared_on": "2026-10-18",
+  "pack_id": "pack-09",
+  "title": "Pierwsza pomoc, bezpieczeństwo domowe i przygotowanie na sytuacje awaryjne",
+  "domains": [
+    "pierwsza pomoc",
+    "wezwanie pomocy",
+    "czujki i tlenek węgla",
+    "gotowość domowa",
+    "pożar w domu",
+    "bezpieczeństwo przy wodzie"
+  ],
+  "package": "pack-09-first-aid-home-safety-preparedness",
+  "format_version": "1",
+  "status": "ready_for_review",
+  "record_count": 72,
+  "source_count": 16,
+  "candidate_ids_file": "candidates.jsonl",
+  "candidate_id_range": {
+    "first": "c016:ec-112-emergency-number:korzysta-z-r-wnowa-nego-dost-pu-do-numeru-alarmowego",
+    "last": "scouts-uk:scouts:activity-badges:fire-safety"
+  },
+  "new_candidate_count": 53,
+  "existing_candidate_count": 19,
+  "registry": "data/skills-catalog/research/sources.json",
+  "selection_group_counts": {
+    "A": 17,
+    "B": 6,
+    "C": 7,
+    "D": 10,
+    "E": 7,
+    "F": 6,
+    "G": 19
+  },
+  "triage_suitability": {
+    "uncertain": 63,
+    "occupational_or_abstract": 9
+  },
+  "description_insufficient": 3,
+  "overlap_notes": [
+    "ESCO provide first aid, first aid, resuscitation, defibrillation i teach first aid principles zostają obok nowych rekordów. Nie scalono ich.",
+    "smoke sensors i examine ventilation system zostają obok czujek PSP i USFA. Nie scalono ich.",
+    "operate fire extinguishers i use different types of fire extinguishers zostają osobno.",
+    "kitchen-finance:kitchen-food-safety dotyczy żywności, nie pożaru przy gotowaniu.",
+    "movement-sport-dance:swimming-fundamentals zostaje w pack-02. Rekordy wody dotyczą nadzoru i wezwania pomocy.",
+    "Nawigacja zostaje w pack-04. Naprawy instalacji zostają poza pakietem: przegląd zleca się serwisantowi."
+  ],
+  "local_adaptation_required": true,
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md",
+    "gaps.md"
+  ]
+}

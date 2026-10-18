@@ -26,6 +26,7 @@ struct StatsView: View {
                         .fontWeight(.bold)
                         .padding(.top)
 
+                    YearActivityCalendarView()
                     StatsSummaryView(skills: skills)
                     TopSkillsView(skills: skills)
                     TrackedTimeView(skills: skills)

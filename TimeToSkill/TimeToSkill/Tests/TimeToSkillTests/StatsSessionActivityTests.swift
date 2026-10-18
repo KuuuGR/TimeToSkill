@@ -1,5 +1,5 @@
 import XCTest
-@testable import TimeToSkill
+@testable import Time4Skill
 
 final class StatsSessionActivityTests: XCTestCase {
 

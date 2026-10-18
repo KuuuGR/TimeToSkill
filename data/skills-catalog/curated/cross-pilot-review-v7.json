@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "automatic_merge_performed": false,
+  "production_approval": false,
+  "note": "Pack-13 porównano z rejestrem v6 i z pakietami 01–12. Te same rezultaty zmapowano. Istniejących propozycji nie scalono i nie usunięto.",
+  "merge_history": "data/skills-catalog/curated/merge-history-v7.json",
+  "new_origin": "practice-expansion-13",
+  "proposals_added": 232,
+  "already_represented": 170,
+  "rejected": 79,
+  "needs_source": 19
+}

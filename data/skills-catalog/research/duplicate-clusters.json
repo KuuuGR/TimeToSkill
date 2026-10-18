@@ -1,0 +1,1233 @@
+{
+  "schema_version": 2,
+  "status": "proposed",
+  "deduplication_performed": false,
+  "records_removed": 0,
+  "records_merged": 0,
+  "generated_on": "2026-10-18",
+  "algorithm": "exact normalized title; identical source item id; parenthetical stem; identical long description; blocked lexical Jaccard on titles",
+  "semantic_comparison_performed": false,
+  "synonym_comparison_performed": false,
+  "cluster_count": 107,
+  "high_confidence_cluster_count": 41,
+  "human_review_cluster_count": 107,
+  "counts_by_similarity_type": {
+    "identical_normalized_title": 66,
+    "parenthetical_or_punctuation_variant": 10,
+    "identical_source_description": 7,
+    "lexical_near_title": 24
+  },
+  "counts_by_confidence": {
+    "high": 41,
+    "medium": 35,
+    "low": 31
+  },
+  "lexical_unscanned_records": 0,
+  "lexical_comparisons": 21929,
+  "limitations": [
+    "Groups are proposals. Source records were not merged or deleted.",
+    "No synonym list and no semantic comparison were run.",
+    "An identical title can still be two practices. A different wording can still be one practice.",
+    "Lexical comparison uses titles only and skips records whose tokens are all very common."
+  ],
+  "clusters": [
+    {
+      "cluster_id": "exact:activity-centre-service:b60cb2b5",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:activity-centre-service",
+        "scouts-uk:scouts:activity-badges:activity-centre-service"
+      ]
+    },
+    {
+      "cluster_id": "exact:artist:5e611053",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:artist",
+        "scouts-uk:scouts:activity-badges:artist"
+      ]
+    },
+    {
+      "cluster_id": "exact:astrology:a5d04792",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:1f62da1b-5968-4336-a2c0-5f05581ebe00",
+        "wikidata:Q34362"
+      ]
+    },
+    {
+      "cluster_id": "exact:athletics:7be5d6d3",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:athletics-activity-badge",
+        "scouts-uk:explorers:activity-badges:athletics",
+        "scouts-uk:scouts:activity-badges:athletics"
+      ]
+    },
+    {
+      "cluster_id": "exact:athletics-plus:c86e71e9",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:athletics-plus",
+        "scouts-uk:scouts:activity-badges:athletics-plus"
+      ]
+    },
+    {
+      "cluster_id": "exact:biology:6459ef74",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:9433da85-70fa-4a25-8f96-71fa59dd1989",
+        "onet:2.C.4.d"
+      ]
+    },
+    {
+      "cluster_id": "exact:book-reader:68b76a0c",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:book-reader",
+        "scouts-uk:cubs:activity-badges:book-reader"
+      ]
+    },
+    {
+      "cluster_id": "exact:calligraphy:e3f29a9e",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "heritage-crafts:calligraphy",
+        "wikidata:Q12681"
+      ]
+    },
+    {
+      "cluster_id": "exact:camper:b7d1b4e1",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:camper",
+        "scouts-uk:scouts:activity-badges:camper"
+      ]
+    },
+    {
+      "cluster_id": "exact:caving:966ee4e8",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:caving",
+        "wikidata:Q200341"
+      ]
+    },
+    {
+      "cluster_id": "exact:chef:e0d0b7d3",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:chef",
+        "scouts-uk:explorers:activity-badges:chef",
+        "scouts-uk:scouts:activity-badges:chef"
+      ]
+    },
+    {
+      "cluster_id": "exact:chemistry:954b1b77",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:cde9911c-f92e-4de1-811f-336e177ac4ce",
+        "onet:2.C.4.c"
+      ]
+    },
+    {
+      "cluster_id": "exact:climber:ba90fe2e",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:climber",
+        "scouts-uk:scouts:activity-badges:climber"
+      ]
+    },
+    {
+      "cluster_id": "exact:collector:aedaeb8b",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:collector",
+        "scouts-uk:cubs:activity-badges:collector"
+      ]
+    },
+    {
+      "cluster_id": "exact:communicator:ca9f7e9d",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:communicator",
+        "scouts-uk:cubs:activity-badges:communicator",
+        "scouts-uk:scouts:activity-badges:communicator"
+      ]
+    },
+    {
+      "cluster_id": "exact:cyclist:c54fa03b",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:cyclist",
+        "scouts-uk:cubs:activity-badges:cyclist",
+        "scouts-uk:scouts:activity-badges:cyclist"
+      ]
+    },
+    {
+      "cluster_id": "exact:disability-awareness:ea73b50f",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:disability-awareness",
+        "scouts-uk:cubs:activity-badges:disability-awareness"
+      ]
+    },
+    {
+      "cluster_id": "exact:diy:5b0b7d3d",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:diy",
+        "scouts-uk:scouts:activity-badges:diy"
+      ]
+    },
+    {
+      "cluster_id": "exact:electronics:e3dac8a7",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:95c35c3a-035f-47c2-90cf-7e934d20fc08",
+        "scouts-uk:scouts:activity-badges:electronics"
+      ]
+    },
+    {
+      "cluster_id": "exact:embroidery:7db40736",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "heritage-crafts:embroidery",
+        "wikidata:Q18281"
+      ]
+    },
+    {
+      "cluster_id": "exact:engineering-and-technology:dbc8c252",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "onet:2.C.3",
+        "onet:2.C.3.b"
+      ]
+    },
+    {
+      "cluster_id": "exact:entertainer:c3a1f396",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:entertainer",
+        "scouts-uk:scouts:activity-badges:entertainer"
+      ]
+    },
+    {
+      "cluster_id": "exact:environmental-conservation:af78a434",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:environmental-conservation",
+        "scouts-uk:scouts:activity-badges:environmental-conservation"
+      ]
+    },
+    {
+      "cluster_id": "exact:equestrian:ac507f7a",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:equestrian",
+        "scouts-uk:scouts:activity-badges:equestrian"
+      ]
+    },
+    {
+      "cluster_id": "exact:fine-arts:86150c08",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:17996b4f-1302-4bd7-a4c7-912b74feccf0",
+        "onet:2.C.7.c"
+      ]
+    },
+    {
+      "cluster_id": "exact:fire-safety:b04e894d",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:fire-safety",
+        "scouts-uk:scouts:activity-badges:fire-safety"
+      ]
+    },
+    {
+      "cluster_id": "exact:fundraising:29356907",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:fundraising",
+        "scouts-uk:scouts:activity-badges:fundraising"
+      ]
+    },
+    {
+      "cluster_id": "exact:gardener:970ea451",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:gardener",
+        "scouts-uk:cubs:activity-badges:gardener"
+      ]
+    },
+    {
+      "cluster_id": "exact:genealogy:01c08254",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:f41bf7ed-c241-4d36-8e7f-f5316faf9e98",
+        "wikidata:Q47307"
+      ]
+    },
+    {
+      "cluster_id": "exact:geocaching:22af60c3",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:scouts:activity-badges:geocaching",
+        "wikidata:Q14930"
+      ]
+    },
+    {
+      "cluster_id": "exact:geography:80754717",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:cf9c8e73-105d-419e-86dd-4304cc6cd718",
+        "onet:2.C.4.g"
+      ]
+    },
+    {
+      "cluster_id": "exact:global-issues:e25918ff",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:global-issues",
+        "scouts-uk:cubs:activity-badges:global-issues",
+        "scouts-uk:explorers:activity-badges:global-issues",
+        "scouts-uk:scouts:activity-badges:global-issues"
+      ]
+    },
+    {
+      "cluster_id": "exact:graphic-design:e01b8c74",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:7fb699d9-182a-430e-b7a0-6d8ed05c284b",
+        "wikidata:Q185925"
+      ]
+    },
+    {
+      "cluster_id": "exact:hill-walker:8eeb766e",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:hill-walker",
+        "scouts-uk:scouts:activity-badges:hill-walker"
+      ]
+    },
+    {
+      "cluster_id": "exact:hobbies:98cd6fa8",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:hobbies",
+        "scouts-uk:cubs:activity-badges:hobbies",
+        "scouts-uk:scouts:activity-badges:hobbies"
+      ]
+    },
+    {
+      "cluster_id": "exact:instructor:0fde5e16",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:instructor",
+        "scouts-uk:scouts:activity-badges:instructor"
+      ]
+    },
+    {
+      "cluster_id": "exact:international:f83cc3ae",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:international",
+        "scouts-uk:cubs:activity-badges:international",
+        "scouts-uk:explorers:activity-badges:international",
+        "scouts-uk:scouts:activity-badges:international"
+      ]
+    },
+    {
+      "cluster_id": "exact:knitting:42563ba7",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "heritage-crafts:knitting",
+        "wikidata:Q193188"
+      ]
+    },
+    {
+      "cluster_id": "exact:lifesaver:66184b9f",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:lifesaver",
+        "scouts-uk:scouts:activity-badges:lifesaver"
+      ]
+    },
+    {
+      "cluster_id": "exact:local-knowledge:c8a61b25",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:local-knowledge",
+        "scouts-uk:scouts:activity-badges:local-knowledge"
+      ]
+    },
+    {
+      "cluster_id": "exact:martial-arts:a37f0191",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:martial-arts",
+        "scouts-uk:scouts:activity-badges:martial-arts"
+      ]
+    },
+    {
+      "cluster_id": "exact:mathematics:d5087c9b",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:4339176e-3acd-4f7f-a5d9-445bee3d23f2",
+        "onet:2.A.1.e",
+        "onet:2.C.4.a"
+      ]
+    },
+    {
+      "cluster_id": "exact:model-engineering:eee9e303",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "heritage-crafts:model-engineering",
+        "wikidata:Q6888325"
+      ]
+    },
+    {
+      "cluster_id": "exact:model-maker:a284fb1d",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:scouts:activity-badges:model-maker",
+        "wikidata:Q10331372"
+      ]
+    },
+    {
+      "cluster_id": "exact:money-skills:476865d7",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:money-skills",
+        "scouts-uk:cubs:activity-badges:money-skills",
+        "scouts-uk:explorers:activity-badges:money-skills",
+        "scouts-uk:scouts:activity-badges:money-skills"
+      ]
+    },
+    {
+      "cluster_id": "exact:mountain-biking:939c8d8d",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:mountain-biking",
+        "wikidata:Q520611"
+      ]
+    },
+    {
+      "cluster_id": "exact:my-faith:414491cc",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:my-faith",
+        "scouts-uk:scouts:activity-badges:my-faith"
+      ]
+    },
+    {
+      "cluster_id": "exact:naturalist:dc478d73",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:naturalist",
+        "scouts-uk:explorers:activity-badges:naturalist",
+        "scouts-uk:scouts:activity-badges:naturalist"
+      ]
+    },
+    {
+      "cluster_id": "exact:origami:34999f53",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "heritage-crafts:origami",
+        "wikidata:Q83357"
+      ]
+    },
+    {
+      "cluster_id": "exact:photographer:7bda7b99",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:photographer",
+        "scouts-uk:cubs:activity-badges:photographer",
+        "scouts-uk:scouts:activity-badges:photographer"
+      ]
+    },
+    {
+      "cluster_id": "exact:photography:177fc4e6",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:38509fa4-7c06-4a4b-9622-f521f03c37b8",
+        "wikidata:Q11633"
+      ]
+    },
+    {
+      "cluster_id": "exact:physical-recreation:421bacfc",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:physical-recreation",
+        "scouts-uk:explorers:activity-badges:physical-recreation",
+        "scouts-uk:scouts:activity-badges:physical-recreation"
+      ]
+    },
+    {
+      "cluster_id": "exact:physics:1f224477",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:692ace70-7f97-4214-92bd-88f7637d8a44",
+        "onet:2.C.4.b"
+      ]
+    },
+    {
+      "cluster_id": "exact:pioneer:7e5104e1",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:pioneer",
+        "scouts-uk:explorers:activity-badges:pioneer",
+        "scouts-uk:scouts:activity-badges:pioneer"
+      ]
+    },
+    {
+      "cluster_id": "exact:psychology:11aca6f2",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:bfe4f330-d595-48c7-ab3c-f309471d6953",
+        "onet:2.C.4.e"
+      ]
+    },
+    {
+      "cluster_id": "exact:quilting:376f517f",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "heritage-crafts:quilting",
+        "wikidata:Q1920065"
+      ]
+    },
+    {
+      "cluster_id": "exact:scientist:d4a89b2c",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:scientist",
+        "scouts-uk:scouts:activity-badges:scientist"
+      ]
+    },
+    {
+      "cluster_id": "exact:space:c9460d57",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:beavers:activity-badges:space",
+        "scouts-uk:cubs:activity-badges:space",
+        "scouts-uk:explorers:activity-badges:space",
+        "scouts-uk:scouts:activity-badges:space"
+      ]
+    },
+    {
+      "cluster_id": "exact:speech-recognition:cbce2d15",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "esco:2af29864-c941-40a5-ae7b-2b6c4b92c0d7",
+        "onet:1.A.4.b.4"
+      ]
+    },
+    {
+      "cluster_id": "exact:sports-enthusiast:c54fc4bf",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:sports-enthusiast",
+        "scouts-uk:scouts:activity-badges:sports-enthusiast"
+      ]
+    },
+    {
+      "cluster_id": "exact:street-sports:a1a4cec8",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:street-sports",
+        "scouts-uk:scouts:activity-badges:street-sports"
+      ]
+    },
+    {
+      "cluster_id": "exact:survival-skills:b6d57c75",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:survival-skills",
+        "scouts-uk:scouts:activity-badges:survival-skills"
+      ]
+    },
+    {
+      "cluster_id": "exact:water-activities:404cb63a",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:water-activities",
+        "scouts-uk:explorers:activity-badges:water-activities",
+        "scouts-uk:scouts:activity-badges:water-activities"
+      ]
+    },
+    {
+      "cluster_id": "exact:weaving:02f969e5",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "heritage-crafts:weaving",
+        "wikidata:Q192296"
+      ]
+    },
+    {
+      "cluster_id": "exact:world-faiths:0ad06d27",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "high",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "scouts-uk:cubs:activity-badges:world-faiths",
+        "scouts-uk:scouts:activity-badges:world-faiths"
+      ]
+    },
+    {
+      "cluster_id": "exact:writing:8e74c5b1",
+      "similarity_type": "identical_normalized_title",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Ta sama znormalizowana nazwa. Identyczny tytuł nie rozstrzyga, czy praktyka jest ta sama.",
+      "candidate_ids": [
+        "onet:2.A.1.c",
+        "wikidata:Q37260"
+      ]
+    },
+    {
+      "cluster_id": "variant:bagpipe-making:7b2540fe",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:bagpipe-making-highland-pipes",
+        "heritage-crafts:bagpipe-making-northumbrian-pipes-smallpipes-and-bellows-blown-pipes"
+      ]
+    },
+    {
+      "cluster_id": "variant:boat-building:1fa6c90d",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:boat-building-modern",
+        "heritage-crafts:traditional-wooden-boat-building"
+      ]
+    },
+    {
+      "cluster_id": "variant:chef:84ca18f9",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "esco:49f85a99-086c-45b6-a6fa-eb90305af7b1",
+        "scouts-uk:cubs:activity-badges:chef",
+        "scouts-uk:explorers:activity-badges:chef",
+        "scouts-uk:scouts:activity-badges:chef"
+      ]
+    },
+    {
+      "cluster_id": "variant:coopering:032a0351",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:coopering-non-spirits",
+        "heritage-crafts:coopering-spirits"
+      ]
+    },
+    {
+      "cluster_id": "variant:coppersmithing:def37aa7",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:coppersmithing-objects",
+        "heritage-crafts:coppersmithing-stills"
+      ]
+    },
+    {
+      "cluster_id": "variant:glassworking:7d7897fb",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "esco:4e2d4d0a-fd08-4a02-994c-38d989ad9184",
+        "heritage-crafts:glassworking-scientific-glassware"
+      ]
+    },
+    {
+      "cluster_id": "variant:paper-making:b5a94291",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:paper-making-commercial-handmade",
+        "heritage-crafts:paper-making-studio"
+      ]
+    },
+    {
+      "cluster_id": "variant:pewter-working:a4df9bf9",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:pewter-working",
+        "heritage-crafts:pewter-working-skilled-trades-manufacturing"
+      ]
+    },
+    {
+      "cluster_id": "variant:tanning:0a7b6f04",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:tanning-oak-bark",
+        "heritage-crafts:tanning-vegetable"
+      ]
+    },
+    {
+      "cluster_id": "variant:tile-making:bcd0a143",
+      "similarity_type": "parenthetical_or_punctuation_variant",
+      "confidence": "medium",
+      "human_review_required": true,
+      "reason": "Po usunięciu nawiasów albo zbędnej interpunkcji zostaje wspólny rdzeń. To może być wariant, nie duplikat.",
+      "candidate_ids": [
+        "heritage-crafts:tile-making-roofing-tiles",
+        "heritage-crafts:tile-making-wall-and-floor-tiles"
+      ]
+    },
+    {
+      "cluster_id": "description:assess-candidates:5149de0d",
+      "similarity_type": "identical_source_description",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Długi opis źródłowy jest identyczny, a tytuły mogą nazywać różne czynności. Identyczny opis nie scala rekordów.",
+      "candidate_ids": [
+        "esco:550e2d00-bd89-4614-8e15-330ae5277af3",
+        "esco:a006ac4c-3585-43e9-ac1d-a89b80d28e1d"
+      ]
+    },
+    {
+      "cluster_id": "description:artistic-gymnastics:56716287",
+      "similarity_type": "identical_source_description",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Długi opis źródłowy jest identyczny, a tytuły mogą nazywać różne czynności. Identyczny opis nie scala rekordów.",
+      "candidate_ids": [
+        "c002:olympic-education-fundamentals-2023:artistic-gymnastics",
+        "c002:olympic-education-fundamentals-2023:diving"
+      ]
+    },
+    {
+      "cluster_id": "description:inspect-heavy-underground-mining-machinery:7fdc2f21",
+      "similarity_type": "identical_source_description",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Długi opis źródłowy jest identyczny, a tytuły mogą nazywać różne czynności. Identyczny opis nie scala rekordów.",
+      "candidate_ids": [
+        "esco:16653144-707a-402f-a28d-57fbbb509ddf",
+        "esco:24f49659-e1d4-4935-aeb7-0a24b197d1e1"
+      ]
+    },
+    {
+      "cluster_id": "description:manage-cultural-facility:931faab9",
+      "similarity_type": "identical_source_description",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Długi opis źródłowy jest identyczny, a tytuły mogą nazywać różne czynności. Identyczny opis nie scala rekordów.",
+      "candidate_ids": [
+        "esco:5b84fed1-cd6c-47e1-b017-428db0e5cfb3",
+        "esco:da037304-d958-4580-89ad-edc914dc0b21"
+      ]
+    },
+    {
+      "cluster_id": "description:monitor-oil-rig-costs:c93f1e79",
+      "similarity_type": "identical_source_description",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Długi opis źródłowy jest identyczny, a tytuły mogą nazywać różne czynności. Identyczny opis nie scala rekordów.",
+      "candidate_ids": [
+        "esco:56c88504-f6fe-4929-979d-9a47e5f17443",
+        "esco:d4acc9e9-5302-4c55-8869-7c1882887690"
+      ]
+    },
+    {
+      "cluster_id": "description:saving:b360c2b5",
+      "similarity_type": "identical_source_description",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Długi opis źródłowy jest identyczny, a tytuły mogą nazywać różne czynności. Identyczny opis nie scala rekordów.",
+      "candidate_ids": [
+        "c002:cfpb-building-blocks-2016:saving",
+        "c002:cfpb-building-blocks-2016:setting-financial-goals"
+      ]
+    },
+    {
+      "cluster_id": "description:skiing:1187fae2",
+      "similarity_type": "identical_source_description",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Długi opis źródłowy jest identyczny, a tytuły mogą nazywać różne czynności. Identyczny opis nie scala rekordów.",
+      "candidate_ids": [
+        "c002:olympic-education-fundamentals-2023:seats-with-runners",
+        "c002:olympic-education-fundamentals-2023:skiing"
+      ]
+    },
+    {
+      "cluster_id": "lexical:use-of-special-equipment-for-daily-activities:82b4c871",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:00c51318-4ea9-4d37-9cd8-74680583d203",
+        "esco:a271a40e-ec1e-4721-8db1-c6d0e62a629d"
+      ]
+    },
+    {
+      "cluster_id": "lexical:maintain-inventory-of-cleaning-supplies:64b89902",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:00ec5333-e570-477b-9017-2e95fea0150a",
+        "esco:1910b022-fc63-4f3d-b742-f9d62d4382b6"
+      ]
+    },
+    {
+      "cluster_id": "lexical:information-structure:20b4e700",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:03ff0d53-573a-47a0-a0ad-1995815a4339",
+        "esco:cc9b4fbb-65f1-4c92-9229-1392d03b6e20"
+      ]
+    },
+    {
+      "cluster_id": "lexical:apply-music-therapy-methods:956daa00",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:5538b28d-7f3e-4645-a26d-c5de81edbace",
+        "esco:ba58df00-0b43-42a3-89e4-0dca7aa069fb"
+      ]
+    },
+    {
+      "cluster_id": "lexical:automatic-cutting-systems-for-footwear-and-leath:3ca5b73c",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:1abcc511-ba5a-42e0-8d88-7efb39af4c36",
+        "esco:4fd7909c-9600-476d-b1f0-615f9cc1260e"
+      ]
+    },
+    {
+      "cluster_id": "lexical:safe-work-practices-in-a-veterinary-setting:d81cf730",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:80cf2345-7fd8-4535-8e8d-0279771a03cf",
+        "esco:b5a8e3fe-63b3-4a67-a4c4-dee8f4ff5d1a"
+      ]
+    },
+    {
+      "cluster_id": "lexical:make-legal-decisions:6405c6d6",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:0efd5409-0b0a-4dea-8d62-6bb960f61cdd",
+        "onet:4.A.2.b.1.e"
+      ]
+    },
+    {
+      "cluster_id": "lexical:develop-hazardous-waste-management-strategies:2672025d",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:3220a66f-d129-463b-848e-891b4f1c79e3",
+        "esco:c9bb544b-99a1-4335-bcea-23f84b01095a"
+      ]
+    },
+    {
+      "cluster_id": "lexical:drive-ambulance-under-emergency-conditions:b7908935",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:13dd985b-9baf-43bd-b85b-9f44e2f0bade",
+        "esco:cd12a46a-342c-4695-8046-b1b3da0ef6ed"
+      ]
+    },
+    {
+      "cluster_id": "lexical:air-traffic-control-operations:08aaf4c7",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:86c6e967-2e4f-4bfe-9fe6-abf1c40d8cbc",
+        "esco:b387bca8-0f61-4548-b41c-2fe6887d1534"
+      ]
+    },
+    {
+      "cluster_id": "lexical:solar-absorption-cooling-system:f935c3d7",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:17446f6d-d8b0-4945-a37b-9ad0dfc9f3e8",
+        "esco:9ccb56ee-3d5f-4d48-8692-8f96fe1e4adb"
+      ]
+    },
+    {
+      "cluster_id": "lexical:manage-personal-professional-development:fc76491e",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:48d73e89-b231-4bb4-9f3c-5c900a1e37a1",
+        "esco:a8d24a95-47b3-4f88-92e7-06600bcd3612"
+      ]
+    },
+    {
+      "cluster_id": "lexical:provide-health-psychological-advice:11fca529",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:1ae16f1c-a959-4164-8f8c-e8c1aaecf7d5",
+        "esco:dc721884-85c9-4cce-a34f-ecb1d67b129a"
+      ]
+    },
+    {
+      "cluster_id": "lexical:disassemble-equipment:38683f99",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:2562fa92-6ecf-4ba9-831e-0ce94acb8991",
+        "onet:4.A.3.a.2.s"
+      ]
+    },
+    {
+      "cluster_id": "lexical:computer-programming:aa6910f9",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+        "esco:a4d336a6-9ffd-402a-91cc-f359716ba4e0"
+      ]
+    },
+    {
+      "cluster_id": "lexical:media-relations-marketing:4c1790d8",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "scouts-uk:explorers:activity-badges:media-relations-and-marketing",
+        "scouts-uk:scouts:activity-badges:media-relations-marketing"
+      ]
+    },
+    {
+      "cluster_id": "lexical:prosthetic-orthotic-device-materials:20127a26",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:5d32c4f8-d90d-447a-875d-d8626ce2c57b",
+        "esco:e81f2d1a-9b32-493d-899a-ab87cee06d15"
+      ]
+    },
+    {
+      "cluster_id": "lexical:ethical-code-of-conduct-of-journalists:5c219ac4",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:39aa5c41-960d-420a-a0bb-1ad9686d6369",
+        "esco:c281ebab-c698-495b-9916-abdb7dc78c50"
+      ]
+    },
+    {
+      "cluster_id": "lexical:interpret-3d-plans:a4ea8e2f",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:aafbb139-02c6-4f35-bc62-ff73faf97d6d",
+        "esco:dfce2aba-783e-4e17-9c17-e74aca505ec2"
+      ]
+    },
+    {
+      "cluster_id": "lexical:medical-device-test-procedures:140d162c",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:3e71ddfd-fff4-4c8d-a510-a46f4e2edb6b",
+        "esco:9836f5d5-1471-4403-8c09-82d1187e4912"
+      ]
+    },
+    {
+      "cluster_id": "lexical:lay-interlocking-roof-tiles:64d6696a",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:4a4f3c77-6fbb-451b-b6b1-f1f247869379",
+        "esco:a1c3797a-b6b8-43d7-aed6-1686373d1a1a"
+      ]
+    },
+    {
+      "cluster_id": "lexical:adjust-equipment-to-ensure-adequate-performance:35d13504",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "onet:4.A.3.a.2.i",
+        "onet:4.A.3.a.2.x"
+      ]
+    },
+    {
+      "cluster_id": "lexical:check-quality-of-products-on-the-production-line:c5c3789c",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:5d05068e-7ae7-4ff6-8fa3-e35ea03b48b1",
+        "esco:fe309116-eea5-4b23-8748-316c927af6e2"
+      ]
+    },
+    {
+      "cluster_id": "lexical:hunt-animals:ed0b4dcb",
+      "similarity_type": "lexical_near_title",
+      "confidence": "low",
+      "human_review_required": true,
+      "reason": "Tytuły mają co najmniej dwa wspólne tokeny, podobieństwo Jaccarda co najmniej 0,8 i różnią się najwyżej dwoma tokenami. To nie jest porównanie znaczenia.",
+      "candidate_ids": [
+        "esco:e6b9e649-1df0-43bc-bb4c-b732e868ec67",
+        "onet:4.A.3.a.2.ar"
+      ]
+    }
+  ]
+}

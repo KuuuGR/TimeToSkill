@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "compared_pilots": [
+    "kitchen-finance",
+    "movement-sport-dance"
+  ],
+  "proposals_compared": 41,
+  "automatic_merge_performed": false,
+  "method": "Porównano tylko pary z różnych pilotaży. Nazwy: identyczna normalizacja albo ratio>=0.84 albo Jaccard tokenów>=0.75. Opisy i kryteria: ratio>=0.72 przy długości co najmniej 80 znaków. Wspólne candidate_id i source_id oraz identyczne emoji są osobnymi typami. Wspólne źródło i emoji nie są traktowane jako dowód duplikatu. Nie wykonano porównania semantycznego.",
+  "group_count": 3,
+  "groups": [
+    {
+      "group_id": "overlap:shared_source_ids:c9103575",
+      "proposal_ids": [
+        "kitchen-finance:basic-baking-techniques",
+        "movement-sport-dance:swimming-fundamentals"
+      ],
+      "similarity_type": "shared_source_ids",
+      "confidence": "low",
+      "reason": "Wspólne source_id nie oznacza duplikatu skilla: esco-skills-v1.2.1.",
+      "decision": "needs_human_review"
+    },
+    {
+      "group_id": "overlap:shared_source_ids:28bdf392",
+      "proposal_ids": [
+        "kitchen-finance:basic-baking-techniques",
+        "movement-sport-dance:dance-rhythm-and-basic-steps"
+      ],
+      "similarity_type": "shared_source_ids",
+      "confidence": "low",
+      "reason": "Wspólne source_id nie oznacza duplikatu skilla: esco-skills-v1.2.1.",
+      "decision": "needs_human_review"
+    },
+    {
+      "group_id": "overlap:shared_emoji:23eba086",
+      "proposal_ids": [
+        "kitchen-finance:compare-financial-offers",
+        "movement-sport-dance:balance-and-weight-transfer"
+      ],
+      "similarity_type": "shared_emoji",
+      "confidence": "low",
+      "reason": "To samo emoji ⚖️. Powtórzenie ikony nie jest duplikatem umiejętności.",
+      "decision": "needs_human_review"
+    }
+  ]
+}

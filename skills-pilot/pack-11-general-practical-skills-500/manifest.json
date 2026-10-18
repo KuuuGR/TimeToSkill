@@ -1,0 +1,153 @@
+{
+  "pack_id": "pack-11",
+  "slug": "general-practical-skills-500",
+  "title": "General practical skills — 500 candidate review bundle",
+  "created_on": "2026-10-18",
+  "candidate_count": 500,
+  "status": "ready_for_editorial_review",
+  "status_note": "500 candidates selected from existing research records; none are approved skills or production records.",
+  "selection_method": "Deterministic shortlist from candidates-raw.jsonl and candidate-triage.jsonl; excluded candidate IDs found in existing review-inputs, review-batches and canonical archive packs; required a non-empty source description; prioritized medium consumer relevance, adaptable/strong/uncertain triage and title/description signals for practical consumer use; excluded obvious professional/industrial/regulated contexts and duplicate normalized titles within this bundle.",
+  "source_count": 1,
+  "used_candidate_ids_excluded": 1413,
+  "eligible_pool_before_selection": 2366,
+  "counts": {
+    "by_source": {
+      "esco-skills-v1.2.1": 500
+    },
+    "by_consumer_relevance": {
+      "medium": 500
+    },
+    "by_triage_suitability": {
+      "uncertain": 498,
+      "adaptable_candidate": 2
+    },
+    "by_candidate_type": {
+      "skill": 500
+    },
+    "top_source_categories": [
+      [
+        "accepting feedback",
+        1
+      ],
+      [
+        "accepting feedback; work in teams",
+        1
+      ],
+      [
+        "accessing and analysing digital data",
+        1
+      ],
+      [
+        "accessing and analysing digital data; collaborate through digital technologies; use online tools to collaborate",
+        1
+      ],
+      [
+        "accompanying and welcoming people",
+        1
+      ],
+      [
+        "accompanying and welcoming people; advise others",
+        1
+      ],
+      [
+        "accompanying and welcoming people; maintain customer service",
+        1
+      ],
+      [
+        "advising and consulting",
+        1
+      ],
+      [
+        "advising and consulting; advise others",
+        1
+      ],
+      [
+        "advising on business or operational matters; advise others",
+        1
+      ],
+      [
+        "advising on business or operational matters; advise others; use consulting techniques",
+        1
+      ],
+      [
+        "advising on design or use of technologies",
+        1
+      ],
+      [
+        "advising on design or use of technologies; advise others",
+        1
+      ],
+      [
+        "advising on educational or vocational matters",
+        1
+      ],
+      [
+        "advising on educational or vocational matters; advise others",
+        1
+      ],
+      [
+        "advising on environmental issues",
+        1
+      ],
+      [
+        "advising on environmental issues; adopt ways to reduce negative impact of consumption; promote sustainability",
+        1
+      ],
+      [
+        "advising on environmental issues; advise others",
+        1
+      ],
+      [
+        "advising on environmental issues; advise others; implement environmental protection measures",
+        1
+      ],
+      [
+        "advising on environmental issues; report facts",
+        1
+      ],
+      [
+        "advising on legal, regulatory or procedural matters",
+        1
+      ],
+      [
+        "advising on legal, regulatory or procedural matters; advise legislators; advise others",
+        1
+      ],
+      [
+        "advising on legal, regulatory or procedural matters; advise others",
+        1
+      ],
+      [
+        "advising on legal, regulatory or procedural matters; report facts",
+        1
+      ],
+      [
+        "advising on products and services",
+        1
+      ],
+      [
+        "advising on products and services; advise on customs regulations; advise others",
+        1
+      ],
+      [
+        "advising on products and services; advise on efficiency improvements; advise others",
+        1
+      ],
+      [
+        "advising on products and services; advise others",
+        1
+      ],
+      [
+        "advising on products and services; analyse production processes for improvement",
+        1
+      ],
+      [
+        "advising on workplace health and safety issues; advise others",
+        1
+      ]
+    ]
+  },
+  "quality_warning": "Selection score is a heuristic only. Human editorial review is required. A source description is not necessarily sufficient to define a consumer skill or three progression levels.",
+  "canonical_input": "data/skills-catalog/research/candidates-raw.jsonl",
+  "triage_input": "data/skills-catalog/research/candidate-triage.jsonl"
+}

@@ -1,0 +1,13 @@
+{
+  "raw_candidates": 500,
+  "after_dedup": 330,
+  "new_proposals": 232,
+  "already_represented": 170,
+  "rejected": 79,
+  "needs_source": 19,
+  "high_risk_for_review": 19,
+  "deferred_to_human_besides_high_risk": 0,
+  "unique_pilot_after_v7": 538,
+  "production": 0,
+  "distance_to_1001": 463
+}

@@ -19,14 +19,14 @@
 			containerPortal = 0713ACA52DA29289005F9E07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0713ACAC2DA29289005F9E07;
-			remoteInfo = TimeToSkill;
+			remoteInfo = Time4Skill;
 		};
 		0713ACCA2DA29292005F9E07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0713ACA52DA29289005F9E07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0713ACAC2DA29289005F9E07;
-			remoteInfo = TimeToSkill;
+			remoteInfo = Time4Skill;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,18 +66,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0713AD612DA2FF64005F9E07 /* TimeToSkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToSkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0713AD622DA2FF64005F9E07 /* TimeToSkillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeToSkillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0713AD632DA2FF64005F9E07 /* TimeToSkillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeToSkillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713AD612DA2FF64005F9E07 /* Time4Skill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time4Skill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713AD622DA2FF64005F9E07 /* Time4SkillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Time4SkillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713AD632DA2FF64005F9E07 /* Time4SkillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Time4SkillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0713AE122DA30523005F9E07 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AA0000000000000000000008 /* Time4SkillMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time4SkillMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000010 /* Time4SkillMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Time4SkillMacOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0713AE2B2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkill" target */ = {
+		0713AE2B2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "Time4Skill" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
+				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
 				Tests/TimeToSkillTests/StatsSessionActivityTests.swift,
 				Tests/TimeToSkillTests/TimePerspectiveMatcherTests.swift,
@@ -85,31 +88,35 @@
 				Tests/TimeToSkillUITests/StartViewUITests.swift,
 				Tests/TimeToSkillUITests/TimeToSkillUITestsLaunchTests.swift,
 			);
-			target = 0713ACAC2DA29289005F9E07 /* TimeToSkill */;
+			target = 0713ACAC2DA29289005F9E07 /* Time4Skill */;
 		};
-		0713AE2C2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillTests" target */ = {
+		0713AE2C2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "Time4SkillTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
+				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
 				Tests/TimeToSkillTests/StatsSessionActivityTests.swift,
 				Tests/TimeToSkillTests/TimePerspectiveMatcherTests.swift,
 				Tests/TimeToSkillTests/TrackedTimeCalculationTests.swift,
 			);
-			target = 0713ACBE2DA29292005F9E07 /* TimeToSkillTests */;
+			target = 0713ACBE2DA29292005F9E07 /* Time4SkillTests */;
 		};
-		0713AE2E2DA3161E005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillUITests" target */ = {
+		0713AE2E2DA3161E005F9E07 /* Exceptions for "TimeToSkill" folder in "Time4SkillUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillUITests/StartViewUITests.swift,
 				Tests/TimeToSkillUITests/TimeToSkillUITestsLaunchTests.swift,
 			);
-			target = 0713ACC82DA29292005F9E07 /* TimeToSkillUITests */;
+			target = 0713ACC82DA29292005F9E07 /* Time4SkillUITests */;
 		};
 		AA0000000000000000000009 /* Exceptions for "TimeToSkill" folder in "Time4SkillMacOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
+				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
 				Tests/TimeToSkillTests/StatsSessionActivityTests.swift,
 				Tests/TimeToSkillTests/TimePerspectiveMatcherTests.swift,
@@ -125,9 +132,9 @@
 		0713ACAF2DA29289005F9E07 /* TimeToSkill */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				0713AE2B2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkill" target */,
-				0713AE2C2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillTests" target */,
-				0713AE2E2DA3161E005F9E07 /* Exceptions for "TimeToSkill" folder in "TimeToSkillUITests" target */,
+				0713AE2B2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "Time4Skill" target */,
+				0713AE2C2DA314DA005F9E07 /* Exceptions for "TimeToSkill" folder in "Time4SkillTests" target */,
+				0713AE2E2DA3161E005F9E07 /* Exceptions for "TimeToSkill" folder in "Time4SkillUITests" target */,
 				AA0000000000000000000009 /* Exceptions for "TimeToSkill" folder in "Time4SkillMacOS" target */,
 			);
 			path = TimeToSkill;
@@ -173,11 +180,12 @@
 			isa = PBXGroup;
 			children = (
 				0713ACAF2DA29289005F9E07 /* TimeToSkill */,
-				0713AD612DA2FF64005F9E07 /* TimeToSkill.app */,
-				0713AD622DA2FF64005F9E07 /* TimeToSkillTests.xctest */,
-				0713AD632DA2FF64005F9E07 /* TimeToSkillUITests.xctest */,
+				0713AD612DA2FF64005F9E07 /* Time4Skill.app */,
+				0713AD622DA2FF64005F9E07 /* Time4SkillTests.xctest */,
+				0713AD632DA2FF64005F9E07 /* Time4SkillUITests.xctest */,
 				0713AE112DA30523005F9E07 /* Frameworks */,
 				AA0000000000000000000008 /* Time4SkillMacOS.app */,
+				AA0000000000000000000010 /* Time4SkillMacOS.entitlements */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0713ACAC2DA29289005F9E07 /* TimeToSkill */ = {
+		0713ACAC2DA29289005F9E07 /* Time4Skill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0713ACD32DA29292005F9E07 /* Build configuration list for PBXNativeTarget "TimeToSkill" */;
+			buildConfigurationList = 0713ACD32DA29292005F9E07 /* Build configuration list for PBXNativeTarget "Time4Skill" */;
 			buildPhases = (
 				0713ACA92DA29289005F9E07 /* Sources */,
 				0713ACAA2DA29289005F9E07 /* Frameworks */,
@@ -209,16 +217,16 @@
 			fileSystemSynchronizedGroups = (
 				0713ACAF2DA29289005F9E07 /* TimeToSkill */,
 			);
-			name = TimeToSkill;
+			name = Time4Skill;
 			packageProductDependencies = (
 			);
-			productName = TimeToSkill;
-			productReference = 0713AD612DA2FF64005F9E07 /* TimeToSkill.app */;
+			productName = Time4Skill;
+			productReference = 0713AD612DA2FF64005F9E07 /* Time4Skill.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0713ACBE2DA29292005F9E07 /* TimeToSkillTests */ = {
+		0713ACBE2DA29292005F9E07 /* Time4SkillTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0713ACD62DA29292005F9E07 /* Build configuration list for PBXNativeTarget "TimeToSkillTests" */;
+			buildConfigurationList = 0713ACD62DA29292005F9E07 /* Build configuration list for PBXNativeTarget "Time4SkillTests" */;
 			buildPhases = (
 				0713ACBB2DA29292005F9E07 /* Sources */,
 				0713ACBC2DA29292005F9E07 /* Frameworks */,
@@ -230,16 +238,16 @@
 			dependencies = (
 				0713ACC12DA29292005F9E07 /* PBXTargetDependency */,
 			);
-			name = TimeToSkillTests;
+			name = Time4SkillTests;
 			packageProductDependencies = (
 			);
-			productName = TimeToSkillTests;
-			productReference = 0713AD622DA2FF64005F9E07 /* TimeToSkillTests.xctest */;
+			productName = Time4SkillTests;
+			productReference = 0713AD622DA2FF64005F9E07 /* Time4SkillTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0713ACC82DA29292005F9E07 /* TimeToSkillUITests */ = {
+		0713ACC82DA29292005F9E07 /* Time4SkillUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0713ACD92DA29292005F9E07 /* Build configuration list for PBXNativeTarget "TimeToSkillUITests" */;
+			buildConfigurationList = 0713ACD92DA29292005F9E07 /* Build configuration list for PBXNativeTarget "Time4SkillUITests" */;
 			buildPhases = (
 				0713ACC52DA29292005F9E07 /* Sources */,
 				0713ACC62DA29292005F9E07 /* Frameworks */,
@@ -251,11 +259,11 @@
 			dependencies = (
 				0713ACCB2DA29292005F9E07 /* PBXTargetDependency */,
 			);
-			name = TimeToSkillUITests;
+			name = Time4SkillUITests;
 			packageProductDependencies = (
 			);
-			productName = TimeToSkillUITests;
-			productReference = 0713AD632DA2FF64005F9E07 /* TimeToSkillUITests.xctest */;
+			productName = Time4SkillUITests;
+			productReference = 0713AD632DA2FF64005F9E07 /* Time4SkillUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		AA0000000000000000000001 /* Time4SkillMacOS */ = {
@@ -358,9 +366,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0713ACAC2DA29289005F9E07 /* TimeToSkill */,
-				0713ACBE2DA29292005F9E07 /* TimeToSkillTests */,
-				0713ACC82DA29292005F9E07 /* TimeToSkillUITests */,
+				0713ACAC2DA29289005F9E07 /* Time4Skill */,
+				0713ACBE2DA29292005F9E07 /* Time4SkillTests */,
+				0713ACC82DA29292005F9E07 /* Time4SkillUITests */,
 				AA0000000000000000000001 /* Time4SkillMacOS */,
 			);
 		};
@@ -453,12 +461,12 @@
 /* Begin PBXTargetDependency section */
 		0713ACC12DA29292005F9E07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0713ACAC2DA29289005F9E07 /* TimeToSkill */;
+			target = 0713ACAC2DA29289005F9E07 /* Time4Skill */;
 			targetProxy = 0713ACC02DA29292005F9E07 /* PBXContainerItemProxy */;
 		};
 		0713ACCB2DA29292005F9E07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0713ACAC2DA29289005F9E07 /* TimeToSkill */;
+			target = 0713ACAC2DA29289005F9E07 /* Time4Skill */;
 			targetProxy = 0713ACCA2DA29292005F9E07 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -595,7 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 18;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
 				INFOPLIST_KEY_CFBundleName = Time4Skill;
@@ -610,7 +618,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etaosin.time4skill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -624,7 +632,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 18;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
 				INFOPLIST_KEY_CFBundleName = Time4Skill;
@@ -639,7 +647,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etaosin.time4skill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -656,12 +664,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkillTests;
+				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.Time4SkillTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeToSkill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeToSkill";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Time4Skill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Time4Skill";
 			};
 			name = Debug;
 		};
@@ -674,12 +682,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkillTests;
+				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.Time4SkillTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeToSkill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeToSkill";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Time4Skill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Time4Skill";
 			};
 			name = Release;
 		};
@@ -690,12 +698,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkillUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.Time4SkillUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TimeToSkill;
+				TEST_TARGET_NAME = Time4Skill;
 			};
 			name = Debug;
 		};
@@ -706,12 +714,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.TimeToSkillUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = gregkaps.Time4SkillUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TimeToSkill;
+				TEST_TARGET_NAME = Time4Skill;
 			};
 			name = Release;
 		};
@@ -720,9 +728,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Time4SkillMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 8TC5J5KMXE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -744,9 +753,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Time4SkillMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 8TC5J5KMXE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -775,7 +785,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0713ACD32DA29292005F9E07 /* Build configuration list for PBXNativeTarget "TimeToSkill" */ = {
+		0713ACD32DA29292005F9E07 /* Build configuration list for PBXNativeTarget "Time4Skill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0713ACD42DA29292005F9E07 /* Debug */,
@@ -784,7 +794,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0713ACD62DA29292005F9E07 /* Build configuration list for PBXNativeTarget "TimeToSkillTests" */ = {
+		0713ACD62DA29292005F9E07 /* Build configuration list for PBXNativeTarget "Time4SkillTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0713ACD72DA29292005F9E07 /* Debug */,
@@ -793,7 +803,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0713ACD92DA29292005F9E07 /* Build configuration list for PBXNativeTarget "TimeToSkillUITests" */ = {
+		0713ACD92DA29292005F9E07 /* Build configuration list for PBXNativeTarget "Time4SkillUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0713ACDA2DA29292005F9E07 /* Debug */,

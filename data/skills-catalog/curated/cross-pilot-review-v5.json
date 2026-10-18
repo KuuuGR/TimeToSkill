@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "automatic_merge_performed": false,
+  "production_approval": false,
+  "groups_kept_separate": [
+    {
+      "group_id": "v3:explain-vs-science-communication",
+      "proposal_ids": [
+        "communication-cognition-nature:explain-information-clearly",
+        "technology-science-niches:science-communication"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:evidence-vs-digital-research",
+      "proposal_ids": [
+        "communication-cognition-nature:critical-thinking-and-evidence-checking",
+        "technology-science-niches:digital-research-and-source-evaluation"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:maps-compass-digital-map",
+      "proposal_ids": [
+        "communication-cognition-nature:topographic-map-reading",
+        "communication-cognition-nature:compass-use-and-map-orientation",
+        "communication-cognition-nature:orienteering-route-choice",
+        "technology-science-niches:digital-map-making"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:maps-vs-outdoor-movement",
+      "proposal_ids": [
+        "communication-cognition-nature:topographic-map-reading",
+        "communication-cognition-nature:compass-use-and-map-orientation",
+        "technology-science-niches:geocaching",
+        "movement-sport-dance:hiking-and-trail-preparation"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:speaking-and-communication",
+      "proposal_ids": [
+        "communication-cognition-nature:public-speaking-and-audience-adaptation",
+        "communication-cognition-nature:explain-information-clearly",
+        "communication-cognition-nature:active-listening",
+        "communication-cognition-nature:nonverbal-communication",
+        "technology-science-niches:science-communication"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:conversation-interpreting-translation",
+      "proposal_ids": [
+        "communication-cognition-nature:foreign-language-conversation",
+        "communication-cognition-nature:informal-spoken-interpreting",
+        "communication-cognition-nature:short-text-translation"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:transcription-vs-history-research",
+      "proposal_ids": [
+        "communication-cognition-nature:transcribe-historical-letters",
+        "technology-science-niches:genealogy-research",
+        "technology-science-niches:local-history-research"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:astronomical-image-vs-sky-observation",
+      "proposal_ids": [
+        "communication-cognition-nature:astronomical-image-analysis-basics",
+        "technology-science-niches:sky-observation"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    },
+    {
+      "group_id": "v3:georeference-vs-map-making",
+      "proposal_ids": [
+        "communication-cognition-nature:georeference-collection-records",
+        "technology-science-niches:digital-map-making",
+        "communication-cognition-nature:topographic-map-reading"
+      ],
+      "decision": "keep_separate",
+      "decision_taken": true,
+      "merge": false,
+      "confidence": "high",
+      "reason": "Cel, działanie i obserwowalny rezultat są różne. Opisy i trzy poziomy w v4 już to mierzą. Scalenia nie wykonano.",
+      "basis": "editorial_comparison_of_existing_proposals"
+    }
+  ],
+  "pack11_duplicate_rejections": 40,
+  "language_candidates_represented_by_one_skill": 73
+}

@@ -141,7 +141,7 @@ Docs and FAQ claim fully offline / no account. StoreKit purchases require networ
 
 ## Assumptions (explicit)
 
-1. App is intended for App Store distribution under team `8TC5J5KMXE`, bundle `gregkaps.TimeToSkill`.
+1. This branch distributes Time4Skill under team `8TC5J5KMXE` and bundle `com.etaosin.time4skill` (one App Store Connect record, separate iOS and macOS platforms). The existing TimeToSkill app remains bundle `gregkaps.TimeToSkill` on `release/ver1.6`.
 2. “40 languages” refers to localization folders + quote/skill JSON coverage (exact parity not audited line-by-line).
 3. There is no separate backend; any future cloud sync is not started in this repo.
 4. Dark mode only is intentional product design (`preferredColorScheme(.dark)`).

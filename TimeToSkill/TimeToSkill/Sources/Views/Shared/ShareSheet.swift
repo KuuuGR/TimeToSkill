@@ -1,5 +1,18 @@
 import SwiftUI
 
+/// Data payloads (e.g. a generated PDF) are written to a temporary, brand-named
+/// file so the system share services present them as a file (with a proper
+/// filename) instead of raw data.
+private func sharePayloadItems(_ items: [Any]) -> [Any] {
+    items.map { item in
+        guard let data = item as? Data else { return item }
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent("Time4Skill-Export-\(UUID().uuidString).pdf")
+        try? data.write(to: url)
+        return url
+    }
+}
+
 #if canImport(UIKit)
 import UIKit
 
@@ -7,7 +20,7 @@ struct ShareSheet: UIViewControllerRepresentable {
     let items: [Any]
 
     func makeUIViewController(context: Context) -> UIActivityViewController {
-        UIActivityViewController(activityItems: items, applicationActivities: nil)
+        UIActivityViewController(activityItems: sharePayloadItems(items), applicationActivities: nil)
     }
 
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
@@ -33,15 +46,7 @@ struct ShareSheet: NSViewRepresentable {
 
         // Data payloads (e.g. a generated PDF) are written to a temporary file
         // so the system share services can handle them as file URLs.
-        let sharingItems: [Any] = items.map { item in
-            if let data = item as? Data {
-                let url = FileManager.default.temporaryDirectory
-                    .appendingPathComponent("TimeToSkill-Export-\(UUID().uuidString).pdf")
-                try? data.write(to: url)
-                return url
-            }
-            return item
-        }
+        let sharingItems = sharePayloadItems(items)
 
         DispatchQueue.main.async {
             guard let anchor = nsView.window?.contentView else { return }

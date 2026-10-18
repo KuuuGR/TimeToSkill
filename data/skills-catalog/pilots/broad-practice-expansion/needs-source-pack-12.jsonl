@@ -1,0 +1,17 @@
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:perform-cpr", "name": "Perform CPR", "reason": "Life-saving procedure. Not written without a current first-aid source and a skills check."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:use-an-aed", "name": "Use an AED", "reason": "Device procedure. Pack-09 already holds this topic. No steps were copied."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:give-an-injection", "name": "Give an injection", "reason": "Medical procedure. Not a home skill here."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:diagnose-a-rash", "name": "Diagnose a rash", "reason": "Diagnosis. Not invented."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:splint-a-fracture", "name": "Splint a suspected fracture", "reason": "Injury care. Not written from memory."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:open-an-electrical-panel", "name": "Open an electrical panel", "reason": "Shock and fire risk. No steps written."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:rewire-a-plug", "name": "Rewire a plug", "reason": "Electrical work. Left for a checked source."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:relight-a-gas-pilot", "name": "Relight a gas pilot", "reason": "Gas risk. Not written."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:investigate-a-gas-smell", "name": "Investigate a gas smell", "reason": "The safe action is to leave and call. No investigation steps."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:fell-a-tree", "name": "Fell a tree", "reason": "Dangerous cutting. Not a consumer skill without a specialist source."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:observe-the-sun", "name": "Observe the sun", "reason": "Eye injury risk. No filter method was written."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:treat-wood-rot", "name": "Treat wood rot", "reason": "Chemicals and structure. Noticing rot already exists; treatment was not written."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:use-a-solvent-on-paint", "name": "Strip paint with solvent", "reason": "Chemical hazard. Not written."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:charge-a-lithium-battery-pack", "name": "Repair a lithium battery pack", "reason": "Fire risk. Not written."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:administer-pet-medicine", "name": "Give a pet a medicine", "reason": "Veterinary action. Not written."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:forage-mushrooms", "name": "Forage wild mushrooms", "reason": "Poisoning risk. Plant naming in this pack is not foraging."}
+{"candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:swim-in-open-water-rescue", "name": "Rescue a swimmer by entering the water", "reason": "Drown risk. Pack-09 already says help from shore. No new rescue skill."}

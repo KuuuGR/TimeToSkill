@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "status": "pilot_additions_not_yet_merged",
+  "note": "Do not merge these into the source database automatically. If skills are accepted, import these source records and preserve IDs.",
+  "sources": [
+    {
+      "source_id": "red-cross-swim-safety",
+      "title": "American Red Cross — Swimming Safety",
+      "publisher": "American Red Cross",
+      "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety/swim-safety.html",
+      "source_type": "safety_guidance",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "use": "Safety requirements for swimming progression; learn with qualified instruction, use supervised areas, never swim alone.",
+      "license_or_terms": "Link/reference only; no source text copied.",
+      "notes": "US-oriented water-safety guidance; apply local rules and facilities."
+    },
+    {
+      "source_id": "red-cross-water-safety",
+      "title": "American Red Cross — Water Safety",
+      "publisher": "American Red Cross",
+      "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety.html",
+      "source_type": "safety_guidance",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "use": "General aquatic safety including life jackets for boating and understanding environmental hazards.",
+      "license_or_terms": "Link/reference only; no source text copied.",
+      "notes": "Do not present swimming ability as a substitute for personal flotation devices or supervision."
+    },
+    {
+      "source_id": "govuk-cycle-safety",
+      "title": "UK Department for Transport — The Highway Code, You and your bicycle",
+      "publisher": "UK Department for Transport",
+      "url": "https://www.gov.uk/guidance/the-highway-code/annex-1-you-and-your-bicycle",
+      "source_type": "official_safety_guidance",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "use": "Bike fit and maintenance checks, braking, lights, and graduated cycling instruction.",
+      "license_or_terms": "Link/reference only; no source text copied.",
+      "notes": "Traffic law examples are UK-specific; use local laws in localized app content."
+    },
+    {
+      "source_id": "nps-hiking-safety",
+      "title": "US National Park Service — Hike Smart",
+      "publisher": "National Park Service",
+      "url": "https://www.nps.gov/articles/hiking-safety.htm",
+      "source_type": "official_safety_guidance",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "use": "Route planning, weather, limits, communication, essential gear, turnaround planning and staying on suitable trails.",
+      "license_or_terms": "Link/reference only; no source text copied.",
+      "notes": "US park context; adapt to the user's local area and regulations."
+    },
+    {
+      "source_id": "iisa-skating-safety",
+      "title": "International Inline Skating Association — Skating Safety",
+      "publisher": "International Inline Skating Association (IISA)",
+      "url": "https://iisa.org/safety/",
+      "source_type": "safety_guidance",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "use": "Protective gear, flat traffic-free practice, braking before speed, surface checks and shared-space awareness.",
+      "license_or_terms": "Link/reference only; no source text copied."
+    },
+    {
+      "source_id": "pilates-foundation-faq",
+      "title": "Pilates Foundation — FAQ and practice guidance",
+      "publisher": "Pilates Foundation",
+      "url": "https://www.pilatesfoundation.com/faq",
+      "source_type": "professional_practice_guidance",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "use": "Distinguishing Pilates from generic exercise and recommending suitable instruction/adaptation to individual needs.",
+      "license_or_terms": "Link/reference only; no source text copied.",
+      "notes": "Do not make unsupported medical claims or frame Pilates as a treatment."
+    },
+    {
+      "source_id": "cross-country-ski-get-started",
+      "title": "Cross Country Ski Areas Association — Get Started",
+      "publisher": "Cross Country Ski Areas Association",
+      "url": "https://xcski.org/how-to-get-started/",
+      "source_type": "beginner_skill_guidance",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "use": "First-day equipment, flat terrain, basic stride and glide, poles, and beginner lessons.",
+      "license_or_terms": "Link/reference only; no source text copied."
+    }
+  ]
+}

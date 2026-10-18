@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "destructive": false,
+  "proposals_deleted_from_v9": 0,
+  "note": "v9 was not edited. v10 omits only the records mapped below. Source rows and earlier registers stay.",
+  "records": [
+    {
+      "proposal_id": "practice-expansion-15:draw-a-pattern-and-redraw-it",
+      "mapped_proposal_id": "practice-expansion-15:copy-a-short-grid",
+      "action": "merged",
+      "reason": "Covering a short pattern and redrawing it is the same result as copying a short grid from memory."
+    },
+    {
+      "proposal_id": "practice-expansion-15:braid-a-lanyard",
+      "mapped_proposal_id": "broad-practice-expansion:braid-a-cord",
+      "action": "merged",
+      "reason": "A three-strand lanyard is the same braid as a cord that stays together at the ends."
+    },
+    {
+      "proposal_id": "practice-expansion-15:tie-a-knot-you-can-release",
+      "mapped_proposal_id": "broad-practice-expansion:tie-a-knot-that-holds",
+      "action": "merged",
+      "reason": "A slipped knot you can release is the release case already inside tying a knot that holds and unties."
+    },
+    {
+      "proposal_id": "practice-expansion-15:spot-a-knot-that-will-slip",
+      "mapped_proposal_id": "broad-practice-expansion:tie-a-knot-that-holds",
+      "action": "merged",
+      "reason": "Comparing a firm knot with a slipped knot is the choice already required when the loop must come undone."
+    },
+    {
+      "proposal_id": "practice-expansion-15:tie-a-scarf-so-it-stays",
+      "mapped_proposal_id": "broad-practice-expansion:tie-a-necktie",
+      "action": "merged",
+      "reason": "A scarf knot that stays when you turn your head is the same result as tying a scarf so it stays and sits in place."
+    },
+    {
+      "proposal_id": "practice-expansion-15:move-hanging-foil",
+      "mapped_proposal_id": "practice-expansion-15:bend-a-thin-stream",
+      "action": "merged",
+      "reason": "A charged comb moving foil and a charged comb moving a thin stream are the same observation."
+    }
+  ],
+  "kept_separate": [
+    {
+      "ids": [
+        "practice-expansion-15:balance-a-stick-on-a-finger",
+        "practice-expansion-15:balance-a-card-on-a-finger"
+      ],
+      "reason": "A stick stays up through a step. A card ends in a catch."
+    },
+    {
+      "ids": [
+        "practice-expansion-15:spin-a-ball-on-a-finger",
+        "practice-expansion-15:spin-a-book-on-a-finger"
+      ],
+      "reason": "A ball and a book fail in different ways."
+    },
+    {
+      "ids": [
+        "practice-expansion-15:roll-a-tie-for-a-bag",
+        "practice-expansion-15:roll-a-towel-for-a-bag"
+      ],
+      "reason": "A tie is checked for a crease. A towel is checked for staying rolled."
+    },
+    {
+      "ids": [
+        "practice-expansion-15:deal-a-fan-of-cards",
+        "practice-expansion-15:spread-cards-in-a-row"
+      ],
+      "reason": "A fan and an even row are different spreads."
+    },
+    {
+      "ids": [
+        "broad-practice-expansion:fold-a-paper-box",
+        "practice-expansion-13:fold-a-paper-envelope"
+      ],
+      "reason": "A box and an envelope close differently."
+    },
+    {
+      "ids": [
+        "practice-expansion-14:pin-a-hem-before-you-sew",
+        "practice-expansion-15:pin-a-temporary-hem"
+      ],
+      "reason": "One hem is checked before sewing. The other must come out without a tear."
+    },
+    {
+      "ids": [
+        "practice-expansion-15:tie-a-bow-that-survives-a-tug",
+        "practice-expansion-15:tie-a-bow-on-a-package"
+      ],
+      "reason": "One bow is tested with a tug. The other is tested by where it sits."
+    },
+    {
+      "ids": [
+        "broad-practice-expansion:juggle-three-balls",
+        "practice-expansion-15:juggle-two-in-one-hand"
+      ],
+      "reason": "Three balls and two in one hand are different patterns."
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "compared_against": "data/skills-catalog/curated/pilot-proposals-v2.jsonl",
+  "new_proposals_file": "data/skills-catalog/curated/pilot-proposals-v3.jsonl",
+  "existing_proposal_count": 71,
+  "new_proposal_count": 35,
+  "combined_proposal_count": 106,
+  "automatic_merge_performed": false,
+  "records_deleted": 0,
+  "decision_taken": false,
+  "method": "Porównano 35 propozycji pack-04 z 71 propozycjami v2 po nazwie, opisie i zakresie ćwiczenia. Nie było identycznych nazw ani wspólnych candidate_id. Wspólne szerokie rejestry ESCO i O*NET nie są scaleniem. Żadnej pary nie połączono.",
+  "groups": [
+    {
+      "group_id": "v3:explain-vs-science-communication",
+      "proposal_ids": [
+        "communication-cognition-nature:explain-information-clearly",
+        "technology-science-niches:science-communication"
+      ],
+      "similarity_type": "related_explanation",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Obie propozycje ćwiczą wyjaśnianie. Pierwsza dotyczy dowolnej informacji i sprawdzenia, co słuchacz zrozumiał. Druga dotyczy tematu naukowego i oddzielenia dowodu od niepewności. To może być węższy zakres albo osobna praktyka.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Wyjaśnianie informacji ma uniwersalny zakres i sprawdza zrozumienie odbiorcy; komunikacja naukowa wymaga tłumaczenia twierdzeń naukowych oraz jawnego oznaczania dowodów i niepewności. Rozdzielenie ma sens, jeśli poziomy komunikacji naukowej zachowują ten wyróżnik.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:evidence-vs-digital-research",
+      "proposal_ids": [
+        "communication-cognition-nature:critical-thinking-and-evidence-checking",
+        "technology-science-niches:digital-research-and-source-evaluation"
+      ],
+      "similarity_type": "related_source_checking",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Obie propozycje sprawdzają źródła. Pack-04 ocenia wsparcie tezy: fakty, interpretacje, założenia i alternatywy. Pack-03 opisuje strategię szukania w sieci i zapis, dlaczego źródło jest albo nie jest wiarygodne.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Ocena dowodów sprawdza jakość argumentu i alternatywne wyjaśnienia; research cyfrowy opisuje wyszukiwanie, selekcję i dokumentowanie źródeł. Mogą się wspierać, ale ćwiczą inne czynności.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:maps-compass-digital-map",
+      "proposal_ids": [
+        "communication-cognition-nature:topographic-map-reading",
+        "communication-cognition-nature:compass-use-and-map-orientation",
+        "communication-cognition-nature:orienteering-route-choice",
+        "technology-science-niches:digital-map-making"
+      ],
+      "similarity_type": "navigation_family",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Czytanie mapy dotyczy znaków, skali i warstwic w terenie. Kompas ustawia mapę i azymut. Bieg na orientację wybiera drogę między punktami. Cyfrowa mapa składa warstwy, żeby ktoś inny zrozumiał pytanie o miejsce. Recenzja pack-04 zostawiła trzy pierwsze praktyki osobno; porównanie z digital-map-making nie zostało rozstrzygnięte.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Czytanie mapy, użycie kompasu, wybór trasy na orientację i tworzenie mapy cyfrowej mają różne produkty końcowe. Utrzymać osobno; w opisach poziomów wyraźnie pokazać odczyt mapy, ustawienie kierunku, wybór trasy i przygotowanie warstw danych.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:maps-vs-outdoor-movement",
+      "proposal_ids": [
+        "communication-cognition-nature:topographic-map-reading",
+        "communication-cognition-nature:compass-use-and-map-orientation",
+        "technology-science-niches:geocaching",
+        "movement-sport-dance:hiking-and-trail-preparation"
+      ],
+      "similarity_type": "outdoor_navigation",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Geocaching szuka skrytek po współrzędnych i wskazówkach. Wędrówka planuje i kończy trasę dopasowaną do możliwości. Mapa i kompas z pack-04 opisują odczyt terenu i kierunek. Wspólny teren nie pokazuje tej samej decyzji ćwiczeniowej.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Nawigacja mapą/kompasem, geocaching i przygotowanie wędrówki są odrębnymi praktykami: odpowiednio ustalenie położenia/kierunku, odnajdywanie skrytki według współrzędnych i wskazówek oraz planowanie bezpiecznej trasy. Nie scalać tylko z powodu wspólnego środowiska terenowego.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:speaking-and-communication",
+      "proposal_ids": [
+        "communication-cognition-nature:public-speaking-and-audience-adaptation",
+        "communication-cognition-nature:explain-information-clearly",
+        "communication-cognition-nature:active-listening",
+        "communication-cognition-nature:nonverbal-communication",
+        "technology-science-niches:science-communication"
+      ],
+      "similarity_type": "communication_family",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Wystąpienie publiczne przygotowuje i wygłasza krótką wypowiedź. Wyjaśnianie sprawdza, czy druga osoba zrozumiała punkt. Słuchanie sprawdza interpretację cudzej wypowiedzi. Komunikacja niewerbalna dotyczy sygnałów widocznych i głosu. Komunikacja naukowa tłumaczy temat specjalistyczny. Opisy wskazują inne produkty ćwiczenia, ale rodzina nazw wymaga decyzji człowieka.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Wystąpienie publiczne, wyjaśnianie, aktywne słuchanie, komunikacja niewerbalna i komunikacja naukowa mają różne zachowania i kryteria ukończenia. To rodzina tematyczna, nie duplikaty. W audycie nazw sprawdzić, czy każdy opis mierzy własny rezultat.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:conversation-interpreting-translation",
+      "proposal_ids": [
+        "communication-cognition-nature:foreign-language-conversation",
+        "communication-cognition-nature:informal-spoken-interpreting",
+        "communication-cognition-nature:short-text-translation"
+      ],
+      "similarity_type": "language_transfer",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Rozmowa ćwiczy używanie języka. Tłumaczenie ustne przenosi krótką wypowiedź między językami. Tłumaczenie pisemne przenosi krótki tekst i zachowuje sens oraz ton. To trzy różne produkty, nie jedna ogólna umiejętność językowa, dopóki człowiek nie zdecyduje inaczej.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Rozmowa w języku obcym jest interakcją; tłumaczenie ustne przekazuje wypowiedź na bieżąco; tłumaczenie pisemne tworzy tekst docelowy z zachowaniem sensu i tonu. Różne produkty i ograniczenia uzasadniają trzy osobne skille.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:transcription-vs-history-research",
+      "proposal_ids": [
+        "communication-cognition-nature:transcribe-historical-letters",
+        "technology-science-niches:genealogy-research",
+        "technology-science-niches:local-history-research"
+      ],
+      "similarity_type": "historical_sources",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Transkrypcja zamienia list odręczny na wierny zapis i oznacza niepewne znaki. Genealogia i historia lokalna budują udokumentowaną odpowiedź z wielu źródeł. Wspólny materiał historyczny nie jest tym samym ćwiczeniem.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Transkrypcja jest wiernym odczytem i zapisem źródła, z oznaczaniem niepewnych fragmentów; genealogia i historia lokalna budują wnioski z wielu źródeł. Wspólna tematyka historyczna nie wystarcza do scalenia.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:astronomical-image-vs-sky-observation",
+      "proposal_ids": [
+        "communication-cognition-nature:astronomical-image-analysis-basics",
+        "technology-science-niches:sky-observation"
+      ],
+      "similarity_type": "astronomy",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Pack-04 opisuje cechy na obrazie z teleskopu i granice tego obrazu. Pack-03 opisuje powtarzalną obserwację nieba na żywo. Recenzja pack-04 potraktowała programy Astronomical League jako inspirację dla już istniejącej obserwacji, a nie jako nowy skill.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Analiza obrazu astronomicznego interpretuje dane już zarejestrowane i ograniczenia obrazu; obserwacja nieba polega na planowaniu i prowadzeniu obserwacji obiektów. Zachować osobno, pod warunkiem że opis analizy obrazu nie powtarza ogólnej obserwacji.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    },
+    {
+      "group_id": "v3:georeference-vs-map-making",
+      "proposal_ids": [
+        "communication-cognition-nature:georeference-collection-records",
+        "technology-science-niches:digital-map-making",
+        "communication-cognition-nature:topographic-map-reading"
+      ],
+      "similarity_type": "place_on_a_map",
+      "confidence": "medium",
+      "status": "recommended_not_final",
+      "decision_taken": false,
+      "reason": "Georeferencja dopasowuje opis miejsca z rekordu zbioru do możliwego punktu i zostawia niepewność. Cyfrowa mapa układa warstwy pod pytanie. Czytanie mapy topograficznej wiąże znaki z terenem.",
+      "recommendation": "keep_separate_pending_review",
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "recommendation_rationale": "Georeferencja dopasowuje istniejący opis/obraz do lokalizacji przestrzennej i zapisuje niepewność; tworzenie mapy cyfrowej dobiera warstwy i wizualizuje odpowiedź na pytanie; czytanie mapy topograficznej interpretuje gotową mapę. Trzy różne zadania.",
+      "required_follow_up": "Kryteria w v3 już rozdzielają praktyki. Dalsza kontrola zostaje przy człowieku. Nie scalono, nie usunięto i nie nadano statusu produkcyjnego."
+    }
+  ],
+  "editorial_recommendation_source": "skills-pilot/pack-04-followup-review/cross-pilot-decisions-v3.json",
+  "level_text_check": "Porównano nazwy, opisy i kryteria trzech poziomów w pilot-proposals-v3.jsonl. Każda propozycja w grupie mierzy inny produkt albo zachowanie. Treści propozycji nie zmieniano."
+}

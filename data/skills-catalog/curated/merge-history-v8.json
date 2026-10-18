@@ -1,0 +1,2248 @@
+{
+  "schema_version": 1,
+  "destructive": false,
+  "proposals_deleted": 0,
+  "note": "Mappings from pack-14 candidates onto an existing or new proposal. No raw row was deleted. v7 was not edited.",
+  "records": [
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-a-claim-and-an-example",
+      "mapped_proposal_id": "practice-expansion-14:mark-a-claim-and-an-example",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-who-is-quoted",
+      "mapped_proposal_id": "practice-expansion-14:name-who-is-quoted",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:separate-an-ad-from-the-report",
+      "mapped_proposal_id": "practice-expansion-14:separate-an-ad-from-the-report",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-a-claim-you-can-check",
+      "mapped_proposal_id": "practice-expansion-14:write-a-claim-you-can-check",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:find-a-number-that-changed",
+      "mapped_proposal_id": "practice-expansion-14:find-a-number-that-changed",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-the-audience-of-a-poster",
+      "mapped_proposal_id": "practice-expansion-14:name-the-audience-of-a-poster",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tell-a-preview-from-a-review",
+      "mapped_proposal_id": "practice-expansion-14:tell-a-preview-from-a-review",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:find-which-date-is-which",
+      "mapped_proposal_id": "practice-expansion-14:find-which-date-is-which",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-a-judging-word",
+      "mapped_proposal_id": "practice-expansion-14:mark-a-judging-word",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-one-absence",
+      "mapped_proposal_id": "practice-expansion-14:name-one-absence",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:test-a-caption-against-the-picture",
+      "mapped_proposal_id": "practice-expansion-14:test-a-caption-against-the-picture",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:save-a-clip-with-its-page",
+      "mapped_proposal_id": "practice-expansion-14:save-a-clip-with-its-page",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:turn-a-headline-into-a-question",
+      "mapped_proposal_id": "practice-expansion-14:turn-a-headline-into-a-question",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:say-when-a-number-is-rounded",
+      "mapped_proposal_id": "practice-expansion-14:say-when-a-number-is-rounded",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:box-the-selling-part",
+      "mapped_proposal_id": "practice-expansion-14:box-the-selling-part",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-what-would-change-your-mind",
+      "mapped_proposal_id": "practice-expansion-14:write-what-would-change-your-mind",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:take-an-offer-and-add-a-fact",
+      "mapped_proposal_id": "practice-expansion-14:take-an-offer-and-add-a-fact",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:retell-from-the-other-seat",
+      "mapped_proposal_id": "practice-expansion-14:retell-from-the-other-seat",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stop-at-the-turn",
+      "mapped_proposal_id": "practice-expansion-14:stop-at-the-turn",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:describe-a-room-by-three-sounds",
+      "mapped_proposal_id": "practice-expansion-14:describe-a-room-by-three-sounds",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:change-one-rule-and-play",
+      "mapped_proposal_id": "practice-expansion-14:change-one-rule-and-play",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:give-a-character-one-want",
+      "mapped_proposal_id": "practice-expansion-14:give-a-character-one-want",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:order-six-sketches",
+      "mapped_proposal_id": "practice-expansion-14:order-six-sketches",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:cut-until-the-turn-remains",
+      "mapped_proposal_id": "practice-expansion-14:cut-until-the-turn-remains",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hand-over-the-next-line",
+      "mapped_proposal_id": "practice-expansion-14:hand-over-the-next-line",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:set-a-scene-with-three-objects",
+      "mapped_proposal_id": "practice-expansion-14:set-a-scene-with-three-objects",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:repeat-a-made-up-fact",
+      "mapped_proposal_id": "practice-expansion-14:repeat-a-made-up-fact",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:end-on-a-picture",
+      "mapped_proposal_id": "practice-expansion-14:end-on-a-picture",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:answer-as-the-character",
+      "mapped_proposal_id": "practice-expansion-14:answer-as-the-character",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:swap-two-events",
+      "mapped_proposal_id": "practice-expansion-14:swap-two-events",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:leave-a-prop-for-the-next-person",
+      "mapped_proposal_id": "practice-expansion-14:leave-a-prop-for-the-next-person",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:start-from-a-sound",
+      "mapped_proposal_id": "practice-expansion-14:start-from-a-sound",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:keep-one-reveal-for-the-end",
+      "mapped_proposal_id": "practice-expansion-14:keep-one-reveal-for-the-end",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-year-on-a-building",
+      "mapped_proposal_id": "practice-expansion-14:read-a-year-on-a-building",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:find-one-change-in-an-old-photo",
+      "mapped_proposal_id": "practice-expansion-14:find-one-change-in-an-old-photo",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:copy-an-inscription-and-mark-a-doubt",
+      "mapped_proposal_id": "practice-expansion-14:copy-an-inscription-and-mark-a-doubt",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:say-who-a-memorial-speaks-to",
+      "mapped_proposal_id": "practice-expansion-14:say-who-a-memorial-speaks-to",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:order-objects-by-wear",
+      "mapped_proposal_id": "practice-expansion-14:order-objects-by-wear",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-a-guess-about-a-place-name",
+      "mapped_proposal_id": "practice-expansion-14:mark-a-guess-about-a-place-name",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-one-dating-clue",
+      "mapped_proposal_id": "practice-expansion-14:name-one-dating-clue",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:separate-a-memory-from-a-paper",
+      "mapped_proposal_id": "practice-expansion-14:separate-a-memory-from-a-paper",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:copy-a-maker-mark",
+      "mapped_proposal_id": "practice-expansion-14:copy-a-maker-mark",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-what-a-plaque-does-not-say",
+      "mapped_proposal_id": "practice-expansion-14:ask-what-a-plaque-does-not-say",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:find-a-changed-word",
+      "mapped_proposal_id": "practice-expansion-14:find-a-changed-word",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:place-a-song-with-a-named-clue",
+      "mapped_proposal_id": "practice-expansion-14:place-a-song-with-a-named-clue",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:copy-an-old-spelling",
+      "mapped_proposal_id": "practice-expansion-14:copy-an-old-spelling",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-name-on-a-bench",
+      "mapped_proposal_id": "practice-expansion-14:read-a-name-on-a-bench",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:note-a-repair-on-an-old-object",
+      "mapped_proposal_id": "practice-expansion-14:note-a-repair-on-an-old-object",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:change-one-fold-on-a-paper-plane",
+      "mapped_proposal_id": "practice-expansion-14:change-one-fold-on-a-paper-plane",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:watch-water-on-a-glass",
+      "mapped_proposal_id": "practice-expansion-14:watch-water-on-a-glass",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-a-puddle-and-return",
+      "mapped_proposal_id": "practice-expansion-14:mark-a-puddle-and-return",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:roll-two-shapes",
+      "mapped_proposal_id": "practice-expansion-14:roll-two-shapes",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tip-a-balanced-ruler",
+      "mapped_proposal_id": "practice-expansion-14:tip-a-balanced-ruler",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:watch-a-salt-solution",
+      "mapped_proposal_id": "practice-expansion-14:watch-a-salt-solution",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:listen-for-an-echo",
+      "mapped_proposal_id": "practice-expansion-14:listen-for-an-echo",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:bend-two-straw-shapes",
+      "mapped_proposal_id": "practice-expansion-14:bend-two-straw-shapes",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:overlap-two-color-films",
+      "mapped_proposal_id": "practice-expansion-14:overlap-two-color-films",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:time-two-spinners",
+      "mapped_proposal_id": "practice-expansion-14:time-two-spinners",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:fold-a-paper-span",
+      "mapped_proposal_id": "practice-expansion-14:fold-a-paper-span",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:roll-a-ball-on-two-floors",
+      "mapped_proposal_id": "practice-expansion-14:roll-a-ball-on-two-floors",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tap-two-lids",
+      "mapped_proposal_id": "practice-expansion-14:tap-two-lids",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stretch-a-band-and-listen",
+      "mapped_proposal_id": "practice-expansion-14:stretch-a-band-and-listen",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:weigh-two-shapes-of-clay",
+      "mapped_proposal_id": "practice-expansion-14:weigh-two-shapes-of-clay",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:drop-a-sheet-and-a-crumple",
+      "mapped_proposal_id": "practice-expansion-14:drop-a-sheet-and-a-crumple",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:slide-a-block-on-two-surfaces",
+      "mapped_proposal_id": "practice-expansion-14:slide-a-block-on-two-surfaces",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:see-which-way-a-spinner-turns",
+      "mapped_proposal_id": "practice-expansion-14:see-which-way-a-spinner-turns",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-a-run-of-show",
+      "mapped_proposal_id": "practice-expansion-14:write-a-run-of-show",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-a-backup-person",
+      "mapped_proposal_id": "practice-expansion-14:name-a-backup-person",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:count-chairs-against-a-list",
+      "mapped_proposal_id": "practice-expansion-14:count-chairs-against-a-list",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-where-you-go-if-it-rains",
+      "mapped_proposal_id": "practice-expansion-14:write-where-you-go-if-it-rains",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:set-a-lost-and-found-spot",
+      "mapped_proposal_id": "practice-expansion-14:set-a-lost-and-found-spot",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:note-who-has-the-key",
+      "mapped_proposal_id": "practice-expansion-14:note-who-has-the-key",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-feedback-cards",
+      "mapped_proposal_id": "practice-expansion-14:read-feedback-cards",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-what-a-late-person-needs",
+      "mapped_proposal_id": "practice-expansion-14:write-what-a-late-person-needs",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:post-the-end-time",
+      "mapped_proposal_id": "practice-expansion-14:post-the-end-time",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:agree-a-photo-rule",
+      "mapped_proposal_id": "practice-expansion-14:agree-a-photo-rule",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:make-a-readable-name-card",
+      "mapped_proposal_id": "practice-expansion-14:make-a-readable-name-card",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:give-pairs-one-question",
+      "mapped_proposal_id": "practice-expansion-14:give-pairs-one-question",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tick-borrowed-things-back",
+      "mapped_proposal_id": "practice-expansion-14:tick-borrowed-things-back",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-speaking-order",
+      "mapped_proposal_id": "practice-expansion-14:write-the-speaking-order",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:match-the-room-to-the-start",
+      "mapped_proposal_id": "practice-expansion-14:show-what-you-moved",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:put-the-agenda-at-the-entrance",
+      "mapped_proposal_id": "practice-expansion-14:put-the-agenda-at-the-entrance",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:leave-a-path-to-the-door",
+      "mapped_proposal_id": "practice-expansion-14:leave-a-path-to-the-door",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:point-with-one-arrow",
+      "mapped_proposal_id": "practice-expansion-14:point-with-one-arrow",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:shoot-from-two-heights",
+      "mapped_proposal_id": "practice-expansion-14:shoot-from-two-heights",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:label-the-one-change",
+      "mapped_proposal_id": "practice-expansion-14:label-the-one-change",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:make-the-heading-the-only-large-type",
+      "mapped_proposal_id": "practice-expansion-14:make-the-heading-the-only-large-type",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-someone-to-name-your-mark",
+      "mapped_proposal_id": "practice-expansion-14:ask-someone-to-name-your-mark",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:keep-the-label-in-the-crop",
+      "mapped_proposal_id": "practice-expansion-14:keep-the-label-in-the-crop",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:use-one-color-for-the-change",
+      "mapped_proposal_id": "practice-expansion-14:use-one-color-for-the-change",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:draw-the-hand-on-the-step",
+      "mapped_proposal_id": "practice-expansion-14:draw-the-hand-on-the-step",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-where-the-eye-went",
+      "mapped_proposal_id": "practice-expansion-14:ask-where-the-eye-went",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:put-a-known-object-for-scale",
+      "mapped_proposal_id": "practice-expansion-14:put-a-known-object-for-scale",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:number-steps-on-one-drawing",
+      "mapped_proposal_id": "practice-expansion-14:number-steps-on-one-drawing",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:remove-a-mark-that-does-not-explain",
+      "mapped_proposal_id": "practice-expansion-14:remove-a-mark-that-does-not-explain",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:caption-the-change",
+      "mapped_proposal_id": "practice-expansion-14:caption-the-change",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:record-their-word-for-a-symbol",
+      "mapped_proposal_id": "practice-expansion-14:record-their-word-for-a-symbol",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:show-every-step-of-one-example",
+      "mapped_proposal_id": "practice-expansion-14:show-every-step-of-one-example",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-which-answer-used-the-notes",
+      "mapped_proposal_id": "practice-expansion-14:mark-which-answer-used-the-notes",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:show-the-line-that-fixes-a-step",
+      "mapped_proposal_id": "practice-expansion-14:show-the-line-that-fixes-a-step",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:watch-them-do-the-next-step",
+      "mapped_proposal_id": "practice-expansion-14:watch-them-do-the-next-step",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-question-that-returned",
+      "mapped_proposal_id": "practice-expansion-14:write-the-question-that-returned",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-tomorrow-practice",
+      "mapped_proposal_id": "practice-expansion-14:name-tomorrow-practice",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:pick-the-explanation-you-can-use",
+      "mapped_proposal_id": "practice-expansion-14:pick-the-explanation-you-can-use",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:log-a-mistake-and-its-cue",
+      "mapped_proposal_id": "practice-expansion-14:log-a-mistake-and-its-cue",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:teach-with-the-object-in-their-hands",
+      "mapped_proposal_id": "practice-expansion-14:teach-with-the-object-in-their-hands",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-what-they-expect",
+      "mapped_proposal_id": "practice-expansion-14:ask-what-they-expect",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-a-hint-that-points",
+      "mapped_proposal_id": "practice-expansion-14:write-a-hint-that-points",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:try-the-step-on-a-new-case",
+      "mapped_proposal_id": "practice-expansion-14:try-the-step-on-a-new-case",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:cover-the-answer-and-try",
+      "mapped_proposal_id": "practice-expansion-14:cover-the-answer-and-try",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-step-in-their-words",
+      "mapped_proposal_id": "practice-expansion-14:write-the-step-in-their-words",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-time-back",
+      "mapped_proposal_id": "practice-expansion-14:write-the-time-back",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stop-after-two-options",
+      "mapped_proposal_id": "practice-expansion-14:stop-after-two-options",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:repeat-the-no",
+      "mapped_proposal_id": "practice-expansion-14:repeat-the-no",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-the-idea-you-oppose",
+      "mapped_proposal_id": "practice-expansion-14:name-the-idea-you-oppose",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-what-they-want-from-you",
+      "mapped_proposal_id": "practice-expansion-14:ask-what-they-want-from-you",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-owner-of-the-decision",
+      "mapped_proposal_id": "practice-expansion-14:write-the-owner-of-the-decision",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-the-next-speaker",
+      "mapped_proposal_id": "practice-expansion-14:name-the-next-speaker",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-what-you-will-not-do",
+      "mapped_proposal_id": "practice-expansion-14:write-what-you-will-not-do",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stop-your-own-sentence",
+      "mapped_proposal_id": "practice-expansion-14:stop-your-own-sentence",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-the-decision-back",
+      "mapped_proposal_id": "practice-expansion-14:read-the-decision-back",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-closed-then-open",
+      "mapped_proposal_id": "practice-expansion-14:ask-closed-then-open",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:say-the-assumption-aloud",
+      "mapped_proposal_id": "practice-expansion-14:say-the-assumption-aloud",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-when-you-will-check",
+      "mapped_proposal_id": "practice-expansion-14:write-when-you-will-check",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-who-changed-the-decision",
+      "mapped_proposal_id": "practice-expansion-14:name-who-changed-the-decision",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:offer-a-smaller-step",
+      "mapped_proposal_id": "practice-expansion-14:offer-a-smaller-step",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:separate-the-fact-you-both-see",
+      "mapped_proposal_id": "practice-expansion-14:separate-the-fact-you-both-see",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:rinse-a-brush-clear",
+      "mapped_proposal_id": "practice-expansion-14:rinse-a-brush-clear",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mend-a-tear-from-the-back",
+      "mapped_proposal_id": "practice-expansion-14:mend-a-tear-from-the-back",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ease-an-edge-until-cloth-passes",
+      "mapped_proposal_id": "practice-expansion-14:ease-an-edge-until-cloth-passes",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:oil-a-dry-spoon-and-wipe-it",
+      "mapped_proposal_id": "practice-expansion-14:oil-a-dry-spoon-and-wipe-it",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:press-one-leaf-and-date-it",
+      "mapped_proposal_id": "practice-expansion-14:press-one-leaf-and-date-it",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:bind-a-cord-end",
+      "mapped_proposal_id": "practice-expansion-14:bind-a-cord-end",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:sew-a-short-hem",
+      "mapped_proposal_id": "practice-expansion-14:sew-a-short-hem",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:choose-a-closer-thread",
+      "mapped_proposal_id": "practice-expansion-14:choose-a-closer-thread",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:rest-a-brush-flat",
+      "mapped_proposal_id": "practice-expansion-14:rest-a-brush-flat",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hang-a-bundle-where-air-reaches",
+      "mapped_proposal_id": "practice-expansion-14:hang-a-bundle-where-air-reaches",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:wax-a-thread",
+      "mapped_proposal_id": "practice-expansion-14:wax-a-thread",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:patch-paper-from-behind",
+      "mapped_proposal_id": "practice-expansion-14:patch-paper-from-behind",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:coil-a-hose-with-the-end-on-top",
+      "mapped_proposal_id": "practice-expansion-13:coil-a-cable-so-it-does-not-kink",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:note-the-light-on-a-color",
+      "mapped_proposal_id": "practice-expansion-14:note-the-light-on-a-color",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:check-a-strip-at-both-ends",
+      "mapped_proposal_id": "practice-expansion-14:check-a-strip-at-both-ends",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stitch-a-pamphlet",
+      "mapped_proposal_id": "practice-expansion-14:stitch-a-pamphlet",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:follow-a-brush-label-or-stop",
+      "mapped_proposal_id": "practice-expansion-14:follow-a-brush-label-or-stop",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:file-a-snag-on-wood",
+      "mapped_proposal_id": "practice-expansion-14:ease-an-edge-until-cloth-passes",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:sort-screws-by-head",
+      "mapped_proposal_id": "practice-expansion-14:sort-screws-by-head",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:test-glue-on-a-scrap",
+      "mapped_proposal_id": "practice-expansion-14:test-glue-on-a-scrap",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:sketch-posture-without-a-name",
+      "mapped_proposal_id": "practice-expansion-14:sketch-posture-without-a-name",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:count-calls-and-write-the-place",
+      "mapped_proposal_id": "practice-expansion-14:count-calls-and-write-the-place",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:note-a-tree-lean",
+      "mapped_proposal_id": "practice-expansion-14:note-a-tree-lean",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:compare-two-marks-and-stop",
+      "mapped_proposal_id": "practice-expansion-14:compare-two-marks-and-stop",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:note-open-and-closed-blooms",
+      "mapped_proposal_id": "practice-expansion-14:note-open-and-closed-blooms",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:show-the-place-matches-the-start",
+      "mapped_proposal_id": "practice-expansion-14:show-what-you-moved",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:show-what-you-carried-out",
+      "mapped_proposal_id": "practice-expansion-14:show-what-you-carried-out",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:draw-one-landmark-on-the-skyline",
+      "mapped_proposal_id": "practice-expansion-14:draw-one-landmark-on-the-skyline",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-the-wind-by-a-landmark",
+      "mapped_proposal_id": "practice-expansion-14:name-the-wind-by-a-landmark",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:measure-one-plant-and-date-it",
+      "mapped_proposal_id": "practice-expansion-14:measure-one-plant-and-date-it",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-three-sounds-on-a-line",
+      "mapped_proposal_id": "practice-expansion-14:mark-three-sounds-on-a-line",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-what-you-will-leave",
+      "mapped_proposal_id": "practice-expansion-14:name-what-you-will-leave",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:note-two-sides-of-a-path",
+      "mapped_proposal_id": "practice-expansion-14:note-two-sides-of-a-path",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:watch-a-cloud-shadow-cross",
+      "mapped_proposal_id": "practice-expansion-14:watch-a-cloud-shadow-cross",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:show-what-you-moved",
+      "mapped_proposal_id": "practice-expansion-14:show-what-you-moved",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:keep-an-original-unchanged",
+      "mapped_proposal_id": "practice-expansion-14:keep-an-original-unchanged",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-version-on-the-page",
+      "mapped_proposal_id": "practice-expansion-14:write-the-version-on-the-page",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:move-a-finished-draft-aside",
+      "mapped_proposal_id": "practice-expansion-14:move-a-finished-draft-aside",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:open-the-file-you-sent",
+      "mapped_proposal_id": "practice-expansion-14:open-the-file-you-sent",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-what-you-did-not-change",
+      "mapped_proposal_id": "practice-expansion-14:write-what-you-did-not-change",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:edit-only-the-new-page",
+      "mapped_proposal_id": "practice-expansion-14:edit-only-the-new-page",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:pick-the-latest-name-then-open-it",
+      "mapped_proposal_id": "practice-expansion-14:pick-the-latest-name-then-open-it",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:save-a-link-under-your-title",
+      "mapped_proposal_id": "practice-expansion-14:save-a-link-under-your-title",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-done-before-you-start",
+      "mapped_proposal_id": "practice-expansion-14:write-done-before-you-start",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:undo-the-last-change",
+      "mapped_proposal_id": "practice-expansion-14:undo-the-last-change",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-the-missing-piece",
+      "mapped_proposal_id": "practice-expansion-14:name-the-missing-piece",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-limit-first",
+      "mapped_proposal_id": "practice-expansion-14:write-the-limit-first",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stop-when-the-question-is-answered",
+      "mapped_proposal_id": "practice-expansion-14:stop-when-the-question-is-answered",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:list-what-stays",
+      "mapped_proposal_id": "practice-expansion-14:list-what-stays",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-the-question-before-search",
+      "mapped_proposal_id": "practice-expansion-14:write-the-question-before-search",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:rehearse-the-cut-on-scrap",
+      "mapped_proposal_id": "practice-expansion-14:rehearse-the-cut-on-scrap",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-a-line-tools-will-not-cross",
+      "mapped_proposal_id": "practice-expansion-14:mark-a-line-tools-will-not-cross",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:sit-where-they-can-see-you",
+      "mapped_proposal_id": "practice-expansion-14:sit-where-they-can-see-you",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-before-you-move-their-object",
+      "mapped_proposal_id": "practice-expansion-14:ask-before-you-move-their-object",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:leave-a-note-in-their-words",
+      "mapped_proposal_id": "practice-expansion-14:leave-a-note-in-their-words",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:agree-a-break-signal",
+      "mapped_proposal_id": "practice-expansion-13:agree-a-hand-signal",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:invite-the-quiet-person-once",
+      "mapped_proposal_id": "practice-expansion-14:invite-the-quiet-person-once",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stop-a-joke-that-leaves-someone-out",
+      "mapped_proposal_id": "practice-expansion-14:stop-a-joke-that-leaves-someone-out",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:close-a-gap-in-the-circle",
+      "mapped_proposal_id": "practice-expansion-14:close-a-gap-in-the-circle",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-a-question-for-the-meeting",
+      "mapped_proposal_id": "practice-expansion-14:write-a-question-for-the-meeting",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-closing-date",
+      "mapped_proposal_id": "practice-expansion-14:read-a-closing-date",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:find-where-a-form-goes-back",
+      "mapped_proposal_id": "practice-expansion-14:find-where-a-form-goes-back",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:compare-two-sets-of-hours",
+      "mapped_proposal_id": "practice-expansion-14:compare-two-sets-of-hours",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-rule-on-a-door",
+      "mapped_proposal_id": "practice-expansion-14:read-a-rule-on-a-door",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-ratio-as-parts",
+      "mapped_proposal_id": "practice-expansion-14:read-a-ratio-as-parts",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:check-a-walked-distance",
+      "mapped_proposal_id": "practice-expansion-14:check-a-walked-distance",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-the-time-left",
+      "mapped_proposal_id": "practice-expansion-14:read-the-time-left",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:pin-a-hem-before-you-sew",
+      "mapped_proposal_id": "practice-expansion-14:pin-a-hem-before-you-sew",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:fold-a-scarf-so-the-ends-meet",
+      "mapped_proposal_id": "practice-expansion-14:fold-a-scarf-so-the-ends-meet",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:find-a-repeat-in-a-tune",
+      "mapped_proposal_id": "practice-expansion-13:find-the-chorus",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mark-a-rest-while-you-clap",
+      "mapped_proposal_id": "practice-expansion-14:mark-a-rest-while-you-clap",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:name-a-loud-and-a-soft-moment",
+      "mapped_proposal_id": "practice-expansion-14:name-a-loud-and-a-soft-moment",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:follow-a-repeat-mark",
+      "mapped_proposal_id": "practice-expansion-14:follow-a-repeat-mark",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:stack-the-talking-piece",
+      "mapped_proposal_id": "practice-expansion-14:stack-the-talking-piece",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-their-words-on-a-parking-list",
+      "mapped_proposal_id": "practice-expansion-13:park-a-topic",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:repeat-the-word-they-used",
+      "mapped_proposal_id": "practice-expansion-14:repeat-the-word-they-used",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:set-a-sample-before-the-batch",
+      "mapped_proposal_id": "practice-expansion-14:set-a-sample-before-the-batch",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:label-left-and-right-on-a-photo",
+      "mapped_proposal_id": "practice-expansion-14:label-left-and-right-on-a-photo",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:trace-a-crack-you-will-not-fill",
+      "mapped_proposal_id": "practice-expansion-14:trace-a-crack-you-will-not-fill",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:make-a-rubbing-of-a-coin",
+      "mapped_proposal_id": "practice-expansion-13:make-a-rubbing-of-a-texture",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tie-a-luggage-label",
+      "mapped_proposal_id": "practice-expansion-14:tie-a-luggage-label",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-contents-page-to-a-page",
+      "mapped_proposal_id": "practice-expansion-14:read-a-contents-page-to-a-page",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:keep-a-quote-with-its-page",
+      "mapped_proposal_id": "broad-practice-expansion:cite-a-source-in-a-note",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-a-margin-question",
+      "mapped_proposal_id": "practice-expansion-14:write-a-margin-question",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:arrange-tools-in-the-order-you-use-them",
+      "mapped_proposal_id": "practice-expansion-14:arrange-tools-in-the-order-you-use-them",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:cover-a-finished-part",
+      "mapped_proposal_id": "practice-expansion-14:cover-a-finished-part",
+      "action": "accepted_as_new"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-arabic",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-polish",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-japanese",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-italian",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-mandarin",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-dutch",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-turkish",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-ukrainian",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-czech",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-greek",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-romanian",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-hungarian",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-finnish",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-korean",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-vietnamese",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-norwegian",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-danish",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-hebrew",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-thai",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-note-in-indonesian",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hold-another-chat-in-swedish",
+      "mapped_proposal_id": "communication-cognition-nature:foreign-language-conversation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hold-another-chat-in-portuguese",
+      "mapped_proposal_id": "communication-cognition-nature:foreign-language-conversation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hold-another-chat-in-german",
+      "mapped_proposal_id": "communication-cognition-nature:foreign-language-conversation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hold-another-chat-in-french",
+      "mapped_proposal_id": "communication-cognition-nature:foreign-language-conversation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hold-another-chat-in-spanish",
+      "mapped_proposal_id": "communication-cognition-nature:foreign-language-conversation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-banjo",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-mandolin",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-oboe",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-trombone",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-tuba",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-harp",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-bagpipes",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:learn-a-tune-on-the-sitar",
+      "mapped_proposal_id": "broad-practice-expansion:learn-a-tune-by-ear",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:poach-an-egg",
+      "mapped_proposal_id": "kitchen-finance:egg-preparation-techniques",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:bake-a-loaf-in-a-tin",
+      "mapped_proposal_id": "kitchen-finance:basic-baking-techniques",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:simmer-a-stew",
+      "mapped_proposal_id": "kitchen-finance:stock-and-broth-making",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:reduce-a-pan-sauce",
+      "mapped_proposal_id": "kitchen-finance:sauces-and-dressings",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:boil-pasta-only",
+      "mapped_proposal_id": "broad-practice-expansion:cook-pasta-and-sauce-it",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:steam-vegetables",
+      "mapped_proposal_id": "broad-practice-expansion:cook-vegetables-to-texture",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:bake-cookies",
+      "mapped_proposal_id": "kitchen-finance:basic-baking-techniques",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:chop-faster",
+      "mapped_proposal_id": "kitchen-finance:kitchen-knife-skills",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:cook-jasmine-rice",
+      "mapped_proposal_id": "kitchen-finance:cook-rice-reliably",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:brown-meat",
+      "mapped_proposal_id": "kitchen-finance:pan-searing-and-browning",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:make-gravy",
+      "mapped_proposal_id": "kitchen-finance:sauces-and-dressings",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:track-spending-in-an-app",
+      "mapped_proposal_id": "kitchen-finance:personal-budgeting-and-saving",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:compare-two-savings-rates",
+      "mapped_proposal_id": "kitchen-finance:compare-financial-offers",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:explain-compound-interest",
+      "mapped_proposal_id": "kitchen-finance:understand-interest-costs",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:run-a-longer-route",
+      "mapped_proposal_id": "movement-sport-dance:running-and-pacing",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:cycle-to-the-shops",
+      "mapped_proposal_id": "movement-sport-dance:cycling-fundamentals",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:swim-a-second-length",
+      "mapped_proposal_id": "movement-sport-dance:swimming-fundamentals",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hike-another-marked-path",
+      "mapped_proposal_id": "movement-sport-dance:hiking-and-trail-preparation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:dance-another-salsa-turn",
+      "mapped_proposal_id": "movement-sport-dance:salsa-dancing",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:give-a-talk-without-notes",
+      "mapped_proposal_id": "communication-cognition-nature:public-speaking-and-audience-adaptation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:listen-in-a-meeting",
+      "mapped_proposal_id": "communication-cognition-nature:active-listening",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:resolve-a-second-disagreement",
+      "mapped_proposal_id": "communication-cognition-nature:constructive-conflict-resolution",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:check-another-claim",
+      "mapped_proposal_id": "communication-cognition-nature:critical-thinking-and-evidence-checking",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:use-flashcards-again",
+      "mapped_proposal_id": "communication-cognition-nature:retrieval-practice",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-contours-on-a-new-map",
+      "mapped_proposal_id": "communication-cognition-nature:topographic-map-reading",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:orient-a-map-again",
+      "mapped_proposal_id": "communication-cognition-nature:compass-use-and-map-orientation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:back-up-a-phone",
+      "mapped_proposal_id": "general-practical-skills:backup-and-restore-personal-files",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:plan-a-picnic-event",
+      "mapped_proposal_id": "general-practical-skills:plan-a-small-event",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:edit-another-shared-doc",
+      "mapped_proposal_id": "general-practical-skills:edit-a-shared-document",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:book-another-table",
+      "mapped_proposal_id": "general-practical-skills:make-and-check-a-reservation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:play-rapid-chess",
+      "mapped_proposal_id": "broad-practice-expansion:play-chess",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:play-go-on-a-small-board",
+      "mapped_proposal_id": "broad-practice-expansion:play-go",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:solve-a-hard-sudoku",
+      "mapped_proposal_id": "communication-cognition-nature:sudoku-solving-strategies",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:take-another-clear-photo",
+      "mapped_proposal_id": "broad-practice-expansion:take-a-clear-photo",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:trim-another-clip",
+      "mapped_proposal_id": "broad-practice-expansion:trim-a-short-video",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:keep-time-on-a-table",
+      "mapped_proposal_id": "broad-practice-expansion:keep-a-steady-beat",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:match-a-sung-pitch",
+      "mapped_proposal_id": "broad-practice-expansion:match-a-pitch",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:draw-a-second-object",
+      "mapped_proposal_id": "broad-practice-expansion:draw-an-object-you-see",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mix-a-second-color",
+      "mapped_proposal_id": "broad-practice-expansion:mix-a-color-you-can-match",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:water-when-the-calendar-says",
+      "mapped_proposal_id": "broad-practice-expansion:water-by-checking-the-soil",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:repot-into-a-larger-pot",
+      "mapped_proposal_id": "broad-practice-expansion:repot-a-plant",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:host-another-meal",
+      "mapped_proposal_id": "broad-practice-expansion:host-a-simple-meal",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:split-another-bill",
+      "mapped_proposal_id": "broad-practice-expansion:split-a-shared-cost",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-second-chart",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-published-chart",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:organize-downloads",
+      "mapped_proposal_id": "broad-practice-expansion:organize-files-you-can-find",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-formula",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-spreadsheet-formula",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:spot-another-suspicious-message",
+      "mapped_proposal_id": "broad-practice-expansion:recognize-a-suspicious-message",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:pack-for-a-weekend",
+      "mapped_proposal_id": "broad-practice-expansion:pack-for-a-specific-trip",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:plan-next-week",
+      "mapped_proposal_id": "broad-practice-expansion:plan-a-week-with-buffers",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tell-another-true-story",
+      "mapped_proposal_id": "broad-practice-expansion:tell-a-short-true-story",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:decline-another-request",
+      "mapped_proposal_id": "broad-practice-expansion:decline-a-request",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:introduce-yourself-again",
+      "mapped_proposal_id": "broad-practice-expansion:introduce-yourself-in-one-minute",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:squat-deeper",
+      "mapped_proposal_id": "broad-practice-expansion:squat-with-control",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:hold-a-plank-longer",
+      "mapped_proposal_id": "broad-practice-expansion:hold-a-plank-with-form",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:juggle-for-longer",
+      "mapped_proposal_id": "broad-practice-expansion:juggle-three-balls",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:pitch-a-different-tent",
+      "mapped_proposal_id": "broad-practice-expansion:pitch-a-tent",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:mend-a-second-puncture",
+      "mapped_proposal_id": "broad-practice-expansion:mend-a-bicycle-puncture",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-train-board",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-timetable",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:search-the-catalog-again",
+      "mapped_proposal_id": "broad-practice-expansion:use-a-library-catalog",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:annotate-another-page",
+      "mapped_proposal_id": "broad-practice-expansion:annotate-a-text",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:solve-the-cube-faster",
+      "mapped_proposal_id": "broad-practice-expansion:solve-a-cube-and-explain",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:play-another-draughts-game",
+      "mapped_proposal_id": "broad-practice-expansion:play-draughts",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:keep-score-in-a-new-game",
+      "mapped_proposal_id": "broad-practice-expansion:keep-score-so-others-can-check",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:give-credit-again",
+      "mapped_proposal_id": "broad-practice-expansion:give-credit",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:ask-for-help-again",
+      "mapped_proposal_id": "broad-practice-expansion:ask-for-help-specifically",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:track-another-project",
+      "mapped_proposal_id": "broad-practice-expansion:track-a-small-project",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:cancel-another-subscription",
+      "mapped_proposal_id": "broad-practice-expansion:cancel-an-unwanted-subscription",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-another-payslip",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-payslip-or-invoice",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:check-the-windows",
+      "mapped_proposal_id": "broad-practice-expansion:check-a-home-before-you-leave",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-another-journal-page",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-journal-entry",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-a-second-scene",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-short-scene",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:review-another-book",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-review-with-evidence",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:estimate-another-length",
+      "mapped_proposal_id": "broad-practice-expansion:estimate-then-measure",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:check-a-cafe-receipt",
+      "mapped_proposal_id": "broad-practice-expansion:check-a-receipt",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:convert-another-unit",
+      "mapped_proposal_id": "broad-practice-expansion:convert-a-unit-and-check",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:teach-back-again",
+      "mapped_proposal_id": "broad-practice-expansion:teach-back-a-concept",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:make-notes-for-another-chapter",
+      "mapped_proposal_id": "broad-practice-expansion:make-notes-you-can-study",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:run-another-agenda",
+      "mapped_proposal_id": "broad-practice-expansion:run-a-short-agenda",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:choose-with-another-list",
+      "mapped_proposal_id": "broad-practice-expansion:choose-with-written-reasons",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:brew-tea-by-taste",
+      "mapped_proposal_id": "broad-practice-expansion:brew-coffee-by-taste",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:season-a-sauce",
+      "mapped_proposal_id": "broad-practice-expansion:season-food-by-tasting",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:roast-another-tray",
+      "mapped_proposal_id": "broad-practice-expansion:roast-a-tray-of-vegetables",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:plan-another-week-of-meals",
+      "mapped_proposal_id": "broad-practice-expansion:plan-a-week-of-meals",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:shop-another-list",
+      "mapped_proposal_id": "broad-practice-expansion:shop-from-a-meal-plan",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:scale-another-recipe",
+      "mapped_proposal_id": "broad-practice-expansion:scale-a-recipe",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:wash-by-a-new-label",
+      "mapped_proposal_id": "broad-practice-expansion:wash-clothes-by-the-label",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:rewrite-another-notice",
+      "mapped_proposal_id": "practice-expansion-13:rewrite-in-plain-language",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:describe-another-image",
+      "mapped_proposal_id": "practice-expansion-13:describe-an-image-aloud",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:compare-two-more-objects",
+      "mapped_proposal_id": "practice-expansion-13:compare-two-gallery-objects",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:show-another-lever",
+      "mapped_proposal_id": "practice-expansion-13:show-a-lever-at-work",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:cluster-another-set",
+      "mapped_proposal_id": "practice-expansion-13:cluster-ideas",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:brainstorm-a-second-question",
+      "mapped_proposal_id": "practice-expansion-13:run-a-brainstorm",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:make-another-pinch-pot",
+      "mapped_proposal_id": "practice-expansion-13:make-a-pinch-pot",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:take-another-soundwalk",
+      "mapped_proposal_id": "practice-expansion-13:take-a-soundwalk",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:apologize-again",
+      "mapped_proposal_id": "practice-expansion-13:apologize-and-offer-a-repair",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-second-notice",
+      "mapped_proposal_id": "practice-expansion-13:read-a-public-notice",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tighten-another-screw",
+      "mapped_proposal_id": "practice-expansion-13:tighten-a-visible-screw",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:grow-peas-from-seed",
+      "mapped_proposal_id": "technology-science-niches:growing-plants-from-seed",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:watch-a-second-bird",
+      "mapped_proposal_id": "technology-science-niches:wildlife-observation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:observe-a-constellation",
+      "mapped_proposal_id": "technology-science-niches:sky-observation",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-a-shorter-email",
+      "mapped_proposal_id": "communication-cognition-nature:effective-email-writing",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:play-xiangqi-again",
+      "mapped_proposal_id": "communication-cognition-nature:play-xiangqi",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-another-technical-drawing",
+      "mapped_proposal_id": "general-practical-skills:read-a-technical-drawing",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:compare-two-toasters",
+      "mapped_proposal_id": "general-practical-skills:compare-equipment-before-buying",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:film-another-stable-clip",
+      "mapped_proposal_id": "broad-practice-expansion:film-a-short-stable-clip",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:work-another-focus-block",
+      "mapped_proposal_id": "broad-practice-expansion:work-a-focus-block",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:clear-another-drain",
+      "mapped_proposal_id": "broad-practice-expansion:clear-a-drain-with-a-plunger",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:fold-another-paper-box",
+      "mapped_proposal_id": "broad-practice-expansion:fold-a-paper-box",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:tie-another-knot",
+      "mapped_proposal_id": "broad-practice-expansion:tie-a-knot-that-holds",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:sew-another-button",
+      "mapped_proposal_id": "broad-practice-expansion:sew-a-button-back-on",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:iron-another-shirt",
+      "mapped_proposal_id": "broad-practice-expansion:iron-a-shirt",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:read-a-water-bill",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-household-bill",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:record-the-weather-again",
+      "mapped_proposal_id": "communication-cognition-nature:record-and-interpret-local-weather",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:write-thanks-again",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-specific-thanks",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:build-another-paper-model",
+      "mapped_proposal_id": "technology-science-niches:paper-cardboard-model-making",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-controlled-kicking",
+      "mapped_proposal_id": "movement-sport-dance:controlled-kicking",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-striking-with-control",
+      "mapped_proposal_id": "movement-sport-dance:striking-with-control",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-hopping-and-rhythmic-skipping",
+      "mapped_proposal_id": "movement-sport-dance:hopping-and-rhythmic-skipping",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-jumping-and-landing",
+      "mapped_proposal_id": "movement-sport-dance:jumping-and-landing",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-hip-hop-dance-foundations",
+      "mapped_proposal_id": "movement-sport-dance:hip-hop-dance-foundations",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-contemporary-dance-foundations",
+      "mapped_proposal_id": "movement-sport-dance:contemporary-dance-foundations",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-jazz-dance-foundations",
+      "mapped_proposal_id": "movement-sport-dance:jazz-dance-foundations",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-breaking-foundations",
+      "mapped_proposal_id": "movement-sport-dance:breaking-foundations",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-crossword-solving-strategies",
+      "mapped_proposal_id": "communication-cognition-nature:crossword-solving-strategies",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-jigsaw-puzzle-solving",
+      "mapped_proposal_id": "communication-cognition-nature:jigsaw-puzzle-solving",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-orienteering-route-choice",
+      "mapped_proposal_id": "communication-cognition-nature:orienteering-route-choice",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-capture-speech-in-shorthand",
+      "mapped_proposal_id": "general-practical-skills:capture-speech-in-shorthand",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-notice-signs-of-wood-rot",
+      "mapped_proposal_id": "general-practical-skills:notice-signs-of-wood-rot",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-check-a-surface-before-painting",
+      "mapped_proposal_id": "general-practical-skills:check-a-surface-before-painting",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-make-a-simple-technical-drawing",
+      "mapped_proposal_id": "general-practical-skills:make-a-simple-technical-drawing",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-explain-a-small-crowdfunding-project",
+      "mapped_proposal_id": "general-practical-skills:explain-a-small-crowdfunding-project",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-explain-how-a-visual-communicates",
+      "mapped_proposal_id": "communication-cognition-nature:explain-how-a-visual-communicates",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-sketch-what-you-see-in-the-sky",
+      "mapped_proposal_id": "communication-cognition-nature:sketch-what-you-see-in-the-sky",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-cook-dried-beans",
+      "mapped_proposal_id": "broad-practice-expansion:cook-dried-beans",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-cook-onions-until-sweet",
+      "mapped_proposal_id": "broad-practice-expansion:cook-onions-until-sweet",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-use-leftovers-on-purpose",
+      "mapped_proposal_id": "broad-practice-expansion:use-leftovers-on-purpose",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-make-soup-from-what-you-have",
+      "mapped_proposal_id": "broad-practice-expansion:make-soup-from-what-you-have",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-mend-a-small-seam",
+      "mapped_proposal_id": "broad-practice-expansion:mend-a-small-seam",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-hand-wash-a-garment",
+      "mapped_proposal_id": "broad-practice-expansion:hand-wash-a-garment",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-make-a-bed-that-stays",
+      "mapped_proposal_id": "broad-practice-expansion:make-a-bed-that-stays",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-hang-a-light-frame",
+      "mapped_proposal_id": "broad-practice-expansion:hang-a-light-frame",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-empty-a-lint-filter",
+      "mapped_proposal_id": "broad-practice-expansion:empty-a-lint-filter",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-load-a-dishwasher",
+      "mapped_proposal_id": "broad-practice-expansion:load-a-dishwasher",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-descale-by-the-product-label",
+      "mapped_proposal_id": "broad-practice-expansion:descale-by-the-product-label",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-estimate-how-long-work-takes",
+      "mapped_proposal_id": "broad-practice-expansion:estimate-how-long-work-takes",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-split-work-into-next-actions",
+      "mapped_proposal_id": "broad-practice-expansion:split-work-into-next-actions",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-protect-one-priority",
+      "mapped_proposal_id": "broad-practice-expansion:protect-one-priority",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-review-a-week",
+      "mapped_proposal_id": "broad-practice-expansion:review-a-week",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-ask-a-useful-question",
+      "mapped_proposal_id": "broad-practice-expansion:ask-a-useful-question",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-summarize-what-someone-said",
+      "mapped_proposal_id": "broad-practice-expansion:summarize-what-someone-said",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-write-steps-someone-can-follow",
+      "mapped_proposal_id": "broad-practice-expansion:write-steps-someone-can-follow",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-read-aloud-for-a-listener",
+      "mapped_proposal_id": "broad-practice-expansion:read-aloud-for-a-listener",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-agree-a-simple-exchange",
+      "mapped_proposal_id": "broad-practice-expansion:agree-a-simple-exchange",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-let-everyone-speak",
+      "mapped_proposal_id": "broad-practice-expansion:let-everyone-speak",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-remember-a-list-by-a-route",
+      "mapped_proposal_id": "broad-practice-expansion:remember-a-list-by-a-route",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-document-a-process",
+      "mapped_proposal_id": "broad-practice-expansion:document-a-process",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-write-a-group-update",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-group-update",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-keep-a-decision-log",
+      "mapped_proposal_id": "broad-practice-expansion:keep-a-decision-log",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-read-a-percentage",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-percentage",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-check-an-automated-answer",
+      "mapped_proposal_id": "broad-practice-expansion:check-an-automated-answer",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-review-visible-privacy-settings",
+      "mapped_proposal_id": "broad-practice-expansion:review-visible-privacy-settings",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-crop-a-photo-honestly",
+      "mapped_proposal_id": "broad-practice-expansion:crop-a-photo-honestly",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-record-understandable-voice",
+      "mapped_proposal_id": "broad-practice-expansion:record-understandable-voice",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-follow-a-shot-list",
+      "mapped_proposal_id": "broad-practice-expansion:follow-a-shot-list",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-clap-a-written-rhythm",
+      "mapped_proposal_id": "broad-practice-expansion:clap-a-written-rhythm",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-letter-a-short-word",
+      "mapped_proposal_id": "broad-practice-expansion:letter-a-short-word",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-make-a-collage-with-a-point",
+      "mapped_proposal_id": "broad-practice-expansion:make-a-collage-with-a-point",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-braid-a-cord",
+      "mapped_proposal_id": "broad-practice-expansion:braid-a-cord",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-smooth-a-small-piece-of-wood",
+      "mapped_proposal_id": "broad-practice-expansion:smooth-a-small-piece-of-wood",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-glue-a-clean-joint",
+      "mapped_proposal_id": "broad-practice-expansion:glue-a-clean-joint",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-wrap-a-parcel",
+      "mapped_proposal_id": "broad-practice-expansion:wrap-a-parcel",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-make-a-simple-notebook",
+      "mapped_proposal_id": "broad-practice-expansion:make-a-simple-notebook",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-make-a-textile-square",
+      "mapped_proposal_id": "broad-practice-expansion:make-a-textile-square",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-compost-kitchen-scraps",
+      "mapped_proposal_id": "broad-practice-expansion:compost-kitchen-scraps",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-name-plants-nearby",
+      "mapped_proposal_id": "broad-practice-expansion:name-plants-nearby",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-save-and-label-a-seed",
+      "mapped_proposal_id": "broad-practice-expansion:save-and-label-a-seed",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-support-a-climbing-plant",
+      "mapped_proposal_id": "broad-practice-expansion:support-a-climbing-plant",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-harvest-an-herb-gently",
+      "mapped_proposal_id": "broad-practice-expansion:harvest-an-herb-gently",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-find-direction-from-the-sun",
+      "mapped_proposal_id": "broad-practice-expansion:find-direction-from-the-sun",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-read-a-city-transit-map",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-city-transit-map",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-plan-a-walk-you-can-return",
+      "mapped_proposal_id": "broad-practice-expansion:plan-a-walk-you-can-return",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-read-a-trail-marker",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-trail-marker",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-inflate-a-tire-to-the-mark",
+      "mapped_proposal_id": "broad-practice-expansion:inflate-a-tire-to-the-mark",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-braid-hair",
+      "mapped_proposal_id": "broad-practice-expansion:braid-hair",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-tie-a-necktie",
+      "mapped_proposal_id": "broad-practice-expansion:tie-a-necktie",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-polish-a-pair-of-shoes",
+      "mapped_proposal_id": "broad-practice-expansion:polish-a-pair-of-shoes",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-address-an-envelope",
+      "mapped_proposal_id": "broad-practice-expansion:address-an-envelope",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-send-a-package",
+      "mapped_proposal_id": "broad-practice-expansion:send-a-package",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-leave-a-clear-voicemail",
+      "mapped_proposal_id": "broad-practice-expansion:leave-a-clear-voicemail",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-fill-in-a-form",
+      "mapped_proposal_id": "broad-practice-expansion:fill-in-a-form",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-return-an-item",
+      "mapped_proposal_id": "broad-practice-expansion:return-an-item",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-compare-two-routes",
+      "mapped_proposal_id": "broad-practice-expansion:compare-two-routes",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-prepare-papers-for-a-trip",
+      "mapped_proposal_id": "broad-practice-expansion:prepare-papers-for-a-trip",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-ask-for-directions-and-repeat-them",
+      "mapped_proposal_id": "broad-practice-expansion:ask-for-directions-and-repeat-them",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-change-plan-when-transport-fails",
+      "mapped_proposal_id": "broad-practice-expansion:change-plan-when-transport-fails",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-keep-a-travel-log",
+      "mapped_proposal_id": "broad-practice-expansion:keep-a-travel-log",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-work-out-a-time-zone-gap",
+      "mapped_proposal_id": "broad-practice-expansion:work-out-a-time-zone-gap",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-skim-for-a-question",
+      "mapped_proposal_id": "broad-practice-expansion:skim-for-a-question",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-compare-two-accounts",
+      "mapped_proposal_id": "broad-practice-expansion:compare-two-accounts",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-place-an-event-on-a-timeline",
+      "mapped_proposal_id": "broad-practice-expansion:place-an-event-on-a-timeline",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-read-a-museum-label",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-museum-label",
+      "action": "already_represented"
+    },
+    {
+      "candidate_id": "c020:t4s-editorial-synthesis-pack-14:same-look-up-a-word-and-use-it",
+      "mapped_proposal_id": "broad-practice-expansion:look-up-a-word-and-use-it",
+      "action": "already_represented"
+    }
+  ]
+}

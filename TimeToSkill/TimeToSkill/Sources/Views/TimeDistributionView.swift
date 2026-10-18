@@ -2,11 +2,9 @@
 //  TimeDistributionView.swift
 //  TimeToSkill
 //
-//  How long the individual sessions of one skill last ("Zobacz rozkład" in the
-//  skill options), drawn as a horizontal bar chart: one row per duration
-//  bucket, the bar length is the bucket's share of the busiest bucket and the
-//  trailing numbers are the session count plus its share of all sessions.
-//
+//  Per-skill chart of completed timer-session durations (T4S-001).
+//  Manual adjustments are not part of this sample. The global distribution
+//  and the PDF keep their own bins and continue to include manual entries.
 
 import SwiftUI
 import SwiftData
@@ -14,20 +12,17 @@ import SwiftData
 struct TimeDistributionView: View {
     let skill: Skill
 
-    /// Adds the in-content "Gotowe" button used when the chart is presented as
-    /// its own macOS sheet (see `SkillOptionsSheet`). iOS presents this screen
-    /// as a pushed page with the standard back button, so it stays off there.
+    /// In-content Done button for when this screen is its own sheet. A pushed
+    /// iOS page leaves it off and uses the system back button.
     var showsDoneButton: Bool = false
 
     @Environment(\.dismiss) private var dismiss
+    @State private var binWidth = SessionDurationHistogram.defaultWidth
 
-    /// Sessions of this skill. A live query instead of a one-off fetch keeps the
-    /// histogram current when a session ends while the screen is still open.
+    /// Sessions of this skill. A live query keeps the chart current if a
+    /// session ends while the screen is open. The timer-only sample is
+    /// applied below; this query itself does not change stored rows.
     @Query private var entries: [TimeIntervalEntry]
-
-    /// Upper edges (in minutes) of the fixed buckets. Longer sessions land in a
-    /// trailing open-ended bucket.
-    private static let bucketEdges: [Double] = [0, 5, 10, 15, 30, 60, 120, 240, 480, 960]
 
     init(skill: Skill, showsDoneButton: Bool = false) {
         self.skill = skill
@@ -38,32 +33,39 @@ struct TimeDistributionView: View {
 
     var body: some View {
         #if os(macOS)
-        // A macOS sheet resizes itself to its content, and a scroll view has no
-        // intrinsic height: with one here the window shrank to a thin strip
-        // around the title bar. Laying the rows out at their natural height
-        // instead lets the sheet grow until the last bucket is visible.
+        // A macOS sheet resizes itself to its content, and a scroll view with
+        // no height collapses to the title bar. The histogram scroll below has
+        // an explicit height, so the sheet stays large enough to reach the
+        // last bin. The minimum size uses the wider Mac layout.
         layout
-            .navigationTitle(LocalizedStringKey("distribution_nav_title"))
+            .navigationTitle(LocalizedStringKey("session_chart_nav_title"))
+            .macOSSheetMinSize(width: 640, height: 560)
         #else
-        // On iOS the screen keeps scrolling so long histograms stay reachable on
-        // short devices.
+        // One sheet from the skill row. Done stays in the navigation bar so a
+        // long histogram does not push dismissal off the first screen.
         ScrollView { layout }
-            .navigationTitle(LocalizedStringKey("distribution_nav_title"))
+            .navigationTitle(LocalizedStringKey("session_chart_nav_title"))
+            .toolbar {
+                if showsDoneButton {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button(LocalizedStringKey("button_done")) {
+                            dismiss()
+                        }
+                    }
+                }
+            }
         #endif
     }
 
-    /// Header, summary tiles and histogram, inset by the sheet's standard 16pt on
-    /// every side - the inset below the histogram therefore matches the gap
-    /// between the skill name and the window's title bar.
     private var layout: some View {
         VStack(alignment: .leading, spacing: 20) {
             header
             summary
-            histogram
+            binWidthPicker
+            chartSection
             #if os(macOS)
-            // Part of the content on purpose: the sheet is sized from the
-            // content, so an in-content button can never be clipped or push the
-            // histogram out of the window.
+            // In the content on purpose: the sheet is sized from its content,
+            // so this button stays on screen with the histogram.
             if showsDoneButton {
                 doneRow
             }
@@ -78,7 +80,6 @@ struct TimeDistributionView: View {
     private var doneRow: some View {
         HStack {
             Spacer()
-
             Button(LocalizedStringKey("button_done")) {
                 dismiss()
             }
@@ -103,9 +104,10 @@ struct TimeDistributionView: View {
                     .lineLimit(2)
             }
 
-            Text(LocalizedStringKey("time_distribution_title"))
+            Text(LocalizedStringKey("session_chart_metric"))
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 
@@ -119,40 +121,29 @@ struct TimeDistributionView: View {
         ) {
             summaryTile(
                 String(
-                    format: NSLocalizedString("time_total_hours_format", comment: ""),
-                    formatHours(totalMinutes / 60)
+                    format: NSLocalizedString("session_chart_count_format", comment: ""),
+                    distribution.minutes.count
                 ),
-                systemImage: "clock"
+                systemImage: "number"
             )
             summaryTile(
                 String(
-                    format: NSLocalizedString("time_mean_minutes_format", comment: ""),
-                    formatMinutes(meanMinutes)
+                    format: NSLocalizedString("session_chart_mean_format", comment: ""),
+                    formatMinutes(distribution.mean)
                 ),
                 systemImage: "chart.bar"
-            )
-            summaryTile(
-                String(
-                    format: NSLocalizedString("time_std_minutes_format", comment: ""),
-                    formatMinutes(stdMinutes)
-                ),
-                systemImage: "waveform.path"
             )
         }
     }
 
     private func summaryTile(_ text: String, systemImage: String) -> some View {
-        HStack(spacing: 10) {
+        HStack(alignment: .top, spacing: 8) {
             Image(systemName: systemImage)
-                .font(.callout)
-                .foregroundStyle(AppColors.primary)
-
+                .foregroundStyle(.secondary)
+                .accessibilityHidden(true)
             Text(text)
-                .font(.callout)
-                .monospacedDigit()
-                .lineLimit(2)
-                .minimumScaleFactor(0.8)
-
+                .font(.subheadline)
+                .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
         }
         .padding(.horizontal, 12)
@@ -165,163 +156,284 @@ struct TimeDistributionView: View {
         .shadow(radius: 2, y: 1)
     }
 
-    // MARK: - Histogram
+    private var binWidthPicker: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(LocalizedStringKey("session_chart_bin_width"))
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
 
-    private var histogram: some View {
+            Picker(selection: $binWidth) {
+                ForEach(SessionDurationHistogram.availableWidths, id: \.self) { width in
+                    Text(binWidthTitle(width)).tag(width)
+                }
+            } label: {
+                Text(LocalizedStringKey("session_chart_bin_width"))
+            }
+            .pickerStyle(.segmented)
+            .accessibilityLabel(Text(LocalizedStringKey("session_chart_bin_width")))
+            .accessibilityValue(Text(binWidthTitle(binWidth)))
+        }
+    }
+
+    // MARK: - Chart
+
+    private var chartSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            if buckets.isEmpty {
+            if distribution.bins.isEmpty {
                 emptyState
             } else {
-                ForEach(buckets) { bucket in
-                    barRow(bucket)
-                }
+                boundedChart
+                curveCaption
             }
         }
     }
 
-    private func barRow(_ bucket: Bucket) -> some View {
-        HStack(spacing: 12) {
-            Text(bucket.label)
-                .font(.caption)
-                .monospacedDigit()
-                .foregroundStyle(.secondary)
-                .lineLimit(1)
-                .frame(width: 74, alignment: .leading)
-
-            GeometryReader { geometry in
-                ZStack(alignment: .leading) {
-                    Capsule(style: .continuous)
-                        .fill(Color.primary.opacity(0.08))
-
-                    Capsule(style: .continuous)
-                        .fill(
-                            LinearGradient(
-                                colors: [.info, .mdbPurple],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        // Keep the shortest bar visible instead of a sliver.
-                        .frame(width: max(6, geometry.size.width * bucket.share))
-                }
-            }
-            .frame(height: 16)
-
-            Text("\(bucket.count)")
-                .font(.caption)
-                .fontWeight(.semibold)
-                .monospacedDigit()
-                .frame(width: 30, alignment: .trailing)
-
-            Text(bucket.frequency.formatted(.percent.precision(.fractionLength(0))))
-                .font(.caption2)
-                .monospacedDigit()
-                .foregroundStyle(.secondary)
-                .frame(width: 40, alignment: .trailing)
+    /// macOS gives the chart a real height so the sheet cannot collapse and
+    /// hide the last bin. iOS already scrolls the whole page.
+    @ViewBuilder
+    private var boundedChart: some View {
+        let chart = SessionDurationChart(histogram: distribution)
+        #if os(macOS)
+        let contentHeight = SessionDurationChart.contentHeight(binCount: distribution.bins.count)
+        ScrollView {
+            chart
         }
-        .accessibilityElement(children: .combine)
+        .frame(height: min(max(contentHeight, 44), 480))
+        #else
+        chart
+        #endif
+    }
+
+    private var curveCaption: some View {
+        Text(LocalizedStringKey(
+            distribution.showsReferenceCurve
+                ? "session_chart_curve_caption"
+                : "session_chart_curve_hidden"
+        ))
+        .font(.footnote)
+        .foregroundStyle(.secondary)
+        .fixedSize(horizontal: false, vertical: true)
     }
 
     private var emptyState: some View {
-        HStack(spacing: 10) {
-            Image(systemName: "chart.bar.xaxis")
-                .foregroundStyle(.secondary)
-
-            Text(LocalizedStringKey("distribution_empty_message"))
-                .font(.footnote)
-                .foregroundStyle(.secondary)
-                .fixedSize(horizontal: false, vertical: true)
-        }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(AppColors.surface)
-        )
-        .shadow(radius: 2, y: 1)
+        Text(LocalizedStringKey("session_chart_empty"))
+            .font(.footnote)
+            .foregroundStyle(.secondary)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(AppColors.surface)
+            )
     }
 
     // MARK: - Data
 
-    /// One bar of the histogram.
-    private struct Bucket: Identifiable {
-        let id = UUID()
-        let label: String
-        let count: Int
-        /// Bar length relative to the busiest bucket (0…1).
-        let share: Double
-        /// Sessions in this bucket relative to all sessions (0…1).
-        let frequency: Double
-    }
-
-    private var sessionDurations: [Double] {
-        entries.map { max(0, $0.durationMinutes) }
-    }
-
-    private var totalMinutes: Double {
-        sessionDurations.reduce(0, +)
-    }
-
-    private var meanMinutes: Double {
-        let durations = sessionDurations
-        guard !durations.isEmpty else { return 0 }
-        return durations.reduce(0, +) / Double(durations.count)
-    }
-
-    private var stdMinutes: Double {
-        let durations = sessionDurations
-        guard !durations.isEmpty else { return 0 }
-        let mean = durations.reduce(0, +) / Double(durations.count)
-        let variance = durations.reduce(0) { $0 + pow($1 - mean, 2) } / Double(durations.count)
-        return sqrt(variance)
-    }
-
-    private var buckets: [Bucket] {
-        let durations = sessionDurations
-        guard !durations.isEmpty else { return [] }
-
-        let edges = Self.bucketEdges
-        var counts: [(label: String, count: Int)] = []
-
-        for index in 0..<(edges.count - 1) {
-            let lower = edges[index]
-            let upper = edges[index + 1]
-            let count = durations.filter { $0 >= lower && $0 < upper }.count
-            counts.append(("\(Int(lower))–\(Int(upper))m", count))
+    private var timerMinutes: [Double] {
+        entries.compactMap { entry in
+            TimerSessionSample.minutes(
+                sourceRaw: entry.sourceRaw,
+                durationMinutes: entry.durationMinutes
+            )
         }
+    }
 
-        if let lastEdge = edges.last {
-            let overflow = durations.filter { $0 >= lastEdge }.count
-            if overflow > 0 {
-                counts.append(("≥ \(Int(lastEdge))m", overflow))
-            }
+    private var distribution: SessionDurationHistogram {
+        SessionDurationHistogram(minutes: timerMinutes, binWidth: binWidth)
+    }
+
+    private func formatMinutes(_ minutes: Double?) -> String {
+        guard let minutes, minutes.isFinite else {
+            return NSLocalizedString("session_chart_mean_unavailable", comment: "")
         }
-
-        let busiest = max(1, counts.map(\.count).max() ?? 1)
-        let total = max(1, durations.count)
-
-        // Buckets without sessions are hidden so the chart only shows data that
-        // actually exists.
-        return counts
-            .filter { $0.count > 0 }
-            .map { bucket in
-                Bucket(
-                    label: bucket.label,
-                    count: bucket.count,
-                    share: Double(bucket.count) / Double(busiest),
-                    frequency: Double(bucket.count) / Double(total)
-                )
-            }
+        return String(format: "%.1f", minutes)
     }
 
-    // MARK: - Formatting
-
-    private func formatMinutes(_ m: Double) -> String {
-        String(format: "%.1f", m)
-    }
-
-    private func formatHours(_ h: Double) -> String {
-        String(format: "%.2f", h)
+    private func binWidthTitle(_ width: Double) -> String {
+        String(
+            format: NSLocalizedString("session_chart_bin_minutes", comment: ""),
+            Int(width.rounded())
+        )
     }
 }
 
+/// Horizontal histogram: duration runs down the rows, frequency runs along
+/// each bar. The normal reference is a translucent curve in those same
+/// frequency units.
+private struct SessionDurationChart: View {
+    let histogram: SessionDurationHistogram
+
+    private static let rowHeight: CGFloat = 22
+    private static let rowSpacing: CGFloat = 8
+    private static let labelWidth: CGFloat = 108
+    private static let countWidth: CGFloat = 36
+
+    static func contentHeight(binCount: Int) -> CGFloat {
+        guard binCount > 0 else { return 0 }
+        return CGFloat(binCount) * (rowHeight + rowSpacing) - rowSpacing
+    }
+
+    var body: some View {
+        let bins = histogram.bins
+        let peak = peakFrequency(bins)
+        GeometryReader { geometry in
+            let plotWidth = max(0, geometry.size.width - Self.labelWidth - Self.countWidth - 16)
+            ZStack(alignment: .topLeading) {
+                if histogram.showsReferenceCurve {
+                    referenceShape(bins: bins, peak: peak, plotWidth: plotWidth, stroked: false)
+                        .accessibilityHidden(true)
+                }
+                LazyVStack(alignment: .leading, spacing: Self.rowSpacing) {
+                    ForEach(Array(bins.enumerated()), id: \.offset) { _, bin in
+                        barRow(bin, peak: peak, plotWidth: plotWidth)
+                    }
+                }
+                if histogram.showsReferenceCurve {
+                    referenceShape(bins: bins, peak: peak, plotWidth: plotWidth, stroked: true)
+                        .accessibilityHidden(true)
+                }
+            }
+        }
+        .frame(height: Self.contentHeight(binCount: histogram.bins.count))
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel(Text(LocalizedStringKey("session_chart_accessibility")))
+    }
+
+    private func barRow(_ bin: SessionDurationHistogram.Bin, peak: Double, plotWidth: CGFloat) -> some View {
+        let range = binRangeTitle(bin)
+        return HStack(spacing: 8) {
+            Text(range)
+                .font(.caption)
+                .monospacedDigit()
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
+                .frame(width: Self.labelWidth, alignment: .leading)
+
+            ZStack(alignment: .leading) {
+                Capsule(style: .continuous)
+                    .fill(Color.primary.opacity(0.08))
+                Capsule(style: .continuous)
+                    .fill(
+                        LinearGradient(
+                            colors: [.info, .mdbPurple],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(width: barWidth(count: bin.count, peak: peak, plotWidth: plotWidth), height: Self.rowHeight)
+            }
+            .frame(width: plotWidth, height: Self.rowHeight, alignment: .leading)
+
+            Text("\(bin.count)")
+                .font(.caption)
+                .monospacedDigit()
+                .foregroundStyle(.secondary)
+                .frame(width: Self.countWidth, alignment: .trailing)
+        }
+        .frame(height: Self.rowHeight)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(String(
+            format: NSLocalizedString("session_chart_row_accessibility", comment: ""),
+            range,
+            bin.count
+        )))
+    }
+
+    @ViewBuilder
+    private func referenceShape(
+        bins: [SessionDurationHistogram.Bin],
+        peak: Double,
+        plotWidth: CGFloat,
+        stroked: Bool
+    ) -> some View {
+        let originX = Self.labelWidth + 8
+        let points = curvePoints(bins: bins, peak: peak, plotWidth: plotWidth, originX: originX)
+        if stroked {
+            Path { path in
+                guard let first = points.first else { return }
+                path.move(to: CGPoint(x: originX, y: first.y))
+                for point in points {
+                    path.addLine(to: point)
+                }
+            }
+            .stroke(Color.orange.opacity(0.9), style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+        } else {
+            Path { path in
+                guard let first = points.first, let last = points.last else { return }
+                path.move(to: CGPoint(x: originX, y: first.y))
+                for point in points {
+                    path.addLine(to: point)
+                }
+                path.addLine(to: CGPoint(x: originX, y: last.y))
+                path.closeSubpath()
+            }
+            .fill(Color.orange.opacity(0.22))
+        }
+    }
+
+    private func curvePoints(
+        bins: [SessionDurationHistogram.Bin],
+        peak: Double,
+        plotWidth: CGFloat,
+        originX: CGFloat
+    ) -> [CGPoint] {
+        let stride = Self.rowHeight + Self.rowSpacing
+        return bins.enumerated().compactMap { index, bin in
+            guard let expected = bin.expectedCount, expected.isFinite else { return nil }
+            let fraction = frequencyFraction(expected, peak: peak)
+            let x = originX + plotWidth * fraction
+            let y = CGFloat(index) * stride + Self.rowHeight / 2
+            guard x.isFinite, y.isFinite else { return nil }
+            return CGPoint(x: x, y: y)
+        }
+    }
+
+    private func barWidth(count: Int, peak: Double, plotWidth: CGFloat) -> CGFloat {
+        guard count > 0 else { return 0 }
+        let width = plotWidth * frequencyFraction(Double(count), peak: peak)
+        guard width.isFinite else { return 2 }
+        return min(plotWidth, max(width, 2))
+    }
+
+    private func frequencyFraction(_ value: Double, peak: Double) -> CGFloat {
+        guard value.isFinite, peak.isFinite, peak > 0 else { return 0 }
+        let fraction = value / peak
+        guard fraction.isFinite else { return 0 }
+        return CGFloat(min(1, max(0, fraction)))
+    }
+
+    private func peakFrequency(_ bins: [SessionDurationHistogram.Bin]) -> Double {
+        let peak = bins.map { max(Double($0.count), $0.expectedCount ?? 0) }.max() ?? 0
+        guard peak.isFinite, peak > 0 else { return 1 }
+        return peak
+    }
+
+    private func binRangeTitle(_ bin: SessionDurationHistogram.Bin) -> String {
+        if bin.isOverflow {
+            return String(
+                format: NSLocalizedString("session_chart_bin_overflow", comment: ""),
+                wholeMinutes(bin.lowerMinutes)
+            )
+        }
+        return String(
+            format: NSLocalizedString("session_chart_bin_range", comment: ""),
+            wholeMinutes(bin.lowerMinutes),
+            wholeMinutes(bin.upperMinutes ?? .nan)
+        )
+    }
+
+    /// Whole minutes for a bin edge. `Int(_:)` traps when the value does not
+    /// fit, which a single covering bin can do for an extreme duration.
+    private func wholeMinutes(_ value: Double) -> String {
+        guard value.isFinite else {
+            return NSLocalizedString("session_chart_mean_unavailable", comment: "")
+        }
+        let rounded = value.rounded()
+        if let exact = Int(exactly: rounded) {
+            return String(exact)
+        }
+        return String(format: "%.0f", value)
+    }
+}

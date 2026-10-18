@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "source_file": "data/skills-catalog/curated/cross-pilot-review-v3.json",
+  "decision_scope": "editorial recommendations; not production approval",
+  "automatic_merge_performed": false,
+  "groups": [
+    {
+      "group_id": "v3:explain-vs-science-communication",
+      "proposal_ids": [
+        "communication-cognition-nature:explain-information-clearly",
+        "technology-science-niches:science-communication"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Wyjaśnianie informacji ma uniwersalny zakres i sprawdza zrozumienie odbiorcy; komunikacja naukowa wymaga tłumaczenia twierdzeń naukowych oraz jawnego oznaczania dowodów i niepewności. Rozdzielenie ma sens, jeśli poziomy komunikacji naukowej zachowują ten wyróżnik.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:evidence-vs-digital-research",
+      "proposal_ids": [
+        "communication-cognition-nature:critical-thinking-and-evidence-checking",
+        "technology-science-niches:digital-research-and-source-evaluation"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Ocena dowodów sprawdza jakość argumentu i alternatywne wyjaśnienia; research cyfrowy opisuje wyszukiwanie, selekcję i dokumentowanie źródeł. Mogą się wspierać, ale ćwiczą inne czynności.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:maps-compass-digital-map",
+      "proposal_ids": [
+        "communication-cognition-nature:topographic-map-reading",
+        "communication-cognition-nature:compass-use-and-map-orientation",
+        "communication-cognition-nature:orienteering-route-choice",
+        "technology-science-niches:digital-map-making"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Czytanie mapy, użycie kompasu, wybór trasy na orientację i tworzenie mapy cyfrowej mają różne produkty końcowe. Utrzymać osobno; w opisach poziomów wyraźnie pokazać odczyt mapy, ustawienie kierunku, wybór trasy i przygotowanie warstw danych.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:maps-vs-outdoor-movement",
+      "proposal_ids": [
+        "communication-cognition-nature:topographic-map-reading",
+        "communication-cognition-nature:compass-use-and-map-orientation",
+        "technology-science-niches:geocaching",
+        "movement-sport-dance:hiking-and-trail-preparation"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Nawigacja mapą/kompasem, geocaching i przygotowanie wędrówki są odrębnymi praktykami: odpowiednio ustalenie położenia/kierunku, odnajdywanie skrytki według współrzędnych i wskazówek oraz planowanie bezpiecznej trasy. Nie scalać tylko z powodu wspólnego środowiska terenowego.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:speaking-and-communication",
+      "proposal_ids": [
+        "communication-cognition-nature:public-speaking-and-audience-adaptation",
+        "communication-cognition-nature:explain-information-clearly",
+        "communication-cognition-nature:active-listening",
+        "communication-cognition-nature:nonverbal-communication",
+        "technology-science-niches:science-communication"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Wystąpienie publiczne, wyjaśnianie, aktywne słuchanie, komunikacja niewerbalna i komunikacja naukowa mają różne zachowania i kryteria ukończenia. To rodzina tematyczna, nie duplikaty. W audycie nazw sprawdzić, czy każdy opis mierzy własny rezultat.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:conversation-interpreting-translation",
+      "proposal_ids": [
+        "communication-cognition-nature:foreign-language-conversation",
+        "communication-cognition-nature:informal-spoken-interpreting",
+        "communication-cognition-nature:short-text-translation"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Rozmowa w języku obcym jest interakcją; tłumaczenie ustne przekazuje wypowiedź na bieżąco; tłumaczenie pisemne tworzy tekst docelowy z zachowaniem sensu i tonu. Różne produkty i ograniczenia uzasadniają trzy osobne skille.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:transcription-vs-history-research",
+      "proposal_ids": [
+        "communication-cognition-nature:transcribe-historical-letters",
+        "technology-science-niches:genealogy-research",
+        "technology-science-niches:local-history-research"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Transkrypcja jest wiernym odczytem i zapisem źródła, z oznaczaniem niepewnych fragmentów; genealogia i historia lokalna budują wnioski z wielu źródeł. Wspólna tematyka historyczna nie wystarcza do scalenia.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:astronomical-image-vs-sky-observation",
+      "proposal_ids": [
+        "communication-cognition-nature:astronomical-image-analysis-basics",
+        "technology-science-niches:sky-observation"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Analiza obrazu astronomicznego interpretuje dane już zarejestrowane i ograniczenia obrazu; obserwacja nieba polega na planowaniu i prowadzeniu obserwacji obiektów. Zachować osobno, pod warunkiem że opis analizy obrazu nie powtarza ogólnej obserwacji.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    },
+    {
+      "group_id": "v3:georeference-vs-map-making",
+      "proposal_ids": [
+        "communication-cognition-nature:georeference-collection-records",
+        "technology-science-niches:digital-map-making",
+        "communication-cognition-nature:topographic-map-reading"
+      ],
+      "previous_status": "needs_human_review",
+      "editorial_recommendation": "keep_separate",
+      "merge": false,
+      "decision_status": "recommended_not_final",
+      "rationale": "Georeferencja dopasowuje istniejący opis/obraz do lokalizacji przestrzennej i zapisuje niepewność; tworzenie mapy cyfrowej dobiera warstwy i wizualizuje odpowiedź na pytanie; czytanie mapy topograficznej interpretuje gotową mapę. Trzy różne zadania.",
+      "required_follow_up": "Zweryfikować, czy nazwa, opis i trzy kryteria poziomów mierzą tę odrębną praktykę; jeśli nie, poprawić opis lub odroczyć propozycję. Nie usuwać rekordów i nie zmieniać statusu na production."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "prepared_on": "2026-10-18",
+  "package": "communication-cognition-nature",
+  "package_version": "1",
+  "source_batches": [
+    "data/skills-catalog/review-batches/07-komunikacja-pisanie-spoleczne-01.jsonl",
+    "data/skills-catalog/review-batches/08-myslenie-pamiec-uczenie-01.jsonl",
+    "data/skills-catalog/review-batches/06-przyroda-nawigacja-obserwacja-01.jsonl"
+  ],
+  "source_pool_count": 176,
+  "record_count": 126,
+  "source_count": 10,
+  "candidate_id_range": {
+    "first": "c002:astronomical-league-observing-programs:asteroid-observing-program",
+    "last": "wikidata:Q83207"
+  },
+  "registry": "data/skills-catalog/research/sources.json",
+  "excluded_already_reviewed_candidate_ids": 0,
+  "excluded_note": "Z puli 176 kandydatur trzech pakietów pominięto duplikaty tej samej nazwy w tym samym źródle oraz rekordy zawodowe, nagłówki kursów i odznaki bez praktyki komunikacji, poznania albo przyrody. Kuchnia i finanse były już ocenione w pierwszym pilotażu, więc nie weszły ponownie.",
+  "triage_suitability": {
+    "uncertain": 52,
+    "adaptable_candidate": 51,
+    "strong_candidate": 23
+  },
+  "description_insufficient": 73,
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "registry": "data/skills-catalog/research/sources.json",
+  "note": "Skrót źródeł użytych w tym pakiecie, skopiowany z rejestru centralnego. To nie jest drugi katalog źródeł.",
+  "sources": [
+    {
+      "source_id": "avma-pet-care",
+      "title": "American Veterinary Medical Association — Pet Care",
+      "organization": "American Veterinary Medical Association",
+      "url": "https://avma.org/resources-tools/pet-owners/petcare",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 13
+    },
+    {
+      "source_id": "esco-skills-v1.2.1",
+      "title": "ESCO classification, skills pillar, English CSV",
+      "organization": "European Commission, Directorate-General for Employment, Social Affairs and Inclusion",
+      "url": "https://esco.ec.europa.eu/en/use-esco/download",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "No separate licence label was printed on the download page retrieved for this run. ESCO v1.2.1 is published by the European Commission. Reuse of Commission documents is governed by Commission Decision 2011/833/EU where no narrower statement is given. This is a research note, not a legal opinion.",
+      "records_in_package": 15
+    },
+    {
+      "source_id": "pdsa-five-welfare-needs",
+      "title": "PDSA — The Five Welfare Needs",
+      "organization": "PDSA",
+      "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/all-pets/5-welfare-needs",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "pdsa-getting-a-pet",
+      "title": "PDSA — Getting a Pet",
+      "organization": "PDSA",
+      "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/all-pets/getting-a-pet",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 2
+    },
+    {
+      "source_id": "pdsa-grooming-pets",
+      "title": "PDSA — Grooming Pets",
+      "organization": "PDSA",
+      "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/all-pets/grooming-pets",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "pdsa-looking-after-your-pet",
+      "title": "PDSA — Looking After Your Pet",
+      "organization": "PDSA",
+      "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "pdsa-pet-health-check",
+      "title": "PDSA — Giving Your Pet a Health Check at Home",
+      "organization": "PDSA",
+      "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/all-pets/how-to-give-your-pet-a-health-check-at-home",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "rspca-cat-behaviour",
+      "title": "RSPCA — Understanding Your Cat's Behaviour",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats/behaviour",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 5
+    },
+    {
+      "source_id": "rspca-cat-care",
+      "title": "RSPCA — Cat Care",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 2
+    },
+    {
+      "source_id": "rspca-choose-dog-trainer",
+      "title": "RSPCA — Choosing a Dog Trainer",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/training/trainer",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 2
+    },
+    {
+      "source_id": "rspca-dog-training",
+      "title": "RSPCA — How to Train Your Dog",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/training",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 4
+    },
+    {
+      "source_id": "rspca-guinea-pigs",
+      "title": "RSPCA — Keeping Guinea Pigs As Pets",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 3
+    },
+    {
+      "source_id": "rspca-pet-birds",
+      "title": "RSPCA — How to Care for Your Pet Bird",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/birds",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 2
+    },
+    {
+      "source_id": "rspca-rabbit-agility",
+      "title": "RSPCA — Rabbit Agility",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/behaviour/agility",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 3
+    },
+    {
+      "source_id": "rspca-rabbit-care",
+      "title": "RSPCA — Pet Rabbits: Care, Behaviour and Welfare",
+      "organization": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rabbits",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 5
+    }
+  ]
+}

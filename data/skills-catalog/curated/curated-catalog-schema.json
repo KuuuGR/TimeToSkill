@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "pilot_proposal_format",
+  "purpose": "Wspólny format propozycji po pilotażu. Nie jest formatem skillu produkcyjnego. Wersja v10 może poprawić nazwę, opis albo poziomy. Identyfikator zostaje.",
+  "review_status_allowed": [
+    "pilot_proposal"
+  ],
+  "pilot_review_status_note": "Kopia review_status z pliku pilotażu. Wartość accepted oznacza decyzję tamtego pilotażu, nie wydanie.",
+  "fields": {
+    "proposal_id": "Stabilny identyfikator: {origin_pilot}:{skill_id z pilotażu}.",
+    "name": "Nazwa z pilotażu, bez zmiany.",
+    "description": "Opis z pilotażu, bez zmiany.",
+    "category": "Kategoria z pilotażu.",
+    "emoji": "Jedno emoji z pilotażu. Powtórzenia są dozwolone.",
+    "emoji_rationale": "Uzasadnienie z pilotażu, jeśli było.",
+    "levels": "Dokładnie trzy obiekty. Każdy ma name, completion_criterion, can_do i safety_requirements tak jak w pilotażu.",
+    "source_candidate_ids": "Identyfikatory z candidates-raw.jsonl. Nie tworzono nowych.",
+    "source_ids": "Identyfikatory z research/sources.json.",
+    "origin_pilot": "kitchen-finance, movement-sport-dance, technology-science-niches, communication-cognition-nature, general-practical-skills, broad-practice-expansion, practice-expansion-13, practice-expansion-14, practice-expansion-15 albo practice-expansion-16.",
+    "pilot_skill_id": "skill_id w pliku pilotażu.",
+    "pilot_review_status": "Status zapisany przez pilotaż.",
+    "review_status": "Zawsze pilot_proposal w tym rejestrze.",
+    "provenance_note": "Zdanie, że rekord nie jest skilliem produkcyjnym.",
+    "tags": "Etykiety przeniesione z pilotażu.",
+    "safety_notes": "Uwagi z pilotażu albo null."
+  }
+}

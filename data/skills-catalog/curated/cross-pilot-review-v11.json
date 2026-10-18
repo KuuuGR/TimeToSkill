@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "automatic_merge_performed": false,
+  "production_approval": false,
+  "note": "Pack-16 porównano z v10. Dwujęzyczny znak zmapowano na istniejącą propozycję. v10 nie było edytowane.",
+  "merge_history": "data/skills-catalog/curated/merge-history-v11.json",
+  "new_origin": "practice-expansion-16",
+  "proposals_added": 127,
+  "already_represented": 342,
+  "rejected": 17,
+  "needs_source": 14
+}

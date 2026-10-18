@@ -1,0 +1,484 @@
+{"id": "knife-cuts-faster", "name": "Cut faster with a kitchen knife", "decision": "reject", "reason": "Same skill as kitchen knife work. Speed is not a new result.", "mapped_proposal_id": "kitchen-finance:kitchen-knife-skills"}
+{"id": "bake-a-loaf", "name": "Bake a loaf of bread", "decision": "reject", "reason": "Bread is a case of the existing baking skill, not a new progression.", "mapped_proposal_id": "kitchen-finance:basic-baking-techniques"}
+{"id": "sear-a-steak", "name": "Sear a steak", "decision": "reject", "reason": "Searing is already a proposal. The food changes, the skill does not.", "mapped_proposal_id": "kitchen-finance:pan-searing-and-browning"}
+{"id": "make-a-vinaigrette", "name": "Make a vinaigrette", "decision": "reject", "reason": "A vinaigrette is a dressing. The sauces proposal already covers it.", "mapped_proposal_id": "kitchen-finance:sauces-and-dressings"}
+{"id": "boil-an-egg-to-order", "name": "Boil an egg to order", "decision": "reject", "reason": "Egg cookery is already a proposal.", "mapped_proposal_id": "kitchen-finance:egg-preparation-techniques"}
+{"id": "cook-rice-in-a-cooker", "name": "Cook rice in a rice cooker", "decision": "reject", "reason": "The appliance is not a new skill beside cooking rice.", "mapped_proposal_id": "kitchen-finance:cook-rice-reliably"}
+{"id": "make-stock-from-scraps", "name": "Make stock from scraps", "decision": "reject", "reason": "Stock making already exists. The ingredient source does not change the skill.", "mapped_proposal_id": "kitchen-finance:stock-and-broth-making"}
+{"id": "keep-a-fridge-safe", "name": "Keep a fridge safe", "decision": "reject", "reason": "Household food safety is already a proposal. No new procedure was written.", "mapped_proposal_id": "kitchen-finance:kitchen-food-safety"}
+{"id": "track-a-personal-budget", "name": "Track a personal budget", "decision": "reject", "reason": "Budgeting and saving already cover tracking spending.", "mapped_proposal_id": "kitchen-finance:personal-budgeting-and-saving"}
+{"id": "compare-two-loans", "name": "Compare two loans", "decision": "reject", "reason": "Comparing financial offers already exists. A loan is not a separate skill here.", "mapped_proposal_id": "kitchen-finance:compare-financial-offers"}
+{"id": "explain-interest", "name": "Explain interest on a purchase", "decision": "reject", "reason": "Understanding interest costs already exists.", "mapped_proposal_id": "kitchen-finance:understand-interest-costs"}
+{"id": "balance-on-one-foot", "name": "Balance on one foot", "decision": "reject", "reason": "Balance and weight transfer already cover this.", "mapped_proposal_id": "movement-sport-dance:balance-and-weight-transfer"}
+{"id": "throw-a-ball-farther", "name": "Throw a ball farther", "decision": "reject", "reason": "Accurate throwing already exists. Distance alone is not a new skill.", "mapped_proposal_id": "movement-sport-dance:accurate-throwing"}
+{"id": "ride-a-bicycle-on-the-road", "name": "Ride a bicycle on the road", "decision": "reject", "reason": "Cycling fundamentals already include riding safely.", "mapped_proposal_id": "movement-sport-dance:cycling-fundamentals"}
+{"id": "run-a-longer-loop", "name": "Run a longer loop", "decision": "reject", "reason": "Running and pacing already exist. A longer distance is not a new skill.", "mapped_proposal_id": "movement-sport-dance:running-and-pacing"}
+{"id": "follow-a-hiking-trail", "name": "Follow a hiking trail", "decision": "reject", "reason": "Hiking and trail preparation already exist.", "mapped_proposal_id": "movement-sport-dance:hiking-and-trail-preparation"}
+{"id": "swim-a-length", "name": "Swim a length", "decision": "reject", "reason": "Swimming fundamentals already exist.", "mapped_proposal_id": "movement-sport-dance:swimming-fundamentals"}
+{"id": "dance-salsa-turns", "name": "Dance salsa turns", "decision": "reject", "reason": "Salsa is already a proposal. Turns are a step inside it, not a new skill.", "mapped_proposal_id": "movement-sport-dance:salsa-dancing"}
+{"id": "speak-to-a-crowd", "name": "Speak to a crowd", "decision": "reject", "reason": "Public speaking already exists.", "mapped_proposal_id": "communication-cognition-nature:public-speaking-and-audience-adaptation"}
+{"id": "listen-without-interrupting", "name": "Listen without interrupting", "decision": "reject", "reason": "Active listening already covers this behavior.", "mapped_proposal_id": "communication-cognition-nature:active-listening"}
+{"id": "resolve-a-disagreement", "name": "Resolve a disagreement", "decision": "reject", "reason": "Constructive conflict resolution already exists.", "mapped_proposal_id": "communication-cognition-nature:constructive-conflict-resolution"}
+{"id": "write-a-shorter-email", "name": "Write a shorter email", "decision": "reject", "reason": "Email writing and concise writing already exist.", "mapped_proposal_id": "communication-cognition-nature:effective-email-writing"}
+{"id": "check-a-source", "name": "Check a source before you repeat it", "decision": "reject", "reason": "Evaluating claims and evidence already exists.", "mapped_proposal_id": "communication-cognition-nature:critical-thinking-and-evidence-checking"}
+{"id": "test-yourself-later", "name": "Test yourself later", "decision": "reject", "reason": "Retrieval practice already exists.", "mapped_proposal_id": "communication-cognition-nature:retrieval-practice"}
+{"id": "read-contours", "name": "Read contours on a map", "decision": "reject", "reason": "Topographic map reading already includes relating the map to terrain.", "mapped_proposal_id": "communication-cognition-nature:topographic-map-reading"}
+{"id": "use-a-compass-on-a-walk", "name": "Use a compass on a walk", "decision": "reject", "reason": "Compass use is already a proposal.", "mapped_proposal_id": "communication-cognition-nature:compass-use-and-map-orientation"}
+{"id": "back-up-photos", "name": "Back up photos", "decision": "reject", "reason": "Backing up personal files already covers photos.", "mapped_proposal_id": "general-practical-skills:backup-and-restore-personal-files"}
+{"id": "plan-a-birthday", "name": "Plan a birthday gathering", "decision": "reject", "reason": "Planning a small event already exists. The occasion is not a new skill.", "mapped_proposal_id": "general-practical-skills:plan-a-small-event"}
+{"id": "write-in-french", "name": "Write a note in French", "decision": "reject", "reason": "One writing-in-a-language skill already represents every language.", "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning"}
+{"id": "write-in-spanish", "name": "Write a note in Spanish", "decision": "reject", "reason": "Language variant. Not a separate skill.", "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning"}
+{"id": "chat-in-german", "name": "Chat in German", "decision": "reject", "reason": "Everyday foreign-language conversation already exists.", "mapped_proposal_id": "communication-cognition-nature:foreign-language-conversation"}
+{"id": "observe-the-moon", "name": "Observe the moon", "decision": "reject", "reason": "Night-sky observation already exists. One object is not a new skill.", "mapped_proposal_id": "technology-science-niches:sky-observation"}
+{"id": "grow-basil-from-seed", "name": "Grow basil from seed", "decision": "reject", "reason": "Growing plants from seed already exists. The species is not a new skill.", "mapped_proposal_id": "technology-science-niches:growing-plants-from-seed"}
+{"id": "solve-an-easy-sudoku", "name": "Solve an easy Sudoku", "decision": "reject", "reason": "Sudoku strategies already exist. Difficulty labels are not new skills.", "mapped_proposal_id": "communication-cognition-nature:sudoku-solving-strategies"}
+{"id": "play-xiangqi-openings", "name": "Study xiangqi openings", "decision": "reject", "reason": "Playing xiangqi already exists. Openings are not a separate skill.", "mapped_proposal_id": "communication-cognition-nature:play-xiangqi"}
+{"id": "edit-a-shared-slide", "name": "Edit a shared slide deck", "decision": "reject", "reason": "Editing a shared document already covers shared files. Software is not a new skill.", "mapped_proposal_id": "general-practical-skills:edit-a-shared-document"}
+{"id": "make-a-dimensioned-sketch", "name": "Make a dimensioned sketch", "decision": "reject", "reason": "Making a simple technical drawing already exists.", "mapped_proposal_id": "general-practical-skills:make-a-simple-technical-drawing"}
+{"id": "read-a-machining-print", "name": "Read a machining print", "decision": "reject", "reason": "Reading a technical drawing already exists.", "mapped_proposal_id": "general-practical-skills:read-a-technical-drawing"}
+{"id": "compare-two-kettles", "name": "Compare two kettles before buying", "decision": "reject", "reason": "Comparing equipment before buying already exists.", "mapped_proposal_id": "general-practical-skills:compare-equipment-before-buying"}
+{"id": "book-a-table", "name": "Book a restaurant table", "decision": "reject", "reason": "Making and checking a reservation already exists.", "mapped_proposal_id": "general-practical-skills:make-and-check-a-reservation"}
+{"id": "play-the-piano", "name": "Play the piano", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "play-the-guitar", "name": "Play the guitar", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "play-the-violin", "name": "Play the violin", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "play-the-drums", "name": "Play the drums", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "play-the-flute", "name": "Play the flute", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "play-the-ukulele", "name": "Play the ukulele", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "speak-japanese", "name": "Hold a conversation in Japanese", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "speak-italian", "name": "Hold a conversation in Italian", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "speak-polish", "name": "Hold a conversation in Polish", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "speak-mandarin", "name": "Hold a conversation in Mandarin", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "write-in-arabic", "name": "Write a paragraph in Arabic", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "write-in-korean", "name": "Write a paragraph in Korean", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "photo-with-a-phone", "name": "Take a photo with a phone", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "photo-with-a-camera", "name": "Take a photo with a dedicated camera", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "edit-in-one-app", "name": "Edit a photo in a named app", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "knit-a-scarf", "name": "Knit a scarf", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "crochet-a-scarf", "name": "Crochet a scarf", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "sew-on-a-machine", "name": "Sew on a sewing machine", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "cook-in-an-air-fryer", "name": "Cook a meal in an air fryer", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "cook-in-a-slow-cooker", "name": "Cook a meal in a slow cooker", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "run-on-a-treadmill", "name": "Run on a treadmill", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "cycle-on-a-stationary-bike", "name": "Cycle on a stationary bike", "decision": "reject", "reason": "Device, instrument, language, or brand variant. It does not change the result enough to be its own skill.", "mapped_proposal_id": ""}
+{"id": "be-organized", "name": "Be organized", "decision": "reject", "reason": "An identity, not a result. Specific planning skills were kept instead.", "mapped_proposal_id": ""}
+{"id": "be-creative", "name": "Be creative", "decision": "reject", "reason": "A trait. Making a collage, a scene, or a photo is the skill.", "mapped_proposal_id": ""}
+{"id": "be-a-leader", "name": "Be a leader", "decision": "reject", "reason": "Too broad. Running an agenda and dividing work are the observable pieces.", "mapped_proposal_id": ""}
+{"id": "be-resilient", "name": "Be resilient", "decision": "reject", "reason": "A trait, not a checkable result.", "mapped_proposal_id": ""}
+{"id": "be-confident", "name": "Be confident", "decision": "reject", "reason": "A feeling, not a demonstration.", "mapped_proposal_id": ""}
+{"id": "communicate-well", "name": "Communicate well", "decision": "reject", "reason": "An umbrella. Story, question, summary, and refusal are separate.", "mapped_proposal_id": ""}
+{"id": "think-critically", "name": "Think critically in general", "decision": "reject", "reason": "Already covered, and too broad as a second entry.", "mapped_proposal_id": ""}
+{"id": "live-healthily", "name": "Live healthily", "decision": "reject", "reason": "Mixes food, sleep, and medicine. No single result.", "mapped_proposal_id": ""}
+{"id": "be-good-with-money", "name": "Be good with money", "decision": "reject", "reason": "An umbrella over bills, unit prices, and subscriptions.", "mapped_proposal_id": ""}
+{"id": "be-outdoorsy", "name": "Be outdoorsy", "decision": "reject", "reason": "An interest. Walking, tents, and markers are the skills.", "mapped_proposal_id": ""}
+{"id": "understand-science", "name": "Understand science", "decision": "reject", "reason": "A domain. A home observation is the skill that was kept.", "mapped_proposal_id": ""}
+{"id": "know-history", "name": "Know history", "decision": "reject", "reason": "A domain. A timeline and two accounts are the skills.", "mapped_proposal_id": ""}
+{"id": "be-a-good-friend", "name": "Be a good friend", "decision": "reject", "reason": "A relationship, not a skill with levels.", "mapped_proposal_id": ""}
+{"id": "manage-stress", "name": "Manage stress", "decision": "reject", "reason": "A health claim without a source. No technique was invented.", "mapped_proposal_id": ""}
+{"id": "be-productive", "name": "Be productive", "decision": "reject", "reason": "A slogan. Estimating time and protecting a block are the skills.", "mapped_proposal_id": ""}
+{"id": "learn-how-to-learn", "name": "Learn how to learn", "decision": "reject", "reason": "An umbrella. Notes, teach-back, and focus are already specific.", "mapped_proposal_id": ""}
+{"id": "be-handy", "name": "Be handy", "decision": "reject", "reason": "An identity. Knots, buttons, and plungers are the skills.", "mapped_proposal_id": ""}
+{"id": "eat-clean", "name": "Eat clean", "decision": "reject", "reason": "A diet label, not a skill, and not nutrition advice.", "mapped_proposal_id": ""}
+{"id": "be-mindful", "name": "Be mindful", "decision": "reject", "reason": "A vague state. Stretching and effort have concrete stops.", "mapped_proposal_id": ""}
+{"id": "digital-literacy", "name": "Digital literacy", "decision": "reject", "reason": "Too broad. Files, formulas, and suspicious messages are the skills.", "mapped_proposal_id": ""}
+{"id": "media-literacy", "name": "Media literacy", "decision": "reject", "reason": "Too broad beside chart reading and claim checking.", "mapped_proposal_id": ""}
+{"id": "cultural-awareness", "name": "Cultural awareness", "decision": "reject", "reason": "A stance, not one practice.", "mapped_proposal_id": ""}
+{"id": "emotional-intelligence", "name": "Emotional intelligence", "decision": "reject", "reason": "A label, not an observable result.", "mapped_proposal_id": ""}
+{"id": "problem-solving-in-general", "name": "Solve problems in general", "decision": "reject", "reason": "Systematic problem solving already exists.", "mapped_proposal_id": ""}
+{"id": "public-speaking-advanced", "name": "Advanced public speaking", "decision": "reject", "reason": "The word advanced does not create a new skill.", "mapped_proposal_id": ""}
+{"id": "basic-cooking", "name": "Basic cooking", "decision": "reject", "reason": "Too broad beside the specific kitchen proposals.", "mapped_proposal_id": ""}
+{"id": "home-maintenance", "name": "Home maintenance", "decision": "reject", "reason": "Too broad, and it invites unsafe repairs.", "mapped_proposal_id": ""}
+{"id": "first-aid-in-general", "name": "First aid in general", "decision": "reject", "reason": "High risk and already queued in pack-09. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "pet-care-in-general", "name": "Pet care in general", "decision": "reject", "reason": "Too broad, and pack-10 already holds the specific animal skills.", "mapped_proposal_id": ""}
+{"id": "gardening-in-general", "name": "Gardening in general", "decision": "reject", "reason": "Too broad beside watering, repotting, and harvesting.", "mapped_proposal_id": ""}
+{"id": "photography-in-general", "name": "Photography in general", "decision": "reject", "reason": "Too broad. A clear subject and an honest crop are the skills.", "mapped_proposal_id": ""}
+{"id": "music-in-general", "name": "Music in general", "decision": "reject", "reason": "Too broad. Beat, pitch, and a tune by ear are the skills.", "mapped_proposal_id": ""}
+{"id": "programming-in-general", "name": "Programming in general", "decision": "reject", "reason": "Programming fundamentals already exist.", "mapped_proposal_id": ""}
+{"id": "data-science", "name": "Data science", "decision": "reject", "reason": "Too broad, and small-dataset analysis already exists.", "mapped_proposal_id": ""}
+{"id": "entrepreneurship", "name": "Entrepreneurship", "decision": "reject", "reason": "Too broad. A project tracker and a deadline are the pieces kept.", "mapped_proposal_id": ""}
+{"id": "self-improvement", "name": "Self-improvement", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "time-management", "name": "Time management", "decision": "reject", "reason": "An umbrella. Week planning and estimates are the skills.", "mapped_proposal_id": ""}
+{"id": "networking", "name": "Networking", "decision": "reject", "reason": "Too vague. Introducing two people is the skill.", "mapped_proposal_id": ""}
+{"id": "storytelling-in-general", "name": "Storytelling in general", "decision": "reject", "reason": "A true short story is the skill that was kept.", "mapped_proposal_id": ""}
+{"id": "design-thinking", "name": "Design thinking", "decision": "reject", "reason": "A workshop label, not one result.", "mapped_proposal_id": ""}
+{"id": "perform-cpr", "name": "Perform CPR", "decision": "needs_source", "reason": "Life-saving procedure. Not written without a current first-aid source and a skills check.", "mapped_proposal_id": ""}
+{"id": "use-an-aed", "name": "Use an AED", "decision": "needs_source", "reason": "Device procedure. Pack-09 already holds this topic. No steps were copied.", "mapped_proposal_id": ""}
+{"id": "give-an-injection", "name": "Give an injection", "decision": "needs_source", "reason": "Medical procedure. Not a home skill here.", "mapped_proposal_id": ""}
+{"id": "diagnose-a-rash", "name": "Diagnose a rash", "decision": "needs_source", "reason": "Diagnosis. Not invented.", "mapped_proposal_id": ""}
+{"id": "splint-a-fracture", "name": "Splint a suspected fracture", "decision": "needs_source", "reason": "Injury care. Not written from memory.", "mapped_proposal_id": ""}
+{"id": "open-an-electrical-panel", "name": "Open an electrical panel", "decision": "needs_source", "reason": "Shock and fire risk. No steps written.", "mapped_proposal_id": ""}
+{"id": "rewire-a-plug", "name": "Rewire a plug", "decision": "needs_source", "reason": "Electrical work. Left for a checked source.", "mapped_proposal_id": ""}
+{"id": "relight-a-gas-pilot", "name": "Relight a gas pilot", "decision": "needs_source", "reason": "Gas risk. Not written.", "mapped_proposal_id": ""}
+{"id": "investigate-a-gas-smell", "name": "Investigate a gas smell", "decision": "needs_source", "reason": "The safe action is to leave and call. No investigation steps.", "mapped_proposal_id": ""}
+{"id": "fell-a-tree", "name": "Fell a tree", "decision": "needs_source", "reason": "Dangerous cutting. Not a consumer skill without a specialist source.", "mapped_proposal_id": ""}
+{"id": "observe-the-sun", "name": "Observe the sun", "decision": "needs_source", "reason": "Eye injury risk. No filter method was written.", "mapped_proposal_id": ""}
+{"id": "treat-wood-rot", "name": "Treat wood rot", "decision": "needs_source", "reason": "Chemicals and structure. Noticing rot already exists; treatment was not written.", "mapped_proposal_id": ""}
+{"id": "use-a-solvent-on-paint", "name": "Strip paint with solvent", "decision": "needs_source", "reason": "Chemical hazard. Not written.", "mapped_proposal_id": ""}
+{"id": "charge-a-lithium-battery-pack", "name": "Repair a lithium battery pack", "decision": "needs_source", "reason": "Fire risk. Not written.", "mapped_proposal_id": ""}
+{"id": "administer-pet-medicine", "name": "Give a pet a medicine", "decision": "needs_source", "reason": "Veterinary action. Not written.", "mapped_proposal_id": ""}
+{"id": "train-a-dog-with-corrections", "name": "Correct a dog with punishment", "decision": "reject", "reason": "Outside the catalog. Reward-based work stays in pack-10.", "mapped_proposal_id": ""}
+{"id": "forage-mushrooms", "name": "Forage wild mushrooms", "decision": "needs_source", "reason": "Poisoning risk. Plant naming in this pack is not foraging.", "mapped_proposal_id": ""}
+{"id": "cross-a-flooded-road", "name": "Cross a flooded road", "decision": "reject", "reason": "Dangerous. Not a skill to practice.", "mapped_proposal_id": ""}
+{"id": "swim-in-open-water-rescue", "name": "Rescue a swimmer by entering the water", "decision": "needs_source", "reason": "Drown risk. Pack-09 already says help from shore. No new rescue skill.", "mapped_proposal_id": ""}
+{"id": "collect-stamps", "name": "Collect stamps", "decision": "reject", "reason": "A collection is an interest unless a care or research result is defined.", "mapped_proposal_id": ""}
+{"id": "follow-a-sports-team", "name": "Follow a sports team", "decision": "reject", "reason": "Fandom is not a practice with levels.", "mapped_proposal_id": ""}
+{"id": "watch-films", "name": "Watch films", "decision": "reject", "reason": "Watching is not yet a skill. A review with evidence is the skill that was kept.", "mapped_proposal_id": ""}
+{"id": "listen-to-podcasts", "name": "Listen to podcasts", "decision": "reject", "reason": "Consumption, not a result.", "mapped_proposal_id": ""}
+{"id": "scroll-the-news", "name": "Keep up with the news", "decision": "reject", "reason": "Too vague beside chart reading and two accounts.", "mapped_proposal_id": ""}
+{"id": "play-video-games", "name": "Play video games", "decision": "reject", "reason": "A pastime. A named game with an ending rule would be required, and one was not separated per title.", "mapped_proposal_id": ""}
+{"id": "astrology-reading", "name": "Read a birth chart", "decision": "reject", "reason": "Not treated as a checkable skill.", "mapped_proposal_id": ""}
+{"id": "ghost-hunting", "name": "Hunt for ghosts", "decision": "reject", "reason": "No observable result that the catalog can stand behind.", "mapped_proposal_id": ""}
+{"id": "metal-detecting-for-treasure", "name": "Metal-detect for treasure", "decision": "reject", "reason": "Legal and land-permission issues, and pack-03 already touched the hobby. Not expanded.", "mapped_proposal_id": ""}
+{"id": "keep-a-dream-journal-as-insight", "name": "Interpret dreams", "decision": "reject", "reason": "Interpretation is not checkable. A plain journal entry already exists.", "mapped_proposal_id": ""}
+{"id": "luck-and-manifesting", "name": "Manifest a result", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "speed-reading-thousands-of-words", "name": "Speed-read thousands of words", "decision": "reject", "reason": "A number target, not a result. Skimming for a question was kept.", "mapped_proposal_id": ""}
+{"id": "memorize-pi", "name": "Memorize digits of pi", "decision": "reject", "reason": "A digit count is not the kind of progression this catalog uses.", "mapped_proposal_id": ""}
+{"id": "hold-a-plank-for-five-minutes", "name": "Hold a plank for five minutes", "decision": "reject", "reason": "A clock target. The plank skill stops when form breaks.", "mapped_proposal_id": ""}
+{"id": "run-a-marathon-plan", "name": "Follow a marathon plan", "decision": "reject", "reason": "A calendar of distances. Running already exists, and a medical plan was not written.", "mapped_proposal_id": ""}
+{"id": "cold-exposure", "name": "Practice cold exposure", "decision": "reject", "reason": "Health risk without a source.", "mapped_proposal_id": ""}
+{"id": "fasting-protocol", "name": "Follow a fasting protocol", "decision": "reject", "reason": "Health advice. Not written.", "mapped_proposal_id": ""}
+{"id": "supplement-routine", "name": "Build a supplement routine", "decision": "reject", "reason": "Health advice. Not written.", "mapped_proposal_id": ""}
+{"id": "biohacking", "name": "Biohack a habit", "decision": "reject", "reason": "A slogan.", "mapped_proposal_id": ""}
+{"id": "extreme-couponing", "name": "Extreme couponing", "decision": "reject", "reason": "Not a stable skill, and it slides into financial offers.", "mapped_proposal_id": ""}
+{"id": "brew-espresso-at-nine-bars", "name": "Pull an espresso at a set pressure", "decision": "reject", "reason": "Pressure targets are equipment settings, not a separate skill from adjusting coffee by taste.", "mapped_proposal_id": "broad-practice-expansion:brew-coffee-by-taste"}
+{"id": "season-with-a-numbered-scale", "name": "Season to a numbered taste scale", "decision": "reject", "reason": "A scale does not change seasoning by tasting.", "mapped_proposal_id": "broad-practice-expansion:season-food-by-tasting"}
+{"id": "roast-only-potatoes", "name": "Roast a tray of potatoes", "decision": "reject", "reason": "One vegetable does not split the roasting skill.", "mapped_proposal_id": "broad-practice-expansion:roast-a-tray-of-vegetables"}
+{"id": "cook-spaghetti-only", "name": "Cook spaghetti", "decision": "reject", "reason": "Pasta shape is not a new skill.", "mapped_proposal_id": "broad-practice-expansion:cook-pasta-and-sauce-it"}
+{"id": "plan-dinners-only", "name": "Plan only dinners", "decision": "reject", "reason": "A meal slot is not a new planning skill.", "mapped_proposal_id": "broad-practice-expansion:plan-a-week-of-meals"}
+{"id": "tie-a-bowline-only", "name": "Tie a bowline", "decision": "reject", "reason": "One named knot is a case of tying a knot that holds, not a catalog entry per knot.", "mapped_proposal_id": "broad-practice-expansion:tie-a-knot-that-holds"}
+{"id": "sew-a-shirt-button-only", "name": "Sew only a shirt button", "decision": "reject", "reason": "Button type is not a new skill.", "mapped_proposal_id": "broad-practice-expansion:sew-a-button-back-on"}
+{"id": "iron-a-collar-only", "name": "Iron only collars", "decision": "reject", "reason": "Part of ironing a shirt.", "mapped_proposal_id": "broad-practice-expansion:iron-a-shirt"}
+{"id": "pack-for-a-beach", "name": "Pack for the beach", "decision": "reject", "reason": "Trip type is not a new packing skill.", "mapped_proposal_id": "broad-practice-expansion:pack-for-a-specific-trip"}
+{"id": "read-an-electricity-bill-only", "name": "Read only an electricity bill", "decision": "reject", "reason": "Utility type does not split bill reading.", "mapped_proposal_id": "broad-practice-expansion:read-a-household-bill"}
+{"id": "plunge-a-toilet-only", "name": "Plunge only a toilet", "decision": "reject", "reason": "Same plunger skill.", "mapped_proposal_id": "broad-practice-expansion:clear-a-drain-with-a-plunger"}
+{"id": "estimate-only-meetings", "name": "Estimate only meeting length", "decision": "reject", "reason": "Same estimating skill.", "mapped_proposal_id": "broad-practice-expansion:estimate-how-long-work-takes"}
+{"id": "tell-a-joke", "name": "Tell a joke as a story", "decision": "reject", "reason": "A joke is a case of a short story, not automatically its own skill.", "mapped_proposal_id": "broad-practice-expansion:tell-a-short-true-story"}
+{"id": "write-meeting-minutes-only", "name": "Write minutes as a new skill", "decision": "reject", "reason": "Covered by running an agenda and leaving the decision note.", "mapped_proposal_id": "broad-practice-expansion:run-a-short-agenda"}
+{"id": "thank-by-text", "name": "Send thanks by text", "decision": "reject", "reason": "Channel does not split a specific thank-you.", "mapped_proposal_id": "broad-practice-expansion:write-a-specific-thanks"}
+{"id": "decline-by-email", "name": "Decline by email", "decision": "reject", "reason": "Channel does not split a clear refusal.", "mapped_proposal_id": "broad-practice-expansion:decline-a-request"}
+{"id": "study-with-highlighters-only", "name": "Highlight a textbook", "decision": "reject", "reason": "Highlighting without a question is weaker than annotating, which was kept.", "mapped_proposal_id": "broad-practice-expansion:annotate-a-text"}
+{"id": "focus-for-25-minutes", "name": "Focus for 25 minutes", "decision": "reject", "reason": "A clock length. The focus block is defined by the task and the interruptions.", "mapped_proposal_id": "broad-practice-expansion:work-a-focus-block"}
+{"id": "write-daily-pages", "name": "Write three pages every day", "decision": "reject", "reason": "A quota. The journal entry is the skill.", "mapped_proposal_id": "broad-practice-expansion:write-a-journal-entry"}
+{"id": "five-star-reviews", "name": "Write five-star reviews", "decision": "reject", "reason": "A star count. A review with evidence was kept.", "mapped_proposal_id": "broad-practice-expansion:write-a-review-with-evidence"}
+{"id": "spreadsheet-macros", "name": "Automate a spreadsheet with macros", "decision": "reject", "reason": "Macros slide into programming, which already exists. A checked formula was kept.", "mapped_proposal_id": "broad-practice-expansion:write-a-spreadsheet-formula"}
+{"id": "prompt-engineering", "name": "Prompt engineering", "decision": "reject", "reason": "A fashion label. Checking an automated answer was kept; no jailbreak or trick was written.", "mapped_proposal_id": "broad-practice-expansion:check-an-automated-answer"}
+{"id": "portrait-photography", "name": "Take portraits", "decision": "reject", "reason": "A genre. A clear subject and consent already bound the photo skill.", "mapped_proposal_id": "broad-practice-expansion:take-a-clear-photo"}
+{"id": "film-vertically", "name": "Film vertical video", "decision": "reject", "reason": "Aspect ratio is not a skill.", "mapped_proposal_id": "broad-practice-expansion:film-a-short-stable-clip"}
+{"id": "sing-in-a-choir", "name": "Sing in a choir", "decision": "reject", "reason": "Ensemble singing needs a source and overlaps pitch matching. Not split out.", "mapped_proposal_id": "broad-practice-expansion:match-a-pitch"}
+{"id": "watercolor-washes", "name": "Paint watercolor washes", "decision": "reject", "reason": "A medium. Mixing a color was kept; a medium is not a new skill.", "mapped_proposal_id": "broad-practice-expansion:mix-a-color-you-can-match"}
+{"id": "origami-crane", "name": "Fold a paper crane", "decision": "reject", "reason": "One model. Folding a box that closes was the result that was kept.", "mapped_proposal_id": "broad-practice-expansion:fold-a-paper-box"}
+{"id": "water-on-a-schedule", "name": "Water plants every Sunday", "decision": "reject", "reason": "A schedule. Checking the soil was kept.", "mapped_proposal_id": "broad-practice-expansion:water-by-checking-the-soil"}
+{"id": "repot-into-terracotta", "name": "Repot only into terracotta", "decision": "reject", "reason": "Pot material is not a new skill.", "mapped_proposal_id": "broad-practice-expansion:repot-a-plant"}
+{"id": "name-birds-by-app", "name": "Name birds with an app", "decision": "reject", "reason": "Wildlife observation already exists, and an app does not create a skill.", "mapped_proposal_id": "technology-science-niches:wildlife-observation"}
+{"id": "play-blitz-chess", "name": "Play blitz chess", "decision": "reject", "reason": "A clock variant of chess, not a new game.", "mapped_proposal_id": "broad-practice-expansion:play-chess"}
+{"id": "play-go-on-a-19-by-19", "name": "Play Go only on a full board", "decision": "reject", "reason": "Board size is not a separate skill.", "mapped_proposal_id": "broad-practice-expansion:play-go"}
+{"id": "solve-a-cube-in-under-a-minute", "name": "Solve a cube in under a minute", "decision": "reject", "reason": "A time target. Explaining a step was kept.", "mapped_proposal_id": "broad-practice-expansion:solve-a-cube-and-explain"}
+{"id": "host-a-dinner-party", "name": "Host a dinner party", "decision": "reject", "reason": "Scale. Hosting a simple meal was kept.", "mapped_proposal_id": "broad-practice-expansion:host-a-simple-meal"}
+{"id": "track-a-project-in-an-app", "name": "Track a project in a named app", "decision": "reject", "reason": "The app is not the skill.", "mapped_proposal_id": "broad-practice-expansion:track-a-small-project"}
+{"id": "cancel-a-gym-membership", "name": "Cancel a gym membership", "decision": "reject", "reason": "One vendor. Canceling a subscription was kept.", "mapped_proposal_id": "broad-practice-expansion:cancel-an-unwanted-subscription"}
+{"id": "squat-with-a-barbell", "name": "Squat with a barbell", "decision": "reject", "reason": "Load and equipment. The bodyweight squat was kept; lifting programming was not invented.", "mapped_proposal_id": "broad-practice-expansion:squat-with-control"}
+{"id": "juggle-clubs", "name": "Juggle clubs", "decision": "reject", "reason": "Object variant, and clubs raise the injury bar. Three balls were kept.", "mapped_proposal_id": "broad-practice-expansion:juggle-three-balls"}
+{"id": "pitch-a-named-tent-model", "name": "Pitch one tent model", "decision": "reject", "reason": "Model variant.", "mapped_proposal_id": "broad-practice-expansion:pitch-a-tent"}
+{"id": "patch-a-car-tire", "name": "Patch a car tire", "decision": "reject", "reason": "Higher risk than a bicycle tube. Not written.", "mapped_proposal_id": ""}
+{"id": "manage-a-shift", "name": "Manage a staff shift", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "hire-an-employee", "name": "Hire an employee", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "file-a-corporate-tax-return", "name": "File a corporate tax return", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "audit-a-company", "name": "Audit a company", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "represent-a-client-in-court", "name": "Represent a client in court", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "prescribe-a-medicine", "name": "Prescribe a medicine", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "operate-a-forklift", "name": "Operate a forklift", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "weld-a-certified-joint", "name": "Weld a certified joint", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "fly-a-passenger-aircraft", "name": "Fly a passenger aircraft", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "dispatch-emergency-calls", "name": "Dispatch emergency calls", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "underwrite-an-insurance-policy", "name": "Underwrite an insurance policy", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "run-a-laboratory-assay", "name": "Run a clinical laboratory assay", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "teach-a-licensed-classroom", "name": "Teach as a licensed classroom teacher", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "broker-a-house-sale", "name": "Broker a house sale", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "prepare-statutory-accounts", "name": "Prepare statutory accounts", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "manage-a-warehouse", "name": "Manage a warehouse", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "operate-a-crane", "name": "Operate a crane", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "install-a-gas-boiler", "name": "Install a gas boiler", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "design-a-load-bearing-wall", "name": "Design a load-bearing wall", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "act-as-a-notary", "name": "Act as a notary", "decision": "reject", "reason": "Occupational or licensed work, not a household achievement. No procedure was written.", "mapped_proposal_id": ""}
+{"id": "whistle-a-tune", "name": "Whistle a tune", "decision": "reject", "reason": "A thin case of matching pitch. Not separated.", "mapped_proposal_id": ""}
+{"id": "snap-fingers-in-time", "name": "Snap in time", "decision": "reject", "reason": "A thinner case of a steady beat.", "mapped_proposal_id": ""}
+{"id": "draw-a-stick-figure", "name": "Draw a stick figure", "decision": "reject", "reason": "Too thin beside drawing an object you see.", "mapped_proposal_id": ""}
+{"id": "color-inside-lines", "name": "Color inside the lines", "decision": "reject", "reason": "A children's exercise without a distinct adult result here.", "mapped_proposal_id": ""}
+{"id": "make-a-paper-airplane", "name": "Fold a paper airplane", "decision": "reject", "reason": "A toy fold. The box that closes was the paper skill kept.", "mapped_proposal_id": ""}
+{"id": "tie-shoelaces", "name": "Tie shoelaces", "decision": "reject", "reason": "Too small a result beside a knot that holds a tested load.", "mapped_proposal_id": ""}
+{"id": "zip-a-coat", "name": "Zip a coat", "decision": "reject", "reason": "Not a catalog achievement.", "mapped_proposal_id": ""}
+{"id": "fill-a-glass-of-water", "name": "Pour a glass of water", "decision": "reject", "reason": "Not a catalog achievement.", "mapped_proposal_id": ""}
+{"id": "set-an-alarm", "name": "Set an alarm", "decision": "reject", "reason": "A device tap, not a skill. A focus block and a week plan were kept.", "mapped_proposal_id": ""}
+{"id": "star-an-email", "name": "Star an email", "decision": "reject", "reason": "A software gesture.", "mapped_proposal_id": ""}
+{"id": "change-a-wallpaper", "name": "Change a wallpaper", "decision": "reject", "reason": "Cosmetic device use.", "mapped_proposal_id": ""}
+{"id": "react-with-an-emoji", "name": "React to a message with an emoji", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "take-a-screenshot", "name": "Take a screenshot", "decision": "reject", "reason": "A gesture. Organizing files was kept.", "mapped_proposal_id": ""}
+{"id": "bookmark-a-page", "name": "Bookmark a page", "decision": "reject", "reason": "A gesture. Citing a source was kept.", "mapped_proposal_id": ""}
+{"id": "like-a-post", "name": "Like a post", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "count-to-one-hundred", "name": "Count to one hundred", "decision": "reject", "reason": "Not an achievement in this catalog.", "mapped_proposal_id": ""}
+{"id": "recite-the-alphabet", "name": "Recite the alphabet", "decision": "reject", "reason": "Not an achievement here.", "mapped_proposal_id": ""}
+{"id": "name-the-planets-in-order", "name": "Name the planets in order", "decision": "reject", "reason": "A list, and sky observation already exists.", "mapped_proposal_id": ""}
+{"id": "memorize-capital-cities", "name": "Memorize capital cities", "decision": "reject", "reason": "A list without a use. A timeline was kept instead.", "mapped_proposal_id": ""}
+{"id": "identify-flags-of-the-world", "name": "Identify many flags", "decision": "reject", "reason": "A quiz list, one flag per country would be the variant problem.", "mapped_proposal_id": ""}
+{"id": "speak-pig-latin", "name": "Speak pig Latin", "decision": "reject", "reason": "A code, not a language skill.", "mapped_proposal_id": ""}
+{"id": "write-backwards", "name": "Write backwards", "decision": "reject", "reason": "A stunt.", "mapped_proposal_id": ""}
+{"id": "spin-a-pen", "name": "Spin a pen", "decision": "reject", "reason": "A stunt without a useful result.", "mapped_proposal_id": ""}
+{"id": "balance-a-spoon-on-your-nose", "name": "Balance a spoon on your nose", "decision": "reject", "reason": "A stunt.", "mapped_proposal_id": ""}
+{"id": "buy-followers", "name": "Buy followers", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "hide-an-ad", "name": "Hide an advertisement in a post", "decision": "reject", "reason": "Not a skill the catalog wants.", "mapped_proposal_id": ""}
+{"id": "negotiate-a-salary-script", "name": "Recite a salary script", "decision": "reject", "reason": "A script is not negotiation. A deadline and a simple exchange were kept, without workplace legal advice.", "mapped_proposal_id": ""}
+{"id": "day-trade", "name": "Day-trade", "decision": "reject", "reason": "Financial risk without a source, and not a household skill.", "mapped_proposal_id": ""}
+{"id": "mint-an-nft", "name": "Mint a token", "decision": "reject", "reason": "Not a stable learning result.", "mapped_proposal_id": ""}
+{"id": "mine-cryptocurrency", "name": "Mine cryptocurrency", "decision": "reject", "reason": "Not a household skill.", "mapped_proposal_id": ""}
+{"id": "build-a-pc-water-loop", "name": "Build a liquid-cooled computer", "decision": "reject", "reason": "Leak and electrical risk. Not written.", "mapped_proposal_id": ""}
+{"id": "overclock-a-processor", "name": "Overclock a processor", "decision": "reject", "reason": "Hardware risk without a source.", "mapped_proposal_id": ""}
+{"id": "install-a-car-stereo", "name": "Install a car stereo", "decision": "reject", "reason": "Vehicle electrical work. Not written.", "mapped_proposal_id": ""}
+{"id": "change-brake-pads", "name": "Change brake pads", "decision": "reject", "reason": "Safety-critical vehicle work. Not written.", "mapped_proposal_id": ""}
+{"id": "bleed-brakes", "name": "Bleed brakes", "decision": "reject", "reason": "Safety-critical. Not written.", "mapped_proposal_id": ""}
+{"id": "jump-start-a-car", "name": "Jump-start a car", "decision": "reject", "reason": "Battery and spark risk. Not written from memory.", "mapped_proposal_id": ""}
+{"id": "drive-a-manual-car", "name": "Drive a manual car", "decision": "reject", "reason": "Licensed driving is outside this pack.", "mapped_proposal_id": ""}
+{"id": "ride-a-motorcycle", "name": "Ride a motorcycle", "decision": "reject", "reason": "Licensed riding, and horse riding was already refused for lack of a safe source.", "mapped_proposal_id": ""}
+{"id": "fly-a-drone-in-a-city", "name": "Fly a drone in a city", "decision": "reject", "reason": "Airspace rules differ and were not checked. Not written.", "mapped_proposal_id": ""}
+{"id": "fire-a-gun", "name": "Fire a gun", "decision": "reject", "reason": "Out of scope.", "mapped_proposal_id": ""}
+{"id": "hunt-an-animal", "name": "Hunt an animal", "decision": "reject", "reason": "Out of scope for this pack.", "mapped_proposal_id": ""}
+{"id": "butcher-a-carcass", "name": "Butcher a carcass", "decision": "reject", "reason": "Food-safety and knife risk beyond the existing knife skill. Not written.", "mapped_proposal_id": ""}
+{"id": "can-food-at-home", "name": "Can food at home", "decision": "reject", "reason": "Botulism risk. The recipe-scaling note already refuses canning. Not written.", "mapped_proposal_id": ""}
+{"id": "ferment-vegetables-safely", "name": "Ferment vegetables", "decision": "reject", "reason": "Safety parameters were not taken from a checked source. Not written.", "mapped_proposal_id": ""}
+{"id": "brew-beer", "name": "Brew beer", "decision": "reject", "reason": "Fermentation safety and local law. Not written.", "mapped_proposal_id": ""}
+{"id": "distill-alcohol", "name": "Distill alcohol", "decision": "reject", "reason": "Danger and law. Not a skill here.", "mapped_proposal_id": ""}
+{"id": "mix-cocktails-by-strength", "name": "Mix drinks to a target strength", "decision": "reject", "reason": "Not added; alcohol service is a poor fit and easy to overclaim.", "mapped_proposal_id": ""}
+{"id": "pierce-an-ear", "name": "Pierce an ear", "decision": "reject", "reason": "Body procedure. Not written.", "mapped_proposal_id": ""}
+{"id": "cut-hair-with-clippers", "name": "Cut hair with clippers", "decision": "reject", "reason": "Easy to ruin, and not sourced. Braiding was kept instead.", "mapped_proposal_id": ""}
+{"id": "dye-hair", "name": "Dye hair", "decision": "reject", "reason": "Chemical product instructions differ. Not improvised.", "mapped_proposal_id": ""}
+{"id": "remove-a-tick", "name": "Remove a tick", "decision": "reject", "reason": "Health procedure. Not written from memory.", "mapped_proposal_id": ""}
+{"id": "treat-a-burn", "name": "Treat a burn", "decision": "reject", "reason": "First aid. Not written.", "mapped_proposal_id": ""}
+{"id": "perform-the-heimlich", "name": "Help a choking person", "decision": "reject", "reason": "First aid. Pack-09 owns this gap. Not written.", "mapped_proposal_id": ""}
+{"id": "bandage-a-wound", "name": "Bandage a wound", "decision": "reject", "reason": "First aid. Not written.", "mapped_proposal_id": ""}
+{"id": "use-a-fire-extinguisher", "name": "Use a fire extinguisher", "decision": "reject", "reason": "Pack-09 already has this topic. No steps copied.", "mapped_proposal_id": ""}
+{"id": "build-a-campfire", "name": "Build a campfire", "decision": "reject", "reason": "Fire risk. A tent skill was kept; fire was not.", "mapped_proposal_id": ""}
+{"id": "cook-on-a-camp-stove", "name": "Cook on a camp stove", "decision": "reject", "reason": "Fuel risk. Not written.", "mapped_proposal_id": ""}
+{"id": "cross-a-stream", "name": "Cross a stream", "decision": "reject", "reason": "Water risk. Not written.", "mapped_proposal_id": ""}
+{"id": "abseil", "name": "Abseil", "decision": "reject", "reason": "Height risk. Not written.", "mapped_proposal_id": ""}
+{"id": "lead-a-climb", "name": "Lead a climb", "decision": "reject", "reason": "Height risk. Not written.", "mapped_proposal_id": ""}
+{"id": "scuba-dive", "name": "Scuba dive", "decision": "reject", "reason": "Certification and drowning risk. Not written.", "mapped_proposal_id": ""}
+{"id": "free-dive", "name": "Free-dive", "decision": "reject", "reason": "Breath-hold risk. Not written.", "mapped_proposal_id": ""}
+{"id": "ski-a-black-run", "name": "Ski a black run", "decision": "reject", "reason": "Snow sport progression by slope label. Cross-country skiing already exists.", "mapped_proposal_id": ""}
+{"id": "parkour", "name": "Train parkour", "decision": "reject", "reason": "Impact and fall risk without a source.", "mapped_proposal_id": ""}
+{"id": "spar-in-boxing", "name": "Spar in boxing", "decision": "reject", "reason": "Impact risk. Not written.", "mapped_proposal_id": ""}
+{"id": "wrestle", "name": "Wrestle", "decision": "reject", "reason": "Impact risk. Not written.", "mapped_proposal_id": ""}
+{"id": "fence-with-weapons", "name": "Fence with weapons", "decision": "reject", "reason": "Weapon risk. Not written.", "mapped_proposal_id": ""}
+{"id": "shoot-a-bow-at-a-target", "name": "Shoot a bow", "decision": "reject", "reason": "Projectile risk without a range source. Not written.", "mapped_proposal_id": ""}
+{"id": "carve-with-a-chisel", "name": "Carve with a chisel", "decision": "reject", "reason": "Sharp-tool injury. Sanding a small piece was kept; carving was not.", "mapped_proposal_id": ""}
+{"id": "use-a-circular-saw", "name": "Use a circular saw", "decision": "reject", "reason": "Power-tool injury. Not written.", "mapped_proposal_id": ""}
+{"id": "climb-a-ladder-to-the-roof", "name": "Climb onto a roof", "decision": "reject", "reason": "Fall risk. Hanging a light frame stops before this.", "mapped_proposal_id": ""}
+{"id": "clean-gutters", "name": "Clean gutters", "decision": "reject", "reason": "Fall risk. Not written.", "mapped_proposal_id": ""}
+{"id": "replace-a-roof-tile", "name": "Replace a roof tile", "decision": "reject", "reason": "Fall and weatherproofing risk. Not written.", "mapped_proposal_id": ""}
+{"id": "service-a-boiler", "name": "Service a boiler", "decision": "reject", "reason": "Gas. Not written.", "mapped_proposal_id": ""}
+{"id": "unclog-a-drain-with-caustic", "name": "Unclog a drain with caustic cleaner", "decision": "reject", "reason": "Chemical hazard. The plunger skill forbids it.", "mapped_proposal_id": ""}
+{"id": "mix-bleach-and-vinegar", "name": "Mix household cleaners", "decision": "reject", "reason": "Dangerous. Rejected as a practice.", "mapped_proposal_id": ""}
+{"id": "remove-asbestos", "name": "Remove asbestos", "decision": "reject", "reason": "Hazardous material. Not a skill here.", "mapped_proposal_id": ""}
+{"id": "remove-lead-paint", "name": "Remove lead paint", "decision": "reject", "reason": "Hazardous. Sanding already says to stop if old paint may contain lead.", "mapped_proposal_id": ""}
+{"id": "rewire-a-lamp", "name": "Rewire a lamp", "decision": "reject", "reason": "Electrical. Not written.", "mapped_proposal_id": ""}
+{"id": "install-a-ceiling-light", "name": "Install a ceiling light", "decision": "reject", "reason": "Electrical. Hanging a frame is not this.", "mapped_proposal_id": ""}
+{"id": "prune-a-large-tree", "name": "Prune a large tree", "decision": "reject", "reason": "Falling cuts. Not written. A herb harvest was kept.", "mapped_proposal_id": ""}
+{"id": "apply-pesticide", "name": "Apply a pesticide", "decision": "reject", "reason": "Poison. Not written.", "mapped_proposal_id": ""}
+{"id": "identify-a-snake-to-handle-it", "name": "Handle a snake after naming it", "decision": "reject", "reason": "Bite risk. Not written.", "mapped_proposal_id": ""}
+{"id": "keep-a-venomous-animal", "name": "Keep a venomous animal", "decision": "reject", "reason": "Out of scope.", "mapped_proposal_id": ""}
+{"id": "breed-animals", "name": "Breed animals", "decision": "reject", "reason": "Welfare and expertise. Pack-10 is not closed by this, and no breeding skill was added.", "mapped_proposal_id": ""}
+{"id": "diagnose-a-limp-in-a-dog", "name": "Diagnose a limp in a dog", "decision": "reject", "reason": "Veterinary diagnosis. Not written.", "mapped_proposal_id": ""}
+{"id": "give-a-public-legal-opinion", "name": "Give a legal opinion", "decision": "reject", "reason": "Legal practice. Filling a form already says to ask when a legal field is unclear.", "mapped_proposal_id": ""}
+{"id": "write-a-will", "name": "Write a will", "decision": "reject", "reason": "Legal effect. Not written.", "mapped_proposal_id": ""}
+{"id": "represent-yourself-in-court", "name": "Represent yourself in court", "decision": "reject", "reason": "Legal risk. Not written.", "mapped_proposal_id": ""}
+{"id": "negotiate-a-plea", "name": "Negotiate a plea", "decision": "reject", "reason": "Out of scope.", "mapped_proposal_id": ""}
+{"id": "remove-a-watermark", "name": "Remove a watermark to reuse an image", "decision": "reject", "reason": "Not a skill. Honest cropping was kept.", "mapped_proposal_id": ""}
+{"id": "write-a-misleading-caption", "name": "Write a caption that hides a fact", "decision": "reject", "reason": "The opposite of the caption skill. Rejected.", "mapped_proposal_id": ""}
+{"id": "break-a-quiet-hours-deal-on-purpose", "name": "Break a house agreement to win", "decision": "reject", "reason": "The agreement skill exists; breaking it is not a skill.", "mapped_proposal_id": ""}
+{"id": "win-an-argument-by-volume", "name": "Win an argument by volume", "decision": "reject", "reason": "Not a skill. Conflict resolution exists.", "mapped_proposal_id": ""}
+{"id": "memorize-a-script-to-manipulate", "name": "Memorize a script to manipulate someone", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "cold-call-strangers-for-money", "name": "Cold-call strangers for money", "decision": "reject", "reason": "Not added. A specific ask for help was kept.", "mapped_proposal_id": ""}
+{"id": "dropship", "name": "Dropship products you have not seen", "decision": "reject", "reason": "Not a skill the catalog will coach.", "mapped_proposal_id": ""}
+{"id": "flip-tickets", "name": "Flip tickets", "decision": "reject", "reason": "Not added.", "mapped_proposal_id": ""}
+{"id": "scalp-reservations", "name": "Hold reservations to resell them", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "game-a-refund-system", "name": "Abuse a refund system", "decision": "reject", "reason": "Returning an item honestly was kept. Abuse was not.", "mapped_proposal_id": ""}
+{"id": "leave-a-false-voicemail", "name": "Leave a false callback number", "decision": "reject", "reason": "The voicemail skill is for a true message.", "mapped_proposal_id": ""}
+{"id": "mass-unsubscribe-by-paying-a-stranger", "name": "Pay a stranger to cancel subscriptions", "decision": "reject", "reason": "The subscription skill says not to do this.", "mapped_proposal_id": ""}
+{"id": "share-a-password", "name": "Share a password to be helpful", "decision": "reject", "reason": "Not a skill. The second-sign-in skill says not to share codes.", "mapped_proposal_id": ""}
+{"id": "turn-off-all-security-prompts", "name": "Turn off security prompts", "decision": "reject", "reason": "The opposite of the sign-in skill.", "mapped_proposal_id": ""}
+{"id": "click-to-verify-your-account", "name": "Click a surprise link to verify an account", "decision": "reject", "reason": "The opposite of the suspicious-message skill.", "mapped_proposal_id": ""}
+{"id": "forward-a-chain-letter", "name": "Forward a chain letter", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "post-someones-address", "name": "Post someone's address", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "brigade-a-review", "name": "Organize a pile-on review", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "edit-a-wiki-to-promote-yourself", "name": "Edit a shared knowledge project to promote yourself", "decision": "reject", "reason": "Wikimedia contribution exists and this use is the wrong result.", "mapped_proposal_id": ""}
+{"id": "buy-a-citation", "name": "Buy a citation", "decision": "reject", "reason": "The citation skill requires a real source.", "mapped_proposal_id": ""}
+{"id": "invent-a-bibliography", "name": "Invent a bibliography", "decision": "reject", "reason": "Rejected. Citations must be findable.", "mapped_proposal_id": ""}
+{"id": "paraphrase-to-hide-a-source", "name": "Paraphrase in order to hide the source", "decision": "reject", "reason": "The paraphrase skill requires the source to stay visible.", "mapped_proposal_id": ""}
+{"id": "teach-a-medical-hack", "name": "Teach a medical shortcut", "decision": "reject", "reason": "Not written.", "mapped_proposal_id": ""}
+{"id": "run-a-supplement-experiment-on-a-friend", "name": "Experiment on a friend", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "home-chemistry-with-unknowns", "name": "Mix unknown household chemicals to see", "decision": "reject", "reason": "The home observation skill allows only kitchen-safe materials. This was rejected.", "mapped_proposal_id": ""}
+{"id": "make-a-battery-from-coins-and-fire", "name": "Heat a homemade cell", "decision": "reject", "reason": "Not written.", "mapped_proposal_id": ""}
+{"id": "launch-a-model-rocket-in-a-park", "name": "Launch a model rocket in a park", "decision": "reject", "reason": "Local rules and injury. Not written.", "mapped_proposal_id": ""}
+{"id": "fly-a-kite-in-a-storm", "name": "Fly a kite in a storm", "decision": "reject", "reason": "Kite flying exists. Storm flying was rejected.", "mapped_proposal_id": ""}
+{"id": "swim-after-drinking", "name": "Swim after drinking", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "hike-off-trail-at-dusk", "name": "Leave a marked trail at dusk", "decision": "reject", "reason": "The marker skill says to stop. This was rejected.", "mapped_proposal_id": ""}
+{"id": "pitch-a-tent-in-a-dry-river", "name": "Pitch a tent in a dry riverbed", "decision": "reject", "reason": "The tent skill already excludes a flood path.", "mapped_proposal_id": ""}
+{"id": "drink-untreated-stream-water", "name": "Drink untreated stream water", "decision": "reject", "reason": "Not written.", "mapped_proposal_id": ""}
+{"id": "eat-a-wild-plant-you-named-once", "name": "Eat a plant after one field match", "decision": "reject", "reason": "The naming skill forbids eating.", "mapped_proposal_id": ""}
+{"id": "compost-meat-in-a-small-bin", "name": "Compost meat because the skill exists", "decision": "reject", "reason": "The compost skill tells you to follow the local rule and keep meat out when required.", "mapped_proposal_id": ""}
+{"id": "overwater-to-be-kind", "name": "Water a plant every day regardless", "decision": "reject", "reason": "The opposite of checking the soil.", "mapped_proposal_id": ""}
+{"id": "repot-into-a-pot-with-no-drainage", "name": "Repot into a sealed pot", "decision": "reject", "reason": "A bad practice, not a level.", "mapped_proposal_id": ""}
+{"id": "glue-skin", "name": "Glue a cut closed", "decision": "reject", "reason": "Not first aid and not the glue-joint skill.", "mapped_proposal_id": ""}
+{"id": "sand-painted-playground-wood", "name": "Sand unknown painted wood", "decision": "reject", "reason": "The sanding skill says to stop if old lead paint is possible.", "mapped_proposal_id": ""}
+{"id": "mend-a-climbing-harness", "name": "Mend a climbing harness", "decision": "reject", "reason": "Load-bearing safety gear. The seam skill already excludes it.", "mapped_proposal_id": ""}
+{"id": "tie-a-knot-for-a-person", "name": "Tie a knot to suspend a person", "decision": "reject", "reason": "Excluded by the knot skill.", "mapped_proposal_id": ""}
+{"id": "inflate-past-the-sidewall", "name": "Inflate a tire past the sidewall number", "decision": "reject", "reason": "The opposite of the tire skill.", "mapped_proposal_id": ""}
+{"id": "patch-a-split-sidewall-and-ride", "name": "Ride on a split tire sidewall", "decision": "reject", "reason": "Excluded by the puncture skill.", "mapped_proposal_id": ""}
+{"id": "iron-a-wet-cord", "name": "Iron a wet cord", "decision": "reject", "reason": "Burn risk. Not added.", "mapped_proposal_id": ""}
+{"id": "descale-with-a-random-acid", "name": "Descale with an acid you chose", "decision": "reject", "reason": "The kettle skill follows the product label only.", "mapped_proposal_id": ""}
+{"id": "mix-two-drain-products", "name": "Use two drain products", "decision": "reject", "reason": "Rejected with the plunger skill.", "mapped_proposal_id": ""}
+{"id": "disable-a-smoke-alarm", "name": "Disable a smoke alarm to stop it chirping", "decision": "reject", "reason": "Pack-09. Not a skill.", "mapped_proposal_id": ""}
+{"id": "remove-a-battery-from-a-detector-forever", "name": "Leave a safety detector without power", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "prop-a-fire-door-open", "name": "Prop a fire door open", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "store-petrol-in-the-home", "name": "Store fuel in the home", "decision": "reject", "reason": "Not written.", "mapped_proposal_id": ""}
+{"id": "dry-oily-rags-in-a-heap", "name": "Dry oily rags in a pile", "decision": "reject", "reason": "Fire risk. Not a skill.", "mapped_proposal_id": ""}
+{"id": "leave-a-candle-as-a-display", "name": "Use a candle in a display", "decision": "reject", "reason": "Excluded by the display skill.", "mapped_proposal_id": ""}
+{"id": "film-while-driving", "name": "Film while driving", "decision": "reject", "reason": "Excluded by the filming skill.", "mapped_proposal_id": ""}
+{"id": "fly-a-drone-over-people", "name": "Fly a drone over people", "decision": "reject", "reason": "Not written.", "mapped_proposal_id": ""}
+{"id": "record-a-stranger-for-a-joke", "name": "Record a stranger who did not agree", "decision": "reject", "reason": "Excluded by the voice and photo skills.", "mapped_proposal_id": ""}
+{"id": "post-a-childs-full-name", "name": "Post a child's full name and school", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "share-a-medical-photo", "name": "Share a medical photo for advice in public", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "ask-a-chatbot-for-a-dose", "name": "Ask a chatbot for a medicine dose", "decision": "reject", "reason": "Excluded. The automated-answer skill refuses medical instructions.", "mapped_proposal_id": ""}
+{"id": "trust-a-single-chart", "name": "Treat one chart as proof", "decision": "reject", "reason": "The chart skill exists to stop that.", "mapped_proposal_id": ""}
+{"id": "round-a-bill-in-your-favor", "name": "Round a shared bill in your favor silently", "decision": "reject", "reason": "The split-cost skill requires a sum people can check.", "mapped_proposal_id": ""}
+{"id": "hide-a-unit-price", "name": "Hide a unit price", "decision": "reject", "reason": "The opposite of comparing unit prices.", "mapped_proposal_id": ""}
+{"id": "invent-a-conversion-factor", "name": "Invent a conversion factor", "decision": "reject", "reason": "The conversion skill requires a factor you can show.", "mapped_proposal_id": ""}
+{"id": "estimate-a-dose", "name": "Estimate a dose by eye", "decision": "reject", "reason": "Excluded. Estimates are not for medicine.", "mapped_proposal_id": ""}
+{"id": "skip-the-allergen-question", "name": "Host without asking about allergies", "decision": "reject", "reason": "The opposite of hosting a meal.", "mapped_proposal_id": ""}
+{"id": "serve-food-you-doubt", "name": "Serve a leftover you doubt", "decision": "reject", "reason": "The leftover skills say to discard it.", "mapped_proposal_id": ""}
+{"id": "taste-suspect-food", "name": "Taste food to see if it is safe", "decision": "reject", "reason": "Explicitly excluded.", "mapped_proposal_id": ""}
+{"id": "scale-a-canning-recipe", "name": "Scale a canning recipe", "decision": "reject", "reason": "Excluded by the scaling skill.", "mapped_proposal_id": ""}
+{"id": "pressure-can-at-home", "name": "Pressure-can at home", "decision": "reject", "reason": "Not written.", "mapped_proposal_id": ""}
+{"id": "fry-in-unattended-oil", "name": "Leave hot oil", "decision": "reject", "reason": "Excluded by the vegetable skill.", "mapped_proposal_id": ""}
+{"id": "flambé", "name": "Flambé a pan", "decision": "reject", "reason": "Fire. The pan-sauce skill excludes it.", "mapped_proposal_id": ""}
+{"id": "deep-fry-a-turkey", "name": "Deep-fry a turkey", "decision": "reject", "reason": "Fire and oil volume. Not written.", "mapped_proposal_id": ""}
+{"id": "candy-making-to-hard-crack", "name": "Cook sugar to hard crack", "decision": "reject", "reason": "Burn risk without a sourced temperature method. Not written.", "mapped_proposal_id": ""}
+{"id": "butcher-a-chicken-from-memory", "name": "Joint a raw chicken as a new skill", "decision": "reject", "reason": "Knife and food-safety skills already exist; a carcass method was not added.", "mapped_proposal_id": ""}
+{"id": "taste-raw-dough", "name": "Taste raw flour dough", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "serve-undercooked-beans", "name": "Serve beans that are still hard", "decision": "reject", "reason": "The bean skill asks you to notice a chalky center, not to serve it.", "mapped_proposal_id": ""}
+{"id": "feed-a-guest-an-allergen", "name": "Test whether a guest is allergic", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "plan-meals-as-a-diet", "name": "Prescribe a diet", "decision": "reject", "reason": "Meal planning is not nutrition therapy.", "mapped_proposal_id": ""}
+{"id": "shop-without-a-list-as-a-skill", "name": "Impulse shop as a method", "decision": "reject", "reason": "The shopping skill is the list.", "mapped_proposal_id": ""}
+{"id": "return-an-item-you-used-up", "name": "Return an item you used up", "decision": "reject", "reason": "Not the honest return skill.", "mapped_proposal_id": ""}
+{"id": "fill-a-form-with-guesses", "name": "Fill unknown form fields with guesses", "decision": "reject", "reason": "The opposite of the form skill.", "mapped_proposal_id": ""}
+{"id": "send-a-package-of-batteries-unmarked", "name": "Ship batteries without asking", "decision": "reject", "reason": "The package skill says to follow the counter's list. This was rejected.", "mapped_proposal_id": ""}
+{"id": "leave-a-voicemail-with-a-card-number", "name": "Leave a card number on voicemail", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "introduce-someone-with-their-diagnosis", "name": "Introduce a person by a diagnosis", "decision": "reject", "reason": "Excluded by the introduction skill.", "mapped_proposal_id": ""}
+{"id": "force-a-quiet-person-to-speak", "name": "Force everyone to speak", "decision": "reject", "reason": "Excluded. The group skill says not to force speech.", "mapped_proposal_id": ""}
+{"id": "decline-with-a-false-excuse", "name": "Decline with a lie", "decision": "reject", "reason": "A clear no was kept; a false story was not.", "mapped_proposal_id": ""}
+{"id": "agree-a-trade-you-cannot-honor", "name": "Agree a trade you cannot do", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "officiate-by-favoring-a-friend", "name": "Officiate in favor of a friend", "decision": "reject", "reason": "The opposite of a checkable call.", "mapped_proposal_id": ""}
+{"id": "keep-score-in-your-head-only", "name": "Keep score only in your head", "decision": "reject", "reason": "The score skill requires marks others can check.", "mapped_proposal_id": ""}
+{"id": "explain-a-rule-wrong-on-purpose", "name": "Teach a wrong rule", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "solve-a-logic-grid-by-guessing", "name": "Guess a logic grid", "decision": "reject", "reason": "The opposite of the grid skill.", "mapped_proposal_id": ""}
+{"id": "count-a-win-you-did-not-earn", "name": "Count a game you did not finish", "decision": "reject", "reason": "Not a skill.", "mapped_proposal_id": ""}
+{"id": "recite-a-text-you-do-not-have-rights-to-sell", "name": "Sell a recitation of a whole book", "decision": "reject", "reason": "Rights. A short personal recital was kept; selling a book was not.", "mapped_proposal_id": ""}
+{"id": "record-a-conversation-secretly", "name": "Record a conversation secretly", "decision": "reject", "reason": "The agenda skill requires agreement. Secret recording was rejected.", "mapped_proposal_id": ""}
+{"id": "take-a-message-and-forget-the-number", "name": "Take a message without a callback", "decision": "reject", "reason": "The message skill requires the callback check.", "mapped_proposal_id": ""}
+{"id": "compare-routes-by-superstition", "name": "Choose a route by superstition", "decision": "reject", "reason": "The route skill uses time, changes, and cost.", "mapped_proposal_id": ""}
+{"id": "read-a-timetable-from-memory", "name": "Trust a timetable from memory", "decision": "reject", "reason": "The timetable skill uses the printed times.", "mapped_proposal_id": ""}
+{"id": "cross-a-border-on-a-blog", "name": "Cross a border because a blog said so", "decision": "reject", "reason": "The papers skill requires the official page.", "mapped_proposal_id": ""}
+{"id": "ask-a-child-for-directions-at-night", "name": "Use a child as a navigation plan", "decision": "reject", "reason": "Not the directions skill.", "mapped_proposal_id": ""}
+{"id": "accept-a-strangers-car", "name": "Get in a stranger's car as the backup plan", "decision": "reject", "reason": "Excluded by the failed-transport skill.", "mapped_proposal_id": ""}
+{"id": "pitch-a-tent-on-private-land", "name": "Pitch a tent where it is forbidden", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "read-a-trail-and-keep-going", "name": "Continue when the markers stop", "decision": "reject", "reason": "The opposite of the marker skill.", "mapped_proposal_id": ""}
+{"id": "find-north-by-staring-at-the-sun", "name": "Stare at the sun to find north", "decision": "reject", "reason": "Excluded. The sun skill says not to look at the sun.", "mapped_proposal_id": ""}
+{"id": "use-a-phone-as-a-compass-underground", "name": "Trust a phone compass with no check", "decision": "reject", "reason": "Not added.", "mapped_proposal_id": ""}
+{"id": "learn-a-building-and-ignore-the-alarm", "name": "Practice wayfinding during a fire alarm", "decision": "reject", "reason": "Excluded. Follow the exit signs.", "mapped_proposal_id": ""}
+{"id": "braid-hair-without-asking", "name": "Braid someone's hair without asking", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "tie-a-necktie-tight", "name": "Tighten neckwear as a joke", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "polish-shoes-with-the-wrong-dye", "name": "Dye shoes with an unknown product", "decision": "reject", "reason": "Not the polish skill.", "mapped_proposal_id": ""}
+{"id": "hand-wash-a-dry-clean-only-coat", "name": "Hand-wash a dry-clean-only coat", "decision": "reject", "reason": "The hand-wash skill includes refusing that label.", "mapped_proposal_id": ""}
+{"id": "wash-a-mixed-load-anyway", "name": "Wash a mixed load despite the labels", "decision": "reject", "reason": "The opposite of sorting.", "mapped_proposal_id": ""}
+{"id": "iron-silk-on-linen-heat", "name": "Iron silk on a linen setting", "decision": "reject", "reason": "The opposite of matching heat to cloth.", "mapped_proposal_id": ""}
+{"id": "make-a-bed-by-hiding-dirty-linen", "name": "Hide dirty linen", "decision": "reject", "reason": "Not the bed skill.", "mapped_proposal_id": ""}
+{"id": "hang-a-heavy-mirror-with-a-tiny-hook", "name": "Hang a heavy mirror on a light hook", "decision": "reject", "reason": "The frame skill says to stop.", "mapped_proposal_id": ""}
+{"id": "leave-home-with-the-cooker-on", "name": "Leave with the cooker on", "decision": "reject", "reason": "The opposite of the leaving check.", "mapped_proposal_id": ""}
+{"id": "empty-a-lint-filter-and-open-the-heater", "name": "Open a dryer heater", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "load-knives-up", "name": "Load knives pointing up", "decision": "reject", "reason": "Excluded by the dishwasher skill.", "mapped_proposal_id": ""}
+{"id": "gift-a-private-fact", "name": "Choose a gift that reveals a private fact", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "divide-work-by-stereotype", "name": "Assign work by stereotype", "decision": "reject", "reason": "Not the division skill.", "mapped_proposal_id": ""}
+{"id": "welcome-someone-with-gossip", "name": "Orient a new person with gossip", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "offer-help-and-take-over", "name": "Take over after offering help", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "ask-for-help-and-resent-a-no", "name": "Treat a no as incomplete", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "write-a-handover-with-passwords", "name": "Put passwords in a handover", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "promise-a-deadline-you-will-miss", "name": "Promise a deadline you know you will miss", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "track-a-project-and-hide-a-blocker", "name": "Hide a blocker on the tracker", "decision": "reject", "reason": "The opposite of the tracker.", "mapped_proposal_id": ""}
+{"id": "read-a-payslip-aloud-in-public", "name": "Read a payslip aloud with identifiers", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "split-a-bill-that-does-not-add-up", "name": "Leave a split that does not add up", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "check-a-receipt-and-ignore-a-mismatch", "name": "Ignore a mismatched receipt", "decision": "reject", "reason": "The skill includes the next step.", "mapped_proposal_id": ""}
+{"id": "organize-files-by-deleting-the-only-copy", "name": "Delete the only copy while organizing", "decision": "reject", "reason": "Not the skill. Backup already exists.", "mapped_proposal_id": ""}
+{"id": "formula-that-you-do-not-check", "name": "Trust an unchecked formula", "decision": "reject", "reason": "The opposite of the spreadsheet skill.", "mapped_proposal_id": ""}
+{"id": "turn-on-two-factor-and-share-the-code", "name": "Share a second-factor code", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "review-privacy-by-clicking-randomly", "name": "Click every privacy switch", "decision": "reject", "reason": "The skill says to leave an unknown switch alone.", "mapped_proposal_id": ""}
+{"id": "crop-out-a-person-who-changes-the-story", "name": "Crop a person out and call it the original", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "trim-away-the-action", "name": "Trim away the action", "decision": "reject", "reason": "The opposite of the trim skill.", "mapped_proposal_id": ""}
+{"id": "shot-list-of-risks", "name": "Take a risk to complete a shot list", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "lead-a-clap-at-painful-volume", "name": "Lead a clap at painful volume", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "tune-by-forcing-a-peg", "name": "Force a tuning peg", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "play-chess-with-house-rules-you-hide", "name": "Hide a house rule", "decision": "reject", "reason": "The chess skill says to use a reference.", "mapped_proposal_id": ""}
+{"id": "play-cards-for-rent-money", "name": "Play cards for money you cannot lose", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "keep-a-travel-log-of-someone-else", "name": "Log another person's private trip", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "cite-a-source-you-did-not-open", "name": "Cite a source you did not open", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "compare-two-accounts-and-pick-a-side-as-proof", "name": "Treat one of two accounts as proof", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "museum-label-as-a-command-to-touch", "name": "Touch an object because the label is interesting", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "observation-with-bleach-and-ammonia", "name": "Observe a mix of bleach and ammonia", "decision": "reject", "reason": "Dangerous. Rejected.", "mapped_proposal_id": ""}
+{"id": "teach-back-a-law-you-guessed", "name": "Teach a law you guessed", "decision": "reject", "reason": "The teach-back skill says not to.", "mapped_proposal_id": ""}
+{"id": "memory-route-for-a-password", "name": "Store a password in a memory palace", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "focus-block-while-unwell", "name": "Force a focus block while unwell", "decision": "reject", "reason": "The skill says to stop.", "mapped_proposal_id": ""}
+{"id": "journal-someone-elses-secret", "name": "Journal someone else's secret as content", "decision": "reject", "reason": "Privacy. Not required by the skill.", "mapped_proposal_id": ""}
+{"id": "scene-about-a-real-neighbor", "name": "Write a real neighbor into a scene as fact", "decision": "reject", "reason": "The scene skill says fiction is not a claim.", "mapped_proposal_id": ""}
+{"id": "caption-that-names-a-stranger", "name": "Name a stranger in a caption", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "document-a-break-in", "name": "Document how to break in", "decision": "reject", "reason": "Not a process-documentation topic.", "mapped_proposal_id": ""}
+{"id": "group-update-with-private-health", "name": "Put private health details in a group update", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "decision-log-of-someone-else", "name": "Log another adult's decision without them", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "protect-time-by-ignoring-an-emergency", "name": "Protect a calendar block during an emergency", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "review-a-week-by-blaming-only-others", "name": "Review a week by naming only other people", "decision": "reject", "reason": "The review asks for a cause you can act on.", "mapped_proposal_id": ""}
+{"id": "estimate-and-refuse-to-look", "name": "Estimate and refuse to compare", "decision": "reject", "reason": "The opposite of the estimate skill.", "mapped_proposal_id": ""}
+{"id": "choose-without-writing-the-rejected-reason", "name": "Hide the reason you rejected", "decision": "reject", "reason": "The choice skill keeps that reason.", "mapped_proposal_id": ""}
+{"id": "next-action-that-says-soon", "name": "Write a next action that says soon", "decision": "reject", "reason": "Not checkable. The skill requires a visible finish.", "mapped_proposal_id": ""}
+{"id": "agenda-that-is-a-surprise", "name": "Surprise people with an agenda in the meeting", "decision": "reject", "reason": "The skill shares it before.", "mapped_proposal_id": ""}
+{"id": "document-list-with-full-card-numbers", "name": "Write full card numbers on the document list", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "buffer-of-zero-on-purpose", "name": "Plan a week with no gap and call it a buffer", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "unit-price-of-a-loan", "name": "Compare loans by unit price", "decision": "reject", "reason": "The wrong tool. Financial offers already exist; unit price is for goods.", "mapped_proposal_id": ""}
+{"id": "percentage-of-a-medical-claim-as-advice", "name": "Turn a medical percentage into advice", "decision": "reject", "reason": "Not the percentage skill.", "mapped_proposal_id": ""}
+{"id": "chart-that-you-redraw-to-change-the-axis", "name": "Redraw a chart to change the conclusion", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "receipt-check-that-includes-the-card-number", "name": "Copy a card number off a receipt into notes", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "map-scale-as-a-wilderness-plan", "name": "Plan a remote route from scale alone", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "transit-map-while-standing-on-the-edge", "name": "Read a map on the platform edge", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "walk-plan-without-telling-anyone", "name": "Leave on a walk you told nobody about", "decision": "reject", "reason": "The walk skill says to tell someone.", "mapped_proposal_id": ""}
+{"id": "library-catalog-for-a-book-you-will-not-return", "name": "Take a book outside the rules", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "timeline-with-an-invented-year", "name": "Place an event in a year you invented", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "word-lookup-used-to-sound-important", "name": "Use a word you cannot explain", "decision": "reject", "reason": "The opposite of the word skill.", "mapped_proposal_id": ""}
+{"id": "logic-grid-published-as-someone-elses", "name": "Publish a grid solution as if you wrote the puzzle", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "cube-solution-memorized-as-speed-only", "name": "Memorize speed without knowing the stage", "decision": "reject", "reason": "The cube skill requires an explanation.", "mapped_proposal_id": ""}
+{"id": "names-written-on-a-person", "name": "Write a name on a person as a reminder", "decision": "reject", "reason": "Not the skill. A private note is allowed; marking a person is not.", "mapped_proposal_id": ""}
+{"id": "quiet-agreement-as-control", "name": "Use quiet hours to control a person", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "textile-square-as-a-sweater", "name": "Call one square a garment-making skill", "decision": "reject", "reason": "Not split into garment making.", "mapped_proposal_id": ""}
+{"id": "cord-used-as-a-tow-rope", "name": "Use a braid as a tow rope", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "gift-wrap-a-sharp-object-poorly", "name": "Wrap a sharp object without saying so", "decision": "reject", "reason": "Not added as a skill.", "mapped_proposal_id": ""}
+{"id": "notebook-from-stolen-paper", "name": "Bind a notebook from paper you should not take", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "collage-from-a-paywalled-scan", "name": "Paste a protected scan into a public collage", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "lettering-a-trademark-as-your-logo", "name": "Copy a trademark as your own wordmark", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "color-match-a-brand-you-will-counterfeit", "name": "Match a color in order to counterfeit", "decision": "reject", "reason": "Not the skill.", "mapped_proposal_id": ""}
+{"id": "floor-plan-for-a-structural-wall", "name": "Use a rough floor plan to move a wall", "decision": "reject", "reason": "The floor plan skill is not building work.", "mapped_proposal_id": ""}
+{"id": "display-that-blocks-a-vent", "name": "Block a vent with a display", "decision": "reject", "reason": "Not added.", "mapped_proposal_id": ""}
+{"id": "recipe-card-that-hides-an-allergen", "name": "Leave an allergen off a recipe card", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "packed-meal-left-in-the-sun", "name": "Leave a cold meal in the sun and call it the skill", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "read-the-recipe-after-the-oil-is-hot", "name": "Start the heat before reading", "decision": "reject", "reason": "The opposite of reading a recipe first.", "mapped_proposal_id": ""}
+{"id": "soup-held-overnight-on-the-stove", "name": "Hold soup overnight on the stove", "decision": "reject", "reason": "Not a storage method the skill teaches.", "mapped_proposal_id": ""}
+{"id": "onion-cooked-unattended", "name": "Leave onions unattended", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "pasta-drained-toward-the-body", "name": "Drain boiling water toward the body", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "vegetables-in-unattended-oil", "name": "Leave oil heating", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "beans-from-a-can-as-the-skill", "name": "Open a can of beans", "decision": "reject", "reason": "Not the dried-bean skill.", "mapped_proposal_id": ""}
+{"id": "coffee-in-a-cracked-pressure-cup", "name": "Brew in a damaged pressure vessel", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "label-a-leftover-and-eat-it-anyway", "name": "Eat a leftover because it has a label", "decision": "reject", "reason": "The label is not a safety guarantee.", "mapped_proposal_id": ""}
+{"id": "shopping-list-that-ignores-an-allergy", "name": "Ignore a stated allergy on the list", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}
+{"id": "meal-plan-as-medical-nutrition", "name": "Prescribe meals as treatment", "decision": "reject", "reason": "Excluded.", "mapped_proposal_id": ""}

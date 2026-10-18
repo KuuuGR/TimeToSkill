@@ -1,0 +1,13 @@
+{
+  "raw_candidates": 500,
+  "after_dedup": 294,
+  "new_proposals": 259,
+  "already_represented": 206,
+  "rejected": 19,
+  "needs_source": 16,
+  "new_high_risk": 16,
+  "open_high_risk_distinct_ids": 70,
+  "unique_pilot_after_v9": 1001,
+  "production": 0,
+  "distance_to_1001": 0
+}

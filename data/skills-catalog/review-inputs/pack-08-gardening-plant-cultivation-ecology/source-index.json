@@ -1,0 +1,36 @@
+{
+  "registry": "data/skills-catalog/research/sources.json",
+  "note": "Skrót źródeł użytych w tym pakiecie, skopiowany z rejestru centralnego. To nie jest drugi katalog źródeł.",
+  "sources": [
+    {
+      "source_id": "esco-skills-v1.2.1",
+      "title": "ESCO classification, skills pillar, English CSV",
+      "organization": "European Commission, Directorate-General for Employment, Social Affairs and Inclusion",
+      "url": "https://esco.ec.europa.eu/en/use-esco/download",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "No separate licence label was printed on the download page retrieved for this run. ESCO v1.2.1 is published by the European Commission. Reuse of Commission documents is governed by Commission Decision 2011/833/EU where no narrower statement is given. This is a research note, not a legal opinion.",
+      "records_in_package": 59
+    },
+    {
+      "source_id": "scouts-uk-activity-badges",
+      "title": "Scouts activity badges",
+      "organization": "The Scout Association",
+      "url": "https://www.scouts.org.uk/activity-badges",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Copyright The Scout Association. No open licence was found for badge syllabi. Titles and URLs only were stored.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "wikidata-hobbies",
+      "title": "Wikidata list of activities done as a hobby",
+      "organization": "Wikimedia contributors",
+      "url": "https://www.wikidata.org/wiki/Wikidata:List_of_activities_done_as_hobby",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Wikidata structured data is CC0. The wiki page text is CC BY-SA; this extract uses the SPARQL results, not the page prose.",
+      "records_in_package": 1
+    }
+  ]
+}

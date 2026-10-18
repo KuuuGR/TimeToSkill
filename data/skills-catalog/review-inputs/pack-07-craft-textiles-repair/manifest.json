@@ -1,0 +1,58 @@
+{
+  "prepared_on": "2026-10-18",
+  "pack_id": "pack-07",
+  "title": "Rzemiosło użytkowe, tekstylia, naprawy i odnawianie",
+  "domains": [
+    "szycie i naprawa tekstyliów",
+    "dziewiarstwo i włókno",
+    "skóra, papier i plecionka",
+    "drewno i przedmioty użytkowe",
+    "naprawa i odnawianie",
+    "narzędzia i wykończenie",
+    "rzadkie rzemiosła użytkowe"
+  ],
+  "package": "pack-07-craft-textiles-repair",
+  "format_version": "1",
+  "status": "ready_for_review",
+  "record_count": 128,
+  "source_count": 3,
+  "candidate_ids_file": "candidates.jsonl",
+  "candidate_id_range": {
+    "first": "esco:00c85cbc-2b24-4605-a6fe-55b5c615e3fe",
+    "last": "wikidata:Q816871"
+  },
+  "registry": "data/skills-catalog/research/sources.json",
+  "excluded_already_used_candidate_ids": 0,
+  "selection_group_counts": {
+    "A": 17,
+    "B": 24,
+    "C": 22,
+    "D": 18,
+    "E": 25,
+    "F": 19,
+    "G": 3
+  },
+  "triage_suitability": {
+    "adaptable_candidate": 9,
+    "uncertain": 27,
+    "occupational_or_abstract": 44,
+    "strong_candidate": 43,
+    "not_a_distinct_skill": 5
+  },
+  "description_insufficient": 45,
+  "overlap_notes": [
+    "restore musical instruments sąsiaduje z repair musical instruments z pack-05. To inny candidate_id.",
+    "solder electronics i check for solder defects sąsiadują z elektroniką pack-03.",
+    "bicycle mechanics jest naprawą, nie jazdą z pack-02.",
+    "decorate furniture może sąsiadować ze złoceniem z pack-06.",
+    "Haft z rzemiosł dziedzictwa nie wszedł, bo wikidata embroidery jest w pack-06."
+  ],
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md",
+    "gaps.md"
+  ]
+}

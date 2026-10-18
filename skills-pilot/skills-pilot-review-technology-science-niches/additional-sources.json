@@ -1,0 +1,105 @@
+{
+  "note": "Supplementary editorial references researched for this review. These are NOT automatically added to the repo central source registry; the original candidate source_ids remain unchanged in the approved skill records. Review/update source registry separately before merging.",
+  "sources": [
+    {
+      "reference_id": "nasa-skywatching-faq",
+      "title": "Skywatching FAQ",
+      "organization": "NASA Science",
+      "url": "https://science.nasa.gov/skywatching/faq/",
+      "supports_skill_ids": [
+        "sky-observation"
+      ],
+      "note": "Beginner-accessible scope for observing the sky; use solar-safety precautions separately."
+    },
+    {
+      "reference_id": "rspca-aquarium-environment",
+      "title": "Choosing an Aquarium for Pet Fish",
+      "organization": "RSPCA UK",
+      "url": "https://science.rspca.org.uk/en/web/rspca/adviceandwelfare/pets/fish/environment",
+      "supports_skill_ids": [
+        "fishkeeping-basics"
+      ],
+      "note": "Tank sizing, filtration, water testing and fishless cycling; species-specific guidance still required."
+    },
+    {
+      "reference_id": "rspca-fish-care",
+      "title": "Keeping Fish as Pets",
+      "organization": "RSPCA UK",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/fish",
+      "supports_skill_ids": [
+        "fishkeeping-basics"
+      ],
+      "note": "Preparation and welfare guidance before acquiring fish."
+    },
+    {
+      "reference_id": "aba-birding-ethics",
+      "title": "ABA Code of Birding Ethics",
+      "organization": "American Birding Association",
+      "url": "https://www.aba.org/aba-code-of-birding-ethics/",
+      "supports_skill_ids": [
+        "wildlife-observation"
+      ],
+      "note": "Respect wildlife and habitats during observations."
+    },
+    {
+      "reference_id": "nara-genealogy",
+      "title": "Resources for Genealogists and Family Historians",
+      "organization": "US National Archives and Records Administration",
+      "url": "https://www.archives.gov/research/genealogy",
+      "supports_skill_ids": [
+        "genealogy-research"
+      ],
+      "note": "Record types, research organisation and source-based family history; examples reflect US federal records."
+    },
+    {
+      "reference_id": "arduino-tutorials",
+      "title": "Arduino Tutorials",
+      "organization": "Arduino Documentation",
+      "url": "https://docs.arduino.cc/tutorials/",
+      "supports_skill_ids": [
+        "beginner-electronics-prototyping"
+      ],
+      "note": "Beginner-to-advanced tutorials for hands-on low-voltage prototyping."
+    },
+    {
+      "reference_id": "wikimedia-editing-help",
+      "title": "Help: Editing pages",
+      "organization": "MediaWiki",
+      "url": "https://www.mediawiki.org/wiki/Help:Editing_pages/en",
+      "supports_skill_ids": [
+        "wikimedia-contribution"
+      ],
+      "note": "Basic editing, edit summaries and use of preview; check policies of the specific project too."
+    },
+    {
+      "reference_id": "rhs-seed-sowing",
+      "title": "How to Sow Seeds Indoors",
+      "organization": "Royal Horticultural Society",
+      "url": "https://www.rhs.org.uk/propagation/how-to-sow-seeds-indoors",
+      "supports_skill_ids": [
+        "growing-plants-from-seed"
+      ],
+      "note": "Sowing, labelling, germination conditions and seedling aftercare."
+    },
+    {
+      "reference_id": "rhs-outdoor-sowing",
+      "title": "How to Sow Seeds Outdoors",
+      "organization": "Royal Horticultural Society",
+      "url": "https://www.rhs.org.uk/propagation/how-to-sow-seeds-outdoors",
+      "supports_skill_ids": [
+        "growing-plants-from-seed"
+      ],
+      "note": "Outdoor sowing, spacing, record keeping and aftercare."
+    },
+    {
+      "reference_id": "arduino-starter-kit",
+      "title": "Arduino Starter Kit",
+      "organization": "Arduino",
+      "url": "https://www.arduino.cc/starterkit/",
+      "supports_skill_ids": [
+        "beginner-electronics-prototyping"
+      ],
+      "note": "Beginner hands-on circuit and programming progression."
+    }
+  ]
+}

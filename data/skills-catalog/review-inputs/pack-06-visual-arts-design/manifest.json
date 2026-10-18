@@ -1,0 +1,55 @@
+{
+  "prepared_on": "2026-10-18",
+  "pack_id": "pack-06",
+  "title": "Sztuki wizualne, fotografia i projektowanie",
+  "domains": [
+    "rysunek i ilustracja",
+    "malarstwo i kolor",
+    "fotografia",
+    "edycja i obraz cyfrowy",
+    "projektowanie graficzne",
+    "druk i grafika warsztatowa",
+    "rzeźba i ceramika",
+    "niszowe praktyki wizualne"
+  ],
+  "package": "pack-06-visual-arts-design",
+  "format_version": "1",
+  "status": "ready_for_review",
+  "exploration_pool_count": 151,
+  "exploration_note": "151 to liczba kandydatur spoza pack-01–pack-05, których tytuł pasował do wzorca sztuk wizualnych. Wybrane 128 obejmuje też rzemiosła spoza tego wzorca, na przykład malarstwo dekoracyjne. Nie każdy z 151 wszedł do pakietu.",
+  "record_count": 128,
+  "source_count": 5,
+  "candidate_ids_file": "candidates.jsonl",
+  "candidate_id_range": {
+    "first": "esco:017738e7-7d12-4e87-a580-8523405bab96",
+    "last": "wikidata:Q83357"
+  },
+  "registry": "data/skills-catalog/research/sources.json",
+  "excluded_already_used_candidate_ids": 0,
+  "selection_group_counts": {
+    "A": 23,
+    "B": 19,
+    "C": 19,
+    "D": 18,
+    "E": 5,
+    "F": 22,
+    "G": 12,
+    "H": 10
+  },
+  "triage_suitability": {
+    "occupational_or_abstract": 68,
+    "uncertain": 19,
+    "strong_candidate": 31,
+    "adaptable_candidate": 8,
+    "not_a_distinct_skill": 2
+  },
+  "description_insufficient": 33,
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md",
+    "gaps.md"
+  ]
+}

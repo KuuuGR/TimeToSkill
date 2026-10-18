@@ -1,0 +1,994 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-18",
+  "next_pack_id": "pack-17",
+  "production_approved_count": 0,
+  "note": "Rejestr statusów pakietów. Nie nadaje nowych identyfikatorów kandydaturom ani propozycjom. Żaden pakiet nie ma statusu production_approved.",
+  "current_proposal_register": {
+    "path": "data/skills-catalog/curated/pilot-proposals-v11.jsonl",
+    "role": "current_working_revision",
+    "revision": "v11",
+    "record_count": 1122,
+    "unique_proposal_ids": 1122,
+    "review_status": "pilot_proposal",
+    "covers_packs": [
+      "pack-01",
+      "pack-02",
+      "pack-03",
+      "pack-04",
+      "pack-11",
+      "pack-12",
+      "pack-13",
+      "pack-14",
+      "pack-15",
+      "pack-16"
+    ],
+    "not_production": true
+  },
+  "previous_proposal_register": {
+    "path": "data/skills-catalog/curated/pilot-proposals-v10.jsonl",
+    "role": "current_working_revision",
+    "revision": "v10",
+    "record_count": 995,
+    "unique_proposal_ids": 995,
+    "review_status": "pilot_proposal",
+    "covers_packs": [
+      "pack-01",
+      "pack-02",
+      "pack-03",
+      "pack-04",
+      "pack-11",
+      "pack-12",
+      "pack-13",
+      "pack-14",
+      "pack-15"
+    ],
+    "not_production": true,
+    "quality_pass": "T4S-CATALOG-026"
+  },
+  "register_comparison": {
+    "proposal_ids_identical": true,
+    "record_count": 71,
+    "observed_field_differences": [
+      {
+        "proposal_id": "kitchen-finance:compare-financial-offers",
+        "field": "emoji",
+        "v1": "⚖️",
+        "v2": "🏷️"
+      },
+      {
+        "proposal_id": "movement-sport-dance:breaking-foundations",
+        "field": "emoji",
+        "v1": "🪩",
+        "v2": "🌀"
+      },
+      {
+        "proposal_id": "movement-sport-dance:latin-partner-dance-foundations",
+        "field": "name",
+        "v1": "Latin partner-dance foundations",
+        "v2": "Latin ballroom dance foundations"
+      }
+    ],
+    "ambiguity": "Te trzy różnice są w plikach rejestru. Pakiet skills-pilot/curated-review-decisions/ nie istnieje, więc nie potwierdzono, że pochodzą z tego materiału. Rejestrów nie nadpisano."
+  },
+  "external_editorial_package": {
+    "path": "skills-pilot/curated-review-decisions/",
+    "exists": false,
+    "is_new_skill_pack": false,
+    "integration_confirmed": false,
+    "note": "Zestaw decyzji o istniejących propozycjach, nie nowy pakiet skillów. Brak katalogu. Zawartości nie odtworzono. Poprawek z tego pakietu nie uznano za zastosowane."
+  },
+  "revisions": [
+    {
+      "revision": "v1",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03"
+      ],
+      "updated_on": null,
+      "change": "Pierwszy wspólny rejestr propozycji pilotażowych.",
+      "file": "data/skills-catalog/curated/pilot-proposals.jsonl",
+      "details": "data/skills-catalog/curated/README.md"
+    },
+    {
+      "revision": "v2",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "Kopia robocza rejestru. W pliku widać trzy różnice pól wobec v1. Integracji zewnętrznego pakietu decyzji nie potwierdzono.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v2.jsonl",
+      "details": "data/skills-catalog/curated/pilot-proposals-v2-notes.md"
+    },
+    {
+      "revision": "v3",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "71 rekordów v2 bez zmian oraz 35 propozycji z recenzji pack-04. Brak scalenia.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v3.jsonl",
+      "details": "data/skills-catalog/curated/cross-pilot-review-v3.json"
+    },
+    {
+      "revision": "v4",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "106 rekordów v3 bez zmian oraz 10 propozycji z recenzji pack-11. Brak scalenia.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v4.jsonl",
+      "details": "data/skills-catalog/curated/cross-pilot-review-v4.json"
+    },
+    {
+      "revision": "v5",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "116 propozycji v4 przeniesionych z dwiema poprawkami poziomów oraz 7 nowych propozycji. Dziewięć grup pack-04 zostawiono osobno. 73 języki reprezentuje jedna praktyka. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v5.jsonl",
+      "details": "data/skills-catalog/curated/cross-pilot-review-v5.json"
+    },
+    {
+      "revision": "v6",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11",
+        "pack-12"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "123 propozycje v5 bez zmian oraz 183 nowe propozycje pack-12. Podstawa editorial_synthesis. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v6.jsonl",
+      "details": "data/skills-catalog/curated/merge-history-v6.json"
+    },
+    {
+      "revision": "v7",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11",
+        "pack-12",
+        "pack-13"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "306 propozycji v6 bez zmian oraz 232 nowych propozycji pack-13. Podstawa editorial_synthesis. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v7.jsonl",
+      "details": "data/skills-catalog/curated/merge-history-v7.json"
+    },
+    {
+      "revision": "v8",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11",
+        "pack-12",
+        "pack-13",
+        "pack-14"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "538 propozycji v7 bez zmian oraz 204 nowych propozycji pack-14. Podstawa editorial_synthesis. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v8.jsonl",
+      "details": "data/skills-catalog/curated/merge-history-v8.json"
+    },
+    {
+      "revision": "v9",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11",
+        "pack-12",
+        "pack-13",
+        "pack-14",
+        "pack-15"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "742 propozycje v8 bez zmian oraz 259 nowych propozycji pack-15. Podstawa editorial_synthesis. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v9.jsonl",
+      "details": "data/skills-catalog/curated/merge-history-v9.json"
+    },
+    {
+      "revision": "v10",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11",
+        "pack-12",
+        "pack-13",
+        "pack-14",
+        "pack-15"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "Przegląd jakości 1001 propozycji v9. Aktywnych rekordów: 995. Poprawione: 76. Połączone: 6. Nic nie dostało statusu produkcyjnego. v9 nie było edytowane.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v10.jsonl",
+      "details": "data/skills-catalog/curated/merge-history-v10.json"
+    },
+    {
+      "revision": "v11",
+      "applies_to_packs": [
+        "pack-01",
+        "pack-02",
+        "pack-03",
+        "pack-04",
+        "pack-11",
+        "pack-12",
+        "pack-13",
+        "pack-14",
+        "pack-15",
+        "pack-16"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "995 propozycji v10 bez zmian oraz 127 nowych propozycji pack-16. Podstawa editorial_synthesis. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v11.jsonl",
+      "details": "data/skills-catalog/curated/merge-history-v11.json"
+    }
+  ],
+  "packs": [
+    {
+      "pack_id": "pack-01",
+      "title": "Kuchnia, finanse i codzienność",
+      "domains": [
+        "kuchnia",
+        "finanse",
+        "codzienność"
+      ],
+      "input_path": null,
+      "input_note": "W skills-pilot/ nie ma osobnego katalogu tego pakietu.",
+      "canonical_path": "data/skills-catalog/pilots/kitchen-finance/",
+      "candidate_count": 43,
+      "reviewed_candidate_count": 43,
+      "proposal_count": 11,
+      "current_revision": "v2",
+      "status": "integrated",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/kitchen-finance/review-decisions-09-kuchnia-finanse-codziennosc.jsonl",
+        "data/skills-catalog/pilots/kitchen-finance/review-summary.md"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-batches/09-kuchnia-finanse-codziennosc-01.jsonl",
+        "data/skills-catalog/pilots/kitchen-finance/approved-skill-pilot-kitchen-finance.jsonl"
+      ],
+      "known_gaps": [
+        "Walidator pilotażu przechodzi z ostrzeżeniem koncentracji kategorii: Cooking and food preparation 8 z 11, Personal finance and everyday life 3 z 11.",
+        "Brak materiału przekazanego w skills-pilot/."
+      ],
+      "next_actions": [
+        "Zostawić 11 propozycji jako pilot_proposal.",
+        "Nie przenosić do katalogu produkcyjnego."
+      ]
+    },
+    {
+      "pack_id": "pack-02",
+      "title": "Ruch, sport i taniec",
+      "domains": [
+        "ruch",
+        "sport",
+        "taniec"
+      ],
+      "input_path": null,
+      "input_note": "W skills-pilot/ nie ma osobnego katalogu tego pakietu. Pakiet kandydatur jest w review-inputs.",
+      "canonical_path": "data/skills-catalog/pilots/movement-sport-dance/",
+      "candidate_count": 102,
+      "reviewed_candidate_count": 102,
+      "proposal_count": 30,
+      "count_note": "Plik review-batches/05-ruch-sport-taniec-01.jsonl ma 106 wierszy. Pakiet do recenzji i plik decyzji mają po 102. Oceniono 102.",
+      "current_revision": "v2",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/movement-sport-dance/review-decisions-movement-sport-dance.jsonl",
+        "data/skills-catalog/pilots/movement-sport-dance/review-summary.md",
+        "data/skills-catalog/curated/cross-pilot-review.json"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/movement-sport-dance/candidates.jsonl",
+        "data/skills-catalog/review-batches/05-ruch-sport-taniec-01.jsonl",
+        "data/skills-catalog/pilots/movement-sport-dance/approved-skill-pilot-movement-sport-dance.jsonl",
+        "data/skills-catalog/pilots/movement-sport-dance/additional-sources.json"
+      ],
+      "known_gaps": [
+        {
+          "topic": "Kryteria tańca wymagają specyficzności stylu. Propozycje pozostają osobne.",
+          "proposal_ids": [
+            "movement-sport-dance:dance-rhythm-and-basic-steps",
+            "movement-sport-dance:salsa-dancing",
+            "movement-sport-dance:hip-hop-dance-foundations",
+            "movement-sport-dance:contemporary-dance-foundations",
+            "movement-sport-dance:jazz-dance-foundations",
+            "movement-sport-dance:breaking-foundations",
+            "movement-sport-dance:boogie-woogie-dancing",
+            "movement-sport-dance:latin-partner-dance-foundations",
+            "movement-sport-dance:ballroom-standard-dance-foundations",
+            "movement-sport-dance:disco-dance-foundations"
+          ]
+        },
+        {
+          "topic": "Bieg, bieg terenowy i wędrówka pozostają osobne i wymagają odróżnienia kryteriów.",
+          "proposal_ids": [
+            "movement-sport-dance:running-and-pacing",
+            "movement-sport-dance:trail-running-fundamentals",
+            "movement-sport-dance:hiking-and-trail-preparation"
+          ]
+        },
+        {
+          "topic": "running-and-pacing ma w source_ids tylko wikidata-hobbies.",
+          "proposal_ids": [
+            "movement-sport-dance:running-and-pacing"
+          ]
+        }
+      ],
+      "next_actions": [
+        "Doprecyzować kryteria tańca, biegu, biegu terenowego i wędrówki bez scalania propozycji.",
+        "Nie zmieniać emoji ani nazw do czasu porównania z dostarczonym pakietem decyzji."
+      ]
+    },
+    {
+      "pack_id": "pack-03",
+      "title": "Technologia, nauka i niszowe zainteresowania",
+      "domains": [
+        "technologia",
+        "nauka",
+        "niszowe zainteresowania"
+      ],
+      "input_path": "skills-pilot/skills-pilot-review-technology-science-niches 2/",
+      "input_note": "To lokalizacja wskazana przez użytkownika. Wcześniejszy katalog skills-pilot/skills-pilot-review-technology-science-niches/ zostaje. Nie jest automatycznie nowszą wersją zintegrowaną.",
+      "canonical_path": "data/skills-catalog/pilots/technology-science-niches/",
+      "candidate_count": 114,
+      "reviewed_candidate_count": 114,
+      "proposal_count": 30,
+      "count_note": "Dwa pliki partii 10 i 11 mają po 116 wierszy. Do recenzji i do decyzji weszło 114.",
+      "current_revision": "v2",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "needs_revision",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "skills-pilot/skills-pilot-review-technology-science-niches 2/review-decisions-technology-science-niches.jsonl",
+        "skills-pilot/skills-pilot-review-technology-science-niches 2/review-summary.md",
+        "data/skills-catalog/pilots/technology-science-niches/review-decisions-technology-science-niches.jsonl",
+        "data/skills-catalog/pilots/technology-science-niches/review-summary.md"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/technology-science-niches/candidates.jsonl",
+        "skills-pilot/skills-pilot-review-technology-science-niches 2/approved-skill-pilot-technology-science-niches.jsonl",
+        "skills-pilot/skills-pilot-review-technology-science-niches 2/additional-sources.json",
+        "data/skills-catalog/pilots/technology-science-niches/approved-skill-pilot-technology-science-niches.jsonl",
+        "data/skills-catalog/pilots/technology-science-niches/additional-sources.json"
+      ],
+      "known_gaps": [
+        "Zakończenie recenzji 114 kandydatur nie kończy redakcji skillów.",
+        {
+          "topic": "Zakresy modelarskie wymagają doprecyzowania i pozostają osobnymi propozycjami.",
+          "proposal_ids": [
+            "technology-science-niches:paper-cardboard-model-making",
+            "technology-science-niches:scale-model-building",
+            "technology-science-niches:model-engineering",
+            "technology-science-niches:balloon-modelling"
+          ]
+        },
+        {
+          "topic": "Poziomy opierają się na reference_id z additional-sources.json. Tych identyfikatorów nie ma w source_ids ani w rejestrze centralnym.",
+          "proposal_ids": [
+            "technology-science-niches:sky-observation",
+            "technology-science-niches:fishkeeping-basics",
+            "technology-science-niches:wildlife-observation",
+            "technology-science-niches:genealogy-research",
+            "technology-science-niches:beginner-electronics-prototyping",
+            "technology-science-niches:wikimedia-contribution",
+            "technology-science-niches:growing-plants-from-seed"
+          ]
+        },
+        "Skill biegowy oparty wyłącznie na Wikidata to movement-sport-dance:running-and-pacing i należy do pack-02."
+      ],
+      "next_actions": [
+        "Dokończyć redakcję zakresów modeli i siedmiu propozycji z samymi reference_id.",
+        "Poprawka tego pakietu zostaje pack-03. Nie nadawać jej numeru pack-05."
+      ]
+    },
+    {
+      "pack_id": "pack-04",
+      "title": "Komunikacja, myślenie, przyroda i nawigacja",
+      "domains": [
+        "komunikacja",
+        "myślenie",
+        "przyroda",
+        "nawigacja"
+      ],
+      "input_path": "skills-pilot/skills-pilot-review-pack-04/",
+      "input_note": "Recenzja przekazana przez użytkownika. Katalog nie był edytowany. Kopia robocza: data/skills-catalog/pilots/communication-cognition-nature/.",
+      "canonical_path": "data/skills-catalog/review-inputs/communication-cognition-nature/",
+      "candidate_count": 126,
+      "reviewed_candidate_count": 126,
+      "proposal_count": 39,
+      "count_note": "126 decyzji recenzji oraz 30 decyzji v5 dla kandydatur ze sprawdzonym źródłem. W rejestrze v5 jest 39 propozycji tego pochodzenia: 35 z recenzji i 4 nowe. Dziewięć grup zostawiono osobno.",
+      "current_revision": "v5",
+      "status": "integrated",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/communication-cognition-nature/review-decisions-pack-04-communication-cognition-nature.jsonl",
+        "data/skills-catalog/pilots/communication-cognition-nature/approved-skill-pilot-pack-04-communication-cognition-nature.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/communication-cognition-nature/candidates.jsonl",
+        "data/skills-catalog/review-inputs/communication-cognition-nature/source-index.json",
+        "data/skills-catalog/review-inputs/communication-cognition-nature/manifest.json",
+        "data/skills-catalog/review-inputs/communication-cognition-nature/review-instructions.md",
+        "data/skills-catalog/review-inputs/communication-cognition-nature/README.md",
+        "data/skills-catalog/archives/communication-cognition-nature-review.zip",
+        "data/skills-catalog/review-inputs/communication-cognition-nature/editorial-review-guide.md",
+        "data/skills-catalog/archives/pack-04-communication-cognition-nature-review.zip",
+        "skills-pilot/outgoing/pack-04-communication-cognition-nature.zip"
+      ],
+      "known_gaps": [
+        "Dwie kandydatury nadal bez wystarczającego źródła: gap-pack-04-needs-more-source-detail.",
+        "28 kandydatur ma wymagania i czeka na decyzję: gap-pack-04-requirements-await-decision. Skilli nie utworzono.",
+        "9 grup w cross-pilot-review-v3.json ma status recommended_not_final i rekomendację keep_separate. Nic nie scalono."
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie otwierać ponownie odrzuconych czynności wysokiego ryzyka bez nowego źródła."
+      ]
+    },
+    {
+      "pack_id": "pack-05",
+      "title": "Muzyka, dźwięk, głos i sztuki performatywne",
+      "domains": [
+        "muzyka",
+        "dźwięk",
+        "głos",
+        "sztuki performatywne"
+      ],
+      "input_path": null,
+      "input_note": "Brak przekazanego pilotażu w skills-pilot/. Pakiet kandydatur złożono z bazy research.",
+      "canonical_path": "data/skills-catalog/review-inputs/pack-05-music-sound-performance/",
+      "candidate_count": 146,
+      "reviewed_candidate_count": 0,
+      "proposal_count": 0,
+      "count_note": "146 kandydatur z istniejącej bazy. ZIP: archives/pack-05-music-sound-performance.zip.",
+      "current_revision": null,
+      "status": "ready_for_review",
+      "collection_status": "ready_for_review",
+      "editorial_review_status": "not_started",
+      "integration_status": "not_started",
+      "production_status": "not_started",
+      "review_files": [],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-05-music-sound-performance/candidates.jsonl",
+        "data/skills-catalog/review-inputs/pack-05-music-sound-performance/source-index.json",
+        "data/skills-catalog/review-inputs/pack-05-music-sound-performance/manifest.json",
+        "data/skills-catalog/review-inputs/pack-05-music-sound-performance/review-instructions.md",
+        "data/skills-catalog/review-inputs/pack-05-music-sound-performance/README.md",
+        "data/skills-catalog/archives/pack-05-music-sound-performance.zip",
+        "data/skills-catalog/review-inputs/pack-05-music-sound-performance/gaps.md"
+      ],
+      "known_gaps": [
+        "Recenzja redakcyjna nie została przeprowadzona. Nie ma propozycji skillów.",
+        "Słuch i rozpoznawanie interwałów nie mają osobnych rekordów poza identify characteristics of music, Sound Localization i acoustics.",
+        "Brak tytułów DJ, podcast i field recording. Najbliższe to compose playlist, record audio materials i set up sound equipment.",
+        "18 rekordów nie ma wystarczającego opisu źródłowego.",
+        "110 rekordów ma heurystykę occupational_or_abstract, głównie przez klasyfikację ESCO."
+      ],
+      "next_actions": [
+        "Oddać pakiet do recenzji redakcyjnej.",
+        "Nie tworzyć trzech poziomów ani skillów produkcyjnych przed decyzjami.",
+        "Poprawka tego zakresu zostaje pack-05."
+      ]
+    },
+    {
+      "pack_id": "pack-06",
+      "title": "Sztuki wizualne, fotografia i projektowanie",
+      "domains": [
+        "rysunek i ilustracja",
+        "malarstwo i kolor",
+        "fotografia",
+        "edycja i obraz cyfrowy",
+        "projektowanie graficzne",
+        "druk i grafika warsztatowa",
+        "rzeźba i ceramika",
+        "niszowe praktyki wizualne"
+      ],
+      "input_path": null,
+      "input_note": "Brak przekazanego pilotażu w skills-pilot/. Pakiet złożono z bazy research.",
+      "canonical_path": "data/skills-catalog/review-inputs/pack-06-visual-arts-design/",
+      "candidate_count": 128,
+      "reviewed_candidate_count": 0,
+      "proposal_count": 0,
+      "input_scan_count": 151,
+      "count_note": "151 trafień tytułu poza pack-01–pack-05. Wybrano 128. ZIP: archives/pack-06-visual-arts-design.zip.",
+      "current_revision": null,
+      "status": "ready_for_review",
+      "collection_status": "ready_for_review",
+      "editorial_review_status": "not_started",
+      "integration_status": "not_started",
+      "production_status": "not_started",
+      "review_files": [],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-06-visual-arts-design/candidates.jsonl",
+        "data/skills-catalog/review-inputs/pack-06-visual-arts-design/source-index.json",
+        "data/skills-catalog/review-inputs/pack-06-visual-arts-design/manifest.json",
+        "data/skills-catalog/review-inputs/pack-06-visual-arts-design/review-instructions.md",
+        "data/skills-catalog/review-inputs/pack-06-visual-arts-design/README.md",
+        "data/skills-catalog/review-inputs/pack-06-visual-arts-design/gaps.md",
+        "data/skills-catalog/archives/pack-06-visual-arts-design.zip"
+      ],
+      "known_gaps": [
+        "Brak osobnych tytułów linorytu i drzeworytu.",
+        "33 rekordy bez wystarczającego opisu.",
+        "Nazwy programów Adobe Illustrator i SketchBook Pro nie weszły.",
+        "Druk 3D zostaje przy propozycji pack-03."
+      ],
+      "next_actions": [
+        "Oddać pakiet do recenzji redakcyjnej.",
+        "Nie tworzyć skillów ani trzech poziomów przed decyzjami.",
+        "Poprawka tego zakresu zostaje pack-06."
+      ]
+    },
+    {
+      "pack_id": "pack-07",
+      "title": "Rzemiosło użytkowe, tekstylia, naprawy i odnawianie",
+      "domains": [
+        "szycie i naprawa tekstyliów",
+        "dziewiarstwo i włókno",
+        "skóra, papier i plecionka",
+        "drewno i przedmioty użytkowe",
+        "naprawa i odnawianie",
+        "narzędzia i wykończenie",
+        "rzadkie rzemiosła użytkowe"
+      ],
+      "input_path": null,
+      "input_note": "Brak przekazanego pilotażu w skills-pilot/. Pakiet złożono z bazy research.",
+      "canonical_path": "data/skills-catalog/review-inputs/pack-07-craft-textiles-repair/",
+      "candidate_count": 128,
+      "reviewed_candidate_count": 0,
+      "proposal_count": 0,
+      "count_note": "128 kandydatur. ZIP: archives/pack-07-craft-textiles-repair.zip.",
+      "current_revision": null,
+      "status": "ready_for_review",
+      "collection_status": "ready_for_review",
+      "editorial_review_status": "not_started",
+      "integration_status": "not_started",
+      "production_status": "not_started",
+      "review_files": [],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-07-craft-textiles-repair/candidates.jsonl",
+        "data/skills-catalog/review-inputs/pack-07-craft-textiles-repair/source-index.json",
+        "data/skills-catalog/review-inputs/pack-07-craft-textiles-repair/manifest.json",
+        "data/skills-catalog/review-inputs/pack-07-craft-textiles-repair/review-instructions.md",
+        "data/skills-catalog/review-inputs/pack-07-craft-textiles-repair/README.md",
+        "data/skills-catalog/review-inputs/pack-07-craft-textiles-repair/gaps.md",
+        "data/skills-catalog/archives/pack-07-craft-textiles-repair.zip"
+      ],
+      "known_gaps": [
+        "45 rekordów bez wystarczającego opisu.",
+        "Odmiany regionalne dziania, tkania i koszy nie weszły jako osobne skille.",
+        "Konstrukcje budowlane, strzecha i łodzie zostały poza pakietem.",
+        "Odznaki DIY i Builder nie mają opisu praktyki."
+      ],
+      "next_actions": [
+        "Oddać pakiet do recenzji redakcyjnej.",
+        "Nie tworzyć trzech poziomów ani skillów produkcyjnych przed decyzjami.",
+        "Poprawka tego zakresu zostaje pack-07."
+      ]
+    },
+    {
+      "pack_id": "pack-08",
+      "title": "Ogrodnictwo, uprawa roślin i praktyczna ekologia",
+      "domains": [
+        "uprawa roślin",
+        "ogrodnictwo użytkowe",
+        "gleba, woda i kompost",
+        "rośliny pod dachem",
+        "praktyczna ekologia"
+      ],
+      "input_path": null,
+      "input_note": "Nie było osobnego przekazania w skills-pilot/. Pakiet złożono z bazy kandydatur.",
+      "canonical_path": "data/skills-catalog/review-inputs/pack-08-gardening-plant-cultivation-ecology/",
+      "candidate_count": 61,
+      "reviewed_candidate_count": 0,
+      "proposal_count": 0,
+      "count_note": "Cel 120–160 nie został dociągnięty. W bazie nie było dalszych odrębnych praktyk bez podziału na gatunki.",
+      "current_revision": null,
+      "status": "ready_for_review",
+      "collection_status": "ready_for_review",
+      "editorial_review_status": "not_started",
+      "integration_status": "not_started",
+      "production_status": "not_started",
+      "review_files": [],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-08-gardening-plant-cultivation-ecology/candidates.jsonl",
+        "data/skills-catalog/review-inputs/pack-08-gardening-plant-cultivation-ecology/source-index.json",
+        "data/skills-catalog/review-inputs/pack-08-gardening-plant-cultivation-ecology/manifest.json",
+        "data/skills-catalog/review-inputs/pack-08-gardening-plant-cultivation-ecology/review-instructions.md",
+        "data/skills-catalog/review-inputs/pack-08-gardening-plant-cultivation-ecology/README.md",
+        "data/skills-catalog/review-inputs/pack-08-gardening-plant-cultivation-ecology/gaps.md",
+        "data/skills-catalog/archives/pack-08-gardening-plant-cultivation-ecology.zip"
+      ],
+      "known_gaps": [
+        "61 kandydatur, poniżej celu 120–160.",
+        "Brak osobnych tytułów doniczek, roślin domowych, mulczu i ogrodu dla zapylaczy.",
+        "Wysiew z nasion zostaje propozycją pack-03 i nie wszedł ponownie.",
+        "Gatunki upraw nie weszły jako osobne skille."
+      ],
+      "next_actions": [
+        "Oddać pakiet do recenzji redakcyjnej.",
+        "Nie tworzyć trzech poziomów ani skillów produkcyjnych przed decyzjami.",
+        "Poprawka tego zakresu zostaje pack-08."
+      ]
+    },
+    {
+      "pack_id": "pack-09",
+      "title": "Pierwsza pomoc, bezpieczeństwo domowe i przygotowanie na sytuacje awaryjne",
+      "domains": [
+        "pierwsza pomoc",
+        "wezwanie pomocy",
+        "czujki i tlenek węgla",
+        "gotowość domowa",
+        "pożar w domu",
+        "bezpieczeństwo przy wodzie"
+      ],
+      "input_path": null,
+      "input_note": "Nie było osobnego przekazania w skills-pilot/. Pakiet złożono ze wskazanych stron i z rekordów już obecnych w bazie.",
+      "canonical_path": "data/skills-catalog/review-inputs/pack-09-first-aid-home-safety-preparedness/",
+      "candidate_count": 72,
+      "reviewed_candidate_count": 0,
+      "proposal_count": 0,
+      "count_note": "Cel 120–160 nie został dociągnięty. 53 rekordy są nowe, 19 było już w bazie.",
+      "current_revision": null,
+      "status": "ready_for_review",
+      "collection_status": "ready_for_review",
+      "editorial_review_status": "not_started",
+      "integration_status": "not_started",
+      "production_status": "not_started",
+      "review_files": [],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-09-first-aid-home-safety-preparedness/candidates.jsonl",
+        "data/skills-catalog/review-inputs/pack-09-first-aid-home-safety-preparedness/source-index.json",
+        "data/skills-catalog/review-inputs/pack-09-first-aid-home-safety-preparedness/manifest.json",
+        "data/skills-catalog/review-inputs/pack-09-first-aid-home-safety-preparedness/review-instructions.md",
+        "data/skills-catalog/review-inputs/pack-09-first-aid-home-safety-preparedness/README.md",
+        "data/skills-catalog/review-inputs/pack-09-first-aid-home-safety-preparedness/gaps.md",
+        "data/skills-catalog/archives/pack-09-first-aid-home-safety-preparedness.zip"
+      ],
+      "known_gaps": [
+        "72 kandydatury, poniżej celu 120–160.",
+        "Brak osobnej kandydatury zadławienia.",
+        "Indeks USFA i załączniki MZ oraz PSP nie zostały odczytane jako treść rekordów.",
+        "Numery alarmowe i lista zestawu Ready.gov wymagają lokalnej adaptacji.",
+        "Trzy odznaki skautowe nie mają opisu."
+      ],
+      "next_actions": [
+        "Oddać pakiet do recenzji redakcyjnej.",
+        "Nie tworzyć trzech poziomów ani skillów produkcyjnych przed decyzjami.",
+        "Nie scalać automatycznie z rekordami ESCO o pierwszej pomocy i czujkach.",
+        "Poprawka tego zakresu zostaje pack-09."
+      ]
+    },
+    {
+      "pack_id": "pack-10",
+      "title": "Opieka nad zwierzętami, dobrostan i trening oparty na nagradzaniu",
+      "domains": [
+        "decyzja o zwierzęciu",
+        "trening psa",
+        "koty",
+        "króliki",
+        "ptaki i świnki morskie",
+        "pielęgnacja i obserwacja",
+        "podróż i ciągłość opieki"
+      ],
+      "input_path": null,
+      "input_note": "Nie było osobnego przekazania w skills-pilot/. Pakiet złożono ze wskazanych stron i z rekordów już obecnych w bazie.",
+      "canonical_path": "data/skills-catalog/review-inputs/pack-10-pet-care-animal-welfare-training/",
+      "candidate_count": 60,
+      "reviewed_candidate_count": 0,
+      "proposal_count": 0,
+      "count_note": "Cel 120–160 nie został dociągnięty. 45 rekordów jest nowych, 15 było już w bazie.",
+      "current_revision": null,
+      "status": "ready_for_review",
+      "collection_status": "ready_for_review",
+      "editorial_review_status": "not_started",
+      "integration_status": "not_started",
+      "production_status": "not_started",
+      "review_files": [],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-10-pet-care-animal-welfare-training/candidates.jsonl",
+        "data/skills-catalog/review-inputs/pack-10-pet-care-animal-welfare-training/source-index.json",
+        "data/skills-catalog/review-inputs/pack-10-pet-care-animal-welfare-training/manifest.json",
+        "data/skills-catalog/review-inputs/pack-10-pet-care-animal-welfare-training/review-instructions.md",
+        "data/skills-catalog/review-inputs/pack-10-pet-care-animal-welfare-training/README.md",
+        "data/skills-catalog/review-inputs/pack-10-pet-care-animal-welfare-training/gaps.md",
+        "data/skills-catalog/archives/pack-10-pet-care-animal-welfare-training.zip"
+      ],
+      "known_gaps": [
+        "60 kandydatur, poniżej celu 120–160.",
+        "Indeksy AVMA i PDSA Small Pets oraz podstrony ptaków nie zostały odczytane jako treść rekordów.",
+        "ESCO train dogs wymienia dominance-based training. Metody kary nie wchodzą do katalogu.",
+        "Psy pracujące i konie zostały poza zakresem."
+      ],
+      "next_actions": [
+        "Oddać pakiet do recenzji redakcyjnej.",
+        "Nie tworzyć trzech poziomów ani skillów produkcyjnych przed decyzjami.",
+        "Nie układać treningu na bólu, strachu, przymusie ani karze.",
+        "Poprawka tego zakresu zostaje pack-10."
+      ]
+    },
+    {
+      "pack_id": "pack-11",
+      "title": "Ogólne umiejętności praktyczne",
+      "domains": [
+        "codzienność",
+        "dom",
+        "organizacja",
+        "pisanie",
+        "zakupy"
+      ],
+      "input_path": "skills-pilot/pack-11-general-practical-skills-500/",
+      "input_note": "500 kandydatur ESCO. Katalog przekazania nie był edytowany. Stron nie otwierano ponownie.",
+      "canonical_path": "data/skills-catalog/pilots/general-practical-skills/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 13,
+      "count_note": "500 decyzji w v2: 12 accept_for_pilot, 485 reject, 3 needs_source. W rejestrze v5 jest 13 propozycji tego pochodzenia.",
+      "current_revision": "v5",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/general-practical-skills/review-decisions-pack-11.jsonl",
+        "data/skills-catalog/pilots/general-practical-skills/review-decisions-pack-11-v2.jsonl",
+        "data/skills-catalog/pilots/general-practical-skills/approved-skill-pilot-pack-11.jsonl",
+        "data/skills-catalog/pilots/general-practical-skills/approved-skill-pilot-v5-additions.jsonl"
+      ],
+      "source_files": [
+        "skills-pilot/pack-11-general-practical-skills-500/candidates.jsonl"
+      ],
+      "known_gaps": [
+        "gap-pack-11-language-writing-family",
+        "gap-pack-11-overlap-existing-proposals",
+        "gap-pack-11-needs-source",
+        "gap-pack-11-needs-revision"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Zostawić otwarte trzy naprawy bez bezpiecznej metody.",
+        "Nie zamykać luk pack-09 i pack-10."
+      ]
+    },
+    {
+      "pack_id": "pack-12",
+      "title": "Szeroka ekspansja praktyk",
+      "domains": [
+        "codzienność",
+        "nauka",
+        "dom",
+        "gry",
+        "ruch",
+        "tworzenie"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-12-broad-practice-expansion/",
+      "input_note": "500 kandydatur redakcyjnych. To nie jest paczka ESCO. Podstawa jest oznaczona jako editorial_synthesis i nie ma zewnętrznego URL.",
+      "canonical_path": "data/skills-catalog/pilots/broad-practice-expansion/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 183,
+      "count_note": "500 decyzji: 183 accept_for_pilot, 300 reject, 17 needs_source.",
+      "current_revision": "v6",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/broad-practice-expansion/review-decisions-pack-12.jsonl",
+        "data/skills-catalog/pilots/broad-practice-expansion/approved-skill-pilot-pack-12.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-12-broad-practice-expansion/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-12-high-risk-source.",
+        "Nie nadawać numeru pack-13 poprawkom tego pakietu."
+      ]
+    },
+    {
+      "pack_id": "pack-13",
+      "title": "Rozszerzenie pokrycia",
+      "domains": [
+        "dostęp",
+        "kultura",
+        "nauka praktyczna",
+        "informacja",
+        "współpraca",
+        "rękodzieło",
+        "życie obywatelskie"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-13-coverage-expansion/",
+      "input_note": "500 kandydatur redakcyjnych. To nie jest paczka ESCO. Podstawa jest oznaczona jako editorial_synthesis i nie ma zewnętrznego URL.",
+      "canonical_path": "data/skills-catalog/pilots/coverage-expansion/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 232,
+      "count_note": "500 decyzji: 232 accept_for_pilot, 170 already_represented, 79 reject, 19 needs_source.",
+      "current_revision": "v7",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/coverage-expansion/review-decisions-pack-13.jsonl",
+        "data/skills-catalog/pilots/coverage-expansion/approved-skill-pilot-pack-13.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-13-coverage-expansion/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-13-high-risk-for-review.",
+        "Nie zamykać gap-pack-12-high-risk-source.",
+        "Nie nadawać numeru pack-14 poprawkom tego pakietu."
+      ]
+    },
+    {
+      "pack_id": "pack-14",
+      "title": "Twierdzenia, ślady, doświadczenia i ustalenia",
+      "domains": [
+        "twierdzenia",
+        "improwizacja",
+        "pamięć",
+        "doświadczenia",
+        "spotkania",
+        "obraz",
+        "uczenie",
+        "materiały"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-14-practice-expansion/",
+      "input_note": "500 kandydatur redakcyjnych. To nie jest paczka ESCO. Podstawa jest oznaczona jako editorial_synthesis i nie ma zewnętrznego URL.",
+      "canonical_path": "data/skills-catalog/pilots/practice-expansion-14/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 204,
+      "count_note": "500 decyzji: 204 accept_for_pilot, 244 already_represented, 34 reject, 18 needs_source.",
+      "current_revision": "v8",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/practice-expansion-14/review-decisions-pack-14.jsonl",
+        "data/skills-catalog/pilots/practice-expansion-14/approved-skill-pilot-pack-14.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-14-practice-expansion/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-14-high-risk-for-review.",
+        "Nie zamykać luk pack-12 i pack-13.",
+        "Nie nadawać numeru pack-15 poprawkom tego pakietu."
+      ]
+    },
+    {
+      "pack_id": "pack-15",
+      "title": "Triki, kody, papier i pokazy",
+      "domains": [
+        "triki",
+        "dźwięk",
+        "papier",
+        "kody",
+        "łamigłówki",
+        "małe wykonanie",
+        "podróż"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-15-showable-skills/",
+      "input_note": "500 kandydatur redakcyjnych. To nie jest paczka ESCO. Podstawa jest oznaczona jako editorial_synthesis i nie ma zewnętrznego URL.",
+      "canonical_path": "data/skills-catalog/pilots/showable-skills/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 259,
+      "count_note": "500 decyzji: 259 accept_for_pilot, 206 already_represented, 19 reject, 16 needs_source.",
+      "current_revision": "v9",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/showable-skills/review-decisions-pack-15.jsonl",
+        "data/skills-catalog/pilots/showable-skills/approved-skill-pilot-pack-15.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-15-showable-skills/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-15-high-risk-for-review.",
+        "Nie zamykać luk pack-12, pack-13 i pack-14.",
+        "Nie nadawać numeru pack-16 poprawkom tego pakietu."
+      ]
+    },
+    {
+      "pack_id": "pack-16",
+      "title": "Niebo, żywe rzeczy, tkanina i miasto",
+      "domains": [
+        "niebo",
+        "przyroda",
+        "budynki",
+        "tkanina",
+        "ogród",
+        "miasto",
+        "kolekcje"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-16-final-broad-discovery/",
+      "input_note": "500 kandydatur redakcyjnych. Podstawa editorial_synthesis, bez zewnętrznego URL.",
+      "canonical_path": "data/skills-catalog/pilots/final-broad-discovery/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 127,
+      "count_note": "500 decyzji: 127 accept_for_pilot, 342 already_represented, 17 reject, 14 needs_source.",
+      "current_revision": "v11",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/final-broad-discovery/review-decisions-pack-16.jsonl",
+        "data/skills-catalog/pilots/final-broad-discovery/approved-skill-pilot-pack-16.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-16-final-broad-discovery/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-16-high-risk-for-review.",
+        "Nie zamykać wcześniejszych luk ryzyka.",
+        "Nie nadawać numeru pack-17 poprawkom tego pakietu."
+      ]
+    }
+  ],
+  "gaps_registry": {
+    "path": "data/skills-catalog/gaps-registry.json",
+    "human_index": "data/skills-catalog/GAPS.md",
+    "role": "Centralny indeks statusu luk. Szczegółowe uzasadnienia zostają w plikach wskazanych przy każdej luce."
+  }
+}

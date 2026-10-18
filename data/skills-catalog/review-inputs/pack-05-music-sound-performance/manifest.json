@@ -1,0 +1,56 @@
+{
+  "prepared_on": "2026-10-18",
+  "pack_id": "pack-05",
+  "title": "Muzyka, dźwięk, głos i sztuki performatywne",
+  "domains": [
+    "muzyka",
+    "dźwięk",
+    "głos",
+    "sztuki performatywne"
+  ],
+  "package": "pack-05-music-sound-performance",
+  "format_version": "1",
+  "status": "ready_for_review",
+  "record_count": 146,
+  "source_count": 5,
+  "candidate_ids_file": "candidates.jsonl",
+  "candidate_id_range": {
+    "first": "esco:0207f83d-a1e4-4b47-b80c-84d41257791f",
+    "last": "wikidata:Q45999579"
+  },
+  "registry": "data/skills-catalog/research/sources.json",
+  "excluded_already_used_candidate_ids": 0,
+  "selection_group_counts": {
+    "A": 24,
+    "B": 8,
+    "C": 4,
+    "D": 33,
+    "E": 5,
+    "F": 41,
+    "G": 31
+  },
+  "triage_suitability": {
+    "adaptable_candidate": 4,
+    "uncertain": 20,
+    "strong_candidate": 12,
+    "occupational_or_abstract": 110
+  },
+  "description_insufficient": 18,
+  "coverage_notes": [
+    "Nie włączono kandydatur z pack-01 do pack-04 ani source_candidate_ids z pilot-proposals-v2.jsonl.",
+    "Muzykoterapia i czynności administracyjne branży muzycznej zostały pominięte jako praktyka kliniczna albo zawodowa.",
+    "Nie ma w bazie osobnych tytułów play the guitar, play the violin ani choir. Jest play musical instruments, play the piano i perform music in ensemble.",
+    "Nie ma osobnego tytułu DJ, podcast ani field recording. Najbliższe rekordy to compose playlist, record audio materials i set up sound equipment.",
+    "Tytuł audio editing software wymienia marki programów i nie wszedł do pakietu.",
+    "Bow making (musical) i Flute making (concert) mają triage not_a_distinct_skill i brak opisu, więc nie weszły.",
+    "Dwie odznaki Entertainer mają ten sam tytuł i różne candidate_id.",
+    "virtual singer nie wszedł: opis dotyczy awatara, nie praktyki śpiewu."
+  ],
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md"
+  ]
+}

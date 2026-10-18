@@ -9,3 +9,7 @@ DerivedData/
 
 # Swift Package Manager
 .swiftpm/
+
+# Python
+__pycache__/
+*.pyc

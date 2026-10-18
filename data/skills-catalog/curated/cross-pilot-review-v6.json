@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "automatic_merge_performed": false,
+  "production_approval": false,
+  "note": "Pack-12 porównano z rejestrem v5 i z pakietami 01–11. Te same rezultaty odrzucono i zmapowano. Istniejących propozycji nie scalono i nie usunięto.",
+  "merge_history": "data/skills-catalog/curated/merge-history-v6.json",
+  "new_origin": "broad-practice-expansion",
+  "proposals_added": 183
+}

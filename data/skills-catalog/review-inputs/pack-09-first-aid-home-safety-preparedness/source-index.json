@@ -1,0 +1,166 @@
+{
+  "registry": "data/skills-catalog/research/sources.json",
+  "note": "Skrót źródeł użytych w tym pakiecie, skopiowany z rejestru centralnego. To nie jest drugi katalog źródeł.",
+  "sources": [
+    {
+      "source_id": "ec-112-emergency-number",
+      "title": "Komisja Europejska — numer alarmowy 112",
+      "organization": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/pl/policies/112",
+      "retrieved_on": "2026-10-18",
+      "language": "pl",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 3
+    },
+    {
+      "source_id": "esco-skills-v1.2.1",
+      "title": "ESCO classification, skills pillar, English CSV",
+      "organization": "European Commission, Directorate-General for Employment, Social Affairs and Inclusion",
+      "url": "https://esco.ec.europa.eu/en/use-esco/download",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "No separate licence label was printed on the download page retrieved for this run. ESCO v1.2.1 is published by the European Commission. Reuse of Commission documents is governed by Commission Decision 2011/833/EU where no narrower statement is given. This is a research note, not a legal opinion.",
+      "records_in_package": 16
+    },
+    {
+      "source_id": "govpl-mz-pierwsza-pomoc",
+      "title": "Ministerstwo Zdrowia — pierwsza pomoc",
+      "organization": "Ministerstwo Zdrowia",
+      "url": "https://www.gov.pl/web/zdrowie/pierwsza-pomoc",
+      "retrieved_on": "2026-10-18",
+      "language": "pl",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 3
+    },
+    {
+      "source_id": "govpl-poradnik-pierwsza-pomoc",
+      "title": "Poradnik bezpieczeństwa — pierwsza pomoc",
+      "organization": "Portal Gov.pl",
+      "url": "https://www.gov.pl/web/poradnikbezpieczenstwa/pierwsza-pomoc",
+      "retrieved_on": "2026-10-18",
+      "language": "pl",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 8
+    },
+    {
+      "source_id": "kgpsp-czujka-poradnik",
+      "title": "Państwowa Straż Pożarna — Czujka na straży Twojego bezpieczeństwa",
+      "organization": "Komenda Główna Państwowej Straży Pożarnej",
+      "url": "https://www.gov.pl/web/kgpsp/poradnik---czujka-na-strazy-twojego-bezpieczenstwa",
+      "retrieved_on": "2026-10-18",
+      "language": "pl",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 7
+    },
+    {
+      "source_id": "ready-gov-kit",
+      "title": "Ready.gov — awaryjny zestaw wyposażenia",
+      "organization": "U.S. Department of Homeland Security",
+      "url": "https://www.ready.gov/kit",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 5
+    },
+    {
+      "source_id": "ready-gov-plan",
+      "title": "Ready.gov — plan komunikacji rodzinnej",
+      "organization": "U.S. Department of Homeland Security",
+      "url": "https://www.ready.gov/plan-form",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "ready-gov-prepare",
+      "title": "Ready.gov — przygotowanie na katastrofy",
+      "organization": "U.S. Department of Homeland Security",
+      "url": "https://www.ready.gov/",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 4
+    },
+    {
+      "source_id": "red-cross-first-aid-steps",
+      "title": "American Red Cross — First Aid Steps",
+      "organization": "American Red Cross",
+      "url": "https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 6
+    },
+    {
+      "source_id": "red-cross-first-aid-training",
+      "title": "American Red Cross — First Aid Training",
+      "organization": "American Red Cross",
+      "url": "https://www.redcross.org/take-a-class/first-aid",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 2
+    },
+    {
+      "source_id": "red-cross-lake-river-safety",
+      "title": "American Red Cross — bezpieczeństwo na jeziorach i rzekach",
+      "organization": "American Red Cross",
+      "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety/lake-river-safety.html",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "red-cross-learn-first-aid",
+      "title": "American Red Cross — nauka pierwszej pomocy",
+      "organization": "American Red Cross",
+      "url": "https://www.redcross.org/take-a-class/resources/learn-first-aid",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "red-cross-water-safety-overview",
+      "title": "American Red Cross — Water Safety",
+      "organization": "American Red Cross",
+      "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety.html",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 5
+    },
+    {
+      "source_id": "scouts-uk-activity-badges",
+      "title": "Scouts activity badges",
+      "organization": "The Scout Association",
+      "url": "https://www.scouts.org.uk/activity-badges",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Copyright The Scout Association. No open licence was found for badge syllabi. Titles and URLs only were stored.",
+      "records_in_package": 3
+    },
+    {
+      "source_id": "usfa-cooking-fire-safety",
+      "title": "U.S. Fire Administration — bezpieczeństwo podczas gotowania",
+      "organization": "U.S. Fire Administration",
+      "url": "https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/cooking/",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 1
+    },
+    {
+      "source_id": "usfa-smoke-alarms",
+      "title": "U.S. Fire Administration — czujki dymu",
+      "organization": "U.S. Fire Administration",
+      "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/index.html",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Strona publiczna. Do bazy zapisano krótką parafrazę zakresu, nie cytat procedury.",
+      "records_in_package": 6
+    }
+  ]
+}

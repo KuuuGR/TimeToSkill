@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "compared_against": "data/skills-catalog/curated/pilot-proposals-v3.jsonl",
+  "new_proposals_file": "data/skills-catalog/curated/pilot-proposals-v4.jsonl",
+  "automatic_merge_performed": false,
+  "records_deleted": 0,
+  "decision_taken": false,
+  "source_pages_reopened": false,
+  "groups": [
+    {
+      "group_id": "v4:pack11:1",
+      "candidate_ids": [
+        "esco:f632251a-4078-4546-b19f-7ef528d08325"
+      ],
+      "candidate_titles": [
+        "use IT tools"
+      ],
+      "proposal_ids": [
+        "technology-science-niches:everyday-tech-troubleshooting",
+        "technology-science-niches:personal-device-setup"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Opis dotyczy narzędzi informatycznych w firmie i jest szerszy niż istniejące propozycje."
+    },
+    {
+      "group_id": "v4:pack11:2",
+      "candidate_ids": [
+        "esco:39e7d2a3-8d01-497c-8c5f-d51ab53a4a22"
+      ],
+      "candidate_titles": [
+        "present arguments persuasively"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:build-a-reasoned-written-argument",
+        "communication-cognition-nature:public-speaking-and-audience-adaptation"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Przekonywanie argumentem zachodzi na pisemny argument i na wystąpienie. Nie scalono."
+    },
+    {
+      "group_id": "v4:pack11:3",
+      "candidate_ids": [
+        "esco:be20d05c-f6b4-4580-9fcf-f00f4baab562",
+        "esco:47a49cd6-097d-457a-9f7b-c290c14930d5",
+        "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+        "esco:a571ae14-3e16-4fd3-a615-5646e0b0b696",
+        "esco:b74fd765-e1ae-4f56-a188-45cd782bca01",
+        "esco:9af1bd12-01bd-4d6a-947b-69e64f23150a",
+        "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+        "esco:36ff57b0-637d-4a83-a0e8-d14f86f9f078",
+        "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+        "esco:89db623e-e1fc-4ec2-9a0f-7b72b4c35303",
+        "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+        "esco:c0326e27-5fa8-4dca-aecb-ed89ab491513"
+      ],
+      "candidate_titles": [
+        "make data-driven decisions",
+        "analyse big data",
+        "apply statistical analysis techniques",
+        "inspect data",
+        "assess reliability of data",
+        "process qualitative information",
+        "carry out statistical forecasts",
+        "analyse scientific data",
+        "identify statistical patterns",
+        "gather experimental data",
+        "perform data cleansing",
+        "prepare visual data"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:critical-thinking-and-evidence-checking",
+        "technology-science-niches:digital-publishing-and-layout",
+        "technology-science-niches:practical-data-analysis"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Decyzja na danych jest skutkiem analizy, a opis nie podaje osobnego ćwiczenia."
+    },
+    {
+      "group_id": "v4:pack11:4",
+      "candidate_ids": [
+        "esco:0af355f7-634c-4f1b-b499-90400000d777",
+        "esco:a1388163-462a-4b76-8649-67470ea858a1",
+        "esco:0b8da079-f587-403f-a6ad-cd18b8150044"
+      ],
+      "candidate_titles": [
+        "analyse recorded sources",
+        "search databases",
+        "gather technical information"
+      ],
+      "proposal_ids": [
+        "technology-science-niches:digital-research-and-source-evaluation"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Analiza nagranych źródeł zachodzi na ocenę źródeł."
+    },
+    {
+      "group_id": "v4:pack11:5",
+      "candidate_ids": [
+        "esco:a68bdf1e-b325-4880-b456-192c2891931a"
+      ],
+      "candidate_titles": [
+        "maintain physical fitness"
+      ],
+      "proposal_ids": [
+        "movement-sport-dance:running-and-pacing"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Ogólna sprawność zachodzi na konkretne praktyki ruchu. Źródło nie wybiera ćwiczenia."
+    },
+    {
+      "group_id": "v4:pack11:6",
+      "candidate_ids": [
+        "esco:d60211c4-2e2b-444d-aeb6-4cf31de76cfd"
+      ],
+      "candidate_titles": [
+        "wax wood surfaces"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Woskowanie drewna jest osobną obróbką powierzchni wobec sprawdzenia podłoża przed malowaniem. Nie scalono i nie dopisano chemii."
+    },
+    {
+      "group_id": "v4:pack11:7",
+      "candidate_ids": [
+        "esco:09cac140-367e-45f5-b19f-6430e75e5a2a",
+        "esco:fd446407-b08e-49da-b8e3-7e7c79618c3f",
+        "esco:c55caed2-de9e-4a25-819e-a0b0e83fba1b"
+      ],
+      "candidate_titles": [
+        "prepare speeches",
+        "conduct public presentations",
+        "give live presentation"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:public-speaking-and-audience-adaptation"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Przygotowanie przemówienia jest częścią wystąpienia publicznego, które już jest propozycją."
+    },
+    {
+      "group_id": "v4:pack11:8",
+      "candidate_ids": [
+        "esco:df996a98-202f-4a9b-b088-38c8db03ef1b",
+        "esco:1ba59ce0-7fec-434b-8d5c-9b275250a26c",
+        "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+      ],
+      "candidate_titles": [
+        "create content title",
+        "prepare presentation material",
+        "use presentation software"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:public-speaking-and-audience-adaptation",
+        "technology-science-niches:digital-publishing-and-layout"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Tytuł materiału jest fragmentem publikacji cyfrowej, nie osobną praktyką."
+    },
+    {
+      "group_id": "v4:pack11:9",
+      "candidate_ids": [
+        "esco:17a3dd28-5d74-48de-b0ad-b1f7ca3c5d33"
+      ],
+      "candidate_titles": [
+        "assist with emergencies"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Rekord dotyczy nagłej pomocy na pokładzie. Nie dopisano procedur medycznych. Pack-09 nadal czeka na recenzję."
+    },
+    {
+      "group_id": "v4:pack11:10",
+      "candidate_ids": [
+        "esco:adf661fe-9429-4094-8671-ca69fb72ad02"
+      ],
+      "candidate_titles": [
+        "clean wood surface"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Czyszczenie drewna z pyłu i tłuszczu zachodzi na przygotowanie powierzchni. Opis nie podaje bezpiecznego środka."
+    },
+    {
+      "group_id": "v4:pack11:11",
+      "candidate_ids": [
+        "esco:7954861c-86d4-4529-afbb-2c23dab9ac74"
+      ],
+      "candidate_titles": [
+        "negotiate compromises"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:constructive-conflict-resolution"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Dochodzenie do porozumienia zachodzi na rozwiązanie sporu. Nie rozstrzygnięto, czy to osobne ćwiczenie."
+    },
+    {
+      "group_id": "v4:pack11:12",
+      "candidate_ids": [
+        "esco:7ff2c668-0e86-418a-a962-4958262ee337",
+        "esco:254235cd-d928-49d1-ae51-b7c909404fe1",
+        "esco:a5826fe3-8df6-4fa8-adad-b7116864588f"
+      ],
+      "candidate_titles": [
+        "use communication techniques",
+        "adapt communication style according to recipient",
+        "communicate mathematical information"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:active-listening",
+        "communication-cognition-nature:explain-information-clearly",
+        "communication-cognition-nature:public-speaking-and-audience-adaptation"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Ogólne techniki komunikacji mieszają wyjaśnianie i słuchanie."
+    },
+    {
+      "group_id": "v4:pack11:13",
+      "candidate_ids": [
+        "esco:0ff99f51-40d9-42f1-a1ec-377b2bb5e15f"
+      ],
+      "candidate_titles": [
+        "comply with food safety and hygiene"
+      ],
+      "proposal_ids": [
+        "kitchen-finance:kitchen-food-safety"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Higiena żywności w opisie obejmuje produkcję i dostawę, a propozycja kuchenna już obejmuje bezpieczeństwo jedzenia w domu."
+    },
+    {
+      "group_id": "v4:pack11:14",
+      "candidate_ids": [
+        "esco:97843c38-17f0-4c9c-aa86-049e2870aa1a"
+      ],
+      "candidate_titles": [
+        "ensure health and safety of visitors"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Rekord każe przygotować działania awaryjne i pierwszą pomoc. Procedur nie kopiowano. To nie zamyka pack-09."
+    },
+    {
+      "group_id": "v4:pack11:15",
+      "candidate_ids": [
+        "esco:f19f2c6d-3f1d-4231-9fd9-ece77ed359d7"
+      ],
+      "candidate_titles": [
+        "prepare assembly drawings"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Rysunek złożeniowy zachodzi na prosty rysunek techniczny. Nie scalono."
+    },
+    {
+      "group_id": "v4:pack11:16",
+      "candidate_ids": [
+        "esco:a628d2d1-f40a-4c37-a357-2801726f2996"
+      ],
+      "candidate_titles": [
+        "identify problems"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:structured-problem-solving"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Wykrycie problemu jest częścią systematycznego rozwiązywania problemów."
+    },
+    {
+      "group_id": "v4:pack11:17",
+      "candidate_ids": [
+        "esco:05aa7c09-46e7-433f-a81b-92841f4551e7"
+      ],
+      "candidate_titles": [
+        "accept criticism and guidance"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:constructive-peer-feedback"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Przyjmowanie krytyki zachodzi na informację zwrotną o tekście. Zakres jest szerszy i niepewny."
+    },
+    {
+      "group_id": "v4:pack11:18",
+      "candidate_ids": [
+        "esco:c08ec608-48cd-4cd5-ac39-171fce1c0ce5"
+      ],
+      "candidate_titles": [
+        "evaluate events"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Ocena wydarzenia może być częścią planowania albo osobną praktyką. Przyjęto planowanie, oceny nie scalono."
+    },
+    {
+      "group_id": "v4:pack11:19",
+      "candidate_ids": [
+        "esco:2b834a98-14ff-47e1-8aef-cf8ffae912fa"
+      ],
+      "candidate_titles": [
+        "collect mapping data"
+      ],
+      "proposal_ids": [
+        "technology-science-niches:digital-map-making"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Zbieranie danych do mapy zachodzi na tworzenie mapy cyfrowej."
+    },
+    {
+      "group_id": "v4:pack11:20",
+      "candidate_ids": [
+        "esco:b07daddc-8625-4360-946e-ad2b0e56ebf6"
+      ],
+      "candidate_titles": [
+        "read engineering drawings"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Czytanie rysunku technicznego jest inne niż jego wykonanie. Nie scalono z przyjętym rysowaniem."
+    },
+    {
+      "group_id": "v4:pack11:21",
+      "candidate_ids": [
+        "esco:896563fc-6255-4419-89c2-ffed30159ad6"
+      ],
+      "candidate_titles": [
+        "conduct research interview"
+      ],
+      "proposal_ids": [
+        "technology-science-niches:genealogy-research",
+        "technology-science-niches:local-history-research"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Wywiad badawczy zachodzi na wywiad w genealogii i historii lokalnej."
+    },
+    {
+      "group_id": "v4:pack11:22",
+      "candidate_ids": [
+        "esco:8c4b7305-4b83-4586-9d42-2817f96c60ea",
+        "esco:7dd94ad3-13d6-43fe-8b94-51fcbf67ced9"
+      ],
+      "candidate_titles": [
+        "pose questions referring to documents",
+        "think critically"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:critical-thinking-and-evidence-checking"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Pytania do dokumentu zachodzą na ocenę dowodów."
+    },
+    {
+      "group_id": "v4:pack11:23",
+      "candidate_ids": [
+        "esco:6ed67cf0-d8b9-4025-8b6e-a29a11e6b977"
+      ],
+      "candidate_titles": [
+        "build a product's physical model"
+      ],
+      "proposal_ids": [
+        "technology-science-niches:model-engineering",
+        "technology-science-niches:paper-cardboard-model-making",
+        "technology-science-niches:scale-model-building"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Model fizyczny produktu zachodzi na istniejące propozycje modelarskie."
+    },
+    {
+      "group_id": "v4:pack11:24",
+      "candidate_ids": [
+        "esco:d10030a4-f49c-4125-8646-6b091efe5089"
+      ],
+      "candidate_titles": [
+        "monitor the welfare of animals"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Obserwacja stanu zwierząt zachodzi na pack-10. Nie utworzono diagnostyki."
+    },
+    {
+      "group_id": "v4:pack11:25",
+      "candidate_ids": [
+        "esco:7e8c17fd-3299-4c5a-b67c-32f516364662"
+      ],
+      "candidate_titles": [
+        "assess quality of services"
+      ],
+      "proposal_ids": [
+        "kitchen-finance:compare-financial-offers"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Porównanie jakości towarów i usług zachodzi na porównanie ofert. Opis nie ogranicza rodzaju usługi."
+    },
+    {
+      "group_id": "v4:pack11:26",
+      "candidate_ids": [
+        "esco:eb8babfb-ab91-4937-a032-6a79f82e9b7f"
+      ],
+      "candidate_titles": [
+        "analyse financial risk"
+      ],
+      "proposal_ids": [
+        "kitchen-finance:understand-interest-costs"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Ryzyko kredytowe i rynkowe firmy nie jest tym samym co koszt odsetek. Podobieństwo wymaga decyzji."
+    },
+    {
+      "group_id": "v4:pack11:27",
+      "candidate_ids": [
+        "esco:f31bc8df-aa92-4371-a2b4-18215fcb9700"
+      ],
+      "candidate_titles": [
+        "ride horses"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Konie zostały wcześniej odłożone przy pack-10. Ten rekord nie rozstrzyga bezpiecznej progresji."
+    },
+    {
+      "group_id": "v4:pack11:28",
+      "candidate_ids": [
+        "esco:faf8943c-72ff-4736-a587-25508695d6f0"
+      ],
+      "candidate_titles": [
+        "maintain financial records"
+      ],
+      "proposal_ids": [
+        "kitchen-finance:personal-budgeting-and-saving"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Prowadzenie zapisów finansowych firmy zachodzi na budżet osobisty. Źródło mówi o firmie albo projekcie."
+    },
+    {
+      "group_id": "v4:pack11:29",
+      "candidate_ids": [
+        "esco:79c96922-6032-40d6-b391-0f4a0d85e620"
+      ],
+      "candidate_titles": [
+        "make artistic food creations"
+      ],
+      "proposal_ids": [
+        "kitchen-finance:basic-baking-techniques"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Artystyczne jedzenie, w tym torty, zachodzi na pieczenie. Nie scalono."
+    },
+    {
+      "group_id": "v4:pack11:30",
+      "candidate_ids": [
+        "esco:05a7f9e0-1ebd-4853-890b-c78f37096d51"
+      ],
+      "candidate_titles": [
+        "provide humanitarian aid"
+      ],
+      "proposal_ids": [],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Pomoc w strefie zagrożenia nie jest praktyką domową i miesza się z pierwszą pomocą. Procedur nie dopisano."
+    },
+    {
+      "group_id": "v4:pack11:31",
+      "candidate_ids": [
+        "esco:b363bb5f-2c79-40af-94da-33e06f9dee9f"
+      ],
+      "candidate_titles": [
+        "apply blended learning"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:retrieval-practice",
+        "communication-cognition-nature:spaced-practice"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Uczenie mieszane jest metodą nauczania obok już przyjętych strategii uczenia się."
+    },
+    {
+      "group_id": "v4:pack11:32",
+      "candidate_ids": [
+        "esco:aa7062ed-ebfb-4876-8fa5-a7c72c8b6ffb",
+        "esco:321f7ade-ba43-4923-a432-54df75ec80a5"
+      ],
+      "candidate_titles": [
+        "translate spoken language",
+        "translate spoken language consecutively"
+      ],
+      "proposal_ids": [
+        "communication-cognition-nature:informal-spoken-interpreting"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Tłumaczenie mowy zachodzi na nieformalne tłumaczenie ustne."
+    },
+    {
+      "group_id": "v4:pack11:33",
+      "candidate_ids": [
+        "esco:580660a6-5d3a-421d-a54f-d85b706c2b2f"
+      ],
+      "candidate_titles": [
+        "use online tools to collaborate"
+      ],
+      "proposal_ids": [
+        "technology-science-niches:open-source-contribution"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Wspólna praca online zachodzi na współpracę przy projekcie. Źródło nie mówi, jaki produkt ma powstać."
+    },
+    {
+      "group_id": "v4:pack11:34",
+      "candidate_ids": [
+        "esco:bf4d884f-c848-402a-b130-69c266b04164"
+      ],
+      "candidate_titles": [
+        "apply basic programming skills"
+      ],
+      "proposal_ids": [
+        "technology-science-niches:programming-fundamentals"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Podstawowe programowanie jest już propozycją programowania."
+    },
+    {
+      "group_id": "v4:pack11:language-writing",
+      "candidate_ids": [
+        "esco:97ca0f19-c53f-4c38-b983-398345cba227",
+        "esco:877057bc-7be8-4d40-9bab-cda10eb4b999",
+        "esco:cf9e867f-08d7-48a8-8d11-c63bd8a65f89",
+        "esco:1988ce17-ce7a-44b9-9fce-5aaea5f811f5",
+        "esco:3a660148-e0d6-4b07-b107-10200ebb1b23",
+        "esco:d21bcba8-ecf5-4ac3-9a6c-25a5afa42ea2",
+        "esco:c5ef5813-ef1d-4a22-8fce-16b1dcf93ea1",
+        "esco:9f3e3f27-1f27-4b77-9bc8-4ec33e33b8b1",
+        "esco:41253322-dc32-4d79-941c-3a8c230a1d85",
+        "esco:50d8a1ff-659a-4671-be48-369242b2a3be",
+        "esco:0a35de65-e51d-4862-a425-2f4dd5c4a982",
+        "esco:450e047f-bb60-4eaa-bbcf-5e7af43e7f2a",
+        "esco:aaf57e19-0d41-4361-8de9-bcd858e3f10d",
+        "esco:b5ff2ded-a91d-468b-afed-f9737f929e86",
+        "esco:7c2e97a5-ac3d-4c01-9a3b-2e395f45d34a",
+        "esco:16c86dd8-00fa-4fbd-a0a9-bb59f83ebc85",
+        "esco:42b7c03a-3ed5-4dc1-adc0-ff1fb8d4d697",
+        "esco:e35cfb6e-ea8e-4aef-aab9-3cbc7d79647b",
+        "esco:3993c87c-7719-4186-811b-8ddfb40e76be",
+        "esco:abadaacb-5751-4f52-96b7-c9bbc070f9de",
+        "esco:049de1f6-34ec-46f9-a0b1-8fc6f0199413",
+        "esco:5dfc81aa-c395-4e88-a0e0-a2fbb681ecc0",
+        "esco:5ec5c4f7-1b6d-4642-8470-567e666952a8",
+        "esco:45ab3524-935d-4bc0-a7f3-1cf3be7e5987",
+        "esco:52894650-9077-40f0-96d6-6f07d1a6cafa",
+        "esco:7629db63-5922-42fa-8c80-9575526f7326",
+        "esco:8d09f7c2-d10c-4818-a91d-d2f1b8ec7973",
+        "esco:40842478-ad09-4be9-a889-97299b013609",
+        "esco:b2cd801d-803d-41bc-bef3-dea4ddd94bbc",
+        "esco:01f10952-cb59-4347-9aee-d4fbc51c870a",
+        "esco:4c5a2793-c18d-40b9-832d-af8e07f0f171",
+        "esco:65a24ec1-e173-4bd6-b160-270346e0f4bf",
+        "esco:ca81a475-f76c-4318-bdd7-4f1f3605e798",
+        "esco:4b873879-6d5e-46b6-80e2-1ef313b4e0ac",
+        "esco:0a1e6554-1c6b-42c6-970b-8d9a307cdb5e",
+        "esco:f16e242e-a0e1-4d3a-b8bc-0fc6eca50354",
+        "esco:2f7f7a05-88ec-4c8a-937f-381dce6b00fd",
+        "esco:efa7943e-28b8-4657-bccb-f04e86ba058b",
+        "esco:37624859-cbb6-43cb-a523-aa450877821a",
+        "esco:61c14f06-9edf-44c3-96af-dcecda598853",
+        "esco:e29c14e1-60c7-444c-b3d0-43d6bee04340",
+        "esco:19b04a30-2e1d-4893-a86c-bde277765c7f",
+        "esco:d3b2faa1-e54f-40e0-b641-977a4703aaf8",
+        "esco:5b9694a6-58b0-4179-a1bd-4bcda0352ca1",
+        "esco:6d4feb44-401c-480d-a05b-02ca8b38d7cd",
+        "esco:8ff32017-9a19-400c-8de5-8a93198864be",
+        "esco:c73e355b-89c8-4831-968e-f146f2ae970c",
+        "esco:4aaa3e87-2b29-4a83-bdff-cbe51db03fc5",
+        "esco:76506870-aeac-4bc2-96b2-cbc6702601ea",
+        "esco:ff7f57d7-084b-4ec2-8e2d-2637b1ab3931",
+        "esco:ec4855b5-84a5-4c59-812e-8e4319d7bf8d",
+        "esco:fa8ee260-64dc-42db-a5c7-9d3b232767df",
+        "esco:4264f3aa-037e-44f4-bb08-90d2337953ee",
+        "esco:1299a59c-8b90-4838-8bef-0065cdfc8bdf",
+        "esco:222bf50b-6739-48b1-a655-658306c3529f",
+        "esco:1d3c5ca3-e154-4a43-883e-7496e8886cd6",
+        "esco:14fc9b06-bf35-4b35-8f07-c53856ef18bc",
+        "esco:0b8a3319-54be-4b35-8425-c31d1f42f186",
+        "esco:b4a5d258-4fe7-4fa5-b58f-d2f8769eb15b",
+        "esco:3cccda28-82cc-4e47-9442-af0cb4d64016",
+        "esco:39a7d447-5a30-41b1-967d-bdcde3288c9e",
+        "esco:61ea50d7-db19-4160-8da4-1d7bec68bec3",
+        "esco:cec6cd92-d709-42cc-9a6e-6a7dd48b9e08",
+        "esco:69eb9999-814b-4293-8d6c-633e49f64de4",
+        "esco:ed1614dd-5a66-4a95-968f-a0d46ecdce92",
+        "esco:5fd4e27b-49de-4609-ae44-91e47ee3d168",
+        "esco:20d51474-58e1-4fb3-aec3-57bdc187c5ce",
+        "esco:0e91219a-e74a-46e6-bcf9-9e14da031343",
+        "esco:b6422189-45f6-4e87-8a9e-7e4aabddf069",
+        "esco:416ca9da-3a58-4522-89a2-5746576feddd",
+        "esco:91161335-8adf-4567-8fa5-62fb37948664",
+        "esco:5a6ac2a6-6aa3-4b68-b2ef-b2491fb146c1",
+        "esco:d10fe458-ceb5-4a40-83f4-b8ef318bf566"
+      ],
+      "status": "needs_human_review",
+      "merge": false,
+      "decision_taken": false,
+      "reason": "Wiele rekordów „write <język>” odrzucono jako warianty. Nie scalono ich w jeden skill i nie przyjęto żadnego języka osobno.",
+      "similar_proposal_ids": [
+        "communication-cognition-nature:short-text-translation",
+        "communication-cognition-nature:foreign-language-conversation"
+      ]
+    }
+  ]
+}

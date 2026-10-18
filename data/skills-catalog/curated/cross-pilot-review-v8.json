@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "automatic_merge_performed": false,
+  "production_approval": false,
+  "note": "Pack-14 porównano z rejestrem v7 i z pakietami 01–13. Te same rezultaty zmapowano. Istniejących propozycji nie scalono i nie usunięto. Trzy warianty zdjęcia stanu początkowego złożono w jedną propozycję show-what-you-moved.",
+  "merge_history": "data/skills-catalog/curated/merge-history-v8.json",
+  "new_origin": "practice-expansion-14",
+  "proposals_added": 204,
+  "already_represented": 244,
+  "rejected": 34,
+  "needs_source": 18,
+  "high_risk_id_note": "Pack-12 ma 17 identyfikatorów, pack-13 ma 19, pack-14 ma 18. Żaden identyfikator się nie powtarza. Bliskie tematycznie, ale osobne, są: dwa rodzaje odpalania gazu, dwie formy złamania, dwa wejścia do wody oraz dwa podania leku."
+}

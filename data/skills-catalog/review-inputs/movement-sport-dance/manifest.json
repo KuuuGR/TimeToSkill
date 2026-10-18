@@ -1,0 +1,44 @@
+{
+  "prepared_on": "2026-10-18",
+  "package": "skills-pilot-input-movement-sport-dance",
+  "source_batch": "data/skills-catalog/review-batches/05-ruch-sport-taniec-01.jsonl",
+  "source_batch_count": 106,
+  "record_count": 102,
+  "excluded_count": 4,
+  "excluded": [
+    {
+      "candidate_id": "onet:4.A.3.a.4",
+      "source_title": "Operating Vehicles, Mechanized Devices, or Equipment",
+      "reason": "Opis dotyczy prowadzenia pojazdów i maszyn. Słowo Running oznacza tu obsługę, nie bieg."
+    },
+    {
+      "candidate_id": "wikidata:Q1313678",
+      "source_title": "ice fishing",
+      "reason": "Opis mówi o łowieniu ryb zimą. Źródło nie opisuje tego jako sportu, ruchu ani tańca."
+    },
+    {
+      "candidate_id": "wikidata:Q389525",
+      "source_title": "retrocomputing",
+      "reason": "Opis mówi o uruchamianiu starego sprzętu komputerowego. Słowo running nie oznacza biegu."
+    },
+    {
+      "candidate_id": "wikidata:Q1323158",
+      "source_title": "rock balancing",
+      "reason": "Opis mówi o układaniu skał jako instalacji. To nie jest ruch ciała, sport ani taniec."
+    }
+  ],
+  "description_insufficient": 65,
+  "triage_suitability": {
+    "strong_candidate": 37,
+    "occupational_or_abstract": 7,
+    "not_a_distinct_skill": 1,
+    "uncertain": 38,
+    "adaptable_candidate": 19
+  },
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "review-instructions.md",
+    "manifest.json"
+  ]
+}

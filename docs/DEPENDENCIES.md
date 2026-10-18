@@ -78,7 +78,7 @@ Logical groupings inside the target:
 - `Views` (+ Components / Shared / Stats)
 - `DesignSystem`
 
-Compiled as **one app target** (`gregkaps.TimeToSkill`), not separate frameworks.
+Compiled into the application targets, not separate frameworks. On this branch those targets are iOS `Time4Skill` and macOS `Time4SkillMacOS`, both with bundle ID `com.etaosin.time4skill`. The shipping TimeToSkill app on `release/ver1.6` remains `gregkaps.TimeToSkill`.
 
 ---
 
@@ -86,9 +86,10 @@ Compiled as **one app target** (`gregkaps.TimeToSkill`), not separate frameworks
 
 | Setting | Value |
 |---------|-------|
-| Bundle ID | `gregkaps.TimeToSkill` |
-| IAP product ID | `com.gregkaps.timetoskill.pro` |
-| Marketing version | `1.4` |
-| Current project version (build) | `5` |
+| Time4Skill bundle ID (iOS and macOS targets) | `com.etaosin.time4skill` |
+| TimeToSkill release bundle ID (`release/ver1.6`) | `gregkaps.TimeToSkill` |
+| Historical TimeToSkill IAP product ID | `com.gregkaps.timetoskill.pro` (removed from this branch) |
+| Marketing version | `1.6` on both Time4Skill application targets |
+| Current project version (build) | iOS `17`, macOS `16` |
 
 StoreKit Configuration (`.storekit`) file: **not present in repo** (local StoreKit testing config may be missing).

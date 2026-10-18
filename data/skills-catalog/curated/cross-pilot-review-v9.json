@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "automatic_merge_performed": false,
+  "production_approval": false,
+  "note": "Pack-15 porównano z rejestrem v8. Te same rezultaty zmapowano. Istniejących propozycji nie scalono. Składanie samolotu, centrowanie, marszczenie, cień, chwiejność i naukę melodii ze słuchu zostawiono przy już obecnych rezultatach.",
+  "merge_history": "data/skills-catalog/curated/merge-history-v9.json",
+  "new_origin": "practice-expansion-15",
+  "proposals_added": 259,
+  "already_represented": 206,
+  "rejected": 19,
+  "needs_source": 16,
+  "high_risk_id_note": "Pack-12 ma 17, pack-13 ma 19, pack-14 ma 18, pack-15 ma 16. Identyfikatory się nie powtarzają.",
+  "kept_separate_after_name_check": [
+    {
+      "ids": [
+        "practice-expansion-15:balance-a-stick-on-a-finger",
+        "practice-expansion-15:balance-a-card-on-a-finger"
+      ],
+      "reason": "Patyk zostaje na palcu. Karta ma inne wyważenie i kończy się złapaniem."
+    },
+    {
+      "ids": [
+        "practice-expansion-15:spin-a-ball-on-a-finger",
+        "practice-expansion-15:spin-a-book-on-a-finger"
+      ],
+      "reason": "Piłka i książka spadają inaczej. To dwa pokazy."
+    },
+    {
+      "ids": [
+        "practice-expansion-15:roll-a-tie-for-a-bag",
+        "practice-expansion-15:roll-a-towel-for-a-bag"
+      ],
+      "reason": "Krawat sprawdza się zagnieceniem, ręcznik tym, czy rolka się nie rozwija."
+    }
+  ]
+}

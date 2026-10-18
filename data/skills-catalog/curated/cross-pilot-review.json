@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "proposals_reviewed": 71,
+  "automatic_merge_performed": false,
+  "decision_taken": true,
+  "method": "Porównano 71 propozycji z trzech pilotaży. Identyczne nazwy, podobne nazwy (ratio>=0.84), podobne opisy i kryteria (ratio>=0.72) oraz wspólne candidate_id nie wystąpiły między różnymi pilotażami. Przyrostek foundations/fundamentals podbija ratio nazw i nie był traktowany jako dowód tej samej umiejętności. Pary współdzielące tylko esco-skills-v1.2.1, onet-content-model-31.0, wikidata-hobbies albo scouts-uk-activity-badges policzono (258 par) i nie rozwijano ich w osobne grupy scalania. Emoji policzono osobno.",
+  "broad_registry_pairs_not_listed": 258,
+  "groups": [
+    {
+      "group_id": "review:shared_broad_registry:baking-swimming",
+      "proposal_ids": [
+        "kitchen-finance:basic-baking-techniques",
+        "movement-sport-dance:swimming-fundamentals"
+      ],
+      "similarity_type": "shared_broad_registry",
+      "confidence": "low",
+      "reason": "Wspólne tylko esco-skills-v1.2.1. Pieczenie i pływanie nie są tą samą praktyką.",
+      "recommendation": "keep_separate",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Pieczenie i pływanie pozostają osobnymi propozycjami. Wspólna klasyfikacja ESCO nie jest scaleniem.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:shared_broad_registry:baking-dance",
+      "proposal_ids": [
+        "kitchen-finance:basic-baking-techniques",
+        "movement-sport-dance:dance-rhythm-and-basic-steps"
+      ],
+      "similarity_type": "shared_broad_registry",
+      "confidence": "low",
+      "reason": "Wspólne tylko esco-skills-v1.2.1. Pieczenie i rytm tańca nie są tą samą praktyką.",
+      "recommendation": "keep_separate",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Pieczenie i rytm tańca pozostają osobnymi propozycjami. Wspólna klasyfikacja ESCO nie jest scaleniem.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:shared_emoji:scales",
+      "proposal_ids": [
+        "kitchen-finance:compare-financial-offers",
+        "movement-sport-dance:balance-and-weight-transfer"
+      ],
+      "similarity_type": "shared_emoji",
+      "confidence": "low",
+      "reason": "Emoji ⚖️ oznacza tu porównanie ofert oraz równowagę ciała. To nie jest ta sama umiejętność.",
+      "recommendation": "keep_separate",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Porównywanie ofert i równowaga ciała pozostają osobnymi propozycjami. W rewizji v2 oferta dostaje emoji 🏷️; równowaga zostaje przy ⚖️.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:shared_emoji:disco-ball",
+      "proposal_ids": [
+        "movement-sport-dance:breaking-foundations",
+        "movement-sport-dance:disco-dance-foundations"
+      ],
+      "similarity_type": "shared_emoji",
+      "confidence": "low",
+      "reason": "Emoji 🪩 występuje przy breakingu i disco. Style są różne; ikona nie rozstrzyga scalenia.",
+      "recommendation": "needs_human_review",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Breaking i disco pozostają osobnymi propozycjami. W rewizji v2 breaking dostaje emoji 🌀; disco zostaje przy 🪩.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:related_practice_family:dance-styles",
+      "proposal_ids": [
+        "movement-sport-dance:dance-rhythm-and-basic-steps",
+        "movement-sport-dance:salsa-dancing",
+        "movement-sport-dance:hip-hop-dance-foundations",
+        "movement-sport-dance:contemporary-dance-foundations",
+        "movement-sport-dance:jazz-dance-foundations",
+        "movement-sport-dance:breaking-foundations",
+        "movement-sport-dance:boogie-woogie-dancing",
+        "movement-sport-dance:latin-partner-dance-foundations",
+        "movement-sport-dance:ballroom-standard-dance-foundations",
+        "movement-sport-dance:disco-dance-foundations"
+      ],
+      "similarity_type": "related_practice_family",
+      "confidence": "medium",
+      "reason": "Wspólne źródło wdsf-dancesport-disciplines i podobny kształt poziomów (frazę, wariację, wykonanie). Każdy styl może zostać osobną praktyką. Nie scalono.",
+      "recommendation": "needs_human_review",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Dziesięć propozycji tańca pozostaje osobnych. Poziomy wymagają zwiększenia specyficzności stylu; ogólna fraza i wariacja nie mogą być jedyną różnicą.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium.",
+      "level_follow_up": "Propozycje pozostają osobne, lecz poziomy wymagają zwiększenia specyficzności stylu."
+    },
+    {
+      "group_id": "review:related_practice_family:object-control",
+      "proposal_ids": [
+        "movement-sport-dance:catching-with-control",
+        "movement-sport-dance:accurate-throwing",
+        "movement-sport-dance:ball-dribbling-control",
+        "movement-sport-dance:controlled-kicking",
+        "movement-sport-dance:striking-with-control"
+      ],
+      "similarity_type": "related_practice_family",
+      "confidence": "low",
+      "reason": "Wspólne źródło ausport-fundamental-movement i podobne progi trafień. Łapanie, rzut, kozłowanie, kopnięcie i uderzenie są różnymi czynnościami.",
+      "recommendation": "keep_separate",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Łapanie, rzut, kozłowanie, kopnięcie i uderzenie pozostają osobnymi propozycjami.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:related_practice_family:model-making",
+      "proposal_ids": [
+        "technology-science-niches:paper-cardboard-model-making",
+        "technology-science-niches:scale-model-building",
+        "technology-science-niches:model-engineering",
+        "technology-science-niches:balloon-modelling"
+      ],
+      "similarity_type": "related_practice_family",
+      "confidence": "low",
+      "reason": "Cztery praktyki modelarskie o różnych materiałach i celu. Papier, model redukcyjny, mechanizm i balony nie są automatycznie jednym skillem.",
+      "recommendation": "keep_separate",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Cztery praktyki modelarskie pozostają osobne. Zakresy do przyszłej redakcji: papier to konstrukcja z arkuszy, skala to proporcja i wierność wzorcowi, inżynieria to mechanizm i funkcja, balony to kształtowanie i łączenie.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:related_practice_family:cycling",
+      "proposal_ids": [
+        "movement-sport-dance:cycling-fundamentals",
+        "movement-sport-dance:mountain-biking-fundamentals"
+      ],
+      "similarity_type": "related_practice_family",
+      "confidence": "medium",
+      "reason": "Obie propozycje używają govuk-cycle-safety i opisują jazdę na rowerze. Trail może być specjalizacją albo osobną praktyką.",
+      "recommendation": "needs_human_review",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Jazda na rowerze i kolarstwo górskie pozostają osobne. Przyszła redakcja: codzienny rower i bezpieczeństwo wobec techniki na odpowiednim szlaku.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:related_practice_family:running",
+      "proposal_ids": [
+        "movement-sport-dance:running-and-pacing",
+        "movement-sport-dance:trail-running-fundamentals"
+      ],
+      "similarity_type": "related_practice_family",
+      "confidence": "medium",
+      "reason": "Bieg i bieg terenowy mogą być jedną progresją albo dwiema. Źródła nie rozstrzygają tego same.",
+      "recommendation": "needs_human_review",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Bieg i bieg terenowy pozostają osobne. Przyszła redakcja: bieg mierzy regulację wysiłku i tempa, bieg terenowy poruszanie się po zmiennej nawierzchni.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    },
+    {
+      "group_id": "review:related_practice_family:hiking-trail",
+      "proposal_ids": [
+        "movement-sport-dance:hiking-and-trail-preparation",
+        "movement-sport-dance:trail-running-fundamentals"
+      ],
+      "similarity_type": "related_practice_family",
+      "confidence": "medium",
+      "reason": "Obie propozycje cytują nps-hiking-safety. Wędrówka i bieg terenowy mogą być osobnymi praktykami na tym samym terenie.",
+      "recommendation": "needs_human_review",
+      "decision_taken": true,
+      "human_decision": "keep_separate",
+      "decision_rationale": "Wędrówka i bieg terenowy pozostają osobne. Wędrówka ma dotyczyć przygotowania trasy i nawigacji, nie techniki biegowej.",
+      "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium."
+    }
+  ],
+  "emoji": {
+    "proposal_count": 71,
+    "distinct_emoji": 69,
+    "repeated": [
+      {
+        "emoji": "⚖️",
+        "count": 2,
+        "proposal_ids": [
+          "kitchen-finance:compare-financial-offers",
+          "movement-sport-dance:balance-and-weight-transfer"
+        ]
+      },
+      {
+        "emoji": "🪩",
+        "count": 2,
+        "proposal_ids": [
+          "movement-sport-dance:breaking-foundations",
+          "movement-sport-dance:disco-dance-foundations"
+        ]
+      }
+    ],
+    "frequency": [
+      {
+        "emoji": "⚖️",
+        "count": 2,
+        "proposal_ids": [
+          "kitchen-finance:compare-financial-offers",
+          "movement-sport-dance:balance-and-weight-transfer"
+        ]
+      },
+      {
+        "emoji": "🪩",
+        "count": 2,
+        "proposal_ids": [
+          "movement-sport-dance:breaking-foundations",
+          "movement-sport-dance:disco-dance-foundations"
+        ]
+      },
+      {
+        "emoji": "🔪",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:kitchen-knife-skills"
+        ]
+      },
+      {
+        "emoji": "🍚",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:cook-rice-reliably"
+        ]
+      },
+      {
+        "emoji": "🥣",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:basic-baking-techniques"
+        ]
+      },
+      {
+        "emoji": "🍳",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:pan-searing-and-browning"
+        ]
+      },
+      {
+        "emoji": "🫙",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:sauces-and-dressings"
+        ]
+      },
+      {
+        "emoji": "🍲",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:stock-and-broth-making"
+        ]
+      },
+      {
+        "emoji": "🥚",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:egg-preparation-techniques"
+        ]
+      },
+      {
+        "emoji": "🧼",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:kitchen-food-safety"
+        ]
+      },
+      {
+        "emoji": "🧾",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:personal-budgeting-and-saving"
+        ]
+      },
+      {
+        "emoji": "🏦",
+        "count": 1,
+        "proposal_ids": [
+          "kitchen-finance:understand-interest-costs"
+        ]
+      },
+      {
+        "emoji": "🧤",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:catching-with-control"
+        ]
+      },
+      {
+        "emoji": "🎯",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:accurate-throwing"
+        ]
+      },
+      {
+        "emoji": "🏀",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:ball-dribbling-control"
+        ]
+      },
+      {
+        "emoji": "⚽",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:controlled-kicking"
+        ]
+      },
+      {
+        "emoji": "🥎",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:striking-with-control"
+        ]
+      },
+      {
+        "emoji": "🦩",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:hopping-and-rhythmic-skipping"
+        ]
+      },
+      {
+        "emoji": "🦘",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:jumping-and-landing"
+        ]
+      },
+      {
+        "emoji": "🏊",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:swimming-fundamentals"
+        ]
+      },
+      {
+        "emoji": "🚲",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:cycling-fundamentals"
+        ]
+      },
+      {
+        "emoji": "⛰️",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:mountain-biking-fundamentals"
+        ]
+      },
+      {
+        "emoji": "🥾",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:hiking-and-trail-preparation"
+        ]
+      },
+      {
+        "emoji": "🏃",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:running-and-pacing"
+        ]
+      },
+      {
+        "emoji": "🌲",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:trail-running-fundamentals"
+        ]
+      },
+      {
+        "emoji": "🎿",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:cross-country-skiing-basics"
+        ]
+      },
+      {
+        "emoji": "🛼",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:roller-skating-fundamentals"
+        ]
+      },
+      {
+        "emoji": "🛶",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:paddling-basics"
+        ]
+      },
+      {
+        "emoji": "🧘",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:pilates-foundations"
+        ]
+      },
+      {
+        "emoji": "🤸",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:gymnastics-movement-foundations"
+        ]
+      },
+      {
+        "emoji": "🤝",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:sportsmanship-and-fair-play"
+        ]
+      },
+      {
+        "emoji": "👣",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:dance-rhythm-and-basic-steps"
+        ]
+      },
+      {
+        "emoji": "💃",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:salsa-dancing"
+        ]
+      },
+      {
+        "emoji": "🎧",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:hip-hop-dance-foundations"
+        ]
+      },
+      {
+        "emoji": "🩰",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:contemporary-dance-foundations"
+        ]
+      },
+      {
+        "emoji": "🎷",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:jazz-dance-foundations"
+        ]
+      },
+      {
+        "emoji": "🕺",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:boogie-woogie-dancing"
+        ]
+      },
+      {
+        "emoji": "🪇",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:latin-partner-dance-foundations"
+        ]
+      },
+      {
+        "emoji": "🎩",
+        "count": 1,
+        "proposal_ids": [
+          "movement-sport-dance:ballroom-standard-dance-foundations"
+        ]
+      },
+      {
+        "emoji": "🗺️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:digital-map-making"
+        ]
+      },
+      {
+        "emoji": "🔎",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:digital-research-and-source-evaluation"
+        ]
+      },
+      {
+        "emoji": "📊",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:practical-data-analysis"
+        ]
+      },
+      {
+        "emoji": "🖨️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:3d-printing-basics"
+        ]
+      },
+      {
+        "emoji": "🚆",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:transport-spotting"
+        ]
+      },
+      {
+        "emoji": "📰",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:digital-publishing-and-layout"
+        ]
+      },
+      {
+        "emoji": "🖌️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:graphic-design-basics"
+        ]
+      },
+      {
+        "emoji": "🔭",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:sky-observation"
+        ]
+      },
+      {
+        "emoji": "🪨",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:field-geology"
+        ]
+      },
+      {
+        "emoji": "🔌",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:beginner-electronics-prototyping"
+        ]
+      },
+      {
+        "emoji": "📻",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:radio-dxing"
+        ]
+      },
+      {
+        "emoji": "🐦",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:wildlife-observation"
+        ]
+      },
+      {
+        "emoji": "🌳",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:genealogy-research"
+        ]
+      },
+      {
+        "emoji": "🏛️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:local-history-research"
+        ]
+      },
+      {
+        "emoji": "🧭",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:geocaching"
+        ]
+      },
+      {
+        "emoji": "🐠",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:fishkeeping-basics"
+        ]
+      },
+      {
+        "emoji": "🖥️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:personal-device-setup"
+        ]
+      },
+      {
+        "emoji": "🛠️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:everyday-tech-troubleshooting"
+        ]
+      },
+      {
+        "emoji": "💻",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:programming-fundamentals"
+        ]
+      },
+      {
+        "emoji": "🌐",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:open-source-contribution"
+        ]
+      },
+      {
+        "emoji": "✍️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:wikimedia-contribution"
+        ]
+      },
+      {
+        "emoji": "📐",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:paper-cardboard-model-making"
+        ]
+      },
+      {
+        "emoji": "🧩",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:scale-model-building"
+        ]
+      },
+      {
+        "emoji": "⚙️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:model-engineering"
+        ]
+      },
+      {
+        "emoji": "🎈",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:balloon-modelling"
+        ]
+      },
+      {
+        "emoji": "🎲",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:backgammon-strategy"
+        ]
+      },
+      {
+        "emoji": "🎭",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:role-playing-and-collaborative-storytelling"
+        ]
+      },
+      {
+        "emoji": "🎙️",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:science-communication"
+        ]
+      },
+      {
+        "emoji": "🌱",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:growing-plants-from-seed"
+        ]
+      },
+      {
+        "emoji": "🪁",
+        "count": 1,
+        "proposal_ids": [
+          "technology-science-niches:kite-flying"
+        ]
+      }
+    ],
+    "note": "Statystyka frequency opisuje rejestr pilot-proposals.jsonl przed rewizją v2. Rewizja v2 zmienia emoji compare-financial-offers na 🏷️ i breaking-foundations na 🌀. Powtórzenie emoji nie było powodem scalenia."
+  },
+  "decision_source": "Rozstrzygnięcie z zadania T4S-CATALOG-010: wskazane pary i rodziny pozostają osobnymi propozycjami. Pliku skills-pilot/curated-review-decisions/human-review-decisions.json nie było w repozytorium.",
+  "records_removed": 0
+}

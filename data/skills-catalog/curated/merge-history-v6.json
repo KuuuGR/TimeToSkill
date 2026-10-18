@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "destructive": false,
+  "proposals_deleted": 0,
+  "note": "Mappings from pack-12 candidates onto an existing or new proposal. No raw row was deleted.",
+  "records": [
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:taste-and-adjust-a-sauce",
+      "mapped_proposal_id": "kitchen-finance:sauces-and-dressings",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:thread-a-needle-and-knot-it",
+      "mapped_proposal_id": "broad-practice-expansion:mend-a-small-seam",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:knife-cuts-faster",
+      "mapped_proposal_id": "kitchen-finance:kitchen-knife-skills",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:bake-a-loaf",
+      "mapped_proposal_id": "kitchen-finance:basic-baking-techniques",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:sear-a-steak",
+      "mapped_proposal_id": "kitchen-finance:pan-searing-and-browning",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:make-a-vinaigrette",
+      "mapped_proposal_id": "kitchen-finance:sauces-and-dressings",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:boil-an-egg-to-order",
+      "mapped_proposal_id": "kitchen-finance:egg-preparation-techniques",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:cook-rice-in-a-cooker",
+      "mapped_proposal_id": "kitchen-finance:cook-rice-reliably",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:make-stock-from-scraps",
+      "mapped_proposal_id": "kitchen-finance:stock-and-broth-making",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:keep-a-fridge-safe",
+      "mapped_proposal_id": "kitchen-finance:kitchen-food-safety",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:track-a-personal-budget",
+      "mapped_proposal_id": "kitchen-finance:personal-budgeting-and-saving",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:compare-two-loans",
+      "mapped_proposal_id": "kitchen-finance:compare-financial-offers",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:explain-interest",
+      "mapped_proposal_id": "kitchen-finance:understand-interest-costs",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:balance-on-one-foot",
+      "mapped_proposal_id": "movement-sport-dance:balance-and-weight-transfer",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:throw-a-ball-farther",
+      "mapped_proposal_id": "movement-sport-dance:accurate-throwing",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:ride-a-bicycle-on-the-road",
+      "mapped_proposal_id": "movement-sport-dance:cycling-fundamentals",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:run-a-longer-loop",
+      "mapped_proposal_id": "movement-sport-dance:running-and-pacing",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:follow-a-hiking-trail",
+      "mapped_proposal_id": "movement-sport-dance:hiking-and-trail-preparation",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:swim-a-length",
+      "mapped_proposal_id": "movement-sport-dance:swimming-fundamentals",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:dance-salsa-turns",
+      "mapped_proposal_id": "movement-sport-dance:salsa-dancing",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:speak-to-a-crowd",
+      "mapped_proposal_id": "communication-cognition-nature:public-speaking-and-audience-adaptation",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:listen-without-interrupting",
+      "mapped_proposal_id": "communication-cognition-nature:active-listening",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:resolve-a-disagreement",
+      "mapped_proposal_id": "communication-cognition-nature:constructive-conflict-resolution",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:write-a-shorter-email",
+      "mapped_proposal_id": "communication-cognition-nature:effective-email-writing",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:check-a-source",
+      "mapped_proposal_id": "communication-cognition-nature:critical-thinking-and-evidence-checking",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:test-yourself-later",
+      "mapped_proposal_id": "communication-cognition-nature:retrieval-practice",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:read-contours",
+      "mapped_proposal_id": "communication-cognition-nature:topographic-map-reading",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:use-a-compass-on-a-walk",
+      "mapped_proposal_id": "communication-cognition-nature:compass-use-and-map-orientation",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:back-up-photos",
+      "mapped_proposal_id": "general-practical-skills:backup-and-restore-personal-files",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:plan-a-birthday",
+      "mapped_proposal_id": "general-practical-skills:plan-a-small-event",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:write-in-french",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:write-in-spanish",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:chat-in-german",
+      "mapped_proposal_id": "communication-cognition-nature:foreign-language-conversation",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:observe-the-moon",
+      "mapped_proposal_id": "technology-science-niches:sky-observation",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:grow-basil-from-seed",
+      "mapped_proposal_id": "technology-science-niches:growing-plants-from-seed",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:solve-an-easy-sudoku",
+      "mapped_proposal_id": "communication-cognition-nature:sudoku-solving-strategies",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:play-xiangqi-openings",
+      "mapped_proposal_id": "communication-cognition-nature:play-xiangqi",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:edit-a-shared-slide",
+      "mapped_proposal_id": "general-practical-skills:edit-a-shared-document",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:make-a-dimensioned-sketch",
+      "mapped_proposal_id": "general-practical-skills:make-a-simple-technical-drawing",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:read-a-machining-print",
+      "mapped_proposal_id": "general-practical-skills:read-a-technical-drawing",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:compare-two-kettles",
+      "mapped_proposal_id": "general-practical-skills:compare-equipment-before-buying",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:book-a-table",
+      "mapped_proposal_id": "general-practical-skills:make-and-check-a-reservation",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:brew-espresso-at-nine-bars",
+      "mapped_proposal_id": "broad-practice-expansion:brew-coffee-by-taste",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:season-with-a-numbered-scale",
+      "mapped_proposal_id": "broad-practice-expansion:season-food-by-tasting",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:roast-only-potatoes",
+      "mapped_proposal_id": "broad-practice-expansion:roast-a-tray-of-vegetables",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:cook-spaghetti-only",
+      "mapped_proposal_id": "broad-practice-expansion:cook-pasta-and-sauce-it",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:plan-dinners-only",
+      "mapped_proposal_id": "broad-practice-expansion:plan-a-week-of-meals",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:tie-a-bowline-only",
+      "mapped_proposal_id": "broad-practice-expansion:tie-a-knot-that-holds",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:sew-a-shirt-button-only",
+      "mapped_proposal_id": "broad-practice-expansion:sew-a-button-back-on",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:iron-a-collar-only",
+      "mapped_proposal_id": "broad-practice-expansion:iron-a-shirt",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:pack-for-a-beach",
+      "mapped_proposal_id": "broad-practice-expansion:pack-for-a-specific-trip",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:read-an-electricity-bill-only",
+      "mapped_proposal_id": "broad-practice-expansion:read-a-household-bill",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:plunge-a-toilet-only",
+      "mapped_proposal_id": "broad-practice-expansion:clear-a-drain-with-a-plunger",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:estimate-only-meetings",
+      "mapped_proposal_id": "broad-practice-expansion:estimate-how-long-work-takes",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:tell-a-joke",
+      "mapped_proposal_id": "broad-practice-expansion:tell-a-short-true-story",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:write-meeting-minutes-only",
+      "mapped_proposal_id": "broad-practice-expansion:run-a-short-agenda",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:thank-by-text",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-specific-thanks",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:decline-by-email",
+      "mapped_proposal_id": "broad-practice-expansion:decline-a-request",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:study-with-highlighters-only",
+      "mapped_proposal_id": "broad-practice-expansion:annotate-a-text",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:focus-for-25-minutes",
+      "mapped_proposal_id": "broad-practice-expansion:work-a-focus-block",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:write-daily-pages",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-journal-entry",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:five-star-reviews",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-review-with-evidence",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:spreadsheet-macros",
+      "mapped_proposal_id": "broad-practice-expansion:write-a-spreadsheet-formula",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:prompt-engineering",
+      "mapped_proposal_id": "broad-practice-expansion:check-an-automated-answer",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:portrait-photography",
+      "mapped_proposal_id": "broad-practice-expansion:take-a-clear-photo",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:film-vertically",
+      "mapped_proposal_id": "broad-practice-expansion:film-a-short-stable-clip",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:sing-in-a-choir",
+      "mapped_proposal_id": "broad-practice-expansion:match-a-pitch",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:watercolor-washes",
+      "mapped_proposal_id": "broad-practice-expansion:mix-a-color-you-can-match",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:origami-crane",
+      "mapped_proposal_id": "broad-practice-expansion:fold-a-paper-box",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:water-on-a-schedule",
+      "mapped_proposal_id": "broad-practice-expansion:water-by-checking-the-soil",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:repot-into-terracotta",
+      "mapped_proposal_id": "broad-practice-expansion:repot-a-plant",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:name-birds-by-app",
+      "mapped_proposal_id": "technology-science-niches:wildlife-observation",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:play-blitz-chess",
+      "mapped_proposal_id": "broad-practice-expansion:play-chess",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:play-go-on-a-19-by-19",
+      "mapped_proposal_id": "broad-practice-expansion:play-go",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:solve-a-cube-in-under-a-minute",
+      "mapped_proposal_id": "broad-practice-expansion:solve-a-cube-and-explain",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:host-a-dinner-party",
+      "mapped_proposal_id": "broad-practice-expansion:host-a-simple-meal",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:track-a-project-in-an-app",
+      "mapped_proposal_id": "broad-practice-expansion:track-a-small-project",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:cancel-a-gym-membership",
+      "mapped_proposal_id": "broad-practice-expansion:cancel-an-unwanted-subscription",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:squat-with-a-barbell",
+      "mapped_proposal_id": "broad-practice-expansion:squat-with-control",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:juggle-clubs",
+      "mapped_proposal_id": "broad-practice-expansion:juggle-three-balls",
+      "action": "rejected_as_same_skill"
+    },
+    {
+      "candidate_id": "c018:t4s-editorial-synthesis-2026-10-18:pitch-a-named-tent-model",
+      "mapped_proposal_id": "broad-practice-expansion:pitch-a-tent",
+      "action": "rejected_as_same_skill"
+    }
+  ]
+}

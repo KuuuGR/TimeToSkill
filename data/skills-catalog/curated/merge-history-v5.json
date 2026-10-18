@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "destructive": false,
+  "proposals_deleted": 0,
+  "records": [
+    {
+      "candidate_id": "esco:39e7d2a3-8d01-497c-8c5f-d51ab53a4a22",
+      "mapped_proposal_id": "communication-cognition-nature:build-a-reasoned-written-argument",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:97ca0f19-c53f-4c38-b983-398345cba227",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:be20d05c-f6b4-4580-9fcf-f00f4baab562",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:47a49cd6-097d-457a-9f7b-c290c14930d5",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:0af355f7-634c-4f1b-b499-90400000d777",
+      "mapped_proposal_id": "technology-science-niches:digital-research-and-source-evaluation",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:a571ae14-3e16-4fd3-a615-5646e0b0b696",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:b74fd765-e1ae-4f56-a188-45cd782bca01",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:9af1bd12-01bd-4d6a-947b-69e64f23150a",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:36ff57b0-637d-4a83-a0e8-d14f86f9f078",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:877057bc-7be8-4d40-9bab-cda10eb4b999",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:cf9e867f-08d7-48a8-8d11-c63bd8a65f89",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:1988ce17-ce7a-44b9-9fce-5aaea5f811f5",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:09cac140-367e-45f5-b19f-6430e75e5a2a",
+      "mapped_proposal_id": "communication-cognition-nature:public-speaking-and-audience-adaptation",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:df996a98-202f-4a9b-b088-38c8db03ef1b",
+      "mapped_proposal_id": "technology-science-niches:digital-publishing-and-layout",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:3a660148-e0d6-4b07-b107-10200ebb1b23",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:d21bcba8-ecf5-4ac3-9a6c-25a5afa42ea2",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:c5ef5813-ef1d-4a22-8fce-16b1dcf93ea1",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:9f3e3f27-1f27-4b77-9bc8-4ec33e33b8b1",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:41253322-dc32-4d79-941c-3a8c230a1d85",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:50d8a1ff-659a-4671-be48-369242b2a3be",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:0a35de65-e51d-4862-a425-2f4dd5c4a982",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:a1388163-462a-4b76-8649-67470ea858a1",
+      "mapped_proposal_id": "technology-science-niches:digital-research-and-source-evaluation",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:450e047f-bb60-4eaa-bbcf-5e7af43e7f2a",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:aaf57e19-0d41-4361-8de9-bcd858e3f10d",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:b5ff2ded-a91d-468b-afed-f9737f929e86",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:7954861c-86d4-4529-afbb-2c23dab9ac74",
+      "mapped_proposal_id": "communication-cognition-nature:constructive-conflict-resolution",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:0ff99f51-40d9-42f1-a1ec-377b2bb5e15f",
+      "mapped_proposal_id": "kitchen-finance:kitchen-food-safety",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:f19f2c6d-3f1d-4231-9fd9-ece77ed359d7",
+      "mapped_proposal_id": "general-practical-skills:make-a-simple-technical-drawing",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:7c2e97a5-ac3d-4c01-9a3b-2e395f45d34a",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:16c86dd8-00fa-4fbd-a0a9-bb59f83ebc85",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:42b7c03a-3ed5-4dc1-adc0-ff1fb8d4d697",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:a628d2d1-f40a-4c37-a357-2801726f2996",
+      "mapped_proposal_id": "communication-cognition-nature:structured-problem-solving",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:05aa7c09-46e7-433f-a81b-92841f4551e7",
+      "mapped_proposal_id": "communication-cognition-nature:constructive-peer-feedback",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:1ba59ce0-7fec-434b-8d5c-9b275250a26c",
+      "mapped_proposal_id": "technology-science-niches:digital-publishing-and-layout",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:e35cfb6e-ea8e-4aef-aab9-3cbc7d79647b",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:3993c87c-7719-4186-811b-8ddfb40e76be",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:abadaacb-5751-4f52-96b7-c9bbc070f9de",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:c08ec608-48cd-4cd5-ac39-171fce1c0ce5",
+      "mapped_proposal_id": "general-practical-skills:plan-a-small-event",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:049de1f6-34ec-46f9-a0b1-8fc6f0199413",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:5dfc81aa-c395-4e88-a0e0-a2fbb681ecc0",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:5ec5c4f7-1b6d-4642-8470-567e666952a8",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:2b834a98-14ff-47e1-8aef-cf8ffae912fa",
+      "mapped_proposal_id": "technology-science-niches:digital-map-making",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:89db623e-e1fc-4ec2-9a0f-7b72b4c35303",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:0b8da079-f587-403f-a6ad-cd18b8150044",
+      "mapped_proposal_id": "technology-science-niches:digital-research-and-source-evaluation",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:45ab3524-935d-4bc0-a7f3-1cf3be7e5987",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:52894650-9077-40f0-96d6-6f07d1a6cafa",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:7629db63-5922-42fa-8c80-9575526f7326",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:8d09f7c2-d10c-4818-a91d-d2f1b8ec7973",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:40842478-ad09-4be9-a889-97299b013609",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:b2cd801d-803d-41bc-bef3-dea4ddd94bbc",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:01f10952-cb59-4347-9aee-d4fbc51c870a",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:4c5a2793-c18d-40b9-832d-af8e07f0f171",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:896563fc-6255-4419-89c2-ffed30159ad6",
+      "mapped_proposal_id": "technology-science-niches:genealogy-research",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:8c4b7305-4b83-4586-9d42-2817f96c60ea",
+      "mapped_proposal_id": "communication-cognition-nature:critical-thinking-and-evidence-checking",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:65a24ec1-e173-4bd6-b160-270346e0f4bf",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:ca81a475-f76c-4318-bdd7-4f1f3605e798",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:4b873879-6d5e-46b6-80e2-1ef313b4e0ac",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:0a1e6554-1c6b-42c6-970b-8d9a307cdb5e",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:f16e242e-a0e1-4d3a-b8bc-0fc6eca50354",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:2f7f7a05-88ec-4c8a-937f-381dce6b00fd",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:efa7943e-28b8-4657-bccb-f04e86ba058b",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:37624859-cbb6-43cb-a523-aa450877821a",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:61c14f06-9edf-44c3-96af-dcecda598853",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:e29c14e1-60c7-444c-b3d0-43d6bee04340",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:254235cd-d928-49d1-ae51-b7c909404fe1",
+      "mapped_proposal_id": "communication-cognition-nature:explain-information-clearly",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:19b04a30-2e1d-4893-a86c-bde277765c7f",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:d3b2faa1-e54f-40e0-b641-977a4703aaf8",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:5b9694a6-58b0-4179-a1bd-4bcda0352ca1",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:6ed67cf0-d8b9-4025-8b6e-a29a11e6b977",
+      "mapped_proposal_id": "technology-science-niches:scale-model-building",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:6d4feb44-401c-480d-a05b-02ca8b38d7cd",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:8ff32017-9a19-400c-8de5-8a93198864be",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:c73e355b-89c8-4831-968e-f146f2ae970c",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:7e8c17fd-3299-4c5a-b67c-32f516364662",
+      "mapped_proposal_id": "general-practical-skills:compare-equipment-before-buying",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:4aaa3e87-2b29-4a83-bdff-cbe51db03fc5",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:76506870-aeac-4bc2-96b2-cbc6702601ea",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:ff7f57d7-084b-4ec2-8e2d-2637b1ab3931",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:ec4855b5-84a5-4c59-812e-8e4319d7bf8d",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:fa8ee260-64dc-42db-a5c7-9d3b232767df",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:4264f3aa-037e-44f4-bb08-90d2337953ee",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:79c96922-6032-40d6-b391-0f4a0d85e620",
+      "mapped_proposal_id": "kitchen-finance:basic-baking-techniques",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:fd446407-b08e-49da-b8e3-7e7c79618c3f",
+      "mapped_proposal_id": "communication-cognition-nature:public-speaking-and-audience-adaptation",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:c55caed2-de9e-4a25-819e-a0b0e83fba1b",
+      "mapped_proposal_id": "communication-cognition-nature:public-speaking-and-audience-adaptation",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:a5826fe3-8df6-4fa8-adad-b7116864588f",
+      "mapped_proposal_id": "communication-cognition-nature:explain-information-clearly",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:7dd94ad3-13d6-43fe-8b94-51fcbf67ced9",
+      "mapped_proposal_id": "communication-cognition-nature:critical-thinking-and-evidence-checking",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:1299a59c-8b90-4838-8bef-0065cdfc8bdf",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:222bf50b-6739-48b1-a655-658306c3529f",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:1d3c5ca3-e154-4a43-883e-7496e8886cd6",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:14fc9b06-bf35-4b35-8f07-c53856ef18bc",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:0b8a3319-54be-4b35-8425-c31d1f42f186",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:b4a5d258-4fe7-4fa5-b58f-d2f8769eb15b",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:3cccda28-82cc-4e47-9442-af0cb4d64016",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:39a7d447-5a30-41b1-967d-bdcde3288c9e",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:61ea50d7-db19-4160-8da4-1d7bec68bec3",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:cec6cd92-d709-42cc-9a6e-6a7dd48b9e08",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:69eb9999-814b-4293-8d6c-633e49f64de4",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:ed1614dd-5a66-4a95-968f-a0d46ecdce92",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:5fd4e27b-49de-4609-ae44-91e47ee3d168",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:aa7062ed-ebfb-4876-8fa5-a7c72c8b6ffb",
+      "mapped_proposal_id": "communication-cognition-nature:informal-spoken-interpreting",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:321f7ade-ba43-4923-a432-54df75ec80a5",
+      "mapped_proposal_id": "communication-cognition-nature:informal-spoken-interpreting",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:20d51474-58e1-4fb3-aec3-57bdc187c5ce",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:0e91219a-e74a-46e6-bcf9-9e14da031343",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:b6422189-45f6-4e87-8a9e-7e4aabddf069",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:c0326e27-5fa8-4dca-aecb-ed89ab491513",
+      "mapped_proposal_id": "technology-science-niches:practical-data-analysis",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb",
+      "mapped_proposal_id": "technology-science-niches:digital-publishing-and-layout",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:416ca9da-3a58-4522-89a2-5746576feddd",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:91161335-8adf-4567-8fa5-62fb37948664",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:5a6ac2a6-6aa3-4b68-b2ef-b2491fb146c1",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    },
+    {
+      "candidate_id": "esco:bf4d884f-c848-402a-b130-69c266b04164",
+      "mapped_proposal_id": "technology-science-niches:programming-fundamentals",
+      "action": "duplicate_rejected"
+    },
+    {
+      "candidate_id": "esco:d10fe458-ceb5-4a40-83f4-b8ef318bf566",
+      "mapped_proposal_id": "general-practical-skills:write-in-a-language-you-are-learning",
+      "action": "many_to_one"
+    }
+  ]
+}

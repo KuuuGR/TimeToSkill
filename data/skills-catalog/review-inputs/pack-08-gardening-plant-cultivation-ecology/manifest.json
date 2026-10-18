@@ -1,0 +1,52 @@
+{
+  "prepared_on": "2026-10-18",
+  "pack_id": "pack-08",
+  "title": "Ogrodnictwo, uprawa roślin i praktyczna ekologia",
+  "domains": [
+    "uprawa roślin",
+    "ogrodnictwo użytkowe",
+    "gleba, woda i kompost",
+    "rośliny pod dachem",
+    "praktyczna ekologia",
+    "materiały i gatunki jako wiedza"
+  ],
+  "package": "pack-08-gardening-plant-cultivation-ecology",
+  "format_version": "1",
+  "status": "ready_for_review",
+  "record_count": 61,
+  "source_count": 3,
+  "candidate_ids_file": "candidates.jsonl",
+  "candidate_id_range": {
+    "first": "esco:0171653e-c8e9-4c24-bb86-a4b6fe038f25",
+    "last": "wikidata:Q64365"
+  },
+  "registry": "data/skills-catalog/research/sources.json",
+  "excluded_already_used_candidate_ids": 0,
+  "selection_group_counts": {
+    "A": 17,
+    "B": 11,
+    "C": 15,
+    "D": 8,
+    "E": 8,
+    "F": 2
+  },
+  "triage_suitability": {
+    "occupational_or_abstract": 54,
+    "not_a_distinct_skill": 1,
+    "uncertain": 5,
+    "adaptable_candidate": 1
+  },
+  "description_insufficient": 1,
+  "overlap_notes": [
+    "technology-science-niches:growing-plants-from-seed używa wikidata:Q125985509 i nie wszedł ponownie. Wysiew w tym pakiecie ma inne candidate_id.",
+    "Pakiet pack-04 ma obserwację przyrody. identify plants characteristics jest osobnym rekordem uprawowym."
+  ],
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md",
+    "gaps.md"
+  ]
+}

@@ -8,8 +8,10 @@ TimeToSkill/                          # Git repository root
 ├── PRIVACY.md, PrivacyPolicy.md      # Duplicate-ish privacy docs
 ├── ReleaseNotes
 ├── scripts/
-│   └── bump_catalog_version.py
-├── docs/                             # This documentation set
+│   ├── bump_catalog_version.py
+│   └── catalog/                      # 1001 Skills tools
+├── data/skills-catalog/              # Research data, not the app
+├── docs/                             # Human documentation
 └── TimeToSkill/                      # Xcode project wrapper
     ├── TimeToSkill.xcodeproj/
     └── TimeToSkill/                  # App sources + resources + tests
@@ -47,8 +49,24 @@ TimeToSkill/                          # Git repository root
 **Important files:**
 
 - `bump_catalog_version.py` — when `MARKETING_VERSION` increases, increments `catalogVersion` in all `ExemplarySkills*.json` under Resources.
+- `catalog/` — 1001 Skills research tools. Paths are resolved from the script file in `layout.py`. Generators accept `--check` and then exit before writing. `validate_skill_catalog.py` only reads data.
 
-**Relationships:** Referenced by Xcode Run Script phase in `project.pbxproj`. Path resolution uses `PROJECT_DIR` heuristics.
+**Relationships:** `bump_catalog_version.py` is referenced by the Xcode Run Script phase. Catalog scripts read and write `data/skills-catalog/` and `docs/catalog-research/`. They are not part of the app target.
+
+---
+
+## `data/skills-catalog/`
+
+**Purpose:** Machine-readable 1001 Skills research data. Not bundled into the iOS or macOS app.
+
+| Path | Role |
+|------|------|
+| `research/` | Raw candidates, normalized keys, triage, sources, duplicate proposals |
+| `review-batches/` | First editorial wave, still source candidates |
+| `review-inputs/` | Packages prepared for an external reviewer |
+| `pilots/` | Editorial pilots. Research material, not a production catalog |
+
+**Relationships:** Method, schema, emoji rules, and reports stay in `docs/catalog-research/`. See `data/skills-catalog/README.md`.
 
 ---
 

@@ -334,3 +334,118 @@
 "splash_reflection_3" = "Small hours, repeated, become mastery.";
 "splash_reflection_4" = "Progress is patience made visible.";
 "splash_reflection_5" = "Time invested in learning is never wasted.";
+
+// MARK: - Per-skill timer session chart (T4S-001)
+"session_chart_open" = "Session chart";
+"session_chart_nav_title" = "Timer sessions";
+"session_chart_metric" = "Completed timer sessions only. Manual time adjustments are not included.";
+"session_chart_bin_width" = "Bin width";
+"session_chart_bin_minutes" = "%d min";
+"session_chart_bin_range" = "%1$@–%2$@ min";
+"session_chart_bin_overflow" = "≥ %1$@ min";
+"session_chart_count_format" = "%d sessions";
+"session_chart_mean_format" = "Mean: %@ min";
+"session_chart_mean_unavailable" = "—";
+"session_chart_empty" = "No completed timer sessions for this skill yet.";
+"session_chart_curve_caption" = "The translucent curve is a normal-distribution reference for these sessions. It is not a prediction and does not mean the sessions follow a normal distribution.";
+"session_chart_curve_hidden" = "Not enough variation or completed timer sessions to show a stable reference curve.";
+"session_chart_accessibility" = "Timer session duration chart";
+"session_chart_row_accessibility" = "%1$@, %2$d sessions";
+
+// MARK: - Theory topics (T4S-002)
+"theory_intro" = "Ideas you can try while you practise. The short version is enough. Open sources only when you want the research context.";
+"theory_takeaway_label" = "Practical takeaway";
+"theory_sources_button" = "Sources & research details ↗";
+"theory_sources_accessibility" = "Sources and research details";
+"theory_detail_title" = "Research details";
+"theory_detail_citation" = "Citation";
+"theory_detail_source_type" = "Source type";
+"theory_detail_context" = "Research context";
+"theory_detail_limitation" = "Limitation";
+"theory_detail_links" = "Source links";
+"theory_type_framework" = "Author's practical framework";
+"theory_type_article" = "Research article";
+"theory_type_meta" = "Meta-analysis";
+"theory_link_author_site" = "Author's website";
+"theory_link_publisher" = "Publisher";
+"theory_link_ericsson_1993" = "Ericsson, Krampe, and Tesch-Römer, 1993";
+"theory_link_macnamara_2019" = "Macnamara and Maitra, 2019";
+"theory_link_macnamara_2014" = "Macnamara, Hambrick, and Oswald, 2014";
+"theory_link_pubmed" = "PubMed";
+"theory_link_cepeda_2006" = "Cepeda and colleagues, 2006";
+"theory_link_lally_2010" = "Lally and colleagues, 2010";
+
+"theory_topic_first20_title" = "The First 20 Hours: Get Past the Beginning";
+"theory_topic_first20_summary" = "Starting a skill is often frustrating because everything is unfamiliar. Josh Kaufman proposes a practical approach: break a skill into smaller parts, focus on what matters, remove barriers to practice, and spend focused time improving. His 20-hour framework is a starting method, not a scientific guarantee that any skill can be mastered in 20 hours.";
+"theory_topic_first20_takeaway" = "Choose one specific thing you want to be able to do better after your first 20 hours.";
+"theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Ebook published in 2013; paperback published in 2014.";
+"theory_topic_first20_context" = "Author's practical framework and book, not a controlled scientific study.";
+"theory_topic_first20_limitation" = "The 20-hour framework is a starting method. It is not a scientifically established time needed to master a skill.";
+
+"theory_topic_deliberate_title" = "Practice With a Purpose";
+"theory_topic_deliberate_summary" = "Repeating an activity is not the same as deliberately improving it. Choose a specific aspect to work on, practise with a clear goal, notice errors, and adjust your next attempt. Time is useful to track, but the way you practise matters too.";
+"theory_topic_deliberate_takeaway" = "Before a session, decide what one thing you want to improve.";
+"theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
+"theory_topic_deliberate_context" = "The paper developed a framework for expert performance and reported studies involving musicians, including violinists and pianists.";
+"theory_topic_deliberate_limitation" = "The paper does not establish one fixed number of practice hours that guarantees mastery across all skills.";
+
+"theory_topic_10k_title" = "10,000 Hours: A Popular Rule, Not a Law";
+"theory_topic_10k_summary" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). It drew on research about expert performance, but the popular version simplified the original argument. There is no universal magic number of hours that guarantees mastery.";
+"theory_topic_10k_takeaway" = "Use long-term milestones to celebrate persistence, not to predict when you will become an expert.";
+"theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara and Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
+"theory_topic_10k_context" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). The 2019 paper discusses how that popular rule differs from the 1993 research.";
+"theory_topic_10k_limitation" = "Ericsson and colleagues did not establish a universal 10,000-hour mastery law. There is no universal number of hours that guarantees mastery.";
+
+"theory_topic_variance_title" = "Practice Matters, but It Is Not Everything";
+"theory_topic_variance_summary" = "A 2014 meta-analysis examined deliberate practice across several fields. It found that practice was associated with performance, but its contribution differed substantially by domain.";
+"theory_topic_variance_takeaway" = "Practice is something you can influence. Results also depend on other factors, which differ between activities.";
+"theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick, and Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
+"theory_topic_variance_context" = "A 2014 meta-analysis examined deliberate practice across several fields. Practice was associated with performance, but its contribution differed substantially by domain.";
+"theory_topic_variance_findings_intro" = "The estimated share of performance differences explained by deliberate practice in this analysis was:";
+"theory_topic_variance_limitation" = "These percentages refer to variance in performance explained in this meta-analysis. They are not the percentage of skill that a person can learn, and they are not an individual's probability of success.";
+"theory_finding_games" = "Games";
+"theory_finding_games_value" = "26%";
+"theory_finding_music" = "Music";
+"theory_finding_sports" = "Sports";
+"theory_finding_education" = "Education";
+"theory_finding_professions" = "Professions";
+"theory_finding_music_value" = "21%";
+"theory_finding_sports_value" = "18%";
+"theory_finding_education_value" = "4%";
+"theory_finding_professions_value" = "Less than 1%";
+
+"theory_topic_spacing_title" = "Return to a Skill, Rather Than Cramming Everything Together";
+"theory_topic_spacing_summary" = "Research on distributed practice supports spreading learning across multiple sessions rather than relying only on massed practice. The best spacing depends on the material and on how long you want to retain it.";
+"theory_topic_spacing_takeaway" = "Try returning to a skill over several days and observe what you remember and what needs more practice.";
+"theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted, and Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
+"theory_topic_spacing_context" = "The meta-analysis reviewed 317 experiments across 184 articles, with 839 assessments of distributed practice.";
+"theory_topic_spacing_limitation" = "These results concern learning and recall tasks. They do not present one schedule as optimal for every physical, social, artistic, or professional skill.";
+
+"theory_topic_habit_title" = "A Habit Does Not Have a Universal Deadline";
+"theory_topic_habit_summary" = "Repeating an action in a consistent context can make it more automatic over time. However, the time required differs between people and behaviours. Missing one day does not mean that all progress has been lost.";
+"theory_topic_habit_takeaway" = "Connect an activity to a situation you encounter regularly, and resume without guilt when a session is missed.";
+"theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, and Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
+"theory_topic_habit_context" = "Ninety-six volunteers selected an eating, drinking, or activity behaviour to repeat in the same context for 12 weeks. Eighty-two participants provided sufficient data for analysis. The modelled time to reach 95% of the asymptotic automaticity estimate varied from 18 to 254 days.";
+"theory_topic_habit_limitation" = "This was a habit-formation study, not a study of how many hours it takes to master a skill. It does not support a 21-hour mastery threshold or a universal 21-day habit rule.";
+
+"theory_milestones_title" = "Progress milestones";
+"theory_milestones_note" = "The 100-hour, 1,000-hour, and 10,000-hour marks in Time4Skill record time you have spent. They are progress milestones, not scientifically validated stages, and they do not predict when you will become an expert.";
+"theory_milestone_100_title" = "100 hours";
+"theory_milestone_1000_title" = "1,000 hours";
+"theory_milestone_10000_title" = "10,000 hours";
+"theory_milestone_note" = "Progress milestone, not a universal stage of expertise.";
+
+// MARK: - Year activity calendar (T4S-003)
+"activity_calendar_title" = "Practice this year";
+"activity_calendar_previous" = "Previous year";
+"activity_calendar_next" = "Next year";
+"activity_calendar_summary" = "%1$d active days · %2$d skills";
+"activity_calendar_empty" = "No completed timer sessions yet. Days stay neutral until a timer session is saved.";
+"activity_calendar_year_empty" = "No completed timer sessions in this year.";
+"activity_calendar_day_accessibility" = "%1$@, %2$@";
+"activity_level_0" = "No recorded timer activity";
+"activity_level_1" = "Light activity";
+"activity_level_2" = "Some activity";
+"activity_level_3" = "Varied activity";
+"activity_level_4" = "Broad activity";
+"activity_level_5" = "Very broad activity";

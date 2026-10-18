@@ -1,0 +1,129 @@
+[
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — Conciseness",
+    "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/index.html",
+    "used_for_skill_ids": [
+      "concise-writing"
+    ],
+    "source_note": "Official OWL page supports removing unnecessary/vague words while preserving meaning."
+  },
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — How to Outline",
+    "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/developing_an_outline/how_to_outline.html",
+    "used_for_skill_ids": [
+      "writing-outlines-and-structure"
+    ],
+    "source_note": "Official OWL page describes purpose, audience, brainstorming, grouping, ordering and headings for outlines."
+  },
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — Paragraphing",
+    "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/paragraphing.html",
+    "used_for_skill_ids": [
+      "clear-paragraph-structure"
+    ],
+    "source_note": "Official OWL page covers unity, coherence, topic sentences and paragraph development."
+  },
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — Email Etiquette",
+    "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/email_etiquette.html",
+    "used_for_skill_ids": [
+      "effective-email-writing"
+    ],
+    "source_note": "Official OWL page provides guidance on subject lines, greetings, concise messages, tone, follow-ups and sensitive information."
+  },
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — Writing with Feedback",
+    "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/feedback/editor-reviewer_feedback.html",
+    "used_for_skill_ids": [
+      "constructive-peer-feedback"
+    ],
+    "source_note": "Official OWL page describes transforming feedback into an actionable and prioritised revision plan."
+  },
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — Proofreading Suggestions",
+    "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_suggestions.html",
+    "used_for_skill_ids": [
+      "proofreading-and-error-tracking"
+    ],
+    "source_note": "Official OWL page suggests reading aloud, checking paragraphs and tracking recurring errors."
+  },
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — Establishing Arguments and Thesis Statements",
+    "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/index.html",
+    "used_for_skill_ids": [
+      "build-a-reasoned-written-argument"
+    ],
+    "source_note": "Use page and linked thesis-statement material to ground the original progression."
+  },
+  {
+    "source_id": "purdue-owl-writing",
+    "title": "Purdue OWL — Writing Process",
+    "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/index.html",
+    "used_for_skill_ids": [
+      "revise-writing-for-coherence"
+    ],
+    "source_note": "Official process materials describe prewriting, organization, reverse outlining and revision."
+  },
+  {
+    "source_id": "learning-scientists-six-strategies",
+    "title": "The Learning Scientists — Six Strategies for Effective Learning",
+    "url": "https://www.learningscientists.org/blog/2016/8/18-1",
+    "used_for_skill_ids": [
+      "retrieval-practice",
+      "spaced-practice",
+      "interleaved-practice",
+      "dual-coding-for-learning",
+      "elaborative-questioning",
+      "learning-with-concrete-examples"
+    ],
+    "source_note": "The overview lists six distinct learning strategies and notes that strength of evidence varies by strategy."
+  },
+  {
+    "source_id": "usgs-map-and-compass",
+    "title": "USGS — Finding Your Way with Map and Compass",
+    "url": "https://www.usgs.gov/educational-resources/finding-your-way-map-and-compass",
+    "used_for_skill_ids": [
+      "topographic-map-reading",
+      "compass-use-and-map-orientation"
+    ],
+    "source_note": "Official USGS material covers topographic maps, contours, elevation, scale, distance and compass bearings."
+  },
+  {
+    "source_id": "roc-what-is-orienteering",
+    "title": "Rochester Orienteering Club — What is Orienteering?",
+    "url": "https://roc.us.orienteering.org/What-is-Orienteering",
+    "used_for_skill_ids": [
+      "topographic-map-reading",
+      "compass-use-and-map-orientation",
+      "orienteering-route-choice"
+    ],
+    "source_note": "Explains relating map to terrain, controls, symbols and route choice."
+  },
+  {
+    "source_id": "zooniverse-project-directory",
+    "title": "Zooniverse — Project Directory",
+    "url": "https://www.zooniverse.org/projects",
+    "used_for_skill_ids": [
+      "wildlife-camera-image-classification",
+      "georeference-collection-records",
+      "transcribe-historical-letters"
+    ],
+    "source_note": "The submitted candidates describe concrete citizen-science actions. Project-specific procedures still depend on the individual project."
+  },
+  {
+    "source_id": "esco-skills-v1.2.1",
+    "title": "ESCO — Analyse telescope images",
+    "url": "https://data.europa.eu/esco/skill/45290231-bc6c-461e-b05c-aab9bad212c4",
+    "used_for_skill_ids": [
+      "astronomical-image-analysis-basics"
+    ],
+    "source_note": "Candidate description says to examine telescope images to study astronomical phenomena and objects."
+  }
+]

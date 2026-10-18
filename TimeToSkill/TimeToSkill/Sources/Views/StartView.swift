@@ -7,6 +7,7 @@ struct StartView: View {
     @Query private var skills: [Skill]  // Auto-fetched from SwiftData
 
     @State private var selectedSkillForOptions: Skill?
+    @State private var selectedSkillForChart: Skill?
     @State private var showingAddSkill = false
 
     // Using AppStorage for automatic UserDefaults persistence
@@ -45,6 +46,11 @@ struct StartView: View {
         .sheet(item: $selectedSkillForOptions) { skill in
             SkillOptionsSheet(skill: skill) {
                 context.delete(skill)
+            }
+        }
+        .sheet(item: $selectedSkillForChart) { skill in
+            NavigationStack {
+                TimeDistributionView(skill: skill, showsDoneButton: true)
             }
         }
     }
@@ -104,6 +110,9 @@ struct StartView: View {
                                     },
                                     onShowOptions: {
                                         selectedSkillForOptions = skill
+                                    },
+                                    onShowChart: {
+                                        selectedSkillForChart = skill
                                     }
                                 )
                             }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Required for Mac App Store distribution (App Store Connect error 90296). -->
+	<!-- This is the only sandbox entitlement the app needs: Time4Skill writes -->
+	<!-- only inside its own container (SwiftData store, Documents, temporary -->
+	<!-- directory for the shared PDF), uses system out-of-process pickers -->
+	<!-- (PhotosPicker, NSSharingServicePicker) and never touches the network. -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+</dict>
+</plist>

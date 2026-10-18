@@ -2,74 +2,72 @@
 //  TheoryView.swift
 //  TimeToSkill
 //
-//  Created by Grzegorz Kulesza on 06/04/2025.
-//
+//  Ideas about learning. Summaries stay on this page. Research records open
+//  in a sheet. Progress-hour marks are labeled as milestones, not as proof
+//  of mastery. The 21-hour progress band is unchanged.
 
 import SwiftUI
 
 struct TheoryView: View {
+    @State private var selectedTopic: TheoryTopic?
+
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 24) {
+            VStack(alignment: .leading, spacing: 20) {
                 Text(LocalizedStringKey("theory_title"))
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.top)
 
-                // 0–21 hours
-                TheoryCard(
-                    icon: "🌱",
-                    title: NSLocalizedString("theory_20_title", comment: ""),
-                    author: NSLocalizedString("theory_20_author", comment: ""),
-                    description: NSLocalizedString("theory_20_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_20_works", comment: ""),
-                    borderColor: .success
-                )
+                Text(LocalizedStringKey("theory_intro"))
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
 
-                // 21–100 hours
-                TheoryCard(
-                    icon: "🌀",
-                    title: NSLocalizedString("theory_100_title", comment: ""),
-                    author: NSLocalizedString("theory_100_author", comment: ""),
-                    description: NSLocalizedString("theory_100_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_100_works", comment: ""),
-                    borderColor: .infoDark
-                )
-
-                // 100–1000 hours
-                TheoryCard(
-                    icon: "🧠",
-                    title: NSLocalizedString("theory_1000_title", comment: ""),
-                    author: NSLocalizedString("theory_1000_author", comment: ""),
-                    description: NSLocalizedString("theory_1000_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_1000_works", comment: ""),
-                    borderColor: .warningDark
-                )
-
-                // 1000–10000 hours
-                TheoryCard(
-                    icon: "🔥",
-                    title: NSLocalizedString("theory_10k_title", comment: ""),
-                    author: NSLocalizedString("theory_10k_author", comment: ""),
-                    description: NSLocalizedString("theory_10k_description", comment: ""),
-                    worksFor: NSLocalizedString("theory_10k_works", comment: ""),
-                    borderColor: Color.danger
-                )
-
-                VStack(alignment: .leading, spacing: 12) {
-                    Text(LocalizedStringKey("theory_comparison_title"))
-                        .font(.title3)
-                        .fontWeight(.semibold)
-
-                    Text(LocalizedStringKey("theory_comparison_text"))
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
+                ForEach(TheoryCatalog.topics) { topic in
+                    TheoryCard(topic: topic) {
+                        selectedTopic = topic
+                    }
                 }
-                .padding(.bottom, 40)
+
+                milestones
             }
             .padding(.horizontal)
+            .padding(.bottom, 40)
             .macOSContentWidth(700)
         }
         .navigationTitle(LocalizedStringKey("theory_nav_title"))
+        .sheet(item: $selectedTopic) { topic in
+            NavigationStack {
+                TheoryDetailView(topic: topic)
+            }
+        }
+    }
+
+    private var milestones: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(LocalizedStringKey("theory_milestones_title"))
+                .font(.title3)
+                .fontWeight(.semibold)
+
+            Text(LocalizedStringKey("theory_milestones_note"))
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            ForEach(TheoryCatalog.milestones) { milestone in
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(LocalizedStringKey(milestone.titleKey))
+                        .font(.headline)
+                    Text(LocalizedStringKey("theory_milestone_note"))
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(.vertical, 4)
+                .accessibilityElement(children: .combine)
+            }
+        }
+        .padding(.top, 8)
     }
 }

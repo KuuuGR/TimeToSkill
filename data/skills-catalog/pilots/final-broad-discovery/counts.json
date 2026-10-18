@@ -1,0 +1,10 @@
+{
+  "raw_candidates": 500,
+  "new_proposals": 127,
+  "already_represented": 342,
+  "rejected": 17,
+  "needs_source": 14,
+  "active_after_v11": 1122,
+  "production": 0,
+  "open_risk_entries_after": 122
+}

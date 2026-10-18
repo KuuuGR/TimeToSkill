@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct TimeToSkillApp: App {
+struct Time4SkillApp: App {
     @Environment(\.colorScheme) var colorScheme
 
     /// Launch number captured before any view is built, so `RootView` can decide

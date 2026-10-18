@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "status": "empty_template",
+  "purpose": "Docelowy rekord skilla katalogu 1001. Ten plik nie zawiera gotowych skillów ani treści poziomów.",
+  "fields": {
+    "skill_id": {
+      "type": "string",
+      "required": true,
+      "description": "Stabilny identyfikator skilla. Nie jest identyfikatorem rekordu źródłowego."
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "description": "Krótka, rozpoznawalna nazwa umiejętności, nie tytuł kursu ani nazwa zawodu."
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "description": "Czego osoba się uczy i co ćwiczy. Nie jest kopią całego opisu źródłowego."
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "description": "Jedna dziedzina katalogu, ustalona przy zatwierdzeniu."
+    },
+    "source_candidate_ids": {
+      "type": "array[string]",
+      "required": true,
+      "description": "Identyfikatory kandydatur z candidates-raw.jsonl, które potwierdzają albo inspirują skilla."
+    },
+    "source_ids": {
+      "type": "array[string]",
+      "required": true,
+      "description": "Identyfikatory źródeł z sources.json użyte jako inspiracja albo potwierdzenie."
+    },
+    "levels": {
+      "type": "array[object]",
+      "required": true,
+      "length": 3,
+      "description": "Dokładnie trzy poziomy rozwoju, od pierwszego samodzielnego wykonania do pewnej praktyki.",
+      "item_fields": {
+        "name": "Nazwa poziomu. Na tym etapie pusta.",
+        "completion_criterion": "Mierzalne albo obserwowalne kryterium ukończenia. Na tym etapie puste.",
+        "can_do": "Co użytkownik potrafi wykonać na tym poziomie. Na tym etapie puste.",
+        "safety_requirements": "Wymagania bezpieczeństwa tego poziomu albo null, gdy nie są potrzebne."
+      }
+    },
+    "emoji": {
+      "type": "string",
+      "required": true,
+      "description": "Jedno emoji dopasowane do umiejętności. Zasady są w emoji-guidelines.md."
+    },
+    "emoji_rationale": {
+      "type": "string",
+      "required": true,
+      "description": "Krótkie uzasadnienie, dlaczego to emoji pasuje do praktyki."
+    },
+    "tags": {
+      "type": "array[string]",
+      "required": true,
+      "description": "Krótkie etykiety pomocnicze. Nie zastępują kategorii ani nazwy."
+    },
+    "safety_notes": {
+      "type": "string|null",
+      "required": false,
+      "description": "Uwagi bezpieczeństwa dla całej umiejętności. Null, gdy praktyka ich nie wymaga."
+    },
+    "review_status": {
+      "type": "string",
+      "required": true,
+      "allowed": [
+        "unreviewed",
+        "accepted",
+        "rejected",
+        "needs_source"
+      ],
+      "description": "Stan redakcji. Pusty szablon nie ma statusu zatwierdzenia."
+    }
+  },
+  "example": {
+    "skill_id": null,
+    "name": null,
+    "description": null,
+    "category": null,
+    "source_candidate_ids": [],
+    "source_ids": [],
+    "levels": [
+      {
+        "name": null,
+        "completion_criterion": null,
+        "can_do": null,
+        "safety_requirements": null
+      },
+      {
+        "name": null,
+        "completion_criterion": null,
+        "can_do": null,
+        "safety_requirements": null
+      },
+      {
+        "name": null,
+        "completion_criterion": null,
+        "can_do": null,
+        "safety_requirements": null
+      }
+    ],
+    "emoji": null,
+    "emoji_rationale": null,
+    "tags": [],
+    "safety_notes": null,
+    "review_status": null
+  }
+}

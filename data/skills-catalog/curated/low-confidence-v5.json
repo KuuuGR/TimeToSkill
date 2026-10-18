@@ -1,0 +1,17 @@
+[
+  {
+    "proposal_id": "communication-cognition-nature:play-xiangqi",
+    "confidence": "medium",
+    "reason": "Cel gry i plansza są na stronie chessvariants.org. Progresja jest redakcyjna, nie programem federacji."
+  },
+  {
+    "proposal_id": "general-practical-skills:read-a-technical-drawing",
+    "confidence": "medium",
+    "reason": "Strony ESCO nie otwierano. Poziomy pochodzą z opisu w pakiecie."
+  },
+  {
+    "proposal_id": "general-practical-skills:edit-a-shared-document",
+    "confidence": "medium",
+    "reason": "Strony ESCO nie otwierano. Ślad zmiany jest wnioskiem redakcyjnym."
+  }
+]

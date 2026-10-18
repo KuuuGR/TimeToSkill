@@ -1,0 +1,57 @@
+{
+  "prepared_on": "2026-10-18",
+  "pack_id": "pack-10",
+  "title": "Opieka nad zwierzętami, dobrostan i trening oparty na nagradzaniu",
+  "domains": [
+    "decyzja o zwierzęciu",
+    "trening psa",
+    "koty",
+    "króliki",
+    "ptaki i świnki morskie",
+    "pielęgnacja i obserwacja",
+    "podróż i ciągłość opieki"
+  ],
+  "package": "pack-10-pet-care-animal-welfare-training",
+  "format_version": "1",
+  "status": "ready_for_review",
+  "record_count": 60,
+  "source_count": 15,
+  "candidate_ids_file": "candidates.jsonl",
+  "candidate_id_range": {
+    "first": "c017:avma-pet-care:adjust-pet-care-for-hot-and-cold-weather",
+    "last": "esco:f806d624-7700-4e47-9f7b-253d4d6ab9e5"
+  },
+  "new_candidate_count": 45,
+  "existing_candidate_count": 15,
+  "registry": "data/skills-catalog/research/sources.json",
+  "selection_group_counts": {
+    "A": 9,
+    "G": 5,
+    "F": 3,
+    "B": 8,
+    "C": 7,
+    "D": 8,
+    "E": 5,
+    "H": 15
+  },
+  "triage_suitability": {
+    "uncertain": 46,
+    "occupational_or_abstract": 14
+  },
+  "description_insufficient": 0,
+  "overlap_notes": [
+    "Obserwacja dzikich organizmów zostaje w pack-04. Odznaki Animal Friend i Animal Carer są już w pack-04 i nie weszły ponownie.",
+    "Akwarystyka zostaje przy propozycji pack-03.",
+    "Ogólny zestaw awaryjny zostaje w pack-09. Tutaj jest ciągłość opieki nad zwierzęciem.",
+    "ESCO train dogs wymienia dominance-based training. Recenzja nie może z tego zrobić skillu opartego na dominacji, bólu, strachu albo karze.",
+    "Pięć potrzeb PDSA i ESCO animal welfare zostają osobno."
+  ],
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md",
+    "gaps.md"
+  ]
+}

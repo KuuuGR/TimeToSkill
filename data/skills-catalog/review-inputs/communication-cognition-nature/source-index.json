@@ -1,0 +1,106 @@
+{
+  "registry": "data/skills-catalog/research/sources.json",
+  "note": "Skrót źródeł użytych w tym pakiecie, skopiowany z rejestru centralnego. To nie jest drugi katalog źródeł.",
+  "sources": [
+    {
+      "source_id": "astronomical-league-observing-programs",
+      "title": "Astronomical League observing programs (A to C index)",
+      "organization": "Astronomical League",
+      "url": "https://www.astroleague.org/observing-programs/",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Copyright Astronomical League. Program names only.",
+      "records_in_package": 17
+    },
+    {
+      "source_id": "esco-skills-v1.2.1",
+      "title": "ESCO classification, skills pillar, English CSV",
+      "organization": "European Commission, Directorate-General for Employment, Social Affairs and Inclusion",
+      "url": "https://esco.ec.europa.eu/en/use-esco/download",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "No separate licence label was printed on the download page retrieved for this run. ESCO v1.2.1 is published by the European Commission. Reuse of Commission documents is governed by Commission Decision 2011/833/EU where no narrower statement is given. This is a research note, not a legal opinion.",
+      "records_in_package": 14
+    },
+    {
+      "source_id": "learning-scientists-six-strategies",
+      "title": "The Learning Scientists — Six Strategies for Effective Learning",
+      "organization": "The Learning Scientists",
+      "url": "https://www.learningscientists.org/blog/2016/8/18-1",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Copyright The Learning Scientists. Strategy names only.",
+      "records_in_package": 6
+    },
+    {
+      "source_id": "onet-content-model-31.0",
+      "title": "O*NET 31.0 Database, Content Model Reference",
+      "organization": "U.S. Department of Labor, Employment and Training Administration; National Center for O*NET Development",
+      "url": "https://www.onetcenter.org/database.html",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0), except as stated on the O*NET database licence page.",
+      "records_in_package": 11
+    },
+    {
+      "source_id": "purdue-owl-writing",
+      "title": "Purdue OWL — General Writing and The Writing Process",
+      "organization": "Purdue University Online Writing Lab",
+      "url": "https://owl.purdue.edu/owl/general_writing/index.html",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Copyright Purdue University Online Writing Lab. Headings only.",
+      "records_in_package": 12
+    },
+    {
+      "source_id": "roc-what-is-orienteering",
+      "title": "Rochester Orienteering Club — What is Orienteering?",
+      "organization": "Rochester Orienteering Club",
+      "url": "https://roc.us.orienteering.org/What-is-Orienteering",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Page content belongs to Rochester Orienteering Club. Short quotations only.",
+      "records_in_package": 5
+    },
+    {
+      "source_id": "scouts-uk-activity-badges",
+      "title": "Scouts activity badges",
+      "organization": "The Scout Association",
+      "url": "https://www.scouts.org.uk/activity-badges",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Copyright The Scout Association. No open licence was found for badge syllabi. Titles and URLs only were stored.",
+      "records_in_package": 38
+    },
+    {
+      "source_id": "usgs-map-and-compass",
+      "title": "USGS — Finding Your Way with Map and Compass",
+      "organization": "U.S. Geological Survey",
+      "url": "https://www.usgs.gov/educational-resources/finding-your-way-map-and-compass",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "USGS fact sheet. U.S. government work; attribute the U.S. Geological Survey.",
+      "records_in_package": 5
+    },
+    {
+      "source_id": "wikidata-hobbies",
+      "title": "Wikidata list of activities done as a hobby",
+      "organization": "Wikimedia contributors",
+      "url": "https://www.wikidata.org/wiki/Wikidata:List_of_activities_done_as_hobby",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Wikidata structured data is CC0. The wiki page text is CC BY-SA; this extract uses the SPARQL results, not the page prose.",
+      "records_in_package": 14
+    },
+    {
+      "source_id": "zooniverse-project-directory",
+      "title": "Zooniverse — Project Directory",
+      "organization": "Zooniverse",
+      "url": "https://www.zooniverse.org/projects",
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "license": "Project blurbs cited from Zooniverse. No project content was copied beyond one sentence.",
+      "records_in_package": 4
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "prepared_on": "2026-10-18",
+  "package": "technology-science-niches",
+  "package_version": "1",
+  "source_batches": [
+    "data/skills-catalog/review-batches/10-technologia-nauka-nisze-01.jsonl",
+    "data/skills-catalog/review-batches/11-technologia-nauka-nisze-02.jsonl"
+  ],
+  "source_batch_count": 232,
+  "record_count": 114,
+  "source_count": 4,
+  "candidate_id_range": {
+    "first": "esco:1d6c7de4-350e-4868-a47b-333b4b0d9650",
+    "last": "wikidata:Q985912"
+  },
+  "registry": "data/skills-catalog/research/sources.json",
+  "excluded_count": 118,
+  "exclusion_note": "Pominięto 118 rekordów z tych dwóch pakietów: ogólne czynności zawodowe O*NET i bliskie sobie pozycje DigComp, etykiety kolekcjonowania, rzemiosło i sport oraz puste odznaki Hobbies/Collector. Nie dopisano rekordów spoza bazy.",
+  "triage_suitability": {
+    "uncertain": 28,
+    "adaptable_candidate": 79,
+    "strong_candidate": 4,
+    "occupational_or_abstract": 1,
+    "not_a_distinct_skill": 2
+  },
+  "description_insufficient": 15,
+  "files": [
+    "candidates.jsonl",
+    "source-index.json",
+    "manifest.json",
+    "review-instructions.md",
+    "README.md"
+  ]
+}

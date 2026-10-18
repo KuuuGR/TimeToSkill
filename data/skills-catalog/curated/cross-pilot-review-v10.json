@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "automatic_merge_performed": false,
+  "production_approval": false,
+  "note": "Przegląd jakości v9. Scalono tylko te same rezultaty. v9 nie było edytowane.",
+  "merge_history": "data/skills-catalog/curated/merge-history-v10.json",
+  "decisions": "data/skills-catalog/curated/editorial-decisions-v10.jsonl",
+  "reviewed": 1001,
+  "active_after": 995,
+  "kept": 919,
+  "fixed": 76,
+  "merged": 6,
+  "split": 0,
+  "rejected": 0,
+  "held_out": 0
+}
