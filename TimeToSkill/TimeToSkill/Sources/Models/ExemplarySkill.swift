@@ -33,6 +33,8 @@ final class ExemplarySkill {
     var obtainedAt: Date?
     var verificationCode: String? // The password-like code used for verification
     var isObtained: Bool
+    /// User bookmark. Independent of completion and of the hour-progress bar.
+    var isFavorite: Bool = false
     var achievementHistory: [AchievementRecord] = [] // Track all evaluations
     
     init(
@@ -52,7 +54,8 @@ final class ExemplarySkill {
         userRating: Int? = nil,
         obtainedAt: Date? = nil,
         verificationCode: String? = nil,
-        isObtained: Bool = false
+        isObtained: Bool = false,
+        isFavorite: Bool = false
     ) {
         self.id = id
         self.catalogID = catalogID
@@ -67,6 +70,7 @@ final class ExemplarySkill {
         self.obtainedAt = obtainedAt
         self.verificationCode = verificationCode
         self.isObtained = isObtained
+        self.isFavorite = isFavorite
         self.achievementHistory = []
         self.oneStarDescription = oneStarDescription
         self.twoStarDescription = twoStarDescription

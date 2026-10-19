@@ -1503,6 +1503,892 @@
       "attribution_required": "None. Do not cite this source as an outside authority.",
       "notes": "Labeled editorial_synthesis. High-risk procedures were not written.",
       "records_written": 500
+    },
+    {
+      "source_id": "t4s-editorial-synthesis-pack-17",
+      "title": "Time4Skill editorial synthesis, pack-17",
+      "publisher": "Time4Skill catalog editorial",
+      "url": null,
+      "download_url": null,
+      "source_type": "editorial_synthesis",
+      "domains": [
+        "animals",
+        "music",
+        "drawing",
+        "accounts",
+        "soil"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "not an external source",
+      "completeness": "481 new candidate rows appended. Some decisions reuse older candidate ids. Level text is editorial except where a decision says page_checked.",
+      "license": "Original editorial text for this catalog.",
+      "attribution_required": "None. Do not cite this source as an outside authority.",
+      "notes": "Labeled editorial_synthesis. High-risk procedures were not written. Opened pages stay on their own source ids.",
+      "records_written": 481
+    },
+    {
+      "source_id": "ncsc-three-random-words",
+      "title": "Three random words",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/three-random-words",
+      "download_url": null,
+      "source_type": "official guidance",
+      "domains": [
+        "passwords"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The three-random-words page was opened. It was not copied into the levels.",
+      "license": "Crown material. See the page for reuse terms. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name NCSC and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. Used for the three-word password proposal only.",
+      "records_written": 1
+    },
+    {
+      "source_id": "ncsc-setting-up-2sv",
+      "title": "Setting up 2-step verification",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/guidance/setting-2-step-verification-2sv",
+      "download_url": null,
+      "source_type": "official guidance",
+      "domains": [
+        "account security"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The 2SV guidance page was opened. It was not copied into the levels.",
+      "license": "Crown material. See the page for reuse terms. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name NCSC and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. Used for two-step verification and backup codes.",
+      "records_written": 2
+    },
+    {
+      "source_id": "t4s-editorial-synthesis-pack-18",
+      "title": "Time4Skill editorial synthesis, pack-18",
+      "publisher": "Time4Skill catalog editorial",
+      "url": null,
+      "download_url": null,
+      "source_type": "editorial_synthesis",
+      "domains": [
+        "city",
+        "collections",
+        "materials",
+        "games",
+        "home",
+        "science"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "not an external source",
+      "completeness": "500 new candidate rows appended. Some decisions reuse older candidate ids. Level text is editorial except where a decision says page_checked.",
+      "license": "Original editorial text for this catalog.",
+      "attribution_required": "None. Do not cite this source as an outside authority.",
+      "notes": "Labeled editorial_synthesis. High-risk procedures were not written. Opened pages stay on their own source ids.",
+      "records_written": 500
+    },
+    {
+      "source_id": "t4s-editorial-synthesis-pack-19",
+      "title": "Time4Skill editorial synthesis, pack-19",
+      "publisher": "Time4Skill catalog editorial",
+      "url": null,
+      "download_url": null,
+      "source_type": "editorial_synthesis",
+      "domains": [
+        "food",
+        "movement",
+        "writing",
+        "culture",
+        "making",
+        "talk"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "not an external source",
+      "completeness": "500 new candidate rows appended. Some decisions reuse older candidate ids. Level text is editorial except where a decision says page_checked.",
+      "license": "Original editorial text for this catalog.",
+      "attribution_required": "None. Do not cite this source as an outside authority.",
+      "notes": "Labeled editorial_synthesis. High-risk procedures were not written. Opened pages stay on their own source ids.",
+      "records_written": 500
+    },
+    {
+      "source_id": "t4s-editorial-synthesis-pack-20",
+      "title": "Time4Skill editorial synthesis, pack-20",
+      "publisher": "Time4Skill catalog editorial",
+      "url": null,
+      "download_url": null,
+      "source_type": "editorial_synthesis",
+      "domains": [
+        "plants",
+        "clothes",
+        "bike",
+        "numbers",
+        "hospitality",
+        "access",
+        "water"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "not an external source",
+      "completeness": "500 new candidate rows appended. Some decisions reuse older candidate ids. Level text is editorial except where a decision says page_checked.",
+      "license": "Original editorial text for this catalog.",
+      "attribution_required": "None. Do not cite this source as an outside authority.",
+      "notes": "Labeled editorial_synthesis. High-risk procedures were not written. Opened pages stay on their own source ids.",
+      "records_written": 500
+    },
+    {
+      "source_id": "t4s-editorial-synthesis-pack-21",
+      "title": "Time4Skill editorial synthesis, pack-21",
+      "publisher": "Time4Skill catalog editorial",
+      "url": null,
+      "download_url": null,
+      "source_type": "editorial_synthesis",
+      "domains": [
+        "everyday",
+        "maps",
+        "clothes",
+        "plants"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "not an external source",
+      "completeness": "500 new candidate rows appended. Some decisions reuse older candidate ids. Level text is editorial except where a decision says page_checked.",
+      "license": "Original editorial text for this catalog.",
+      "attribution_required": "None. Do not cite this source as an outside authority.",
+      "notes": "Labeled editorial_synthesis. High-risk procedures were not written. Opened pages stay on their own source ids.",
+      "records_written": 500
+    },
+    {
+      "source_id": "t4s-editorial-synthesis-pack-22",
+      "title": "Time4Skill editorial synthesis, pack-22",
+      "publisher": "Time4Skill catalog editorial",
+      "url": null,
+      "download_url": null,
+      "source_type": "editorial_synthesis",
+      "domains": [
+        "cat care",
+        "digital safety",
+        "drawing",
+        "languages",
+        "soil",
+        "charts",
+        "music practice"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "not an external source",
+      "completeness": "500 new candidate rows appended. Some decisions reuse older candidate ids. Level text is editorial except where a decision says page_checked.",
+      "license": "Original editorial text for this catalog.",
+      "attribution_required": "None. Do not cite this source as an outside authority.",
+      "notes": "Labeled editorial_synthesis. High-risk procedures were not written. Opened pages stay on their own source ids.",
+      "records_written": 500
+    },
+    {
+      "source_id": "rspca-cat-litter-tray",
+      "title": "Creating a good home for cats: litter trays",
+      "publisher": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats/environment/litter",
+      "download_url": null,
+      "source_type": "welfare guidance",
+      "domains": [
+        "cat care"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The litter-tray page was opened. Levels adapt the placement, cleaning rhythm, gradual change, tray count, accident cleaning, and depth. They are not a quotation.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name RSPCA and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. Does not authorise punishment or a medical treatment.",
+      "records_written": 6
+    },
+    {
+      "source_id": "rspca-cat-environment",
+      "title": "Creating a good home for your cat",
+      "publisher": "RSPCA",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats/environment",
+      "download_url": null,
+      "source_type": "welfare guidance",
+      "domains": [
+        "cat care"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The environment page was opened. Levels adapt hides, a high rest, the carrier, settling after a move, a recall cue, and indoor play.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name RSPCA and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. The two-to-three-week indoor period is the page's own figure. No road or medical procedure.",
+      "records_written": 6
+    },
+    {
+      "source_id": "ncsc-spot-scams",
+      "title": "Phishing: how to spot and report the signs",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams",
+      "download_url": null,
+      "source_type": "official guidance",
+      "domains": [
+        "digital safety"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The spot-scams page was opened. Levels adapt stopping, naming the pressure, checking a trusted number, leaving an email QR code, and reviewing one public detail.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name UK National Cyber Security Centre and the page URL when citing the source.",
+      "notes": "Reviewed by NCSC on 5 September 2022, version 2.0. Opened 2026-10-18. No phishing method is written.",
+      "records_written": 4
+    },
+    {
+      "source_id": "ncsc-report-scam-email",
+      "title": "Report a scam email",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-email",
+      "download_url": null,
+      "source_type": "official guidance",
+      "domains": [
+        "digital safety"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The report page was opened. Levels adapt forwarding without clicking, and choosing Report Fraud when money is already lost.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name UK National Cyber Security Centre and the page URL when citing the source.",
+      "notes": "Reviewed by NCSC on 5 September 2022, version 2.0. Opened 2026-10-18. The reporting address is the one printed on that page.",
+      "records_written": 2
+    },
+    {
+      "source_id": "nga-drawing-everyday-objects",
+      "title": "Lesson: drawing everyday objects",
+      "publisher": "National Gallery of Art",
+      "url": "https://www.nga.gov/learn/teachers/lessons-activities/process-and-product/drawing/lesson-drawing-everyday-objects.html",
+      "download_url": null,
+      "source_type": "museum lesson",
+      "domains": [
+        "drawing"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The lesson page was opened. Levels adapt scribble, gesture, pressure, contour, hatching, and crosshatching. They are not the lesson copied as criteria.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name National Gallery of Art and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. Times such as one minute and two minutes are the lesson's own limits for those exercises.",
+      "records_written": 6
+    },
+    {
+      "source_id": "tate-intro-to-sketching",
+      "title": "Introduction to Sketching",
+      "publisher": "Tate",
+      "url": "https://www.tate.org.uk/whats-on/tate-britain/intro-to-sketching",
+      "download_url": null,
+      "source_type": "museum workshop page",
+      "domains": [
+        "drawing"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The workshop page was opened. It names blind contour, HB against 6B, stippling, and the choice of hatching or crosshatching. It does not teach those methods in full. Levels are an editorial practice of the named techniques.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name Tate and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. A workshop listing, not a downloaded handbook. Burnishing and scraping were named and not turned into skills.",
+      "records_written": 4
+    },
+    {
+      "source_id": "coe-cefr-global-scale",
+      "title": "CEFR Table 1, common reference levels, global scale",
+      "publisher": "Council of Europe",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale",
+      "download_url": null,
+      "source_type": "curriculum framework",
+      "domains": [
+        "languages"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The global-scale table was opened. Seven practices adapt A1 and A2 can-do ideas. The scale itself is not pasted as levels, and there is not one skill per language.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name Council of Europe and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. C1 and C2 were read and not turned into a single broad skill.",
+      "records_written": 7
+    },
+    {
+      "source_id": "rhs-soil-texture-test",
+      "title": "Soil texture test",
+      "publisher": "Royal Horticultural Society",
+      "url": "https://www.rhs.org.uk/education-learning/school-gardening/resources/curriculum-linked/soil-texture-test",
+      "download_url": null,
+      "source_type": "education page",
+      "domains": [
+        "soil"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The school soil-texture page was opened. Levels adapt sampling about 15 cm down and telling sticky soil from gritty soil, then washing hands.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name Royal Horticultural Society and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. Not a fertilizer or pesticide instruction.",
+      "records_written": 2
+    },
+    {
+      "source_id": "ahdb-soil-texture-by-hand",
+      "title": "How to determine soil texture",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/knowledge-library/how-to-determine-soil-texture",
+      "download_url": null,
+      "source_type": "industry guidance",
+      "domains": [
+        "soil"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The hand-texture page was opened. Levels adapt wetting a spoonful, trying a ball, and stopping when the feel is unclear. The eleven class names are not separate skills.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name AHDB and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. The page says a laboratory result is more accurate. No amendment recipe.",
+      "records_written": 2
+    },
+    {
+      "source_id": "ons-bar-charts",
+      "title": "Bar chart guidance",
+      "publisher": "Office for National Statistics",
+      "url": "https://service-manual.ons.gov.uk/data-visualisation/chart-types/bar-charts",
+      "download_url": null,
+      "source_type": "service manual",
+      "domains": [
+        "data reading"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The bar-chart page was opened. Levels adapt a zero axis, bars for categories and columns for time, ordering by size, and reading one bar from zero.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name Office for National Statistics and the page URL when citing the source.",
+      "notes": "Opened 2026-10-18. Not a licence to republish ONS statistics.",
+      "records_written": 4
+    },
+    {
+      "source_id": "abrsm-exam-guide-2018",
+      "title": "Your Guide to ABRSM Music Exams",
+      "publisher": "ABRSM, via a 2018 PDF copy hosted by New School of Music",
+      "url": "https://www.newschool.ie/wp-content/uploads/2018/08/Your-Guide-to-ABRSM-Music-Exams.pdf",
+      "download_url": null,
+      "source_type": "exam-candidate guide",
+      "domains": [
+        "music practice"
+      ],
+      "retrieved_on": "2026-10-18",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The PDF text was retrieved. Levels adapt quiet warm-up, a last tuning check, bringing an accompanist, handing over a piece list, a short look before sight-reading, and a breath before a few notes.",
+      "license": "See the page for reuse terms. The catalog stores an editorial adaptation, not a copy of the page.",
+      "attribution_required": "Name ABRSM, via a 2018 PDF copy hosted by New School of Music and the page URL when citing the source.",
+      "notes": "Retrieved 2026-10-18. This is a third-party copy of an ABRSM guide, not a page on abrsm.org and not the current syllabus. Exam grades were not made into skills.",
+      "records_written": 6
+    },
+    {
+      "source_id": "t4s-editorial-synthesis-pack-23",
+      "title": "Time4Skill editorial synthesis, pack-23",
+      "publisher": "Time4Skill catalog editorial",
+      "url": null,
+      "download_url": null,
+      "source_type": "editorial_synthesis",
+      "domains": [
+        "textiles",
+        "chess",
+        "rounds"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "not an external source",
+      "completeness": "Colour variants and a few broad ideas were rejected here. Opened pages have their own source ids.",
+      "license": "Original editorial text for this catalog.",
+      "attribution_required": "None. Do not cite this source as an outside authority.",
+      "notes": "Not an external page.",
+      "records_written": 89
+    },
+    {
+      "source_id": "rsn-running-stitch",
+      "title": "Running stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/running-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/running-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/running-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-back-stitch",
+      "title": "Back stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/back-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/back-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/back-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-chain-stitch",
+      "title": "Chain stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/chain-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/chain-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/chain-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-satin-stitch",
+      "title": "Satin stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/satin-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/satin-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/satin-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-stem-stitch",
+      "title": "Stem stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/stem-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/stem-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/stem-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-herringbone-stitch",
+      "title": "Herringbone stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/herringbone-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/herringbone-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/herringbone-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-fly-stitch",
+      "title": "Fly stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/fly-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/fly-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/fly-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-split-stitch",
+      "title": "Split stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/split-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/split-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/split-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-detached-chain-stitch",
+      "title": "Detached chain stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/detached-chain-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/detached-chain-stitch. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://rsnstitchbank.org/stitch/detached-chain-stitch. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "fide-laws-chess-2023",
+      "title": "FIDE Laws of Chess taking effect from 1 January 2023",
+      "publisher": "FIDE",
+      "url": "https://handbook.fide.com/chapter/e012023",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Chess"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://handbook.fide.com/chapter/e012023. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://handbook.fide.com/chapter/e012023. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "uua-rounds-and-canons",
+      "title": "Rounds and Canons",
+      "publisher": "Unitarian Universalist Association",
+      "url": "https://www.uua.org/lifespan/re-sources/music/chapter6/rounds-and-canons",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "Music practice"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19: https://www.uua.org/lifespan/re-sources/music/chapter6/rounds-and-canons. Levels adapt the practice. They are not a quotation.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name see notes and the URL when citing the source.",
+      "notes": "Opened 2026-10-19: https://www.uua.org/lifespan/re-sources/music/chapter6/rounds-and-canons. Levels adapt the practice. They are not a quotation.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-stitch-wall",
+      "title": "RSN Stitch Wall",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "textiles"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "The stitch index was opened on 2026-10-19. Names without an opened method page were not given levels.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name Royal School of Needlework and the URL when citing the source.",
+      "notes": "The stitch index was opened on 2026-10-19. Names without an opened method page were not given levels.",
+      "records_written": 393
+    },
+    {
+      "source_id": "nhs-wash-your-hands",
+      "title": "How to wash your hands",
+      "publisher": "NHS",
+      "url": "https://www.nhs.uk/live-well/best-way-to-wash-your-hands/",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-24"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. One wash. Not a treatment.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name NHS and the URL.",
+      "notes": "Opened 2026-10-19. One wash. Not a treatment.",
+      "records_written": 1
+    },
+    {
+      "source_id": "bos-valley-mountain",
+      "title": "Valley and mountain folds",
+      "publisher": "British Origami Society",
+      "url": "https://www.britishorigami.org/cp-resource/valley-mountain-folds/",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-24"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name British Origami Society and the URL.",
+      "notes": "Opened 2026-10-19.",
+      "records_written": 4
+    },
+    {
+      "source_id": "bos-origami-glossary",
+      "title": "Origami glossary",
+      "publisher": "British Origami Society",
+      "url": "https://www.britishorigami.org/cp-resource/origami-glossary/",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-24"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. Untaught techniques have no levels.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name British Origami Society and the URL.",
+      "notes": "Opened 2026-10-19. Untaught techniques have no levels.",
+      "records_written": 71
+    },
+    {
+      "source_id": "os-map-reading",
+      "title": "Map reading",
+      "publisher": "Ordnance Survey",
+      "url": "https://www.ordnancesurvey.co.uk/documents/resources/map-reading.pdf",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-24"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "PDF retrieved 2026-10-19.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name Ordnance Survey and the URL.",
+      "notes": "PDF retrieved 2026-10-19.",
+      "records_written": 2
+    },
+    {
+      "source_id": "rsn-feather-stitch",
+      "title": "Feather stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/feather-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-25"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. Alternating loops. One fly stitch already exists.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name Royal School of Needlework and the URL.",
+      "notes": "Opened 2026-10-19. Alternating loops. One fly stitch already exists.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-long-and-short-stitch",
+      "title": "Long and short stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/long-and-short-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-25"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. Varied length and a split second row.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name Royal School of Needlework and the URL.",
+      "notes": "Opened 2026-10-19. Varied length and a split second row.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-seeding-stitch",
+      "title": "Seeding stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/seeding-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-25"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. Random short stitches, density as shade.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name Royal School of Needlework and the URL.",
+      "notes": "Opened 2026-10-19. Random short stitches, density as shade.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-buttonhole-stitch",
+      "title": "Buttonhole stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/buttonhole-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-25"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. Mapped to blanket stitch because the page says spacing is the only difference.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name Royal School of Needlework and the URL.",
+      "notes": "Opened 2026-10-19. Mapped to blanket stitch because the page says spacing is the only difference.",
+      "records_written": 0
+    },
+    {
+      "source_id": "bbc-good-food-basic-omelette",
+      "title": "Basic omelette recipe",
+      "publisher": "BBC Good Food",
+      "url": "https://www.bbcgoodfood.com/recipes/basic-omelette",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-25"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. Folded omelette. Thick omelette not taught.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name BBC Good Food and the URL.",
+      "notes": "Opened 2026-10-19. Folded omelette. Thick omelette not taught.",
+      "records_written": 1
+    },
+    {
+      "source_id": "woodland-trust-identify-trees",
+      "title": "How to identify trees",
+      "publisher": "Woodland Trust",
+      "url": "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/how-to-identify-trees/",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-25"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Opened 2026-10-19. Bud arrangement and needles versus scales. Simple versus compound already existed.",
+      "license": "See the page. The catalog stores an editorial adaptation, not a copy.",
+      "attribution_required": "Name Woodland Trust and the URL.",
+      "notes": "Opened 2026-10-19. Bud arrangement and needles versus scales. Simple versus compound already existed.",
+      "records_written": 2
+    },
+    {
+      "source_id": "rsn-fishbone-stitch",
+      "title": "Fishbone stitch",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/fishbone-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-26"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Diagonal leaf filling.",
+      "license": "See the page. Adaptation, not a copy.",
+      "attribution_required": "Name the Royal School of Needlework and the URL.",
+      "notes": "Opened 2026-10-19.",
+      "records_written": 1
+    },
+    {
+      "source_id": "bbc-good-food-scrambled-eggs",
+      "title": "How to make scrambled eggs",
+      "publisher": "BBC Good Food",
+      "url": "https://www.bbcgoodfood.com/howto/guide/how-make-scrambled-eggs",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-26"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Pan method. Microwave page not opened.",
+      "license": "See the page. Adaptation, not a copy.",
+      "attribution_required": "Name BBC Good Food and the URL.",
+      "notes": "Opened 2026-10-19.",
+      "records_written": 1
+    },
+    {
+      "source_id": "rsn-couching-stitch",
+      "title": "Couching",
+      "publisher": "Royal School of Needlework",
+      "url": "https://rsnstitchbank.org/stitch/couching-stitch",
+      "download_url": null,
+      "source_type": "opened page",
+      "domains": [
+        "pack-27"
+      ],
+      "retrieved_on": "2026-10-19",
+      "language": "en",
+      "access_status": "page opened",
+      "completeness": "Laid thread caught by a finer thread. The shorter /stitch/couching URL returned no content.",
+      "license": "See the page. Adaptation, not a copy.",
+      "attribution_required": "Name the Royal School of Needlework and the URL.",
+      "notes": "Opened 2026-10-19. Variants were not opened.",
+      "records_written": 1
     }
   ],
   "catalog_002_retrieved_on": "2026-10-18"

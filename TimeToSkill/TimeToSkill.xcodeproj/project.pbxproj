@@ -79,12 +79,15 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/CatalogQueryTests.swift,
+				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
 				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
 				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
 				Tests/TimeToSkillTests/StatsSessionActivityTests.swift,
 				Tests/TimeToSkillTests/TimePerspectiveMatcherTests.swift,
 				Tests/TimeToSkillTests/TrackedTimeCalculationTests.swift,
+				Tests/TimeToSkillUITests/CatalogScreenUITests.swift,
 				Tests/TimeToSkillUITests/StartViewUITests.swift,
 				Tests/TimeToSkillUITests/TimeToSkillUITestsLaunchTests.swift,
 			);
@@ -94,6 +97,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/CatalogQueryTests.swift,
+				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
 				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
 				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
@@ -106,6 +111,7 @@
 		0713AE2E2DA3161E005F9E07 /* Exceptions for "TimeToSkill" folder in "Time4SkillUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Tests/TimeToSkillUITests/CatalogScreenUITests.swift,
 				Tests/TimeToSkillUITests/StartViewUITests.swift,
 				Tests/TimeToSkillUITests/TimeToSkillUITestsLaunchTests.swift,
 			);
@@ -115,12 +121,15 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/CatalogQueryTests.swift,
+				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
 				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
 				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
 				Tests/TimeToSkillTests/StatsSessionActivityTests.swift,
 				Tests/TimeToSkillTests/TimePerspectiveMatcherTests.swift,
 				Tests/TimeToSkillTests/TrackedTimeCalculationTests.swift,
+				Tests/TimeToSkillUITests/CatalogScreenUITests.swift,
 				Tests/TimeToSkillUITests/StartViewUITests.swift,
 				Tests/TimeToSkillUITests/TimeToSkillUITestsLaunchTests.swift,
 			);

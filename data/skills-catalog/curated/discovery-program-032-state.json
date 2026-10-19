@@ -1,0 +1,88 @@
+{
+  "program_id": "T4S-CATALOG-032",
+  "updated_on": "2026-10-19",
+  "status": "paused_diminishing_returns",
+  "last_completed_stage": "pack-27",
+  "next_pack_id": "pack-28-not-opened",
+  "do_not_open_pack_26_until": "A method page has been opened and compared with v20.",
+  "catalog": {
+    "current": "data/skills-catalog/curated/pilot-proposals-v22.jsonl",
+    "active_proposals": 2102,
+    "previous": "data/skills-catalog/curated/pilot-proposals-v21.jsonl",
+    "previous_count": 2101,
+    "production_approved_count": 0,
+    "next_origin": "practice-expansion-28",
+    "next_prefix": "c034",
+    "next_version_file": "data/skills-catalog/curated/pilot-proposals-v23.jsonl"
+  },
+  "counters": {
+    "unique_analyzed_candidates": 651,
+    "target": 20000,
+    "sprint_031_unique": 643,
+    "pack_25_new_unique": 5,
+    "pack_25_decision_rows": 23,
+    "pack_25_new_proposals": 6,
+    "pack_25_without_opened_method": 2,
+    "note": "Feather stitch, long and short stitch, seeding stitch and buttonhole stitch were already counted in the 643. Opening their method pages does not add them again. Cheese, ham and herb omelettes, and six tree portraits, are variants of candidates already in this batch.",
+    "pack_26_new_unique": 2,
+    "pack_26_new_proposals": 2,
+    "pack_27_new_unique": 1,
+    "pack_27_new_proposals": 1
+  },
+  "domains_done_in_032": [
+    "embroidery methods",
+    "folded omelette",
+    "winter bud arrangement",
+    "conifer needles and scales"
+  ],
+  "sources_opened_pack_25": [
+    "https://rsnstitchbank.org/stitch/feather-stitch",
+    "https://rsnstitchbank.org/stitch/long-and-short-stitch",
+    "https://rsnstitchbank.org/stitch/seeding-stitch",
+    "https://rsnstitchbank.org/stitch/buttonhole-stitch",
+    "https://www.bbcgoodfood.com/recipes/basic-omelette",
+    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/how-to-identify-trees/"
+  ],
+  "not_opened": [
+    "https://rsnstitchbank.org/stitch/couching"
+  ],
+  "still_open": {
+    "risks": 186,
+    "gaps": 59,
+    "needs_source_research": 29,
+    "do_not_close": [
+      "gap-pack-23-stitch-methods-unopened",
+      "gap-pack-24-origami-methods-unopened",
+      "gap-pack-12-high-risk-for-review through gap-pack-22-high-risk-for-review"
+    ]
+  },
+  "resume": [
+    "Read this file, then confirm v20 has 2099 lines and v21 does not exist.",
+    "Open one instructional page, not an index.",
+    "Write pack-26 only for skills whose method you opened and that are not already in v20.",
+    "Do not commit, push, or rewrite v20."
+  ],
+  "next_urls": [
+    "https://rsnstitchbank.org/stitch/fishbone-stitch",
+    "https://rsnstitchbank.org/stitch/couching",
+    "https://www.bbcgoodfood.com/recipes/perfect-scrambled-eggs"
+  ],
+  "pause_reason": "Pack-26 dodał dwie umiejętności z otwartych metod. Dalsze indeksy dają duplikaty. Ściana ściegów RSN i glosariusz origami nadal mają nazwy bez otwartej metody. Nie są wyczerpane. 033 przechodzi do audytu i produktu.",
+  "unresolved_trails": [
+    "https://rsnstitchbank.org/stitch/couching",
+    "gap-pack-23-stitch-methods-unopened",
+    "gap-pack-24-origami-methods-unopened",
+    "gap-pack-25-untaught-variants"
+  ],
+  "release_readiness_034": {
+    "checked_on": "2026-10-19",
+    "couching_empty_url": "https://rsnstitchbank.org/stitch/couching",
+    "couching_empty_result": "empty content, not opened",
+    "method_opened": "https://rsnstitchbank.org/stitch/couching-stitch",
+    "new_proposals": 1,
+    "new_version": "data/skills-catalog/curated/pilot-proposals-v22.jsonl",
+    "active_proposals": 2102,
+    "unique_analyzed_candidates": 651,
+    "origami": "glossary and geometry essay are not method pages; no new origami proposal"
+  }
+}

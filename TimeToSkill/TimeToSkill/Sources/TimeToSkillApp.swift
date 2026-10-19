@@ -26,7 +26,7 @@ struct Time4SkillApp: App {
                 .preferredColorScheme(.dark) // Force dark
                 .environment(\.colorScheme, .dark) // Override all views
         }
-        .modelContainer(for: [Skill.self, ExemplarySkill.self, Counter.self, TimeIntervalEntry.self])
+        .modelContainer(for: [Skill.self, ExemplarySkill.self, Counter.self, TimeIntervalEntry.self, TimeBudget.self])
         .macOSDefaultWindowSize(width: 1000, height: 760)
     }
 }

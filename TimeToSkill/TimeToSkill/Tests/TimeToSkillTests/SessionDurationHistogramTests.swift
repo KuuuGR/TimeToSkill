@@ -20,7 +20,7 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertNil(TimerSessionSample.minutes(sourceRaw: "", durationMinutes: 10))
     }
 
-    func testHugeDurationStaysInTheOverflowBin() {
+    func testHugeDurationStaysInTheOverflowBin() throws {
         let histogram = SessionDurationHistogram(minutes: [1e20], binWidth: 5)
         let overflow = try XCTUnwrap(histogram.bins.last)
         XCTAssertEqual(histogram.bins.reduce(0) { $0 + $1.count }, 1)
@@ -69,7 +69,7 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertEqual(histogram.bins.last?.count, 12)
     }
 
-    func testExactBoundaryFallsInTheNextFiniteBin() {
+    func testExactBoundaryFallsInTheNextFiniteBin() throws {
         let histogram = SessionDurationHistogram(minutes: [15], binWidth: 15)
         XCTAssertEqual(histogram.bins.map(\.count), [0, 1])
         let last = try XCTUnwrap(histogram.bins.last)
@@ -78,7 +78,7 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertFalse(last.isOverflow)
     }
 
-    func testLargeObservationStaysInTheOverflowBin() {
+    func testLargeObservationStaysInTheOverflowBin() throws {
         let histogram = SessionDurationHistogram(minutes: [1_000_000], binWidth: 60)
         let last = try XCTUnwrap(histogram.bins.last)
         let cutoff = 60 * Double(SessionDurationHistogram.maximumRegularBinCount)
@@ -90,7 +90,7 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(1_000_000, last.lowerMinutes)
     }
 
-    func testOverflowTailIsNotARegularWidthBin() {
+    func testOverflowTailIsNotARegularWidthBin() throws {
         let regular = Array(repeating: 30.0, count: 9)
         let histogram = SessionDurationHistogram(minutes: regular + [10_000], binWidth: 15)
         let overflow = try XCTUnwrap(histogram.bins.last)
@@ -155,7 +155,7 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertEqual(expected, 4.331927987, accuracy: 0.001)
     }
 
-    func testMixedSampleShowsAFiniteCurveOnTheSameScaleAsTheBins() {
+    func testMixedSampleShowsAFiniteCurveOnTheSameScaleAsTheBins() throws {
         let minutes = [10, 15, 20, 25, 30, 35, 40, 50, 60, 80].map(Double.init)
         let histogram = SessionDurationHistogram(minutes: minutes, binWidth: 15)
         XCTAssertTrue(histogram.showsReferenceCurve)

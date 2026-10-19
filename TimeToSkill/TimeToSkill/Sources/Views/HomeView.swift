@@ -16,13 +16,12 @@ import SwiftData
 /// Sections offered as shortcut cards on the home screen. Each one maps to a
 /// view that already existed in the app - nothing new is introduced.
 enum HomeSection: String, CaseIterable, Identifiable {
-    case counters, theory, skills, about
+    case theory, skills, about
 
     var id: String { rawValue }
 
     var titleKey: LocalizedStringKey {
         switch self {
-        case .counters: return "main_manage_counters"
         case .theory: return "main_learning_theory"
         case .skills: return "main_exemplary_skills"
         case .about: return "main_about_app"
@@ -31,7 +30,6 @@ enum HomeSection: String, CaseIterable, Identifiable {
 
     var systemImage: String {
         switch self {
-        case .counters: return "number"
         case .theory: return "book"
         case .skills: return "star.fill"
         case .about: return "info.circle"
@@ -40,7 +38,6 @@ enum HomeSection: String, CaseIterable, Identifiable {
 
     @ViewBuilder var destination: some View {
         switch self {
-        case .counters: ManageCountersView()
         case .theory: TheoryView()
         case .skills: ExemplarySkillsView()
         case .about: AboutView()
@@ -154,14 +151,24 @@ struct HomeView: View {
             .foregroundColor(AppColors.onSurface)
             .accessibilityIdentifier("HomeTotalTrackedLabel")
 
-            NavigationLink(destination: StartView()) {
-                Label(LocalizedStringKey("main_manage_trackers"), systemImage: "bolt.fill")
-                    .font(AppTypography.headline)
-                    .frame(maxWidth: .infinity)
+            HStack(spacing: 10) {
+                NavigationLink(destination: StartView()) {
+                    Label(LocalizedStringKey("main_manage_trackers"), systemImage: "bolt.fill")
+                        .font(AppTypography.headline)
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .tint(AppColors.accent)
+
+                NavigationLink(destination: ManageCountersView()) {
+                    Label(LocalizedStringKey("main_manage_counters"), systemImage: "number")
+                        .font(AppTypography.headline)
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.large)
             }
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-            .tint(AppColors.accent)
             .padding(.top, 4)
         }
         .padding(.vertical, 24)

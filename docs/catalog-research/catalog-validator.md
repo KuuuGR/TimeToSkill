@@ -20,7 +20,7 @@ python3 scripts/catalog/validate_skill_catalog.py data/skills-catalog/pilots/tec
 python3 scripts/catalog/validate_skill_catalog.py data/skills-catalog/pilots/communication-cognition-nature/approved-skill-pilot-pack-04-communication-cognition-nature.jsonl
 ```
 
-Wspólny rejestr propozycji ma inny schemat (`proposal_id`, status `pilot_proposal`) i idzie osobnym skryptem. Dozwolone `origin_pilot`: `kitchen-finance`, `movement-sport-dance`, `technology-science-niches`, `communication-cognition-nature`, `general-practical-skills`, `broad-practice-expansion`, `practice-expansion-13`, `practice-expansion-14`, `practice-expansion-15`, `practice-expansion-16`. Aktualny plik to `curated/pilot-proposals-v11.jsonl`.
+Wspólny rejestr propozycji ma inny schemat (`proposal_id`, status `pilot_proposal`) i idzie osobnym skryptem. Dozwolone `origin_pilot`: `kitchen-finance`, `movement-sport-dance`, `technology-science-niches`, `communication-cognition-nature`, `general-practical-skills`, `broad-practice-expansion`, `practice-expansion-13`, `practice-expansion-14`, `practice-expansion-15`, `practice-expansion-16`, `practice-expansion-17`, `practice-expansion-18`, `practice-expansion-19`, `practice-expansion-20`, `practice-expansion-21`, `practice-expansion-22`, `practice-expansion-23`, `practice-expansion-24`, `practice-expansion-25`, `practice-expansion-26`, `practice-expansion-27`. Aktualny plik to `curated/pilot-proposals-v22.jsonl`.
 
 ```bash
 python3 scripts/catalog/validate_pilot_proposals.py data/skills-catalog/curated/pilot-proposals-v11.jsonl

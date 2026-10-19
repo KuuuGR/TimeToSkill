@@ -15,6 +15,7 @@ struct ExemplarySkillDetailView: View {
     let onEvaluate: (Int, String) -> Void
     
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var context
     @State private var selectedRating: Int = 1
     @State private var verificationCode: String = ""
     @State private var showingVerification = false
@@ -28,21 +29,26 @@ struct ExemplarySkillDetailView: View {
     }
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                skillDetailContent
-            }
-            .macOSSheetMinSize(width: 560, height: 620)
-            .navigationTitle(LocalizedStringKey("skill_details_title"))
-            .inlineNavigationBarTitle()
-            .toolbar {
+        ScrollView {
+            skillDetailContent
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .navigationTitle(LocalizedStringKey("skill_details_title"))
+        .inlineNavigationBarTitle()
+        .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(LocalizedStringKey("close")) {
                         dismiss()
                     }
                 }
-                ToolbarItem(placement: .primaryAction) {
-                    // Small gear button on the right to reveal Update & Verify
+                ToolbarItemGroup(placement: .primaryAction) {
+                    Button {
+                        skill.isFavorite.toggle()
+                        try? context.save()
+                    } label: {
+                        Image(systemName: skill.isFavorite ? "heart.fill" : "heart")
+                    }
+                    .accessibilityLabel(Text(LocalizedStringKey(skill.isFavorite ? "catalog_favorite_remove" : "catalog_favorite_add")))
                     if skill.isObtained {
                         Button(action: { withAnimation { showUpdateSection.toggle() } }) {
                             Image(systemName: "gearshape")
@@ -70,10 +76,9 @@ struct ExemplarySkillDetailView: View {
                     }
                 }
             }
-            .onAppear {
-                // Initialize picker with current rating for re-evaluation
-                selectedRating = max(0, min(3, skill.userRating ?? 0))
-            }
+        .onAppear {
+            // Initialize picker with current rating for re-evaluation
+            selectedRating = max(0, min(3, skill.userRating ?? 0))
         }
     }
     
@@ -104,10 +109,15 @@ struct ExemplarySkillDetailView: View {
                         }
                         
                         VStack(spacing: 8) {
-                            Text(skill.title)
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.center)
+                            HStack(spacing: 8) {
+                                Text(skill.title)
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.center)
+                                if skill.isObtained {
+                                    SkillCrystalBadge()
+                                }
+                            }
                             
                             Text(skill.category)
                                 .font(.subheadline)

@@ -12,6 +12,7 @@ struct StartView: View {
 
     // Using AppStorage for automatic UserDefaults persistence
     @AppStorage("selectedSortOption") private var selectedSortRawValue: String = SkillSortOption.nameAsc.rawValue
+    @AppStorage("TrackerTool") private var trackerToolRaw: String = "progress"
 
     enum SkillSortOption: String, CaseIterable, Identifiable {
         case nameAsc = "sort_name_asc"
@@ -53,6 +54,9 @@ struct StartView: View {
                 TimeDistributionView(skill: skill, showsDoneButton: true)
             }
         }
+        .onAppear {
+            PreviewProgressSeeder.apply(context: context)
+        }
     }
 
     @ViewBuilder
@@ -74,6 +78,18 @@ struct StartView: View {
             .padding(.horizontal)
             .padding(.bottom, 8)
 
+            Picker(LocalizedStringKey("tracker_tool_label"), selection: $trackerToolRaw) {
+                Text(LocalizedStringKey("tracker_tool_progress")).tag("progress")
+                Text(LocalizedStringKey("tracker_tool_balance")).tag("balance")
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal)
+            .accessibilityIdentifier("TrackerToolPicker")
+
+            if trackerToolRaw == "balance" {
+                TimeBalanceView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else {
             // Content with skills and FAB
             ZStack {
                 let sorted = sortedSkills(at: now)
@@ -121,6 +137,7 @@ struct StartView: View {
                         .padding(.bottom, 100)
                         .macOSContentWidth(760)
                     }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
 
                 #if !os(macOS)
@@ -140,7 +157,9 @@ struct StartView: View {
                 }
                 #endif
             }
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     /// Toggles the timer state for a given skill.

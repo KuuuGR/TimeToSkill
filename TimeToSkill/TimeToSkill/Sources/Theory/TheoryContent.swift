@@ -48,11 +48,29 @@ struct TheoryTopic: Identifiable, Hashable {
     let findingsIntroKey: String?
     let findings: [TheoryFinding]
     let links: [TheoryLink]
+    /// App hour threshold this topic is about. Nil means the topic is not a threshold.
+    var hourMark: Int? = nil
+}
+
+struct TheoryChapter: Identifiable, Hashable {
+    let id: String
+    let hourMark: Int
+    let titleKey: String
+    let leadKey: String
+    let mechanismTitleKey: String
+    let mechanismKey: String
+    let exampleKey: String
+    let caveatKey: String
+    let takeawayKey: String
+    /// Existing topics whose citations and links are shown. No new sources.
+    let sourceTopicIDs: [String]
 }
 
 struct TheoryMilestone: Identifiable, Hashable {
     let id: String
     let titleKey: String
+    /// Hour value already used by the progress palette.
+    let hourMark: Int
 }
 
 enum TheoryCatalog {
@@ -102,7 +120,8 @@ enum TheoryCatalog {
             links: [
                 TheoryLink(id: "theory.ericsson.1993.via10k", labelKey: "theory_link_ericsson_1993", url: url("https://doi.org/10.1037/0033-295X.100.3.363")),
                 TheoryLink(id: "theory.macnamara.2019", labelKey: "theory_link_macnamara_2019", url: url("https://pmc.ncbi.nlm.nih.gov/articles/PMC6731745/"))
-            ]
+            ],
+            hourMark: 10_000
         ),
         TheoryTopic(
             id: "theory.macnamara.variance",
@@ -161,10 +180,66 @@ enum TheoryCatalog {
 
     /// Hour marks already used by the app. They are labels for time spent,
     /// not a change to the 21-hour progress band.
+    static let chapters: [TheoryChapter] = [
+        TheoryChapter(
+            id: "chapter.21",
+            hourMark: 21,
+            titleKey: "theory_chapter_21_title",
+            leadKey: "theory_chapter_21_lead",
+            mechanismTitleKey: "theory_chapter_21_mechanism_title",
+            mechanismKey: "theory_chapter_21_mechanism",
+            exampleKey: "theory_chapter_21_example",
+            caveatKey: "theory_topic_first20_limitation",
+            takeawayKey: "theory_topic_first20_takeaway",
+            sourceTopicIDs: ["theory.kaufman.first20"]
+        ),
+        TheoryChapter(
+            id: "chapter.100",
+            hourMark: 100,
+            titleKey: "theory_chapter_100_title",
+            leadKey: "theory_chapter_100_lead",
+            mechanismTitleKey: "theory_chapter_100_mechanism_title",
+            mechanismKey: "theory_chapter_100_mechanism",
+            exampleKey: "theory_chapter_100_example",
+            caveatKey: "theory_chapter_100_caveat",
+            takeawayKey: "theory_chapter_100_takeaway",
+            sourceTopicIDs: ["theory.cepeda.distributed", "theory.lally.habit"]
+        ),
+        TheoryChapter(
+            id: "chapter.1000",
+            hourMark: 1_000,
+            titleKey: "theory_chapter_1000_title",
+            leadKey: "theory_chapter_1000_lead",
+            mechanismTitleKey: "theory_chapter_1000_mechanism_title",
+            mechanismKey: "theory_chapter_1000_mechanism",
+            exampleKey: "theory_chapter_1000_example",
+            caveatKey: "theory_chapter_1000_caveat",
+            takeawayKey: "theory_topic_deliberate_takeaway",
+            sourceTopicIDs: ["theory.ericsson.deliberate", "theory.macnamara.variance"]
+        ),
+        TheoryChapter(
+            id: "chapter.10000",
+            hourMark: 10_000,
+            titleKey: "theory_chapter_10000_title",
+            leadKey: "theory_chapter_10000_lead",
+            mechanismTitleKey: "theory_chapter_10000_mechanism_title",
+            mechanismKey: "theory_chapter_10000_mechanism",
+            exampleKey: "theory_chapter_10000_example",
+            caveatKey: "theory_topic_10k_limitation",
+            takeawayKey: "theory_topic_10k_takeaway",
+            sourceTopicIDs: ["theory.tenthousand.popular"]
+        )
+    ]
+
+    static func chapter(hourMark: Int) -> TheoryChapter? {
+        chapters.first { $0.hourMark == hourMark }
+    }
+
     static let milestones: [TheoryMilestone] = [
-        TheoryMilestone(id: "milestone.100", titleKey: "theory_milestone_100_title"),
-        TheoryMilestone(id: "milestone.1000", titleKey: "theory_milestone_1000_title"),
-        TheoryMilestone(id: "milestone.10000", titleKey: "theory_milestone_10000_title")
+        TheoryMilestone(id: "milestone.21", titleKey: "theory_milestone_21_title", hourMark: 21),
+        TheoryMilestone(id: "milestone.100", titleKey: "theory_milestone_100_title", hourMark: 100),
+        TheoryMilestone(id: "milestone.1000", titleKey: "theory_milestone_1000_title", hourMark: 1_000),
+        TheoryMilestone(id: "milestone.10000", titleKey: "theory_milestone_10000_title", hourMark: 10_000)
     ]
 
     static func topic(id: String) -> TheoryTopic? {

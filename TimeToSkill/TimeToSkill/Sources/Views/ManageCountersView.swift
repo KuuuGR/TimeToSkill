@@ -54,6 +54,11 @@ struct ManageCountersView: View {
                             ForEach(counters) { counter in
                             ZStack(alignment: .topTrailing) {
                                 VStack(spacing: 8) {
+                                    if !counter.symbol.isEmpty {
+                                        Text(counter.symbol)
+                                            .font(.title3)
+                                            .accessibilityHidden(true)
+                                    }
                                     CounterRing(value: counter.value, stageMax: counter.currentStageMax)
                                         .frame(width: 72, height: 72)
                                         .contentShape(Circle())
@@ -73,6 +78,23 @@ struct ManageCountersView: View {
                                     Text("\(counter.value)")
                                         .font(.caption2)
                                         .foregroundColor(.secondary)
+                                    CrystalProgressBar(
+                                        progress: counter.barFraction,
+                                        hours: 0,
+                                        paletteOverride: counter.barPalette,
+                                        height: 8,
+                                        animated: false
+                                    )
+                                    if counter.kind == .elapsedDays {
+                                        Button(LocalizedStringKey("counter_refresh")) {
+                                            if counter.refreshFromAnchor() {
+                                                try? context.save()
+                                            }
+                                        }
+                                        .font(.caption2)
+                                        .buttonStyle(.bordered)
+                                        .accessibilityIdentifier("CounterRefresh_\(counter.id.uuidString)")
+                                    }
                                 }
                                 .padding(8)
                                 .background(RoundedRectangle(cornerRadius: 12).fill(Color.gray.opacity(0.06)))
@@ -92,7 +114,9 @@ struct ManageCountersView: View {
                         .macOSContentWidth(760)
                     }
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle(LocalizedStringKey("manage_counters_title"))
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
@@ -102,8 +126,13 @@ struct ManageCountersView: View {
                 }
             }
             .sheet(isPresented: $showingNew) {
-                NewCounterSheet { title, step, thresholds in
-                    let model = Counter(title: title, step: step, thresholds: thresholds)
+                NewCounterSheet { title, symbol, step, thresholds, kind, anchor in
+                    let model = Counter(title: title, symbol: symbol, step: step, thresholds: thresholds)
+                    model.kind = kind
+                    model.anchorDay = kind == .elapsedDays ? anchor : nil
+                    if kind == .elapsedDays {
+                        model.refreshFromAnchor()
+                    }
                     context.insert(model)
                     try? context.save()
                 }
@@ -115,15 +144,26 @@ struct ManageCountersView: View {
 struct NewCounterSheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var title: String = ""
+    @State private var symbol: String = ""
     @State private var step: Int = 1
     @State private var thresholdsText: String = "100,200,500,10000,30000,3000000"
-    let onCreate: (String, Int, [Int]) -> Void
+    @State private var kind: CounterKind = .manual
+    @State private var anchor: Date = .now
+    let onCreate: (String, String, Int, [Int], CounterKind, Date?) -> Void
     
     var body: some View {
         NavigationStack {
             Form {
                 Section(LocalizedStringKey("counter_details_section")) {
+                    SkillEmojiPickerButton(selection: $symbol)
                     TextField(LocalizedStringKey("counter_title_placeholder"), text: $title)
+                    Picker(LocalizedStringKey("counter_kind_label"), selection: $kind) {
+                        Text(LocalizedStringKey("counter_kind_manual")).tag(CounterKind.manual)
+                        Text(LocalizedStringKey("counter_kind_elapsed")).tag(CounterKind.elapsedDays)
+                    }
+                    if kind == .elapsedDays {
+                        DatePicker(LocalizedStringKey("counter_anchor_label"), selection: $anchor, displayedComponents: .date)
+                    }
                     Stepper(value: $step, in: 1...1000) {
                         Text(String(format: NSLocalizedString("counter_step_label%d", comment: ""), step))
                     }
@@ -138,7 +178,7 @@ struct NewCounterSheet: View {
                 ToolbarItem(placement: .primaryAction) {
                     Button(LocalizedStringKey("create")) {
                         let limits = thresholdsText.split(separator: ",").compactMap { Int($0.trimmingCharacters(in: .whitespaces)) }.sorted()
-                        onCreate(title, step, limits)
+                        onCreate(title, symbol, step, limits, kind, kind == .elapsedDays ? anchor : nil)
                         dismiss()
                     }
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
@@ -149,8 +189,11 @@ struct NewCounterSheet: View {
 }
 
 struct CounterDetailView: View {
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
     @Bindable var counter: Counter
     @State private var valueText: String = ""
+    @State private var showDeleteConfirmation = false
     
     var body: some View {
         Form {
@@ -168,9 +211,30 @@ struct CounterDetailView: View {
                     Text(LocalizedStringKey("counter_no_thresholds"))
                         .foregroundColor(.secondary)
                 }
+                CrystalProgressBar(
+                    progress: counter.barFraction,
+                    hours: 0,
+                    paletteOverride: counter.barPalette,
+                    height: 12,
+                    animated: false
+                )
+                if counter.kind == .elapsedDays {
+                    Button(LocalizedStringKey("counter_refresh")) {
+                        if counter.refreshFromAnchor() {
+                            try? context.save()
+                        }
+                    }
+                    .accessibilityIdentifier("CounterRefresh_\(counter.id.uuidString)")
+                    if counter.anchorDay == nil {
+                        Text(LocalizedStringKey("counter_refresh_unavailable"))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
                 Button(LocalizedStringKey("counter_reset_to_zero"), role: .destructive) { counter.value = 0; counter.updatedAt = Date() }
             }
             Section(LocalizedStringKey("counter_configuration_section")) {
+                SkillEmojiPickerButton(selection: $counter.symbol)
                 TextField(LocalizedStringKey("counter_title_placeholder"), text: $counter.title)
                 Stepper(value: $counter.step, in: -1000...1000) {
                     Text(String(format: NSLocalizedString("counter_step_label%d", comment: ""), counter.step))
@@ -188,6 +252,23 @@ struct CounterDetailView: View {
                         valueText = ""
                     }
                     .disabled(Int(valueText) == nil)
+                }
+            }
+            Section {
+                Button(role: .destructive) {
+                    showDeleteConfirmation = true
+                } label: {
+                    Label(LocalizedStringKey("counter_delete"), systemImage: "trash")
+                }
+                .confirmationDialog(LocalizedStringKey("delete_confirm_title"), isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
+                    Button(LocalizedStringKey("delete_confirm_action"), role: .destructive) {
+                        context.delete(counter)
+                        try? context.save()
+                        dismiss()
+                    }
+                    Button(LocalizedStringKey("cancel"), role: .cancel) { }
+                } message: {
+                    Text(LocalizedStringKey("delete_confirm_message"))
                 }
             }
         }

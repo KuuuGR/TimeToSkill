@@ -28,49 +28,19 @@ struct SkillProgressView: View {
     }
 
     internal static func progressColor(for hours: Double) -> Color {
-        switch hours {
-        case ..<0:
-            return .trueGray
-        case 0..<21:
-            return .success
-        case 21..<100:
-            return .infoDark
-        case 100..<1000:
-            return .warningDark
-        case 1000..<10000:
-            return .danger
-        case 10000..<100000:
-            return .purple
-        default:
-            return .black
+        switch CrystalPalette.forHours(hours) {
+        case .emerald: return .success
+        case .sapphire: return .infoDark
+        case .amber: return .warningDark
+        case .arcane: return Color(hex: "#7D6BE7")
+        case .crimson: return .danger
+        case nil: return .trueGray
         }
     }
 
-    /// Computes cumulative progress within the current stage
+    /// Fill grows and shrinks with the hours. A new color band does not reset the track.
     private var stageProgress: Double {
-        let hours = displayHours
-
-        // Guard against NaN and infinite values
-        guard hours.isFinite && !hours.isNaN else {
-            return 0
-        }
-
-        switch hours {
-        case ..<0:
-            return 0
-        case 0..<21:
-            return hours / 21
-        case 21..<100:
-            return hours / 100
-        case 100..<1000:
-            return hours / 1000
-        case 1000..<10000:
-            return hours / 10000
-        case 10000..<100000:
-            return hours / 100000
-        default:
-            return 1
-        }
+        ProgressFill.fraction(value: displayHours)
     }
 
     /// Converts hours into human-friendly label
@@ -131,23 +101,12 @@ struct SkillProgressView: View {
                 .accessibilityIdentifier("OptionsButton_\(skill.id.hashValue)")
             }
 
-            // Animated progress bar
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule()
-                        .frame(height: 25)
-                        .foregroundColor(.gray.opacity(0.15))
-
-                    Capsule()
-                        .frame(
-                            width: geo.size.width * CGFloat(min(stageProgress, 1)),
-                            height: 25
-                        )
-                        .foregroundColor(progressColor)
-                        .animation(isActive ? nil : .easeInOut(duration: 0.6), value: displayHours)
-                }
-            }
-            .frame(height: 25)
+            CrystalProgressBar(
+                progress: stageProgress,
+                hours: displayHours,
+                height: 25,
+                animated: !isActive
+            )
 
             // Timer button
             Button(action: onToggleTimer) {
@@ -220,23 +179,12 @@ struct SkillProgressView: View {
                 .accessibilityIdentifier("OptionsButton_\(skill.id.hashValue)")
             }
 
-            // Animated progress bar
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule()
-                        .frame(height: 12)
-                        .foregroundColor(.gray.opacity(0.15))
-
-                    Capsule()
-                        .frame(
-                            width: geo.size.width * CGFloat(min(stageProgress, 1)),
-                            height: 12
-                        )
-                        .foregroundColor(progressColor)
-                        .animation(isActive ? nil : .easeInOut(duration: 0.6), value: displayHours)
-                }
-            }
-            .frame(height: 12)
+            CrystalProgressBar(
+                progress: stageProgress,
+                hours: displayHours,
+                height: 12,
+                animated: !isActive
+            )
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)

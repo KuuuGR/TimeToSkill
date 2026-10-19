@@ -43,18 +43,17 @@ enum SkillSeeder {
             return
         }
         
-        let lastVersion = UserDefaults.standard.integer(forKey: CatalogDefaults.lastSeededVersionKey)
-        guard catalog.catalogVersion > lastVersion else {
-            print("[Seeder] Catalog already seeded (version \(lastVersion))")
-            return
+        reconcile(catalog.items, in: context)
+        let stored = UserDefaults.standard.integer(forKey: CatalogDefaults.lastSeededVersionKey)
+        if catalog.catalogVersion > stored {
+            UserDefaults.standard.set(catalog.catalogVersion, forKey: CatalogDefaults.lastSeededVersionKey)
         }
-        
-        upsert(catalog.items, in: context)
-        UserDefaults.standard.set(catalog.catalogVersion, forKey: CatalogDefaults.lastSeededVersionKey)
-        print("[Seeder] Seeded catalog version \(catalog.catalogVersion) with \(catalog.items.count) items")
+        print("[Seeder] Reconciled catalog version \(catalog.catalogVersion) with \(catalog.items.count) items")
     }
-    
-    private static func upsert(_ items: [SeedSkill], in context: ModelContext) {
+
+    /// Inserts catalog rows that are missing and refreshes catalog text.
+    /// Obtained state, ratings, favorites, dates, and user-created skills stay as they are.
+    static func reconcile(_ items: [SeedSkill], in context: ModelContext) {
         var updated = 0
         var inserted = 0
         for item in items {
@@ -63,7 +62,7 @@ enum SkillSeeder {
                 updated += 1
                 continue
             }
-            if let legacy = fetchByExactTitle(item.title, in: context) {
+            if let legacy = fetchByExactTitle(item.title, in: context), !legacy.isUserCreated {
                 legacy.catalogID = item.id
                 updateCatalogFields(legacy, with: item)
                 updated += 1
@@ -100,5 +99,38 @@ enum SkillSeeder {
     private static func fetchByExactTitle(_ title: String, in context: ModelContext) -> ExemplarySkill? {
         let d = FetchDescriptor<ExemplarySkill>(predicate: #Predicate { $0.catalogID == nil && $0.title == title })
         return try? context.fetch(d).first
+    }
+}
+
+/// Debug-only sample data for a visual check of the glass bar and the crystal.
+/// Runs only when the process was launched with `-T4SPreviewProgress`.
+enum PreviewProgressSeeder {
+    static func apply(context: ModelContext) {
+        #if DEBUG
+        guard ProcessInfo.processInfo.arguments.contains("-T4SPreviewProgress") else { return }
+        let tracked: [(String, Double)] = [
+            ("Szklany pasek szmaragdowy", 12.5),
+            ("Szklany pasek szafirowy", 50)
+        ]
+        let existing = (try? context.fetch(FetchDescriptor<Skill>())) ?? []
+        for (name, hours) in tracked {
+            if let found = existing.first(where: { $0.name == name }) {
+                if found.hours < hours {
+                    found.hours = hours
+                }
+            } else {
+                context.insert(Skill(name: name, hours: hours))
+            }
+        }
+        let catalog = (try? context.fetch(FetchDescriptor<ExemplarySkill>())) ?? []
+        let sample = catalog.first { $0.title == "Brzuszki – kamień milowy" } ?? catalog.first
+        if let sample, !sample.isObtained {
+            sample.isObtained = true
+            sample.userRating = 2
+            sample.obtainedAt = Date(timeIntervalSince1970: 1_700_000_000)
+            sample.isFavorite = true
+        }
+        try? context.save()
+        #endif
     }
 }

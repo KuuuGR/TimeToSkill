@@ -13,10 +13,13 @@ struct TheoryCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(LocalizedStringKey(topic.titleKey))
-                .font(.title3)
-                .fontWeight(.semibold)
-                .fixedSize(horizontal: false, vertical: true)
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                thresholdCrystal(hours: topic.hourMark)
+                Text(LocalizedStringKey(topic.titleKey))
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
 
             Text(LocalizedStringKey(topic.summaryKey))
                 .font(.body)
@@ -57,10 +60,13 @@ struct TheoryDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text(LocalizedStringKey(topic.titleKey))
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .fixedSize(horizontal: false, vertical: true)
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    thresholdCrystal(hours: topic.hourMark)
+                    Text(LocalizedStringKey(topic.titleKey))
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
 
                 detailBlock("theory_detail_citation", textKey: topic.citationKey)
                 detailBlock("theory_detail_source_type", textKey: topic.sourceKind.labelKey)
@@ -121,5 +127,17 @@ struct TheoryDetailView: View {
                 .font(.subheadline)
                 .fixedSize(horizontal: false, vertical: true)
         }
+    }
+}
+
+/// Small crystal for an app hour threshold. Topics without a threshold get nothing.
+@ViewBuilder
+func thresholdCrystal(hours: Int?) -> some View {
+    if let hours, let palette = CrystalPalette.forHours(Double(hours)) {
+        SkillCrystalBadge(
+            compact: true,
+            palette: palette,
+            accessibilityKey: "theory_threshold_crystal"
+        )
     }
 }

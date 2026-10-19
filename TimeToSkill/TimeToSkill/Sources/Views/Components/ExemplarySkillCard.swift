@@ -66,7 +66,10 @@ struct ExemplarySkillCard: View {
                 
                 // Star ribbon - positioned under the category
                 if skill.isObtained {
-                    StarRibbon(rating: max(0, min(3, skill.userRating ?? skill.difficultyLevel)))
+                    HStack(spacing: 4) {
+                        SkillCrystalBadge(compact: true)
+                        StarRibbon(rating: max(0, min(3, skill.userRating ?? skill.difficultyLevel)))
+                    }
                 }
             }
             .padding(8)

@@ -2,7 +2,7 @@
 
 Źródło statusu pakietów: `data/skills-catalog/pack-registry.json`. Źródło statusu luk: `data/skills-catalog/gaps-registry.json`. Czytelny indeks luk: `GAPS.md`. Data wpisu: 2026-10-18.
 
-Żaden pakiet nie jest zatwierdzony produkcyjnie. Aktualna rewizja robocza propozycji to `curated/pilot-proposals-v11.jsonl` (1122 rekordów, status `pilot_proposal`). `curated/pilot-proposals-v10.jsonl` zostaje poprzednią rewizją, 995 rekordów. Następny nowy zakres kandydatur dostaje `pack-17`. Poprawka istniejącego pakietu nie dostaje nowego numeru. Szczegółowe raporty luk zostają miejscem dowodu. Rejestr centralny trzyma status.
+Żaden pakiet nie jest zatwierdzony produkcyjnie. Aktualna rewizja robocza propozycji to `curated/pilot-proposals-v21.jsonl` (2101 rekordów, status `pilot_proposal`). Poprzednia rewizja tej serii to `curated/pilot-proposals-v20.jsonl`, 2099 rekordów. v19 i wcześniejsze zostają nietknięte. Program 033 zapisał pack-26 i wstrzymał odkrywanie. Pack-27 nie jest otwarty. Globalnej selekcji nie wykonano. Poprawka istniejącego pakietu nie dostaje nowego numeru.
 
 Pakiet `skills-pilot/curated-review-decisions/` nie istnieje. To miał być materiał decyzji o już istniejących propozycjach, nie nowy pakiet skillów. Jego integracji nie potwierdzono i nie odtworzono zawartości. W v2 widać trzy różnice pól wobec v1; nie przypisano ich temu brakującemu pakietowi.
 
@@ -24,6 +24,16 @@ Pakiet `skills-pilot/curated-review-decisions/` nie istnieje. To miał być mate
 | pack-14 | Twierdzenia, ślady, doświadczenia i ustalenia | 500 | 500 | 204 | needs_revision |
 | pack-15 | Triki, kody, papier i pokazy | 500 | 500 | 259 | needs_revision |
 | pack-16 | Niebo, żywe rzeczy, tkanina i miasto | 500 | 500 | 127 | needs_revision |
+| pack-17 | Zwierzęta, muzyka, rysunek i konta | 500 | 500 | 224 | needs_revision |
+| pack-18 | Miasto, materiały, gry i dom | 500 | 500 | 200 | needs_revision |
+| pack-19 | Jedzenie, ruch, pismo i kultura | 500 | 500 | 225 | needs_revision |
+| pack-20 | Codzienność, rośliny, rower i woda | 500 | 500 | 204 | needs_revision |
+| pack-21 | Drobne braki po 1975 | 500 | 500 | 44 | needs_revision |
+| pack-22 | Odkrywanie ze źródeł | 500 | 500 | 49 | needs_revision |
+| pack-23 | Ściegi, reguły szachowe i runda | 500 | 500 | 18 | needs_revision |
+| pack-24 | Mycie rąk, zgięcia i kompas | 143 | 143 | 7 | needs_revision |
+| pack-25 | Metody, nie indeksy | 5 | 5 | 6 | needs_revision |
+| pack-26 | Ścieg rybi i jajecznica | 2 | 2 | 2 | needs_revision |
 
 ## pack-01
 
@@ -88,3 +98,47 @@ Kandydatury: `review-inputs/pack-15-showable-skills/`. Recenzja: `pilots/showabl
 ## pack-16
 
 Kandydatury: `review-inputs/pack-16-final-broad-discovery/`. Recenzja: `pilots/final-broad-discovery/`. 500 decyzji, 127 propozycji w rejestrze v11. 342 już reprezentowanych, 17 odrzuceń, 14 bez źródła. Podstawa `editorial_synthesis`. Wcześniejsze luki ryzyka zostają otwarte. To nie jest katalog produkcyjny.
+
+## pack-17
+
+Kandydatury: `review-inputs/pack-17-animals-music-drawing/`. Recenzja: `pilots/animals-music-drawing/`. 500 decyzji, 224 propozycje w v12. 249 już reprezentowanych, 15 odrzuceń, 12 bez źródła. Otwarte strony: RSPCA o treningu psa, PDSA o pięciu potrzebach, NCSC o haśle z trzech słów i o weryfikacji dwuetapowej. Reszta to `editorial_synthesis` bez wymyślonego URL. To nie jest katalog produkcyjny.
+
+## pack-18
+
+Kandydatury: `review-inputs/pack-18-city-craft-games/`. Recenzja: `pilots/city-craft-games/`. 500 decyzji, 200 propozycji w v13. 273 już reprezentowane, 15 odrzuceń, 12 bez źródła. Podstawa `editorial_synthesis`. To nie jest katalog produkcyjny.
+
+## pack-19
+
+Kandydatury: `review-inputs/pack-19-food-movement-culture/`. Recenzja: `pilots/food-movement-culture/`. 500 decyzji, 225 propozycji w v14. 248 już reprezentowanych, 15 odrzuceń, 12 bez źródła. Podstawa `editorial_synthesis`. To nie jest katalog produkcyjny.
+
+## pack-20
+
+Kandydatury: `review-inputs/pack-20-everyday-breadth/`. Recenzja: `pilots/everyday-breadth/`. 500 decyzji, 204 propozycje w v15. 269 już reprezentowanych, 15 odrzuceń, 12 bez źródła. Podstawa `editorial_synthesis`. To nie jest katalog produkcyjny.
+
+## pack-21
+
+Kandydatury: `review-inputs/pack-21-breadth-after-1975/`. Recenzja: `pilots/breadth-after-1975/`. 500 decyzji, 44 propozycje w v16. 438 już reprezentowanych, 10 odrzuceń, 8 bez źródła. Niski przyrost przy pełnych 500 decyzjach oznacza nasycenie łatwych wariantów, nie powód do obniżenia progu. Rejestr miał wtedy 2019 propozycji. To nie jest katalog produkcyjny.
+
+## pack-22
+
+Kandydatury: `review-inputs/pack-22-source-led-discovery/`. Recenzja: `pilots/source-led-discovery/`. 500 decyzji, 49 propozycji w v17. 427 już reprezentowanych, 16 odrzuceń, 8 bez źródła. Nowe propozycje pochodzą z 11 otwartych stron (RSPCA, NCSC, National Gallery of Art, Tate, Rada Europy, RHS, AHDB, ONS i kopia przewodnika ABRSM). Poziomy są adaptacją, nie cytatem. Rejestr miał wtedy 2068 propozycji. To nie jest katalog produkcyjny.
+
+## pack-23
+
+Kandydatury: `review-inputs/pack-23-stitch-chess-rounds/`. Recenzja: `pilots/stitch-chess-rounds/`. 500 decyzji, 18 propozycji w v18. 6 już reprezentowanych, 86 odrzuceń, 390 bez otwartej metody. Otwarte strony metod: Royal School of Needlework (dziewięć ściegów i ściana nazw), FIDE Laws of Chess 2023, UUA o rundach. Poziomy są adaptacją. To nie jest katalog produkcyjny.
+
+## pack-24
+
+Kandydatury: `review-inputs/pack-24-hands-folds-compass/`. Recenzja: `pilots/hands-folds-compass/`. 143 decyzje, bez dopychania do 500. 7 propozycji w v19. 15 już reprezentowanych, 50 odrzuceń, 71 bez otwartej metody. Otwarte strony: NHS o myciu rąk, British Origami Society o zgięciu doliny i góry oraz glosariusz, przewodnik Ordnance Survey. Rejestr miał wtedy 2093 propozycje. To nie jest katalog produkcyjny.
+
+## pack-25
+
+Kandydatury: `review-inputs/pack-25-methods-not-indexes/`. Recenzja: `pilots/methods-not-indexes/`. Sześć otwartych stron metod, 6 propozycji w v20. Cztery ściegi były już w kolejce pack-23 i nie weszły drugi raz do licznika unikalnych kandydatów. Nowych unikalnych kandydatów jest 5. Rejestr ma 2099 propozycji. Pack-26 nie jest otwarty. To nie jest katalog produkcyjny.
+
+## pack-26
+
+Kandydatury: `review-inputs/pack-26-fishbone-scramble/`. Recenzja: `pilots/fishbone-scramble/`. Dwie otwarte strony metod, 2 propozycje w v21. Couching nie zwrócił treści. Rejestr miał wtedy 2101 propozycji. To nie jest katalog produkcyjny.
+
+## pack-27
+
+Kandydatury: `review-inputs/pack-27-couching/`. Recenzja: `pilots/couching/`. Jedna otwarta strona metody, 1 propozycja w v22. Adres `/stitch/couching` znowu był pusty. Użyto `https://rsnstitchbank.org/stitch/couching-stitch`. Warianty couching i glosariusz origami nie dostały propozycji. Rejestr ma 2102 propozycje. Pack-28 nie jest otwarty. To nie jest katalog produkcyjny.

@@ -16,7 +16,7 @@
     "levels": "Dokładnie trzy obiekty. Każdy ma name, completion_criterion, can_do i safety_requirements tak jak w pilotażu.",
     "source_candidate_ids": "Identyfikatory z candidates-raw.jsonl. Nie tworzono nowych.",
     "source_ids": "Identyfikatory z research/sources.json.",
-    "origin_pilot": "kitchen-finance, movement-sport-dance, technology-science-niches, communication-cognition-nature, general-practical-skills, broad-practice-expansion, practice-expansion-13, practice-expansion-14, practice-expansion-15 albo practice-expansion-16.",
+    "origin_pilot": "kitchen-finance, movement-sport-dance, technology-science-niches, communication-cognition-nature, general-practical-skills, broad-practice-expansion, practice-expansion-13, practice-expansion-14, practice-expansion-15, practice-expansion-16, practice-expansion-17, practice-expansion-18, practice-expansion-19, practice-expansion-20, practice-expansion-21, practice-expansion-22, practice-expansion-23, practice-expansion-24, practice-expansion-25, practice-expansion-26 albo practice-expansion-27.",
     "pilot_skill_id": "skill_id w pliku pilotażu.",
     "pilot_review_status": "Status zapisany przez pilotaż.",
     "review_status": "Zawsze pilot_proposal w tym rejestrze.",

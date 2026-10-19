@@ -4,7 +4,7 @@
 
 Luki nie zamyka się dlatego, że podobny temat pojawił się w kolejnym pakiecie. Zamknięcie wymaga spełnienia warunku zapisanego w JSON.
 
-Pozycji: **50**. Data: 2026-10-18.
+Pozycji: **59**. Data: 2026-10-19.
 
 | gap_id | pack | status | temat |
 | --- | --- | --- | --- |
@@ -58,6 +58,15 @@ Pozycji: **50**. Data: 2026-10-18.
 | `gap-pack-14-high-risk-for-review` | pack-14 | `needs_source_research` | Kolejne czynności wysokiego ryzyka bez źródła |
 | `gap-pack-15-high-risk-for-review` | pack-15 | `needs_source_research` | Pokazy i prace wysokiego ryzyka bez źródła |
 | `gap-pack-16-high-risk-for-review` | pack-16 | `needs_source_research` | Nowe czynności wysokiego ryzyka bez źródła |
+| `gap-pack-17-high-risk-for-review` | pack-17 | `needs_source_research` | Nowe czynności wysokiego ryzyka bez źródła |
+| `gap-pack-18-high-risk-for-review` | pack-18 | `needs_source_research` | Nowe czynności wysokiego ryzyka bez źródła |
+| `gap-pack-19-high-risk-for-review` | pack-19 | `needs_source_research` | Nowe czynności wysokiego ryzyka bez źródła |
+| `gap-pack-20-high-risk-for-review` | pack-20 | `needs_source_research` | Nowe czynności wysokiego ryzyka bez źródła |
+| `gap-pack-21-high-risk-for-review` | pack-21 | `needs_source_research` | Nowe czynności wysokiego ryzyka bez źródła |
+| `gap-pack-22-high-risk-for-review` | pack-22 | `needs_source_research` | Nowe czynności wysokiego ryzyka bez źródła |
+| `gap-pack-23-stitch-methods-unopened` | pack-23 | `needs_source_research` | Nazwy ściegów ze ściany RSN bez otwartej metody. Pack-27 otworzył tylko couching-stitch; luka zostaje. |
+| `gap-pack-24-origami-methods-unopened` | pack-24 | `needs_source_research` | Techniki origami nazwane w glosariuszu bez otwartej metody |
+| `gap-pack-25-untaught-variants` | pack-25 | `needs_source_research` | Gruby omlet i odrośle bez otwartej metody |
 
 ## Liczby statusów
 
@@ -66,7 +75,7 @@ Pozycji: **50**. Data: 2026-10-18.
 - `needs_description`: 5
 - `needs_editorial_revision`: 6
 - `needs_human_decision`: 7
-- `needs_source_research`: 20
+- `needs_source_research`: 29
 - `resolved`: 6
 
 ## Utrzymanie

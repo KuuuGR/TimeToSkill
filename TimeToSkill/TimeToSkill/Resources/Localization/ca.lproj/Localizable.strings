@@ -48,10 +48,10 @@
 "ab_developer" = "Creat per Grzegorz Kulesza";
 
 "ab_section_purpose" = "Objectiu de l'aplicació";
-"ab_purpose_major_system" = "Aprèn millor fent un seguiment del teu temps invertit.";
-"ab_purpose_large_numbers" = "Fes un seguiment de grans objectius amb retroalimentació visual.";
-"ab_purpose_dates" = "Utilitza sistemes flexibles com 20h, 100h, 1000h...";
-"ab_purpose_words" = "Millora la memòria amb constància.";
+"ab_purpose_major_system" = "Tria les habilitats que vols aprendre.";
+"ab_purpose_large_numbers" = "Desenvolupa-les per etapes i registra el temps dedicat a aprendre.";
+"ab_purpose_dates" = "Observa el progrés i marca les habilitats aconseguides.";
+"ab_purpose_words" = "Construeix la teva col·lecció, amb preferits i comptadors.";
 
 // MARK: - SupportDeveloperView
 "ab_section_support" = "Suport";
@@ -452,3 +452,71 @@
 "activity_level_3" = "Varied activity";
 "activity_level_4" = "Broad activity";
 "activity_level_5" = "Very broad activity";
+
+// MARK: - Catalog search
+"catalog_search_prompt" = "Search skills";
+"catalog_filter_all" = "All";
+"catalog_filter_done" = "Done";
+"catalog_filter_not_done" = "Not done";
+"catalog_favorites_only" = "Favourites";
+"catalog_filter_reset" = "Reset";
+"catalog_no_results" = "No skills match these filters.";
+"catalog_favorite_add" = "Add to favourites";
+"catalog_favorite_remove" = "Remove from favourites";
+"catalog_crystal_reward" = "Crystal for an obtained skill";
+"catalog_progress" = "Progress";
+
+/* T4S-035 timers, counters, theory threshold */
+
+"tracker_tool_label" = "Tool";
+"tracker_tool_progress" = "Progress";
+"tracker_tool_balance" = "Time balance";
+"time_balance_note" = "This balance can go up or down. It is not skill progress, and using it does not reduce hours already tracked.";
+"time_balance_empty_title" = "No time balance yet";
+"time_balance_empty_description" = "Add a balance when you want to save time and count it down later.";
+"time_balance_add_quarter" = "Add 15 min";
+"time_balance_new" = "New balance";
+"time_balance_remaining" = "Time remaining";
+"time_balance_start" = "Count down";
+"time_balance_stop" = "Pause";
+"time_balance_delete" = "Delete balance";
+"counter_delete" = "Delete counter";
+"theory_threshold_crystal" = "Hour-threshold color in Time4Skill. Not a guarantee of mastery.";
+"theory_milestone_21_title" = "21 hours";
+
+/* T4S-036 compendium, counters, catalog note */
+"catalog_exemplary_note" = "This screen shows the built-in exemplary set shipped with the app. The research pilot proposals are a separate editorial list and are not imported here.";
+"theory_compendium_intro" = "Each tab is an hour mark already used by the progress bar. The crystal is that mark's color. The text explains what the mark does and does not mean.";
+"theory_hour_unit" = "hours";
+"theory_callout_example" = "Example";
+"theory_callout_caveat" = "Caveat";
+"theory_callout_takeaway" = "Takeaway";
+"theory_chapter_21_title" = "Getting past the beginning";
+"theory_chapter_21_lead" = "Twenty-one hours changes the color of the progress bar. It is not a research finding. The closest published method is Josh Kaufman's 20-hour framework for surviving the awkward start, and those two numbers are not the same claim.";
+"theory_chapter_21_mechanism_title" = "A method for the start";
+"theory_chapter_21_mechanism" = "Kaufman treats the beginning as a practical problem. Split the skill into smaller parts, learn enough to notice your own mistakes, remove barriers that make practice inconvenient, and spend focused time on one result. The book presents this as an author's method for getting started.";
+"theory_chapter_21_example" = "A person who wants three chords to sound clean can practise that result. \"Learn the guitar\" is a larger aim, and the first hours do not settle it.";
+"theory_chapter_100_title" = "One hundred hours, as an app mark";
+"theory_chapter_100_lead" = "One hundred hours is a Time4Skill milestone for time already logged. None of the studies collected in this compendium define 100 hours as the point at which someone becomes competent.";
+"theory_chapter_100_mechanism_title" = "What nearby research actually measured";
+"theory_chapter_100_mechanism" = "Two lines of work sit near this period without measuring it in hours. Cepeda, Pashler, Vul, Wixted, and Rohrer reviewed 317 experiments on verbal recall. Spacing sessions beat cramming in that literature, and the useful gap depended on how long the material had to be remembered. Lally, van Jaarsveld, Potts, and Wardle asked volunteers to repeat an eating, drinking, or activity behaviour in the same context. The modelled time to reach 95 percent of each person's own plateau varied widely. Missing one day did not erase the curve.";
+"theory_chapter_100_example" = "Playing a short piece on three different days shows which bar actually stayed in memory. One long evening of repetition does not answer that question.";
+"theory_chapter_100_caveat" = "The spacing review is about verbal recall. The habit study is about automaticity of a chosen behaviour, and its range was 18 to 254 days in the model reported with the paper, not a 100-hour competence line. Neither result says that 100 hours makes someone competent at photography, driving, or any other skill.";
+"theory_chapter_100_takeaway" = "Use the mark to notice whether you are coming back. Do not treat it as a level you have earned.";
+"theory_chapter_1000_title" = "Practice aimed at one gap";
+"theory_chapter_1000_lead" = "The 1,000-hour crystal records time spent. It does not mean the person is now a professional, a teacher, or someone who can earn a living from the skill.";
+"theory_chapter_1000_mechanism_title" = "Deliberate practice, and how much it explained";
+"theory_chapter_1000_mechanism" = "Ericsson, Krampe, and Tesch-Römer described deliberate practice as activity arranged to improve a specific aspect, with feedback and correction, rather than simply repeating what is already comfortable. Their 1993 paper developed that framework with studies of musicians. It did not publish one hour-count that creates experts in every field. Macnamara, Hambrick, and Oswald later estimated how much of the difference in performance was associated with deliberate practice. The shares differed by domain: higher in games, music, and sports than in education and professions.";
+"theory_chapter_1000_example" = "An hour spent on the passage that keeps breaking down is a different activity from an hour of playing pieces that already go well. The progress bar records the time either way.";
+"theory_chapter_1000_caveat" = "The domain percentages are shares of variance in that 2014 meta-analysis. They are not the portion of a skill a person can learn, and they are not anyone's chance of success. The paper does not set 1,000 hours as a professional threshold. Older wording in the app that treated 1,000 hours as the point of becoming a professional overstated the evidence.";
+"theory_chapter_10000_title" = "A famous number, not a law";
+"theory_chapter_10000_lead" = "Ten thousand hours became famous as a rule of mastery. The research it was drawn from did not establish a law, and the crystal on this tab only identifies the app's highest displayed hour mark.";
+"theory_chapter_10000_mechanism_title" = "How the number travelled";
+"theory_chapter_10000_mechanism" = "Malcolm Gladwell's Outliers (2008) made the round number widely known. It drew on research about expert performance, including the 1993 paper by Ericsson, Krampe, and Tesch-Römer on deliberate practice among musicians. Macnamara and Maitra (2019) discuss how that popular rule differs from the research. The popular version collapsed a complicated argument into one threshold that would guarantee mastery.";
+"theory_chapter_10000_example" = "Two people can log the same total and still have spent the time differently. One may have had a teacher correcting a specific fault. The other may have been repeating a piece they already play. The hour total does not record that difference.";
+"counter_kind_label" = "Kind";
+"counter_kind_manual" = "Manual count";
+"counter_kind_elapsed" = "Days since a date";
+"counter_anchor_label" = "Start date";
+"counter_refresh" = "Refresh value";
+"counter_refresh_unavailable" = "Set a start date before refreshing. Until then the value stays as it is.";

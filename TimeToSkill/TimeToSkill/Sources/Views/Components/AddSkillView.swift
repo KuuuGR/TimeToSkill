@@ -16,6 +16,7 @@ struct AddSkillView: View {
 
                     TextField(LocalizedStringKey("enter_skill_name"), text: $skillName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .accessibilityIdentifier("AddSkillNameField")
                 }
                 .padding()
 
@@ -34,6 +35,7 @@ struct AddSkillView: View {
                         .cornerRadius(12)
                         .padding(.horizontal)
                 }
+                .accessibilityIdentifier("AddSkillConfirmButton")
 
                 Spacer()
             }

@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-18",
-  "next_pack_id": "pack-17",
+  "updated_on": "2026-10-19",
+  "next_pack_id": "pack-28-not-opened",
   "production_approved_count": 0,
-  "note": "Rejestr statusów pakietów. Nie nadaje nowych identyfikatorów kandydaturom ani propozycjom. Żaden pakiet nie ma statusu production_approved.",
+  "note": "Program 034 otworzył stronę metody couching-stitch i zapisał jedną propozycję w v22. Adres /stitch/couching nadal jest pusty. Kolejki ściegów i origami nie są wyczerpane. Pack-28 nie jest otwarty. Nic nie jest produkcyjne.",
   "current_proposal_register": {
-    "path": "data/skills-catalog/curated/pilot-proposals-v11.jsonl",
+    "path": "data/skills-catalog/curated/pilot-proposals-v22.jsonl",
     "role": "current_working_revision",
-    "revision": "v11",
-    "record_count": 1122,
-    "unique_proposal_ids": 1122,
+    "revision": "v22",
+    "record_count": 2102,
+    "unique_proposal_ids": 2102,
     "review_status": "pilot_proposal",
     "covers_packs": [
       "pack-01",
@@ -21,16 +21,27 @@
       "pack-13",
       "pack-14",
       "pack-15",
-      "pack-16"
+      "pack-16",
+      "pack-17",
+      "pack-18",
+      "pack-19",
+      "pack-20",
+      "pack-21",
+      "pack-22",
+      "pack-23",
+      "pack-24",
+      "pack-25",
+      "pack-26",
+      "pack-27"
     ],
     "not_production": true
   },
   "previous_proposal_register": {
-    "path": "data/skills-catalog/curated/pilot-proposals-v10.jsonl",
-    "role": "current_working_revision",
-    "revision": "v10",
-    "record_count": 995,
-    "unique_proposal_ids": 995,
+    "path": "data/skills-catalog/curated/pilot-proposals-v21.jsonl",
+    "role": "previous_working_revision",
+    "revision": "v21",
+    "record_count": 2101,
+    "unique_proposal_ids": 2101,
     "review_status": "pilot_proposal",
     "covers_packs": [
       "pack-01",
@@ -41,10 +52,20 @@
       "pack-12",
       "pack-13",
       "pack-14",
-      "pack-15"
+      "pack-15",
+      "pack-16",
+      "pack-17",
+      "pack-18",
+      "pack-19",
+      "pack-20",
+      "pack-21",
+      "pack-22",
+      "pack-23",
+      "pack-24",
+      "pack-25",
+      "pack-26"
     ],
-    "not_production": true,
-    "quality_pass": "T4S-CATALOG-026"
+    "not_production": true
   },
   "register_comparison": {
     "proposal_ids_identical": true,
@@ -246,6 +267,66 @@
       "change": "995 propozycji v10 bez zmian oraz 127 nowych propozycji pack-16. Podstawa editorial_synthesis. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
       "file": "data/skills-catalog/curated/pilot-proposals-v11.jsonl",
       "details": "data/skills-catalog/curated/merge-history-v11.json"
+    },
+    {
+      "revision": "v17",
+      "applies_to_packs": [
+        "pack-22"
+      ],
+      "updated_on": "2026-10-18",
+      "change": "2019 propozycji v16 bez zmian oraz 49 nowych propozycji pack-22. Poziomy są adaptacją otwartych stron, nie cytatem. Nic nie usunięto i nie zatwierdzono produkcyjnie.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v17.jsonl",
+      "details": "data/skills-catalog/pilots/source-led-discovery/review-summary.md"
+    },
+    {
+      "revision": "v18",
+      "applies_to_packs": [
+        "pack-23"
+      ],
+      "updated_on": "2026-10-19",
+      "change": "2068 propozycji v17 bez zmian oraz 18 nowych propozycji pack-23 ze stron RSN, FIDE i UUA.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v18.jsonl",
+      "details": "data/skills-catalog/pilots/stitch-chess-rounds/counts.json"
+    },
+    {
+      "revision": "v19",
+      "applies_to_packs": [
+        "pack-24"
+      ],
+      "updated_on": "2026-10-19",
+      "change": "2086 propozycji v18 bez zmian oraz 7 nowych propozycji pack-24 z NHS, British Origami Society i Ordnance Survey.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v19.jsonl",
+      "details": "data/skills-catalog/pilots/hands-folds-compass/counts.json"
+    },
+    {
+      "revision": "v20",
+      "applies_to_packs": [
+        "pack-25"
+      ],
+      "updated_on": "2026-10-19",
+      "change": "2093 propozycje v19 bez zmian oraz 6 nowych propozycji pack-25 z otwartych stron metod.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v20.jsonl",
+      "details": "data/skills-catalog/pilots/methods-not-indexes/counts.json"
+    },
+    {
+      "revision": "v21",
+      "applies_to_packs": [
+        "pack-26"
+      ],
+      "updated_on": "2026-10-19",
+      "change": "2099 propozycji v20 bez zmian oraz 2 nowe propozycje pack-26.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v21.jsonl",
+      "details": "data/skills-catalog/pilots/fishbone-scramble/counts.json"
+    },
+    {
+      "revision": "v22",
+      "applies_to_packs": [
+        "pack-27"
+      ],
+      "updated_on": "2026-10-19",
+      "change": "2101 propozycji v21 bez zmian oraz 1 nowa propozycja pack-27 ze strony couching-stitch.",
+      "file": "data/skills-catalog/curated/pilot-proposals-v22.jsonl",
+      "details": "data/skills-catalog/pilots/couching/counts.json"
     }
   ],
   "packs": [
@@ -983,6 +1064,370 @@
         "Nie pisać procedur dla luki gap-pack-16-high-risk-for-review.",
         "Nie zamykać wcześniejszych luk ryzyka.",
         "Nie nadawać numeru pack-17 poprawkom tego pakietu."
+      ]
+    },
+    {
+      "pack_id": "pack-17",
+      "title": "Zwierzęta, muzyka, rysunek i konta",
+      "domains": [
+        "Zwierzęta, muzyka, rysunek i konta"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-17-animals-music-drawing/",
+      "input_note": "500 decyzji. Część propozycji ma otwartą stronę. Reszta to editorial_synthesis bez wymyślonego URL.",
+      "canonical_path": "data/skills-catalog/pilots/animals-music-drawing/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 224,
+      "count_note": "500 decyzji: 224 accept_for_pilot, 249 already_represented, 15 reject, 12 needs_source.",
+      "current_revision": "v12",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/animals-music-drawing/review-decisions-pack-17.jsonl",
+        "data/skills-catalog/pilots/animals-music-drawing/approved-skill-pilot-pack-17.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-17-animals-music-drawing/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-17-high-risk-for-review.",
+        "Nie zamykać wcześniejszych luk ryzyka.",
+        "Nie zaczynać kolejnego pakietu przed przeglądem po celu około 2000."
+      ]
+    },
+    {
+      "pack_id": "pack-18",
+      "title": "Miasto, materiały, gry i dom",
+      "domains": [
+        "Miasto, materiały, gry i dom"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-18-city-craft-games/",
+      "input_note": "500 decyzji. Część propozycji ma otwartą stronę. Reszta to editorial_synthesis bez wymyślonego URL.",
+      "canonical_path": "data/skills-catalog/pilots/city-craft-games/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 200,
+      "count_note": "500 decyzji: 200 accept_for_pilot, 273 already_represented, 15 reject, 12 needs_source.",
+      "current_revision": "v13",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/city-craft-games/review-decisions-pack-18.jsonl",
+        "data/skills-catalog/pilots/city-craft-games/approved-skill-pilot-pack-18.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-18-city-craft-games/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-18-high-risk-for-review.",
+        "Nie zamykać wcześniejszych luk ryzyka.",
+        "Nie zaczynać kolejnego pakietu przed przeglądem po celu około 2000."
+      ]
+    },
+    {
+      "pack_id": "pack-19",
+      "title": "Jedzenie, ruch, pismo i kultura",
+      "domains": [
+        "Jedzenie, ruch, pismo i kultura"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-19-food-movement-culture/",
+      "input_note": "500 decyzji. Część propozycji ma otwartą stronę. Reszta to editorial_synthesis bez wymyślonego URL.",
+      "canonical_path": "data/skills-catalog/pilots/food-movement-culture/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 225,
+      "count_note": "500 decyzji: 225 accept_for_pilot, 248 already_represented, 15 reject, 12 needs_source.",
+      "current_revision": "v14",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/food-movement-culture/review-decisions-pack-19.jsonl",
+        "data/skills-catalog/pilots/food-movement-culture/approved-skill-pilot-pack-19.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-19-food-movement-culture/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-19-high-risk-for-review.",
+        "Nie zamykać wcześniejszych luk ryzyka.",
+        "Nie zaczynać kolejnego pakietu przed przeglądem po celu około 2000."
+      ]
+    },
+    {
+      "pack_id": "pack-20",
+      "title": "Codzienność, rośliny, rower i woda",
+      "domains": [
+        "Codzienność, rośliny, rower i woda"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-20-everyday-breadth/",
+      "input_note": "500 decyzji. Część propozycji ma otwartą stronę. Reszta to editorial_synthesis bez wymyślonego URL.",
+      "canonical_path": "data/skills-catalog/pilots/everyday-breadth/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 204,
+      "count_note": "500 decyzji: 204 accept_for_pilot, 269 already_represented, 15 reject, 12 needs_source.",
+      "current_revision": "v15",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/everyday-breadth/review-decisions-pack-20.jsonl",
+        "data/skills-catalog/pilots/everyday-breadth/approved-skill-pilot-pack-20.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-20-everyday-breadth/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-20-high-risk-for-review.",
+        "Nie zamykać wcześniejszych luk ryzyka.",
+        "Nie zaczynać kolejnego pakietu przed przeglądem po celu około 2000."
+      ]
+    },
+    {
+      "pack_id": "pack-21",
+      "title": "Drobne braki po 1975",
+      "domains": [
+        "Drobne braki po 1975"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-21-breadth-after-1975/",
+      "input_note": "500 decyzji. Część propozycji ma otwartą stronę. Reszta to editorial_synthesis bez wymyślonego URL.",
+      "canonical_path": "data/skills-catalog/pilots/breadth-after-1975/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 44,
+      "count_note": "500 decyzji: 44 accept_for_pilot, 438 already_represented, 10 reject, 8 needs_source.",
+      "current_revision": "v16",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/breadth-after-1975/review-decisions-pack-21.jsonl",
+        "data/skills-catalog/pilots/breadth-after-1975/approved-skill-pilot-pack-21.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-21-breadth-after-1975/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-21-high-risk-for-review.",
+        "Nie zamykać wcześniejszych luk ryzyka.",
+        "Nie zaczynać kolejnego pakietu przed przeglądem po celu około 2000."
+      ]
+    },
+    {
+      "pack_id": "pack-22",
+      "title": "Odkrywanie ze źródeł",
+      "domains": [
+        "opieka nad kotem",
+        "bezpieczeństwo cyfrowe",
+        "rysunek",
+        "języki",
+        "gleba",
+        "wykresy",
+        "przygotowanie muzyczne"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-22-source-led-discovery/",
+      "input_note": "500 decyzji. Nowe propozycje wynikają ze stron otwartych 2026-10-18. Bliskie warianty zapisano jako already_represented.",
+      "canonical_path": "data/skills-catalog/pilots/source-led-discovery/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 49,
+      "count_note": "500 decyzji: 49 accept_for_pilot, 427 already_represented, 16 reject, 8 needs_source.",
+      "current_revision": "v17",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/source-led-discovery/review-decisions-pack-22.jsonl",
+        "data/skills-catalog/pilots/source-led-discovery/approved-skill-pilot-pack-22.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-22-source-led-discovery/candidates.jsonl",
+        "data/skills-catalog/review-inputs/pack-22-source-led-discovery/sources-opened.md"
+      ],
+      "next_actions": [
+        "Nie oznaczać propozycji jako skilli produkcyjnych.",
+        "Nie pisać procedur dla luki gap-pack-22-high-risk-for-review.",
+        "Nie zamykać wcześniejszych luk ryzyka.",
+        "Nie otwierać pack-23 i nie robić globalnej selekcji."
+      ]
+    },
+    {
+      "pack_id": "pack-23",
+      "title": "Ściegi, reguły szachowe i runda",
+      "domains": [
+        "embroidery",
+        "chess",
+        "rounds"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-23-stitch-chess-rounds/",
+      "input_note": "500 decyzji. 18 nowych propozycji z otwartych stron metod. 390 nazw ściegów bez otwartej metody.",
+      "canonical_path": "data/skills-catalog/pilots/stitch-chess-rounds/",
+      "candidate_count": 500,
+      "reviewed_candidate_count": 500,
+      "proposal_count": 18,
+      "count_note": "500 decyzji: 18 accept_for_pilot, 6 already_represented, 86 reject, 390 needs_source.",
+      "current_revision": "v18",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/stitch-chess-rounds/review-decisions-pack-23.jsonl",
+        "data/skills-catalog/pilots/stitch-chess-rounds/approved-skill-pilot-pack-23.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-23-stitch-chess-rounds/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie otwierać poziomów dla ściegu bez strony metody.",
+        "Nie otwierać pack-24 automatycznie jako kolejnych wariantów ściegu."
+      ]
+    },
+    {
+      "pack_id": "pack-24",
+      "title": "Mycie rąk, zgięcia i kompas",
+      "domains": [
+        "hands",
+        "origami",
+        "navigation"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-24-hands-folds-compass/",
+      "input_note": "143 decyzje, nie dopchane do 500. 7 nowych propozycji z otwartych stron.",
+      "canonical_path": "data/skills-catalog/pilots/hands-folds-compass/",
+      "candidate_count": 143,
+      "reviewed_candidate_count": 143,
+      "proposal_count": 7,
+      "count_note": "143 decyzje: 7 accept_for_pilot, 15 already_represented, 50 reject, 71 needs_source.",
+      "current_revision": "v19",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/hands-folds-compass/review-decisions-pack-24.jsonl",
+        "data/skills-catalog/pilots/hands-folds-compass/approved-skill-pilot-pack-24.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-24-hands-folds-compass/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie pisać poziomów dla techniki origami bez otwartej metody.",
+        "Nie otwierać pack-25 w tym sprincie."
+      ]
+    },
+    {
+      "pack_id": "pack-25",
+      "title": "Metody, nie indeksy",
+      "domains": [
+        "embroidery",
+        "food",
+        "trees"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-25-methods-not-indexes/",
+      "input_note": "23 wiersze decyzji. 5 nowych unikalnych kandydatów. 4 ściegi były już policzone w pack-23 i dostały otwartą metodę.",
+      "canonical_path": "data/skills-catalog/pilots/methods-not-indexes/",
+      "candidate_count": 5,
+      "reviewed_candidate_count": 5,
+      "proposal_count": 6,
+      "count_note": "Wiersze decyzji: 6 accept, 6 already, 9 reject, 2 needs_source. Unikalni nowi kandydaci po odjęciu duplikatów i wcześniej policzonych ściegów: 5.",
+      "current_revision": "v20",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/methods-not-indexes/review-decisions-pack-25.jsonl",
+        "data/skills-catalog/pilots/methods-not-indexes/approved-skill-pilot-pack-25.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-25-methods-not-indexes/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Otwierać pojedyncze strony metod, nie ścianę nazw.",
+        "Nie otwierać pack-26, dopóki nie ma otwartych metod."
+      ]
+    },
+    {
+      "pack_id": "pack-26",
+      "title": "Ścieg rybi i jajecznica",
+      "domains": [
+        "embroidery",
+        "food"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-26-fishbone-scramble/",
+      "input_note": "2 nowe unikalne kandydatury z otwartych stron metod.",
+      "canonical_path": "data/skills-catalog/pilots/fishbone-scramble/",
+      "candidate_count": 2,
+      "reviewed_candidate_count": 2,
+      "proposal_count": 2,
+      "count_note": "7 wierszy decyzji: 2 accept, 2 already, 3 reject, 0 needs_source. Nowi unikalni: 2.",
+      "current_revision": "v21",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/fishbone-scramble/review-decisions-pack-26.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-26-fishbone-scramble/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie otwierać pack-27 bez nowej strony metody."
+      ]
+    },
+    {
+      "pack_id": "pack-27",
+      "title": "Couching",
+      "domains": [
+        "embroidery"
+      ],
+      "input_path": "data/skills-catalog/review-inputs/pack-27-couching/",
+      "input_note": "Jedna otwarta strona metody. Krótszy adres couching nadal pusty.",
+      "canonical_path": "data/skills-catalog/pilots/couching/",
+      "candidate_count": 1,
+      "reviewed_candidate_count": 1,
+      "proposal_count": 1,
+      "count_note": "1 wiersz decyzji: 1 accept. Nowi unikalni: 1.",
+      "current_revision": "v22",
+      "status": "needs_revision",
+      "collection_status": "integrated",
+      "editorial_review_status": "reviewed",
+      "integration_status": "integrated",
+      "production_status": "not_started",
+      "review_files": [
+        "data/skills-catalog/pilots/couching/review-decisions-pack-27.jsonl"
+      ],
+      "source_files": [
+        "data/skills-catalog/review-inputs/pack-27-couching/candidates.jsonl"
+      ],
+      "next_actions": [
+        "Nie otwierać pack-28 bez nowej strony metody.",
+        "Nie traktować glosariusza origami jako metody."
       ]
     }
   ],

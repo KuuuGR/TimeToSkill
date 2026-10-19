@@ -12,10 +12,20 @@ struct CounterRing: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(Color.gray.opacity(0.2), lineWidth: 8)
+                .stroke(Color.black.opacity(0.28), lineWidth: 8)
             Circle()
                 .trim(from: 0, to: progress)
-                .stroke(AngularGradient(gradient: Gradient(colors: [.green, .yellow, .orange, .red]), center: .center), style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                .stroke(
+                    AngularGradient(
+                        colors: [
+                            Color(hex: "#A5E5FF"),
+                            Color(hex: "#1677CB"),
+                            Color(hex: "#10406F")
+                        ],
+                        center: .center
+                    ),
+                    style: StrokeStyle(lineWidth: 8, lineCap: .round)
+                )
                 .rotationEffect(.degrees(-90))
             Text("\(Int(progress * 100))%")
                 .font(.caption)

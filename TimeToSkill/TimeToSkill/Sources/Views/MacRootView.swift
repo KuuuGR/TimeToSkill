@@ -7,10 +7,7 @@
 //  column simply hosts it - no feature, model or persistence code changes.
 //
 
-#if os(macOS)
-
 import SwiftUI
-import SwiftData
 
 /// Sections reachable from the macOS sidebar. Mirrors what the iOS home links
 /// to, with Settings and About kept at the bottom, as requested.
@@ -49,6 +46,10 @@ enum MacSidebarSection: String, CaseIterable, Identifiable, Hashable {
     }
 }
 
+#if os(macOS)
+
+import SwiftData
+
 struct MacRootView: View {
     @Environment(\.modelContext) private var modelContext
 
@@ -60,8 +61,17 @@ struct MacRootView: View {
         NavigationSplitView {
             sidebar
         } detail: {
-            detail
+            // The split column proposes a real height. Pinning the detail to
+            // that height stops a tall screen (the skill catalog) from sizing
+            // itself to its content, sticking to the top of the window and
+            // leaving the bottom unreachable.
+            GeometryReader { proxy in
+                detail
+                    .frame(width: proxy.size.width, height: proxy.size.height, alignment: .top)
+            }
+            .frame(minWidth: 520, minHeight: 420)
         }
+        .navigationSplitViewStyle(.balanced)
         .sheet(isPresented: $showingAddSkill) {
             AddSkillView()
         }
@@ -119,6 +129,7 @@ struct MacRootView: View {
     private func sidebarRow(_ section: MacSidebarSection) -> some View {
         Label(section.titleKey, systemImage: section.systemImage)
             .tag(section)
+            .accessibilityIdentifier("Sidebar_\(section.rawValue)")
     }
 
     // MARK: - Detail column
@@ -139,14 +150,19 @@ struct MacRootView: View {
         case .theory:
             NavigationStack { TheoryView() }
         case .skills:
-            ExemplarySkillsView()
-                .macOSToolbarAction(
-                    title: "fab_add_custom_skill",
-                    systemImage: "plus.square.on.square",
-                    shortcut: KeyboardShortcut("n", modifiers: [.command, .shift])
-                ) {
-                    showingCustomSkillSheet = true
-                }
+            // One navigation stack for this column. The catalog used to bring
+            // its own stack, and a pushed skill then replaced the split view,
+            // so the sidebar rows disappeared with no way back.
+            NavigationStack {
+                ExemplarySkillsView()
+                    .macOSToolbarAction(
+                        title: "fab_add_custom_skill",
+                        systemImage: "plus.square.on.square",
+                        shortcut: KeyboardShortcut("n", modifiers: [.command, .shift])
+                    ) {
+                        showingCustomSkillSheet = true
+                    }
+            }
         case .settings:
             OptionsView(showsDoneButton: false)
         case .about:
