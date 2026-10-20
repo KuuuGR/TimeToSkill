@@ -353,6 +353,7 @@
 "session_chart_empty" = "Por ĉi tiu kapablo ankoraŭ ne estas finitaj seancoj de la tempilo.";
 "session_chart_curve_caption" = "La travidebla kurbo estas referenco de normala distribuo por ĉi tiuj seancoj. Ĝi ne estas antaŭdiro kaj ne signifas, ke la seancoj sekvas normalan distribuon.";
 "session_chart_curve_hidden" = "Ne sufiĉas variado aŭ finitaj seancoj por montri stabilan referencan kurbon.";
+"session_chart_outside_range_format" = "%d observadoj kuŝas ekster la videbla intervalo.";
 "session_chart_accessibility" = "Diagramo de daŭro de seancoj de la tempilo";
 "session_chart_row_accessibility" = "%1$@, %2$d seancoj";
 

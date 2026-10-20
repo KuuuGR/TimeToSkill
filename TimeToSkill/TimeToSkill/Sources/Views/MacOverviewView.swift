@@ -26,11 +26,11 @@ struct MacOverviewView: View {
             VStack(alignment: .leading, spacing: 22) {
                 // Hero: app name and a one-line introduction.
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("ab_app_name")
+                    LText(key: "ab_app_name")
                         .font(.system(.largeTitle, weight: .bold))
                         .foregroundColor(AppColors.onSurface)
 
-                    Text(LocalizedStringKey("home_hero_intro"))
+                    LText(key: "home_hero_intro")
                         .font(.body)
                         .foregroundColor(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -38,8 +38,8 @@ struct MacOverviewView: View {
 
                 GroupBox {
                     VStack(alignment: .leading, spacing: 14) {
-                        Text(String(
-                            format: NSLocalizedString("time_total_hours_format", comment: "Total tracked time"),
+                        Text(verbatim: L10n.format(
+                            "time_total_hours_format",
                             formatHours(totalTrackedHours)
                         ))
                         .font(.title2.weight(.semibold))
@@ -47,22 +47,30 @@ struct MacOverviewView: View {
                         .foregroundColor(AppColors.onSurface)
                         .accessibilityIdentifier("MacTotalTrackedLabel")
 
-                        Button(LocalizedStringKey("main_manage_trackers")) {
+                        Button {
                             selection = .trackers
+                        } label: {
+                            LText(key: "main_manage_trackers")
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(AppColors.accent)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
-                        Button(LocalizedStringKey("main_manage_counters")) {
+                        Button {
                             selection = .counters
+                        } label: {
+                            LText(key: "main_manage_counters")
                         }
                         .buttonStyle(.bordered)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .padding(.top, 2)
                 } label: {
-                    Label(LocalizedStringKey("overview_tracking_tools"), systemImage: "hourglass")
+                    Label {
+                        LText(key: "overview_tracking_tools")
+                    } icon: {
+                        Image(systemName: "hourglass")
+                    }
                 }
 
                 MonthActivitySummary()
@@ -73,7 +81,7 @@ struct MacOverviewView: View {
             .frame(maxWidth: 660, alignment: .leading)
             .frame(maxWidth: .infinity, alignment: .center)
         }
-        .navigationTitle(LocalizedStringKey("ab_app_name"))
+        .navigationTitle(Text(verbatim: L10n.string("ab_app_name")))
         // Same shared control as Options — top-trailing of the detail panel.
         .languageSelectorCorner()
     }

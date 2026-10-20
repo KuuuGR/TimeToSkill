@@ -45,11 +45,14 @@ struct ResolvedLanguage: Equatable {
     var bundleCode: String
     var script: InterslavicScript?
 
-    var localeIdentifier: String {
-        if let script {
-            return script.storageKey
-        }
-        return bundleCode
+    /// Foundation / SwiftUI locale. Always the `.lproj` code (e.g. `isv`), never
+    /// `isv-Glag` / `isv-Cyrl` — those folders do not exist, and using them made
+    /// the system skip Interslavic strings so the UI stayed in Latinica.
+    var localeIdentifier: String { bundleCode }
+
+    /// View-identity token that changes when the alphabet changes.
+    var presentationIdentity: String {
+        "\(bundleCode)|\(script?.rawValue ?? "-")|\(preferenceKey)"
     }
 
     var followsDevice: Bool { preferenceKey == LanguageCatalog.systemKey }

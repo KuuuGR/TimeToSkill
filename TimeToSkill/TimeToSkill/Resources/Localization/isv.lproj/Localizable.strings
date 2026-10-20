@@ -353,6 +353,7 @@
 "session_chart_empty" = "Za tutu umětnost ješče nema dokončenyh sesij časoměra.";
 "session_chart_curve_caption" = "Prozirna kriva jest referencija normalnogo razdělenja za te sesije. Ona ne jest prědviděnjem i ne znači, že sesije slědujut normalnomu razdělenju.";
 "session_chart_curve_hidden" = "Nema dovoljno variacije ili dokončenyh sesij, da by pokazati stabilnu referencnu krivu.";
+"session_chart_outside_range_format" = "%d pozorovanij leži vně vidimogo razměra.";
 "session_chart_accessibility" = "Diagram trvanja sesij časoměra";
 "session_chart_row_accessibility" = "%1$@, %2$d sesij";
 

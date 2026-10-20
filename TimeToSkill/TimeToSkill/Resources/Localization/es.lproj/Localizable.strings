@@ -354,6 +354,7 @@
 "session_chart_empty" = "Todavía no hay sesiones terminadas del temporizador para esta habilidad.";
 "session_chart_curve_caption" = "La curva translúcida es una referencia de distribución normal para estas sesiones. No es una predicción y no significa que las sesiones sigan una distribución normal.";
 "session_chart_curve_hidden" = "No hay bastante variación o sesiones terminadas para mostrar una curva de referencia estable.";
+"session_chart_outside_range_format" = "%d observaciones quedan fuera del rango visible.";
 "session_chart_accessibility" = "Gráfico de duración de las sesiones del temporizador";
 "session_chart_row_accessibility" = "%1$@, %2$d sesiones";
 

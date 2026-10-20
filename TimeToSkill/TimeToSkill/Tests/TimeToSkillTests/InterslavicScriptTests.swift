@@ -75,6 +75,11 @@ final class InterslavicScriptTests: XCTestCase {
         XCTAssertEqual(latin.bundleCode, "isv")
         XCTAssertEqual(cyrillic.bundleCode, "isv")
         XCTAssertEqual(glagolitic.bundleCode, "isv")
+        // Locale id must stay `isv` so Foundation loads isv.lproj; script is separate.
+        XCTAssertEqual(latin.localeIdentifier, "isv")
+        XCTAssertEqual(cyrillic.localeIdentifier, "isv")
+        XCTAssertEqual(glagolitic.localeIdentifier, "isv")
+        XCTAssertNotEqual(latin.presentationIdentity, glagolitic.presentationIdentity)
         XCTAssertEqual(latin.script, .latin)
         XCTAssertEqual(cyrillic.script, .cyrillic)
         XCTAssertEqual(glagolitic.script, .glagolitic)
@@ -194,6 +199,52 @@ final class InterslavicScriptTests: XCTestCase {
         language.select("isv-Glag")
         let glagolitic = LanguageState.shared.string("sidebar_overview")
         XCTAssertEqual(glagolitic, InterslavicTransliterator.latinToGlagolitic(latin))
+    }
+
+    func testAllInterslavicUIKeysTransliterateToGlagolitic() throws {
+        let isv = try Self.loadLocalizable(locale: "isv")
+        var converted = 0
+        var skippedBrandOrSymbol = 0
+        for (key, latin) in isv {
+            let trimmed = latin.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !trimmed.isEmpty else {
+                XCTFail("Empty isv value for \(key)")
+                continue
+            }
+            let glag = LanguageCatalog.lookup(
+                key: key,
+                bundleCode: "isv",
+                script: .glagolitic,
+                tables: ["isv": isv, "en": [:]]
+            )
+            // Placeholders and digits must survive.
+            if latin.contains("%") {
+                let tokens = ["%d", "%@", "%1$@", "%2$@", "%lld"]
+                for token in tokens where latin.contains(token) {
+                    XCTAssertTrue(glag.contains(token), "\(key) lost \(token)")
+                }
+            }
+            let latinLetters = trimmed.unicodeScalars.filter { CharacterSet.letters.contains($0) }
+            guard !latinLetters.isEmpty else {
+                skippedBrandOrSymbol += 1
+                continue
+            }
+            // Brand / Latin-script proper names may stay Latin on purpose.
+            let allowLatinPassthrough = key.hasPrefix("ab_") || key.contains("email") || key == "theory_link_pubmed"
+            if allowLatinPassthrough {
+                skippedBrandOrSymbol += 1
+                continue
+            }
+            XCTAssertTrue(
+                InterslavicTransliterator.appearsConverted(to: .glagolitic, text: glag)
+                    || glag == InterslavicTransliterator.latinToGlagolitic(latin),
+                "UI key \(key) not Glagolitic after conversion: \(glag)"
+            )
+            XCTAssertEqual(glag, InterslavicTransliterator.latinToGlagolitic(latin))
+            converted += 1
+        }
+        XCTAssertGreaterThan(converted, 100, "Expected a broad UI key set to convert")
+        _ = skippedBrandOrSymbol
     }
 
     private static func loadLocalizable(locale: String) throws -> [String: String] {

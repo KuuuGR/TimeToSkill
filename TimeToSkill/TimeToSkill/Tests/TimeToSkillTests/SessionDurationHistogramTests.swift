@@ -357,6 +357,68 @@ final class TrackerToolKindTests: XCTestCase {
     }
 }
 
+final class SessionPresentationWindowTests: XCTestCase {
+
+    func testSixSigmaWindowExcludesFarOutlierFromVisibleBins() throws {
+        var minutes = Array(repeating: 30.0, count: 20)
+        minutes.append(10_000)
+        let histogram = SessionDurationHistogram(minutes: minutes, detail: .medium)
+        XCTAssertEqual(histogram.minutes.count, 21)
+        XCTAssertEqual(histogram.bins.reduce(0) { $0 + $1.count } + histogram.presentationWindow.outsideCount, 21)
+        XCTAssertGreaterThan(histogram.presentationWindow.outsideCount, 0)
+        XCTAssertLessThan(histogram.presentationWindow.upper, 10_000)
+        let sixHi = try XCTUnwrap(histogram.presentationWindow.sixSigmaUpper)
+        XCTAssertLessThanOrEqual(histogram.presentationWindow.upper, sixHi + 1e-9)
+    }
+
+    func testPresentationUsesSameWindowForCurveAndBars() throws {
+        let minutes = (0..<30).map { 20.0 + Double($0) } + [8_000.0]
+        let histogram = SessionDurationHistogram(minutes: minutes, detail: .narrow)
+        let window = histogram.presentationWindow
+        XCTAssertTrue(window.upper > window.lower)
+        for bin in histogram.bins where !bin.isOverflow {
+            let upper = try XCTUnwrap(bin.upperMinutes)
+            XCTAssertGreaterThanOrEqual(bin.lowerMinutes, window.lower - 1e-9)
+            XCTAssertLessThanOrEqual(upper, window.upper + 1e-9)
+        }
+        if histogram.showsReferenceCurve {
+            XCTAssertTrue(histogram.bins.contains { ($0.expectedCount ?? 0) > 0 })
+        }
+    }
+
+    func testMeanAndDeviationStillIncludeOutliers() {
+        var minutes = Array(repeating: 40.0, count: 15)
+        minutes.append(5_000)
+        let histogram = SessionDurationHistogram(minutes: minutes, detail: .medium)
+        XCTAssertEqual(histogram.minutes.count, 16)
+        XCTAssertGreaterThan(histogram.mean ?? 0, 40)
+        XCTAssertGreaterThan(histogram.sampleStandardDeviation ?? 0, 0)
+    }
+
+    func testZeroVarianceHasFiniteFallbackWindow() {
+        let histogram = SessionDurationHistogram(minutes: Array(repeating: 12, count: 8), detail: .medium)
+        XCTAssertTrue(histogram.presentationWindow.lower.isFinite)
+        XCTAssertTrue(histogram.presentationWindow.upper.isFinite)
+        XCTAssertGreaterThan(histogram.presentationWindow.upper, histogram.presentationWindow.lower)
+        XCTAssertEqual(histogram.presentationWindow.outsideCount, 0)
+    }
+
+    func testWideMediumNarrowStillDifferInsideWindow() {
+        var minutes: [Double] = []
+        for i in 0..<50 {
+            minutes.append(15 + Double(i) * 1.2)
+        }
+        minutes.append(9_000)
+        let wide = SessionDurationHistogram(minutes: minutes, detail: .wide)
+        let medium = SessionDurationHistogram(minutes: minutes, detail: .medium)
+        let narrow = SessionDurationHistogram(minutes: minutes, detail: .narrow)
+        XCTAssertEqual(wide.binWidth, wide.baseBinWidth * 3, accuracy: 1e-9)
+        XCTAssertEqual(medium.binWidth, medium.baseBinWidth, accuracy: 1e-9)
+        XCTAssertEqual(narrow.binWidth, narrow.baseBinWidth / 3, accuracy: 1e-9)
+        XCTAssertNotEqual(wide.binWidth, narrow.binWidth)
+    }
+}
+
 final class SkillDurationSampleTests: XCTestCase {
 
     func testManualHourAdditionsAreIncludedInDistributionSample() {

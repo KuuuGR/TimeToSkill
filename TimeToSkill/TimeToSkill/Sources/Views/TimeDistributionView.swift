@@ -168,12 +168,25 @@ struct TimeDistributionView: View {
                 emptyState
             } else {
                 SessionDurationChart(histogram: distribution)
-                    // Force a fresh plot when the detail level changes the
-                    // numeric bin width (avoids stale geometry from a prior pick).
-                    .id("\(detail.rawValue)-\(distribution.binWidth)")
+                    // Force a fresh plot when the detail level or view window
+                    // changes (avoids stale geometry from a prior pick).
+                    .id("\(detail.rawValue)-\(distribution.binWidth)-\(distribution.presentationWindow.lower)-\(distribution.presentationWindow.upper)")
+                if distribution.presentationWindow.outsideCount > 0 {
+                    outsideRangeCaption
+                }
                 curveCaption
             }
         }
+    }
+
+    private var outsideRangeCaption: some View {
+        Text(verbatim: L10n.format(
+            "session_chart_outside_range_format",
+            distribution.presentationWindow.outsideCount
+        ))
+        .font(.footnote)
+        .foregroundStyle(.secondary)
+        .fixedSize(horizontal: false, vertical: true)
     }
 
     private var curveCaption: some View {

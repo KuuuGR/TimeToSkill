@@ -354,6 +354,7 @@
 "session_chart_empty" = "No completed timer sessions for this skill yet.";
 "session_chart_curve_caption" = "The translucent curve is a normal-distribution reference for these sessions. It is not a prediction and does not mean the sessions follow a normal distribution.";
 "session_chart_curve_hidden" = "Not enough variation or completed timer sessions to show a stable reference curve.";
+"session_chart_outside_range_format" = "%d opažanja leži izvan vidljivog raspona.";
 "session_chart_accessibility" = "Timer session duration chart";
 "session_chart_row_accessibility" = "%1$@, %2$d sessions";
 

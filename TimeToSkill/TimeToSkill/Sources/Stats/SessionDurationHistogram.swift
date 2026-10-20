@@ -122,6 +122,27 @@ struct SessionDurationHistogram: Equatable {
     static let minimumRegularBinCount = 2
     static let maximumRegularBinCount = 48
 
+    /// Nominal presentation bound relative to the sample mean.
+    static let presentationSigmaMultiple = 6.0
+    /// Tukey outer-fence multiplier for the robust presentation cap.
+    static let robustFenceMultiplier = 3.0
+
+    /// Visible X-axis window for the chart (presentation only).
+    struct PresentationWindow: Equatable {
+        /// Inclusive lower edge of the drawn axis.
+        let lower: Double
+        /// Exclusive upper edge of the drawn axis (half-open with bins).
+        let upper: Double
+        /// Nominal `μ − 6σ` (clamped to ≥ 0), before the robust intersection.
+        let sixSigmaLower: Double?
+        /// Nominal `μ + 6σ`, before the robust intersection.
+        let sixSigmaUpper: Double?
+        /// True when the final window is tighter than ±6σ due to Tukey fences.
+        let appliedRobustCap: Bool
+        /// Observations that remain in `minutes` / μ / σ but are not drawn.
+        let outsideCount: Int
+    }
+
     let minutes: [Double]
     let detail: SessionChartDetail
     /// Freedman–Diaconis (or fallback) width for the medium setting, before
@@ -134,14 +155,26 @@ struct SessionDurationHistogram: Equatable {
     let sampleStandardDeviation: Double?
     let showsReferenceCurve: Bool
     let bins: [Bin]
+    /// Drawn X range shared by the histogram and the normal curve.
+    let presentationWindow: PresentationWindow
 
     init(minutes: [Double], detail: SessionChartDetail = .medium) {
         let clean = minutes.filter { $0.isFinite && $0 > 0 }
         let mean = Self.arithmeticMean(clean)
         let deviation = mean.flatMap { Self.sampleStandardDeviation(clean, mean: $0) }
         let showsCurve = Self.shouldShowCurve(count: clean.count, deviation: deviation)
-        let base = Self.freedmanDiaconisBaseWidth(values: clean)
-        let width = Self.resolvedWidth(values: clean, detail: detail, base: base)
+        let window = Self.presentationWindow(values: clean, mean: mean, deviation: deviation)
+        // Width from the bulk inside the view when possible, so one outlier
+        // does not force an enormous bin size; multipliers stay exact.
+        let widthSource = clean.filter { $0 >= window.lower && $0 < window.upper }
+        let base = Self.freedmanDiaconisBaseWidth(
+            values: widthSource.count >= 2 ? widthSource : clean
+        )
+        let width = Self.resolvedWidth(
+            values: widthSource.count >= 2 ? widthSource : clean,
+            detail: detail,
+            base: base
+        )
 
         self.minutes = clean
         self.detail = detail
@@ -150,25 +183,39 @@ struct SessionDurationHistogram: Equatable {
         self.mean = mean
         self.sampleStandardDeviation = deviation
         self.showsReferenceCurve = showsCurve
-        self.bins = Self.makeBins(
-            values: clean,
-            width: width,
-            originAlignedToData: true,
-            maximumRegularBins: Self.maximumRegularBinCount,
-            mean: mean,
-            deviation: deviation,
-            showsCurve: showsCurve
-        )
+        self.presentationWindow = window
+        self.bins = clean.isEmpty
+            ? []
+            : Self.makeBinsInWindow(
+                values: clean,
+                width: width,
+                windowLower: window.lower,
+                windowUpper: window.upper,
+                maximumRegularBins: Self.maximumRegularBinCount,
+                mean: mean,
+                deviation: deviation,
+                showsCurve: showsCurve
+            )
     }
 
     /// Width-based initializer retained for unit tests that pin a minute step.
-    /// Bins start at 0 so legacy half-open expectations stay stable.
+    /// Bins start at 0 so legacy half-open expectations stay stable. No ±6σ
+    /// presentation clip — tests assert exact bin edges from zero.
     init(minutes: [Double], binWidth: Double) {
         let clean = minutes.filter { $0.isFinite && $0 > 0 }
         let width = Self.usableWidth(binWidth)
         let mean = Self.arithmeticMean(clean)
         let deviation = mean.flatMap { Self.sampleStandardDeviation(clean, mean: $0) }
         let showsCurve = Self.shouldShowCurve(count: clean.count, deviation: deviation)
+        let dataMax = clean.max() ?? width
+        let window = PresentationWindow(
+            lower: 0,
+            upper: max(width, dataMax.nextUp),
+            sixSigmaLower: nil,
+            sixSigmaUpper: nil,
+            appliedRobustCap: false,
+            outsideCount: 0
+        )
 
         self.minutes = clean
         self.detail = .medium
@@ -177,6 +224,7 @@ struct SessionDurationHistogram: Equatable {
         self.mean = mean
         self.sampleStandardDeviation = deviation
         self.showsReferenceCurve = showsCurve
+        self.presentationWindow = window
         self.bins = Self.makeBins(
             values: clean,
             width: width,
@@ -185,6 +233,113 @@ struct SessionDurationHistogram: Equatable {
             mean: mean,
             deviation: deviation,
             showsCurve: showsCurve
+        )
+    }
+
+    /// Presentation-only X window: intersect `μ ± 6σ` with Tukey outer fences
+    /// so a single extreme value cannot stretch the axis after it has already
+    /// inflated σ. Full-sample μ and σ are unchanged.
+    static func presentationWindow(
+        values: [Double],
+        mean: Double?,
+        deviation: Double?
+    ) -> PresentationWindow {
+        guard !values.isEmpty,
+              let dataMin = values.min(), let dataMax = values.max(),
+              dataMin.isFinite, dataMax.isFinite
+        else {
+            return PresentationWindow(
+                lower: 0,
+                upper: defaultWidth,
+                sixSigmaLower: nil,
+                sixSigmaUpper: nil,
+                appliedRobustCap: false,
+                outsideCount: 0
+            )
+        }
+
+        if values.count < 2 || deviation == nil || !(deviation! > 0) {
+            let center = mean ?? dataMin
+            let half = max(defaultWidth / 2, 1)
+            let lo = max(0, center - half)
+            let hi = max(lo + half, center + half)
+            return PresentationWindow(
+                lower: lo,
+                upper: hi,
+                sixSigmaLower: lo,
+                sixSigmaUpper: hi,
+                appliedRobustCap: false,
+                outsideCount: 0
+            )
+        }
+
+        let m = mean!
+        let s = deviation!
+        let rawSixLo = m - presentationSigmaMultiple * s
+        let rawSixHi = m + presentationSigmaMultiple * s
+        let sixLo = rawSixLo.isFinite ? max(0, rawSixLo) : 0
+        let sixHi: Double
+        if rawSixHi.isFinite, rawSixHi > sixLo {
+            sixHi = rawSixHi
+        } else {
+            sixHi = sixLo + max(defaultWidth, abs(m) * 0.1 + 1)
+        }
+
+        let sorted = values.sorted()
+        let q1 = quantile(sorted, probability: 0.25)
+        let q3 = quantile(sorted, probability: 0.75)
+        let iqr = (q1.isFinite && q3.isFinite) ? max(0, q3 - q1) : 0
+
+        let robustLo: Double
+        let robustHi: Double
+        let haveRobust: Bool
+        if iqr > 0 {
+            robustLo = max(0, q1 - robustFenceMultiplier * iqr)
+            robustHi = q3 + robustFenceMultiplier * iqr
+            haveRobust = robustHi > robustLo
+        } else {
+            let pLo = quantile(sorted, probability: 0.025)
+            let pHi = quantile(sorted, probability: 0.975)
+            if pLo.isFinite, pHi.isFinite, pHi > pLo {
+                robustLo = max(0, pLo)
+                robustHi = pHi
+                haveRobust = true
+            } else {
+                robustLo = sixLo
+                robustHi = sixHi
+                haveRobust = false
+            }
+        }
+
+        var lo = sixLo
+        var hi = sixHi
+        var appliedRobust = false
+        if haveRobust {
+            let clippedLo = max(sixLo, robustLo)
+            let clippedHi = min(sixHi, robustHi)
+            if clippedHi > clippedLo {
+                lo = clippedLo
+                hi = clippedHi
+                appliedRobust = (lo > sixLo + 1e-9) || (hi < sixHi - 1e-9)
+            }
+        }
+
+        if !(hi > lo) || !lo.isFinite || !hi.isFinite {
+            lo = sixLo
+            hi = sixHi
+            appliedRobust = false
+        }
+
+        // Half-open upper: nudge so a value exactly on `hi` still needs an
+        // exclusive edge; outsideCount uses `>= hi`.
+        let outside = values.filter { $0 < lo || $0 >= hi }.count
+        return PresentationWindow(
+            lower: lo,
+            upper: hi,
+            sixSigmaLower: sixLo,
+            sixSigmaUpper: sixHi,
+            appliedRobustCap: appliedRobust,
+            outsideCount: outside
         )
     }
 
@@ -364,6 +519,67 @@ struct SessionDurationHistogram: Equatable {
     private static func shouldShowCurve(count: Int, deviation: Double?) -> Bool {
         guard count >= minimumCurveSampleCount, let deviation else { return false }
         return deviation.isFinite && deviation > 0
+    }
+
+    /// Bins covering the presentation window only. Observations outside
+    /// `[windowLower, windowUpper)` are omitted from bars (they stay in
+    /// `minutes` / μ / σ and in `presentationWindow.outsideCount`).
+    private static func makeBinsInWindow(
+        values: [Double],
+        width: Double,
+        windowLower: Double,
+        windowUpper: Double,
+        maximumRegularBins: Int,
+        mean: Double?,
+        deviation: Double?,
+        showsCurve: Bool
+    ) -> [Bin] {
+        guard width.isFinite, width > 0,
+              windowLower.isFinite, windowUpper.isFinite, windowUpper > windowLower
+        else { return [] }
+
+        let inWindow = values.filter { $0 >= windowLower && $0 < windowUpper }
+        let limit = max(1, maximumRegularBins)
+        let rawOrigin = (windowLower / width).rounded(.down) * width
+        let origin = rawOrigin.isFinite ? max(0, rawOrigin) : windowLower
+
+        let span = windowUpper - origin
+        guard span.isFinite, span > 0 else { return [] }
+
+        let needed = span / width
+        let binCount: Int
+        if needed.isFinite, needed > 0 {
+            binCount = min(limit, max(1, Int(needed.rounded(.up))))
+        } else {
+            binCount = 1
+        }
+
+        var counts = Array(repeating: 0, count: binCount)
+        for value in inWindow {
+            if let index = regularIndex(value: value, origin: origin, width: width, limit: binCount) {
+                counts[index] += 1
+            } else if value < windowUpper {
+                counts[binCount - 1] += 1
+            }
+        }
+
+        return counts.enumerated().compactMap { index, count -> Bin? in
+            let rawLower = origin + Double(index) * width
+            let rawUpper = rawLower + width
+            // Clip to the presentation window; drop slots that do not intersect it.
+            let lower = max(rawLower, windowLower)
+            let upper = min(rawUpper, windowUpper)
+            guard upper > lower else { return nil }
+            return regularBin(
+                lower: lower,
+                upper: upper,
+                count: count,
+                mean: mean,
+                deviation: deviation,
+                sampleCount: values.count,
+                showsCurve: showsCurve
+            )
+        }
     }
 
     private static func makeBins(

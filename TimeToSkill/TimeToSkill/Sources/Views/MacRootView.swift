@@ -24,7 +24,8 @@ enum MacSidebarSection: String, CaseIterable, Identifiable, Hashable {
     /// Persists the open sidebar section across language-driven view refreshes.
     static let selectionDefaultsKey = "MacSidebarSelection"
 
-    var titleKey: LocalizedStringKey {
+    /// Localizable key — resolved via `L10n` / LanguageBundle so Glagolica applies.
+    var localizationKey: String {
         switch self {
         case .overview: return "sidebar_overview"
         case .trackers: return "main_manage_trackers"
@@ -89,9 +90,9 @@ struct MacRootView: View {
             .frame(minWidth: 520, minHeight: 420)
         }
         .navigationSplitViewStyle(.balanced)
-        // Locale+script identity forces Label/LocalizedStringKey rows to
-        // re-resolve through LanguageBundle after an alphabet change.
-        .id(language.resolved.localeIdentifier)
+        // Script-aware identity forces Label/LocalizedStringKey rows to
+        // re-resolve through LanguageBundle after Latinica → Glagolica, etc.
+        .id(language.resolved.presentationIdentity)
         .sheet(isPresented: $showingCustomSkillSheet) {
             CustomExemplarySkillSheet { title, description, category, difficulty, one, two, three, imagePath in
                 let model = ExemplarySkill(
@@ -144,9 +145,13 @@ struct MacRootView: View {
     }
 
     private func sidebarRow(_ section: MacSidebarSection) -> some View {
-        Label(section.titleKey, systemImage: section.systemImage)
-            .tag(section)
-            .accessibilityIdentifier("Sidebar_\(section.rawValue)")
+        Label {
+            LText(key: section.localizationKey)
+        } icon: {
+            Image(systemName: section.systemImage)
+        }
+        .tag(section)
+        .accessibilityIdentifier("Sidebar_\(section.rawValue)")
     }
 
     // MARK: - Detail column

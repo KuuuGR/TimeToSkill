@@ -43,8 +43,10 @@ struct RootView: View {
                     .transition(.opacity)
             }
         }
-        // Locale and Glagolitic font updates must not change view identity, or
-        // NavigationSplitView / sheets recreate and jump back to Overview.
+        // Locale is the `.lproj` code (`isv`). Cyrillic/Glagolitic are applied
+        // in LanguageBundle — do not use `isv-Glag` as the locale id, or
+        // Foundation skips isv.lproj and the UI stays Latinica.
+        // Avoid `.id` here so NavigationSplitView selection is not reset.
         .environment(\.locale, Locale(identifier: language.resolved.localeIdentifier))
         .modifier(InterslavicFontEnvironment(script: language.resolved.script))
         .onAppear(perform: handleAppear)
