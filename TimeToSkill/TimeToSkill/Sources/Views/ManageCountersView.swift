@@ -118,6 +118,7 @@ struct ManageCountersView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle(LocalizedStringKey("manage_counters_title"))
+
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button(action: { showingNew = true }) {

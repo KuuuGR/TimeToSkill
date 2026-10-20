@@ -23,17 +23,14 @@ struct ExemplarySkillDetailView: View {
     @State private var generatedVerificationCode: String = ""
     @State private var currentVerificationCode: String = ""
     @State private var showUpdateSection: Bool = false
-    
-    private func loadUIImage() -> PlatformImage? {
-        PlatformImageLoader.image(namedOrPath: skill.imageName)
-    }
-    
+
     var body: some View {
         ScrollView {
             skillDetailContent
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(LocalizedStringKey("skill_details_title"))
+
         .inlineNavigationBarTitle()
         .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -86,27 +83,7 @@ struct ExemplarySkillDetailView: View {
         VStack(spacing: 24) {
                     // Header with image and title
                     VStack(spacing: 16) {
-                        if let ui = loadUIImage() {
-                            Image(platformImage: ui)
-                                .resizable()
-                                .scaledToFit()
-                                .saturation((skill.userRating ?? 0) == 0 ? 0 : 1)
-                                .opacity((skill.userRating ?? 0) == 0 ? 0.6 : 1)
-                                .frame(width: 120, height: 120)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
-                                )
-                        } else {
-                            Image(systemName: PlatformImageLoader.systemSymbolExists(skill.imageName) ? skill.imageName : "star.fill")
-                                .font(.system(size: 80))
-                                .foregroundColor((skill.userRating ?? 0) == 0 ? .gray : .blue)
-                                .frame(width: 120, height: 120)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
-                                )
-                        }
+                        CatalogArtworkIcon(name: skill.imageName, side: 120, dimmed: (skill.userRating ?? 0) == 0)
                         
                         VStack(spacing: 8) {
                             HStack(spacing: 8) {

@@ -17,26 +17,28 @@ struct StatsView: View {
     /// a sidebar section in the detail column, where "Done" makes no sense.
     var showsDoneButton: Bool = true
 
+    @State private var tab: StatsTab = .overview
+
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 32) {
-                    Text(LocalizedStringKey("stats_title_overview"))
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .padding(.top)
-
-                    YearActivityCalendarView()
-                    StatsSummaryView(skills: skills)
-                    TopSkillsView(skills: skills)
-                    TrackedTimeView(skills: skills)
-                    ActivityLogView(skills: skills)
-                    GlobalTimeDistributionView()
+            VStack(alignment: .leading, spacing: 0) {
+                statsTabs
+                    .padding(.horizontal)
+                    .padding(.top, 8)
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 28) {
+                        tabContent
+                    }
+                    .padding()
+                    .padding(.bottom, 24)
+                    .macOSContentWidth(820)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                .padding()
-                .macOSContentWidth(820)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle(LocalizedStringKey("stats_nav_title"))
+
             .inlineNavigationBarTitle()
             .toolbar {
                 if showsDoneButton {
@@ -48,6 +50,203 @@ struct StatsView: View {
                 }
             }
             .macOSSheetMinSize(width: 640, height: 660)
+        }
+    }
+
+    private var statsTabs: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .bottom, spacing: 6) {
+                ForEach(StatsTab.allCases) { item in
+                    let selected = item == tab
+                    Button {
+                        tab = item
+                    } label: {
+                        VStack(spacing: 4) {
+                            Image(systemName: item.systemImage)
+                                .font(.body)
+                            Text(LocalizedStringKey(item.titleKey))
+                                .font(.caption.weight(selected ? .semibold : .regular))
+                                .lineLimit(1)
+                        }
+                        .frame(minWidth: 88)
+                        .padding(.horizontal, 12)
+                        .padding(.top, 10)
+                        .padding(.bottom, selected ? 12 : 8)
+                        .background(
+                            UnevenRoundedRectangle(topLeadingRadius: 12, bottomLeadingRadius: 0, bottomTrailingRadius: 0, topTrailingRadius: 12)
+                                .fill(selected ? Color.primary.opacity(0.08) : Color.primary.opacity(0.03))
+                        )
+                        .overlay(alignment: .top) {
+                            UnevenRoundedRectangle(topLeadingRadius: 12, bottomLeadingRadius: 0, bottomTrailingRadius: 0, topTrailingRadius: 12)
+                                .stroke(selected ? Color.brandAccent.opacity(0.8) : Color.primary.opacity(0.12), lineWidth: selected ? 1.4 : 0.6)
+                        }
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("StatsTab_\(item.rawValue)")
+                    .accessibilityAddTraits(selected ? .isSelected : [])
+                }
+            }
+        }
+        .accessibilityIdentifier("StatsTabs")
+    }
+
+    @ViewBuilder
+    private var tabContent: some View {
+        switch tab {
+        case .overview:
+            StatsSummaryView(skills: skills)
+            StatsCollectionCounts()
+        case .time:
+            TrackedTimeView(skills: skills)
+            TopSkillsView(skills: skills)
+            GlobalTimeDistributionView()
+        case .skills:
+            StatsSkillGroups()
+        case .thresholds:
+            StatsThresholds(skills: skills)
+        case .activity:
+            YearActivityCalendarView()
+            ActivityLogView(skills: skills)
+        }
+    }
+}
+
+enum StatsTab: String, CaseIterable, Identifiable {
+    case overview, time, skills, thresholds, activity
+
+    var id: String { rawValue }
+
+    var titleKey: String {
+        switch self {
+        case .overview: return "stats_tab_overview"
+        case .time: return "stats_tab_time"
+        case .skills: return "stats_tab_skills"
+        case .thresholds: return "stats_tab_thresholds"
+        case .activity: return "stats_tab_activity"
+        }
+    }
+
+    var systemImage: String {
+        switch self {
+        case .overview: return "square.grid.2x2"
+        case .time: return "clock"
+        case .skills: return "star"
+        case .thresholds: return "flag"
+        case .activity: return "calendar"
+        }
+    }
+}
+
+/// Catalog completion and tracked-skill time are separate counts.
+struct StatsCollectionCounts: View {
+    @Query private var catalog: [ExemplarySkill]
+
+    var body: some View {
+        let visible = catalog.filter { !$0.isHidden }
+        let obtained = visible.filter(\.isObtained).count
+        VStack(alignment: .leading, spacing: 8) {
+            Text(LocalizedStringKey("stats_collection_heading"))
+                .font(.title3.weight(.semibold))
+            Text(String(format: NSLocalizedString("stats_catalog_obtained_format", comment: ""), obtained, visible.count))
+                .font(.body)
+            Text(String(format: NSLocalizedString("stats_catalog_not_obtained_format", comment: ""), visible.count - obtained))
+                .font(.body)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(16)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+    }
+}
+
+struct StatsSkillGroups: View {
+    @Query private var tracked: [Skill]
+    @Query private var catalog: [ExemplarySkill]
+
+    var body: some View {
+        let visible = catalog.filter { !$0.isHidden }
+        let obtained = visible.filter(\.isObtained)
+        let withTime = tracked.filter { $0.hours > 0 }
+        VStack(alignment: .leading, spacing: 18) {
+            group(
+                title: "stats_collection_heading",
+                lines: [
+                    String(format: NSLocalizedString("stats_catalog_obtained_format", comment: ""), obtained.count, visible.count),
+                    String(format: NSLocalizedString("stats_catalog_not_obtained_format", comment: ""), visible.count - obtained.count)
+                ],
+                names: obtained.prefix(5).map(\.title)
+            )
+            group(
+                title: "stats_tracked_heading",
+                lines: [
+                    String(format: NSLocalizedString("stats_tracked_with_time_format", comment: ""), withTime.count),
+                    String(format: NSLocalizedString("stats_tracked_without_time_format", comment: ""), tracked.count - withTime.count)
+                ],
+                names: withTime.sorted { $0.hours > $1.hours }.prefix(5).map(\.name)
+            )
+        }
+    }
+
+    private func group(title: String, lines: [String], names: [String]) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(LocalizedStringKey(title))
+                .font(.title3.weight(.semibold))
+            ForEach(lines, id: \.self) { line in
+                Text(line)
+            }
+            if names.isEmpty {
+                Text(LocalizedStringKey("stats_group_empty"))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            } else {
+                ForEach(names, id: \.self) { name in
+                    Text(name)
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(16)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+    }
+}
+
+struct StatsThresholds: View {
+    let skills: [Skill]
+
+    private let marks = [21, 100, 1000, 10000]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(LocalizedStringKey("stats_thresholds_note"))
+                .font(.callout)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+            if skills.isEmpty {
+                Text(LocalizedStringKey("stats_thresholds_empty"))
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+            } else {
+                ForEach(marks, id: \.self) { mark in
+                    let reached = skills.filter { $0.hours >= Double(mark) }.count
+                    let palette = CrystalPalette.forHours(Double(mark))
+                    HStack(spacing: 12) {
+                        Circle()
+                            .fill(palette?.gradient ?? CrystalPalette.emerald.gradient)
+                            .frame(width: 16, height: 16)
+                        Text(mark, format: .number.grouping(.automatic))
+                            .font(.headline.monospacedDigit())
+                        Text(LocalizedStringKey("theory_hour_unit"))
+                            .foregroundStyle(.secondary)
+                        Spacer()
+                        Text(String(format: NSLocalizedString("stats_threshold_count_format", comment: ""), reached))
+                            .font(.title3.weight(.semibold).monospacedDigit())
+                    }
+                    .padding(12)
+                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
+                }
+            }
         }
     }
 }

@@ -1,13 +1,58 @@
 import Foundation
 import SwiftData
 
-struct SeedSkill: Decodable {
+struct SeedSkill: Decodable, Equatable {
     let id: String
     let title: String
     let description: String
     let imageName: String
     let category: String
     let difficulty: Int
+    let oneStarDescription: String
+    let twoStarDescription: String
+    let threeStarDescription: String
+
+    init(
+        id: String,
+        title: String,
+        description: String,
+        imageName: String,
+        category: String,
+        difficulty: Int,
+        oneStarDescription: String = "",
+        twoStarDescription: String = "",
+        threeStarDescription: String = ""
+    ) {
+        self.id = id
+        self.title = title
+        self.description = description
+        self.imageName = imageName
+        self.category = category
+        self.difficulty = difficulty
+        self.oneStarDescription = oneStarDescription
+        self.twoStarDescription = twoStarDescription
+        self.threeStarDescription = threeStarDescription
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id, title, description, imageName, category, difficulty
+        case oneStarDescription, twoStarDescription, threeStarDescription
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.init(
+            id: try container.decode(String.self, forKey: .id),
+            title: try container.decode(String.self, forKey: .title),
+            description: try container.decode(String.self, forKey: .description),
+            imageName: try container.decode(String.self, forKey: .imageName),
+            category: try container.decode(String.self, forKey: .category),
+            difficulty: try container.decode(Int.self, forKey: .difficulty),
+            oneStarDescription: try container.decodeIfPresent(String.self, forKey: .oneStarDescription) ?? "",
+            twoStarDescription: try container.decodeIfPresent(String.self, forKey: .twoStarDescription) ?? "",
+            threeStarDescription: try container.decodeIfPresent(String.self, forKey: .threeStarDescription) ?? ""
+        )
+    }
 }
 
 struct SkillCatalog: Decodable {
@@ -20,51 +65,97 @@ enum CatalogDefaults {
 }
 
 enum SkillSeeder {
-    /// Attempts to load a localized skills catalog first (e.g., `ExemplarySkills_pl.json` for Polish),
-    /// then falls back to the base `ExemplarySkills.json`.
-    static func seedIfNeeded(context: ModelContext) {
-        let preferredLang = Locale.preferredLanguages.first ?? "en"
-        let langPrefix = String(preferredLang.prefix(2)).lowercased()
-        let localizedName = "ExemplarySkills_\(langPrefix)"
+    /// Catalog overlays follow the device language preference list, not the
+    /// in-app UI language. Changing Options → language must not rewrite skill
+    /// titles or descriptions.
+    static func catalogOverlayCode(for deviceLanguageCode: String) -> String? {
+        let trimmed = deviceLanguageCode.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        guard !trimmed.isEmpty else { return nil }
+        let head = trimmed.split(separator: "-", maxSplits: 1, omittingEmptySubsequences: true)
+            .first
+            .map(String.init) ?? trimmed
+        if head == "en" { return nil }
+        return head
+    }
 
-        let bundle = Bundle.main
-        let url = bundle.url(forResource: localizedName, withExtension: "json")
-            ?? bundle.url(forResource: "ExemplarySkills", withExtension: "json")
-        guard let url else {
-            print("[Seeder] ExemplarySkills(.json) not found in bundle")
+    /// Loads the full base catalog, then overlays a localized file by id.
+    /// A translation file does not replace the catalog, so untranslated rows stay.
+    static func seedIfNeeded(context: ModelContext) {
+        guard let base = loadCatalog(named: "ExemplarySkills") else {
+            print("[Seeder] ExemplarySkills.json not found or unreadable")
             return
         }
-        guard let data = try? Data(contentsOf: url) else {
-            print("[Seeder] Failed to read ExemplarySkills.json")
-            return
-        }
-        guard let catalog = try? JSONDecoder().decode(SkillCatalog.self, from: data) else {
-            print("[Seeder] Failed to decode ExemplarySkills.json")
-            return
-        }
-        
-        reconcile(catalog.items, in: context)
+        let device = Locale.preferredLanguages.first ?? "en"
+        let langPrefix = catalogOverlayCode(for: device)
+        let localized = langPrefix.flatMap { loadCatalog(named: "ExemplarySkills_\($0)") }
+        let items = mergedItems(base: base.items, localized: localized?.items)
+        reconcile(items, in: context)
         let stored = UserDefaults.standard.integer(forKey: CatalogDefaults.lastSeededVersionKey)
-        if catalog.catalogVersion > stored {
-            UserDefaults.standard.set(catalog.catalogVersion, forKey: CatalogDefaults.lastSeededVersionKey)
+        if base.catalogVersion > stored {
+            UserDefaults.standard.set(base.catalogVersion, forKey: CatalogDefaults.lastSeededVersionKey)
         }
-        print("[Seeder] Reconciled catalog version \(catalog.catalogVersion) with \(catalog.items.count) items")
+        print("[Seeder] Reconciled catalog version \(base.catalogVersion) with \(items.count) items (device=\(device), overlay=\(langPrefix ?? "en-base"))")
+    }
+
+    static func loadCatalog(named name: String, bundle: Bundle = .main) -> SkillCatalog? {
+        guard let url = bundle.url(forResource: name, withExtension: "json"),
+              let data = try? Data(contentsOf: url) else { return nil }
+        return try? JSONDecoder().decode(SkillCatalog.self, from: data)
+    }
+
+    /// Localized rows replace the visible text of matching ids, including a
+    /// non-empty level criterion. An empty translation keeps the base text.
+    /// Rows that exist only in the translation file are appended.
+    static func mergedItems(base: [SeedSkill], localized: [SeedSkill]?) -> [SeedSkill] {
+        guard let localized, !localized.isEmpty else { return base }
+        let translations = Dictionary(localized.map { ($0.id, $0) }, uniquingKeysWith: { current, _ in current })
+        let baseIDs = Set(base.map(\.id))
+        let overlaid = base.map { item -> SeedSkill in
+            guard let translation = translations[item.id] else { return item }
+            return SeedSkill(
+                id: item.id,
+                title: translation.title,
+                description: translation.description,
+                imageName: item.imageName,
+                category: translation.category,
+                difficulty: item.difficulty,
+                oneStarDescription: translation.oneStarDescription.isEmpty ? item.oneStarDescription : translation.oneStarDescription,
+                twoStarDescription: translation.twoStarDescription.isEmpty ? item.twoStarDescription : translation.twoStarDescription,
+                threeStarDescription: translation.threeStarDescription.isEmpty ? item.threeStarDescription : translation.threeStarDescription
+            )
+        }
+        return overlaid + localized.filter { !baseIDs.contains($0.id) }
     }
 
     /// Inserts catalog rows that are missing and refreshes catalog text.
-    /// Obtained state, ratings, favorites, dates, and user-created skills stay as they are.
+    /// Obtained state, ratings, favorites, dates, hours, and user-created skills stay as they are.
+    /// Rows the file no longer contains are left in place.
     static func reconcile(_ items: [SeedSkill], in context: ModelContext) {
+        let existing = (try? context.fetch(FetchDescriptor<ExemplarySkill>())) ?? []
+        var byID: [String: ExemplarySkill] = [:]
+        var legacyByTitle: [String: ExemplarySkill] = [:]
+        for skill in existing {
+            if let catalogID = skill.catalogID {
+                byID[catalogID] = skill
+            } else if !skill.isUserCreated {
+                legacyByTitle[skill.title] = skill
+            }
+        }
+
         var updated = 0
         var inserted = 0
         for item in items {
-            if let existing = fetchByCatalogID(item.id, in: context) {
-                updateCatalogFields(existing, with: item)
+            if let match = byID[item.id] {
+                if match.isUserCreated { continue }
+                updateCatalogFields(match, with: item)
                 updated += 1
                 continue
             }
-            if let legacy = fetchByExactTitle(item.title, in: context), !legacy.isUserCreated {
+            if let legacy = legacyByTitle[item.title] {
                 legacy.catalogID = item.id
                 updateCatalogFields(legacy, with: item)
+                byID[item.id] = legacy
+                legacyByTitle[item.title] = nil
                 updated += 1
                 continue
             }
@@ -74,31 +165,28 @@ enum SkillSeeder {
                 skillDescription: item.description,
                 imageName: item.imageName,
                 category: item.category,
-                difficultyLevel: item.difficulty
+                difficultyLevel: item.difficulty,
+                oneStarDescription: item.oneStarDescription,
+                twoStarDescription: item.twoStarDescription,
+                threeStarDescription: item.threeStarDescription
             )
             context.insert(new)
+            byID[item.id] = new
             inserted += 1
         }
         try? context.save()
         print("[Seeder] Upsert complete. Inserted: \(inserted), Updated: \(updated)")
     }
-    
+
     private static func updateCatalogFields(_ skill: ExemplarySkill, with item: SeedSkill) {
         skill.title = item.title
         skill.skillDescription = item.description
         skill.imageName = item.imageName
         skill.category = item.category
         skill.difficultyLevel = item.difficulty
-    }
-    
-    private static func fetchByCatalogID(_ id: String, in context: ModelContext) -> ExemplarySkill? {
-        let d = FetchDescriptor<ExemplarySkill>(predicate: #Predicate { $0.catalogID == id })
-        return try? context.fetch(d).first
-    }
-    
-    private static func fetchByExactTitle(_ title: String, in context: ModelContext) -> ExemplarySkill? {
-        let d = FetchDescriptor<ExemplarySkill>(predicate: #Predicate { $0.catalogID == nil && $0.title == title })
-        return try? context.fetch(d).first
+        if !item.oneStarDescription.isEmpty { skill.oneStarDescription = item.oneStarDescription }
+        if !item.twoStarDescription.isEmpty { skill.twoStarDescription = item.twoStarDescription }
+        if !item.threeStarDescription.isEmpty { skill.threeStarDescription = item.threeStarDescription }
     }
 }
 

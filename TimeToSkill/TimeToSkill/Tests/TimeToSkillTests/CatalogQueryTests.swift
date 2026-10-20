@@ -14,7 +14,8 @@ final class CatalogQueryTests: XCTestCase {
         levels: [String] = [],
         obtained: Bool = false,
         at: Date? = nil,
-        favorite: Bool = false
+        favorite: Bool = false,
+        userCreated: Bool = false
     ) -> CatalogEntry {
         CatalogEntry(
             id: title,
@@ -26,7 +27,8 @@ final class CatalogQueryTests: XCTestCase {
             obtainedAt: at,
             isFavorite: favorite,
             rating: obtained ? 2 : 0,
-            difficulty: 1
+            difficulty: 1,
+            isUserCreated: userCreated
         )
     }
 
@@ -92,10 +94,27 @@ final class CatalogQueryTests: XCTestCase {
     }
 
     func testResetMeansDefaultQuery() {
-        var query = CatalogQuery(text: "x", completion: .done, favorites: .favorites, sort: .obtainedNewest)
+        var query = CatalogQuery(text: "x", completion: .done, favorites: .favorites, ownership: .custom, sort: .obtainedNewest)
         XCTAssertFalse(query.isDefault)
         query = CatalogQuery()
         XCTAssertTrue(query.isDefault)
+    }
+
+    func testCustomFilterUsesTheUserCreatedFlag() {
+        let items = [
+            entry("Katalog", description: "Opis katalogu", obtained: true, favorite: true),
+            entry("Własna", description: "Mój opis", obtained: false, favorite: false, userCreated: true),
+            entry("Własna zrobiona", description: "Inny opis", obtained: true, favorite: true, userCreated: true)
+        ]
+        let custom = CatalogQuery(ownership: .custom, sort: .name)
+        XCTAssertEqual(custom.apply(items, locale: polish).map(\.title), ["Własna", "Własna zrobiona"])
+        let combined = CatalogQuery(text: "moj", completion: .notDone, ownership: .custom, sort: .name)
+        XCTAssertEqual(combined.apply(items, locale: polish).map(\.title), ["Własna"])
+        XCTAssertEqual(CatalogQuery(ownership: .custom).emptyStateKey, "catalog_no_custom")
+        XCTAssertEqual(CatalogQuery(favorites: .favorites).emptyStateKey, "catalog_no_favorites")
+        XCTAssertEqual(CatalogQuery(completion: .done).emptyStateKey, "catalog_no_done")
+        XCTAssertEqual(CatalogQuery(completion: .notDone).emptyStateKey, "catalog_no_not_done")
+        XCTAssertEqual(CatalogQuery(text: "x", ownership: .custom).emptyStateKey, "catalog_no_results")
     }
 
     func testSearchFavoritesAndCompletionTogether() {
@@ -163,14 +182,152 @@ final class CatalogQueryTests: XCTestCase {
         XCTAssertEqual(selection, .skills)
         XCTAssertEqual(
             MacSidebarSection.allCases.map(\.rawValue),
-            ["overview", "trackers", "counters", "statistics", "theory", "skills", "settings", "about"]
+            [
+                "overview", "trackers", "counters", "timeConverter",
+                "statistics", "theory", "skills", "settings", "about"
+            ]
         )
         XCTAssertTrue(MacSidebarSection.primary.contains(.skills))
+        XCTAssertTrue(MacSidebarSection.primary.contains(.timeConverter))
         XCTAssertTrue(MacSidebarSection.secondary.contains(.settings))
         XCTAssertTrue(MacSidebarSection.secondary.contains(.about))
+        XCTAssertFalse(MacSidebarSection.secondary.contains(.timeConverter))
         selection = .trackers
         XCTAssertEqual(selection, .trackers)
+        selection = .timeConverter
+        XCTAssertEqual(selection, .timeConverter)
         selection = .settings
         XCTAssertEqual(selection, .settings)
+    }
+}
+
+final class AppLanguageTests: XCTestCase {
+    private let available: Set<String> = ["en", "pl", "es", "eo", "isv", "de", "pt-BR", "zh-Hans", "zh-Hant", "en-GB"]
+
+    func testDeviceLanguageKeepsThePreferenceAndFallsBackToEnglish() {
+        let polish = LanguageCatalog.resolve(preferenceKey: "system", deviceLanguages: ["pl-PL"], available: available)
+        XCTAssertEqual(polish.preferenceKey, "system")
+        XCTAssertEqual(polish.bundleCode, "pl")
+        XCTAssertTrue(polish.followsDevice)
+
+        let missing = LanguageCatalog.resolve(preferenceKey: nil, deviceLanguages: ["sw-TZ"], available: available)
+        XCTAssertEqual(missing.preferenceKey, "system")
+        XCTAssertEqual(missing.bundleCode, "en")
+
+        let explicit = LanguageCatalog.resolve(preferenceKey: "es", deviceLanguages: ["pl-PL"], available: available)
+        XCTAssertEqual(explicit.preferenceKey, "es")
+        XCTAssertEqual(explicit.bundleCode, "es")
+        XCTAssertFalse(explicit.followsDevice)
+    }
+
+    func testRegionalPreferencesStayDistinctFromTheBaseLanguage() {
+        let brazil = LanguageCatalog.resolve(preferenceKey: "system", deviceLanguages: ["pt-BR"], available: available)
+        XCTAssertEqual(brazil.bundleCode, "pt-BR")
+        let traditional = LanguageCatalog.resolve(preferenceKey: "system", deviceLanguages: ["zh-Hant-TW"], available: available)
+        XCTAssertEqual(traditional.bundleCode, "zh-Hant")
+        let britain = LanguageCatalog.resolve(preferenceKey: "en-GB", deviceLanguages: ["pl-PL"], available: available)
+        XCTAssertEqual(britain.bundleCode, "en-GB")
+    }
+
+    func testInterslavicChoiceDoesNotReplaceTheStoredScript() {
+        let cyrillic = LanguageCatalog.resolve(preferenceKey: "isv-Cyrl", deviceLanguages: ["en-US"], available: available)
+        XCTAssertEqual(cyrillic.preferenceKey, "isv-Cyrl")
+        XCTAssertEqual(cyrillic.bundleCode, "isv")
+        XCTAssertEqual(cyrillic.script, .cyrillic)
+
+        let withoutFile = LanguageCatalog.resolve(preferenceKey: "isv-Glag", deviceLanguages: ["pl-PL"], available: ["en", "pl"])
+        XCTAssertEqual(withoutFile.preferenceKey, "isv-Glag")
+        XCTAssertEqual(withoutFile.bundleCode, "en")
+        XCTAssertNil(withoutFile.script)
+    }
+
+    func testLookupFallsBackToEnglishWithoutTransliteratingIt() {
+        let tables = [
+            "en": ["greeting": "Hello %d"],
+            "isv": ["greeting": "Zdrav %d"]
+        ]
+        XCTAssertEqual(
+            LanguageCatalog.lookup(key: "greeting", bundleCode: "isv", script: .cyrillic, tables: tables),
+            "Здрав %d"
+        )
+        XCTAssertEqual(
+            LanguageCatalog.lookup(key: "only_english", bundleCode: "isv", script: .glagolitic, tables: [
+                "en": ["only_english": "Keep this English"],
+                "isv": [:]
+            ]),
+            "Keep this English"
+        )
+        XCTAssertEqual(
+            LanguageCatalog.lookup(key: "missing", bundleCode: "isv", script: .latin, tables: tables),
+            "missing"
+        )
+    }
+
+    func testTransliteratorKeepsFormatTokensAndMapsDigraphs() {
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("Medžu %1$@"), "Меџу %1$@")
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("ljudi"), "људи")
+        let glagolitic = InterslavicTransliterator.latinToGlagolitic("A B C")
+        XCTAssertEqual(glagolitic, "Ⰰ Ⰱ Ⱆ")
+        XCTAssertTrue(InterslavicTransliterator.latinToGlagolitic("Version %@").contains("%@"))
+    }
+
+    func testCatalogOverlayFollowsDeviceLanguageIndependentlyOfUI() {
+        // UI may be Spanish while the catalog overlay still keys off the device tag.
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "pl-PL"), "pl")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "es-419"), "es")
+        XCTAssertNil(SkillSeeder.catalogOverlayCode(for: "en-GB"))
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "de-DE"), "de")
+
+        let uiSpanish = LanguageCatalog.resolve(preferenceKey: "es", deviceLanguages: ["pl-PL"], available: available)
+        XCTAssertEqual(uiSpanish.bundleCode, "es")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "pl-PL"), "pl")
+        XCTAssertNotEqual(uiSpanish.bundleCode, SkillSeeder.catalogOverlayCode(for: "pl-PL"))
+    }
+
+    @MainActor
+    func testInterslavicScriptPreferenceSurvivesOtherLanguageChoice() {
+        let defaults = UserDefaults(suiteName: "t4s.language.script.\(UUID().uuidString)")!
+        let language = AppLanguage(defaults: defaults, deviceLanguages: ["en-US"])
+        language.select("isv-Cyrl")
+        XCTAssertEqual(language.resolved.script, .cyrillic)
+        XCTAssertEqual(language.savedInterslavicScript, .cyrillic)
+        language.select("pl")
+        XCTAssertNil(language.resolved.script)
+        XCTAssertEqual(language.savedInterslavicScript, .cyrillic)
+        language.selectInterslavicRestoringScript()
+        XCTAssertEqual(language.resolved.preferenceKey, "isv-Cyrl")
+        XCTAssertEqual(language.resolved.script, .cyrillic)
+    }
+
+    func testEveryBundledLanguageHasAFlagAssetName() {
+        for code in LanguageFlagCatalog.requiredCodes {
+            let name = LanguageFlagCatalog.assetName(for: code)
+            XCTAssertFalse(name.isEmpty, code)
+            if code == "pl" { XCTAssertEqual(name, "Flag_of_Poland") }
+            if code == "eo" { XCTAssertEqual(name, "Flag_of_Esperanto") }
+            if code == "isv" { XCTAssertEqual(name, "Flag_of_Interslavic") }
+            if code == "de" { XCTAssertEqual(name, "Lang_de") }
+        }
+        XCTAssertEqual(LanguageFlagCatalog.assetName(for: "en"), "English_language")
+    }
+
+    @MainActor
+    func testLanguagePreferenceChangeDoesNotClearSidebarSelection() {
+        let suite = "t4s.nav.language.\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: suite)!
+        defaults.removePersistentDomain(forName: suite)
+        defaults.set(MacSidebarSection.settings.rawValue, forKey: MacSidebarSection.selectionDefaultsKey)
+
+        let language = AppLanguage(defaults: defaults, deviceLanguages: ["en-US"])
+        language.select("pl")
+        language.select("isv-Latn")
+        language.select("isv-Cyrl")
+        language.select("eo")
+
+        XCTAssertEqual(
+            defaults.string(forKey: MacSidebarSection.selectionDefaultsKey),
+            MacSidebarSection.settings.rawValue
+        )
+        XCTAssertEqual(language.resolved.bundleCode, "eo")
     }
 }

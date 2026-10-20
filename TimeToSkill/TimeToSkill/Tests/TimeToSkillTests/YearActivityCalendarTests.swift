@@ -84,6 +84,48 @@ final class YearActivityCalendarTests: XCTestCase {
         XCTAssertEqual(empty.activeDayCount, 0)
     }
 
+    func testMonthMarksPracticeAndObtainedSeparately() {
+        let practice = Set([calendar.startOfDay(for: date(2026, 3, 2)), calendar.startOfDay(for: date(2026, 3, 5))])
+        let obtained = Set([calendar.startOfDay(for: date(2026, 3, 5)), calendar.startOfDay(for: date(2026, 3, 9))])
+        let month = MonthActivityCalendar.month(
+            containing: date(2026, 3, 15),
+            practiceDays: practice,
+            obtainedDays: obtained,
+            calendar: calendar
+        )
+        XCTAssertEqual(month.days.count, 31)
+        XCTAssertEqual(month.practiceDayCount, 2)
+        XCTAssertEqual(month.obtainedDayCount, 2)
+        XCTAssertEqual(month.days[1].mark, .practice)
+        XCTAssertEqual(month.days[4].mark, .both)
+        XCTAssertEqual(month.days[8].mark, .obtained)
+        XCTAssertEqual(month.days[0].mark, .none)
+        XCTAssertEqual(MonthActivityCalendar.mark(practiced: false, obtained: false), .none)
+    }
+
+    func testCatalogMergeKeepsUntranslatedRows() {
+        let base = [
+            SeedSkill(id: "a", title: "Alpha", description: "A", imageName: "star", category: "One", difficulty: 2, oneStarDescription: "keep"),
+            SeedSkill(id: "b", title: "Beta", description: "B", imageName: "leaf", category: "Two", difficulty: 1)
+        ]
+        let localized = [
+            SeedSkill(id: "a", title: "Alfa", description: "Opis", imageName: "ignored", category: "Raz", difficulty: 9)
+        ]
+        let merged = SkillSeeder.mergedItems(base: base, localized: localized)
+        XCTAssertEqual(merged.map(\.id), ["a", "b"])
+        XCTAssertEqual(merged[0].title, "Alfa")
+        XCTAssertEqual(merged[0].imageName, "star")
+        XCTAssertEqual(merged[0].oneStarDescription, "keep")
+        let translatedLevel = SkillSeeder.mergedItems(
+            base: base,
+            localized: [SeedSkill(id: "a", title: "Alfa", description: "Opis", imageName: "ignored", category: "Raz", difficulty: 9, oneStarDescription: "nowe")]
+        )
+        XCTAssertEqual(translatedLevel[0].oneStarDescription, "nowe")
+        XCTAssertEqual(translatedLevel[1].title, "Beta")
+        XCTAssertEqual(merged[0].difficulty, 2)
+        XCTAssertEqual(merged[1].title, "Beta")
+    }
+
     func testNoSessionsStayOnTheCurrentYear() {
         let bounds = YearActivityCalendar.bounds(sessions: [], now: date(2026, 2, 2), calendar: calendar)
         XCTAssertFalse(bounds.hasRecordedActivity)

@@ -483,7 +483,7 @@
 "theory_milestone_21_title" = "21 godzin";
 
 /* T4S-036 compendium, counters, catalog note */
-"catalog_exemplary_note" = "Ten ekran pokazuje wbudowany zestaw przykładowy dostarczany z aplikacją. Propozycje pilotażowe z badań są osobną listą redakcyjną i nie są tu importowane.";
+"catalog_exemplary_note" = "Ten ekran pokazuje umiejętności dołączone do aplikacji: dotychczasowy zestaw oraz pozycje przyjęte z opracowanego zbioru. Pliki propozycji pilotażowych same nie są katalogiem.";
 "theory_compendium_intro" = "Każda zakładka to próg godzin, którego już używa pasek postępu. Kryształ ma kolor tego progu. Tekst wyjaśnia, co próg znaczy, a czego nie znaczy.";
 "theory_hour_unit" = "godz.";
 "theory_callout_example" = "Przykład";
@@ -518,3 +518,67 @@
 "counter_anchor_label" = "Data początkowa";
 "counter_refresh" = "Odśwież wartość";
 "counter_refresh_unavailable" = "Ustaw datę początkową, zanim odświeżysz. Do tego czasu wartość zostaje bez zmian.";
+
+/* T4S-039 stats and overview */
+"stats_tab_overview" = "Przegląd";
+"stats_tab_time" = "Czas nauki";
+"stats_tab_skills" = "Umiejętności";
+"stats_tab_thresholds" = "Progi godzin";
+"stats_tab_activity" = "Aktywność";
+"stats_collection_heading" = "Kolekcja umiejętności";
+"stats_tracked_heading" = "Śledzone umiejętności";
+"stats_catalog_obtained_format" = "Zdobyte w kolekcji: %d z %d";
+"stats_catalog_not_obtained_format" = "Jeszcze nieoznaczone: %d";
+"stats_tracked_with_time_format" = "Z zapisanym czasem: %d";
+"stats_tracked_without_time_format" = "Bez zapisanego czasu: %d";
+"stats_group_empty" = "Brak pozycji w tej grupie.";
+"stats_thresholds_note" = "Progi 21, 100, 1 000 i 10 000 godzin należą do aplikacji. Liczba przy progu to śledzone umiejętności, których zapisany czas jest co najmniej taki. To nie jest osobny cel.";
+"stats_thresholds_empty" = "Nie ma jeszcze śledzonych umiejętności, więc progi nie mają czego pokazać.";
+"stats_threshold_count_format" = "%d";
+"month_activity_title" = "Ten miesiąc";
+"month_activity_previous" = "Poprzedni miesiąc";
+"month_activity_next" = "Następny miesiąc";
+"month_activity_practice" = "Dzień z zapisaną sesją";
+"month_activity_obtained" = "Dzień zdobycia umiejętności";
+"month_activity_empty" = "Brak zapisanych sesji i dat zdobycia w tym miesiącu. Suma godzin bez historii nie jest rozkładana na dni.";
+"overview_tracking_tools" = "Narzędzia śledzenia";
+
+/* T4S-040 custom skill filter */
+"catalog_filter_custom" = "Własne";
+"catalog_no_custom" = "Nie masz jeszcze własnych umiejętności.";
+"catalog_no_favorites" = "Brak ulubionych umiejętności.";
+"catalog_no_done" = "Brak zdobytych umiejętności.";
+"catalog_no_not_done" = "Brak umiejętności jeszcze niezdobytych.";
+
+/* T4S-041 language picker */
+"language_picker_title" = "Język";
+"language_device" = "Język urządzenia";
+"language_device_detail" = "Używa języka systemowego tego urządzenia. Gdy nie ma tłumaczenia, aplikacja przechodzi na angielski.";
+"language_name_polish" = "Polski";
+"language_name_english" = "Angielski";
+"language_name_spanish" = "Hiszpański";
+"language_name_esperanto" = "Esperanto";
+"language_name_interslavic" = "Międzysłowiański";
+"language_script_latin" = "Latinica";
+"language_script_cyrillic" = "Cyrylica";
+"language_script_glagolitic" = "Głagolica";
+/* T4S-042 time balance + language visibility */
+"time_balance_minus_start" = "− Start";
+"time_balance_plus_start" = "+ Start";
+"time_balance_minus_stop" = "− Stop";
+"time_balance_plus_stop" = "+ Stop";
+"time_balance_a11y_decrease" = "Zacznij zmniejszać saldo czasu";
+"time_balance_a11y_increase" = "Zacznij zwiększać saldo czasu";
+"time_balance_a11y_stop_decrease" = "Zatrzymaj zmniejszanie salda czasu";
+"time_balance_a11y_stop_increase" = "Zatrzymaj zwiększanie salda czasu";
+"time_balance_bar" = "Saldo czasu";
+"time_balance_zero_sound" = "Odtwarzaj dźwięk, gdy saldo dojdzie do zera";
+"time_balance_sound_section" = "Saldo czasu";
+
+/* T4S-UI-042 supplement: converter nav + recent tracking */
+"time_converter_nav_title" = "Konwerter czasu";
+"stats_recent_tracking" = "Ostatnie śledzenie";
+"stats_this_week" = "Ten tydzień";
+"stats_this_month" = "Ten miesiąc";
+
+"export_pdf_generated_on_format" = "Wygenerowano: %@";

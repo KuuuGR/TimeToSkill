@@ -19,6 +19,7 @@ import SwiftUI
 import StoreKit
 
 struct RootView: View {
+    @ObservedObject private var language = AppLanguage.shared
     @Environment(\.requestReview) private var requestReview
 
     /// Launch number for this process (1 = the very first launch).
@@ -42,7 +43,14 @@ struct RootView: View {
                     .transition(.opacity)
             }
         }
+        // Locale and Glagolitic font updates must not change view identity, or
+        // NavigationSplitView / sheets recreate and jump back to Overview.
+        .environment(\.locale, Locale(identifier: language.resolved.localeIdentifier))
+        .modifier(InterslavicFontEnvironment(script: language.resolved.script))
         .onAppear(perform: handleAppear)
+        .onReceive(NotificationCenter.default.publisher(for: NSLocale.currentLocaleDidChangeNotification)) { _ in
+            language.refreshIfFollowingDevice()
+        }
     }
 
     /// Fades the splash out and reveals the main flow.
@@ -56,9 +64,21 @@ struct RootView: View {
         guard !didRequestReview else { return }
         guard AppLaunch.shouldRequestReview(onLaunch: launchCount) else { return }
         didRequestReview = true
-        // Let the main UI settle before interrupting the user with the prompt.
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             requestReview()
+        }
+    }
+}
+
+/// Applies Noto Sans Glagolitic without branching the view tree identity.
+private struct InterslavicFontEnvironment: ViewModifier {
+    var script: InterslavicScript?
+
+    func body(content: Content) -> some View {
+        content.transformEnvironment(\.font) { font in
+            if script == .glagolitic {
+                font = Font.custom(AppFontRegistry.glagoliticFamily, size: 17, relativeTo: .body)
+            }
         }
     }
 }

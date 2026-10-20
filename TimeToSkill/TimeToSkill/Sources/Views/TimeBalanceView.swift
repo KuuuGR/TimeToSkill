@@ -2,18 +2,47 @@
 //  TimeBalanceView.swift
 //  TimeToSkill
 //
-//  Remaining time that can be added or counted down.
+//  Remaining time that can grow or shrink. Layout:
+//  [ − Start ] [ glass balance bar ] [ + Start ]
 //  Stopping a skill timer still only increases that skill's hours.
 //
 
 import SwiftUI
 import SwiftData
+#if os(macOS)
+import AppKit
+#else
+import AudioToolbox
+#endif
+
+enum TimeBalanceSound {
+    static let defaultsKey = "TimeBalanceZeroSoundEnabled"
+
+    static var isEnabled: Bool {
+        get {
+            if UserDefaults.standard.object(forKey: defaultsKey) == nil { return true }
+            return UserDefaults.standard.bool(forKey: defaultsKey)
+        }
+        set { UserDefaults.standard.set(newValue, forKey: defaultsKey) }
+    }
+
+    static func playZeroIfEnabled() {
+        guard isEnabled else { return }
+        #if os(macOS)
+        NSSound.beep()
+        #else
+        AudioServicesPlaySystemSound(1057)
+        #endif
+    }
+}
 
 struct TimeBalanceView: View {
     @Environment(\.modelContext) private var context
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Query(sort: \TimeBudget.title) private var budgets: [TimeBudget]
     @State private var showingNew = false
     @State private var pendingDelete: TimeBudget?
+    @State private var zeroSoundPlayed: Set<UUID> = []
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { timeline in
@@ -38,6 +67,9 @@ struct TimeBalanceView: View {
                 }
                 .padding()
                 .macOSContentWidth(760)
+            }
+            .onChange(of: timeline.date) { _, now in
+                settleBudgets(at: now)
             }
         }
         .toolbar {
@@ -78,7 +110,9 @@ struct TimeBalanceView: View {
     }
 
     private func balanceCard(_ budget: TimeBudget, now: Date) -> some View {
-        let remaining = budget.remaining(at: now)
+        let seconds = budget.currentSeconds(at: now)
+        let hours = Double(seconds) / 3600.0
+        let fill = ProgressFill.fraction(value: hours)
         return VStack(alignment: .leading, spacing: 12) {
             HStack {
                 if !budget.symbol.isEmpty {
@@ -88,22 +122,70 @@ struct TimeBalanceView: View {
                 Text(budget.title)
                     .font(.headline)
                 Spacer()
-                Text(Self.format(seconds: remaining))
+                Text(Self.format(seconds: seconds))
                     .font(.title3.monospacedDigit())
                     .accessibilityLabel(Text(LocalizedStringKey("time_balance_remaining")))
             }
+
+            HStack(spacing: 10) {
+                directionButton(
+                    titleKey: budget.direction == .decreasing
+                        ? "time_balance_minus_stop"
+                        : "time_balance_minus_start",
+                    accessibilityKey: budget.direction == .decreasing
+                        ? "time_balance_a11y_stop_decrease"
+                        : "time_balance_a11y_decrease",
+                    systemImage: budget.direction == .decreasing ? "pause.fill" : "minus",
+                    isActive: budget.direction == .decreasing,
+                    disabled: budget.direction != .decreasing && seconds == 0
+                ) {
+                    if budget.direction == .decreasing {
+                        budget.stop(at: now)
+                    } else {
+                        zeroSoundPlayed.remove(budget.id)
+                        budget.startDecreasing(at: now)
+                    }
+                    try? context.save()
+                }
+
+                VStack(spacing: 4) {
+                    CrystalProgressBar(
+                        progress: fill,
+                        hours: hours,
+                        height: 14,
+                        animated: !reduceMotion
+                    )
+                    .accessibilityLabel(Text(LocalizedStringKey("time_balance_bar")))
+                    .accessibilityValue(Text(Self.format(seconds: seconds)))
+                }
+                .frame(maxWidth: .infinity)
+
+                directionButton(
+                    titleKey: budget.direction == .increasing
+                        ? "time_balance_plus_stop"
+                        : "time_balance_plus_start",
+                    accessibilityKey: budget.direction == .increasing
+                        ? "time_balance_a11y_stop_increase"
+                        : "time_balance_a11y_increase",
+                    systemImage: budget.direction == .increasing ? "pause.fill" : "plus",
+                    isActive: budget.direction == .increasing,
+                    disabled: false
+                ) {
+                    if budget.direction == .increasing {
+                        budget.stop(at: now)
+                    } else {
+                        budget.startIncreasing(at: now)
+                    }
+                    try? context.save()
+                }
+            }
+
             HStack {
                 Button(LocalizedStringKey("time_balance_add_quarter")) {
-                    budget.add(minutes: 15)
+                    budget.add(minutes: 15, at: now)
                     try? context.save()
                 }
                 .buttonStyle(.bordered)
-                Button(budget.activeStart == nil ? LocalizedStringKey("time_balance_start") : LocalizedStringKey("time_balance_stop")) {
-                    budget.toggle(at: now)
-                    try? context.save()
-                }
-                .buttonStyle(.borderedProminent)
-                .disabled(budget.activeStart == nil && remaining == 0)
                 Spacer()
                 Button(role: .destructive) {
                     pendingDelete = budget
@@ -115,6 +197,55 @@ struct TimeBalanceView: View {
         }
         .padding()
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+    }
+
+    private func directionButton(
+        titleKey: LocalizedStringKey,
+        accessibilityKey: LocalizedStringKey,
+        systemImage: String,
+        isActive: Bool,
+        disabled: Bool,
+        action: @escaping () -> Void
+    ) -> some View {
+        Button(action: action) {
+            VStack(spacing: 4) {
+                Image(systemName: systemImage)
+                    .font(.headline.weight(.semibold))
+                Text(titleKey)
+                    .font(.caption.weight(.semibold))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+            }
+            .frame(minWidth: 72)
+            .padding(.vertical, 8)
+            .padding(.horizontal, 6)
+        }
+        .buttonStyle(.bordered)
+        .tint(isActive ? AppColors.accent : nil)
+        .opacity(isActive ? 1 : 0.92)
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .strokeBorder(isActive ? AppColors.accent : Color.clear, lineWidth: 2)
+        )
+        .disabled(disabled)
+        .accessibilityLabel(Text(accessibilityKey))
+        .accessibilityAddTraits(isActive ? .isSelected : [])
+    }
+
+    private func settleBudgets(at now: Date) {
+        var didChange = false
+        for budget in budgets {
+            if budget.settle(at: now) {
+                didChange = true
+                if !zeroSoundPlayed.contains(budget.id) {
+                    zeroSoundPlayed.insert(budget.id)
+                    TimeBalanceSound.playZeroIfEnabled()
+                }
+            }
+        }
+        if didChange {
+            try? context.save()
+        }
     }
 
     static func format(seconds: Int) -> String {

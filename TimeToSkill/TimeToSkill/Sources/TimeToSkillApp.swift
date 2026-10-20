@@ -17,6 +17,8 @@ struct Time4SkillApp: App {
     private let launchCount: Int
 
     init() {
+        LanguageBundleInstall.installIfNeeded()
+        AppFontRegistry.registerIfNeeded()
         launchCount = AppLaunch.recordLaunch()
     }
 

@@ -1,0 +1,584 @@
+// Esperanto
+// English (US)
+// MARK: - MainView
+"main_manage_trackers" = "Mastrumi spurojn";
+"main_learning_theory" = "Teorio de lernado";
+"main_about_app" = "Pri la apo";
+
+// MARK: - Main menu additions
+"main_manage_counters" = "Mastrumi nombrilojn";
+"main_exemplary_skills" = "Kapabloj";
+
+// MARK: - OptionsView
+"options_title" = "Opcioj";
+"options_export_section" = "Eksporti datumojn";
+"export_pdf_button" = "Eksporti kapablojn al PDF";
+"skills_report_title" = "Raporto pri progreso de kapabloj";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Konvertilo de tempo";
+"Time_Converter_Hours_Label" = "🕗 Horoj";
+"Time_Converter_Hours_Placeholder" = "Enigu horojn";
+"Time_Converter_Days24h_Label" = "🌃 Tagoj (24 h)";
+"Time_Converter_Days12h_Label" = "🌅 Tagoj (12 h)";
+"Time_Converter_Days8h_Label" = "🌇 Labortagoj (8 h)";
+"Time_Converter_Years_Label" = "🎆 Jaroj";
+"Time_Converter_Days_Placeholder" = "Kalkulitaj tagoj";
+"Time_Converter_Calculate_Button" = "Kalkuli";
+
+// MARK: - StartView
+"tracking_title" = "Spurado de kapablo";
+"tracking_nav_title" = "Viaj kapabloj";
+"sort_by_label" = "Ordigi laŭ";
+"export_pdf_title" = "Eksporti al PDF";
+"fab_options" = "Montri opciojn";
+
+"sort_name_asc" = "Nomo ↑";
+"sort_name_desc" = "Nomo ↓";
+"sort_time_asc" = "Tempo ↑";
+"sort_time_desc" = "Tempo ↓";
+
+"empty_message_title" = "Ankoraŭ neniu spurata kapablo";
+"empty_message_description" = "Frapu la plusbutonon por komenci spuri vian unuan kapablon.";
+
+"button_back" = "Reen";
+
+// MARK: - SkillProgressView
+"SkillName" = "Nomo de la kapablo";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Enigu nomon de la kapablo";
+"add_skill" = "Aldoni kapablon";
+"new_skill" = "Nova kapablo";
+"cancel" = "Nuligi";
+
+// MARK: - AboutView
+"ab_section_about_app" = "Pri la apo";
+"ab_app_name" = "Time4Skill";
+"ab_version" = "Versio %@";
+"ab_developer" = "Kreita de Grzegorz Kulesza";
+
+"ab_section_purpose" = "Celo de ĉi tiu apo";
+"ab_purpose_major_system" = "Elektu la kapablojn, kiujn vi volas lerni.";
+"ab_purpose_large_numbers" = "Evoluigu ilin laŭ etapoj kaj registru la tempon, kiun vi pasigas lernante.";
+"ab_purpose_dates" = "Observu vian progreson kaj marku la kapablojn, kiujn vi akiris.";
+"ab_purpose_words" = "Konstruu vian propran kolekton, inkluzive de preferataj kaj nombriloj.";
+
+"ab_section_support" = "Subteno";
+"ab_support_developer" = "Subtenu la programiston";
+"ab_navigation_title" = "Pri";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Subtenu la disvolvon";
+"support_description" = "Se ĉi tiu apo plaĉas al vi, vi povas subteni min per kafo!";
+"support_button" = "Subteni per PayPal";
+"support_nav_title" = "Subteno";
+
+// MARK: - TheoryView
+"theory_title" = "Teorioj pri lernotempo";
+
+"theory_10k_title" = "Regulo de 10 000 horoj";
+"theory_10k_author" = "Malcolm Gladwell (laŭ Anders Ericsson)";
+"theory_10k_description" = "Por atingi majstrecon oni bezonas ĉirkaŭ 10 000 horojn da intenca ekzercado. Tio koncernas elitan nivelon (muzikistoj, sportistoj, ŝakistoj). Gravas ne nur la kvanto, sed ankaŭ la kvalito. Oni kritikas la regulon pro troa simpligo.";
+"theory_10k_works" = "✔️ Precizaj fakoj, profesia kariero\n✖️ Ne helpas por rapida komenco";
+
+"theory_20_title" = "Regulo de 20/21 horoj";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "Sufiĉas 20 horoj da koncentrita lernado por komenci ĝui novan kapablon. Taŭgas por ŝatokupoj aŭ komencanta nivelo (ekzemple ukulelo, bazaj frazoj de lingvo, jogo).";
+"theory_20_works" = "✔️ Rapida komenco, ŝatokupoj\n✖️ Ne por majstreco";
+
+"theory_100_title" = "Regulo de 100 horoj";
+"theory_100_author" = "Neformala eduka ideo";
+"theory_100_description" = "Ĉirkaŭ 100 horoj povas doni solidan kompetenton: baza fotografio, bakado, pentrado, stirado aŭ oftaj iloj kiel Excel.";
+"theory_100_works" = "✔️ Praktikaj kapabloj, ŝanĝo de kariero\n✖️ Ne faka nivelo";
+
+"theory_1000_title" = "Regulo de 1 000 horoj";
+"theory_1000_author" = "Populara en informadiko, lingvoj kaj sendependa laboro";
+"theory_1000_description" = "1 000 horoj da koncentrita trejnado povas fari vin profesiulo: de muzikinstruisto kaj kuiristo ĝis tradukisto kaj jogoinstruisto. Sufiĉas por instrui aŭ enspezi.";
+"theory_1000_works" = "✔️ Profesia sendependeco\n✖️ Ne monda elito";
+
+"theory_comparison_title" = "📈 Komparo";
+"theory_comparison_text" = "• 20 horoj → Bona komenco (amatoro)\n• 100 horoj → Solida (progresinta komencanto)\n• 1 000 horoj → Lerta profesiulo\n• 10 000 horoj → Majstreco (elito)";
+
+"theory_nav_title" = "Teorio de lernado";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Superrigardo de progreso";
+"stats_nav_title" = "Viaj statistikoj";
+"button_done" = "Farite";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Resumo";
+"stats_total_hours" = "Horoj entute";
+"stats_skill_count" = "Kapabloj";
+"stats_active_timers" = "Aktivaj tempiloj";
+"stats_first_tracked" = "Unua seanco";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Ĉefaj kapabloj";
+"stats_top_skills_empty_msg" = "Ankoraŭ neniu kapablo. Komencu spuri, por vidi ĉi tie la ĉefajn.";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Registrita tempo";
+"stats_week_label" = "Lastaj 7 tagoj";
+"stats_month_label" = "Lastaj 30 tagoj";
+"stats_total_label" = "Ĉiama";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Taglibro de aktiveco";
+"activity_log_empty_message" = "Neniu lastatempa aktiveco.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opcioj de la kapablo";
+"done" = "Farite";
+
+"skill_name_section" = "Nomo";
+"skill_name_label" = "Nomo de la kapablo";
+"skill_icon_label" = "Piktogramo";
+"skill_emoji_picker_title" = "Elekti piktogramon";
+"skill_emoji_picker_none" = "Neniu";
+"skill_emoji_section_faces" = "Vizaĝoj";
+"skill_emoji_section_work" = "Laboro";
+"skill_emoji_section_creativity" = "Kreemo";
+"skill_emoji_section_fitness" = "Fitness";
+"skill_emoji_section_learning" = "Lernado";
+"skill_emoji_section_gaming" = "Ludoj";
+"skill_emoji_section_music" = "Muziko";
+"skill_emoji_section_food" = "Manĝaĵo";
+"skill_emoji_section_nature" = "Naturo";
+"skill_emoji_section_technology" = "Teknologio";
+"skill_emoji_section_achievement" = "Atingo";
+"skill_emoji_section_lifestyle" = "Vivmaniero";
+
+"adjust_time_section" = "Ĝustigi tempon";
+"adjust_hours_placeholder" = "Horoj por aldoni aŭ subtrahi";
+"adjust_minutes_placeholder" = "Minutoj por aldoni aŭ subtrahi";
+"adjust_time_hint" = "Enigu pozitivajn aŭ negativajn valorojn.\nEkzemplo: −30 minutoj subtrahas duonhoron.";
+"adjust_time_apply" = "Apliki ŝanĝon de tempo";
+"adjust_time_success" = "Tempo sukcese ĝisdatigita!";
+
+"reset_section" = "Progreso";
+"reset_progress" = "Restarigi progreson";
+"reset_confirm_title" = "Ĉu vi certas, ke vi volas restarigi la progreson?";
+"reset_confirm_action" = "Restarigi";
+
+"delete_skill" = "Forigi kapablon";
+"delete_confirm_title" = "Ĉu vi certas?";
+"delete_confirm_message" = "Ĉi tiun agon oni ne povas malfari.";
+"delete_confirm_action" = "Forigi";
+
+"cancel" = "Nuligi";
+
+// MARK: - FABButton
+"fab_add_skill" = "Aldoni novan kapablon";
+"fab_view_stats" = "Vidi statistikojn";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Mastrumi nombrilojn";
+"counter_details_section" = "Detaloj";
+"counter_title_placeholder" = "Titolo";
+"counter_step_label%d" = "Paŝo: %d";
+"counter_thresholds_section" = "Sojloj (disigitaj per komoj)";
+"counter_thresholds_placeholder" = "ekz. 100,200,500,10000";
+"counter_new_title" = "Nova nombrilo";
+"create" = "Krei";
+"apply" = "Apliki";
+"value" = "Valoro";
+"add" = "Aldoni";
+"counter_progress_section" = "Progreso";
+"counter_value_label" = "Valoro";
+"counter_stage_max_label" = "Maksimumo de la etapo";
+"counter_no_thresholds" = "Neniuj sojloj";
+"counter_reset_to_zero" = "Restarigi al 0";
+"counter_configuration_section" = "Agordo";
+"counter_edit_thresholds" = "Redakti sojlojn";
+"counter_set_value_section" = "Agordi valoron mane (de −1 M ĝis 1 M)";
+"counter_current_thresholds" = "Nunaj sojloj";
+"counter_add_threshold" = "Aldoni sojlon";
+"counter_thresholds_title" = "Sojloj";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Kapabloj";
+"daily_evaluations_format" = "Tagaj taksoj: %d/%d";
+"sort_menu_label" = "Ordigi";
+"reset_daily_limit" = "Restarigi la tagan limon";
+"daily_limit_reached_title" = "Taga limo atingita";
+"daily_limit_reached_message_format" = "Vi atingis la tagan limon de %d taksoj de kapabloj. Provu denove morgaŭ!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Distribuo de tempo";
+"time_distribution_skill_format" = "Kapablo: %@";
+"time_total_hours_format" = "Tempo entute: %@ h";
+"time_mean_minutes_format" = "Meza intervalo: %@ min";
+"time_std_minutes_format" = "Norma devio: %@ min";
+"distribution_nav_title" = "Distribuo";
+"distribution_empty_message" = "Por ĉi tiu kapablo ankoraŭ ne estas seancoj.";
+"global_time_distribution_title" = "Ĝenerala distribuo de tempo";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Nomo";
+"sort_category" = "Kategorio";
+"sort_stars_asc" = "Steloj ↑";
+"sort_stars_desc" = "Steloj ↓";
+"sort_difficulty_asc" = "Malfacileco ↑";
+"sort_difficulty_desc" = "Malfacileco ↓";
+"sort_completed_asc" = "Finitaj ↑";
+"sort_completed_desc" = "Finitaj ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Detaloj de la kapablo";
+"close" = "Fermi";
+"change_rating_accessibility" = "Ŝanĝi takson";
+"description" = "Priskribo";
+"achievement_status" = "Stato de atingo";
+"obtained_label" = "Akirita:";
+"unknown" = "Nekonate";
+"your_rating_label" = "Via takso:";
+"verification_code_label" = "Kontrola kodo:";
+"achievement_history" = "Historio de atingoj";
+"update_your_rating" = "Ĝisdatigi vian takson";
+"no_stars" = "Sen steloj";
+"update_and_verify" = "Ĝisdatigi kaj kontroli";
+"self_evaluation" = "Memtakso";
+"how_many_stars_question" = "Kiom da steloj vi meritas por ĉi tiu kapablo?";
+"evaluate_my_skill" = "Taksi mian kapablon";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Necesas kontrolo";
+"verification_required_message" = "Enigu la suban kontrolan kodon por konfirmi vian memtakson:";
+"verification_code_title" = "Kontrola kodo:";
+"no_code_received" = "NENIU KODO RICEVITA";
+"enter_the_code" = "Enigu la supran kodon:";
+"verify_and_evaluate" = "Kontroli kaj taksi";
+"verification_nav_title" = "Kontrolo";
+"invalid_code_title" = "Nevalida kodo";
+"invalid_code_message" = "Enigu la ĝustan kontrolan kodon.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Vidi distribuon";
+
+// MARK: - Custom Skill
+"fab_add_custom_skill" = "Aldoni propran kapablon";
+"difficulty_label" = "Malfacileco";
+"star_descriptions_title" = "Priskriboj de stelaj niveloj";
+"one_star_description" = "Priskribo de 1★";
+"two_star_description" = "Priskribo de 2★";
+"three_star_description" = "Priskribo de 3★";
+"image_label" = "Bildo";
+"choose_image" = "Elekti bildon";
+"category_label" = "Kategorio";
+"category_custom_placeholder" = "Propra kategorio";
+// MARK: - Preset Categories
+"cat_custom" = "Propra";
+"cat_music" = "Muziko";
+"cat_language" = "Lingvo";
+"cat_art" = "Arto";
+"cat_coding" = "Programado";
+"cat_fitness" = "Fitness";
+"cat_cooking" = "Kuirejo";
+"cat_photography" = "Fotografio";
+"cat_writing" = "Skribado";
+"cat_public_speaking" = "Publika parolado";
+"cat_science" = "Scienco";
+"cat_math" = "Matematiko";
+"cat_engineering" = "Inĝenierado";
+"cat_design" = "Dezajno";
+"cat_business" = "Komerco";
+"cat_marketing" = "Merkatado";
+"cat_finance" = "Financoj";
+"cat_investing" = "Investado";
+"cat_entrepreneurship" = "Entreprenado";
+"cat_psychology" = "Psikologio";
+"cat_education" = "Edukado";
+"cat_history" = "Historio";
+"cat_geography" = "Geografio";
+"cat_health" = "Sano";
+"cat_meditation" = "Meditado";
+"cat_yoga" = "Jogo";
+"cat_sports" = "Sporto";
+"cat_dance" = "Danco";
+"cat_theatre" = "Teatro";
+"cat_film" = "Filmo";
+"cat_editing" = "Videoredaktado";
+"cat_3d" = "3D-modelado";
+"cat_ai" = "AI/ML";
+"cat_data" = "Datumscienco";
+"cat_cybersecurity" = "Cibera sekureco";
+"cat_gardening" = "Ĝardenado";
+"cat_diy" = "Memfarado";
+"cat_travel" = "Vojaĝado";
+"cat_cars" = "Aŭtomobiloj";
+"cat_parenting" = "Gepatra zorgado";
+"cat_animals" = "Bestoj";
+"hide" = "Kaŝi";
+"unhide" = "Malkaŝi";
+"archived_section" = "Arkivo";
+"counters_empty_title" = "Ankoraŭ neniu nombrilo";
+"counters_empty_description" = "Kreu vian unuan nombrigon por spuri nombran progreson.";
+
+"privacy_policy_link" = "Politiko pri privateco";
+
+"terms_of_use_link" = "Kondiĉoj de uzo";
+
+"support_link" = "Subteno";
+
+"home_hero_intro" = "Spuru koncentritan ekzercadon kaj rigardu, kiel malgrandaj kutimoj sumiĝas.";
+
+"sidebar_overview" = "Superrigardo";
+
+// MARK: - SplashView
+"splash_presents" = "prezentas";
+"splash_tagline" = "Spuru vian tempon. Lernu pli saĝe. Kresku kun pacienco.";
+"splash_reflection_1" = "Ĉiu horo de ekzercado estas paŝo al majstreco.";
+"splash_reflection_2" = "Kapablo estas la rekompenco de bone uzita tempo.";
+"splash_reflection_3" = "Malgrandaj horoj, ripetataj, fariĝas majstreco.";
+"splash_reflection_4" = "Progreso estas pacienco farita videbla.";
+"splash_reflection_5" = "Tempo investita en lernadon neniam estas perdita.";
+
+// MARK: - Per-skill timer session chart (T4S-001)
+"session_chart_open" = "Diagramo de seancoj";
+"session_chart_nav_title" = "Seancoj de la tempilo";
+"session_chart_metric" = "Nur finitaj seancoj de la tempilo. Manaj ĝustigoj de tempo ne estas enkalkulitaj.";
+"session_chart_bin_width" = "Larĝo de intervalo";
+"session_chart_bin_minutes" = "%d min";
+"session_chart_bin_range" = "%1$@–%2$@ min";
+"session_chart_bin_overflow" = "≥ %1$@ min";
+"session_chart_count_format" = "%d seancoj";
+"session_chart_mean_format" = "Meznombro: %@ min";
+"session_chart_mean_unavailable" = "—";
+"session_chart_empty" = "Por ĉi tiu kapablo ankoraŭ ne estas finitaj seancoj de la tempilo.";
+"session_chart_curve_caption" = "La travidebla kurbo estas referenco de normala distribuo por ĉi tiuj seancoj. Ĝi ne estas antaŭdiro kaj ne signifas, ke la seancoj sekvas normalan distribuon.";
+"session_chart_curve_hidden" = "Ne sufiĉas variado aŭ finitaj seancoj por montri stabilan referencan kurbon.";
+"session_chart_accessibility" = "Diagramo de daŭro de seancoj de la tempilo";
+"session_chart_row_accessibility" = "%1$@, %2$d seancoj";
+
+// MARK: - Theory topics (T4S-002)
+"theory_intro" = "Ideoj, kiujn vi povas provi dum ekzercado. La mallonga versio sufiĉas. Malfermu la fontojn nur kiam vi volas la esploran kuntekston.";
+"theory_takeaway_label" = "Praktika konkludo";
+"theory_sources_button" = "Fontoj kaj esploraj detaloj ↗";
+"theory_sources_accessibility" = "Fontoj kaj esploraj detaloj";
+"theory_detail_title" = "Esploraj detaloj";
+"theory_detail_citation" = "Citaĵo";
+"theory_detail_source_type" = "Tipo de fonto";
+"theory_detail_context" = "Esplora kunteksto";
+"theory_detail_limitation" = "Limo";
+"theory_detail_links" = "Ligiloj al fontoj";
+"theory_type_framework" = "Praktika kadro de la aŭtoro";
+"theory_type_article" = "Esplora artikolo";
+"theory_type_meta" = "Metaanalizo";
+"theory_link_author_site" = "Retejo de la aŭtoro";
+"theory_link_publisher" = "Eldonejo";
+"theory_link_ericsson_1993" = "Ericsson, Krampe kaj Tesch-Römer, 1993";
+"theory_link_macnamara_2019" = "Macnamara kaj Maitra, 2019";
+"theory_link_macnamara_2014" = "Macnamara, Hambrick kaj Oswald, 2014";
+"theory_link_pubmed" = "PubMed";
+"theory_link_cepeda_2006" = "Cepeda kaj kolegoj, 2006";
+"theory_link_lally_2010" = "Lally kaj kolegoj, 2010";
+
+"theory_topic_first20_title" = "La unuaj 20 horoj: transpasi la komencon";
+"theory_topic_first20_summary" = "Komenci kapablon ofte frustras, ĉar ĉio estas nekonata. Josh Kaufman proponas praktikan vojon: dividi kapablon en pli malgrandajn partojn, koncentriĝi pri tio, kio gravas, forigi barojn al ekzercado kaj pasigi koncentritan tempon por pliboniĝi. Lia kadro de 20 horoj estas metoda komenco, ne scienca garantio, ke oni majstras ĉian kapablon en 20 horoj.";
+"theory_topic_first20_takeaway" = "Elektu unu konkretan aferon, kiun vi volas fari pli bone post la unuaj 20 horoj.";
+"theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Cifereca eldono en 2013; papera eldono en 2014.";
+"theory_topic_first20_context" = "Praktika kadro kaj libro de la aŭtoro, ne kontrolita scienca studo.";
+"theory_topic_first20_limitation" = "La kadro de 20 horoj estas metoda komenco. Ĝi ne estas science fiksita tempo por majstri kapablon.";
+
+"theory_topic_deliberate_title" = "Ekzerci kun celo";
+"theory_topic_deliberate_summary" = "Ripeti agadon ne estas la samo kiel intence plibonigi ĝin. Elektu konkretan aspekton, ekzerciĝu kun klara celo, rimarku erarojn kaj ĝustigu la sekvan provon. Tempon indas registri, sed ankaŭ la maniero de ekzercado gravas.";
+"theory_topic_deliberate_takeaway" = "Antaŭ seanco decidu, kion unu vi volas plibonigi.";
+"theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe kaj Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
+"theory_topic_deliberate_context" = "La artikolo ellaboris kadron de eksperta agado kaj raportis studojn pri muzikistoj, inkluzive de violonistoj kaj pianistoj.";
+"theory_topic_deliberate_limitation" = "La artikolo ne fiksas unu nombron da horoj, kiu garantius majstrecon en ĉiuj kapabloj.";
+
+"theory_topic_10k_title" = "10 000 horoj: populara regulo, ne leĝo";
+"theory_topic_10k_summary" = "La regulo de 10 000 horoj populariĝis per Outliers (2008) de Malcolm Gladwell. Ĝi apogiĝis sur esploro pri eksperta agado, sed la populara versio simpligis la originalan argumenton. Ne ekzistas universala magia nombro da horoj, kiu garantius majstrecon.";
+"theory_topic_10k_takeaway" = "Uzu longtempajn mejloŝtonojn por festi persiston, ne por antaŭdiri, kiam vi fariĝos fakulo.";
+"theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe kaj Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara kaj Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
+"theory_topic_10k_context" = "La regulo de 10 000 horoj populariĝis per Outliers (2008) de Malcolm Gladwell. La artikolo de 2019 pridiskutas, kiel tiu populara regulo diferencas de la esploro de 1993.";
+"theory_topic_10k_limitation" = "Ericsson kaj kolegoj ne starigis universalan leĝon de majstreco je 10 000 horoj. Ne ekzistas universala nombro da horoj, kiu garantius majstrecon.";
+
+"theory_topic_variance_title" = "Ekzercado gravas, sed ne estas ĉio";
+"theory_topic_variance_summary" = "Metaanalizo de 2014 ekzamenis intencan ekzercadon en pluraj kampoj. Ĝi trovis, ke ekzercado rilatas al agado, sed ĝia kontribuo forte diferencas laŭ fako.";
+"theory_topic_variance_takeaway" = "Ekzercado estas io, kion vi povas influi. La rezultoj dependas ankaŭ de aliaj faktoroj, kiuj diferencas inter agadoj.";
+"theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick kaj Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
+"theory_topic_variance_context" = "Metaanalizo de 2014 ekzamenis intencan ekzercadon en pluraj kampoj. Ekzercado rilatis al agado, sed ĝia kontribuo forte diferencis laŭ fako.";
+"theory_topic_variance_findings_intro" = "La taksita parto de diferencoj de agado, kiun klarigis intenca ekzercado en ĉi tiu analizo, estis:";
+"theory_topic_variance_limitation" = "Ĉi tiuj procentoj estas parto de varianco de agado klarigita en tiu metaanalizo. Ili ne estas la procento de kapablo, kiun homo povas lerni, nek la probablo de sukceso de unu persono.";
+"theory_finding_games" = "Ludoj";
+"theory_finding_games_value" = "26%";
+"theory_finding_music" = "Muziko";
+"theory_finding_sports" = "Sporto";
+"theory_finding_education" = "Edukado";
+"theory_finding_professions" = "Profesioj";
+"theory_finding_music_value" = "21%";
+"theory_finding_sports_value" = "18%";
+"theory_finding_education_value" = "4%";
+"theory_finding_professions_value" = "Malpli ol 1%";
+
+"theory_topic_spacing_title" = "Revenu al kapablo, anstataŭ amasigi ĉion kune";
+"theory_topic_spacing_summary" = "Esploro pri disigita ekzercado subtenas dismeti lernadon tra pluraj seancoj, anstataŭ fidi nur je amasa ekzercado. La plej bona interspaco dependas de la materialo kaj de tio, kiom longe vi volas konservi ĝin.";
+"theory_topic_spacing_takeaway" = "Provu reveni al kapablo dum pluraj tagoj kaj observu, kion vi memoras kaj kio bezonas pli da ekzercado.";
+"theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted kaj Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
+"theory_topic_spacing_context" = "La metaanalizo trarigardis 317 eksperimentojn en 184 artikoloj, kun 839 taksoj de disigita ekzercado.";
+"theory_topic_spacing_limitation" = "Ĉi tiuj rezultoj koncernas taskojn de lernado kaj rememoro. Ili ne prezentas unu horaron kiel optimuman por ĉiu fizika, socia, arta aŭ profesia kapablo.";
+
+"theory_topic_habit_title" = "Kutimo ne havas universalan limdaton";
+"theory_topic_habit_summary" = "Ripeti agon en sama kunteksto povas fari ĝin pli aŭtomata kun la tempo. Tamen la bezonata tempo diferencas inter homoj kaj kondutoj. Maltrafi unu tagon ne signifas, ke la tuta progreso perdiĝis.";
+"theory_topic_habit_takeaway" = "Ligu agadon al situacio, kiun vi renkontas regule, kaj rekomencu sen kulpo, kiam seanco mankas.";
+"theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts kaj Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
+"theory_topic_habit_context" = "Naŭdek ses volontuloj elektis konduton de manĝado, trinkado aŭ aktiveco por ripeti en la sama kunteksto dum 12 semajnoj. Okdek du partoprenantoj donis sufiĉajn datumojn por analizo. La modelita tempo por atingi 95% de la taksita asimptota aŭtomateco variis de 18 ĝis 254 tagoj.";
+"theory_topic_habit_limitation" = "Tio estis studo pri formado de kutimoj, ne pri tio, kiom da horoj necesas por majstri kapablon. Ĝi ne subtenas sojlon de majstreco je 21 horoj nek universalan regulon de kutimo je 21 tagoj.";
+
+"theory_milestones_title" = "Mejloŝtonoj de progreso";
+"theory_milestones_note" = "La markoj de 21, 100, 1 000 kaj 10 000 horoj en Time4Skill registras tempon, kiun vi pasigis. Ili estas mejloŝtonoj de progreso, ne science validigitaj stadioj, kaj ili ne antaŭdiras, kiam vi fariĝos fakulo.";
+"theory_milestone_100_title" = "100 horoj";
+"theory_milestone_1000_title" = "1 000 horoj";
+"theory_milestone_10000_title" = "10 000 horoj";
+"theory_milestone_note" = "Mejloŝtono de progreso, ne universala stadio de fakeco.";
+
+// MARK: - Year activity calendar (T4S-003)
+"activity_calendar_title" = "Ekzercado ĉi-jare";
+"activity_calendar_previous" = "Antaŭa jaro";
+"activity_calendar_next" = "Sekva jaro";
+"activity_calendar_summary" = "%1$d aktivaj tagoj · %2$d kapabloj";
+"activity_calendar_empty" = "Ankoraŭ neniu finita seanco de la tempilo. La tagoj restas neŭtralaj, ĝis seanco estas konservita.";
+"activity_calendar_year_empty" = "En ĉi tiu jaro ne estas finitaj seancoj de la tempilo.";
+"activity_calendar_day_accessibility" = "%1$@, %2$@";
+"activity_level_0" = "Neniu registrita aktiveco de tempilo";
+"activity_level_1" = "Malpeza aktiveco";
+"activity_level_2" = "Ioma aktiveco";
+"activity_level_3" = "Varia aktiveco";
+"activity_level_4" = "Larĝa aktiveco";
+"activity_level_5" = "Tre larĝa aktiveco";
+
+// MARK: - Catalog search
+"catalog_search_prompt" = "Serĉi kapablojn";
+"catalog_filter_all" = "Ĉiuj";
+"catalog_filter_done" = "Finitaj";
+"catalog_filter_not_done" = "Nefinitaj";
+"catalog_favorites_only" = "Preferataj";
+"catalog_filter_reset" = "Restarigi";
+"catalog_no_results" = "Neniu kapablo kongruas kun ĉi tiuj filtriloj.";
+"catalog_favorite_add" = "Aldoni al preferataj";
+"catalog_favorite_remove" = "Forigi el preferataj";
+"catalog_crystal_reward" = "Kristalo por akirita kapablo";
+"catalog_progress" = "Progreso";
+
+/* T4S-035 timers, counters, theory threshold */
+
+"tracker_tool_label" = "Ilo";
+"tracker_tool_progress" = "Progreso";
+"tracker_tool_balance" = "Tempa saldo";
+"time_balance_note" = "Ĉi tiu saldo povas kreski aŭ malkreski. Ĝi ne estas progreso de kapablo, kaj uzi ĝin ne malpliigas jam registritajn horojn.";
+"time_balance_empty_title" = "Ankoraŭ neniu tempa saldo";
+"time_balance_empty_description" = "Aldonu saldon, kiam vi volas konservi tempon kaj poste kalkuli ĝin malsupren.";
+"time_balance_add_quarter" = "Aldoni 15 min";
+"time_balance_new" = "Nova saldo";
+"time_balance_remaining" = "Restanta tempo";
+"time_balance_start" = "Nombri malsupren";
+"time_balance_stop" = "Paŭzi";
+"time_balance_delete" = "Forigi saldon";
+"counter_delete" = "Forigi nombrigon";
+"theory_threshold_crystal" = "Koloro de hora sojlo en Time4Skill. Ne garantio de majstreco.";
+"theory_milestone_21_title" = "21 horoj";
+
+/* T4S-036 compendium, counters, catalog note */
+"catalog_exemplary_note" = "Ĉi tiu ekrano listigas la kapablojn liveritajn kun la apo: la originalan aron plus erojn akceptitajn el la ellaborita kolekto. Dosieroj de pilotaj proponoj ne estas mem la katalogo.";
+"theory_compendium_intro" = "Ĉiu langeto estas hora marko jam uzata de la progreso-strio. La kristalo estas la koloro de tiu marko. La teksto klarigas, kion la marko signifas kaj kion ĝi ne signifas.";
+"theory_hour_unit" = "horoj";
+"theory_callout_example" = "Ekzemplo";
+"theory_callout_caveat" = "Averto";
+"theory_callout_takeaway" = "Konkludo";
+"theory_chapter_21_title" = "Transpasi la komencon";
+"theory_chapter_21_lead" = "Dudek unu horoj ŝanĝas la koloron de la progreso-strio. Tio ne estas esplora trovaĵo. La plej proksima publikigita metodo estas la kadro de 20 horoj de Josh Kaufman por travivi la mallertan komencon, kaj tiuj du nombroj ne estas la sama aserto.";
+"theory_chapter_21_mechanism_title" = "Metodo por la komenco";
+"theory_chapter_21_mechanism" = "Kaufman traktas la komencon kiel praktikan problemon. Dividu la kapablon en pli malgrandajn partojn, lernu sufiĉe por rimarki viajn proprajn erarojn, forigu barojn, kiuj malfaciligas ekzercadon, kaj pasigu koncentritan tempon por unu rezulto. La libro prezentas tion kiel metodon de la aŭtoro por ekkomenci.";
+"theory_chapter_21_example" = "Homo, kiu volas, ke tri akordoj sonu pure, povas ekzerci tiun rezulton. «Lerni la gitaron» estas pli granda celo, kaj la unuaj horoj ne decidas ĝin.";
+"theory_chapter_100_title" = "Cent horoj, kiel marko de la apo";
+"theory_chapter_100_lead" = "Cent horoj estas mejloŝtono de Time4Skill por jam registrita tempo. Neniu el la studoj kolektitaj en ĉi tiu kompendio difinas 100 horojn kiel la momenton, kiam iu fariĝas kompetenta.";
+"theory_chapter_100_mechanism_title" = "Kion la proksima esploro fakte mezuris";
+"theory_chapter_100_mechanism" = "Du linioj de laboro estas proksime de tiu periodo, sed ne mezuras ĝin en horoj. Cepeda, Pashler, Vul, Wixted kaj Rohrer trarigardis 317 eksperimentojn pri parola rememoro. En tiu literaturo, disigitaj seancoj venkis amasan lernadon, kaj la utila interspaco dependis de tio, kiom longe la materialo devis esti memorata. Lally, van Jaarsveld, Potts kaj Wardle petis volontulojn ripeti konduton de manĝado, trinkado aŭ aktiveco en la sama kunteksto. La modelita tempo por atingi 95 procentojn de la propra altebenaĵo de ĉiu persono vaste variis. Manki unu tagon ne forviŝis la kurbon.";
+"theory_chapter_100_example" = "Ludi mallongan pecon en tri malsamaj tagoj montras, kiu takto vere restis en memoro. Unu longa vespero de ripetado ne respondas tiun demandon.";
+"theory_chapter_100_caveat" = "La trarigardo pri interspacigo temas pri parola rememoro. La studo pri kutimoj temas pri aŭtomateco de elektita konduto, kaj ĝia intervalo estis 18 ĝis 254 tagoj en la modelo raportita kun la artikolo, ne linio de kompetento je 100 horoj. Neniu el la rezultoj diras, ke 100 horoj faras iun kompetenta pri fotografio, stirado aŭ iu alia kapablo.";
+"theory_chapter_100_takeaway" = "Uzu la markon por rimarki, ĉu vi revenas. Ne traktu ĝin kiel nivelon, kiun vi gajnis.";
+"theory_chapter_1000_title" = "Ekzercado celita al unu manko";
+"theory_chapter_1000_lead" = "La kristalo de 1 000 horoj registras pasigitan tempon. Ĝi ne signifas, ke la persono nun estas profesiulo, instruisto aŭ iu, kiu povas vivi de la kapablo.";
+"theory_chapter_1000_mechanism_title" = "Intenca ekzercado, kaj kiom ĝi klarigis";
+"theory_chapter_1000_mechanism" = "Ericsson, Krampe kaj Tesch-Römer priskribis intencan ekzercadon kiel agadon aranĝitan por plibonigi konkretan aspekton, kun retrokuplo kaj korekto, anstataŭ simple ripeti tion, kio jam estas komforta. Ilia artikolo de 1993 ellaboris tiun kadron per studoj pri muzikistoj. Ĝi ne publikigis unu nombron da horoj, kiu kreas fakulojn en ĉiu fako. Macnamara, Hambrick kaj Oswald poste taksis, kiom de la diferenco de agado rilatis al intenca ekzercado. La partoj diferencis laŭ fako: pli altaj en ludoj, muziko kaj sporto ol en edukado kaj profesioj.";
+"theory_chapter_1000_example" = "Horo pasigita por la peco, kiu daŭre rompiĝas, estas alia agado ol horo da ludado de pecoj, kiuj jam iras bone. La progreso-strio registras la tempon ambaŭkaze.";
+"theory_chapter_1000_caveat" = "La procentoj laŭ fako estas partoj de varianco en tiu metaanalizo de 2014. Ili ne estas la parto de kapablo, kiun homo povas lerni, nek la ŝanco de sukceso de iu. La artikolo ne starigas 1 000 horojn kiel profesian sojlon. Pli malnova vortumo en la apo, kiu traktis 1 000 horojn kiel la momenton fariĝi profesiulo, troigis la pruvojn.";
+"theory_chapter_10000_title" = "Fama nombro, ne leĝo";
+"theory_chapter_10000_lead" = "Dek mil horoj famiĝis kiel regulo de majstreco. La esploro, el kiu oni ĉerpis tion, ne starigis leĝon, kaj la kristalo sur ĉi tiu langeto nur identigas la plej altan horan markon montratan de la apo.";
+"theory_chapter_10000_mechanism_title" = "Kiel la nombro vojaĝis";
+"theory_chapter_10000_mechanism" = "Outliers (2008) de Malcolm Gladwell faris la rondan nombron vaste konata. Ĝi apogiĝis sur esploro pri eksperta agado, inkluzive de la artikolo de 1993 de Ericsson, Krampe kaj Tesch-Römer pri intenca ekzercado ĉe muzikistoj. Macnamara kaj Maitra (2019) pridiskutas, kiel tiu populara regulo diferencas de la esploro. La populara versio kunpremis komplikan argumenton en unu sojlon, kiu garantius majstrecon.";
+"theory_chapter_10000_example" = "Du homoj povas registri la saman sumon kaj tamen pasigi la tempon malsame. Unu eble havis instruiston, kiu korektis konkretan mankon. La alia eble ripetis pecon, kiun li jam ludas. La sumo de horoj ne registras tiun diferencon.";
+"counter_kind_label" = "Speco";
+"counter_kind_manual" = "Mana kalkulo";
+"counter_kind_elapsed" = "Tagoj de dato";
+"counter_anchor_label" = "Komenca dato";
+"counter_refresh" = "Refreŝigi valoron";
+"counter_refresh_unavailable" = "Agordu komencan daton antaŭ ol refreŝigi. Ĝis tiam la valoro restas kia ĝi estas.";
+
+/* T4S-039 stats and overview */
+"stats_tab_overview" = "Superrigardo";
+"stats_tab_time" = "Tempo de ekzercado";
+"stats_tab_skills" = "Kapabloj";
+"stats_tab_thresholds" = "Horaj sojloj";
+"stats_tab_activity" = "Aktiveco";
+"stats_collection_heading" = "Kolekto de kapabloj";
+"stats_tracked_heading" = "Spurataj kapabloj";
+"stats_catalog_obtained_format" = "Akiritaj en la kolekto: %d el %d";
+"stats_catalog_not_obtained_format" = "Ankoraŭ ne markitaj kiel akiritaj: %d";
+"stats_tracked_with_time_format" = "Kun registrita tempo: %d";
+"stats_tracked_without_time_format" = "Sen registrita tempo: %d";
+"stats_group_empty" = "Nenio en ĉi tiu grupo.";
+"stats_thresholds_note" = "La markoj de 21, 100, 1 000 kaj 10 000 horoj apartenas al la apo. La nombro estas kiom da spurataj kapabloj havas almenaŭ tiom da registrita tempo. Ĝi ne estas aparta persona celo.";
+"stats_thresholds_empty" = "Ankoraŭ ne estas spurataj kapabloj, do la sojloj havas nenion por montri.";
+"stats_threshold_count_format" = "%d";
+"month_activity_title" = "Ĉi tiu monato";
+"month_activity_previous" = "Antaŭa monato";
+"month_activity_next" = "Sekva monato";
+"month_activity_practice" = "Tago kun konservita seanco";
+"month_activity_obtained" = "Tago, kiam kapablo estis markita kiel akirita";
+"month_activity_empty" = "Ĉi-monate ne estas konservitaj seancoj nek datoj de akiro. Sumo de horoj ne estas dismetita tra la tagoj.";
+"overview_tracking_tools" = "Iloj de spurado";
+
+/* T4S-040 custom skill filter */
+"catalog_filter_custom" = "Propraj";
+"catalog_no_custom" = "Vi ankoraŭ ne havas proprajn kapablojn.";
+"catalog_no_favorites" = "Neniuj preferataj kapabloj.";
+"catalog_no_done" = "Neniuj akiritaj kapabloj.";
+"catalog_no_not_done" = "Neniu kapablo restas neakirita.";
+
+/* T4S-041 language picker */
+"language_picker_title" = "Lingvo";
+"language_device" = "Lingvo de la aparato";
+"language_device_detail" = "Uzas la sisteman lingvon de ĉi tiu aparato. Kiam mankas traduko, la aplikaĵo uzas la anglan.";
+"language_name_polish" = "Pola";
+"language_name_english" = "Angla";
+"language_name_spanish" = "Hispana";
+"language_name_esperanto" = "Esperanto";
+"language_name_interslavic" = "Interslava";
+"language_script_latin" = "Latinico";
+"language_script_cyrillic" = "Cirilico";
+"language_script_glagolitic" = "Glagolico";
+/* T4S-042 time balance + language visibility */
+"time_balance_minus_start" = "− Startu";
+"time_balance_plus_start" = "+ Startu";
+"time_balance_minus_stop" = "− Haltu";
+"time_balance_plus_stop" = "+ Haltu";
+"time_balance_a11y_decrease" = "Komencu malpliigi la temposaldon";
+"time_balance_a11y_increase" = "Komencu pliigi la temposaldon";
+"time_balance_a11y_stop_decrease" = "Haltu la malpliigon de la temposaldo";
+"time_balance_a11y_stop_increase" = "Haltu la pliigon de la temposaldo";
+"time_balance_bar" = "Temposaldo";
+"time_balance_zero_sound" = "Ludu sonon kiam la saldo atingas nulon";
+"time_balance_sound_section" = "Temposaldo";
+
+/* T4S-UI-042 supplement: converter nav + recent tracking */
+"time_converter_nav_title" = "Konvertilo de tempo";
+"stats_recent_tracking" = "Lastatempa spurado";
+"stats_this_week" = "Ĉi tiu semajno";
+"stats_this_month" = "Ĉi tiu monato";
+
+"export_pdf_generated_on_format" = "Generita je: %@";

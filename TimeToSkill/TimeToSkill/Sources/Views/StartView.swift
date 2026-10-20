@@ -34,6 +34,7 @@ struct StartView: View {
             mainContent(now: context.date)
         }
         .navigationTitle(LocalizedStringKey("tracking_nav_title"))
+
         .macOSToolbarAction(
             title: LocalizedStringKey("fab_add_skill"),
             systemImage: "plus",

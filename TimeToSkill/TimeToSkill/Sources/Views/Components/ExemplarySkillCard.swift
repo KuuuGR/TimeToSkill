@@ -13,39 +13,12 @@ import UIKit
 struct ExemplarySkillCard: View {
     let skill: ExemplarySkill
     let onTap: () -> Void
-    
-    private func loadUIImage() -> PlatformImage? {
-        PlatformImageLoader.image(namedOrPath: skill.imageName)
-    }
-    
+
     var body: some View {
         Button(action: onTap) {
             VStack(spacing: 8) {
                 // Image with star ribbon overlay
-                ZStack {
-                    // Main image: try file or asset first, fallback to SF Symbol
-                    if let ui = loadUIImage() {
-                        Image(platformImage: ui)
-                            .resizable()
-                            .scaledToFit()
-                            .saturation((skill.userRating ?? 0) == 0 ? 0 : 1)
-                            .opacity((skill.userRating ?? 0) == 0 ? 0.6 : 1)
-                            .frame(width: 80, height: 80)
-                            .background(
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
-                            )
-                    } else {
-                        Image(systemName: PlatformImageLoader.systemSymbolExists(skill.imageName) ? skill.imageName : "star.fill")
-                            .font(.system(size: 40))
-                            .foregroundColor((skill.userRating ?? 0) == 0 ? .gray : .primary)
-                            .frame(width: 80, height: 80)
-                            .background(
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill((skill.userRating ?? 0) == 0 ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1))
-                            )
-                    }
-                }
+                CatalogArtworkIcon(name: skill.imageName, side: 80, dimmed: (skill.userRating ?? 0) == 0)
                 
                 // Title
                 Text(skill.title)

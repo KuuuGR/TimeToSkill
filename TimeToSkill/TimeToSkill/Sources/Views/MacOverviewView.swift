@@ -14,7 +14,6 @@ import SwiftData
 
 struct MacOverviewView: View {
     @Binding var selection: MacSidebarSection?
-    let onAddSkill: () -> Void
 
     @Query private var skills: [Skill]
 
@@ -37,9 +36,8 @@ struct MacOverviewView: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
 
-                // Single progress point plus the primary action.
                 GroupBox {
-                    HStack(alignment: .firstTextBaseline, spacing: 16) {
+                    VStack(alignment: .leading, spacing: 14) {
                         Text(String(
                             format: NSLocalizedString("time_total_hours_format", comment: "Total tracked time"),
                             formatHours(totalTrackedHours)
@@ -49,31 +47,25 @@ struct MacOverviewView: View {
                         .foregroundColor(AppColors.onSurface)
                         .accessibilityIdentifier("MacTotalTrackedLabel")
 
-                        Spacer(minLength: 12)
-
                         Button(LocalizedStringKey("main_manage_trackers")) {
                             selection = .trackers
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(AppColors.accent)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                        Button(LocalizedStringKey("main_manage_counters")) {
+                            selection = .counters
+                        }
+                        .buttonStyle(.bordered)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .padding(.top, 2)
                 } label: {
-                    Label(LocalizedStringKey("stats_total_hours"), systemImage: "hourglass")
+                    Label(LocalizedStringKey("overview_tracking_tools"), systemImage: "hourglass")
                 }
 
-                // Secondary shortcuts into sections that already exist
-                // (the sidebar lists every section as well).
-                HStack(spacing: 10) {
-                    Button(LocalizedStringKey("fab_add_skill")) { onAddSkill() }
-                        .buttonStyle(.bordered)
-
-                    Button(LocalizedStringKey("exemplary_skills_title")) { selection = .skills }
-                        .buttonStyle(.bordered)
-
-                    Button(LocalizedStringKey("stats_nav_title")) { selection = .statistics }
-                        .buttonStyle(.bordered)
-                }
+                MonthActivitySummary()
 
                 Spacer(minLength: 8)
             }
@@ -82,13 +74,6 @@ struct MacOverviewView: View {
             .frame(maxWidth: .infinity, alignment: .center)
         }
         .navigationTitle(LocalizedStringKey("ab_app_name"))
-        .macOSToolbarAction(
-            title: "fab_add_skill",
-            systemImage: "plus",
-            shortcut: KeyboardShortcut("n", modifiers: .command)
-        ) {
-            onAddSkill()
-        }
     }
 
     private func formatHours(_ hours: Double) -> String {

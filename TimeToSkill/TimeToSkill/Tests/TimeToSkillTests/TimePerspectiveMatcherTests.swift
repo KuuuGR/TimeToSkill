@@ -70,13 +70,21 @@ final class TimePerspectiveMatcherTests: XCTestCase {
 
     func testLoaderDecodesBundledAsset() throws {
         let library = try TimePerspectiveLoader.loadLibrary()
-        XCTAssertFalse(library.isEmpty)
-        XCTAssertEqual(library.first?.id, "coffee_break")
-        XCTAssertEqual(library.first?.thresholdMinutes, 15)
-        XCTAssertEqual(library.first?.category, .everydayLife)
+        XCTAssertEqual(library.count, 63)
+        let coffee = try XCTUnwrap(library.first(where: { $0.id == "coffee_break" }))
+        XCTAssertEqual(coffee.thresholdMinutes, 15)
+        XCTAssertEqual(coffee.category, .everydayLife)
+        XCTAssertEqual(Set(library.map(\.id)).count, library.count, "perspective ids must stay unique")
     }
 
     func testLocalizedTitlesAndDescriptionsResolve() throws {
+        // Resolve through LanguageState with an explicit English preference so
+        // earlier language-picker tests cannot change the expected strings.
+        LanguageBundleInstall.installIfNeeded()
+        LanguageState.shared.replace(
+            ResolvedLanguage(preferenceKey: "en", bundleCode: "en", script: nil)
+        )
+
         let library = try TimePerspectiveLoader.loadLibrary()
         let byID = Dictionary(uniqueKeysWithValues: library.map { ($0.id, $0) })
 

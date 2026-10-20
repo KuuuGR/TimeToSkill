@@ -1,0 +1,827 @@
+{
+  "Access": {
+    "pl": "Dostępność",
+    "es": "Accesibilidad",
+    "eo": "Alireblo"
+  },
+  "Access and plain language": {
+    "pl": "Dostępność i prosty język",
+    "es": "Accesibilidad y lenguaje claro",
+    "eo": "Alireblo kaj klara lingvo"
+  },
+  "Agreements": {
+    "pl": "Ustalenia",
+    "es": "Acuerdos",
+    "eo": "Interkonsentoj"
+  },
+  "Animal care": {
+    "pl": "Opieka nad zwierzętami",
+    "es": "Cuidado de animales",
+    "eo": "Besto-prizorgo"
+  },
+  "Animal care and nature": {
+    "pl": "Opieka nad zwierzętami i przyroda",
+    "es": "Cuidado de animales y naturaleza",
+    "eo": "Besto-prizorgo kaj naturo"
+  },
+  "Aquatic skills": {
+    "pl": "Umiejętności wodne",
+    "es": "Habilidades acuáticas",
+    "eo": "Akvaj lertoj"
+  },
+  "Astronomy and observation": {
+    "pl": "Astronomia i obserwacja",
+    "es": "Astronomía y observación",
+    "eo": "Astronomio kaj observado"
+  },
+  "Bike and walk": {
+    "pl": "Rower i spacer",
+    "es": "Bici y caminar",
+    "eo": "Biciklo kaj piediro"
+  },
+  "Buildings": {
+    "pl": "Budynki",
+    "es": "Edificios",
+    "eo": "Konstruaĵoj"
+  },
+  "Buying decisions": {
+    "pl": "Decyzje zakupowe",
+    "es": "Decisiones de compra",
+    "eo": "Aĉetaj decidoj"
+  },
+  "Care and accompaniment": {
+    "pl": "Opieka i towarzyszenie",
+    "es": "Cuidado y acompañamiento",
+    "eo": "Prizorgo kaj akompano"
+  },
+  "Care in the room": {
+    "pl": "Opieka w pomieszczeniu",
+    "es": "Cuidado en la habitación",
+    "eo": "Prizorgo en la ĉambro"
+  },
+  "Chess": {
+    "pl": "Szachy",
+    "es": "Ajedrez",
+    "eo": "Ŝako"
+  },
+  "Citizen science": {
+    "pl": "Nauka obywatelska",
+    "es": "Ciencia ciudadana",
+    "eo": "Civitana scienco"
+  },
+  "Citizen science and research": {
+    "pl": "Nauka obywatelska i badania",
+    "es": "Ciencia ciudadana e investigación",
+    "eo": "Civitana scienco kaj esplorado"
+  },
+  "City reading": {
+    "pl": "Czytanie miasta",
+    "es": "Lectura de la ciudad",
+    "eo": "Urba legado"
+  },
+  "Civic life": {
+    "pl": "Życie obywatelskie",
+    "es": "Vida cívica",
+    "eo": "Civita vivo"
+  },
+  "Civic paper": {
+    "pl": "Dokumenty obywatelskie",
+    "es": "Documentos cívicos",
+    "eo": "Civitaj dokumentoj"
+  },
+  "Claims and media": {
+    "pl": "Twierdzenia i media",
+    "es": "Afirmaciones y medios",
+    "eo": "Asertoj kaj komunikiloj"
+  },
+  "Clay": {
+    "pl": "Glina",
+    "es": "Arcilla",
+    "eo": "Argilo"
+  },
+  "Clothes": {
+    "pl": "Ubrania",
+    "es": "Ropa",
+    "eo": "Vestoj"
+  },
+  "Clothes and cloth": {
+    "pl": "Ubrania i tkanina",
+    "es": "Ropa y tela",
+    "eo": "Vestoj kaj tuko"
+  },
+  "Codes and memory": {
+    "pl": "Kody i pamięć",
+    "es": "Códigos y memoria",
+    "eo": "Kodoj kaj memoro"
+  },
+  "Collections": {
+    "pl": "Kolekcje",
+    "es": "Colecciones",
+    "eo": "Kolektoj"
+  },
+  "Communication": {
+    "pl": "Komunikacja",
+    "es": "Comunicación",
+    "eo": "Komunikado"
+  },
+  "Communication and science": {
+    "pl": "Komunikacja i nauka",
+    "es": "Comunicación y ciencia",
+    "eo": "Komunikado kaj scienco"
+  },
+  "Computing and technology": {
+    "pl": "Informatyka i technika",
+    "es": "Informática y tecnología",
+    "eo": "Komputado kaj tekniko"
+  },
+  "Constraints": {
+    "pl": "Ograniczenia",
+    "es": "Restricciones",
+    "eo": "Limoj"
+  },
+  "Cooking and food preparation": {
+    "pl": "Gotowanie i przygotowanie jedzenia",
+    "es": "Cocina y preparación de alimentos",
+    "eo": "Kuirado kaj preparado de manĝaĵo"
+  },
+  "Craft and materials": {
+    "pl": "Rzemiosło i materiały",
+    "es": "Oficio y materiales",
+    "eo": "Metio kaj materialoj"
+  },
+  "Craft and model making": {
+    "pl": "Rzemiosło i modele",
+    "es": "Oficio y maquetas",
+    "eo": "Metio kaj modeloj"
+  },
+  "Creative making": {
+    "pl": "Twórcze wytwarzanie",
+    "es": "Elaboración creativa",
+    "eo": "Krea farado"
+  },
+  "Critical thinking": {
+    "pl": "Myślenie krytyczne",
+    "es": "Pensamiento crítico",
+    "eo": "Kritika pensado"
+  },
+  "Culture": {
+    "pl": "Kultura",
+    "es": "Cultura",
+    "eo": "Kulturo"
+  },
+  "Culture and place": {
+    "pl": "Kultura i miejsce",
+    "es": "Cultura y lugar",
+    "eo": "Kulturo kaj loko"
+  },
+  "Dance": {
+    "pl": "Taniec",
+    "es": "Danza",
+    "eo": "Danco"
+  },
+  "Data reading": {
+    "pl": "Czytanie danych",
+    "es": "Lectura de datos",
+    "eo": "Datuma legado"
+  },
+  "Design": {
+    "pl": "Projektowanie",
+    "es": "Diseño",
+    "eo": "Dezajno"
+  },
+  "Design on paper": {
+    "pl": "Projekt na papierze",
+    "es": "Diseño en papel",
+    "eo": "Dezajno sur papero"
+  },
+  "Digital and analytical skills": {
+    "pl": "Umiejętności cyfrowe i analityczne",
+    "es": "Habilidades digitales y analíticas",
+    "eo": "Ciferecaj kaj analizaj lertoj"
+  },
+  "Digital and information literacy": {
+    "pl": "Kompetencje cyfrowe i informacyjne",
+    "es": "Alfabetización digital e informacional",
+    "eo": "Cifereca kaj informa legopovo"
+  },
+  "Digital collaboration": {
+    "pl": "Współpraca cyfrowa",
+    "es": "Colaboración digital",
+    "eo": "Cifereca kunlaboro"
+  },
+  "Digital creativity": {
+    "pl": "Twórczość cyfrowa",
+    "es": "Creatividad digital",
+    "eo": "Cifereca kreemo"
+  },
+  "Digital knowledge and volunteering": {
+    "pl": "Wiedza cyfrowa i wolontariat",
+    "es": "Conocimiento digital y voluntariado",
+    "eo": "Cifereca scio kaj volontulado"
+  },
+  "Digital safety": {
+    "pl": "Bezpieczeństwo cyfrowe",
+    "es": "Seguridad digital",
+    "eo": "Cifereca sekureco"
+  },
+  "Digital skills": {
+    "pl": "Umiejętności cyfrowe",
+    "es": "Habilidades digitales",
+    "eo": "Ciferecaj lertoj"
+  },
+  "Drawing": {
+    "pl": "Rysowanie",
+    "es": "Dibujo",
+    "eo": "Desegnado"
+  },
+  "Embroidery filling": {
+    "pl": "Wypełnienie haftu",
+    "es": "Relleno de bordado",
+    "eo": "Brodaĵa plenigo"
+  },
+  "Embroidery lines": {
+    "pl": "Linie haftu",
+    "es": "Líneas de bordado",
+    "eo": "Brodaĵaj linioj"
+  },
+  "Endurance and locomotion": {
+    "pl": "Wytrzymałość i przemieszczanie",
+    "es": "Resistencia y locomoción",
+    "eo": "Elteno kaj moviĝo"
+  },
+  "Engineering and making": {
+    "pl": "Inżynieria i wytwarzanie",
+    "es": "Ingeniería y elaboración",
+    "eo": "Inĝenierado kaj farado"
+  },
+  "Everyday communication": {
+    "pl": "Codzienna komunikacja",
+    "es": "Comunicación cotidiana",
+    "eo": "Ĉiutaga komunikado"
+  },
+  "Everyday measures": {
+    "pl": "Codzienne miary",
+    "es": "Medidas cotidianas",
+    "eo": "Ĉiutagaj mezuroj"
+  },
+  "Everyday organisation": {
+    "pl": "Codzienna organizacja",
+    "es": "Organización cotidiana",
+    "eo": "Ĉiutaga organizado"
+  },
+  "Everyday paper": {
+    "pl": "Codzienny papier",
+    "es": "Papel cotidiano",
+    "eo": "Ĉiutaga papero"
+  },
+  "Field notes": {
+    "pl": "Notatki terenowe",
+    "es": "Notas de campo",
+    "eo": "Kampaj notoj"
+  },
+  "Food": {
+    "pl": "Jedzenie",
+    "es": "Comida",
+    "eo": "Manĝaĵo"
+  },
+  "Games": {
+    "pl": "Gry",
+    "es": "Juegos",
+    "eo": "Ludoj"
+  },
+  "Games and puzzles": {
+    "pl": "Gry i łamigłówki",
+    "es": "Juegos y rompecabezas",
+    "eo": "Ludoj kaj puzloj"
+  },
+  "Games and storytelling": {
+    "pl": "Gry i opowiadanie",
+    "es": "Juegos y narración",
+    "eo": "Ludoj kaj rakontado"
+  },
+  "Games and strategy": {
+    "pl": "Gry i strategia",
+    "es": "Juegos y estrategia",
+    "eo": "Ludoj kaj strategio"
+  },
+  "Garden": {
+    "pl": "Ogród",
+    "es": "Jardín",
+    "eo": "Ĝardeno"
+  },
+  "Gatherings": {
+    "pl": "Spotkania",
+    "es": "Reuniones",
+    "eo": "Kunvenoj"
+  },
+  "Group thinking": {
+    "pl": "Myślenie grupowe",
+    "es": "Pensamiento en grupo",
+    "eo": "Grupa pensado"
+  },
+  "Gymnastics and body control": {
+    "pl": "Gimnastyka i kontrola ciała",
+    "es": "Gimnasia y control corporal",
+    "eo": "Gimnastiko kaj korpa rego"
+  },
+  "Hand tricks": {
+    "pl": "Sztuczki rąk",
+    "es": "Trucos de manos",
+    "eo": "Manaj artifikoj"
+  },
+  "Home": {
+    "pl": "Dom",
+    "es": "Hogar",
+    "eo": "Hejmo"
+  },
+  "Home and self-reliance": {
+    "pl": "Dom i samodzielność",
+    "es": "Hogar y autosuficiencia",
+    "eo": "Hejmo kaj memstareco"
+  },
+  "Home maintenance": {
+    "pl": "Utrzymanie domu",
+    "es": "Mantenimiento del hogar",
+    "eo": "Hejma prizorgado"
+  },
+  "Home reading": {
+    "pl": "Czytanie domu",
+    "es": "Lectura del hogar",
+    "eo": "Hejma legado"
+  },
+  "Home rhythm": {
+    "pl": "Domowy rytm",
+    "es": "Ritmo del hogar",
+    "eo": "Hejma ritmo"
+  },
+  "Home utilities": {
+    "pl": "Instalacje domowe",
+    "es": "Suministros del hogar",
+    "eo": "Hejmaj instalaĵoj"
+  },
+  "Hospitality": {
+    "pl": "Gościnność",
+    "es": "Hospitalidad",
+    "eo": "Gastamo"
+  },
+  "Information craft": {
+    "pl": "Rzemiosło informacji",
+    "es": "Oficio de la información",
+    "eo": "Informa metio"
+  },
+  "Kitchen order": {
+    "pl": "Porządek w kuchni",
+    "es": "Orden en la cocina",
+    "eo": "Kuireja ordo"
+  },
+  "Languages": {
+    "pl": "Języki",
+    "es": "Idiomas",
+    "eo": "Lingvoj"
+  },
+  "Learning": {
+    "pl": "Uczenie się",
+    "es": "Aprendizaje",
+    "eo": "Lernado"
+  },
+  "Learning strategies": {
+    "pl": "Strategie uczenia się",
+    "es": "Estrategias de aprendizaje",
+    "eo": "Lernaj strategioj"
+  },
+  "Learning together": {
+    "pl": "Wspólna nauka",
+    "es": "Aprender juntos",
+    "eo": "Kunlernado"
+  },
+  "Library and study": {
+    "pl": "Biblioteka i nauka",
+    "es": "Biblioteca y estudio",
+    "eo": "Biblioteko kaj studado"
+  },
+  "Light and space": {
+    "pl": "Światło i przestrzeń",
+    "es": "Luz y espacio",
+    "eo": "Lumo kaj spaco"
+  },
+  "Listening": {
+    "pl": "Słuchanie",
+    "es": "Escucha",
+    "eo": "Aŭskultado"
+  },
+  "Living things": {
+    "pl": "Istoty żywe",
+    "es": "Seres vivos",
+    "eo": "Vivuloj"
+  },
+  "Making": {
+    "pl": "Wytwarzanie",
+    "es": "Elaboración",
+    "eo": "Farado"
+  },
+  "Making and technology": {
+    "pl": "Wytwarzanie i technika",
+    "es": "Elaboración y tecnología",
+    "eo": "Farado kaj tekniko"
+  },
+  "Making by hand": {
+    "pl": "Robota ręczna",
+    "es": "Hecho a mano",
+    "eo": "Mana farado"
+  },
+  "Materials": {
+    "pl": "Materiały",
+    "es": "Materiales",
+    "eo": "Materialoj"
+  },
+  "Mind-body movement": {
+    "pl": "Ruch ciała i uwagi",
+    "es": "Movimiento cuerpo y mente",
+    "eo": "Korpo-mensa movado"
+  },
+  "Mountain folds": {
+    "pl": "Zgięcia górskie",
+    "es": "Pliegues montaña",
+    "eo": "Montaj faldoj"
+  },
+  "Movement": {
+    "pl": "Ruch",
+    "es": "Movimiento",
+    "eo": "Movado"
+  },
+  "Movement and coordination": {
+    "pl": "Ruch i koordynacja",
+    "es": "Movimiento y coordinación",
+    "eo": "Movado kaj kunordigo"
+  },
+  "Music and sound": {
+    "pl": "Muzyka i dźwięk",
+    "es": "Música y sonido",
+    "eo": "Muziko kaj sono"
+  },
+  "Music practice": {
+    "pl": "Ćwiczenie muzyki",
+    "es": "Práctica musical",
+    "eo": "Muzika ekzercado"
+  },
+  "Nature and earth science": {
+    "pl": "Przyroda i nauki o Ziemi",
+    "es": "Naturaleza y ciencias de la Tierra",
+    "eo": "Naturo kaj terscienco"
+  },
+  "Nature and everyday life": {
+    "pl": "Przyroda i codzienność",
+    "es": "Naturaleza y vida cotidiana",
+    "eo": "Naturo kaj ĉiutaga vivo"
+  },
+  "Nature and observation": {
+    "pl": "Przyroda i obserwacja",
+    "es": "Naturaleza y observación",
+    "eo": "Naturo kaj observado"
+  },
+  "Nature noticing": {
+    "pl": "Dostrzeganie przyrody",
+    "es": "Observar la naturaleza",
+    "eo": "Rimarkado de naturo"
+  },
+  "Nature reading": {
+    "pl": "Czytanie przyrody",
+    "es": "Lectura de la naturaleza",
+    "eo": "Natura legado"
+  },
+  "Navigation": {
+    "pl": "Nawigacja",
+    "es": "Navegación",
+    "eo": "Navigado"
+  },
+  "Navigation and field skills": {
+    "pl": "Nawigacja i umiejętności terenowe",
+    "es": "Navegación y habilidades de campo",
+    "eo": "Navigado kaj kampaj lertoj"
+  },
+  "Navigation and travel": {
+    "pl": "Nawigacja i podróż",
+    "es": "Navegación y viaje",
+    "eo": "Navigado kaj vojaĝo"
+  },
+  "Numbers": {
+    "pl": "Liczby",
+    "es": "Números",
+    "eo": "Nombroj"
+  },
+  "Numbers and plans": {
+    "pl": "Liczby i plany",
+    "es": "Números y planes",
+    "eo": "Nombroj kaj planoj"
+  },
+  "Observation and niche hobbies": {
+    "pl": "Obserwacja i niszowe hobby",
+    "es": "Observación y aficiones concretas",
+    "eo": "Observado kaj niĉaj ŝatokupoj"
+  },
+  "Outdoor mobility": {
+    "pl": "Poruszanie się na zewnątrz",
+    "es": "Movilidad al aire libre",
+    "eo": "Eksterdoma moviĝo"
+  },
+  "Outdoor movement": {
+    "pl": "Ruch na zewnątrz",
+    "es": "Movimiento al aire libre",
+    "eo": "Eksterdoma movado"
+  },
+  "Outdoor navigation and discovery": {
+    "pl": "Nawigacja i odkrywanie w terenie",
+    "es": "Navegación y descubrimiento al aire libre",
+    "eo": "Eksterdoma navigado kaj malkovro"
+  },
+  "Outdoor skills": {
+    "pl": "Umiejętności terenowe",
+    "es": "Habilidades al aire libre",
+    "eo": "Eksterdomaj lertoj"
+  },
+  "Outdoor skills and coordination": {
+    "pl": "Umiejętności terenowe i koordynacja",
+    "es": "Habilidades al aire libre y coordinación",
+    "eo": "Eksterdomaj lertoj kaj kunordigo"
+  },
+  "Paper builds": {
+    "pl": "Konstrukcje z papieru",
+    "es": "Construcciones de papel",
+    "eo": "Paperaj konstruaĵoj"
+  },
+  "Performance": {
+    "pl": "Występ",
+    "es": "Actuación",
+    "eo": "Prezentado"
+  },
+  "Personal finance and everyday life": {
+    "pl": "Finanse osobiste i codzienność",
+    "es": "Finanzas personales y vida cotidiana",
+    "eo": "Persona financo kaj ĉiutaga vivo"
+  },
+  "Photo care": {
+    "pl": "Dbałość o zdjęcia",
+    "es": "Cuidado de fotos",
+    "eo": "Foto-prizorgo"
+  },
+  "Photography and video": {
+    "pl": "Fotografia i wideo",
+    "es": "Fotografía y vídeo",
+    "eo": "Fotado kaj video"
+  },
+  "Pictures": {
+    "pl": "Obrazy",
+    "es": "Imágenes",
+    "eo": "Bildoj"
+  },
+  "Pictures that explain": {
+    "pl": "Obrazy, które wyjaśniają",
+    "es": "Imágenes que explican",
+    "eo": "Bildoj kiuj klarigas"
+  },
+  "Plants": {
+    "pl": "Rośliny",
+    "es": "Plantas",
+    "eo": "Plantoj"
+  },
+  "Plants and gardening": {
+    "pl": "Rośliny i ogrodnictwo",
+    "es": "Plantas y jardinería",
+    "eo": "Plantoj kaj ĝardenado"
+  },
+  "Practical mathematics": {
+    "pl": "Matematyka praktyczna",
+    "es": "Matemáticas prácticas",
+    "eo": "Praktika matematiko"
+  },
+  "Practical science": {
+    "pl": "Nauka praktyczna",
+    "es": "Ciencia práctica",
+    "eo": "Praktika scienco"
+  },
+  "Practical technology": {
+    "pl": "Technika praktyczna",
+    "es": "Tecnología práctica",
+    "eo": "Praktika tekniko"
+  },
+  "Projects": {
+    "pl": "Projekty",
+    "es": "Proyectos",
+    "eo": "Projektoj"
+  },
+  "Projects and money": {
+    "pl": "Projekty i pieniądze",
+    "es": "Proyectos y dinero",
+    "eo": "Projektoj kaj mono"
+  },
+  "Puzzles": {
+    "pl": "Łamigłówki",
+    "es": "Rompecabezas",
+    "eo": "Puzloj"
+  },
+  "Quiet making": {
+    "pl": "Ciche wytwarzanie",
+    "es": "Elaboración silenciosa",
+    "eo": "Kvieta farado"
+  },
+  "Radio and signal observation": {
+    "pl": "Radio i obserwacja sygnałów",
+    "es": "Radio y observación de señales",
+    "eo": "Radio kaj signala observado"
+  },
+  "Repair you can see": {
+    "pl": "Naprawa, którą widać",
+    "es": "Reparación visible",
+    "eo": "Videbla riparo"
+  },
+  "Research and culture": {
+    "pl": "Badanie i kultura",
+    "es": "Investigación y cultura",
+    "eo": "Esplorado kaj kulturo"
+  },
+  "Research and historical sources": {
+    "pl": "Badania i źródła historyczne",
+    "es": "Investigación y fuentes históricas",
+    "eo": "Esplorado kaj historiaj fontoj"
+  },
+  "Research and history": {
+    "pl": "Badania i historia",
+    "es": "Investigación e historia",
+    "eo": "Esplorado kaj historio"
+  },
+  "Science and observation": {
+    "pl": "Nauka i obserwacja",
+    "es": "Ciencia y observación",
+    "eo": "Scienco kaj observado"
+  },
+  "Science table": {
+    "pl": "Doświadczenia na stole",
+    "es": "Experimentos de mesa",
+    "eo": "Tablaj eksperimentoj"
+  },
+  "Showing a trick": {
+    "pl": "Pokaz sztuczki",
+    "es": "Mostrar un truco",
+    "eo": "Montrado de artifiko"
+  },
+  "Sky you can name": {
+    "pl": "Niebo, które potrafisz nazwać",
+    "es": "Cielo que puedes nombrar",
+    "eo": "Ĉielo kiun vi povas nomi"
+  },
+  "Small digital tasks": {
+    "pl": "Drobne zadania cyfrowe",
+    "es": "Pequeñas tareas digitales",
+    "eo": "Etaj ciferecaj taskoj"
+  },
+  "Small experiments": {
+    "pl": "Małe doświadczenia",
+    "es": "Pequeños experimentos",
+    "eo": "Etaj eksperimentoj"
+  },
+  "Small making": {
+    "pl": "Drobne wytwarzanie",
+    "es": "Pequeñas manualidades",
+    "eo": "Eta farado"
+  },
+  "Snow sports": {
+    "pl": "Sporty śnieżne",
+    "es": "Deportes de nieve",
+    "eo": "Neĝaj sportoj"
+  },
+  "Social collaboration": {
+    "pl": "Współpraca społeczna",
+    "es": "Colaboración social",
+    "eo": "Socia kunlaboro"
+  },
+  "Social skills through sport": {
+    "pl": "Umiejętności społeczne przez sport",
+    "es": "Habilidades sociales a través del deporte",
+    "eo": "Sociaj lertoj per sporto"
+  },
+  "Sorting": {
+    "pl": "Porządkowanie",
+    "es": "Clasificación",
+    "eo": "Ordigado"
+  },
+  "Sound": {
+    "pl": "Dźwięk",
+    "es": "Sonido",
+    "eo": "Sono"
+  },
+  "Sound and listening": {
+    "pl": "Dźwięk i słuchanie",
+    "es": "Sonido y escucha",
+    "eo": "Sono kaj aŭskultado"
+  },
+  "Sound tricks": {
+    "pl": "Sztuczki dźwiękowe",
+    "es": "Trucos de sonido",
+    "eo": "Sonaj artifikoj"
+  },
+  "Story and improvisation": {
+    "pl": "Opowieść i improwizacja",
+    "es": "Relato e improvisación",
+    "eo": "Rakonto kaj improvizado"
+  },
+  "Talk": {
+    "pl": "Rozmowa",
+    "es": "Conversación",
+    "eo": "Parolado"
+  },
+  "Thread": {
+    "pl": "Nić",
+    "es": "Hilo",
+    "eo": "Fadeno"
+  },
+  "Thread and cloth": {
+    "pl": "Nić i tkanina",
+    "es": "Hilo y tela",
+    "eo": "Fadeno kaj tuko"
+  },
+  "Traces and memory": {
+    "pl": "Ślady i pamięć",
+    "es": "Huellas y memoria",
+    "eo": "Spuroj kaj memoro"
+  },
+  "Travel basics": {
+    "pl": "Podstawy podróży",
+    "es": "Bases del viaje",
+    "eo": "Bazoj de vojaĝo"
+  },
+  "Type and signs": {
+    "pl": "Liternictwo i znaki",
+    "es": "Tipografía y signos",
+    "eo": "Tipoj kaj signoj"
+  },
+  "Valley folds": {
+    "pl": "Zgięcia dolinne",
+    "es": "Pliegues valle",
+    "eo": "Valaj faldoj"
+  },
+  "Versions": {
+    "pl": "Wersje",
+    "es": "Versiones",
+    "eo": "Versioj"
+  },
+  "Visual creativity": {
+    "pl": "Twórczość wizualna",
+    "es": "Creatividad visual",
+    "eo": "Vida kreemo"
+  },
+  "Visual making": {
+    "pl": "Tworzenie wizualne",
+    "es": "Elaboración visual",
+    "eo": "Vida farado"
+  },
+  "Water and outdoor skills": {
+    "pl": "Woda i umiejętności terenowe",
+    "es": "Agua y habilidades al aire libre",
+    "eo": "Akvo kaj eksterdomaj lertoj"
+  },
+  "Water confidence": {
+    "pl": "Oswajanie z wodą",
+    "es": "Soltura en el agua",
+    "eo": "Akva certeco"
+  },
+  "Weather and sky": {
+    "pl": "Pogoda i niebo",
+    "es": "Tiempo y cielo",
+    "eo": "Vetero kaj ĉielo"
+  },
+  "Wheeled movement": {
+    "pl": "Ruch na kołach",
+    "es": "Movimiento con ruedas",
+    "eo": "Rada movado"
+  },
+  "Words and meaning": {
+    "pl": "Słowa i znaczenie",
+    "es": "Palabras y significado",
+    "eo": "Vortoj kaj signifo"
+  },
+  "Working with others": {
+    "pl": "Współpraca",
+    "es": "Trabajo con otros",
+    "eo": "Kunlaboro"
+  },
+  "Writing": {
+    "pl": "Pisanie",
+    "es": "Escritura",
+    "eo": "Skribado"
+  },
+  "Writing and collaboration": {
+    "pl": "Pisanie i współpraca",
+    "es": "Escritura y colaboración",
+    "eo": "Skribado kaj kunlaboro"
+  },
+  "Writing and editing": {
+    "pl": "Pisanie i redakcja",
+    "es": "Escritura y edición",
+    "eo": "Skribado kaj redaktado"
+  },
+  "Writing and reasoning": {
+    "pl": "Pisanie i rozumowanie",
+    "es": "Escritura y razonamiento",
+    "eo": "Skribado kaj rezonado"
+  }
+}

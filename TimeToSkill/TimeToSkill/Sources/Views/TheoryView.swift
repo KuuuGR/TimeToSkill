@@ -38,6 +38,7 @@ struct TheoryView: View {
             .macOSContentWidth(740)
         }
         .navigationTitle(LocalizedStringKey("theory_nav_title"))
+
     }
 
     private var tabIndex: some View {

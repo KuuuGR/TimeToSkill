@@ -129,3 +129,66 @@ enum YearActivityCalendar {
         return days
     }
 }
+
+/// One calendar month of recorded events. Practice comes only from saved
+/// timer or manual sessions. An obtained-skill date is a collection event,
+/// not practice time. Hour totals are never spread across days.
+enum MonthActivityCalendar {
+    enum Mark: Equatable {
+        case none
+        case practice
+        case obtained
+        case both
+    }
+
+    struct Day: Equatable, Identifiable {
+        let start: Date
+        let number: Int
+        let mark: Mark
+        var id: Date { start }
+    }
+
+    struct Month: Equatable {
+        let days: [Day]
+        let leadingBlanks: Int
+        let practiceDayCount: Int
+        let obtainedDayCount: Int
+    }
+
+    static func mark(practiced: Bool, obtained: Bool) -> Mark {
+        switch (practiced, obtained) {
+        case (true, true): return .both
+        case (true, false): return .practice
+        case (false, true): return .obtained
+        case (false, false): return .none
+        }
+    }
+
+    static func month(
+        containing anchor: Date,
+        practiceDays: Set<Date>,
+        obtainedDays: Set<Date>,
+        calendar: Calendar
+    ) -> Month {
+        let parts = calendar.dateComponents([.year, .month], from: anchor)
+        guard let first = calendar.date(from: parts),
+              let range = calendar.range(of: .day, in: .month, for: first) else {
+            return Month(days: [], leadingBlanks: 0, practiceDayCount: 0, obtainedDayCount: 0)
+        }
+        let weekday = calendar.component(.weekday, from: first)
+        let leading = (weekday - calendar.firstWeekday + 7) % 7
+        let days = range.compactMap { day -> Day? in
+            guard let date = calendar.date(byAdding: .day, value: day - 1, to: first) else { return nil }
+            let start = calendar.startOfDay(for: date)
+            let practiced = practiceDays.contains(start)
+            let obtained = obtainedDays.contains(start)
+            return Day(start: start, number: day, mark: mark(practiced: practiced, obtained: obtained))
+        }
+        return Month(
+            days: days,
+            leadingBlanks: leading,
+            practiceDayCount: days.filter { $0.mark == .practice || $0.mark == .both }.count,
+            obtainedDayCount: days.filter { $0.mark == .obtained || $0.mark == .both }.count
+        )
+    }
+}

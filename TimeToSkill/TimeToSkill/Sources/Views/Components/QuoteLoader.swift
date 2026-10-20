@@ -3,8 +3,13 @@ import Foundation
 class QuoteLoader {
     
     static func loadLocalizedQuotes() -> [Quote] {
-        let preferredLang = Locale.preferredLanguages.first ?? "en"
-        let langPrefix = String(preferredLang.prefix(2)).lowercased()
+        let preferredLang = LanguageState.shared.bundleCode()
+        let langPrefix: String
+        if let hyphen = preferredLang.firstIndex(of: "-") {
+            langPrefix = String(preferredLang[..<hyphen]).lowercased()
+        } else {
+            langPrefix = preferredLang.lowercased()
+        }
         
         //print("📘 Detected language prefix:", langPrefix)
         

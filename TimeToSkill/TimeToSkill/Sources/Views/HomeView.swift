@@ -16,7 +16,7 @@ import SwiftData
 /// Sections offered as shortcut cards on the home screen. Each one maps to a
 /// view that already existed in the app - nothing new is introduced.
 enum HomeSection: String, CaseIterable, Identifiable {
-    case theory, skills, about
+    case theory, skills, timeConverter, about
 
     var id: String { rawValue }
 
@@ -24,6 +24,7 @@ enum HomeSection: String, CaseIterable, Identifiable {
         switch self {
         case .theory: return "main_learning_theory"
         case .skills: return "main_exemplary_skills"
+        case .timeConverter: return "time_converter_nav_title"
         case .about: return "main_about_app"
         }
     }
@@ -32,6 +33,7 @@ enum HomeSection: String, CaseIterable, Identifiable {
         switch self {
         case .theory: return "book"
         case .skills: return "star.fill"
+        case .timeConverter: return "arrow.left.arrow.right"
         case .about: return "info.circle"
         }
     }
@@ -40,6 +42,7 @@ enum HomeSection: String, CaseIterable, Identifiable {
         switch self {
         case .theory: TheoryView()
         case .skills: ExemplarySkillsView()
+        case .timeConverter: TimeConverterView()
         case .about: AboutView()
         }
     }
@@ -85,6 +88,7 @@ struct HomeView: View {
                         hero
                         quoteCard
                         sectionCards
+                        MonthActivitySummary()
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 24)

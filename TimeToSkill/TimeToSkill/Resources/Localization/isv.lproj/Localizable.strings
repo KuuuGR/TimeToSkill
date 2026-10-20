@@ -1,0 +1,584 @@
+// Medžuslovjansky (Latin)
+// English (US)
+// MARK: - MainView
+"main_manage_trackers" = "Upravjati slěditeljami";
+"main_learning_theory" = "Teorija učenja";
+"main_about_app" = "O programu";
+
+// MARK: - Main menu additions
+"main_manage_counters" = "Upravjati brojačami";
+"main_exemplary_skills" = "Umětnosti";
+
+// MARK: - OptionsView
+"options_title" = "Opcije";
+"options_export_section" = "Izvoziti dane";
+"export_pdf_button" = "Izvoziti umětnosti v PDF";
+"skills_report_title" = "Izvěstje o postupu umětnosti";
+
+// MARK: - Time Converter
+"Time_Converter_Section_Header" = "Prětvorič vremene";
+"Time_Converter_Hours_Label" = "🕗 Časy";
+"Time_Converter_Hours_Placeholder" = "Vpišite časy";
+"Time_Converter_Days24h_Label" = "🌃 Dni (24 h)";
+"Time_Converter_Days12h_Label" = "🌅 Dni (12 h)";
+"Time_Converter_Days8h_Label" = "🌇 Rabotne dni (8 h)";
+"Time_Converter_Years_Label" = "🎆 Goda";
+"Time_Converter_Days_Placeholder" = "Izračunane dni";
+"Time_Converter_Calculate_Button" = "Izračunati";
+
+// MARK: - StartView
+"tracking_title" = "Slědženje umětnosti";
+"tracking_nav_title" = "Vaše umětnosti";
+"sort_by_label" = "Sortovati po";
+"export_pdf_title" = "Izvoziti v PDF";
+"fab_options" = "Pokazati opcije";
+
+"sort_name_asc" = "Ime ↑";
+"sort_name_desc" = "Ime ↓";
+"sort_time_asc" = "Vrěme ↑";
+"sort_time_desc" = "Vrěme ↓";
+
+"empty_message_title" = "Ješče nema slědženoj umětnosti";
+"empty_message_description" = "Stlačite plus, da by započeli slědženje prvoj umětnosti.";
+
+"button_back" = "Nazad";
+
+// MARK: - SkillProgressView
+"SkillName" = "Ime umětnosti";
+
+// MARK: - AddSkillView
+"enter_skill_name" = "Vpišite ime umětnosti";
+"add_skill" = "Dodati umětnost";
+"new_skill" = "Nova umětnost";
+"cancel" = "Otkazati";
+
+// MARK: - AboutView
+"ab_section_about_app" = "O programu";
+"ab_app_name" = "Time4Skill";
+"ab_version" = "Verzija %@";
+"ab_developer" = "Stvoril Grzegorz Kulesza";
+
+"ab_section_purpose" = "Cěl tutogo programa";
+"ab_purpose_major_system" = "Izberite umětnosti, koje hočete učiti.";
+"ab_purpose_large_numbers" = "Razvivajte jih po etapah i zapisujte vrěme, koje tratite na učenje.";
+"ab_purpose_dates" = "Smotrite na svoj postup i označajte umětnosti, koje ste priobreli.";
+"ab_purpose_words" = "Sostavite svoju zbirku, vključno s ljubimymi i brojačami.";
+
+"ab_section_support" = "Podpora";
+"ab_support_developer" = "Podprite razrabotnika";
+"ab_navigation_title" = "O programu";
+
+// MARK: - SupportDeveloperView
+"support_title" = "Podprite razvitje";
+"support_description" = "Ako vam se program nravit, možete podprěti mene kavoju!";
+"support_button" = "Podprěti prěz PayPal";
+"support_nav_title" = "Podpora";
+
+// MARK: - TheoryView
+"theory_title" = "Teorije o času učenja";
+
+"theory_10k_title" = "Pravilo 10 000 časov";
+"theory_10k_author" = "Malcolm Gladwell (po Andersu Ericssonu)";
+"theory_10k_description" = "Da by dostignuti majstorstvo, trěbuje se okolo 10 000 časov naměrnoj praktiky. To dotyczy elitnyh izpolniteljev (muzikanty, sportovci, šahisti). Važna ne samo količina, ale i kačestvo. Pravilo kritizujut za prěuprostjenje.";
+"theory_10k_works" = "✔️ Točne oblasti, profesijna kariera\n✖️ Ne pomaga za brzy start";
+
+"theory_20_title" = "Pravilo 20/21 časov";
+"theory_20_author" = "Josh Kaufman";
+"theory_20_description" = "20 časov sosrědotočenogo učenja dovoljno, da by započeti radovati se novoj umětnosti. Godi se za hobi ili početny urovenj (napriklad ukulele, osnovne frazy jezyka, joga).";
+"theory_20_works" = "✔️ Brzy start, hobi\n✖️ Ne za majstorstvo";
+
+"theory_100_title" = "Pravilo 100 časov";
+"theory_100_author" = "Neformalna obrazovatelna ideja";
+"theory_100_description" = "Okolo 100 časov može dati tvrdu kompetenciju: osnovna fotografija, pečenje, malovanje, voženje ili česte orudja kak Excel.";
+"theory_100_works" = "✔️ Praktične umětnosti, změna kariery\n✖️ Ne ekspertny urovenj";
+
+"theory_1000_title" = "Pravilo 1 000 časov";
+"theory_1000_author" = "Popularno v informatike, jezykah i svobodnoj rabotě";
+"theory_1000_description" = "1 000 časov sosrědotočenogo trenovanja može učiniti vas profesionalom: od učitelja muziky i kuhara do prěvoditelja i učitelja jogi. Dovoljno, da by učiti ili zarabjati.";
+"theory_1000_works" = "✔️ Profesijna samostojnost\n✖️ Ne světova elita";
+
+"theory_comparison_title" = "📈 Porovnanje";
+"theory_comparison_text" = "• 20 časov → Dobry start (amator)\n• 100 časov → Tvrdo (naprědny početnik)\n• 1 000 časov → Umětny profesional\n• 10 000 časov → Majstorstvo (elita)";
+
+"theory_nav_title" = "Teorija učenja";
+
+// MARK: - StatsView
+"stats_title_overview" = "📊 Prěgled postupa";
+"stats_nav_title" = "Vaša statistika";
+"button_done" = "Gotovo";
+
+// MARK: - StatsSummaryView
+"stats_summary_title" = "🧾 Svodka";
+"stats_total_hours" = "Vsego časov";
+"stats_skill_count" = "Umětnosti";
+"stats_active_timers" = "Aktivne časoměry";
+"stats_first_tracked" = "Prva sesija";
+
+// MARK: - TopSkillsView
+"stats_top_skills_title" = "🏆 Glavne umětnosti";
+"stats_top_skills_empty_msg" = "Ješče nema umětnosti. Započnite slědženje, da by viděti glavne.";
+
+// MARK: - TrackedTimeView
+"stats_tracked_time_title" = "📅 Zapisano vrěme";
+"stats_week_label" = "Poslědnje 7 dni";
+"stats_month_label" = "Poslědnje 30 dni";
+"stats_total_label" = "Za vse vrěme";
+
+// MARK: - ActivityLogView
+"activity_log_title" = "📅 Dnevnik aktivnosti";
+"activity_log_empty_message" = "Nema nedavnoj aktivnosti.";
+
+// MARK: - SkillOptionsSheet
+"skill_options_title" = "Opcije umětnosti";
+"done" = "Gotovo";
+
+"skill_name_section" = "Ime";
+"skill_name_label" = "Ime umětnosti";
+"skill_icon_label" = "Ikonka";
+"skill_emoji_picker_title" = "Izbrati ikonku";
+"skill_emoji_picker_none" = "Nijaky";
+"skill_emoji_section_faces" = "Lica";
+"skill_emoji_section_work" = "Rabota";
+"skill_emoji_section_creativity" = "Tvorivost";
+"skill_emoji_section_fitness" = "Fitnes";
+"skill_emoji_section_learning" = "Učenje";
+"skill_emoji_section_gaming" = "Igry";
+"skill_emoji_section_music" = "Muzika";
+"skill_emoji_section_food" = "Jeda";
+"skill_emoji_section_nature" = "Priroda";
+"skill_emoji_section_technology" = "Tehnologija";
+"skill_emoji_section_achievement" = "Dostignjenje";
+"skill_emoji_section_lifestyle" = "Sposob života";
+
+"adjust_time_section" = "Popraviti vrěme";
+"adjust_hours_placeholder" = "Časy za dodati ili odjęti";
+"adjust_minutes_placeholder" = "Minuty za dodati ili odjęti";
+"adjust_time_hint" = "Vpišite pozitivne ili negativne věličiny.\nPriklad: −30 minut odjema pol časa.";
+"adjust_time_apply" = "Priměniti změnu vremene";
+"adjust_time_success" = "Vrěme uspěšno obnovjeno!";
+
+"reset_section" = "Postup";
+"reset_progress" = "Sbrositi postup";
+"reset_confirm_title" = "Jeste li uvěrjeni, že hočete sbrositi postup?";
+"reset_confirm_action" = "Sbrositi";
+
+"delete_skill" = "Izbrisati umětnost";
+"delete_confirm_title" = "Jeste li uvěrjeni?";
+"delete_confirm_message" = "Tuto dějanje ne možno odčiniti.";
+"delete_confirm_action" = "Izbrisati";
+
+"cancel" = "Otkazati";
+
+// MARK: - FABButton
+"fab_add_skill" = "Dodati novu umětnost";
+"fab_view_stats" = "Viděti statistiku";
+
+// MARK: - ManageCountersView
+"manage_counters_title" = "Upravjati brojačami";
+"counter_details_section" = "Podrobnosti";
+"counter_title_placeholder" = "Nazva";
+"counter_step_label%d" = "Korak: %d";
+"counter_thresholds_section" = "Pragy (razdělene zapętoju)";
+"counter_thresholds_placeholder" = "napr. 100,200,500,10000";
+"counter_new_title" = "Novy brojač";
+"create" = "Stvoriti";
+"apply" = "Priměniti";
+"value" = "Věličina";
+"add" = "Dodati";
+"counter_progress_section" = "Postup";
+"counter_value_label" = "Věličina";
+"counter_stage_max_label" = "Maksimum etapa";
+"counter_no_thresholds" = "Nema pragov";
+"counter_reset_to_zero" = "Sbrositi na 0";
+"counter_configuration_section" = "Nastrojka";
+"counter_edit_thresholds" = "Praviti pragy";
+"counter_set_value_section" = "Postaviti věličinu ručno (od −1 M do 1 M)";
+"counter_current_thresholds" = "Nyněšnje pragy";
+"counter_add_threshold" = "Dodati prag";
+"counter_thresholds_title" = "Pragy";
+
+// MARK: - ExemplarySkillsView
+"exemplary_skills_title" = "Umětnosti";
+"daily_evaluations_format" = "Dnevne ocěny: %d/%d";
+"sort_menu_label" = "Sortovati";
+"reset_daily_limit" = "Sbrositi dnevny prěděl";
+"daily_limit_reached_title" = "Dnevny prěděl dostignjeny";
+"daily_limit_reached_message_format" = "Dostignuli ste dnevny prěděl %d ocěn umětnosti. Popytajte jutro!";
+"ok" = "OK";
+
+// MARK: - Time Distribution / Histograms
+"time_distribution_title" = "Razdělenje vremene";
+"time_distribution_skill_format" = "Umětnost: %@";
+"time_total_hours_format" = "Vsego vrěme: %@ h";
+"time_mean_minutes_format" = "Srědnji interval: %@ min";
+"time_std_minutes_format" = "Standardno otklonjenje: %@ min";
+"distribution_nav_title" = "Razdělenje";
+"distribution_empty_message" = "Za tutu umětnost ješče nema sesij.";
+"global_time_distribution_title" = "Obče razdělenje vremene";
+
+// MARK: - Sort options (Exemplary)
+"sort_name" = "Ime";
+"sort_category" = "Kategorija";
+"sort_stars_asc" = "Zvězdy ↑";
+"sort_stars_desc" = "Zvězdy ↓";
+"sort_difficulty_asc" = "Trudnost ↑";
+"sort_difficulty_desc" = "Trudnost ↓";
+"sort_completed_asc" = "Dokončene ↑";
+"sort_completed_desc" = "Dokončene ↓";
+
+// MARK: - Exemplary Skill Details
+"skill_details_title" = "Podrobnosti umětnosti";
+"close" = "Zakryti";
+"change_rating_accessibility" = "Změniti ocěnu";
+"description" = "Opis";
+"achievement_status" = "Stan dostignjenja";
+"obtained_label" = "Priobreno:";
+"unknown" = "Neizvěstno";
+"your_rating_label" = "Vaša ocěna:";
+"verification_code_label" = "Kod prověrky:";
+"achievement_history" = "Istorija dostignjenj";
+"update_your_rating" = "Obnoviti vašu ocěnu";
+"no_stars" = "Bez zvězd";
+"update_and_verify" = "Obnoviti i prověriti";
+"self_evaluation" = "Samocěna";
+"how_many_stars_question" = "Koliko zvězd zaslužujete za tutu umětnost?";
+"evaluate_my_skill" = "Ocěniti moju umětnost";
+
+// MARK: - Verification Sheet
+"verification_required_title" = "Trěbna prověrka";
+"verification_required_message" = "Vpišite nižnji kod, da by potvrditi samocěnu:";
+"verification_code_title" = "Kod prověrky:";
+"no_code_received" = "KOD NE POLUČENY";
+"enter_the_code" = "Vpišite gornji kod:";
+"verify_and_evaluate" = "Prověriti i ocěniti";
+"verification_nav_title" = "Prověrka";
+"invalid_code_title" = "Nepravilny kod";
+"invalid_code_message" = "Vpišite pravilny kod prověrky.";
+
+// MARK: - SkillOptions additions
+"view_distribution" = "Viděti razdělenje";
+
+// MARK: - Custom Skill
+"fab_add_custom_skill" = "Dodati svoju umětnost";
+"difficulty_label" = "Trudnost";
+"star_descriptions_title" = "Opisy zvězdnyh urovnjov";
+"one_star_description" = "Opis 1★";
+"two_star_description" = "Opis 2★";
+"three_star_description" = "Opis 3★";
+"image_label" = "Obraz";
+"choose_image" = "Izbrati obraz";
+"category_label" = "Kategorija";
+"category_custom_placeholder" = "Svoja kategorija";
+// MARK: - Preset Categories
+"cat_custom" = "Svoja";
+"cat_music" = "Muzika";
+"cat_language" = "Jezyk";
+"cat_art" = "Izkustvo";
+"cat_coding" = "Programovanje";
+"cat_fitness" = "Fitnes";
+"cat_cooking" = "Kuhanje";
+"cat_photography" = "Fotografija";
+"cat_writing" = "Pisanje";
+"cat_public_speaking" = "Javno govorjenje";
+"cat_science" = "Nauka";
+"cat_math" = "Matematika";
+"cat_engineering" = "Inženjerstvo";
+"cat_design" = "Dizajn";
+"cat_business" = "Biznis";
+"cat_marketing" = "Marketing";
+"cat_finance" = "Finansy";
+"cat_investing" = "Investovanje";
+"cat_entrepreneurship" = "Podjetničstvo";
+"cat_psychology" = "Psihologija";
+"cat_education" = "Obrazovanje";
+"cat_history" = "Istorija";
+"cat_geography" = "Geografija";
+"cat_health" = "Zdravje";
+"cat_meditation" = "Meditacija";
+"cat_yoga" = "Joga";
+"cat_sports" = "Sport";
+"cat_dance" = "Tanec";
+"cat_theatre" = "Teatr";
+"cat_film" = "Film";
+"cat_editing" = "Video montaža";
+"cat_3d" = "3D modelovanje";
+"cat_ai" = "AI/ML";
+"cat_data" = "Nauka o danah";
+"cat_cybersecurity" = "Kiberbezpečnost";
+"cat_gardening" = "Gradinarstvo";
+"cat_diy" = "Svojeručna rabota";
+"cat_travel" = "Putovanje";
+"cat_cars" = "Avtomobili";
+"cat_parenting" = "Roditeljstvo";
+"cat_animals" = "Životiny";
+"hide" = "Skryti";
+"unhide" = "Pokazati";
+"archived_section" = "Arhiv";
+"counters_empty_title" = "Ješče nema brojačev";
+"counters_empty_description" = "Stvorite prvy brojač, da by slěditi čislovy postup.";
+
+"privacy_policy_link" = "Politika privatnosti";
+
+"terms_of_use_link" = "Uslovja koristanja";
+
+"support_link" = "Podpora";
+
+"home_hero_intro" = "Slědite sosrědotočenu praktiku i smotrite, kak male naviky se sbirajut.";
+
+"sidebar_overview" = "Prěgled";
+
+// MARK: - SplashView
+"splash_presents" = "predstavja";
+"splash_tagline" = "Slědite svoje vrěme. Učite mudrěje. Rastite s trpělivostju.";
+"splash_reflection_1" = "Vsaky čas praktiky jest korak k majstorstvu.";
+"splash_reflection_2" = "Umětnost jest nagrada za dobro upotrěbljeno vrěme.";
+"splash_reflection_3" = "Male časy, povtorjane, stavajut se majstorstvom.";
+"splash_reflection_4" = "Postup jest trpělivost, ktora stala se vidima.";
+"splash_reflection_5" = "Vrěme vloženo v učenje nikogda ne jest izgubjeno.";
+
+// MARK: - Per-skill timer session chart (T4S-001)
+"session_chart_open" = "Diagram sesij";
+"session_chart_nav_title" = "Sesije časoměra";
+"session_chart_metric" = "Samo dokončene sesije časoměra. Ručne popravky vremene ne vhodet.";
+"session_chart_bin_width" = "Širina intervala";
+"session_chart_bin_minutes" = "%d min.";
+"session_chart_bin_range" = "%1$@–%2$@ min.";
+"session_chart_bin_overflow" = "≥ %1$@ min.";
+"session_chart_count_format" = "%d sesij";
+"session_chart_mean_format" = "Srědnje: %@ min";
+"session_chart_mean_unavailable" = "—";
+"session_chart_empty" = "Za tutu umětnost ješče nema dokončenyh sesij časoměra.";
+"session_chart_curve_caption" = "Prozirna kriva jest referencija normalnogo razdělenja za te sesije. Ona ne jest prědviděnjem i ne znači, že sesije slědujut normalnomu razdělenju.";
+"session_chart_curve_hidden" = "Nema dovoljno variacije ili dokončenyh sesij, da by pokazati stabilnu referencnu krivu.";
+"session_chart_accessibility" = "Diagram trvanja sesij časoměra";
+"session_chart_row_accessibility" = "%1$@, %2$d sesij";
+
+// MARK: - Theory topics (T4S-002)
+"theory_intro" = "Ideje, ktore možete probovati pri praktikě. Kratka verzija dovoljna. Otvorite iztočniky samo togda, kogda hočete izslědovateljsky kontekst.";
+"theory_takeaway_label" = "Praktičny izvod";
+"theory_sources_button" = "Iztočniky i podrobnosti izslědovanja ↗";
+"theory_sources_accessibility" = "Iztočniky i podrobnosti izslědovanja";
+"theory_detail_title" = "Podrobnosti izslědovanja";
+"theory_detail_citation" = "Citacija";
+"theory_detail_source_type" = "Tip iztočnika";
+"theory_detail_context" = "Kontekst izslědovanja";
+"theory_detail_limitation" = "Ograničenje";
+"theory_detail_links" = "Vęzi k iztočnikam";
+"theory_type_framework" = "Praktičny okvir avtora";
+"theory_type_article" = "Izslědovatelsky članok";
+"theory_type_meta" = "Metaanaliza";
+"theory_link_author_site" = "Stranica avtora";
+"theory_link_publisher" = "Izdatelj";
+"theory_link_ericsson_1993" = "Ericsson, Krampe i Tesch-Römer, 1993";
+"theory_link_macnamara_2019" = "Macnamara i Maitra, 2019";
+"theory_link_macnamara_2014" = "Macnamara, Hambrick i Oswald, 2014";
+"theory_link_pubmed" = "PubMed";
+"theory_link_cepeda_2006" = "Cepeda i kolegy, 2006";
+"theory_link_lally_2010" = "Lally i kolegy, 2010";
+
+"theory_topic_first20_title" = "Prve 20 časov: projti početok";
+"theory_topic_first20_summary" = "Započinati umětnost často frustruje, ibo vse jest neznamo. Josh Kaufman predlaga praktičny put: razděliti umětnost na menše čęsti, sosrědotočiti se na to, čto važno, odstraniti prěpony praktikě i potrětiti sosrědotočeno vrěme na ulěpšenje. Jego okvir 20 časov jest metoda starta, a ne naučna garancija, že vsaku umětnost možno ovladniti za 20 časov.";
+"theory_topic_first20_takeaway" = "Izberite jednu konkretnu věč, ktoru hočete dělat lěpše poslě prvyh 20 časov.";
+"theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Elektronna kniga v 2013; paperna kniga v 2014.";
+"theory_topic_first20_context" = "Praktičny okvir i kniga avtora, a ne kontrolovano naučno izslědovanje.";
+"theory_topic_first20_limitation" = "Okvir 20 časov jest metoda starta. To ne jest naučno ustanovjeny čas, potrěbny da by ovladniti umětnost.";
+
+"theory_topic_deliberate_title" = "Praktikovati s cělju";
+"theory_topic_deliberate_summary" = "Povtorjati dějanje ne jest to samo, čto naměrno jego ulěpšati. Izberite konkretny aspekt, praktikujte s jasnoju cělju, zaměčajte pogrěšky i popravjajte slědujuči popyt. Vrěme koristno zapisovati, ale i sposob praktiky važen.";
+"theory_topic_deliberate_takeaway" = "Prěd sesijoju rěšite, čto jedno hočete ulěpšiti.";
+"theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe i Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
+"theory_topic_deliberate_context" = "Članok razvil okvir ekspertnogo izpolnjenja i opisal izslědovanja muzikantov, vključno so skripačami i pianistami.";
+"theory_topic_deliberate_limitation" = "Članok ne ustanavlja jednogo čisla časov, ktore garantiralo by majstorstvo vo vsih umětnostjah.";
+
+"theory_topic_10k_title" = "10 000 časov: popularno pravilo, ne zakon";
+"theory_topic_10k_summary" = "Pravilo 10 000 časov stalo široko znano prěz knigu Outliers (2008) Malcolma Gladwella. Ono opiralo se na izslědovanje ekspertnogo izpolnjenja, ale popularna verzija uprostila originalny argument. Nema univerzalnogo magičnogo čisla časov, ktore garantiralo by majstorstvo.";
+"theory_topic_10k_takeaway" = "Upotrěbljajte dolgovrěmenne milniky, da by slaviti upornost, a ne da by prědviděti, kogda stanete ekspertom.";
+"theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe i Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara i Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
+"theory_topic_10k_context" = "Pravilo 10 000 časov stalo široko znano prěz Outliers (2008) Malcolma Gladwella. Članok iz 2019 govori, kako to popularno pravilo razlikuje se od izslědovanja iz 1993.";
+"theory_topic_10k_limitation" = "Ericsson i kolegy ne ustanovili univerzalny zakon majstorstva na 10 000 časov. Nema univerzalnogo čisla časov, ktore garantiralo by majstorstvo.";
+
+"theory_topic_variance_title" = "Praktika važna, ale ne jest vse";
+"theory_topic_variance_summary" = "Metaanaliza iz 2014 izslědovala naměrnu praktiku v několika oblastjah. Ona našla, že praktika svęzana jest s izpolnjenjem, ale jej prispevek silno razlikuje se po oblasti.";
+"theory_topic_variance_takeaway" = "Praktika jest něčto, na čto možete vplivati. Rezultaty zaviset takože od inyh faktorov, ktore razlikujut se medžu dějanjami.";
+"theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick i Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
+"theory_topic_variance_context" = "Metaanaliza iz 2014 izslědovala naměrnu praktiku v několika oblastjah. Praktika byla svęzana s izpolnjenjem, ale jej prispevek silno razlikoval se po oblasti.";
+"theory_topic_variance_findings_intro" = "Ocěnjena čast razlik v izpolnjenju, ktoru objasnila naměrna praktika v tutoj analizi, byla:";
+"theory_topic_variance_limitation" = "Te procenty sut čast variance izpolnjenja objasnjena v toj metaanalizi. Oni ne sut procent umětnosti, ktoru člověk može naučiti se, ni věrojatnost uspěha jednoj osoby.";
+"theory_finding_games" = "Igry";
+"theory_finding_games_value" = "26%";
+"theory_finding_music" = "Muzika";
+"theory_finding_sports" = "Sport";
+"theory_finding_education" = "Obrazovanje";
+"theory_finding_professions" = "Profesije";
+"theory_finding_music_value" = "21%";
+"theory_finding_sports_value" = "18%";
+"theory_finding_education_value" = "4%";
+"theory_finding_professions_value" = "Menje než 1%";
+
+"theory_topic_spacing_title" = "Vračajte se k umětnosti, vměsto da by stiskati vse v jedno";
+"theory_topic_spacing_summary" = "Izslědovanje razdělenoj praktiky podpiraje razložiti učenje na několik sesij, vměsto da by opirati se samo na stisnjenu praktiku. Najlěpši razstoj zavisi od materiala i od togo, kako dolgo hočete jego držati.";
+"theory_topic_spacing_takeaway" = "Popytajte vratiti se k umětnosti prěz několik dni i smotrite, čto pomnite i čto trěbuje veče praktiky.";
+"theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted i Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
+"theory_topic_spacing_context" = "Metaanaliza prěgledala 317 eksperimentov v 184 člankah, s 839 ocěnami razdělenoj praktiky.";
+"theory_topic_spacing_limitation" = "Ti rezultaty kasajut se zadač učenja i pripomněnja. Oni ne predstavjajut jedin raspored kak optimalny za vsaku fizičnu, socialnu, umětničsku ili profesijnu umětnost.";
+
+"theory_topic_habit_title" = "Navyk ne imaje univerzalny krajny termin";
+"theory_topic_habit_summary" = "Povtorjati dějanje v tom samom kontekstu može s vrěmenem učiniti jego bolje avtomatičnym. Odnako potrěbno vrěme razlikuje se medžu ljudami i povedenjami. Propustiti jedin denj ne znači, že ves postup izgubjeny.";
+"theory_topic_habit_takeaway" = "Svęžite dějanje so situacijoju, ktoru srečajete regularno, i vozobnovite bez viny, kogda sesija propadena.";
+"theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts i Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
+"theory_topic_habit_context" = "Devetdeset šest dobrovoljcev izbralo povedenje jedenja, pitja ili aktivnosti, da by povtorjati jego v tom samom kontekstu prěz 12 nedělj. Osemdeset dva učestnikov dalo dovoljno danov za analizu. Modelovany čas da by dostignuti 95% ocěny asimptotičnoj avtomatičnosti variral od 18 do 254 dni.";
+"theory_topic_habit_limitation" = "To bylo izslědovanje o tvorjenju navykov, a ne o tom, koliko časov trěbuje se da by ovladniti umětnost. Ono ne podpiraje prag majstorstva na 21 časov ni univerzalno pravilo navyka na 21 dni.";
+
+"theory_milestones_title" = "Milniky postupa";
+"theory_milestones_note" = "Oznaky 21, 100, 1 000 i 10 000 časov v Time4Skill zapisujut vrěme, koje ste potrětili. Oni sut milniky postupa, a ne naučno prověrjene etapy, i ne prědviđajut, kogda stanete ekspertom.";
+"theory_milestone_100_title" = "100 časov";
+"theory_milestone_1000_title" = "1 000 časov";
+"theory_milestone_10000_title" = "10 000 časov";
+"theory_milestone_note" = "Milnik postupa, a ne univerzalna etapa ekspertnosti.";
+
+// MARK: - Year activity calendar (T4S-003)
+"activity_calendar_title" = "Praktika v tutom godu";
+"activity_calendar_previous" = "Prědhodny god";
+"activity_calendar_next" = "Slědujuči god";
+"activity_calendar_summary" = "%1$d aktivnyh dni · %2$d umětnosti";
+"activity_calendar_empty" = "Ješče nema dokončene sesije časoměra. Dni ostajut neutralne, dokolě sesija ne bude sohranjena.";
+"activity_calendar_year_empty" = "V tutom godu nema dokončenyh sesij časoměra.";
+"activity_calendar_day_accessibility" = "%1$@, %2$@";
+"activity_level_0" = "Nema zapisane aktivnosti časoměra";
+"activity_level_1" = "Legka aktivnost";
+"activity_level_2" = "Někaka aktivnost";
+"activity_level_3" = "Raznolika aktivnost";
+"activity_level_4" = "Široka aktivnost";
+"activity_level_5" = "Očenj široka aktivnost";
+
+// MARK: - Catalog search
+"catalog_search_prompt" = "Iskati umětnosti";
+"catalog_filter_all" = "Vse";
+"catalog_filter_done" = "Dokončene";
+"catalog_filter_not_done" = "Nedokončene";
+"catalog_favorites_only" = "Ljubime";
+"catalog_filter_reset" = "Sbrositi";
+"catalog_no_results" = "Nijaka umětnost ne odgovarja tym filtrom.";
+"catalog_favorite_add" = "Dodati k ljubimym";
+"catalog_favorite_remove" = "Odstraniti iz ljubimyh";
+"catalog_crystal_reward" = "Kristal za priobrenu umětnost";
+"catalog_progress" = "Postup";
+
+/* T4S-035 timers, counters, theory threshold */
+
+"tracker_tool_label" = "Orudje";
+"tracker_tool_progress" = "Postup";
+"tracker_tool_balance" = "Časovy balans";
+"time_balance_note" = "Taky balans može rasti ili padati. On ne jest postup umětnosti, i jego koristanje ne umenšaje već zapisanyh časov.";
+"time_balance_empty_title" = "Ješče nema časovogo balansa";
+"time_balance_empty_description" = "Dodajte balans, kogda hočete sohraniti vrěme i pozže odčitovati jego.";
+"time_balance_add_quarter" = "Dodati 15 min";
+"time_balance_new" = "Novy balans";
+"time_balance_remaining" = "Ostajuče vrěme";
+"time_balance_start" = "Odčitovati";
+"time_balance_stop" = "Pauza";
+"time_balance_delete" = "Izbrisati balans";
+"counter_delete" = "Izbrisati brojač";
+"theory_threshold_crystal" = "Barva časovogo praga v Time4Skill. Ne garancija majstorstva.";
+"theory_milestone_21_title" = "21 časov";
+
+/* T4S-036 compendium, counters, catalog note */
+"catalog_exemplary_note" = "Taky ekran pokazuje umětnosti, ktore idut s programom: originalny nabor plus zapisy prijęte iz razvitoj zbirky. Fajly pilotnyh predloženj same ne sut katalog.";
+"theory_compendium_intro" = "Vsaky vklad jest časova oznaka, ktoru već uporablja polosa postupa. Kristal jest barva toj oznaky. Tekst objasnja, čto oznaka znači i čego ne znači.";
+"theory_hour_unit" = "časy";
+"theory_callout_example" = "Priklad";
+"theory_callout_caveat" = "Ograničenje";
+"theory_callout_takeaway" = "Izvod";
+"theory_chapter_21_title" = "Projti početok";
+"theory_chapter_21_lead" = "Dvadset jedin časov měnja barvu polosy postupa. To ne jest najdka izslědovanja. Najbližša objavjena metoda jest okvir 20 časov Josha Kaufmana, da by prěžiti neudobny početok, i te dvě čisla ne sut to samo tvrđenje.";
+"theory_chapter_21_mechanism_title" = "Metoda za početok";
+"theory_chapter_21_mechanism" = "Kaufman traktuje početok kak praktičny problem. Razdělite umětnost na menše čęsti, naučite se dovoljno, da by zaměčati svoje pogrěšky, odstranite prěpony, ktore dělajut praktiku neudobnu, i potrětite sosrědotočeno vrěme na jedin rezultat. Kniga predstavja to kak metodu avtora za početok.";
+"theory_chapter_21_example" = "Člověk, ktory hoče, da by tri akordy zvučali čisto, može praktikovati taky rezultat. «Naučiti se gitary» jest večši cěl, i prve časy jego ne rěšajut.";
+"theory_chapter_100_title" = "Sto časov, kak oznaka programa";
+"theory_chapter_100_lead" = "Sto časov jest milnik Time4Skill za vrěme, koje već jest zapisano. Nijedno izslědovanje v tutom zborniku ne definuje 100 časov kak moment, kogda někto staje se kompetentny.";
+"theory_chapter_100_mechanism_title" = "Čto blizko izslědovanje dejstvitelno měrilo";
+"theory_chapter_100_mechanism" = "Dvě linije raboty ležet blizko tutogo perioda, ale ne měrjajut jego v časah. Cepeda, Pashler, Vul, Wixted i Rohrer prěgledali 317 eksperimentov o slovesnom pripomněnju. V toj literaturě razdělene sesije pobědžali stisnjeno učenje, i koristny razstoj zavisel od togo, kako dolgo material trěboval byti pamętany. Lally, van Jaarsveld, Potts i Wardle prosili dobrovoljcev povtorjati povedenje jedenja, pitja ili aktivnosti v tom samom kontekstu. Modelovany čas da by dostignuti 95 procentov vlastnogo plato vsakoj osoby široko variral. Propustiti jedin denj ne izbrisalo krivu.";
+"theory_chapter_100_example" = "Igrati kratky kus v tri razne dni pokazuje, ktory takt dejstvitelno ostal v paměti. Jedin dolgy večer povtorjenja ne odgovarja na to pytanje.";
+"theory_chapter_100_caveat" = "Prěgled o razstojah kasaje se slovesnogo pripomněnja. Izslědovanje o navykah kasaje se avtomatičnosti izbranogo povedenja, i jego diapazon byl 18 do 254 dni v modelu objavljenom s člankom, a ne linija kompetencije na 100 časov. Nijaky rezultat ne govori, že 100 časov děla někogo kompetentnym v fotografiji, voženju ili inoj umětnosti.";
+"theory_chapter_100_takeaway" = "Upotrěbljajte oznaku, da by zamětiti, či vračajete se. Ne traktujte ju kak urovenj, ktory ste zaslužili.";
+"theory_chapter_1000_title" = "Praktika směrovana na jednu prázdnotu";
+"theory_chapter_1000_lead" = "Kristal 1 000 časov zapisyje potrěteno vrěme. On ne znači, že osoba nyně jest profesional, učitelj ili někto, ktory može živeti od umětnosti.";
+"theory_chapter_1000_mechanism_title" = "Naměrna praktika, i koliko ona objasnila";
+"theory_chapter_1000_mechanism" = "Ericsson, Krampe i Tesch-Römer opisali naměrnu praktiku kak dějanje ustrojeno da by ulěpšiti konkretny aspekt, s povratnoju informacijoju i popravkoju, vměsto prostogo povtorjenja togo, čto již jest udobno. Jihny članok iz 1993 razvil taky okvir na izslědovanjah muzikantov. On ne objavil jednogo čisla časov, ktore tvori ekspertov v vsakoj oblasti. Macnamara, Hambrick i Oswald pozže ocěnili, koliko razliky v izpolnjenju bylo svęzano s naměrnoju praktikoju. Čęsti razlikovali se po oblasti: vyše v igrah, muzikě i sportu než v obrazovanju i profesijah.";
+"theory_chapter_1000_example" = "Čas potrěteny na kus, ktory vse loma se, jest ino dějanje než čas igranja kusov, ktore již idut dobro. Polosa postupa zapisyje vrěme v oboh slučajah.";
+"theory_chapter_1000_caveat" = "Procenty po oblastjah sut čęsti variance v toj metaanalizi iz 2014. Oni ne sut čast umětnosti, ktoru člověk može naučiti se, ni šansa uspěha někogo. Članok ne stavlja 1 000 časov kak profesijny prag. Starše slova v programu, ktore traktovali 1 000 časov kak moment stati se profesionalom, prěuveličili dokazy.";
+"theory_chapter_10000_title" = "Znano čislo, ne zakon";
+"theory_chapter_10000_lead" = "Deset tyseč časov stalo znano kak pravilo majstorstva. Izslědovanje, iz kotorogo to bylo vzęto, ne ustanovilo zakon, i kristal na tutom vkladu samo označaje najvyšu časovu oznaku, ktoru program pokazuje.";
+"theory_chapter_10000_mechanism_title" = "Kak čislo putovalo";
+"theory_chapter_10000_mechanism" = "Outliers (2008) Malcolma Gladwella učinilo kruglo čislo široko znano. Ono opiralo se na izslědovanje ekspertnogo izpolnjenja, vključno s člankom iz 1993 Ericssona, Krampe i Tesch-Römera o naměrnoj praktikě muzikantov. Macnamara i Maitra (2019) razpravjajut, kako to popularno pravilo razlikuje se od izslědovanja. Popularna verzija stisnila složeny argument v jedin prag, ktory garantiraje majstorstvo.";
+"theory_chapter_10000_example" = "Dva člověka mogut zapisati tu samu sumu i vsejedno potrětiti vrěme razno. Jedin mogl iměti učitelja, ktory popravjal konkretny nedostatok. Drugy mogl povtorjati kus, ktory již graje. Suma časov ne zapisyje tu razliku.";
+"counter_kind_label" = "Rod";
+"counter_kind_manual" = "Ručno računanje";
+"counter_kind_elapsed" = "Dni od daty";
+"counter_anchor_label" = "Data početka";
+"counter_refresh" = "Obnoviti věličinu";
+"counter_refresh_unavailable" = "Postavite datu početka prěd obnovjenjem. Do togda věličina ostaje, kaka jest.";
+
+/* T4S-039 stats and overview */
+"stats_tab_overview" = "Prěgled";
+"stats_tab_time" = "Vrěme praktiky";
+"stats_tab_skills" = "Umětnosti";
+"stats_tab_thresholds" = "Časove pragy";
+"stats_tab_activity" = "Aktivnost";
+"stats_collection_heading" = "Zbirka umětnosti";
+"stats_tracked_heading" = "Slědžene umětnosti";
+"stats_catalog_obtained_format" = "Priobreno v zbirky: %d iz %d";
+"stats_catalog_not_obtained_format" = "Ješče ne označene kak priobrene: %d";
+"stats_tracked_with_time_format" = "S zapisanyh vrěmenem: %d";
+"stats_tracked_without_time_format" = "Bez zapisanogo vremene: %d";
+"stats_group_empty" = "Ničego v tutoj grupě.";
+"stats_thresholds_note" = "Oznaky 21, 100, 1 000 i 10 000 časov prinaležet programu. Čislo jest, koliko slědženyh umětnosti imaje najmenje toliko zapisanogo vremene. To ne jest osobny ličny cěl.";
+"stats_thresholds_empty" = "Ješče nema slědženyh umětnosti, zato pragy nemajut ničego za pokazati.";
+"stats_threshold_count_format" = "%d";
+"month_activity_title" = "Taky měsec";
+"month_activity_previous" = "Prědhodny měsec";
+"month_activity_next" = "Slědujuči měsec";
+"month_activity_practice" = "Denj s sohranjenoju sesijoju";
+"month_activity_obtained" = "Denj, kogda umětnost byla označena kak priobrena";
+"month_activity_empty" = "V tutom měsecu nema sohranjenyh sesij ni dat priobrenja. Suma časov ne jest razložena po dnjah.";
+"overview_tracking_tools" = "Orudja slědženja";
+
+/* T4S-040 custom skill filter */
+"catalog_filter_custom" = "Svoje";
+"catalog_no_custom" = "Ješče nemate svojih umětnosti.";
+"catalog_no_favorites" = "Nema ljubimyh umětnosti.";
+"catalog_no_done" = "Nema priobrenyh umětnosti.";
+"catalog_no_not_done" = "Nijaka umětnost ne ostaje nepriobrena.";
+
+/* T4S-041 language picker */
+"language_picker_title" = "Jezyk";
+"language_device" = "Jezyk ustrojstva";
+"language_device_detail" = "Uživa sistemny jezyk tutogo ustrojstva. Kogda nema prěkladu, aplikacija ide na anglijsky.";
+"language_name_polish" = "Poljsky";
+"language_name_english" = "Anglijsky";
+"language_name_spanish" = "Ispansky";
+"language_name_esperanto" = "Esperanto";
+"language_name_interslavic" = "Medžuslovjansky";
+"language_script_latin" = "Latinica";
+"language_script_cyrillic" = "Cyrilica";
+"language_script_glagolitic" = "Glagolica";
+/* T4S-042 time balance + language visibility */
+"time_balance_minus_start" = "− Početi";
+"time_balance_plus_start" = "+ Početi";
+"time_balance_minus_stop" = "− Zastaviti";
+"time_balance_plus_stop" = "+ Zastaviti";
+"time_balance_a11y_decrease" = "Početi snižati saldo vremene";
+"time_balance_a11y_increase" = "Početi povišati saldo vremene";
+"time_balance_a11y_stop_decrease" = "Zastaviti snižanje salda vremene";
+"time_balance_a11y_stop_increase" = "Zastaviti povišanje salda vremene";
+"time_balance_bar" = "Saldo vremene";
+"time_balance_zero_sound" = "Igrati zvuk, kogda saldo dostigne nulu";
+"time_balance_sound_section" = "Saldo vremene";
+
+/* T4S-UI-042 supplement: converter nav + recent tracking */
+"time_converter_nav_title" = "Prětvorič vremene";
+"stats_recent_tracking" = "Nedavno sledovanje";
+"stats_this_week" = "Tuta nedělja";
+"stats_this_month" = "Tuty měsęc";
+
+"export_pdf_generated_on_format" = "Sgenerovano: %@";

@@ -81,6 +81,8 @@
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
 				Tests/TimeToSkillTests/CatalogQueryTests.swift,
 				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
+				Tests/TimeToSkillTests/LocalizationCompletenessTests.swift,
+				Tests/TimeToSkillTests/InterslavicScriptTests.swift,
 				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
 				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
@@ -99,6 +101,8 @@
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
 				Tests/TimeToSkillTests/CatalogQueryTests.swift,
 				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
+				Tests/TimeToSkillTests/LocalizationCompletenessTests.swift,
+				Tests/TimeToSkillTests/InterslavicScriptTests.swift,
 				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
 				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
@@ -123,6 +127,8 @@
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
 				Tests/TimeToSkillTests/CatalogQueryTests.swift,
 				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
+				Tests/TimeToSkillTests/LocalizationCompletenessTests.swift,
+				Tests/TimeToSkillTests/InterslavicScriptTests.swift,
 				Tests/TimeToSkillTests/SessionDurationHistogramTests.swift,
 				Tests/TimeToSkillTests/YearActivityCalendarTests.swift,
 				Tests/TimeToSkillTests/SkillTests.swift,
@@ -367,6 +373,8 @@
 				hi,
 				ca,
 				"en-IN",
+				eo,
+				isv,
 			);
 			mainGroup = 0713ACA42DA29289005F9E07;
 			minimizedProjectReferenceProxies = 1;

@@ -20,6 +20,7 @@ struct ExemplarySkillsView: View {
     @AppStorage("ExemplarySkillsSortOption") private var sortOptionRaw: String = CatalogSort.name.rawValue
     @AppStorage("ExemplarySkillsCompletionFilter") private var completionRaw: String = CompletionFilter.all.rawValue
     @AppStorage("ExemplarySkillsFavoriteFilter") private var favoriteRaw: String = FavoriteFilter.all.rawValue
+    @AppStorage("ExemplarySkillsOwnershipFilter") private var ownershipRaw: String = OwnershipFilter.all.rawValue
     @State private var searchText: String = ""
 
     private var catalogQuery: CatalogQuery {
@@ -27,6 +28,7 @@ struct ExemplarySkillsView: View {
             text: searchText,
             completion: CompletionFilter(rawValue: completionRaw) ?? .all,
             favorites: FavoriteFilter(rawValue: favoriteRaw) ?? .all,
+            ownership: OwnershipFilter(rawValue: ownershipRaw) ?? .all,
             sort: CatalogSort(rawValue: sortOptionRaw) ?? .name
         )
     }
@@ -49,7 +51,8 @@ struct ExemplarySkillsView: View {
             obtainedAt: skill.obtainedAt,
             isFavorite: skill.isFavorite,
             rating: skill.userRating ?? 0,
-            difficulty: skill.difficultyLevel
+            difficulty: skill.difficultyLevel,
+            isUserCreated: skill.isUserCreated
         )
     }
 
@@ -60,6 +63,7 @@ struct ExemplarySkillsView: View {
         searchText = ""
         completionRaw = CompletionFilter.all.rawValue
         favoriteRaw = FavoriteFilter.all.rawValue
+        ownershipRaw = OwnershipFilter.all.rawValue
         sortOptionRaw = CatalogSort.name.rawValue
     }
 
@@ -93,7 +97,7 @@ struct ExemplarySkillsView: View {
             // growing to the full catalog.
             ScrollView {
                     if visibleSkills.isEmpty {
-                        Text(LocalizedStringKey("catalog_no_results"))
+                        Text(LocalizedStringKey(catalogQuery.emptyStateKey))
                             .font(.callout)
                             .foregroundColor(.secondary)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -170,6 +174,7 @@ struct ExemplarySkillsView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(LocalizedStringKey("exemplary_skills_title"))
+
         .onAppear {
             loadDailyEvaluationsCount()
             SkillSeeder.seedIfNeeded(context: context)
@@ -269,6 +274,11 @@ extension ExemplarySkillsView {
                 favoriteRaw = favoriteRaw == FavoriteFilter.favorites.rawValue
                     ? FavoriteFilter.all.rawValue
                     : FavoriteFilter.favorites.rawValue
+            }
+            catalogChip(LocalizedStringKey("catalog_filter_custom"), selected: ownershipRaw == OwnershipFilter.custom.rawValue) {
+                ownershipRaw = ownershipRaw == OwnershipFilter.custom.rawValue
+                    ? OwnershipFilter.all.rawValue
+                    : OwnershipFilter.custom.rawValue
             }
         }
     }

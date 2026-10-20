@@ -66,6 +66,7 @@ struct AboutView: View {
             .macOSContentWidth(700)
         }
         .navigationTitle(LocalizedStringKey("ab_navigation_title"))
+
     }
 
     /// The three public wiki links, rendered either in a row or stacked

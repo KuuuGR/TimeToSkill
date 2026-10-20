@@ -143,9 +143,10 @@ final class FavoriteMigrationTests: XCTestCase {
 
         counter.symbol = "🎲"
         budget.add(minutes: 15)
-        budget.toggle(at: Date(timeIntervalSince1970: 1_700_000_000))
+        let start = Date(timeIntervalSince1970: 1_700_000_000)
+        budget.startDecreasing(at: start)
         let later = Date(timeIntervalSince1970: 1_700_000_120)
-        XCTAssertEqual(budget.remaining(at: later), 600 + 15 * 60 - 120)
+        XCTAssertEqual(budget.currentSeconds(at: later), 600 + 15 * 60 - 120)
         try context.save()
 
         let reopened = try ModelContainer(
@@ -160,14 +161,67 @@ final class FavoriteMigrationTests: XCTestCase {
         XCTAssertEqual(keptCounter.value, 4)
         XCTAssertEqual(keptCounter.symbol, "🎲")
         XCTAssertEqual(keptBudget.remainingSeconds, 600 + 15 * 60)
+        XCTAssertEqual(keptBudget.direction, .decreasing)
         XCTAssertNotNil(keptBudget.activeStart)
+        XCTAssertEqual(keptBudget.currentSeconds(at: later), 600 + 15 * 60 - 120)
     }
 
     func testTimeBalanceStopsAtZeroAndTheoryMarksUseTheProgressPalette() throws {
         let start = Date(timeIntervalSince1970: 1_000)
-        XCTAssertEqual(TimeBalance.remaining(storedSeconds: 30, activeStart: start, now: start.addingTimeInterval(10)), 20)
-        XCTAssertEqual(TimeBalance.remaining(storedSeconds: 30, activeStart: start, now: start.addingTimeInterval(90)), 0)
-        XCTAssertEqual(TimeBalance.remaining(storedSeconds: 30, activeStart: nil, now: start), 30)
+        XCTAssertEqual(
+            TimeBalance.currentSeconds(
+                storedSeconds: 30,
+                direction: .decreasing,
+                activeStart: start,
+                now: start.addingTimeInterval(10)
+            ),
+            20
+        )
+        XCTAssertEqual(
+            TimeBalance.currentSeconds(
+                storedSeconds: 30,
+                direction: .decreasing,
+                activeStart: start,
+                now: start.addingTimeInterval(90)
+            ),
+            0
+        )
+        XCTAssertEqual(
+            TimeBalance.currentSeconds(
+                storedSeconds: 30,
+                direction: .stopped,
+                activeStart: nil,
+                now: start
+            ),
+            30
+        )
+        XCTAssertEqual(
+            TimeBalance.currentSeconds(
+                storedSeconds: 40,
+                direction: .increasing,
+                activeStart: start,
+                now: start.addingTimeInterval(25)
+            ),
+            65
+        )
+
+        let budget = TimeBudget(title: "Zero", remainingSeconds: 12)
+        budget.startDecreasing(at: start)
+        XCTAssertTrue(budget.settle(at: start.addingTimeInterval(20)))
+        XCTAssertEqual(budget.currentSeconds(at: start.addingTimeInterval(40)), 0)
+        XCTAssertEqual(budget.direction, .stopped)
+        XCTAssertNil(budget.activeStart)
+
+        // After settle the balance is zero. Grow for 30s, then switch to decrease.
+        budget.add(minutes: 1, at: start)
+        budget.startIncreasing(at: start)
+        let switchAt = start.addingTimeInterval(30)
+        budget.startDecreasing(at: switchAt)
+        // 60 base + 30 increase = 90, then 10s decrease → 80.
+        XCTAssertEqual(budget.currentSeconds(at: start.addingTimeInterval(40)), 80)
+        budget.stop(at: start.addingTimeInterval(40))
+        XCTAssertEqual(budget.remainingSeconds, 80)
+        XCTAssertEqual(budget.direction, .stopped)
 
         XCTAssertEqual(TheoryCatalog.topic(id: "theory.tenthousand.popular")?.hourMark, 10_000)
         XCTAssertNil(TheoryCatalog.topic(id: "theory.kaufman.first20")?.hourMark)
@@ -289,6 +343,7 @@ final class FavoriteMigrationTests: XCTestCase {
             isFavorite: true
         )
         let custom = ExemplarySkill(
+            catalogID: "seed-owned",
             isUserCreated: true,
             title: "Moja umiejętność",
             skillDescription: "Własny opis.",
@@ -317,14 +372,16 @@ final class FavoriteMigrationTests: XCTestCase {
 
         let second = first + [
             SeedSkill(id: "seed-b", title: "Dodana", description: "Nowa.", imageName: "c", category: "Ruch", difficulty: 1),
-            SeedSkill(id: "seed-c", title: "Moja umiejętność", description: "Nie przejmuj.", imageName: "d", category: "Inne", difficulty: 1)
+            SeedSkill(id: "seed-c", title: "Moja umiejętność", description: "Nie przejmuj.", imageName: "d", category: "Inne", difficulty: 1),
+            SeedSkill(id: "seed-owned", title: "Podmieniona", description: "Nie wolno.", imageName: "e", category: "Inne", difficulty: 1)
         ]
         SkillSeeder.reconcile(second, in: context)
         let afterSecond = try context.fetch(FetchDescriptor<ExemplarySkill>())
         XCTAssertEqual(afterSecond.filter { $0.catalogID == "seed-a" }.count, 1)
         XCTAssertEqual(afterSecond.filter { $0.catalogID == "seed-b" }.count, 1)
         let owned = try XCTUnwrap(afterSecond.first { $0.isUserCreated })
-        XCTAssertNil(owned.catalogID)
+        XCTAssertEqual(owned.catalogID, "seed-owned")
+        XCTAssertEqual(owned.title, "Moja umiejętność")
         XCTAssertEqual(owned.skillDescription, "Własny opis.")
         XCTAssertTrue(owned.isObtained)
         let catalogCopy = try XCTUnwrap(afterSecond.first { $0.catalogID == "seed-c" })

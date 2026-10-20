@@ -24,10 +24,7 @@ struct TimePerspective: Identifiable, Codable {
     /// `String.LocalizationValue("…\(id)…")` interpolates to format key
     /// `perspective.%@.title` and returns the raw key when lookup fails.
     private func localizedString(key: String) -> String {
-        Bundle.main.localizedString(
-            forKey: key,
-            value: nil,
-            table: "TimePerspective"
-        )
+        // Goes through LanguageBundle so in-app language / Interslavic scripts apply.
+        LanguageState.shared.string(key, table: "TimePerspective")
     }
 }

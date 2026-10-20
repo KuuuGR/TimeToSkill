@@ -13,39 +13,12 @@ struct OptionsView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var showingShareSheet = false
     @State private var pdfData: Data?
+    @AppStorage(TimeBalanceSound.defaultsKey) private var balanceZeroSoundEnabled = true
 
     /// iOS presents this view as a sheet (with a Done button); macOS hosts it as
     /// the "Settings" sidebar section, where "Done" makes no sense.
     var showsDoneButton: Bool = true
 
-    // MARK: - Time Converter State Variables
-    @State private var hoursInput: String = ""
-    @State private var days8hOutput: String = ""
-    @State private var days12hOutput: String = ""
-    @State private var days24hOutput: String = ""
-    @State private var yearsOutput: String = ""
-    
-    // Character limits for each field
-    private let hoursMaxChars = 9
-    private let days8hMaxChars = 8
-    private let days12hMaxChars = 7
-    private let days24hMaxChars = 7
-    private let yearsMaxChars = 5
-    
-    // Focus management
-    enum Field: Hashable {
-        case hours, days8, days12, days24, years, none
-    }
-    @FocusState private var focusedField: Field?
-    
-    // Stores the input field that should be the source of calculations
-    @State private var activeSource: Field = .none
-    @State private var calculationInProgress: Bool = false
-
-    // Time Perspective (duration comparisons)
-    @State private var perspectiveLibrary: [TimePerspective] = []
-    @State private var matchedPerspective: TimePerspective?
-    
     var body: some View {
         NavigationStack {
             List {
@@ -62,127 +35,17 @@ struct OptionsView: View {
                     Text(LocalizedStringKey("options_export_section"))
                 }
 
-                // MARK: - Time Converter Section
                 Section {
-                    // Hours field (full width)
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(LocalizedStringKey("Time_Converter_Hours_Label"))
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                        
-                        TextField(LocalizedStringKey("Time_Converter_Hours_Placeholder"), text: $hoursInput)
-                            .numberPadKeyboard()
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .focused($focusedField, equals: .hours)
-                            .onChange(of: hoursInput) { _, newValue in
-                                // Limit to specified characters and validate for numbers only
-                                let filtered = String(newValue.filter({ $0.isNumber }).prefix(hoursMaxChars))
-                                if filtered != newValue {
-                                    hoursInput = filtered
-                                }
-                            }
+                    Toggle(isOn: $balanceZeroSoundEnabled) {
+                        Text(LocalizedStringKey("time_balance_zero_sound"))
                     }
-                    .padding(.vertical, 4)
-                    
-                    // Two columns layout for the remaining fields
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                        // Days 8h
-                        VStack(alignment: .leading) {
-                            Text(LocalizedStringKey("Time_Converter_Days8h_Label"))
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                            TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $days8hOutput)
-                                .numberPadKeyboard()
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .focused($focusedField, equals: .days8)
-                                .onChange(of: days8hOutput) { _, newValue in
-                                    let filtered = String(newValue.filter({ $0.isNumber }).prefix(days8hMaxChars))
-                                    if filtered != newValue {
-                                        days8hOutput = filtered
-                                    }
-                                }
-                        }
-                        
-                        // Days 12h
-                        VStack(alignment: .leading) {
-                            Text(LocalizedStringKey("Time_Converter_Days12h_Label"))
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                            TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $days12hOutput)
-                                .numberPadKeyboard()
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .focused($focusedField, equals: .days12)
-                                .onChange(of: days12hOutput) { _, newValue in
-                                    let filtered = String(newValue.filter({ $0.isNumber }).prefix(days12hMaxChars))
-                                    if filtered != newValue {
-                                        days12hOutput = filtered
-                                    }
-                                }
-                        }
-                        
-                        // Days 24h
-                        VStack(alignment: .leading) {
-                            Text(LocalizedStringKey("Time_Converter_Days24h_Label"))
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                            TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $days24hOutput)
-                                .numberPadKeyboard()
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .focused($focusedField, equals: .days24)
-                                .onChange(of: days24hOutput) { _, newValue in
-                                    let filtered = String(newValue.filter({ $0.isNumber }).prefix(days24hMaxChars))
-                                    if filtered != newValue {
-                                        days24hOutput = filtered
-                                    }
-                                }
-                        }
-                        
-                        // Years
-                        VStack(alignment: .leading) {
-                            Text(LocalizedStringKey("Time_Converter_Years_Label"))
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                            TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: $yearsOutput)
-                                .numberPadKeyboard()
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .focused($focusedField, equals: .years)
-                                .onChange(of: yearsOutput) { _, newValue in
-                                    let filtered = String(newValue.filter({ $0.isNumber }).prefix(yearsMaxChars))
-                                    if filtered != newValue {
-                                        yearsOutput = filtered
-                                    }
-                                }
-                        }
-                    }
-                    .padding(.vertical, 8)
-                    
-                    Button(LocalizedStringKey("Time_Converter_Calculate_Button")) {
-                        // If a field is currently focused, use that as the active source
-                        if let focused = focusedField {
-                            activeSource = focused
-                        }
-                        focusedField = nil
-                        updateConversions()
-                    }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.top, 8)
-
-                    TimePerspectiveCard(perspective: matchedPerspective)
-                        .padding(.top, 4)
-                    
+                    .accessibilityIdentifier("TimeBalanceZeroSoundToggle")
                 } header: {
-                    Text(LocalizedStringKey("Time_Converter_Section_Header"))
+                    Text(LocalizedStringKey("time_balance_sound_section"))
                 }
             }
             .navigationTitle(LocalizedStringKey("options_title"))
             .inlineNavigationBarTitle()
-            .onAppear {
-                if perspectiveLibrary.isEmpty {
-                    perspectiveLibrary = (try? TimePerspectiveLoader.loadLibrary())?
-                        .sorted { $0.thresholdMinutes < $1.thresholdMinutes }
-                        ?? []
-                }
-            }
             .toolbar {
                 if showsDoneButton {
                     ToolbarItem(placement: .cancellationAction) {
@@ -191,26 +54,9 @@ struct OptionsView: View {
                         }
                     }
                 }
-                
-                #if canImport(UIKit)
-                ToolbarItem(placement: .keyboard) {
-                    Button(LocalizedStringKey("Time_Converter_Calculate_Button")) {
-                        // If a field is currently focused, use that as the active source
-                        if let focused = focusedField {
-                            activeSource = focused
-                        }
-                        focusedField = nil
-                        updateConversions()
-                    }
-                }
-                #endif
-            }
-            // Apply calculations when a field loses focus
-            .onChange(of: focusedField) { oldValue, newValue in
-                if oldValue != nil && newValue != nil && oldValue != newValue {
-                    // Field changed - use the old field as source for calculations
-                    activeSource = oldValue!
-                    updateConversions()
+
+                ToolbarItem(placement: .primaryAction) {
+                    LanguageSelectorButton()
                 }
             }
         }
@@ -220,101 +66,13 @@ struct OptionsView: View {
                 ShareSheet(items: [data])
             }
         }
-            .onChange(of: pdfData) { _, newValue in
-                if newValue != nil {
-                    showingShareSheet = true
-                }
+        .onChange(of: pdfData) { _, newValue in
+            if newValue != nil {
+                showingShareSheet = true
             }
+        }
     }
 
-    // MARK: - Time Converter Logic
-    private func updateConversions() {
-        guard activeSource != .none, !calculationInProgress else {
-            return
-        }
-
-        calculationInProgress = true
-
-        // Parse input values, defaulting to 0 if invalid
-        var currentHours = 0
-        if let hours = Int(hoursInput) {
-            currentHours = hours // Accept 0 as a valid input
-        }
-        
-        var currentDays8 = 0
-        if let days = Int(days8hOutput) {
-            currentDays8 = days // Accept 0 as a valid input
-        }
-        
-        var currentDays12 = 0
-        if let days = Int(days12hOutput) {
-            currentDays12 = days // Accept 0 as a valid input
-        }
-        
-        var currentDays24 = 0
-        if let days = Int(days24hOutput) {
-            currentDays24 = days // Accept 0 as a valid input
-        }
-        
-        var currentYears = 0
-        if let years = Int(yearsOutput) {
-            currentYears = years // Accept 0 as a valid input
-        }
-
-        var totalHoursValue: Int = 0
-
-        switch activeSource {
-        case .hours:
-            totalHoursValue = currentHours
-        case .days8:
-            totalHoursValue = currentDays8 * 8
-        case .days12:
-            totalHoursValue = currentDays12 * 12
-        case .days24:
-            totalHoursValue = currentDays24 * 24
-        case .years:
-            totalHoursValue = currentYears * 365 * 24 // Approximate hours in a year
-        case .none:
-            break
-        }
-
-        // Only update fields that are not the source of the calculation
-        if activeSource != .hours {
-            hoursInput = "\(totalHoursValue)"
-        }
-        
-        if activeSource != .days8 {
-            let days8 = totalHoursValue / 8
-            days8hOutput = "\(days8)"
-        }
-        
-        if activeSource != .days12 {
-            let days12 = totalHoursValue / 12
-            days12hOutput = "\(days12)"
-        }
-        
-        if activeSource != .days24 {
-            let days24 = totalHoursValue / 24
-            days24hOutput = "\(days24)"
-        }
-        
-        if activeSource != .years {
-            let years = totalHoursValue / (365 * 24)
-            yearsOutput = "\(years)"
-        }
-
-        let totalMinutes = totalHoursValue * 60
-        let match = TimePerspectiveMatcher.findBestPerspective(
-            for: totalMinutes,
-            in: perspectiveLibrary
-        )
-        withAnimation(.easeInOut(duration: 0.28)) {
-            matchedPerspective = match
-        }
-        
-        calculationInProgress = false
-    }
-    
 #if canImport(UIKit)
     private func generatePDF() {
         // Create PDF document
@@ -342,7 +100,10 @@ struct OptionsView: View {
             let dateAttributes = [
                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)
             ]
-            let dateString = "Generated on: \(Date().formatted(date: .long, time: .shortened))"
+            let dateString = String(
+                format: NSLocalizedString("export_pdf_generated_on_format", comment: ""),
+                Date().formatted(date: .long, time: .shortened)
+            )
             dateString.draw(at: CGPoint(x: 50, y: 80), withAttributes: dateAttributes)
             
             // Skills list
@@ -464,7 +225,10 @@ struct OptionsView: View {
         let titleString = NSLocalizedString("skills_report_title", comment: "")
         builder.drawText(titleString, topLeft: CGPoint(x: 50, y: 50), fontName: titleFont, fontSize: 24, color: .black)
 
-        let dateString = "Generated on: \(Date().formatted(date: .long, time: .shortened))"
+        let dateString = String(
+            format: NSLocalizedString("export_pdf_generated_on_format", comment: ""),
+            Date().formatted(date: .long, time: .shortened)
+        )
         builder.drawText(dateString, topLeft: CGPoint(x: 50, y: 80), fontName: bodyFont, fontSize: 12, color: .black)
 
         var yPosition: CGFloat = 120

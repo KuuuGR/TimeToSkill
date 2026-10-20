@@ -243,6 +243,18 @@
             "state": "translated",
             "value": "Some oak trees can live for more than five centuries."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kelkaj kverkoj povas vivi pli ol kvin jarcentojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Někake duby mogut žiti vyše petih stolětij."
+          }
         }
       }
     },
@@ -487,6 +499,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ancient Oak"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antikva kverko"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drevny dub"
           }
         }
       }
@@ -733,6 +757,18 @@
             "state": "translated",
             "value": "An apple tree usually reaches full fruit production after about ten years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomarbo kutime atingas plenan fruktoproduktadon post ĉirkaŭ dek jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jablonj obyčno dostigaje polnoj produkcije plodov poslě okolo deseti lět."
+          }
         }
       }
     },
@@ -977,6 +1013,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Apple Tree"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomarbo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jablonj"
           }
         }
       }
@@ -1223,6 +1271,18 @@
             "state": "translated",
             "value": "A classic round-the-world journey takes about eighty days."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klasika vojaĝo ĉirkaŭ la mondo daŭras ĉirkaŭ okdek tagojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klasično putovanje okolo světa traje okolo osemdeseti dnjev."
+          }
         }
       }
     },
@@ -1467,6 +1527,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Around the World"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ĉirkaŭ la mondo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Okolo světa"
           }
         }
       }
@@ -1713,6 +1785,18 @@
             "state": "translated",
             "value": "Some bamboo species reach full height in about two years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kelkaj bambuspecioj atingas plenan alton en ĉirkaŭ du jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Někake vidy bambusa dostigajut polnoj vysoty za okolo dvě lěta."
+          }
         }
       }
     },
@@ -1957,6 +2041,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bamboo Growth"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kresko de bambuo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rast bambusa"
           }
         }
       }
@@ -2203,6 +2299,18 @@
             "state": "translated",
             "value": "Earning a martial arts black belt takes about ten years of practice."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gajni nigran zonon de batalarto bezonas ĉirkaŭ dek jarojn da trejnado."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dobytje črnogo pojasa v bojevyh umětnostjah trěbuje okolo deseti lět věžby."
+          }
         }
       }
     },
@@ -2447,6 +2555,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Black Belt"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nigra zono"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Črny pojas"
           }
         }
       }
@@ -2693,6 +2813,18 @@
             "state": "translated",
             "value": "A blue whale calf is usually weaned after about one year."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ido de blua baleno kutime estas demamigita post ĉirkaŭ unu jaro."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mladenec sinjej kitovice obyčno jest odlučen od mlěka poslě okolo jednogo goda."
+          }
         }
       }
     },
@@ -2937,6 +3069,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Blue Whale Calf"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ido de blua baleno"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mladenec sinjej kitovice"
           }
         }
       }
@@ -3183,6 +3327,18 @@
             "state": "translated",
             "value": "Bread dough usually rises in about one hour."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pana pasto kutime fermentas en ĉirkaŭ unu horo."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Těsto na hlěb obyčno rastaje za okolo jednu časinu."
+          }
         }
       }
     },
@@ -3427,6 +3583,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bread Dough"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pana pasto"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Těsto na hlěb"
           }
         }
       }
@@ -3673,6 +3841,18 @@
             "state": "translated",
             "value": "A butterfly can emerge from its chrysalis in about 45 minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Papilio povas eliri el sia krizalido en ĉirkaŭ 45 minutoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metulj može iziti iz kukly za okolo 45 minut."
+          }
         }
       }
     },
@@ -3917,6 +4097,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Butterfly Emergence"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliro de papilio"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izhod metulja"
           }
         }
       }
@@ -4163,6 +4355,18 @@
             "state": "translated",
             "value": "Walking a legendary historic pilgrimage trail takes about one week."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marŝi legendan historian pilgriman vojon daŭras ĉirkaŭ unu semajnon."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodenje po legendarnom historičnom puti traje okolo jednoj nedělje."
+          }
         }
       }
     },
@@ -4404,6 +4608,18 @@
           }
         },
         "en-IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camino de Santiago"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camino de Santiago"
+          }
+        },
+        "isv": {
           "stringUnit": {
             "state": "translated",
             "value": "Camino de Santiago"
@@ -4653,6 +4869,18 @@
             "state": "translated",
             "value": "A chicken egg hatches in about 21 days."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koka ovo elkoviĝas en ĉirkaŭ 21 tagoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurje jajce se izlegaje za okolo 21 dnjev."
+          }
         }
       }
     },
@@ -4897,6 +5125,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Chicken Egg"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koka ovo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurje jajce"
           }
         }
       }
@@ -5143,6 +5383,18 @@
             "state": "translated",
             "value": "A Christmas tree grows to harvest size in about five years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kristnaska arbo kreskas ĝis rikolta grandeco en ĉirkaŭ kvin jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Božična jelka raste do veličiny žetvy za okolo pet lět."
+          }
         }
       }
     },
@@ -5387,6 +5639,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Christmas Tree"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kristnaska arbo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Božična jelka"
           }
         }
       }
@@ -5633,6 +5897,18 @@
             "state": "translated",
             "value": "Driving across a major continental landmass takes about five days."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veturi tra granda kontinenta teramaso daŭras ĉirkaŭ kvin tagojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jezda črěz veliky kontinent traje okolo pet dnjev."
+          }
         }
       }
     },
@@ -5877,6 +6153,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Coast to Coast"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De marbordo al marbordo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Od berega do berega"
           }
         }
       }
@@ -6123,6 +6411,18 @@
             "state": "translated",
             "value": "A coconut palm reaches full productivity after about thirty years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kokospalmo atingas plenan produktivecon post ĉirkaŭ tridek jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kokosova palma dostigaje polnoj produktivnosti poslě okolo trideseti lět."
+          }
         }
       }
     },
@@ -6367,6 +6667,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Coconut Palm"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kokospalmo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kokosova palma"
           }
         }
       }
@@ -6613,6 +6925,18 @@
             "state": "translated",
             "value": "Taking a short coffee break usually takes about fifteen minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mallonga kafeopaŭzo kutime daŭras ĉirkaŭ dek kvin minutojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kratka pauza na kavu obyčno traje okolo petnadseti minut."
+          }
         }
       }
     },
@@ -6857,6 +7181,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Coffee Break"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kafeopaŭzo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pauza na kavu"
           }
         }
       }
@@ -7103,6 +7439,18 @@
             "state": "translated",
             "value": "Brewing cold brew coffee takes about twelve hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepari malvarme trempitan kafon daŭras ĉirkaŭ dek du horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Priprava hladno namočenej kavy traje okolo dvanadseti časov."
+          }
         }
       }
     },
@@ -7347,6 +7695,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cold Brew Coffee"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malvarme trempita kafo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hladno namočena kava"
           }
         }
       }
@@ -7593,6 +7953,18 @@
             "state": "translated",
             "value": "A two-week cycling tour can cross an entire country."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dusemajna bicikla vojaĝo povas trairi tutan landon."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dvěnedělno kolesarsko putovanje može prějehati cělu državu."
+          }
         }
       }
     },
@@ -7837,6 +8209,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cycling Adventure"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bicikla aventuro"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolesarska avantura"
           }
         }
       }
@@ -8083,6 +8467,18 @@
             "state": "translated",
             "value": "An elephant pregnancy lasts about 22 months."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gravedeco de elefanto daŭras ĉirkaŭ 22 monatojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bremenost slona traje okolo 22 měsecev."
+          }
         }
       }
     },
@@ -8327,6 +8723,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Elephant Pregnancy"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gravedeco de elefanto"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bremennost slona"
           }
         }
       }
@@ -8573,6 +8981,18 @@
             "state": "translated",
             "value": "Gamma Cephei naturally becomes Earth's North Star over time."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gamma Cephei nature fariĝas la Norda Stelo de la Tero laŭlonge de la tempo."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gamma Cephei s vremenom naturalno staje Poljarnoju zvězdoju Zemje."
+          }
         }
       }
     },
@@ -8814,6 +9234,18 @@
           }
         },
         "en-IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gamma Cephei"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gamma Cephei"
+          }
+        },
+        "isv": {
           "stringUnit": {
             "state": "translated",
             "value": "Gamma Cephei"
@@ -9063,6 +9495,18 @@
             "state": "translated",
             "value": "Giant sequoias can live for more than two thousand years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gigantaj sekvojoj povas vivi pli ol du mil jarojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velike sekvoje mogut žiti vyše dvěh tysęć lět."
+          }
         }
       }
     },
@@ -9307,6 +9751,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Giant Sequoia Lifespan"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vivdaŭro de giganta sekvojo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žiznj velike sekvoje"
           }
         }
       }
@@ -9553,6 +10009,18 @@
             "state": "translated",
             "value": "A giant sequoia takes about eighty years to become well established."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giganta sekvojo bezonas ĉirkaŭ okdek jarojn por bone establiĝi."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velika sekvoja trěbuje okolo osemdeseti lět, da by se dobro utvrdila."
+          }
         }
       }
     },
@@ -9797,6 +10265,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Giant Sequoia Youth"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juneco de giganta sekvojo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mladost velike sekvoje"
           }
         }
       }
@@ -10043,6 +10523,18 @@
             "state": "translated",
             "value": "The Sahara naturally becomes green again as Earth's climate cycles continue."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La Saharo nature denove verdas, dum la klimataj cikloj de la Tero daŭras."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sahara naturalno opet staje zelena, dokolě klimatski cikli Zemje idut dalje."
+          }
         }
       }
     },
@@ -10287,6 +10779,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Green Sahara"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verda Saharo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zelena Sahara"
           }
         }
       }
@@ -10533,6 +11037,18 @@
             "state": "translated",
             "value": "Getting a haircut usually takes about one hour."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harotondado kutime daŭras ĉirkaŭ unu horon."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Striženje vlasov obyčno traje okolo jednoj časiny."
+          }
         }
       }
     },
@@ -10777,6 +11293,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Haircut"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harotondado"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Striženje vlasov"
           }
         }
       }
@@ -11023,6 +11551,18 @@
             "state": "translated",
             "value": "A hard-boiled egg is ready in about ten minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malmole boligita ovo pretas en ĉirkaŭ dek minutoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tvrdo vareno jajce jest gotovo za okolo deseti minut."
+          }
         }
       }
     },
@@ -11267,6 +11807,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hard-Boiled Egg"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malmole boligita ovo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tvrdo vareno jajce"
           }
         }
       }
@@ -11513,6 +12065,18 @@
             "state": "translated",
             "value": "A sightseeing helicopter flight usually lasts about two hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vidinda helikopterflugo kutime daŭras ĉirkaŭ du horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Razgledny let helikopterom obyčno traje okolo dvě časiny."
+          }
         }
       }
     },
@@ -11757,6 +12321,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Helicopter Flight"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Helikopterflugo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let helikopterom"
           }
         }
       }
@@ -12003,6 +12579,18 @@
             "state": "translated",
             "value": "A human pregnancy lasts about nine months."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homa gravedeco daŭras ĉirkaŭ naŭ monatojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Člověča bremenost traje okolo deveti měsecev."
+          }
         }
       }
     },
@@ -12247,6 +12835,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Human Pregnancy"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homa gravedeco"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Člověča bremenost"
           }
         }
       }
@@ -12493,6 +13093,18 @@
             "state": "translated",
             "value": "Voyager 1 has traveled through interstellar space for nearly half a century."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voyager 1 vojaĝis tra interstela spaco dum preskaŭ duonjarcento."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voyager 1 putuje črěz medžuzvězdny prostor již počti pol stolětija."
+          }
         }
       }
     },
@@ -12737,6 +13349,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Interstellar Space"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interstela spaco"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medžuzvězdny prostor"
           }
         }
       }
@@ -12983,6 +13607,18 @@
             "state": "translated",
             "value": "A mission to Jupiter takes about five years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Misio al Jupitero daŭras ĉirkaŭ kvin jarojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Misija k Jupiteru traje okolo pet lět."
+          }
         }
       }
     },
@@ -13227,6 +13863,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Jupiter Journey"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vojaĝo al Jupitero"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Putovanje k Jupiteru"
           }
         }
       }
@@ -13473,6 +14121,18 @@
             "state": "translated",
             "value": "A kangaroo joey leaves its mother's pouch after about five months."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kengurua ido forlasas la sakon de la patrino post ĉirkaŭ kvin monatoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mladenec kengura ostavlja torbu materi poslě okolo peti měsecev."
+          }
         }
       }
     },
@@ -13717,6 +14377,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kangaroo Joey"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kengurua ido"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mladenec kengura"
           }
         }
       }
@@ -13963,6 +14635,18 @@
             "state": "translated",
             "value": "Running a full laundry cycle usually takes about two hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plena lavciklo kutime daŭras ĉirkaŭ du horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Polny ciklus pranja obyčno traje okolo dvě časiny."
+          }
         }
       }
     },
@@ -14207,6 +14891,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Laundry"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lavo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pranje oděže"
           }
         }
       }
@@ -14453,6 +15149,18 @@
             "state": "translated",
             "value": "Light travels about 18 million km in one minute."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo vojaĝas ĉirkaŭ 18 milionojn da kilometroj en unu minuto."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo prěhodi okolo 18 milionov kilometrov za jednu minutu."
+          }
         }
       }
     },
@@ -14697,6 +15405,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Light in Space"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo en spaco"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo v prostoru"
           }
         }
       }
@@ -14943,6 +15663,18 @@
             "state": "translated",
             "value": "A long-haul international flight often lasts about twelve hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longdistanca internacia flugo ofte daŭras ĉirkaŭ dek du horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dalyky medžunarodny let často traje okolo dvanadseti časov."
+          }
         }
       }
     },
@@ -15187,6 +15919,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Long-Haul Flight"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longdistanca flugo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dalyky let"
           }
         }
       }
@@ -15433,6 +16177,18 @@
             "state": "translated",
             "value": "A spacecraft typically reaches Mars in about seven months."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kosmoŝipo tipa atingas Marson en ĉirkaŭ sep monatoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kosmicky aparat obyčno dostigaje Mars za okolo sedm měsecev."
+          }
         }
       }
     },
@@ -15677,6 +16433,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mars Journey"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vojaĝo al Marso"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Putovanje k Marsu"
           }
         }
       }
@@ -15923,6 +16691,18 @@
             "state": "translated",
             "value": "Light from Earth reaches the center of the Milky Way in about 26,000 years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Tero atingas la centron de la Lakta Vojo en ĉirkaŭ 26 000 jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Zemje dostigaje centr Mlěčnogo puta za okolo 26 000 lět."
+          }
         }
       }
     },
@@ -16167,6 +16947,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Milky Way Center"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centro de la Lakta Vojo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centr Mlěčnogo puta"
           }
         }
       }
@@ -16413,6 +17205,18 @@
             "state": "translated",
             "value": "Apollo astronauts reached the Moon in about three days."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apolonaj astronaŭtoj atingis la Lunon en ĉirkaŭ tri tagoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Astronavti Apollona dostigli sut Měsec za okolo tri dni."
+          }
         }
       }
     },
@@ -16657,6 +17461,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Moon Journey"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vojaĝo al la Luno"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Putovanje k Měsecu"
           }
         }
       }
@@ -16903,6 +17719,18 @@
             "state": "translated",
             "value": "Watching a feature film usually takes about two hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spekti longan filmon kutime daŭras ĉirkaŭ du horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gledanje polnometražnogo filma obyčno traje okolo dvě časiny."
+          }
         }
       }
     },
@@ -17147,6 +17975,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Movie"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filmo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Film"
           }
         }
       }
@@ -17393,6 +18233,18 @@
             "state": "translated",
             "value": "Niagara Falls takes about fifty years to erode one meter."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niagara Falls erodas ĉirkaŭ unu metron en kvindek jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niagara Falls eroduje okolo jednogo metra za petdeset lět."
+          }
         }
       }
     },
@@ -17634,6 +18486,18 @@
           }
         },
         "en-IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niagara Falls"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niagara Falls"
+          }
+        },
+        "isv": {
           "stringUnit": {
             "state": "translated",
             "value": "Niagara Falls"
@@ -17883,6 +18747,18 @@
             "state": "translated",
             "value": "Reading an average novel takes about ten hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legi mezan romanon daŭras ĉirkaŭ dek horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čitanje srědnogo romana traje okolo deseti časov."
+          }
         }
       }
     },
@@ -18127,6 +19003,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Novel"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Romano"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roman"
           }
         }
       }
@@ -18373,6 +19261,18 @@
             "state": "translated",
             "value": "An oak tree becomes mature after about twenty years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kverko maturecas post ĉirkaŭ dudek jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dub staje zrely poslě okolo dvadeseti lět."
+          }
         }
       }
     },
@@ -18617,6 +19517,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Oak Tree Maturity"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matureco de kverko"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrelost duba"
           }
         }
       }
@@ -18863,6 +19775,18 @@
             "state": "translated",
             "value": "A wheel of Parmesan matures in about 12 months."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rado de parmezano maturecas en ĉirkaŭ 12 monatoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolo parmezanskogo syra zrije za okolo 12 měsecev."
+          }
         }
       }
     },
@@ -19107,6 +20031,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Parmesan Cheese"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parmezana fromaĝo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parmezansky syr"
           }
         }
       }
@@ -19353,6 +20289,18 @@
             "state": "translated",
             "value": "Pizza is often delivered within about 30 minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pico ofte estas liverata ene de ĉirkaŭ 30 minutoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pizza často byva dostavjena za okolo 30 minut."
+          }
         }
       }
     },
@@ -19597,6 +20545,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pizza Delivery"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Livero de pico"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostava pizze"
           }
         }
       }
@@ -19843,6 +20803,18 @@
             "state": "translated",
             "value": "New Horizons reached Pluto in about nine and a half years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New Horizons atingis Plutonon en ĉirkaŭ naŭ kaj duono jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New Horizons dostigaje Pluton za okolo devet i pol lět."
+          }
         }
       }
     },
@@ -20087,6 +21059,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pluto Journey"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vojaĝo al Plutono"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Putovanje k Plutonu"
           }
         }
       }
@@ -20333,6 +21317,18 @@
             "state": "translated",
             "value": "Light from Earth reaches Proxima Centauri in about 4.25 years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Tero atingas Proxima Centauri en ĉirkaŭ 4,25 jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Zemje dostigaje Proxima Centauri za okolo 4,25 lět."
+          }
         }
       }
     },
@@ -20574,6 +21570,18 @@
           }
         },
         "en-IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proxima Centauri"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proxima Centauri"
+          }
+        },
+        "isv": {
           "stringUnit": {
             "state": "translated",
             "value": "Proxima Centauri"
@@ -20823,6 +21831,18 @@
             "state": "translated",
             "value": "Many red wines mature for about two years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multaj ruĝaj vinoj maturecas dum ĉirkaŭ du jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mnoge črvene vina zrijut okolo dvě lěta."
+          }
         }
       }
     },
@@ -21067,6 +22087,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Red Wine"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ruĝa vino"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Črveno vino"
           }
         }
       }
@@ -21313,6 +22345,18 @@
             "state": "translated",
             "value": "Rice cooks on the stove in about twenty minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rizo kuiriĝas en ĉirkaŭ dudek minutoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riž se vari za okolo dvadeset minut."
+          }
         }
       }
     },
@@ -21557,6 +22601,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rice Cooking"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kuiri rizon"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varenje riža"
           }
         }
       }
@@ -21803,6 +22859,18 @@
             "state": "translated",
             "value": "A mission to Saturn takes about seven years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Misio al Saturno daŭras ĉirkaŭ sep jarojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Misija k Saturnu traje okolo sedm lět."
+          }
         }
       }
     },
@@ -22047,6 +23115,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Saturn Journey"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vojaĝo al Saturno"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Putovanje k Saturnu"
           }
         }
       }
@@ -22293,6 +23373,18 @@
             "state": "translated",
             "value": "A full-day road trip covers hundreds of kilometres."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuttaga aŭtovojaĝo kovras centojn da kilometroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cělodnevno putovanje avtom pokryva stotine kilometrov."
+          }
         }
       }
     },
@@ -22537,6 +23629,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Scenic Road Trip"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitoreska aŭtovojaĝo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krasivo putovanje avtom"
           }
         }
       }
@@ -22783,6 +23887,18 @@
             "state": "translated",
             "value": "Scotch whisky must mature for at least three years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skota viskio devas matureci almenaŭ tri jarojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Škotsky viski trěbuje zriti najmenše tri lěta."
+          }
         }
       }
     },
@@ -23027,6 +24143,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Scotch Whisky"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skota viskio"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Škotsky viski"
           }
         }
       }
@@ -23273,6 +24401,18 @@
             "state": "translated",
             "value": "A high-speed bullet train journey covers immense regional distances."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vojaĝo per altrapida trajno kovras grandegajn regionajn distancojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Putovanje bystrym vlakom pokryva ogromne regionalne daljiny."
+          }
         }
       }
     },
@@ -23514,6 +24654,18 @@
           }
         },
         "en-IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shinkansen"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shinkansen"
+          }
+        },
+        "isv": {
           "stringUnit": {
             "state": "translated",
             "value": "Shinkansen"
@@ -23763,6 +24915,18 @@
             "state": "translated",
             "value": "A typical short-haul flight lasts about three hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipa mallongdistanca flugo daŭras ĉirkaŭ tri horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipičny blizky let traje okolo tri časiny."
+          }
         }
       }
     },
@@ -24007,6 +25171,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Short-Haul Flight"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mallongdistanca flugo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blizky let"
           }
         }
       }
@@ -24253,6 +25429,18 @@
             "state": "translated",
             "value": "Light from Earth reaches Sirius in about 8.6 years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Tero atingas Sirius en ĉirkaŭ 8,6 jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Zemje dostigaje Sirius za okolo 8,6 lět."
+          }
         }
       }
     },
@@ -24494,6 +25682,18 @@
           }
         },
         "en-IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sirius"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sirius"
+          }
+        },
+        "isv": {
           "stringUnit": {
             "state": "translated",
             "value": "Sirius"
@@ -24743,6 +25943,18 @@
             "state": "translated",
             "value": "Getting a healthy night's sleep lasts about eight hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sana nokta dormo daŭras ĉirkaŭ ok horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdravy nočny son traje okolo osem časov."
+          }
         }
       }
     },
@@ -24987,6 +26199,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sleep"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dormo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son"
           }
         }
       }
@@ -25233,6 +26457,18 @@
             "state": "translated",
             "value": "Slow-cooking brisket takes about ten hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malrapide kuiri briskon daŭras ĉirkaŭ dek horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomalu varenje hrudi traje okolo deseti časov."
+          }
         }
       }
     },
@@ -25477,6 +26713,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Slow-Cooked Brisket"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malrapide kuirita brisko"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomalu varena hrud"
           }
         }
       }
@@ -25723,6 +26971,18 @@
             "state": "translated",
             "value": "Voyager 1 reached the edge of the Solar System after about thirty-five years."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voyager 1 atingis la randon de la Sunsistemo post ĉirkaŭ tridek kvin jaroj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voyager 1 dostigaje kraja Solnečnoj sistemy poslě okolo trideset peti lět."
+          }
         }
       }
     },
@@ -25967,6 +27227,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Solar System Edge"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rando de la Sunsistemo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kraj Solnečnoj sistemy"
           }
         }
       }
@@ -26213,6 +27485,18 @@
             "state": "translated",
             "value": "A sunflower completes its life cycle in about three months."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunfloro kompletigas sian vivciklon en ĉirkaŭ tri monatoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slnečnik končaje svoj životny ciklus za okolo tri měsece."
+          }
         }
       }
     },
@@ -26457,6 +27741,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sunflower"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunfloro"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slnečnik"
           }
         }
       }
@@ -26703,6 +27999,18 @@
             "state": "translated",
             "value": "Light from the Sun reaches Earth in about 8 minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Suno atingas la Teron en ĉirkaŭ 8 minutoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Slnca dostigaje Zemju za okolo 8 minut."
+          }
         }
       }
     },
@@ -26947,6 +28255,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sunlight Reaches Earth"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunlumo atingas la Teron"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slnečno světlo dostigaje Zemju"
           }
         }
       }
@@ -27193,6 +28513,18 @@
             "state": "translated",
             "value": "Light from the Sun reaches Jupiter in about 43 minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Suno atingas Jupiteron en ĉirkaŭ 43 minutoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Slnca dostigaje Jupiter za okolo 43 minut."
+          }
         }
       }
     },
@@ -27437,6 +28769,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sunlight Reaches Jupiter"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunlumo atingas Jupiteron"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slnečno světlo dostigaje Jupiter"
           }
         }
       }
@@ -27683,6 +29027,18 @@
             "state": "translated",
             "value": "Light from the Sun reaches Mars in about 13 minutes."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Suno atingas Marson en ĉirkaŭ 13 minutoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Slnca dostigaje Mars za okolo 13 minut."
+          }
         }
       }
     },
@@ -27927,6 +29283,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sunlight Reaches Mars"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunlumo atingas Marson"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slnečno světlo dostigaje Mars"
           }
         }
       }
@@ -28173,6 +29541,18 @@
             "state": "translated",
             "value": "Light from the Sun reaches Neptune in about 4 hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Suno atingas Neptunon en ĉirkaŭ 4 horoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Slnca dostigaje Neptun za okolo 4 časiny."
+          }
         }
       }
     },
@@ -28417,6 +29797,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sunlight Reaches Neptune"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunlumo atingas Neptunon"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slnečno světlo dostigaje Neptun"
           }
         }
       }
@@ -28663,6 +30055,18 @@
             "state": "translated",
             "value": "Light from the Sun reaches Pluto in about five and a half hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumo de la Suno atingas Plutonon en ĉirkaŭ kvin kaj duono horoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlo od Slnca dostigaje Pluton za okolo pet i pol časiny."
+          }
         }
       }
     },
@@ -28907,6 +30311,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sunlight Reaches Pluto"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunlumo atingas Plutonon"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slnečno světlo dostigaje Pluton"
           }
         }
       }
@@ -29153,6 +30569,18 @@
             "state": "translated",
             "value": "A nonstop flight across the Atlantic takes about eight hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senhalta flugo tra la Atlantiko daŭras ĉirkaŭ ok horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neprěryvny let črěz Atlantik traje okolo osem časov."
+          }
         }
       }
     },
@@ -29397,6 +30825,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Transatlantic Flight"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transatlantika flugo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transatlantičny let"
           }
         }
       }
@@ -29643,6 +31083,18 @@
             "state": "translated",
             "value": "Vega naturally shifts to become Earth's North Star."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vega nature ŝoviĝas por fariĝi la Norda Stelo de la Tero."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vega naturalno se poměščaje, da by stala Poljarnoju zvězdoju Zemje."
+          }
         }
       }
     },
@@ -29887,6 +31339,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vega Pole Star"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vega kiel polusa stelo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vega kako poljarna zvězda"
           }
         }
       }
@@ -30133,6 +31597,18 @@
             "state": "translated",
             "value": "Completing many video games takes about fifteen hours."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kompletigi multajn videoludojn daŭras ĉirkaŭ dek kvin horojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokončenje mnogyh videoigr traje okolo petnadseti časov."
+          }
         }
       }
     },
@@ -30377,6 +31853,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Video Game"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoludo"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoigra"
           }
         }
       }
@@ -30623,6 +32111,18 @@
             "state": "translated",
             "value": "Wheat grows from seed to harvest in about four months."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tritiko kreskas de semo ĝis rikolto en ĉirkaŭ kvar monatoj."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pšenica raste od zrna do žetvy za okolo četyri měsece."
+          }
         }
       }
     },
@@ -30867,6 +32367,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wheat Harvest"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rikolto de tritiko"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žetva pšenice"
           }
         }
       }
@@ -31113,6 +32625,18 @@
             "state": "translated",
             "value": "Convert any duration to discover real-world time comparisons."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konvertu ajnan daŭron por malkovri realmondajn tempokomparojn."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prětvorite koju-libo trvalost, da by otkriti sravnenja vremene iz realnogo světa."
+          }
         }
       }
     },
@@ -31358,6 +32882,18 @@
             "state": "translated",
             "value": "Time flies faster than we think."
           }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tempo flugas pli rapide ol ni pensas."
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vremę leti bystrěje, neželi myslimo."
+          }
         }
       }
     },
@@ -31602,6 +33138,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "What takes about this long?"
+          }
+        },
+        "eo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kio daŭras ĉirkaŭ tiom longe?"
+          }
+        },
+        "isv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čto traje okolo toliko dolgo?"
           }
         }
       }

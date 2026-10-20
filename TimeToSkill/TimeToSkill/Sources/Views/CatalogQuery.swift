@@ -19,6 +19,8 @@ struct CatalogEntry: Equatable, Identifiable {
     var isFavorite: Bool
     var rating: Int
     var difficulty: Int
+    /// True only for a skill the user created. Catalog rows stay false.
+    var isUserCreated: Bool = false
 }
 
 enum CompletionFilter: String, CaseIterable {
@@ -30,6 +32,12 @@ enum CompletionFilter: String, CaseIterable {
 enum FavoriteFilter: String, CaseIterable {
     case all
     case favorites
+}
+
+/// Separate from completion and favorites. Custom means `isUserCreated`.
+enum OwnershipFilter: String, CaseIterable {
+    case all
+    case custom
 }
 
 enum CatalogSort: String, CaseIterable {
@@ -51,13 +59,29 @@ struct CatalogQuery: Equatable {
     var text: String = ""
     var completion: CompletionFilter = .all
     var favorites: FavoriteFilter = .all
+    var ownership: OwnershipFilter = .all
     var sort: CatalogSort = .name
 
     var isDefault: Bool {
         text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
             && completion == .all
             && favorites == .all
+            && ownership == .all
             && sort == .name
+    }
+
+    /// Empty-state string for the active filter. Combined filters keep the
+    /// general message. The query never writes skill data.
+    var emptyStateKey: String {
+        let searching = !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        let narrowed = [completion != .all, favorites == .favorites, ownership == .custom].filter { $0 }.count
+        if searching || narrowed != 1 {
+            return "catalog_no_results"
+        }
+        if ownership == .custom { return "catalog_no_custom" }
+        if favorites == .favorites { return "catalog_no_favorites" }
+        if completion == .done { return "catalog_no_done" }
+        return "catalog_no_not_done"
     }
 
     func apply(_ entries: [CatalogEntry], locale: Locale = .current) -> [CatalogEntry] {
@@ -75,6 +99,9 @@ struct CatalogQuery: Equatable {
             if entry.isObtained { return false }
         }
         if favorites == .favorites && !entry.isFavorite {
+            return false
+        }
+        if ownership == .custom && !entry.isUserCreated {
             return false
         }
         let needle = Self.searchKey(text.trimmingCharacters(in: .whitespacesAndNewlines))
