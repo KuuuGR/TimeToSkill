@@ -19,19 +19,19 @@ struct SupportDeveloperView: View {
                 .frame(width: 80, height: 80)
                 .foregroundColor(AppColors.tertiary)
 
-            Text(LocalizedStringKey("support_title"))
+            LText(key: "support_title")
                 .font(.title)
                 .multilineTextAlignment(.center)
                 .foregroundColor(AppColors.primary)
 
-            Text(LocalizedStringKey("support_description"))
+            LText(key: "support_description")
                 .multilineTextAlignment(.center)
                 .font(.body)
                 .foregroundColor(.secondary)
                 .padding(.horizontal)
 
             Button(action: openPayPal) {
-                Label(LocalizedStringKey("support_button"), systemImage: "link")
+                Label { Text(verbatim: L10n.string("support_button")) } icon: { Image(systemName: "link") }
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(AppColors.primary)
@@ -43,7 +43,7 @@ struct SupportDeveloperView: View {
             Spacer()
         }
         .padding(.top, 40)
-        .navigationTitle(LocalizedStringKey("support_nav_title"))
+        .navigationTitle(Text(verbatim: L10n.string("support_nav_title")))
     }
 
     private func openPayPal() {

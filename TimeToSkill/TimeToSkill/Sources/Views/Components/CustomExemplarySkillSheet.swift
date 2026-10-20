@@ -19,23 +19,25 @@ struct CustomExemplarySkillSheet: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text(LocalizedStringKey("skill_details_title"))) {
-                    TextField(LocalizedStringKey("enter_skill_name"), text: $title)
-                    TextField(LocalizedStringKey("description"), text: $description, axis: .vertical)
+                Section(header: LText(key: "skill_details_title")) {
+                    TextField("", text: $title, prompt: Text(verbatim: L10n.string("enter_skill_name")))
+                    TextField(text: $description, prompt: Text(verbatim: L10n.string("description")), axis: .vertical) { EmptyView() }
                         .lineLimit(3...6)
-                    Picker(LocalizedStringKey("category_label"), selection: $selectedPresetCategory) {
+                    Picker(selection: $selectedPresetCategory) {
                         ForEach(presetCategories, id: \.self) { key in
-                            Text(LocalizedStringKey(key)).tag(key)
+                            Text(verbatim: L10n.string(key)).tag(key)
                         }
+                    } label: {
+                        Text(verbatim: L10n.string("category_label"))
                     }
                     if selectedPresetCategory == "cat_custom" || selectedPresetCategory == "Custom" {
-                        TextField(LocalizedStringKey("category_custom_placeholder"), text: $category)
+                        TextField("", text: $category, prompt: Text(verbatim: L10n.string("category_custom_placeholder")))
                     }
                     Stepper(value: $difficulty, in: 1...10) {
-                        Text(LocalizedStringKey("difficulty_label")) + Text(": \(difficulty)")
+                        Text(verbatim: "\(L10n.string("difficulty_label")): \(difficulty)")
                     }
                 }
-                Section(header: Text(LocalizedStringKey("image_label"))) {
+                Section(header: LText(key: "image_label")) {
                     HStack {
                         if let data = imageData, let ui = PlatformImageLoader.image(data: data) {
                             Image(platformImage: ui)
@@ -50,7 +52,7 @@ struct CustomExemplarySkillSheet: View {
                         }
                         Spacer()
                         PhotosPicker(selection: $selectedItem, matching: .images) {
-                            Text(LocalizedStringKey("choose_image"))
+                            LText(key: "choose_image")
                         }
                         .onChange(of: selectedItem) { _, newItem in
                             guard let item = newItem else { return }
@@ -82,31 +84,31 @@ struct CustomExemplarySkillSheet: View {
                         }
                     }
                 }
-                Section(header: Text(LocalizedStringKey("star_descriptions_title"))) {
-                    TextField(LocalizedStringKey("one_star_description"), text: $oneStarDesc, axis: .vertical)
+                Section(header: LText(key: "star_descriptions_title")) {
+                    TextField(text: $oneStarDesc, prompt: Text(verbatim: L10n.string("one_star_description")), axis: .vertical) { EmptyView() }
                         .lineLimit(2...4)
-                    TextField(LocalizedStringKey("two_star_description"), text: $twoStarDesc, axis: .vertical)
+                    TextField(text: $twoStarDesc, prompt: Text(verbatim: L10n.string("two_star_description")), axis: .vertical) { EmptyView() }
                         .lineLimit(2...4)
-                    TextField(LocalizedStringKey("three_star_description"), text: $threeStarDesc, axis: .vertical)
+                    TextField(text: $threeStarDesc, prompt: Text(verbatim: L10n.string("three_star_description")), axis: .vertical) { EmptyView() }
                         .lineLimit(2...4)
                 }
             }
-            .navigationTitle(LocalizedStringKey("add_skill"))
+            .navigationTitle(Text(verbatim: L10n.string("add_skill")))
             .onAppear {
                 if !presetCategories.contains(selectedPresetCategory) {
                     selectedPresetCategory = "cat_custom"
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button(LocalizedStringKey("cancel")) { dismiss() } }
+                ToolbarItem(placement: .cancellationAction) { Button(L10n.string("cancel")) { dismiss() } }
                 ToolbarItem(placement: .primaryAction) {
-                    Button(LocalizedStringKey("create")) {
+                    Button(L10n.string("create")) {
                         var savedPath: String? = nil
                         var imageName: String? = nil
                         if let data = imageData { savedPath = saveImageData(data) }
                         if let icon = builtinSelection { imageName = icon }
                         let finalCategoryKey = (selectedPresetCategory == "cat_custom" || selectedPresetCategory == "Custom") ? nil : selectedPresetCategory
-                        let finalCategory = finalCategoryKey != nil ? NSLocalizedString(finalCategoryKey!, comment: "") : category.trimmingCharacters(in: .whitespaces)
+                        let finalCategory = finalCategoryKey != nil ? L10n.string(finalCategoryKey!) : category.trimmingCharacters(in: .whitespaces)
                         onCreate(
                             title.trimmingCharacters(in: .whitespaces),
                             description.trimmingCharacters(in: .whitespacesAndNewlines),

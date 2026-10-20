@@ -31,34 +31,34 @@ struct StatsSummaryView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStringKey("stats_summary_title"))
+            LText(key: "stats_summary_title")
                 .font(.title2)
                 .fontWeight(.semibold)
 
             HStack(spacing: 16) {
                 StatCard(
-                    label: NSLocalizedString("stats_total_hours", comment: ""),
+                    label: L10n.string("stats_total_hours"),
                     value: formattedHours(totalHours)
                 )
                 StatCard(
-                    label: NSLocalizedString("stats_skill_count", comment: ""),
+                    label: L10n.string("stats_skill_count"),
                     value: "\(skillCount)"
                 )
             }
 
             HStack(spacing: 16) {
                 StatCard(
-                    label: NSLocalizedString("stats_active_timers", comment: ""),
+                    label: L10n.string("stats_active_timers"),
                     value: "\(activeTimers)"
                 )
                 if let date = firstSessionDate {
                     StatCard(
-                        label: NSLocalizedString("stats_first_tracked", comment: ""),
+                        label: L10n.string("stats_first_tracked"),
                         value: formatted(date: date)
                     )
                 } else {
                     StatCard(
-                        label: NSLocalizedString("stats_first_tracked", comment: ""),
+                        label: L10n.string("stats_first_tracked"),
                         value: "—"
                     )
                 }
@@ -67,9 +67,7 @@ struct StatsSummaryView: View {
     }
 
     private func formatted(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        return formatter.string(from: date)
+        L10n.mediumDate(date)
     }
 
     private func formattedHours(_ hours: Double) -> String {

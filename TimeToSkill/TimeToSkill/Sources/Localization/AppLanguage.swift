@@ -210,6 +210,15 @@ enum InterslavicTransliterator {
         convert(text, multi: glagoliticDigraphs, single: glagoliticLetters)
     }
 
+    /// Applies the active Interslavic script map (no-op for Latinica).
+    static func convert(_ text: String, to script: InterslavicScript) -> String {
+        switch script {
+        case .latin: return text
+        case .cyrillic: return latinToCyrillic(text)
+        case .glagolitic: return latinToGlagolitic(text)
+        }
+    }
+
     /// True when the string already looks converted — avoids a second pass.
     static func appearsConverted(to script: InterslavicScript, text: String) -> Bool {
         switch script {
@@ -274,7 +283,9 @@ enum InterslavicTransliterator {
         ("NJ", "Њ"), ("Nj", "Њ"), ("nj", "њ"),
         ("LJ", "Љ"), ("Lj", "Љ"), ("lj", "љ"),
         // j + nasal e collapses to я (avoids the awkward "јя" sequence)
-        ("JĘ", "Я"), ("Ję", "Я"), ("ję", "я")
+        ("JĘ", "Я"), ("Ję", "Я"), ("ję", "я"),
+        // Foreign Latin leftovers that otherwise survive as Latin glyphs
+        ("X", "КС"), ("x", "кс")
     ]
 
     private static let cyrillicLetters: [Character: String] = [
@@ -282,19 +293,36 @@ enum InterslavicTransliterator {
         "E": "Е", "Ě": "Є", "Ę": "Я",
         "F": "Ф", "G": "Г", "H": "Х", "I": "И", "J": "Ј", "K": "К", "L": "Л",
         "M": "М", "N": "Н", "O": "О", "P": "П", "R": "Р", "S": "С", "Š": "Ш",
-        "T": "Т", "U": "У", "V": "В", "Y": "Ы", "Z": "З", "Ž": "Ж",
+        "T": "Т", "U": "У", "V": "В", "W": "В", "Y": "Ы", "Z": "З", "Ž": "Ж",
+        "Q": "К",
         "a": "а", "b": "б", "c": "ц", "č": "ч", "ć": "ћ", "d": "д", "đ": "ђ",
         "e": "е", "ě": "є", "ę": "я",
         "f": "ф", "g": "г", "h": "х", "i": "и", "j": "ј", "k": "к", "l": "л",
         "m": "м", "n": "н", "o": "о", "p": "п", "r": "р", "s": "с", "š": "ш",
-        "t": "т", "u": "у", "v": "в", "y": "ы", "z": "з", "ž": "ж"
+        "t": "т", "u": "у", "v": "в", "w": "в", "y": "ы", "z": "з", "ž": "ж",
+        "q": "к",
+        // Latin diacritics that appear in names / non-ISV orthography
+        "Á": "А", "À": "А", "Ä": "А", "Â": "А", "Ã": "А",
+        "á": "а", "à": "а", "ä": "а", "â": "а", "ã": "а",
+        "É": "Е", "È": "Е", "Ë": "Е", "Ê": "Е",
+        "é": "е", "è": "е", "ë": "е", "ê": "е",
+        "Í": "И", "Ì": "И", "Ï": "И", "Î": "И",
+        "í": "и", "ì": "и", "ï": "и", "î": "и",
+        "Ó": "О", "Ò": "О", "Ö": "О", "Ô": "О", "Õ": "О",
+        "ó": "о", "ò": "о", "ö": "о", "ô": "о", "õ": "о",
+        "Ú": "У", "Ù": "У", "Ü": "У", "Û": "У",
+        "ú": "у", "ù": "у", "ü": "у", "û": "у",
+        "Ý": "Ы", "ý": "ы", "Ñ": "Н", "ñ": "н",
+        "Ā": "А", "ā": "а", "Ē": "Е", "ē": "е", "Ī": "И", "ī": "и",
+        "Ō": "О", "ō": "о", "Ū": "У", "ū": "у"
     ]
 
     private static let glagoliticDigraphs: [(String, String)] = [
         ("DŽ", "Ⱛ"), ("Dž", "Ⱛ"), ("dž", "ⱛ"),
         ("NJ", "Ⱘ"), ("Nj", "Ⱘ"), ("nj", "ⱘ"),
         ("LJ", "Ⱙ"), ("Lj", "Ⱙ"), ("lj", "ⱙ"),
-        ("JĘ", "Ⱔ"), ("Ję", "Ⱔ"), ("ję", "ⱔ")
+        ("JĘ", "Ⱔ"), ("Ję", "Ⱔ"), ("ję", "ⱔ"),
+        ("X", "ⰊⰑ"), ("x", "ⰺⱁ")
     ]
 
     /// Glagolitic map for Noto Sans Glagolitic (Unicode Glagolitic block).
@@ -304,12 +332,13 @@ enum InterslavicTransliterator {
         "Z": "Ⰷ", "I": "Ⰸ", "J": "Ⰹ", "K": "Ⰺ", "L": "Ⰻ", "M": "Ⰼ", "N": "Ⰽ",
         "O": "Ⰾ", "P": "Ⰿ", "R": "Ⱀ", "S": "Ⱁ", "T": "Ⱂ", "U": "Ⱃ", "F": "Ⱄ",
         "H": "Ⱅ", "C": "Ⱆ", "Č": "Ⱇ", "Ć": "Ⱇ", "Š": "Ⱈ", "Ě": "Ⱑ", "Ę": "Ⱔ",
-        "Y": "Ⱑ", "Đ": "Ⱛ",
+        "Y": "Ⱑ", "Đ": "Ⱛ", "W": "Ⰲ", "Q": "Ⰺ",
         "a": "ⰰ", "b": "ⰱ", "v": "ⰲ", "g": "ⰳ", "d": "ⰴ", "e": "ⰵ", "ž": "ⰶ",
         "z": "ⰷ", "i": "ⰸ", "j": "ⰹ", "k": "ⰺ", "l": "ⰻ", "m": "ⰼ", "n": "ⰽ",
         "o": "ⰾ", "p": "ⰿ", "r": "ⱀ", "s": "ⱁ", "t": "ⱂ", "u": "ⱃ", "f": "ⱄ",
         "h": "ⱅ", "c": "ⱆ", "č": "ⱇ", "ć": "ⱇ", "š": "ⱈ", "y": "ⱑ", "ě": "ⱑ",
-        "ę": "ⱔ", "đ": "ⱛ"
+        "ę": "ⱔ", "đ": "ⱛ", "w": "ⰲ", "q": "ⰺ",
+        "Á": "Ⰰ", "á": "ⰰ", "Ö": "Ⰾ", "ö": "ⰾ", "Ó": "Ⰾ", "ó": "ⰾ"
     ]
 
 }
@@ -339,6 +368,12 @@ final class LanguageState: @unchecked Sendable {
         lock.lock()
         defer { lock.unlock() }
         return resolved.bundleCode
+    }
+
+    func script() -> InterslavicScript? {
+        lock.lock()
+        defer { lock.unlock() }
+        return resolved.script
     }
 
     func string(_ key: String, table: String = "Localizable") -> String {

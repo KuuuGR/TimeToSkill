@@ -21,13 +21,13 @@ struct RecentTrackingView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStringKey("stats_recent_tracking"))
+            LText(key: "stats_recent_tracking")
                 .font(.title2)
                 .fontWeight(.semibold)
 
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(LocalizedStringKey("stats_this_week"))
+                    LText(key: "stats_this_week")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     Text(formattedLabel(for: last7DaysTotal))
@@ -35,7 +35,7 @@ struct RecentTrackingView: View {
                 }
                 Spacer()
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(LocalizedStringKey("stats_this_month"))
+                    LText(key: "stats_this_month")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     Text(formattedLabel(for: last30DaysTotal))

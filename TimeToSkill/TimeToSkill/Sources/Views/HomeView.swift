@@ -20,7 +20,7 @@ enum HomeSection: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
-    var titleKey: LocalizedStringKey {
+    var localizationKey: String {
         switch self {
         case .theory: return "main_learning_theory"
         case .skills: return "main_exemplary_skills"
@@ -100,7 +100,7 @@ struct HomeView: View {
                 floatingActions
             }
             .hiddenNavigationBar()
-            .navigationTitle(LocalizedStringKey("ab_app_name"))
+            .navigationTitle(Text(verbatim: L10n.string("ab_app_name")))
         }
         .onAppear(perform: prepareHome)
         .sheet(isPresented: $showingStats) {
@@ -134,22 +134,19 @@ struct HomeView: View {
     /// as high as possible on small iPhones.
     private var hero: some View {
         VStack(spacing: 14) {
-            Text("ab_app_name")
+            LText(key: "ab_app_name")
                 .font(AppTypography.display)
                 .foregroundColor(AppColors.onSurface)
                 .multilineTextAlignment(.center)
 
-            Text(LocalizedStringKey("home_hero_intro"))
+            LText(key: "home_hero_intro")
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.horizontal, 8)
 
-            Text(String(
-                format: NSLocalizedString("time_total_hours_format", comment: "Total tracked time"),
-                formatHours(totalTrackedHours)
-            ))
+            Text(verbatim: L10n.format("time_total_hours_format", formatHours(totalTrackedHours)))
             .font(.title3.weight(.semibold))
             .monospacedDigit()
             .foregroundColor(AppColors.onSurface)
@@ -157,7 +154,11 @@ struct HomeView: View {
 
             HStack(spacing: 10) {
                 NavigationLink(destination: StartView()) {
-                    Label(LocalizedStringKey("main_manage_trackers"), systemImage: "bolt.fill")
+                    Label {
+                        LText(key: "main_manage_trackers")
+                    } icon: {
+                        Image(systemName: "bolt.fill")
+                    }
                         .font(AppTypography.headline)
                         .frame(maxWidth: .infinity)
                 }
@@ -166,7 +167,11 @@ struct HomeView: View {
                 .tint(AppColors.accent)
 
                 NavigationLink(destination: ManageCountersView()) {
-                    Label(LocalizedStringKey("main_manage_counters"), systemImage: "number")
+                    Label {
+                        LText(key: "main_manage_counters")
+                    } icon: {
+                        Image(systemName: "number")
+                    }
                         .font(AppTypography.headline)
                         .frame(maxWidth: .infinity)
                 }
@@ -310,7 +315,7 @@ private struct HomeSectionCard: View {
                 )
                 .accessibilityHidden(true)
 
-            Text(section.titleKey)
+            LText(key: section.localizationKey)
                 .font(AppTypography.headline)
                 .foregroundColor(AppColors.onSurface)
                 .multilineTextAlignment(.leading)

@@ -26,7 +26,7 @@ struct YearActivityCalendarView: View {
         let split = model.days.count / 2
 
         VStack(alignment: .leading, spacing: 14) {
-            Text(LocalizedStringKey("activity_calendar_title"))
+            LText(key: "activity_calendar_title")
                 .font(.title2)
                 .fontWeight(.semibold)
 
@@ -79,7 +79,7 @@ struct YearActivityCalendarView: View {
                     Image(systemName: "chevron.left")
                 }
                 .disabled(!bounds.hasRecordedActivity || year <= bounds.earliestYear)
-                .accessibilityLabel(Text(LocalizedStringKey("activity_calendar_previous")))
+                .accessibilityLabel(Text(verbatim: L10n.string("activity_calendar_previous")))
 
                 Text(verbatim: String(year))
                     .font(.largeTitle)
@@ -93,7 +93,7 @@ struct YearActivityCalendarView: View {
                     Image(systemName: "chevron.right")
                 }
                 .disabled(!bounds.hasRecordedActivity || year >= bounds.currentYear)
-                .accessibilityLabel(Text(LocalizedStringKey("activity_calendar_next")))
+                .accessibilityLabel(Text(verbatim: L10n.string("activity_calendar_next")))
             }
             .frame(maxWidth: .infinity)
             .buttonStyle(.borderless)
@@ -110,12 +110,12 @@ struct YearActivityCalendarView: View {
     @ViewBuilder
     private func summary(bounds: YearActivityCalendar.Bounds, model: YearActivityCalendar.Year) -> some View {
         if !bounds.hasRecordedActivity {
-            Text(LocalizedStringKey("activity_calendar_empty"))
+            LText(key: "activity_calendar_empty")
         } else if model.activeDayCount == 0 {
-            Text(LocalizedStringKey("activity_calendar_year_empty"))
+            LText(key: "activity_calendar_year_empty")
         } else {
             Text(String(
-                format: NSLocalizedString("activity_calendar_summary", comment: ""),
+                format: L10n.string("activity_calendar_summary"),
                 model.activeDayCount,
                 model.distinctSkillCount
             ))
@@ -136,15 +136,14 @@ struct YearActivityCalendarView: View {
     private func dayLabel(_ day: YearActivityCalendar.Day) -> String {
         let level = min(max(day.level, 0), 5)
         return String(
-            format: NSLocalizedString("activity_calendar_day_accessibility", comment: ""),
-            Self.dayFormatter.string(from: day.start),
-            NSLocalizedString("activity_level_\(level)", comment: "")
+            format: L10n.string("activity_calendar_day_accessibility"),
+            L10n.mediumDate(day.start),
+            L10n.string("activity_level_\(level)")
         )
     }
 
     private func monthSpan(from start: Date, to end: Date) -> String {
-        let formatter = Self.monthFormatter
-        return "\(formatter.string(from: start))–\(formatter.string(from: end))"
+        "\(L10n.monthAbbreviation(start))–\(L10n.monthAbbreviation(end))"
     }
 
     private func clamp(to bounds: YearActivityCalendar.Bounds) {
@@ -153,17 +152,4 @@ struct YearActivityCalendarView: View {
             displayedYear = clamped
         }
     }
-
-    private static let dayFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        return formatter
-    }()
-
-    private static let monthFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.setLocalizedDateFormatFromTemplate("MMM")
-        return formatter
-    }()
 }

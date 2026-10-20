@@ -26,7 +26,7 @@ struct MonthActivitySummary: View {
 
         VStack(alignment: .leading, spacing: 12) {
             HStack {
-                Text(LocalizedStringKey("month_activity_title"))
+                LText(key: "month_activity_title")
                     .font(.title3.weight(.semibold))
                 Spacer()
                 Button {
@@ -35,9 +35,9 @@ struct MonthActivitySummary: View {
                     Image(systemName: "chevron.left")
                 }
                 .buttonStyle(.borderless)
-                .accessibilityLabel(Text(LocalizedStringKey("month_activity_previous")))
+                .accessibilityLabel(Text(verbatim: L10n.string("month_activity_previous")))
 
-                Text(displayedMonth, format: .dateTime.month(.wide).year())
+                Text(verbatim: L10n.monthYear(displayedMonth))
                     .font(.subheadline.weight(.medium))
                     .frame(minWidth: 140)
 
@@ -48,7 +48,7 @@ struct MonthActivitySummary: View {
                 }
                 .buttonStyle(.borderless)
                 .disabled(!canGoForward)
-                .accessibilityLabel(Text(LocalizedStringKey("month_activity_next")))
+                .accessibilityLabel(Text(verbatim: L10n.string("month_activity_next")))
             }
 
             weekdayHeader(calendar: calendar)
@@ -72,7 +72,7 @@ struct MonthActivitySummary: View {
             .foregroundStyle(.secondary)
 
             if month.practiceDayCount == 0 && month.obtainedDayCount == 0 {
-                Text(LocalizedStringKey("month_activity_empty"))
+                LText(key: "month_activity_empty")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -109,11 +109,10 @@ struct MonthActivitySummary: View {
     }
 
     private func weekdayHeader(calendar: Calendar) -> some View {
-        let symbols = calendar.veryShortWeekdaySymbols
-        let ordered = (0..<7).map { symbols[($0 + calendar.firstWeekday - 1) % 7] }
+        let ordered = L10n.veryShortWeekdays(calendar: calendar)
         return HStack(spacing: 6) {
-            ForEach(ordered, id: \.self) { symbol in
-                Text(symbol)
+            ForEach(Array(ordered.enumerated()), id: \.offset) { _, symbol in
+                Text(verbatim: symbol)
                     .font(.caption2)
                     .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity)
@@ -143,12 +142,12 @@ struct MonthActivitySummary: View {
         }
     }
 
-    private func legendRow(color: Color, text: LocalizedStringKey) -> some View {
+    private func legendRow(color: Color, text key: String) -> some View {
         HStack(spacing: 6) {
             RoundedRectangle(cornerRadius: 3)
                 .fill(color)
                 .frame(width: 12, height: 12)
-            Text(text)
+            Text(verbatim: L10n.string(key))
         }
     }
 }

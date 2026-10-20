@@ -43,7 +43,7 @@ struct TimeDistributionView: View {
             ScrollView { layout }
             #endif
         }
-        .navigationTitle(LocalizedStringKey("session_chart_nav_title"))
+        .navigationTitle(Text(verbatim: L10n.string("session_chart_nav_title")))
     }
 
     private var layout: some View {
@@ -66,8 +66,10 @@ struct TimeDistributionView: View {
     private var doneRow: some View {
         HStack {
             Spacer()
-            Button(LocalizedStringKey("button_done")) {
+            Button {
                 dismiss()
+            } label: {
+                Text(verbatim: L10n.string("button_done"))
             }
             .keyboardShortcut(.cancelAction)
         }
@@ -89,7 +91,7 @@ struct TimeDistributionView: View {
                     .lineLimit(2)
             }
 
-            Text(LocalizedStringKey("session_chart_metric"))
+            LText(key: "session_chart_metric")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -106,14 +108,14 @@ struct TimeDistributionView: View {
         ) {
             summaryTile(
                 String(
-                    format: NSLocalizedString("session_chart_count_format", comment: ""),
+                    format: L10n.string("session_chart_count_format"),
                     distribution.minutes.count
                 ),
                 systemImage: "number"
             )
             summaryTile(
                 String(
-                    format: NSLocalizedString("session_chart_mean_format", comment: ""),
+                    format: L10n.string("session_chart_mean_format"),
                     formatMinutes(distribution.mean)
                 ),
                 systemImage: "chart.bar"
@@ -143,20 +145,20 @@ struct TimeDistributionView: View {
 
     private var detailPicker: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(LocalizedStringKey("session_chart_bin_width"))
+            LText(key: "session_chart_bin_width")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
             Picker(selection: $detail) {
                 ForEach(SessionChartDetail.allCases) { level in
-                    Text(LocalizedStringKey(level.titleKey)).tag(level)
+                    Text(verbatim: L10n.string(level.titleKey)).tag(level)
                 }
             } label: {
-                Text(LocalizedStringKey("session_chart_bin_width"))
+                LText(key: "session_chart_bin_width")
             }
             .pickerStyle(.segmented)
-            .accessibilityLabel(Text(LocalizedStringKey("session_chart_bin_width")))
-            .accessibilityValue(Text(LocalizedStringKey(detail.titleKey)))
+            .accessibilityLabel(Text(verbatim: L10n.string("session_chart_bin_width")))
+            .accessibilityValue(Text(verbatim: L10n.string(detail.titleKey)))
         }
     }
 
@@ -190,7 +192,7 @@ struct TimeDistributionView: View {
     }
 
     private var curveCaption: some View {
-        Text(LocalizedStringKey(
+        Text(verbatim: L10n.string(
             distribution.showsReferenceCurve
                 ? "session_chart_curve_caption"
                 : "session_chart_curve_hidden"
@@ -201,7 +203,7 @@ struct TimeDistributionView: View {
     }
 
     private var emptyState: some View {
-        Text(LocalizedStringKey("session_chart_empty"))
+        LText(key: "session_chart_empty")
             .font(.footnote)
             .foregroundStyle(.secondary)
             .fixedSize(horizontal: false, vertical: true)
@@ -230,7 +232,7 @@ struct TimeDistributionView: View {
 
     private func formatMinutes(_ minutes: Double?) -> String {
         guard let minutes, minutes.isFinite else {
-            return NSLocalizedString("session_chart_mean_unavailable", comment: "")
+            return L10n.string("session_chart_mean_unavailable")
         }
         return String(format: "%.1f", minutes)
     }
@@ -313,7 +315,7 @@ private struct SessionDurationChart: View {
         }
         .frame(height: Self.plotHeight + Self.labelHeight + 6)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel(Text(LocalizedStringKey("session_chart_accessibility")))
+        .accessibilityLabel(Text(verbatim: L10n.string("session_chart_accessibility")))
     }
 
     private func yAxis(peak: Double) -> some View {
@@ -368,7 +370,7 @@ private struct SessionDurationChart: View {
         .frame(width: slot, height: Self.plotHeight, alignment: .bottom)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(Text(String(
-            format: NSLocalizedString("session_chart_row_accessibility", comment: ""),
+            format: L10n.string("session_chart_row_accessibility"),
             range,
             bin.count
         )))
@@ -443,7 +445,7 @@ private struct SessionDurationChart: View {
 
     private func axisLabel(_ value: Double) -> String {
         guard value.isFinite else {
-            return NSLocalizedString("session_chart_mean_unavailable", comment: "")
+            return L10n.string("session_chart_mean_unavailable")
         }
         if value >= 10 {
             return String(format: "%.0f", value)
@@ -454,12 +456,12 @@ private struct SessionDurationChart: View {
     private func binRangeTitle(_ bin: SessionDurationHistogram.Bin) -> String {
         if bin.isOverflow {
             return String(
-                format: NSLocalizedString("session_chart_bin_overflow", comment: ""),
+                format: L10n.string("session_chart_bin_overflow"),
                 wholeMinutes(bin.lowerMinutes)
             )
         }
         return String(
-            format: NSLocalizedString("session_chart_bin_range", comment: ""),
+            format: L10n.string("session_chart_bin_range"),
             wholeMinutes(bin.lowerMinutes),
             wholeMinutes(bin.upperMinutes ?? .nan)
         )
@@ -469,7 +471,7 @@ private struct SessionDurationChart: View {
     /// fit, which a single covering bin can do for an extreme duration.
     private func wholeMinutes(_ value: Double) -> String {
         guard value.isFinite else {
-            return NSLocalizedString("session_chart_mean_unavailable", comment: "")
+            return L10n.string("session_chart_mean_unavailable")
         }
         let rounded = value.rounded()
         if let exact = Int(exactly: rounded) {

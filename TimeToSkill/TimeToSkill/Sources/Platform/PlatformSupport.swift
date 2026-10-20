@@ -221,7 +221,7 @@ extension View {
     /// Adds a native macOS toolbar action (with an optional keyboard shortcut).
     /// No-op on iOS, where the same action is offered in-content.
     @ViewBuilder func macOSToolbarAction(
-        title: LocalizedStringKey,
+        title: String,
         systemImage: String,
         shortcut: KeyboardShortcut? = nil,
         action: @escaping () -> Void
@@ -230,9 +230,13 @@ extension View {
         self.toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button(action: action) {
-                    Label(title, systemImage: systemImage)
+                    Label {
+                        Text(verbatim: L10n.string(title))
+                    } icon: {
+                        Image(systemName: systemImage)
+                    }
                 }
-                .help(title)
+                .help(L10n.string(title))
                 .modifier(OptionalKeyboardShortcut(shortcut: shortcut))
             }
         }

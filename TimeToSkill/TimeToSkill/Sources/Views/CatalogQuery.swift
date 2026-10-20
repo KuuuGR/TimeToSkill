@@ -51,7 +51,7 @@ enum CatalogSort: String, CaseIterable {
     case obtainedNewest = "sort_completed_desc"
 
     var localizedTitle: String {
-        NSLocalizedString(rawValue, comment: "")
+        L10n.string(rawValue)
     }
 }
 

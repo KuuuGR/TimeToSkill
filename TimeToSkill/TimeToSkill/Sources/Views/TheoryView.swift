@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct TheoryView: View {
+    @ObservedObject private var language = AppLanguage.shared
     @State private var selectedHour: Int = TheoryCatalog.chapters[0].hourMark
 
     private var chapter: TheoryChapter {
@@ -16,14 +17,15 @@ struct TheoryView: View {
     }
 
     var body: some View {
+        let _ = language.resolved.presentationIdentity
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                Text(LocalizedStringKey("theory_title"))
+                LText(key: "theory_title")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.top, 8)
 
-                Text(LocalizedStringKey("theory_compendium_intro"))
+                LText(key: "theory_compendium_intro")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -37,8 +39,7 @@ struct TheoryView: View {
             .padding(.bottom, 40)
             .macOSContentWidth(740)
         }
-        .navigationTitle(LocalizedStringKey("theory_nav_title"))
-
+        .navigationTitle(Text(verbatim: L10n.string("theory_nav_title")))
     }
 
     private var tabIndex: some View {
@@ -64,7 +65,7 @@ struct TheoryView: View {
                 Text(item.hourMark, format: .number.grouping(.automatic))
                     .font(.subheadline.weight(selected ? .semibold : .regular))
                     .monospacedDigit()
-                Text(LocalizedStringKey("theory_hour_unit"))
+                LText(key: "theory_hour_unit")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -90,14 +91,14 @@ struct TheoryView: View {
         VStack(alignment: .leading, spacing: 18) {
             HStack(alignment: .firstTextBaseline, spacing: 10) {
                 thresholdCrystal(hours: chapter.hourMark)
-                Text(LocalizedStringKey(chapter.titleKey))
+                Text(verbatim: L10n.string(chapter.titleKey))
                     .font(.title2)
                     .fontWeight(.semibold)
                     .fixedSize(horizontal: false, vertical: true)
             }
             .accessibilityIdentifier("TheoryChapter_\(chapter.hourMark)")
 
-            Text(LocalizedStringKey(chapter.leadKey))
+            Text(verbatim: L10n.string(chapter.leadKey))
                 .font(.body)
                 .fixedSize(horizontal: false, vertical: true)
 
@@ -120,9 +121,9 @@ struct TheoryView: View {
 
     private func section(titleKey: String, bodyKey: String) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(LocalizedStringKey(titleKey))
+            Text(verbatim: L10n.string(titleKey))
                 .font(.headline)
-            Text(LocalizedStringKey(bodyKey))
+            Text(verbatim: L10n.string(bodyKey))
                 .font(.body)
                 .fixedSize(horizontal: false, vertical: true)
         }
@@ -130,10 +131,14 @@ struct TheoryView: View {
 
     private func callout(labelKey: String, bodyKey: String, systemImage: String) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            Label(LocalizedStringKey(labelKey), systemImage: systemImage)
+            Label {
+                LText(key: labelKey)
+            } icon: {
+                Image(systemName: systemImage)
+            }
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.secondary)
-            Text(LocalizedStringKey(bodyKey))
+            Text(verbatim: L10n.string(bodyKey))
                 .font(.subheadline)
                 .fixedSize(horizontal: false, vertical: true)
         }
@@ -149,26 +154,26 @@ struct TheoryView: View {
 
     private var sources: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(LocalizedStringKey("theory_detail_links"))
+            LText(key: "theory_detail_links")
                 .font(.headline)
             ForEach(chapter.sourceTopicIDs, id: \.self) { topicID in
                 if let topic = TheoryCatalog.topic(id: topicID) {
                     VStack(alignment: .leading, spacing: 6) {
-                        Text(LocalizedStringKey(topic.citationKey))
+                        Text(verbatim: L10n.string(topic.citationKey))
                             .font(.caption)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
                         if !topic.findings.isEmpty {
                             if let intro = topic.findingsIntroKey {
-                                Text(LocalizedStringKey(intro))
+                                Text(verbatim: L10n.string(intro))
                                     .font(.caption)
                                     .fixedSize(horizontal: false, vertical: true)
                             }
                             ForEach(topic.findings) { finding in
                                 HStack(alignment: .firstTextBaseline) {
-                                    Text(LocalizedStringKey(finding.labelKey))
+                                    Text(verbatim: L10n.string(finding.labelKey))
                                     Spacer(minLength: 12)
-                                    Text(LocalizedStringKey(finding.valueKey))
+                                    Text(verbatim: L10n.string(finding.valueKey))
                                         .foregroundStyle(.secondary)
                                 }
                                 .font(.caption)
@@ -176,7 +181,11 @@ struct TheoryView: View {
                         }
                         ForEach(topic.links) { link in
                             Link(destination: link.url) {
-                                Label(LocalizedStringKey(link.labelKey), systemImage: "arrow.up.right")
+                                Label {
+                                    Text(verbatim: L10n.string(link.labelKey))
+                                } icon: {
+                                    Image(systemName: "arrow.up.right")
+                                }
                                     .font(.caption)
                             }
                         }

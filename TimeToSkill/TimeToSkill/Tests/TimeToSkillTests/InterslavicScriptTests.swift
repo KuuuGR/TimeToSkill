@@ -10,6 +10,12 @@ final class InterslavicScriptTests: XCTestCase {
         XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("ljudi"), "људи")
         XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("njuh"), "њух")
         XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("ćudo"), "ћудо")
+        // Foreign leftovers that used to survive as Latin glyphs
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("Gladwell"), "Гладвелл")
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("Eksel"), "Ексел")
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("Wixted"), "Викстед")
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("Römer"), "Ромер")
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic("prazdnotu"), "праздноту")
     }
 
     func testGlagoliticConvertsLettersAndUsesNotoCompatibleCodepoints() {
@@ -131,6 +137,8 @@ final class InterslavicScriptTests: XCTestCase {
             "sidebar_overview",
             "main_manage_trackers",
             "main_manage_counters",
+            "tracking_nav_title",
+            "tracking_title",
             "time_converter_nav_title",
             "stats_nav_title",
             "theory_nav_title",
@@ -202,6 +210,58 @@ final class InterslavicScriptTests: XCTestCase {
     }
 
     func testAllInterslavicUIKeysTransliterateToGlagolitic() throws {
+        try assertAllInterslavicUIKeysTransliterate(to: .glagolitic)
+    }
+
+    func testAllInterslavicUIKeysTransliterateToCyrillic() throws {
+        try assertAllInterslavicUIKeysTransliterate(to: .cyrillic)
+    }
+
+    func testTimePerspectiveChromeAndFactsTransliterateToCyrillic() throws {
+        let isv = LanguageCatalog.loadStringsTable(named: "TimePerspective", locale: "isv")
+        XCTAssertFalse(isv.isEmpty)
+        let sampleKeys = [
+            "time_perspective.card.title",
+            "time_perspective.card.empty_tagline",
+            "time_perspective.card.empty_prompt",
+            "perspective.coffee_break.title",
+            "perspective.coffee_break.description"
+        ]
+        for key in sampleKeys {
+            let latin = try XCTUnwrap(isv[key])
+            let cyrillic = LanguageCatalog.lookup(
+                key: key,
+                bundleCode: "isv",
+                script: .cyrillic,
+                tables: ["isv": isv, "en": [:]]
+            )
+            XCTAssertEqual(cyrillic, InterslavicTransliterator.latinToCyrillic(latin), key)
+            XCTAssertTrue(
+                InterslavicTransliterator.appearsConverted(to: .cyrillic, text: cyrillic)
+                    || cyrillic == InterslavicTransliterator.latinToCyrillic(latin),
+                key
+            )
+            // Must not accidentally stay on Glagolitic when Cyrilica is selected.
+            XCTAssertFalse(
+                InterslavicTransliterator.appearsConverted(to: .glagolitic, text: cyrillic),
+                "Mixed Glagolitic into Cyrilica for \(key)"
+            )
+        }
+    }
+
+    func testScriptSwitchDoesNotMixAlphabets() {
+        let latin = "Prěgled vremene"
+        let cyrillic = InterslavicTransliterator.latinToCyrillic(latin)
+        let glagolitic = InterslavicTransliterator.latinToGlagolitic(latin)
+        XCTAssertTrue(InterslavicTransliterator.appearsConverted(to: .cyrillic, text: cyrillic))
+        XCTAssertTrue(InterslavicTransliterator.appearsConverted(to: .glagolitic, text: glagolitic))
+        XCTAssertFalse(InterslavicTransliterator.appearsConverted(to: .glagolitic, text: cyrillic))
+        XCTAssertFalse(InterslavicTransliterator.appearsConverted(to: .cyrillic, text: glagolitic))
+        XCTAssertEqual(InterslavicTransliterator.latinToCyrillic(cyrillic), cyrillic)
+        XCTAssertEqual(InterslavicTransliterator.latinToGlagolitic(glagolitic), glagolitic)
+    }
+
+    private func assertAllInterslavicUIKeysTransliterate(to script: InterslavicScript) throws {
         let isv = try Self.loadLocalizable(locale: "isv")
         var converted = 0
         var skippedBrandOrSymbol = 0
@@ -211,17 +271,16 @@ final class InterslavicScriptTests: XCTestCase {
                 XCTFail("Empty isv value for \(key)")
                 continue
             }
-            let glag = LanguageCatalog.lookup(
+            let convertedText = LanguageCatalog.lookup(
                 key: key,
                 bundleCode: "isv",
-                script: .glagolitic,
+                script: script,
                 tables: ["isv": isv, "en": [:]]
             )
-            // Placeholders and digits must survive.
             if latin.contains("%") {
                 let tokens = ["%d", "%@", "%1$@", "%2$@", "%lld"]
                 for token in tokens where latin.contains(token) {
-                    XCTAssertTrue(glag.contains(token), "\(key) lost \(token)")
+                    XCTAssertTrue(convertedText.contains(token), "\(key) lost \(token) under \(script)")
                 }
             }
             let latinLetters = trimmed.unicodeScalars.filter { CharacterSet.letters.contains($0) }
@@ -229,21 +288,26 @@ final class InterslavicScriptTests: XCTestCase {
                 skippedBrandOrSymbol += 1
                 continue
             }
-            // Brand / Latin-script proper names may stay Latin on purpose.
             let allowLatinPassthrough = key.hasPrefix("ab_") || key.contains("email") || key == "theory_link_pubmed"
             if allowLatinPassthrough {
                 skippedBrandOrSymbol += 1
                 continue
             }
+            let expected: String
+            switch script {
+            case .latin: expected = latin
+            case .cyrillic: expected = InterslavicTransliterator.latinToCyrillic(latin)
+            case .glagolitic: expected = InterslavicTransliterator.latinToGlagolitic(latin)
+            }
             XCTAssertTrue(
-                InterslavicTransliterator.appearsConverted(to: .glagolitic, text: glag)
-                    || glag == InterslavicTransliterator.latinToGlagolitic(latin),
-                "UI key \(key) not Glagolitic after conversion: \(glag)"
+                InterslavicTransliterator.appearsConverted(to: script, text: convertedText)
+                    || convertedText == expected,
+                "UI key \(key) not \(script) after conversion: \(convertedText)"
             )
-            XCTAssertEqual(glag, InterslavicTransliterator.latinToGlagolitic(latin))
+            XCTAssertEqual(convertedText, expected, key)
             converted += 1
         }
-        XCTAssertGreaterThan(converted, 100, "Expected a broad UI key set to convert")
+        XCTAssertGreaterThan(converted, 100, "Expected a broad UI key set to convert to \(script)")
         _ = skippedBrandOrSymbol
     }
 

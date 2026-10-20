@@ -37,15 +37,19 @@ struct ManageCountersView: View {
                                 .scaledToFit()
                                 .frame(width: 64, height: 64)
                                 .foregroundColor(.secondary)
-                            Text(LocalizedStringKey("counters_empty_title"))
+                            Text(verbatim: L10n.string("counters_empty_title"))
                                 .font(.title3)
                                 .fontWeight(.semibold)
-                            Text(LocalizedStringKey("counters_empty_description"))
+                            Text(verbatim: L10n.string("counters_empty_description"))
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal, 24)
-                            Button(LocalizedStringKey("create")) { showingNew = true }
+                            Button {
+                                showingNew = true
+                            } label: {
+                                Text(verbatim: L10n.string("create"))
+                            }
                                 .buttonStyle(.borderedProminent)
                         }
                         .padding(20)
@@ -86,10 +90,12 @@ struct ManageCountersView: View {
                                         animated: false
                                     )
                                     if counter.kind == .elapsedDays {
-                                        Button(LocalizedStringKey("counter_refresh")) {
+                                        Button {
                                             if counter.refreshFromAnchor() {
                                                 try? context.save()
                                             }
+                                        } label: {
+                                            Text(verbatim: L10n.string("counter_refresh"))
                                         }
                                         .font(.caption2)
                                         .buttonStyle(.bordered)
@@ -117,7 +123,7 @@ struct ManageCountersView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .navigationTitle(LocalizedStringKey("manage_counters_title"))
+            .navigationTitle(Text(verbatim: L10n.string("manage_counters_title")))
 
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
@@ -155,32 +161,44 @@ struct NewCounterSheet: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section(LocalizedStringKey("counter_details_section")) {
+                Section {
                     SkillEmojiPickerButton(selection: $symbol)
-                    TextField(LocalizedStringKey("counter_title_placeholder"), text: $title)
-                    Picker(LocalizedStringKey("counter_kind_label"), selection: $kind) {
-                        Text(LocalizedStringKey("counter_kind_manual")).tag(CounterKind.manual)
-                        Text(LocalizedStringKey("counter_kind_elapsed")).tag(CounterKind.elapsedDays)
+                    TextField("", text: $title, prompt: Text(verbatim: L10n.string("counter_title_placeholder")))
+                    Picker(selection: $kind) {
+                        Text(verbatim: L10n.string("counter_kind_manual")).tag(CounterKind.manual)
+                        Text(verbatim: L10n.string("counter_kind_elapsed")).tag(CounterKind.elapsedDays)
+                    } label: {
+                        Text(verbatim: L10n.string("counter_kind_label"))
                     }
                     if kind == .elapsedDays {
-                        DatePicker(LocalizedStringKey("counter_anchor_label"), selection: $anchor, displayedComponents: .date)
+                        DatePicker(selection: $anchor, displayedComponents: .date) {
+                            Text(verbatim: L10n.string("counter_anchor_label"))
+                        }
                     }
                     Stepper(value: $step, in: 1...1000) {
-                        Text(String(format: NSLocalizedString("counter_step_label%d", comment: ""), step))
+                        Text(verbatim: String(format: L10n.string("counter_step_label%d"), step))
                     }
+                } header: {
+                    Text(verbatim: L10n.string("counter_details_section"))
                 }
-                Section(LocalizedStringKey("counter_thresholds_section")) {
-                    TextField(LocalizedStringKey("counter_thresholds_placeholder"), text: $thresholdsText)
+                Section {
+                    TextField("", text: $thresholdsText, prompt: Text(verbatim: L10n.string("counter_thresholds_placeholder")))
+                } header: {
+                    Text(verbatim: L10n.string("counter_thresholds_section"))
                 }
             }
-            .navigationTitle(LocalizedStringKey("counter_new_title"))
+            .navigationTitle(Text(verbatim: L10n.string("counter_new_title")))
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button(LocalizedStringKey("cancel")) { dismiss() } }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button { dismiss() } label: { Text(verbatim: L10n.string("cancel")) }
+                }
                 ToolbarItem(placement: .primaryAction) {
-                    Button(LocalizedStringKey("create")) {
+                    Button {
                         let limits = thresholdsText.split(separator: ",").compactMap { Int($0.trimmingCharacters(in: .whitespaces)) }.sorted()
                         onCreate(title, symbol, step, limits, kind, kind == .elapsedDays ? anchor : nil)
                         dismiss()
+                    } label: {
+                        Text(verbatim: L10n.string("create"))
                     }
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
                 }
@@ -198,18 +216,18 @@ struct CounterDetailView: View {
     
     var body: some View {
         Form {
-            Section(LocalizedStringKey("counter_progress_section")) {
+            Section {
                 HStack {
                     Spacer()
                     CounterRing(value: counter.value, stageMax: counter.currentStageMax)
                         .frame(width: 140, height: 140)
                     Spacer()
                 }
-                Text(LocalizedStringKey("counter_value_label")) + Text(": \(counter.value)")
+                Text(verbatim: "\(L10n.string("counter_value_label")): \(counter.value)")
                 if let maxStage = counter.currentStageMax {
-                    Text(LocalizedStringKey("counter_stage_max_label")) + Text(": \(maxStage)")
+                    Text(verbatim: "\(L10n.string("counter_stage_max_label")): \(maxStage)")
                 } else {
-                    Text(LocalizedStringKey("counter_no_thresholds"))
+                    Text(verbatim: L10n.string("counter_no_thresholds"))
                         .foregroundColor(.secondary)
                 }
                 CrystalProgressBar(
@@ -220,56 +238,87 @@ struct CounterDetailView: View {
                     animated: false
                 )
                 if counter.kind == .elapsedDays {
-                    Button(LocalizedStringKey("counter_refresh")) {
+                    Button {
                         if counter.refreshFromAnchor() {
                             try? context.save()
                         }
+                    } label: {
+                        Text(verbatim: L10n.string("counter_refresh"))
                     }
                     .accessibilityIdentifier("CounterRefresh_\(counter.id.uuidString)")
                     if counter.anchorDay == nil {
-                        Text(LocalizedStringKey("counter_refresh_unavailable"))
+                        Text(verbatim: L10n.string("counter_refresh_unavailable"))
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
                 }
-                Button(LocalizedStringKey("counter_reset_to_zero"), role: .destructive) { counter.value = 0; counter.updatedAt = Date() }
-            }
-            Section(LocalizedStringKey("counter_configuration_section")) {
-                SkillEmojiPickerButton(selection: $counter.symbol)
-                TextField(LocalizedStringKey("counter_title_placeholder"), text: $counter.title)
-                Stepper(value: $counter.step, in: -1000...1000) {
-                    Text(String(format: NSLocalizedString("counter_step_label%d", comment: ""), counter.step))
+                Button(role: .destructive) {
+                    counter.value = 0
+                    counter.updatedAt = Date()
+                } label: {
+                    Text(verbatim: L10n.string("counter_reset_to_zero"))
                 }
-                NavigationLink(LocalizedStringKey("counter_edit_thresholds")) { ThresholdEditor(thresholds: $counter.thresholds) }
+            } header: {
+                Text(verbatim: L10n.string("counter_progress_section"))
+            }
+            Section {
+                SkillEmojiPickerButton(selection: $counter.symbol)
+                TextField("", text: $counter.title, prompt: Text(verbatim: L10n.string("counter_title_placeholder")))
+                Stepper(value: $counter.step, in: -1000...1000) {
+                    Text(verbatim: String(format: L10n.string("counter_step_label%d"), counter.step))
+                }
+                NavigationLink {
+                    ThresholdEditor(thresholds: $counter.thresholds)
+                } label: {
+                    Text(verbatim: L10n.string("counter_edit_thresholds"))
+                }
+            } header: {
+                Text(verbatim: L10n.string("counter_configuration_section"))
             }
             // The allowed range lives in the section title, not in the field's
             // placeholder, so the input row stays a plain field + Apply button.
-            Section(LocalizedStringKey("counter_set_value_section")) {
+            Section {
                 HStack {
-                    TextField(LocalizedStringKey("counter_value_label"), text: $valueText)
+                    TextField("", text: $valueText, prompt: Text(verbatim: L10n.string("counter_value_label")))
                         .numbersAndPunctuationKeyboard()
-                    Button(LocalizedStringKey("apply")) {
+                    Button {
                         if let v = Int(valueText) { counter.value = v; counter.updatedAt = Date() }
                         valueText = ""
+                    } label: {
+                        Text(verbatim: L10n.string("apply"))
                     }
                     .disabled(Int(valueText) == nil)
                 }
+            } header: {
+                Text(verbatim: L10n.string("counter_set_value_section"))
             }
             Section {
                 Button(role: .destructive) {
                     showDeleteConfirmation = true
                 } label: {
-                    Label(LocalizedStringKey("counter_delete"), systemImage: "trash")
+                    Label {
+                        Text(verbatim: L10n.string("counter_delete"))
+                    } icon: {
+                        Image(systemName: "trash")
+                    }
                 }
-                .confirmationDialog(LocalizedStringKey("delete_confirm_title"), isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
-                    Button(LocalizedStringKey("delete_confirm_action"), role: .destructive) {
+                .confirmationDialog(
+                    Text(verbatim: L10n.string("delete_confirm_title")),
+                    isPresented: $showDeleteConfirmation,
+                    titleVisibility: .visible
+                ) {
+                    Button(role: .destructive) {
                         context.delete(counter)
                         try? context.save()
                         dismiss()
+                    } label: {
+                        Text(verbatim: L10n.string("delete_confirm_action"))
                     }
-                    Button(LocalizedStringKey("cancel"), role: .cancel) { }
+                    Button(role: .cancel) {} label: {
+                        Text(verbatim: L10n.string("cancel"))
+                    }
                 } message: {
-                    Text(LocalizedStringKey("delete_confirm_message"))
+                    Text(verbatim: L10n.string("delete_confirm_message"))
                 }
             }
         }
@@ -284,26 +333,32 @@ struct ThresholdEditor: View {
     
     var body: some View {
         Form {
-            Section(LocalizedStringKey("counter_current_thresholds")) {
+            Section {
                 if thresholds.isEmpty {
-                    Text(LocalizedStringKey("counter_no_thresholds"))
+                    Text(verbatim: L10n.string("counter_no_thresholds"))
                         .foregroundColor(.secondary)
                 } else {
                     ForEach(thresholds, id: \.self) { t in Text("\(t)") }
                         .onDelete { indexSet in thresholds.remove(atOffsets: indexSet) }
                 }
+            } header: {
+                Text(verbatim: L10n.string("counter_current_thresholds"))
             }
-            Section(LocalizedStringKey("counter_add_threshold")) {
+            Section {
                 HStack {
-                    TextField(LocalizedStringKey("value"), text: $newValue)
+                    TextField("", text: $newValue, prompt: Text(verbatim: L10n.string("value")))
                         .numberPadKeyboard()
-                    Button(LocalizedStringKey("add")) {
+                    Button {
                         if let v = Int(newValue) { thresholds.append(v); thresholds.sort(); newValue = "" }
+                    } label: {
+                        Text(verbatim: L10n.string("add"))
                     }
                     .disabled(Int(newValue) == nil)
                 }
+            } header: {
+                Text(verbatim: L10n.string("counter_add_threshold"))
             }
         }
-        .navigationTitle(LocalizedStringKey("counter_thresholds_title"))
+        .navigationTitle(Text(verbatim: L10n.string("counter_thresholds_title")))
     }
 }

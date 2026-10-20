@@ -5,14 +5,15 @@ import SwiftUI
 struct TimePerspectiveCard: View {
     let perspective: TimePerspective?
 
+    /// Observes script / language so Cyrillic & Glagolitic refresh immediately.
+    @ObservedObject private var language = AppLanguage.shared
+
     var body: some View {
+        let _ = language.resolved.presentationIdentity
         VStack(alignment: .leading, spacing: 12) {
-            Text(String(
-                localized: "time_perspective.card.title",
-                table: "TimePerspective"
-            ))
-            .font(.headline)
-            .foregroundStyle(.primary)
+            LText(key: "time_perspective.card.title", table: "TimePerspective")
+                .font(.headline)
+                .foregroundStyle(.primary)
 
             if let perspective {
                 HStack(alignment: .top, spacing: 12) {
@@ -21,35 +22,29 @@ struct TimePerspectiveCard: View {
                         .accessibilityHidden(true)
                         .frame(width: 44, alignment: .center)
 
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(verbatim: perspective.title)
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.primary)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(verbatim: perspective.title)
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.primary)
 
-                    Text(verbatim: perspective.description)
-                        .font(.body)
-                        .foregroundStyle(.secondary)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
+                        Text(verbatim: perspective.description)
+                            .font(.body)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
             } else {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(String(
-                        localized: "time_perspective.card.empty_tagline",
-                        table: "TimePerspective"
-                    ))
-                    .font(.subheadline)
-                    .italic()
-                    .foregroundStyle(.secondary)
+                    Text(verbatim: L10n.string("time_perspective.card.empty_tagline", table: "TimePerspective"))
+                        .font(.subheadline)
+                        .italic()
+                        .foregroundStyle(.secondary)
 
-                    Text(String(
-                        localized: "time_perspective.card.empty_prompt",
-                        table: "TimePerspective"
-                    ))
-                    .font(.body)
-                    .foregroundStyle(.secondary)
-                    .fixedSize(horizontal: false, vertical: true)
+                    Text(verbatim: L10n.string("time_perspective.card.empty_prompt", table: "TimePerspective"))
+                        .font(.body)
+                        .foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 .frame(minHeight: 64, alignment: .topLeading)
             }
@@ -63,25 +58,16 @@ struct TimePerspectiveCard: View {
                 .stroke(AppColors.primary.opacity(0.35), lineWidth: 1.5)
         )
         .accessibilityElement(children: .combine)
-        .accessibilityLabel(accessibilityLabelText)
+        .accessibilityLabel(Text(verbatim: accessibilityLabelText))
     }
 
     private var accessibilityLabelText: String {
-        let title = String(
-            localized: "time_perspective.card.title",
-            table: "TimePerspective"
-        )
+        let title = L10n.string("time_perspective.card.title", table: "TimePerspective")
         if let perspective {
             return "\(title), \(perspective.title). \(perspective.description)"
         }
-        let tagline = String(
-            localized: "time_perspective.card.empty_tagline",
-            table: "TimePerspective"
-        )
-        let prompt = String(
-            localized: "time_perspective.card.empty_prompt",
-            table: "TimePerspective"
-        )
+        let tagline = L10n.string("time_perspective.card.empty_tagline", table: "TimePerspective")
+        let prompt = L10n.string("time_perspective.card.empty_prompt", table: "TimePerspective")
         return "\(title). \(tagline) \(prompt)"
     }
 }

@@ -64,8 +64,7 @@
 "support_nav_title" = "Támogatás";
 
 // MARK: - TheoryView
-"theory_title" = "Tanulási időelméletek";
-
+"theory_title" = "Tanulási elméletek";
 "theory_10k_title" = "10 000 órás szabály";
 "theory_10k_author" = "Malcolm Gladwell (Anders Ericsson alapján)";
 "theory_10k_description" = "A mesterszint eléréséhez körülbelül tízezer óra tudatos gyakorlás szükséges. Elit előadókra (zenészek, sportolók, sakkjátékosok) jellemző. Nemcsak a mennyiség, hanem a minőség is számít. Kritika: túlzott egyszerűsítés.";
@@ -89,8 +88,7 @@
 "theory_comparison_title" = "📈 Összehasonlítás";
 "theory_comparison_text" = "• 20 óra → Jó kezdet (Amatőr)\n• 100 óra → Szilárd (Középhaladó)\n• 1 000 óra → Profi\n• 10 000 óra → Mester (Elit)";
 
-"theory_nav_title" = "Tanuláselmélet";
-
+"theory_nav_title" = "Tanulási elmélet";
 // MARK: - StatsView
 "stats_title_overview" = "📊 Készségfejlődés áttekintése";
 "stats_nav_title" = "Statisztikáid";
@@ -123,9 +121,9 @@
 
 "skill_name_section" = "Név";
 "skill_name_label" = "Készség neve";
-"skill_icon_label" = "Icon";
-"skill_emoji_picker_title" = "Choose Icon";
-"skill_emoji_picker_none" = "None";
+"skill_icon_label" = "Ikon";
+"skill_emoji_picker_title" = "Ikon választása";
+"skill_emoji_picker_none" = "Nincs";
 "skill_emoji_section_faces" = "Arcok";
 "skill_emoji_section_work" = "Munka";
 "skill_emoji_section_creativity" = "Kreativitás";
@@ -202,7 +200,7 @@
 "time_mean_minutes_format" = "Átlagos intervallum: %@ perc";
 "time_std_minutes_format" = "Szórás: %@ perc";
 "distribution_nav_title" = "Eloszlás";
-"distribution_empty_message" = "No sessions recorded for this skill yet.";
+"distribution_empty_message" = "Für diese Fähigkeit sind noch keine Sitzungen gespeichert.";
 "global_time_distribution_title" = "Globális időeloszlás";
 
 // MARK: - Sort options (Exemplary)
@@ -329,51 +327,51 @@
 "sidebar_overview" = "Áttekintés";
 
 // MARK: - SplashView
-"splash_presents" = "presents";
-"splash_tagline" = "Track your time. Learn smarter. Grow with patience.";
-"splash_reflection_1" = "Every hour you practice is a step toward mastery.";
-"splash_reflection_2" = "Skill is the reward of time well spent.";
-"splash_reflection_3" = "Small hours, repeated, become mastery.";
-"splash_reflection_4" = "Progress is patience made visible.";
-"splash_reflection_5" = "Time invested in learning is never wasted.";
+"splash_presents" = "bemutatja";
+"splash_tagline" = "Kövesd az idődet. Tanulj okosabban. Nőj türelemmel.";
+"splash_reflection_1" = "Jede Stunde Übung ist ein Schritt zur Meisterschaft.";
+"splash_reflection_2" = "Fähigkeit ist der Lohn gut genutzter Zeit.";
+"splash_reflection_3" = "Kleine Stunden, wiederholt, werden zur Meisterschaft.";
+"splash_reflection_4" = "Fortschritt ist sichtbar gewordene Geduld.";
+"splash_reflection_5" = "In Lernen investierte Zeit ist nie verschwendet.";
 
 // MARK: - Per-skill timer session chart (T4S-001)
-"session_chart_open" = "Session chart";
-"session_chart_nav_title" = "Timer sessions";
-"session_chart_metric" = "Timer sessions and manual hour additions for this skill.";
-"session_chart_bin_width" = "Bar width";
-"session_chart_detail_wide" = "Wide";
-"session_chart_detail_medium" = "Medium";
-"session_chart_detail_narrow" = "Narrow";
-"session_chart_bin_minutes" = "%d min";
-"session_chart_bin_range" = "%1$@–%2$@ min";
-"session_chart_bin_overflow" = "≥ %1$@ min";
-"session_chart_count_format" = "%d sessions";
-"session_chart_mean_format" = "Mean: %@ min";
+"session_chart_open" = "Sitzungsdiagramm";
+"session_chart_nav_title" = "Timer-Sitzungen";
+"session_chart_metric" = "Timer-Sitzungen und manuelle Stundenangaben für diese Fähigkeit.";
+"session_chart_bin_width" = "Balkenbreite";
+"session_chart_detail_wide" = "Breit";
+"session_chart_detail_medium" = "Mittel";
+"session_chart_detail_narrow" = "Schmal";
+"session_chart_bin_minutes" = "%d Min.";
+"session_chart_bin_range" = "%1$@–%2$@ Min.";
+"session_chart_bin_overflow" = "≥ %1$@ Min.";
+"session_chart_count_format" = "%d Sitzungen";
+"session_chart_mean_format" = "Mittelwert: %@ Min.";
 "session_chart_mean_unavailable" = "—";
-"session_chart_empty" = "No completed timer sessions for this skill yet.";
-"session_chart_curve_caption" = "The translucent curve is a normal-distribution reference for these sessions. It is not a prediction and does not mean the sessions follow a normal distribution.";
-"session_chart_curve_hidden" = "Not enough variation or completed timer sessions to show a stable reference curve.";
-"session_chart_outside_range_format" = "%d observations lie outside the visible range.";
-"session_chart_accessibility" = "Timer session duration chart";
-"session_chart_row_accessibility" = "%1$@, %2$d sessions";
+"session_chart_empty" = "Für diese Fähigkeit gibt es noch keine abgeschlossenen Timer-Sitzungen.";
+"session_chart_curve_caption" = "Die durchscheinende Kurve ist eine Normalverteilungs-Referenz für diese Sitzungen. Sie ist Orientierung, keine Vorhersage.";
+"session_chart_curve_hidden" = "Nicht genug Streuung oder abgeschlossene Timer-Sitzungen für eine stabile Referenzkurve.";
+"session_chart_outside_range_format" = "%d Beobachtungen liegen außerhalb des sichtbaren Bereichs.";
+"session_chart_accessibility" = "Diagramm der Timer-Sitzungsdauer";
+"session_chart_row_accessibility" = "%1$@, %2$d Sitzungen";
 
 // MARK: - Theory topics (T4S-002)
-"theory_intro" = "Ideas you can try while you practise. The short version is enough. Open sources only when you want the research context.";
-"theory_takeaway_label" = "Practical takeaway";
-"theory_sources_button" = "Sources & research details ↗";
-"theory_sources_accessibility" = "Sources and research details";
-"theory_detail_title" = "Research details";
-"theory_detail_citation" = "Citation";
-"theory_detail_source_type" = "Source type";
-"theory_detail_context" = "Research context";
-"theory_detail_limitation" = "Limitation";
-"theory_detail_links" = "Source links";
-"theory_type_framework" = "Author's practical framework";
-"theory_type_article" = "Research article";
-"theory_type_meta" = "Meta-analysis";
-"theory_link_author_site" = "Author's website";
-"theory_link_publisher" = "Publisher";
+"theory_intro" = "Ötletek, amelyeket gyakorlás közben kipróbálhat. A rövid változat elég. Csak akkor nyissa meg a forrásokat, ha a kutatási kontextust szeretné.";
+"theory_takeaway_label" = "Gyakorlati tanulság";
+"theory_sources_button" = "Források és kutatási részletek ↗";
+"theory_sources_accessibility" = "Források és kutatási részletek";
+"theory_detail_title" = "Kutatási részletek";
+"theory_detail_citation" = "Hivatkozás";
+"theory_detail_source_type" = "Forrás típusa";
+"theory_detail_context" = "Kutatási kontextus";
+"theory_detail_limitation" = "Korlát";
+"theory_detail_links" = "Forráslinkek";
+"theory_type_framework" = "A szerző gyakorlati kerete";
+"theory_type_article" = "Kutatási cikk";
+"theory_type_meta" = "Metaanalízis";
+"theory_link_author_site" = "A szerző webhelye";
+"theory_link_publisher" = "Kiadó";
 "theory_link_ericsson_1993" = "Ericsson, Krampe, and Tesch-Römer, 1993";
 "theory_link_macnamara_2019" = "Macnamara and Maitra, 2019";
 "theory_link_macnamara_2014" = "Macnamara, Hambrick, and Oswald, 2014";
@@ -381,172 +379,166 @@
 "theory_link_cepeda_2006" = "Cepeda and colleagues, 2006";
 "theory_link_lally_2010" = "Lally and colleagues, 2010";
 
-"theory_topic_first20_title" = "The First 20 Hours: Get Past the Beginning";
-"theory_topic_first20_summary" = "Starting a skill is often frustrating because everything is unfamiliar. Josh Kaufman proposes a practical approach: break a skill into smaller parts, focus on what matters, remove barriers to practice, and spend focused time improving. His 20-hour framework is a starting method, not a scientific guarantee that any skill can be mastered in 20 hours.";
-"theory_topic_first20_takeaway" = "Choose one specific thing you want to be able to do better after your first 20 hours.";
+"theory_topic_first20_title" = "Az első 20 óra: túljutni a kezdeten";
+"theory_topic_first20_summary" = "Egy készség elkezdése gyakran frusztráló, mert minden idegen. Josh Kaufman gyakorlati megközelítést javasol: ossza fel a készséget, koncentráljon a lényegesre, távolítsa el a gyakorlás akadályait, és szánjon koncentrált időt a fejlesztésre. 20 órás kerete kezdési módszer, nem tudományos garancia arra, hogy bármely készség 20 óra alatt elsajátítható.";
+"theory_topic_first20_takeaway" = "Válasszon egy konkrét dolgot, amelyet jobban szeretne csinálni az első 20 óra után.";
 "theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Ebook published in 2013; paperback published in 2014.";
-"theory_topic_first20_context" = "Author's practical framework and book, not a controlled scientific study.";
-"theory_topic_first20_limitation" = "The 20-hour framework is a starting method. It is not a scientifically established time needed to master a skill.";
-
-"theory_topic_deliberate_title" = "Practice With a Purpose";
-"theory_topic_deliberate_summary" = "Repeating an activity is not the same as deliberately improving it. Choose a specific aspect to work on, practise with a clear goal, notice errors, and adjust your next attempt. Time is useful to track, but the way you practise matters too.";
-"theory_topic_deliberate_takeaway" = "Before a session, decide what one thing you want to improve.";
+"theory_topic_first20_context" = "A szerző gyakorlati kerete és könyve, nem ellenőrzött tudományos vizsgálat.";
+"theory_topic_first20_limitation" = "A 20 órás keret kezdési módszer. Nem tudományosan megállapított idő a mesterséghez.";
+"theory_topic_deliberate_title" = "Célzott gyakorlás";
+"theory_topic_deliberate_summary" = "Egy tevékenység ismétlése nem ugyanaz, mint szándékosan javítani. Válasszon konkrét szempontot, gyakoroljon világos céllal, vegye észre a hibákat, és igazítsa a következő próbát. Az idő követése hasznos, de a gyakorlás módja is számít.";
+"theory_topic_deliberate_takeaway" = "Egy ülés előtt döntse el, mit az egyetlen dolog, amit javítani akar.";
 "theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
-"theory_topic_deliberate_context" = "The paper developed a framework for expert performance and reported studies involving musicians, including violinists and pianists.";
-"theory_topic_deliberate_limitation" = "The paper does not establish one fixed number of practice hours that guarantees mastery across all skills.";
-
-"theory_topic_10k_title" = "10,000 Hours: A Popular Rule, Not a Law";
-"theory_topic_10k_summary" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). It drew on research about expert performance, but the popular version simplified the original argument. There is no universal magic number of hours that guarantees mastery.";
-"theory_topic_10k_takeaway" = "Use long-term milestones to celebrate persistence, not to predict when you will become an expert.";
+"theory_topic_deliberate_context" = "A cikk szakértői teljesítménykeretet fejlesztett, és hegedűsökkel valamint zongoristákkal végzett tanulmányokról számolt be.";
+"theory_topic_deliberate_limitation" = "A cikk nem állapít meg egyetlen rögzített gyakorlóóraszámot, amely minden készségben garantálja a mesterséget.";
+"theory_topic_10k_title" = "10 000 óra: népszerű szabály, nem törvény";
+"theory_topic_10k_summary" = "A 10 000 órás szabály Malcolm Gladwell Outliers (2008) című könyve révén vált széles körben népszerűvé. Szakértői teljesítménykutatásra támaszkodott, de a népszerű változat leegyszerűsítette az eredeti érvet. Nincs univerzális mágikus óraszám, amely mesterséget garantál.";
+"theory_topic_10k_takeaway" = "Használjon hosszú távú mérföldköveket a kitartás ünneplésére, ne arra, hogy megjósolja, mikor lesz szakértő.";
 "theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara and Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
-"theory_topic_10k_context" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). The 2019 paper discusses how that popular rule differs from the 1993 research.";
-"theory_topic_10k_limitation" = "Ericsson and colleagues did not establish a universal 10,000-hour mastery law. There is no universal number of hours that guarantees mastery.";
-
-"theory_topic_variance_title" = "Practice Matters, but It Is Not Everything";
-"theory_topic_variance_summary" = "A 2014 meta-analysis examined deliberate practice across several fields. It found that practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_takeaway" = "Practice is something you can influence. Results also depend on other factors, which differ between activities.";
+"theory_topic_10k_context" = "A 10 000 órás szabály Malcolm Gladwell Outliers (2008) című könyve révén vált széles körben népszerűvé. A 2019-es cikk tárgyalja, miben tér el ez a népszerű szabály az 1993-as kutatástól.";
+"theory_topic_10k_limitation" = "Ericsson és kollégái nem állítottak fel univerzális 10 000 órás mesterségtörvényt. Nincs univerzális óraszám, amely mesterséget garantál.";
+"theory_topic_variance_title" = "A gyakorlat számít, de nem minden";
+"theory_topic_variance_summary" = "Egy 2014-es metaanalízis több területen vizsgálta a szándékos gyakorlatot. A gyakorlat összefüggött a teljesítménnyel, de hozzájárulása területenként jelentősen különbözött.";
+"theory_topic_variance_takeaway" = "A gyakorlat olyasmi, amire hatással lehet. Az eredmények más tényezőktől is függenek, amelyek tevékenységenként különböznek.";
 "theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick, and Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
-"theory_topic_variance_context" = "A 2014 meta-analysis examined deliberate practice across several fields. Practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_findings_intro" = "The estimated share of performance differences explained by deliberate practice in this analysis was:";
-"theory_topic_variance_limitation" = "These percentages refer to variance in performance explained in this meta-analysis. They are not the percentage of skill that a person can learn, and they are not an individual's probability of success.";
-"theory_finding_games" = "Games";
+"theory_topic_variance_context" = "Egy 2014-es metaanalízis több területen vizsgálta a szándékos gyakorlatot. A gyakorlat összefüggött a teljesítménnyel, de hozzájárulása területenként jelentősen különbözött.";
+"theory_topic_variance_findings_intro" = "A teljesítménykülönbségek becsült hányada, amelyet a szándékos gyakorlat ebben az elemzésben magyarázott:";
+"theory_topic_variance_limitation" = "Ezek a százalékok az ebben a metaanalízisben magyarázott teljesítményvarianciára vonatkoznak. Nem annak a készségnek a százaléka, amelyet valaki megtanulhat, és nem egyéni siker valószínűsége.";
+"theory_finding_games" = "Játékok";
 "theory_finding_games_value" = "26%";
-"theory_finding_music" = "Music";
-"theory_finding_sports" = "Sports";
-"theory_finding_education" = "Education";
-"theory_finding_professions" = "Professions";
+"theory_finding_music" = "Zene";
+"theory_finding_sports" = "Sport";
+"theory_finding_education" = "Oktatás";
+"theory_finding_professions" = "Szakmák";
 "theory_finding_music_value" = "21%";
 "theory_finding_sports_value" = "18%";
 "theory_finding_education_value" = "4%";
 "theory_finding_professions_value" = "Less than 1%";
 
-"theory_topic_spacing_title" = "Return to a Skill, Rather Than Cramming Everything Together";
-"theory_topic_spacing_summary" = "Research on distributed practice supports spreading learning across multiple sessions rather than relying only on massed practice. The best spacing depends on the material and on how long you want to retain it.";
-"theory_topic_spacing_takeaway" = "Try returning to a skill over several days and observe what you remember and what needs more practice.";
+"theory_topic_spacing_title" = "Térjen vissza a készséghez ahelyett, hogy mindent egyszerre magolna";
+"theory_topic_spacing_summary" = "Az elosztott gyakorlat kutatása támogatja a tanulás több ülésre terjesztését ahelyett, hogy csak tömeges gyakorlatra támaszkodna. A legjobb távolság az anyagtól és attól függ, meddig akarja megtartani.";
+"theory_topic_spacing_takeaway" = "Próbáljon több napon át visszatérni egy készséghez, és figyelje meg, mit emlékszik, és mi igényel több gyakorlatot.";
 "theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted, and Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
-"theory_topic_spacing_context" = "The meta-analysis reviewed 317 experiments across 184 articles, with 839 assessments of distributed practice.";
-"theory_topic_spacing_limitation" = "These results concern learning and recall tasks. They do not present one schedule as optimal for every physical, social, artistic, or professional skill.";
-
-"theory_topic_habit_title" = "A Habit Does Not Have a Universal Deadline";
-"theory_topic_habit_summary" = "Repeating an action in a consistent context can make it more automatic over time. However, the time required differs between people and behaviours. Missing one day does not mean that all progress has been lost.";
-"theory_topic_habit_takeaway" = "Connect an activity to a situation you encounter regularly, and resume without guilt when a session is missed.";
+"theory_topic_spacing_context" = "A metaanalízis 184 cikk 317 kísérletét tekintette át, 839 elosztott gyakorlat-értékeléssel.";
+"theory_topic_spacing_limitation" = "Ezek az eredmények tanulási és felidézési feladatokra vonatkoznak. Nem adnak egyetlen optimális ütemtervet minden fizikai, társadalmi, művészi vagy szakmai készséghez.";
+"theory_topic_habit_title" = "A szokásnak nincs univerzális határideje";
+"theory_topic_habit_summary" = "Egy cselekvés ismétlése ugyanabban a kontextusban idővel automatikusabbá teheti. A szükséges idő azonban személyenként és viselkedésenként különbözik. Egy nap kihagyása nem azt jelenti, hogy minden előrehaladás elveszett.";
+"theory_topic_habit_takeaway" = "Kapcsoljon egy tevékenységet olyan helyzethez, amellyel rendszeresen találkozik, és folytassa bűntudat nélkül, ha egy ülés kimarad.";
 "theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, and Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
-"theory_topic_habit_context" = "Ninety-six volunteers selected an eating, drinking, or activity behaviour to repeat in the same context for 12 weeks. Eighty-two participants provided sufficient data for analysis. The modelled time to reach 95% of the asymptotic automaticity estimate varied from 18 to 254 days.";
-"theory_topic_habit_limitation" = "This was a habit-formation study, not a study of how many hours it takes to master a skill. It does not support a 21-hour mastery threshold or a universal 21-day habit rule.";
-
-"theory_milestones_title" = "Progress milestones";
+"theory_topic_habit_context" = "Kilencvenhat önkéntes választott étkezési, ivási vagy aktivitási viselkedést, amelyet ugyanabban a kontextusban 12 héten át ismételtek. Nyolcvankét résztvevő adott elegendő adatot. Az aszimptotikus automatizáltság-becslés 95%-ához modellezett idő 18 és 254 nap között változott.";
+"theory_topic_habit_limitation" = "Ez szokásképzési vizsgálat volt, nem arról, hány óra kell egy készség elsajátításához. Nem támogat 21 órás mesterségküszöböt, sem univerzális 21 napos szokásszabályt.";
+"theory_milestones_title" = "Haladási mérföldkövek";
 "theory_milestones_note" = "The 100-hour, 1,000-hour, and 10,000-hour marks in Time4Skill record time you have spent. They are progress milestones, not scientifically validated stages, and they do not predict when you will become an expert.";
-"theory_milestone_100_title" = "100 hours";
-"theory_milestone_1000_title" = "1,000 hours";
-"theory_milestone_10000_title" = "10,000 hours";
-"theory_milestone_note" = "Progress milestone, not a universal stage of expertise.";
+"theory_milestone_100_title" = "100 óra";
+"theory_milestone_1000_title" = "1000 óra";
+"theory_milestone_10000_title" = "10 000 óra";
+"theory_milestone_note" = "Haladási mérföldkő, nem egyetemes szakértői szakasz.";
 
 // MARK: - Year activity calendar (T4S-003)
-"activity_calendar_title" = "Practice this year";
-"activity_calendar_previous" = "Previous year";
-"activity_calendar_next" = "Next year";
-"activity_calendar_summary" = "%1$d active days · %2$d skills";
-"activity_calendar_empty" = "No completed timer sessions yet. Days stay neutral until a timer session is saved.";
-"activity_calendar_year_empty" = "No completed timer sessions in this year.";
+"activity_calendar_title" = "Übung in diesem Jahr";
+"activity_calendar_previous" = "Vorheriges Jahr";
+"activity_calendar_next" = "Nächstes Jahr";
+"activity_calendar_summary" = "%1$d aktive Tage · %2$d Fähigkeiten";
+"activity_calendar_empty" = "Noch keine abgeschlossenen Timer-Sitzungen. Tage bleiben neutral, bis eine Sitzung gespeichert wird.";
+"activity_calendar_year_empty" = "Keine abgeschlossenen Timer-Sitzungen in diesem Jahr.";
 "activity_calendar_day_accessibility" = "%1$@, %2$@";
-"activity_level_0" = "No recorded timer activity";
-"activity_level_1" = "Light activity";
-"activity_level_2" = "Some activity";
-"activity_level_3" = "Varied activity";
-"activity_level_4" = "Broad activity";
-"activity_level_5" = "Very broad activity";
+"activity_level_0" = "Keine aufgezeichnete Timer-Aktivität";
+"activity_level_1" = "Leichte Aktivität";
+"activity_level_2" = "Etwas Aktivität";
+"activity_level_3" = "Abwechslungsreiche Aktivität";
+"activity_level_4" = "Breite Aktivität";
+"activity_level_5" = "Sehr breite Aktivität";
 
 // MARK: - Catalog search
-"catalog_search_prompt" = "Search skills";
-"catalog_filter_all" = "All";
-"catalog_filter_done" = "Done";
-"catalog_filter_not_done" = "Not done";
+"catalog_search_prompt" = "Fähigkeiten suchen";
+"catalog_filter_all" = "Összes";
+"catalog_filter_done" = "Kész";
+"catalog_filter_not_done" = "Nicht erledigt";
 "catalog_favorites_only" = "Favourites";
-"catalog_filter_reset" = "Reset";
-"catalog_no_results" = "No skills match these filters.";
+"catalog_filter_reset" = "Zurücksetzen";
+"catalog_no_results" = "Keine Fähigkeiten passen zu diesen Filtern.";
 "catalog_favorite_add" = "Add to favourites";
 "catalog_favorite_remove" = "Remove from favourites";
-"catalog_crystal_reward" = "Crystal for an obtained skill";
-"catalog_progress" = "Progress";
+"catalog_crystal_reward" = "Kristall für eine erlangte Fähigkeit";
+"catalog_progress" = "Fortschritt";
 
 /* T4S-035 timers, counters, theory threshold */
 
-"tracker_tool_label" = "Tool";
-"tracker_tool_progress" = "Progress";
-"tracker_tool_balance" = "Time balance";
-"time_balance_note" = "This balance can go up or down. It is not skill progress, and using it does not reduce hours already tracked.";
-"time_balance_empty_title" = "No time balance yet";
-"time_balance_empty_description" = "Add a balance when you want to save time and count it down later.";
-"time_balance_add_quarter" = "Add 15 min";
-"time_balance_new" = "New balance";
-"time_balance_remaining" = "Time remaining";
-"time_balance_start" = "Count down";
-"time_balance_stop" = "Pause";
-"time_balance_delete" = "Delete balance";
-"counter_delete" = "Delete counter";
-"theory_threshold_crystal" = "Hour-threshold color in Time4Skill. Not a guarantee of mastery.";
-"theory_milestone_21_title" = "21 hours";
-
+"tracker_tool_label" = "Werkzeug";
+"tracker_tool_progress" = "Fortschritt";
+"tracker_tool_balance" = "Időegyenleg";
+"time_balance_note" = "Dieses Guthaben kann steigen oder sinken. Es ist kein Fähigkeitsfortschritt und verringert bereits gespeicherte Stunden nicht.";
+"time_balance_empty_title" = "Noch kein Zeitguthaben";
+"time_balance_empty_description" = "Füge ein Guthaben hinzu, wenn du Zeit sparen und später herunterzählen möchtest.";
+"time_balance_add_quarter" = "15 Min. hinzufügen";
+"time_balance_new" = "Neues Guthaben";
+"time_balance_remaining" = "Verbleibende Zeit";
+"time_balance_start" = "Herunterzählen";
+"time_balance_stop" = "Szünet";
+"time_balance_delete" = "Guthaben löschen";
+"counter_delete" = "Zähler löschen";
+"theory_threshold_crystal" = "Óraküszöb színe a Time4Skillben. Nem a mesteri tudás garanciája.";
+"theory_milestone_21_title" = "21 óra";
 /* T4S-036 compendium, counters, catalog note */
-"catalog_exemplary_note" = "This screen lists the skills shipped with the app: the original set plus entries accepted from the developed collection. Pilot proposal files are not the catalog by themselves.";
-"theory_compendium_intro" = "Each tab is an hour mark already used by the progress bar. The crystal is that mark's color. The text explains what the mark does and does not mean.";
-"theory_hour_unit" = "hours";
-"theory_callout_example" = "Example";
-"theory_callout_caveat" = "Caveat";
-"theory_callout_takeaway" = "Takeaway";
-"theory_chapter_21_title" = "Getting past the beginning";
-"theory_chapter_21_lead" = "Twenty-one hours changes the color of the progress bar. It is not a research finding. The closest published method is Josh Kaufman's 20-hour framework for surviving the awkward start, and those two numbers are not the same claim.";
-"theory_chapter_21_mechanism_title" = "A method for the start";
-"theory_chapter_21_mechanism" = "Kaufman treats the beginning as a practical problem. Split the skill into smaller parts, learn enough to notice your own mistakes, remove barriers that make practice inconvenient, and spend focused time on one result. The book presents this as an author's method for getting started.";
-"theory_chapter_21_example" = "A person who wants three chords to sound clean can practise that result. \"Learn the guitar\" is a larger aim, and the first hours do not settle it.";
-"theory_chapter_100_title" = "One hundred hours, as an app mark";
-"theory_chapter_100_lead" = "One hundred hours is a Time4Skill milestone for time already logged. None of the studies collected in this compendium define 100 hours as the point at which someone becomes competent.";
-"theory_chapter_100_mechanism_title" = "What nearby research actually measured";
-"theory_chapter_100_mechanism" = "Two lines of work sit near this period without measuring it in hours. Cepeda, Pashler, Vul, Wixted, and Rohrer reviewed 317 experiments on verbal recall. Spacing sessions beat cramming in that literature, and the useful gap depended on how long the material had to be remembered. Lally, van Jaarsveld, Potts, and Wardle asked volunteers to repeat an eating, drinking, or activity behaviour in the same context. The modelled time to reach 95 percent of each person's own plateau varied widely. Missing one day did not erase the curve.";
-"theory_chapter_100_example" = "Playing a short piece on three different days shows which bar actually stayed in memory. One long evening of repetition does not answer that question.";
-"theory_chapter_100_caveat" = "The spacing review is about verbal recall. The habit study is about automaticity of a chosen behaviour, and its range was 18 to 254 days in the model reported with the paper, not a 100-hour competence line. Neither result says that 100 hours makes someone competent at photography, driving, or any other skill.";
-"theory_chapter_100_takeaway" = "Use the mark to notice whether you are coming back. Do not treat it as a level you have earned.";
-"theory_chapter_1000_title" = "Practice aimed at one gap";
-"theory_chapter_1000_lead" = "The 1,000-hour crystal records time spent. It does not mean the person is now a professional, a teacher, or someone who can earn a living from the skill.";
-"theory_chapter_1000_mechanism_title" = "Deliberate practice, and how much it explained";
-"theory_chapter_1000_mechanism" = "Ericsson, Krampe, and Tesch-Römer described deliberate practice as activity arranged to improve a specific aspect, with feedback and correction, rather than simply repeating what is already comfortable. Their 1993 paper developed that framework with studies of musicians. It did not publish one hour-count that creates experts in every field. Macnamara, Hambrick, and Oswald later estimated how much of the difference in performance was associated with deliberate practice. The shares differed by domain: higher in games, music, and sports than in education and professions.";
-"theory_chapter_1000_example" = "An hour spent on the passage that keeps breaking down is a different activity from an hour of playing pieces that already go well. The progress bar records the time either way.";
-"theory_chapter_1000_caveat" = "The domain percentages are shares of variance in that 2014 meta-analysis. They are not the portion of a skill a person can learn, and they are not anyone's chance of success. The paper does not set 1,000 hours as a professional threshold. Older wording in the app that treated 1,000 hours as the point of becoming a professional overstated the evidence.";
-"theory_chapter_10000_title" = "A famous number, not a law";
-"theory_chapter_10000_lead" = "Ten thousand hours became famous as a rule of mastery. The research it was drawn from did not establish a law, and the crystal on this tab only identifies the app's highest displayed hour mark.";
-"theory_chapter_10000_mechanism_title" = "How the number travelled";
-"theory_chapter_10000_mechanism" = "Malcolm Gladwell's Outliers (2008) made the round number widely known. It drew on research about expert performance, including the 1993 paper by Ericsson, Krampe, and Tesch-Römer on deliberate practice among musicians. Macnamara and Maitra (2019) discuss how that popular rule differs from the research. The popular version collapsed a complicated argument into one threshold that would guarantee mastery.";
-"theory_chapter_10000_example" = "Two people can log the same total and still have spent the time differently. One may have had a teacher correcting a specific fault. The other may have been repeating a piece they already play. The hour total does not record that difference.";
-"counter_kind_label" = "Kind";
-"counter_kind_manual" = "Manual count";
-"counter_kind_elapsed" = "Days since a date";
-"counter_anchor_label" = "Start date";
-"counter_refresh" = "Refresh value";
-"counter_refresh_unavailable" = "Set a start date before refreshing. Until then the value stays as it is.";
+"catalog_exemplary_note" = "Dieser Bildschirm listet die mit der App gelieferten Fähigkeiten: den ursprünglichen Satz plus Einträge aus dem erarbeiteten Katalog.";
+"theory_compendium_intro" = "Minden lap egy órajegy, amelyet a haladásjelző már használ. A kristály ennek a jegynek a színe. A szöveg megmagyarázza, mit jelent a jegy — és mit nem.";
+"theory_hour_unit" = "óra";
+"theory_callout_example" = "Példa";
+"theory_callout_caveat" = "Megjegyzés";
+"theory_callout_takeaway" = "Tanulság";
+"theory_chapter_21_title" = "Túljutni a kezdeten";
+"theory_chapter_21_lead" = "Huszonegy óra megváltoztatja a haladásjelző színét. Ez nem kutatási eredmény. A legközelebbi közölt módszer Josh Kaufman 20 órás kerete a kényelmetlen kezdet átvészelésére, és ez a két szám nem ugyanaz az állítás.";
+"theory_chapter_21_mechanism_title" = "Módszer a kezdéshez";
+"theory_chapter_21_mechanism" = "Kaufman a kezdetet gyakorlati problémaként kezeli. Ossza a készséget kisebb részekre, tanuljon eleget, hogy észrevegye saját hibáit, távolítsa el a gyakorlást nehezítő akadályokat, és szánjon koncentrált időt egy eredményre. A könyv ezt a szerző kezdési módszereként mutatja be.";
+"theory_chapter_21_example" = "Aki azt szeretné, hogy három akkord tisztán szóljon, pontosan azt az eredményt gyakorolhatja. A „gitártanulni” nagyobb cél, és az első órák nem döntik el.";
+"theory_chapter_100_title" = "Száz óra mint alkalmazásjegy";
+"theory_chapter_100_lead" = "Száz óra a Time4Skill mérföldköve a már rögzített időhöz. A kompendium egyik tanulmánya sem határozza meg a 100 órát úgy, mint amikor valaki kompetenssé válik.";
+"theory_chapter_100_mechanism_title" = "Mit mért valójában a közeli kutatás";
+"theory_chapter_100_mechanism" = "Két kutatási vonal közel van ehhez az időszakhoz anélkül, hogy órákban mérné. Cepeda, Pashler, Vul, Wixted és Rohrer 317 verbális felidézési kísérletet tekintett át. Az elosztott ülések abban az irodalomban legyőzték a magolást, és a hasznos távolság attól függött, meddig kell emlékezni az anyagra. Lally, van Jaarsveld, Potts és Wardle önkénteseket kért, hogy étkezési, ivási vagy aktivitási viselkedést ismételjenek ugyanabban a kontextusban. Az egyes személyek saját platójának 95 százalékához modellezett idő erősen változott. Egy nap kihagyása nem törölte a görbét.";
+"theory_chapter_100_example" = "Egy rövid darab három különböző napon való eljátszása megmutatja, melyik ütem maradt ténylegesen az emlékezetben. Egy hosszú ismétlő este nem válaszolja meg ezt a kérdést.";
+"theory_chapter_100_caveat" = "A távolság áttekintése a verbális felidézésről szól. A szokáskutatás a választott viselkedés automatizálódásáról, és a cikkel közölt modell tartománya 18–254 nap volt — nem 100 órás kompetenciavonal. Semmilyen eredmény nem mondja, hogy 100 óra kompetensé tesz valakit fényképezésben, vezetésben vagy más készségben.";
+"theory_chapter_100_takeaway" = "Használja a jegyet annak észrevételére, hogy visszatér-e. Ne kezelje megszerzett szintként.";
+"theory_chapter_1000_title" = "Egy résre irányuló gyakorlat";
+"theory_chapter_1000_lead" = "Az 1000 órás kristály a ráfordított időt rögzíti. Nem azt jelenti, hogy a személy most már szakember, tanár, vagy valaki, aki a készségből megélhet.";
+"theory_chapter_1000_mechanism_title" = "Szándékos gyakorlat, és mennyit magyarázott";
+"theory_chapter_1000_mechanism" = "Ericsson, Krampe és Tesch-Römer a szándékos gyakorlatot olyan tevékenységként írta le, amely egy konkrét szempont javítására van rendezve, visszajelzéssel és javítással, ahelyett hogy csak az már kényelmeset ismételné. 1993-as cikkük zenészek tanulmányaival fejlesztette a keretet. Nem közölt olyan óraszámot, amely minden területen szakértőket teremt. Macnamara, Hambrick és Oswald később becsülte, a teljesítménykülönbségek mekkora része kapcsolódott a szándékos gyakorlathoz. Az arányok területenként különböztek: magasabbak játékokban, zenében és sportban, mint oktatásban és szakmákban.";
+"theory_chapter_1000_example" = "Egy óra a még mindig széteső szakaszon más tevékenység, mint egy óra már jól menő darabokkal. A haladásjelző mindkét esetben rögzíti az időt.";
+"theory_chapter_1000_caveat" = "A területenkénti százalékok a 2014-es metaanalízis varianciahányadai. Nem a megtanulható készség része, és nem bárki sikerének esélye. A cikk nem állít 1000 órás szakmai küszöböt. Az alkalmazás korábbi szövege, amely a 1000 órát a szakemberré válás pontjaként kezelte, túlértékelte a bizonyítékot.";
+"theory_chapter_10000_title" = "Híres szám, nem törvény";
+"theory_chapter_10000_lead" = "Tízezer óra mesterségszabályként vált híressé. A kutatás, amelyből származott, nem állított fel törvényt, és ezen a lapon a kristály csak az alkalmazás legmagasabb megjelenített órajejét jelöli.";
+"theory_chapter_10000_mechanism_title" = "Hogyan utazott a szám";
+"theory_chapter_10000_mechanism" = "Malcolm Gladwell Outliers (2008) című könyve tette széles körben ismertté a kerek számot. Szakértői teljesítménykutatásra támaszkodott, köztük Ericsson, Krampe és Tesch-Römer 1993-as cikkére a zenészek szándékos gyakorlatáról. Macnamara és Maitra (2019) tárgyalja, miben tér el ez a népszerű szabály a kutatástól. A népszerű változat összetett érvet egy mesterséget garantáló küszöbbé sűrített.";
+"theory_chapter_10000_example" = "Két ember rögzítheti ugyanazt az összeget, és mégis másképp töltheti az időt. Az egyiknek lehetett tanára, aki konkrét hibát javított. A másik már játszott darabot ismételhetett. Az órák összege nem rögzíti ezt a különbséget.";
+"counter_kind_label" = "Art";
+"counter_kind_manual" = "Manueller Zähler";
+"counter_kind_elapsed" = "Tage seit einem Datum";
+"counter_anchor_label" = "Startdatum";
+"counter_refresh" = "Wert aktualisieren";
+"counter_refresh_unavailable" = "Lege ein Startdatum fest, bevor du aktualisierst. Bis dahin bleibt der Wert unverändert.";
 
 /* T4S-039 stats and overview */
-"stats_tab_overview" = "Overview";
-"stats_tab_time" = "Practice time";
-"stats_tab_skills" = "Skills";
-"stats_tab_thresholds" = "Hour thresholds";
-"stats_tab_activity" = "Activity";
-"stats_collection_heading" = "Skill collection";
-"stats_tracked_heading" = "Tracked skills";
-"stats_catalog_obtained_format" = "Obtained in the collection: %d of %d";
-"stats_catalog_not_obtained_format" = "Not yet marked obtained: %d";
-"stats_tracked_with_time_format" = "With recorded time: %d";
-"stats_tracked_without_time_format" = "With no recorded time: %d";
-"stats_group_empty" = "Nothing in this group.";
-"stats_thresholds_note" = "The 21, 100, 1,000 and 10,000 hour marks belong to the app. The number is how many tracked skills have at least that much recorded time. It is not a separate personal goal.";
-"stats_thresholds_empty" = "There are no tracked skills yet, so the thresholds have nothing to show.";
+"stats_tab_overview" = "Áttekintés";
+"stats_tab_time" = "Übungszeit";
+"stats_tab_skills" = "Fähigkeiten";
+"stats_tab_thresholds" = "Stundenschwellen";
+"stats_tab_activity" = "Aktivität";
+"stats_collection_heading" = "Fähigkeitensammlung";
+"stats_tracked_heading" = "Verfolgte Fähigkeiten";
+"stats_catalog_obtained_format" = "In der Sammlung erlangt: %d von %d";
+"stats_catalog_not_obtained_format" = "Noch nicht als erlangt markiert: %d";
+"stats_tracked_with_time_format" = "Mit erfasster Zeit: %d";
+"stats_tracked_without_time_format" = "Ohne erfasste Zeit: %d";
+"stats_group_empty" = "Nichts in dieser Gruppe.";
+"stats_thresholds_note" = "Die Marken 21, 100, 1.000 und 10.000 Stunden gehören zur App. Die Zahl zeigt, wie viele verfolgte Fähigkeiten mindestens so viel Zeit haben.";
+"stats_thresholds_empty" = "Es gibt noch keine verfolgten Fähigkeiten, daher haben die Schwellen nichts anzuzeigen.";
 "stats_threshold_count_format" = "%d";
-"month_activity_title" = "This month";
-"month_activity_previous" = "Previous month";
-"month_activity_next" = "Next month";
-"month_activity_practice" = "Day with a saved session";
-"month_activity_obtained" = "Day a skill was marked obtained";
-"month_activity_empty" = "No saved sessions or obtained dates this month. A total of hours is not spread across days.";
-"overview_tracking_tools" = "Tracking tools";
+"month_activity_title" = "Ez a hónap";
+"month_activity_previous" = "Vorheriger Monat";
+"month_activity_next" = "Nächster Monat";
+"month_activity_practice" = "Tag mit gespeicherter Sitzung";
+"month_activity_obtained" = "Tag, an dem eine Fähigkeit als erlangt markiert wurde";
+"month_activity_empty" = "Keine gespeicherten Sitzungen oder Erlangungsdaten in diesem Monat. Eine Stundensumme wird nicht über Tage verteilt.";
+"overview_tracking_tools" = "Tracking-Werkzeuge";
 
 /* T4S-040 custom skill filter */
 "catalog_filter_custom" = "Saját";
@@ -569,17 +561,17 @@
 "language_script_glagolitic" = "Glagolita írás";
 
 /* T4S-042 time balance + language visibility */
-"time_balance_minus_start" = "− Start";
-"time_balance_plus_start" = "+ Start";
-"time_balance_minus_stop" = "− Stop";
-"time_balance_plus_stop" = "+ Stop";
-"time_balance_a11y_decrease" = "Start decreasing the time balance";
-"time_balance_a11y_increase" = "Start increasing the time balance";
-"time_balance_a11y_stop_decrease" = "Stop decreasing the time balance";
-"time_balance_a11y_stop_increase" = "Stop increasing the time balance";
-"time_balance_bar" = "Time balance";
-"time_balance_zero_sound" = "Play a sound when the balance reaches zero";
-"time_balance_sound_section" = "Time balance";
+"time_balance_minus_start" = "− Indít";
+"time_balance_plus_start" = "+ Indít";
+"time_balance_minus_stop" = "− Állj";
+"time_balance_plus_stop" = "+ Állj";
+"time_balance_a11y_decrease" = "Verringern des Zeitguthabens starten";
+"time_balance_a11y_increase" = "Erhöhen des Zeitguthabens starten";
+"time_balance_a11y_stop_decrease" = "Verringern des Zeitguthabens stoppen";
+"time_balance_a11y_stop_increase" = "Erhöhen des Zeitguthabens stoppen";
+"time_balance_bar" = "Zeitguthaben";
+"time_balance_zero_sound" = "Ton abspielen, wenn das Guthaben null erreicht";
+"time_balance_sound_section" = "Zeitguthaben";
 
 /* T4S-UI-042 supplement: converter nav + recent tracking */
 "time_converter_nav_title" = "Időátváltó";
@@ -588,3 +580,5 @@
 "stats_this_month" = "Ez a hónap";
 
 "export_pdf_generated_on_format" = "Létrehozva: %@";
+"timer_start" = "Indít";
+"timer_stop" = "Állj";

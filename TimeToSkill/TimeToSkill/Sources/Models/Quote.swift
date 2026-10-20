@@ -11,4 +11,9 @@ struct Quote: Decodable, Identifiable {
     var id: UUID { UUID() }  // computed unique ID each time (fine for random display)
     let quote: String
     let author: String
+
+    init(quote: String, author: String) {
+        self.quote = quote
+        self.author = author
+    }
 }

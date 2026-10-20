@@ -27,7 +27,7 @@ struct AboutView: View {
 
                 AboutSection(title: "ab_section_about_app", items: [
                     "ab_app_name",
-                    String(format: NSLocalizedString("ab_version", comment: "Version format string"), appVersion),
+                    String(format: L10n.string("ab_version"), appVersion),
                     "ab_developer"
                 ])
 
@@ -65,7 +65,7 @@ struct AboutView: View {
             .padding()
             .macOSContentWidth(700)
         }
-        .navigationTitle(LocalizedStringKey("ab_navigation_title"))
+        .navigationTitle(Text(verbatim: L10n.string("ab_navigation_title")))
 
     }
 
@@ -73,9 +73,9 @@ struct AboutView: View {
     /// depending on the width available (see `ViewThatFits` above).
     @ViewBuilder
     private var supportLinks: some View {
-        Link(LocalizedStringKey("privacy_policy_link"), destination: Self.privacyPolicyURL)
-        Link(LocalizedStringKey("terms_of_use_link"), destination: Self.termsOfUseURL)
-        Link(LocalizedStringKey("support_link"), destination: Self.supportURL)
+        Link(L10n.string("privacy_policy_link"), destination: Self.privacyPolicyURL)
+        Link(L10n.string("terms_of_use_link"), destination: Self.termsOfUseURL)
+        Link(L10n.string("support_link"), destination: Self.supportURL)
     }
 }
 
@@ -92,18 +92,19 @@ struct AboutSection<Content: View>: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(LocalizedStringKey(title))
+            Text(verbatim: L10n.string(title))
                 .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(AppColors.primary)
 
             ForEach(items, id: \.self) { key in
                 if key.hasPrefix("ab_") {
-                    Text(LocalizedStringKey(key))
+                    Text(verbatim: L10n.string(key))
                         .font(.body)
                         .foregroundColor(AppColors.onSurface)
                 } else {
-                    Text(key)
+                    // Already resolved (e.g. version line) — never re-look up.
+                    Text(verbatim: key)
                         .font(.body)
                         .foregroundColor(AppColors.onSurface)
                 }

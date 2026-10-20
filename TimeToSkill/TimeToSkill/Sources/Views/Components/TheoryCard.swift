@@ -11,38 +11,41 @@ struct TheoryCard: View {
     let topic: TheoryTopic
     var onShowDetails: () -> Void
 
+    @ObservedObject private var language = AppLanguage.shared
+
     var body: some View {
+        let _ = language.resolved.presentationIdentity
         VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .firstTextBaseline, spacing: 8) {
                 thresholdCrystal(hours: topic.hourMark)
-                Text(LocalizedStringKey(topic.titleKey))
+                Text(verbatim: L10n.string(topic.titleKey))
                     .font(.title3)
                     .fontWeight(.semibold)
                     .fixedSize(horizontal: false, vertical: true)
             }
 
-            Text(LocalizedStringKey(topic.summaryKey))
+            Text(verbatim: L10n.string(topic.summaryKey))
                 .font(.body)
                 .fixedSize(horizontal: false, vertical: true)
 
             VStack(alignment: .leading, spacing: 4) {
-                Text(LocalizedStringKey("theory_takeaway_label"))
+                LText(key: "theory_takeaway_label")
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                Text(LocalizedStringKey(topic.takeawayKey))
+                Text(verbatim: L10n.string(topic.takeawayKey))
                     .font(.subheadline)
                     .fontWeight(.medium)
                     .fixedSize(horizontal: false, vertical: true)
             }
 
             Button(action: onShowDetails) {
-                Text(LocalizedStringKey("theory_sources_button"))
+                LText(key: "theory_sources_button")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(Text(LocalizedStringKey("theory_sources_accessibility")))
+            .accessibilityLabel(Text(verbatim: L10n.string("theory_sources_accessibility")))
             .accessibilityIdentifier("TheorySources_\(topic.id)")
         }
         .padding()
@@ -56,13 +59,15 @@ struct TheoryCard: View {
 struct TheoryDetailView: View {
     let topic: TheoryTopic
     @Environment(\.dismiss) private var dismiss
+    @ObservedObject private var language = AppLanguage.shared
 
     var body: some View {
+        let _ = language.resolved.presentationIdentity
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
                     thresholdCrystal(hours: topic.hourMark)
-                    Text(LocalizedStringKey(topic.titleKey))
+                    Text(verbatim: L10n.string(topic.titleKey))
                         .font(.title2)
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: true)
@@ -74,14 +79,14 @@ struct TheoryDetailView: View {
 
                 if let intro = topic.findingsIntroKey, !topic.findings.isEmpty {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(LocalizedStringKey(intro))
+                        Text(verbatim: L10n.string(intro))
                             .font(.subheadline)
                             .fixedSize(horizontal: false, vertical: true)
                         ForEach(topic.findings) { finding in
                             HStack(alignment: .firstTextBaseline) {
-                                Text(LocalizedStringKey(finding.labelKey))
+                                Text(verbatim: L10n.string(finding.labelKey))
                                 Spacer(minLength: 12)
-                                Text(LocalizedStringKey(finding.valueKey))
+                                Text(verbatim: L10n.string(finding.valueKey))
                                     .foregroundStyle(.secondary)
                             }
                             .font(.subheadline)
@@ -93,12 +98,16 @@ struct TheoryDetailView: View {
                 detailBlock("theory_detail_limitation", textKey: topic.limitationKey)
 
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(LocalizedStringKey("theory_detail_links"))
+                    LText(key: "theory_detail_links")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                     ForEach(topic.links) { link in
                         Link(destination: link.url) {
-                            Label(LocalizedStringKey(link.labelKey), systemImage: "arrow.up.right")
+                            Label {
+                                Text(verbatim: L10n.string(link.labelKey))
+                            } icon: {
+                                Image(systemName: "arrow.up.right")
+                            }
                                 .font(.subheadline)
                         }
                     }
@@ -107,11 +116,13 @@ struct TheoryDetailView: View {
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .navigationTitle(LocalizedStringKey("theory_detail_title"))
+        .navigationTitle(Text(verbatim: L10n.string("theory_detail_title")))
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
-                Button(LocalizedStringKey("button_done")) {
+                Button {
                     dismiss()
+                } label: {
+                    LText(key: "button_done")
                 }
             }
         }
@@ -120,10 +131,10 @@ struct TheoryDetailView: View {
 
     private func detailBlock(_ labelKey: String, textKey: String) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(LocalizedStringKey(labelKey))
+            Text(verbatim: L10n.string(labelKey))
                 .font(.caption)
                 .foregroundStyle(.secondary)
-            Text(LocalizedStringKey(textKey))
+            Text(verbatim: L10n.string(textKey))
                 .font(.subheadline)
                 .fixedSize(horizontal: false, vertical: true)
         }

@@ -75,8 +75,7 @@
 "support_nav_title" = "지원";
 
 // MARK: - TheoryView
-"theory_title" = "학습 시간 이론";
-
+"theory_title" = "학습 이론";
 "theory_10k_title" = "1만 시간 법칙";
 "theory_10k_author" = "말콤 글래드웰 (앤더스 에릭슨 기반)";
 "theory_10k_description" = "달인이 되려면 약 만 시간의 의도적인 연습이 필요합니다. 음악가, 운동선수, 체스 선수 등 엘리트 수행자에게 해당됩니다. 양뿐만 아니라 질도 중요합니다. 지나치게 단순화되었다는 비판도 있습니다.";
@@ -101,7 +100,6 @@
 "theory_comparison_text" = "• 20시간 → 좋은 출발 (아마추어)\n• 100시간 → 견고함 (중급자)\n• 1,000시간 → 전문가\n• 10,000시간 → 달인 (엘리트)";
 
 "theory_nav_title" = "학습 이론";
-
 // MARK: - StatsView
 "stats_title_overview" = "📊 스킬 진행 개요";
 "stats_nav_title" = "나의 통계";
@@ -134,9 +132,9 @@
 
 "skill_name_section" = "이름";
 "skill_name_label" = "스킬 이름";
-"skill_icon_label" = "Icon";
-"skill_emoji_picker_title" = "Choose Icon";
-"skill_emoji_picker_none" = "None";
+"skill_icon_label" = "아이콘";
+"skill_emoji_picker_title" = "아이콘 선택";
+"skill_emoji_picker_none" = "없음";
 "skill_emoji_section_faces" = "표정";
 "skill_emoji_section_work" = "업무";
 "skill_emoji_section_creativity" = "창의성";
@@ -213,7 +211,7 @@
 "time_mean_minutes_format" = "평균 간격: %@ 분";
 "time_std_minutes_format" = "표준편차: %@ 분";
 "distribution_nav_title" = "분포";
-"distribution_empty_message" = "No sessions recorded for this skill yet.";
+"distribution_empty_message" = "이 스킬에 기록된 세션이 아직 없습니다.";
 "global_time_distribution_title" = "전체 시간 분포";
 
 // MARK: - Sort options (Exemplary)
@@ -329,51 +327,51 @@
 "sidebar_overview" = "개요";
 
 // MARK: - SplashView
-"splash_presents" = "presents";
-"splash_tagline" = "Track your time. Learn smarter. Grow with patience.";
-"splash_reflection_1" = "Every hour you practice is a step toward mastery.";
-"splash_reflection_2" = "Skill is the reward of time well spent.";
-"splash_reflection_3" = "Small hours, repeated, become mastery.";
-"splash_reflection_4" = "Progress is patience made visible.";
-"splash_reflection_5" = "Time invested in learning is never wasted.";
+"splash_presents" = "선보입니다";
+"splash_tagline" = "시간을 기록하세요. 더 똑똑하게 배우세요. 인내하며 성장하세요.";
+"splash_reflection_1" = "연습하는 매 시간은 숙달을 향한 한 걸음입니다.";
+"splash_reflection_2" = "스킬은 잘 쓴 시간에 대한 보상입니다.";
+"splash_reflection_3" = "작은 시간이 반복되면 숙달이 됩니다.";
+"splash_reflection_4" = "진전은 눈에 보이게 된 인내입니다.";
+"splash_reflection_5" = "학습에 투자한 시간은 결코 낭비되지 않습니다.";
 
 // MARK: - Per-skill timer session chart (T4S-001)
-"session_chart_open" = "Session chart";
-"session_chart_nav_title" = "Timer sessions";
-"session_chart_metric" = "Timer sessions and manual hour additions for this skill.";
-"session_chart_bin_width" = "Bar width";
-"session_chart_detail_wide" = "Wide";
-"session_chart_detail_medium" = "Medium";
-"session_chart_detail_narrow" = "Narrow";
-"session_chart_bin_minutes" = "%d min";
-"session_chart_bin_range" = "%1$@–%2$@ min";
-"session_chart_bin_overflow" = "≥ %1$@ min";
-"session_chart_count_format" = "%d sessions";
-"session_chart_mean_format" = "Mean: %@ min";
+"session_chart_open" = "세션 차트";
+"session_chart_nav_title" = "타이머 세션";
+"session_chart_metric" = "이 스킬의 타이머 세션과 수동 시간 추가.";
+"session_chart_bin_width" = "막대 너비";
+"session_chart_detail_wide" = "넓게";
+"session_chart_detail_medium" = "보통";
+"session_chart_detail_narrow" = "좁게";
+"session_chart_bin_minutes" = "%d분";
+"session_chart_bin_range" = "%1$@–%2$@분";
+"session_chart_bin_overflow" = "≥ %1$@분";
+"session_chart_count_format" = "%d세션";
+"session_chart_mean_format" = "평균: %@분";
 "session_chart_mean_unavailable" = "—";
-"session_chart_empty" = "No completed timer sessions for this skill yet.";
-"session_chart_curve_caption" = "The translucent curve is a normal-distribution reference for these sessions. It is not a prediction and does not mean the sessions follow a normal distribution.";
-"session_chart_curve_hidden" = "Not enough variation or completed timer sessions to show a stable reference curve.";
-"session_chart_outside_range_format" = "%d observations lie outside the visible range.";
-"session_chart_accessibility" = "Timer session duration chart";
-"session_chart_row_accessibility" = "%1$@, %2$d sessions";
+"session_chart_empty" = "이 스킬에 완료된 타이머 세션이 아직 없습니다.";
+"session_chart_curve_caption" = "반투명 곡선은 이 세션들의 정규분포 참고선입니다. 예측이 아니라 안내입니다.";
+"session_chart_curve_hidden" = "안정적인 참고 곡선을 보이기엔 분산이나 완료 세션이 부족합니다.";
+"session_chart_outside_range_format" = "%d개 관측값이 보이는 범위를 벗어납니다.";
+"session_chart_accessibility" = "타이머 세션 시간 차트";
+"session_chart_row_accessibility" = "%1$@, %2$d세션";
 
 // MARK: - Theory topics (T4S-002)
-"theory_intro" = "Ideas you can try while you practise. The short version is enough. Open sources only when you want the research context.";
-"theory_takeaway_label" = "Practical takeaway";
-"theory_sources_button" = "Sources & research details ↗";
-"theory_sources_accessibility" = "Sources and research details";
-"theory_detail_title" = "Research details";
-"theory_detail_citation" = "Citation";
-"theory_detail_source_type" = "Source type";
-"theory_detail_context" = "Research context";
-"theory_detail_limitation" = "Limitation";
-"theory_detail_links" = "Source links";
-"theory_type_framework" = "Author's practical framework";
-"theory_type_article" = "Research article";
-"theory_type_meta" = "Meta-analysis";
-"theory_link_author_site" = "Author's website";
-"theory_link_publisher" = "Publisher";
+"theory_intro" = "연습하면서 시도해볼 수 있는 아이디어입니다. 짧은 설명이면 충분합니다. 연구 맥락이 필요할 때만 출처를 여세요.";
+"theory_takeaway_label" = "실용적 핵심";
+"theory_sources_button" = "출처 및 연구 세부정보 ↗";
+"theory_sources_accessibility" = "출처 및 연구 세부정보";
+"theory_detail_title" = "연구 세부정보";
+"theory_detail_citation" = "인용";
+"theory_detail_source_type" = "출처 유형";
+"theory_detail_context" = "연구 맥락";
+"theory_detail_limitation" = "한계";
+"theory_detail_links" = "출처 링크";
+"theory_type_framework" = "저자의 실용적 틀";
+"theory_type_article" = "연구 논문";
+"theory_type_meta" = "메타분석";
+"theory_link_author_site" = "저자 웹사이트";
+"theory_link_publisher" = "출판사";
 "theory_link_ericsson_1993" = "Ericsson, Krampe, and Tesch-Römer, 1993";
 "theory_link_macnamara_2019" = "Macnamara and Maitra, 2019";
 "theory_link_macnamara_2014" = "Macnamara, Hambrick, and Oswald, 2014";
@@ -381,172 +379,166 @@
 "theory_link_cepeda_2006" = "Cepeda and colleagues, 2006";
 "theory_link_lally_2010" = "Lally and colleagues, 2010";
 
-"theory_topic_first20_title" = "The First 20 Hours: Get Past the Beginning";
-"theory_topic_first20_summary" = "Starting a skill is often frustrating because everything is unfamiliar. Josh Kaufman proposes a practical approach: break a skill into smaller parts, focus on what matters, remove barriers to practice, and spend focused time improving. His 20-hour framework is a starting method, not a scientific guarantee that any skill can be mastered in 20 hours.";
-"theory_topic_first20_takeaway" = "Choose one specific thing you want to be able to do better after your first 20 hours.";
+"theory_topic_first20_title" = "첫 20시간: 시작을 지나기";
+"theory_topic_first20_summary" = "기술 시작은 모든 것이 낯설어 자주 좌절됩니다. Josh Kaufman은 실용적 접근을 제안합니다. 기술을 나누고, 중요한 것에 집중하고, 연습 장애를 없애고, 개선에 집중된 시간을 쓰세요. 그의 20시간 틀은 시작 방법이지, 어떤 기술이든 20시간에 숙달된다는 과학적 보장이 아닙니다.";
+"theory_topic_first20_takeaway" = "첫 20시간 뒤에 더 잘하고 싶은 구체적인 한 가지를 고르세요.";
 "theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Ebook published in 2013; paperback published in 2014.";
-"theory_topic_first20_context" = "Author's practical framework and book, not a controlled scientific study.";
-"theory_topic_first20_limitation" = "The 20-hour framework is a starting method. It is not a scientifically established time needed to master a skill.";
-
-"theory_topic_deliberate_title" = "Practice With a Purpose";
-"theory_topic_deliberate_summary" = "Repeating an activity is not the same as deliberately improving it. Choose a specific aspect to work on, practise with a clear goal, notice errors, and adjust your next attempt. Time is useful to track, but the way you practise matters too.";
-"theory_topic_deliberate_takeaway" = "Before a session, decide what one thing you want to improve.";
+"theory_topic_first20_context" = "저자의 실용적 틀과 책이며, 통제된 과학 연구가 아닙니다.";
+"theory_topic_first20_limitation" = "20시간 틀은 시작 방법입니다. 숙달에 필요한 과학적으로 확립된 시간이 아닙니다.";
+"theory_topic_deliberate_title" = "목적을 가지고 연습하기";
+"theory_topic_deliberate_summary" = "활동을 반복하는 것은 의도적으로 개선하는 것과 같지 않습니다. 특정 측면을 고르고, 분명한 목표로 연습하고, 오류를 알아차리고, 다음 시도를 조정하세요. 시간 추적은 유용하지만 연습 방식도 중요합니다.";
+"theory_topic_deliberate_takeaway" = "세션 전에 개선하고 싶은 한 가지를 정하세요.";
 "theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
-"theory_topic_deliberate_context" = "The paper developed a framework for expert performance and reported studies involving musicians, including violinists and pianists.";
-"theory_topic_deliberate_limitation" = "The paper does not establish one fixed number of practice hours that guarantees mastery across all skills.";
-
-"theory_topic_10k_title" = "10,000 Hours: A Popular Rule, Not a Law";
-"theory_topic_10k_summary" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). It drew on research about expert performance, but the popular version simplified the original argument. There is no universal magic number of hours that guarantees mastery.";
-"theory_topic_10k_takeaway" = "Use long-term milestones to celebrate persistence, not to predict when you will become an expert.";
+"theory_topic_deliberate_context" = "논문은 전문가 수행 틀을 발전시켰고 바이올리니스트와 피아니스트를 포함한 음악가 연구를 보고했습니다.";
+"theory_topic_deliberate_limitation" = "논문은 모든 기술에서 숙달을 보장하는 고정 연습 시간 수를 확립하지 않습니다.";
+"theory_topic_10k_title" = "1만 시간: 대중 규칙, 법칙 아님";
+"theory_topic_10k_summary" = "1만 시간 규칙은 Malcolm Gladwell의 Outliers(2008)로 널리 알려졌습니다. 전문가 수행 연구에 기반했지만 대중 버전은 원래 논증을 단순화했습니다. 숙달을 보장하는 보편적 마법의 시간 수는 없습니다.";
+"theory_topic_10k_takeaway" = "장기 이정표는 전문가가 되는 시기를 예측하는 데가 아니라 끈기를 축하하는 데 쓰세요.";
 "theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara and Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
-"theory_topic_10k_context" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). The 2019 paper discusses how that popular rule differs from the 1993 research.";
-"theory_topic_10k_limitation" = "Ericsson and colleagues did not establish a universal 10,000-hour mastery law. There is no universal number of hours that guarantees mastery.";
-
-"theory_topic_variance_title" = "Practice Matters, but It Is Not Everything";
-"theory_topic_variance_summary" = "A 2014 meta-analysis examined deliberate practice across several fields. It found that practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_takeaway" = "Practice is something you can influence. Results also depend on other factors, which differ between activities.";
+"theory_topic_10k_context" = "1만 시간 규칙은 Malcolm Gladwell의 Outliers(2008)로 널리 알려졌습니다. 2019년 논문은 그 대중 규칙이 1993년 연구와 어떻게 다른지 논의합니다.";
+"theory_topic_10k_limitation" = "Ericsson과 동료들은 보편적 1만 시간 숙달 법칙을 확립하지 않았습니다. 숙달을 보장하는 보편적 시간 수는 없습니다.";
+"theory_topic_variance_title" = "연습은 중요하지만 전부가 아니다";
+"theory_topic_variance_summary" = "2014년 메타분석은 여러 분야에서 의도적 연습을 조사했습니다. 연습은 수행과 관련되었지만 기여는 영역마다 크게 달랐습니다.";
+"theory_topic_variance_takeaway" = "연습은 당신이 영향을 줄 수 있는 것입니다. 결과는 활동마다 다른 다른 요인에도 달려 있습니다.";
 "theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick, and Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
-"theory_topic_variance_context" = "A 2014 meta-analysis examined deliberate practice across several fields. Practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_findings_intro" = "The estimated share of performance differences explained by deliberate practice in this analysis was:";
-"theory_topic_variance_limitation" = "These percentages refer to variance in performance explained in this meta-analysis. They are not the percentage of skill that a person can learn, and they are not an individual's probability of success.";
-"theory_finding_games" = "Games";
+"theory_topic_variance_context" = "2014년 메타분석은 여러 분야에서 의도적 연습을 조사했습니다. 연습은 수행과 관련되었지만 기여는 영역마다 크게 달랐습니다.";
+"theory_topic_variance_findings_intro" = "이 분석에서 의도적 연습이 설명한 수행 차이의 추정 몫은 다음과 같습니다.";
+"theory_topic_variance_limitation" = "이 백분율은 이 메타분석에서 설명된 수행 분산을 가리킵니다. 사람이 배울 수 있는 기술 비율도, 개인 성공 확률도 아닙니다.";
+"theory_finding_games" = "게임";
 "theory_finding_games_value" = "26%";
-"theory_finding_music" = "Music";
-"theory_finding_sports" = "Sports";
-"theory_finding_education" = "Education";
-"theory_finding_professions" = "Professions";
+"theory_finding_music" = "음악";
+"theory_finding_sports" = "스포츠";
+"theory_finding_education" = "교육";
+"theory_finding_professions" = "직업";
 "theory_finding_music_value" = "21%";
 "theory_finding_sports_value" = "18%";
 "theory_finding_education_value" = "4%";
 "theory_finding_professions_value" = "Less than 1%";
 
-"theory_topic_spacing_title" = "Return to a Skill, Rather Than Cramming Everything Together";
-"theory_topic_spacing_summary" = "Research on distributed practice supports spreading learning across multiple sessions rather than relying only on massed practice. The best spacing depends on the material and on how long you want to retain it.";
-"theory_topic_spacing_takeaway" = "Try returning to a skill over several days and observe what you remember and what needs more practice.";
+"theory_topic_spacing_title" = "한꺼번에 몰아넣기보다 기술로 돌아오기";
+"theory_topic_spacing_summary" = "분산 연습 연구는 집중 연습에만 의존하기보다 여러 세션에 학습을 나누는 것을 지지합니다. 최적 간격은 자료와 얼마나 오래 유지하고 싶은지에 달립니다.";
+"theory_topic_spacing_takeaway" = "며칠에 걸쳐 기술로 돌아와 무엇을 기억하고 더 연습이 필요한지 관찰해 보세요.";
 "theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted, and Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
-"theory_topic_spacing_context" = "The meta-analysis reviewed 317 experiments across 184 articles, with 839 assessments of distributed practice.";
-"theory_topic_spacing_limitation" = "These results concern learning and recall tasks. They do not present one schedule as optimal for every physical, social, artistic, or professional skill.";
-
-"theory_topic_habit_title" = "A Habit Does Not Have a Universal Deadline";
-"theory_topic_habit_summary" = "Repeating an action in a consistent context can make it more automatic over time. However, the time required differs between people and behaviours. Missing one day does not mean that all progress has been lost.";
-"theory_topic_habit_takeaway" = "Connect an activity to a situation you encounter regularly, and resume without guilt when a session is missed.";
+"theory_topic_spacing_context" = "메타분석은 184개 논문의 317개 실험을 검토했으며 분산 연습 평가 839건을 포함했습니다.";
+"theory_topic_spacing_limitation" = "이 결과는 학습과 회상 과제에 관한 것입니다. 모든 신체·사회·예술·직업 기술에 최적인 하나의 일정은 제시하지 않습니다.";
+"theory_topic_habit_title" = "습관에는 보편적 기한이 없다";
+"theory_topic_habit_summary" = "같은 맥락에서 행동을 반복하면 시간이 지나며 더 자동적일 수 있습니다. 다만 필요한 시간은 사람과 행동마다 다릅니다. 하루를 놓친다고 모든 진전이 사라진 것은 아닙니다.";
+"theory_topic_habit_takeaway" = "정기적으로 만나는 상황에 활동을 연결하고, 세션을 놓쳐도 죄책감 없이 다시 시작하세요.";
 "theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, and Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
-"theory_topic_habit_context" = "Ninety-six volunteers selected an eating, drinking, or activity behaviour to repeat in the same context for 12 weeks. Eighty-two participants provided sufficient data for analysis. The modelled time to reach 95% of the asymptotic automaticity estimate varied from 18 to 254 days.";
-"theory_topic_habit_limitation" = "This was a habit-formation study, not a study of how many hours it takes to master a skill. It does not support a 21-hour mastery threshold or a universal 21-day habit rule.";
-
-"theory_milestones_title" = "Progress milestones";
+"theory_topic_habit_context" = "96명의 자원봉사자가 같은 맥락에서 12주 동안 반복할 먹기·마시기·활동 행동을 골랐습니다. 82명이 충분한 데이터를 제공했습니다. 점근 자동화 추정의 95%에 도달하는 모델 시간은 18~254일이었습니다.";
+"theory_topic_habit_limitation" = "이는 습관 형성 연구이지, 숙달에 몇 시간이 걸리는지에 대한 연구가 아닙니다. 21시간 숙달 임계값이나 보편적 21일 습관 규칙을 지지하지 않습니다.";
+"theory_milestones_title" = "진행 이정표";
 "theory_milestones_note" = "The 100-hour, 1,000-hour, and 10,000-hour marks in Time4Skill record time you have spent. They are progress milestones, not scientifically validated stages, and they do not predict when you will become an expert.";
-"theory_milestone_100_title" = "100 hours";
-"theory_milestone_1000_title" = "1,000 hours";
-"theory_milestone_10000_title" = "10,000 hours";
-"theory_milestone_note" = "Progress milestone, not a universal stage of expertise.";
+"theory_milestone_100_title" = "100시간";
+"theory_milestone_1000_title" = "1000시간";
+"theory_milestone_10000_title" = "1만 시간";
+"theory_milestone_note" = "진행 이정표이며, 전문성의 보편적 단계가 아닙니다.";
 
 // MARK: - Year activity calendar (T4S-003)
-"activity_calendar_title" = "Practice this year";
-"activity_calendar_previous" = "Previous year";
-"activity_calendar_next" = "Next year";
-"activity_calendar_summary" = "%1$d active days · %2$d skills";
-"activity_calendar_empty" = "No completed timer sessions yet. Days stay neutral until a timer session is saved.";
-"activity_calendar_year_empty" = "No completed timer sessions in this year.";
+"activity_calendar_title" = "올해의 연습";
+"activity_calendar_previous" = "이전 해";
+"activity_calendar_next" = "다음 해";
+"activity_calendar_summary" = "%1$d 활동일 · %2$d 스킬";
+"activity_calendar_empty" = "완료된 타이머 세션이 아직 없습니다. 세션이 저장될 때까지 날짜는 중립입니다.";
+"activity_calendar_year_empty" = "올해 완료된 타이머 세션이 없습니다.";
 "activity_calendar_day_accessibility" = "%1$@, %2$@";
-"activity_level_0" = "No recorded timer activity";
-"activity_level_1" = "Light activity";
-"activity_level_2" = "Some activity";
-"activity_level_3" = "Varied activity";
-"activity_level_4" = "Broad activity";
-"activity_level_5" = "Very broad activity";
+"activity_level_0" = "기록된 타이머 활동 없음";
+"activity_level_1" = "가벼운 활동";
+"activity_level_2" = "약간의 활동";
+"activity_level_3" = "다양한 활동";
+"activity_level_4" = "넓은 활동";
+"activity_level_5" = "매우 넓은 활동";
 
 // MARK: - Catalog search
-"catalog_search_prompt" = "Search skills";
-"catalog_filter_all" = "All";
-"catalog_filter_done" = "Done";
-"catalog_filter_not_done" = "Not done";
+"catalog_search_prompt" = "스킬 검색";
+"catalog_filter_all" = "전체";
+"catalog_filter_done" = "완료";
+"catalog_filter_not_done" = "미완료";
 "catalog_favorites_only" = "Favourites";
-"catalog_filter_reset" = "Reset";
-"catalog_no_results" = "No skills match these filters.";
+"catalog_filter_reset" = "초기화";
+"catalog_no_results" = "이 필터에 맞는 스킬이 없습니다.";
 "catalog_favorite_add" = "Add to favourites";
 "catalog_favorite_remove" = "Remove from favourites";
-"catalog_crystal_reward" = "Crystal for an obtained skill";
-"catalog_progress" = "Progress";
+"catalog_crystal_reward" = "획득한 스킬의 크리스탈";
+"catalog_progress" = "진행";
 
 /* T4S-035 timers, counters, theory threshold */
 
-"tracker_tool_label" = "Tool";
-"tracker_tool_progress" = "Progress";
-"tracker_tool_balance" = "Time balance";
-"time_balance_note" = "This balance can go up or down. It is not skill progress, and using it does not reduce hours already tracked.";
-"time_balance_empty_title" = "No time balance yet";
-"time_balance_empty_description" = "Add a balance when you want to save time and count it down later.";
-"time_balance_add_quarter" = "Add 15 min";
-"time_balance_new" = "New balance";
-"time_balance_remaining" = "Time remaining";
-"time_balance_start" = "Count down";
-"time_balance_stop" = "Pause";
-"time_balance_delete" = "Delete balance";
-"counter_delete" = "Delete counter";
-"theory_threshold_crystal" = "Hour-threshold color in Time4Skill. Not a guarantee of mastery.";
-"theory_milestone_21_title" = "21 hours";
-
+"tracker_tool_label" = "도구";
+"tracker_tool_progress" = "진행";
+"tracker_tool_balance" = "시간 잔액";
+"time_balance_note" = "이 잔액은 늘어나거나 줄어들 수 있습니다. 스킬 진행이 아니며 이미 기록된 시간을 줄이지 않습니다.";
+"time_balance_empty_title" = "아직 시간 잔액 없음";
+"time_balance_empty_description" = "시간을 모아 나중에 카운트다운하려면 잔액을 추가하세요.";
+"time_balance_add_quarter" = "15분 추가";
+"time_balance_new" = "새 잔액";
+"time_balance_remaining" = "남은 시간";
+"time_balance_start" = "카운트다운";
+"time_balance_stop" = "일시정지";
+"time_balance_delete" = "잔액 삭제";
+"counter_delete" = "카운터 삭제";
+"theory_threshold_crystal" = "Time4Skill의 시간 임계값 색상. 숙련을 보장하지 않습니다.";
+"theory_milestone_21_title" = "21시간";
 /* T4S-036 compendium, counters, catalog note */
-"catalog_exemplary_note" = "This screen lists the skills shipped with the app: the original set plus entries accepted from the developed collection. Pilot proposal files are not the catalog by themselves.";
-"theory_compendium_intro" = "Each tab is an hour mark already used by the progress bar. The crystal is that mark's color. The text explains what the mark does and does not mean.";
-"theory_hour_unit" = "hours";
-"theory_callout_example" = "Example";
-"theory_callout_caveat" = "Caveat";
-"theory_callout_takeaway" = "Takeaway";
-"theory_chapter_21_title" = "Getting past the beginning";
-"theory_chapter_21_lead" = "Twenty-one hours changes the color of the progress bar. It is not a research finding. The closest published method is Josh Kaufman's 20-hour framework for surviving the awkward start, and those two numbers are not the same claim.";
-"theory_chapter_21_mechanism_title" = "A method for the start";
-"theory_chapter_21_mechanism" = "Kaufman treats the beginning as a practical problem. Split the skill into smaller parts, learn enough to notice your own mistakes, remove barriers that make practice inconvenient, and spend focused time on one result. The book presents this as an author's method for getting started.";
-"theory_chapter_21_example" = "A person who wants three chords to sound clean can practise that result. \"Learn the guitar\" is a larger aim, and the first hours do not settle it.";
-"theory_chapter_100_title" = "One hundred hours, as an app mark";
-"theory_chapter_100_lead" = "One hundred hours is a Time4Skill milestone for time already logged. None of the studies collected in this compendium define 100 hours as the point at which someone becomes competent.";
-"theory_chapter_100_mechanism_title" = "What nearby research actually measured";
-"theory_chapter_100_mechanism" = "Two lines of work sit near this period without measuring it in hours. Cepeda, Pashler, Vul, Wixted, and Rohrer reviewed 317 experiments on verbal recall. Spacing sessions beat cramming in that literature, and the useful gap depended on how long the material had to be remembered. Lally, van Jaarsveld, Potts, and Wardle asked volunteers to repeat an eating, drinking, or activity behaviour in the same context. The modelled time to reach 95 percent of each person's own plateau varied widely. Missing one day did not erase the curve.";
-"theory_chapter_100_example" = "Playing a short piece on three different days shows which bar actually stayed in memory. One long evening of repetition does not answer that question.";
-"theory_chapter_100_caveat" = "The spacing review is about verbal recall. The habit study is about automaticity of a chosen behaviour, and its range was 18 to 254 days in the model reported with the paper, not a 100-hour competence line. Neither result says that 100 hours makes someone competent at photography, driving, or any other skill.";
-"theory_chapter_100_takeaway" = "Use the mark to notice whether you are coming back. Do not treat it as a level you have earned.";
-"theory_chapter_1000_title" = "Practice aimed at one gap";
-"theory_chapter_1000_lead" = "The 1,000-hour crystal records time spent. It does not mean the person is now a professional, a teacher, or someone who can earn a living from the skill.";
-"theory_chapter_1000_mechanism_title" = "Deliberate practice, and how much it explained";
-"theory_chapter_1000_mechanism" = "Ericsson, Krampe, and Tesch-Römer described deliberate practice as activity arranged to improve a specific aspect, with feedback and correction, rather than simply repeating what is already comfortable. Their 1993 paper developed that framework with studies of musicians. It did not publish one hour-count that creates experts in every field. Macnamara, Hambrick, and Oswald later estimated how much of the difference in performance was associated with deliberate practice. The shares differed by domain: higher in games, music, and sports than in education and professions.";
-"theory_chapter_1000_example" = "An hour spent on the passage that keeps breaking down is a different activity from an hour of playing pieces that already go well. The progress bar records the time either way.";
-"theory_chapter_1000_caveat" = "The domain percentages are shares of variance in that 2014 meta-analysis. They are not the portion of a skill a person can learn, and they are not anyone's chance of success. The paper does not set 1,000 hours as a professional threshold. Older wording in the app that treated 1,000 hours as the point of becoming a professional overstated the evidence.";
-"theory_chapter_10000_title" = "A famous number, not a law";
-"theory_chapter_10000_lead" = "Ten thousand hours became famous as a rule of mastery. The research it was drawn from did not establish a law, and the crystal on this tab only identifies the app's highest displayed hour mark.";
-"theory_chapter_10000_mechanism_title" = "How the number travelled";
-"theory_chapter_10000_mechanism" = "Malcolm Gladwell's Outliers (2008) made the round number widely known. It drew on research about expert performance, including the 1993 paper by Ericsson, Krampe, and Tesch-Römer on deliberate practice among musicians. Macnamara and Maitra (2019) discuss how that popular rule differs from the research. The popular version collapsed a complicated argument into one threshold that would guarantee mastery.";
-"theory_chapter_10000_example" = "Two people can log the same total and still have spent the time differently. One may have had a teacher correcting a specific fault. The other may have been repeating a piece they already play. The hour total does not record that difference.";
-"counter_kind_label" = "Kind";
-"counter_kind_manual" = "Manual count";
-"counter_kind_elapsed" = "Days since a date";
-"counter_anchor_label" = "Start date";
-"counter_refresh" = "Refresh value";
-"counter_refresh_unavailable" = "Set a start date before refreshing. Until then the value stays as it is.";
+"catalog_exemplary_note" = "이 화면은 앱에 포함된 스킬을 보여 줍니다. 원래 세트와 정리된 카탈로그 항목입니다.";
+"theory_compendium_intro" = "각 탭은 진행 막대가 이미 쓰는 시간 표시입니다. 수정은 그 표시의 색입니다. 글은 표시가 의미하는 것과 의미하지 않는 것을 설명합니다.";
+"theory_hour_unit" = "시간";
+"theory_callout_example" = "예시";
+"theory_callout_caveat" = "주의";
+"theory_callout_takeaway" = "핵심";
+"theory_chapter_21_title" = "시작을 지나기";
+"theory_chapter_21_lead" = "스물한 시간은 진행 막대 색을 바꿉니다. 이는 연구 결과가 아닙니다. 가장 가까운 공개 방법은 어색한 시작을 버티기 위한 Josh Kaufman의 20시간 틀이며, 이 두 숫자는 같은 주장이 아닙니다.";
+"theory_chapter_21_mechanism_title" = "시작을 위한 방법";
+"theory_chapter_21_mechanism" = "Kaufman은 시작을 실용적 문제로 다룹니다. 기술을 더 작은 부분으로 나누고, 자신의 실수를 알아챌 만큼 배우고, 연습을 불편하게 만드는 장벽을 없애고, 한 결과에 집중된 시간을 쓰세요. 책은 이를 저자의 시작 방법으로 제시합니다.";
+"theory_chapter_21_example" = "세 코드가 깨끗하게 들리길 원하는 사람은 바로 그 결과를 연습할 수 있습니다. \"기타 배우기\"는 더 큰 목표이며 처음 몇 시간으로 결정되지 않습니다.";
+"theory_chapter_100_title" = "앱 표시로서의 백 시간";
+"theory_chapter_100_lead" = "백 시간은 이미 기록된 시간에 대한 Time4Skill 이정표입니다. 이 개요에 모인 어떤 연구도 100시간을 누군가 숙련되는 시점으로 정의하지 않습니다.";
+"theory_chapter_100_mechanism_title" = "가까운 연구가 실제로 측정한 것";
+"theory_chapter_100_mechanism" = "두 연구 흐름은 이 시기 근처에 있지만 시간으로 측정하지 않습니다. Cepeda, Pashler, Vul, Wixted, Rohrer는 언어 회상에 관한 317개 실험을 검토했습니다. 그 문헌에서는 세션을 분산하는 것이 벼락치기보다 나았고, 유용한 간격은 자료를 얼마나 오래 기억해야 하느냐에 달렸습니다. Lally, van Jaarsveld, Potts, Wardle는 같은 맥락에서 먹기·마시기·활동 행동을 반복하도록 자원봉사자에게 요청했습니다. 각자 고유 고원의 95퍼센트에 도달하는 모델 시간은 크게 달랐습니다. 하루를 놓쳐도 곡선은 지워지지 않았습니다.";
+"theory_chapter_100_example" = "짧은 곡을 서로 다른 사흘에 연주하면 어느 마디가 정말 기억에 남았는지 알 수 있습니다. 긴 저녁의 반복은 그 질문에 답하지 않습니다.";
+"theory_chapter_100_caveat" = "간격 개요는 언어 회상에 관한 것입니다. 습관 연구는 선택한 행동의 자동화에 관한 것이며, 논문과 함께 보고된 모델 범위는 18~254일로, 100시간 숙련 선이 아닙니다. 어떤 결과도 100시간이 사진·운전·다른 기술에서 누군가를 숙련시킨다고 말하지 않습니다.";
+"theory_chapter_100_takeaway" = "표시를 다시 돌아오는지 알아차리는 데 쓰세요. 얻은 레벨로 취급하지 마세요.";
+"theory_chapter_1000_title" = "한 빈틈을 향한 연습";
+"theory_chapter_1000_lead" = "1000시간 수정은 쓴 시간을 기록합니다. 그 사람이 이제 전문가·교사·그 기술로 생계를 유지할 사람이 되었다는 뜻은 아닙니다.";
+"theory_chapter_1000_mechanism_title" = "의도적 연습, 그리고 그것이 설명한 정도";
+"theory_chapter_1000_mechanism" = "Ericsson, Krampe, Tesch-Römer는 의도적 연습을 이미 편한 것의 단순 반복이 아니라, 피드백과 수정을 동반해 특정 측면을 개선하도록 짜인 활동으로 기술했습니다. 1993년 논문은 음악가 연구로 그 틀을 발전시켰습니다. 모든 분야에서 전문가를 만드는 시간 수는 발표하지 않았습니다. Macnamara, Hambrick, Oswald는 나중에 수행 차이 중 얼마나 의도적 연습과 관련되는지 추정했습니다. 비중은 영역마다 달랐고, 교육·직업보다 게임·음악·스포츠에서 더 높았습니다.";
+"theory_chapter_1000_example" = "계속 무너지는 구간에 쓰는 한 시간은 이미 잘 되는 곡을 연주하는 한 시간과 다른 활동입니다. 진행 막대는 두 경우 모두 시간을 기록합니다.";
+"theory_chapter_1000_caveat" = "영역 백분율은 2014년 메타분석의 분산 몫입니다. 배울 수 있는 기술의 비율도, 누군가의 성공 확률도 아닙니다. 논문은 1000시간을 직업 임계값으로 두지 않습니다. 1000시간을 전문가가 되는 시점으로 다룬 앱의 옛 문구는 증거를 과장했습니다.";
+"theory_chapter_10000_title" = "유명한 숫자, 법칙이 아님";
+"theory_chapter_10000_lead" = "만 시간은 숙달 규칙으로 유명해졌습니다. 그것이 나온 연구는 법칙을 확립하지 않았고, 이 탭의 수정은 앱이 표시하는 최고 시간 표시만 가리킵니다.";
+"theory_chapter_10000_mechanism_title" = "숫자가 어떻게 퍼졌는지";
+"theory_chapter_10000_mechanism" = "Malcolm Gladwell의 Outliers(2008)가 둥근 숫자를 널리 알렸습니다. 전문가 수행 연구, 특히 음악가의 의도적 연습에 관한 Ericsson, Krampe, Tesch-Römer의 1993년 논문에 기반했습니다. Macnamara와 Maitra(2019)는 그 대중 규칙이 연구와 어떻게 다른지 논의합니다. 대중 버전은 복잡한 논증을 숙달을 보장할 하나의 임계값으로 압축했습니다.";
+"theory_chapter_10000_example" = "두 사람이 같은 합계를 기록해도 시간을 다르게 쓸 수 있습니다. 한 명은 특정 결함을 고치는 선생님이 있었을 수 있습니다. 다른 한 명은 이미 연주하는 곡을 반복했을 수 있습니다. 시간 합계는 그 차이를 기록하지 않습니다.";
+"counter_kind_label" = "종류";
+"counter_kind_manual" = "수동 카운트";
+"counter_kind_elapsed" = "날짜 이후 일수";
+"counter_anchor_label" = "시작일";
+"counter_refresh" = "값 새로고침";
+"counter_refresh_unavailable" = "새로고침 전에 시작일을 설정하세요. 그전까지 값은 그대로입니다.";
 
 /* T4S-039 stats and overview */
-"stats_tab_overview" = "Overview";
-"stats_tab_time" = "Practice time";
-"stats_tab_skills" = "Skills";
-"stats_tab_thresholds" = "Hour thresholds";
-"stats_tab_activity" = "Activity";
-"stats_collection_heading" = "Skill collection";
-"stats_tracked_heading" = "Tracked skills";
-"stats_catalog_obtained_format" = "Obtained in the collection: %d of %d";
-"stats_catalog_not_obtained_format" = "Not yet marked obtained: %d";
-"stats_tracked_with_time_format" = "With recorded time: %d";
-"stats_tracked_without_time_format" = "With no recorded time: %d";
-"stats_group_empty" = "Nothing in this group.";
-"stats_thresholds_note" = "The 21, 100, 1,000 and 10,000 hour marks belong to the app. The number is how many tracked skills have at least that much recorded time. It is not a separate personal goal.";
-"stats_thresholds_empty" = "There are no tracked skills yet, so the thresholds have nothing to show.";
+"stats_tab_overview" = "개요";
+"stats_tab_time" = "연습 시간";
+"stats_tab_skills" = "스킬";
+"stats_tab_thresholds" = "시간 임계값";
+"stats_tab_activity" = "활동";
+"stats_collection_heading" = "스킬 컬렉션";
+"stats_tracked_heading" = "추적 중인 스킬";
+"stats_catalog_obtained_format" = "컬렉션에서 획득: %d / %d";
+"stats_catalog_not_obtained_format" = "아직 획득으로 표시되지 않음: %d";
+"stats_tracked_with_time_format" = "기록된 시간 있음: %d";
+"stats_tracked_without_time_format" = "기록된 시간 없음: %d";
+"stats_group_empty" = "이 그룹에 항목이 없습니다.";
+"stats_thresholds_note" = "21, 100, 1,000, 10,000시간 표시는 앱의 것입니다. 숫자는 그만큼의 시간이 있는 추적 스킬 수입니다.";
+"stats_thresholds_empty" = "추적 중인 스킬이 아직 없어 임계값에 표시할 내용이 없습니다.";
 "stats_threshold_count_format" = "%d";
-"month_activity_title" = "This month";
-"month_activity_previous" = "Previous month";
-"month_activity_next" = "Next month";
-"month_activity_practice" = "Day with a saved session";
-"month_activity_obtained" = "Day a skill was marked obtained";
-"month_activity_empty" = "No saved sessions or obtained dates this month. A total of hours is not spread across days.";
-"overview_tracking_tools" = "Tracking tools";
+"month_activity_title" = "이번 달";
+"month_activity_previous" = "이전 달";
+"month_activity_next" = "다음 달";
+"month_activity_practice" = "세션을 저장한 날";
+"month_activity_obtained" = "스킬을 획득으로 표시한 날";
+"month_activity_empty" = "이번 달 저장된 세션이나 획득 날짜가 없습니다. 총 시간은 날짜별로 나뉘지 않습니다.";
+"overview_tracking_tools" = "추적 도구";
 
 /* T4S-040 custom skill filter */
 "catalog_filter_custom" = "직접 만든";
@@ -569,17 +561,17 @@
 "language_script_glagolitic" = "글라골 문자";
 
 /* T4S-042 time balance + language visibility */
-"time_balance_minus_start" = "− Start";
-"time_balance_plus_start" = "+ Start";
-"time_balance_minus_stop" = "− Stop";
-"time_balance_plus_stop" = "+ Stop";
-"time_balance_a11y_decrease" = "Start decreasing the time balance";
-"time_balance_a11y_increase" = "Start increasing the time balance";
-"time_balance_a11y_stop_decrease" = "Stop decreasing the time balance";
-"time_balance_a11y_stop_increase" = "Stop increasing the time balance";
-"time_balance_bar" = "Time balance";
-"time_balance_zero_sound" = "Play a sound when the balance reaches zero";
-"time_balance_sound_section" = "Time balance";
+"time_balance_minus_start" = "− 시작";
+"time_balance_plus_start" = "+ 시작";
+"time_balance_minus_stop" = "− 중지";
+"time_balance_plus_stop" = "+ 중지";
+"time_balance_a11y_decrease" = "시간 잔액 감소 시작";
+"time_balance_a11y_increase" = "시간 잔액 증가 시작";
+"time_balance_a11y_stop_decrease" = "시간 잔액 감소 중지";
+"time_balance_a11y_stop_increase" = "시간 잔액 증가 중지";
+"time_balance_bar" = "시간 잔액";
+"time_balance_zero_sound" = "잔액이 0이 되면 소리 재생";
+"time_balance_sound_section" = "시간 잔액";
 
 /* T4S-UI-042 supplement: converter nav + recent tracking */
 "time_converter_nav_title" = "시간 변환기";
@@ -588,3 +580,5 @@
 "stats_this_month" = "이번 달";
 
 "export_pdf_generated_on_format" = "생성일: %@";
+"timer_start" = "시작";
+"timer_stop" = "중지";

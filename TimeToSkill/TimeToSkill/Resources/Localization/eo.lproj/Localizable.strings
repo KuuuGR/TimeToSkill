@@ -480,7 +480,7 @@
 "time_balance_new" = "Nova saldo";
 "time_balance_remaining" = "Restanta tempo";
 "time_balance_start" = "Nombri malsupren";
-"time_balance_stop" = "Paŭzi";
+"time_balance_stop" = "Paŭzo";
 "time_balance_delete" = "Forigi saldon";
 "counter_delete" = "Forigi nombrigon";
 "theory_threshold_crystal" = "Koloro de hora sojlo en Time4Skill. Ne garantio de majstreco.";
@@ -567,10 +567,10 @@
 "language_script_cyrillic" = "Cirilico";
 "language_script_glagolitic" = "Glagolico";
 /* T4S-042 time balance + language visibility */
-"time_balance_minus_start" = "− Startu";
-"time_balance_plus_start" = "+ Startu";
-"time_balance_minus_stop" = "− Haltu";
-"time_balance_plus_stop" = "+ Haltu";
+"time_balance_minus_start" = "− Starti";
+"time_balance_plus_start" = "+ Starti";
+"time_balance_minus_stop" = "− Halti";
+"time_balance_plus_stop" = "+ Halti";
 "time_balance_a11y_decrease" = "Komencu malpliigi la temposaldon";
 "time_balance_a11y_increase" = "Komencu pliigi la temposaldon";
 "time_balance_a11y_stop_decrease" = "Haltu la malpliigon de la temposaldo";
@@ -586,3 +586,5 @@
 "stats_this_month" = "Ĉi tiu monato";
 
 "export_pdf_generated_on_format" = "Generita je: %@";
+"timer_start" = "Starti";
+"timer_stop" = "Halti";

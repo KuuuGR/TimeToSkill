@@ -37,7 +37,7 @@ struct StartView: View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             mainContent(now: context.date)
         }
-        .navigationTitle(LocalizedStringKey("tracking_nav_title"))
+        .navigationTitle(Text(verbatim: L10n.string("tracking_nav_title")))
         // Only on Progress. Time Balance has its own "new balance" toolbar item;
         // showing both plus actions at once is confusing.
         .toolbar {
@@ -47,9 +47,13 @@ struct StartView: View {
                     Button {
                         showingAddSkill = true
                     } label: {
-                        Label(LocalizedStringKey("fab_add_skill"), systemImage: "plus")
+                        Label {
+                            Text(verbatim: L10n.string("fab_add_skill"))
+                        } icon: {
+                            Image(systemName: "plus")
+                        }
                     }
-                    .help(LocalizedStringKey("fab_add_skill"))
+                    .help(L10n.string("fab_add_skill"))
                     .keyboardShortcut("n", modifiers: .command)
                 }
             }
@@ -77,24 +81,28 @@ struct StartView: View {
     private func mainContent(now: Date) -> some View {
         VStack {
             // Title
-            Text(LocalizedStringKey("tracking_title"))
+            LText(key: "tracking_title")
                 .font(.headline)
                 .accessibilityIdentifier("StartViewTitle")
 
             // Picker for sorting
-            Picker(LocalizedStringKey("sort_by_label"), selection: $selectedSortRawValue) {
+            Picker(selection: $selectedSortRawValue) {
                 ForEach(SkillSortOption.allCases) { option in
-                    Text(LocalizedStringKey(option.rawValue))
+                    Text(verbatim: L10n.string(option.rawValue))
                         .tag(option.rawValue)
                 }
+            } label: {
+                Text(verbatim: L10n.string("sort_by_label"))
             }
             .pickerStyle(.segmented)
             .padding(.horizontal)
             .padding(.bottom, 8)
 
-            Picker(LocalizedStringKey("tracker_tool_label"), selection: $trackerToolRaw) {
-                Text(LocalizedStringKey("tracker_tool_progress")).tag(TrackerToolKind.progress.rawValue)
-                Text(LocalizedStringKey("tracker_tool_balance")).tag(TrackerToolKind.balance.rawValue)
+            Picker(selection: $trackerToolRaw) {
+                Text(verbatim: L10n.string("tracker_tool_progress")).tag(TrackerToolKind.progress.rawValue)
+                Text(verbatim: L10n.string("tracker_tool_balance")).tag(TrackerToolKind.balance.rawValue)
+            } label: {
+                Text(verbatim: L10n.string("tracker_tool_label"))
             }
             .pickerStyle(.segmented)
             .padding(.horizontal)
@@ -115,11 +123,11 @@ struct StartView: View {
                             .frame(width: 64, height: 64)
                             .foregroundColor(.yellow.opacity(0.8))
 
-                        Text(LocalizedStringKey("empty_message_title"))
+                        LText(key: "empty_message_title")
                             .font(.title3)
                             .fontWeight(.semibold)
 
-                        Text(LocalizedStringKey("empty_message_description"))
+                        LText(key: "empty_message_description")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)

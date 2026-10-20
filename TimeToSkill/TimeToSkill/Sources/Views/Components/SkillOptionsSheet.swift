@@ -42,14 +42,14 @@ struct SkillOptionsSheet: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text(LocalizedStringKey("skill_name_section"))) {
-                    Text(LocalizedStringKey("skill_icon_label"))
+                Section(header: LText(key: "skill_name_section")) {
+                    LText(key: "skill_icon_label")
                         .font(.caption)
                         .foregroundColor(.secondary)
 
                     SkillEmojiPickerButton(selection: $skillIcon)
 
-                    Text(LocalizedStringKey("skill_name_label"))
+                    LText(key: "skill_name_label")
                         .font(.caption)
                         .foregroundColor(.secondary)
 
@@ -75,29 +75,31 @@ struct SkillOptionsSheet: View {
                     }
                 }
 
-                Section(header: Text(LocalizedStringKey("adjust_time_section"))) {
+                Section(header: LText(key: "adjust_time_section")) {
                     VStack(alignment: .leading, spacing: 8) {
-                        TextField(LocalizedStringKey("adjust_hours_placeholder"), text: $adjustHours)
+                        TextField("", text: $adjustHours, prompt: Text(verbatim: L10n.string("adjust_hours_placeholder")))
                             .numbersAndPunctuationKeyboard()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
 
-                        TextField(LocalizedStringKey("adjust_minutes_placeholder"), text: $adjustMinutes)
+                        TextField("", text: $adjustMinutes, prompt: Text(verbatim: L10n.string("adjust_minutes_placeholder")))
                             .numbersAndPunctuationKeyboard()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
 
-                        Text(LocalizedStringKey("adjust_time_hint"))
+                        LText(key: "adjust_time_hint")
                             .font(.footnote)
                             .foregroundColor(.secondary)
 
                         if showSuccessMessage {
-                            Text(LocalizedStringKey("adjust_time_success"))
+                            LText(key: "adjust_time_success")
                                 .foregroundColor(.green)
                                 .font(.footnote)
                         }
 
-                        Button(LocalizedStringKey("adjust_time_apply")) {
+                        Button {
                             guard isValidInput else { return }
                             applyTimeChange()
+                        } label: {
+                            Text(verbatim: L10n.string("adjust_time_apply"))
                         }
                         .disabled(!isValidInput)
                         .keyboardShortcut(.defaultAction)
@@ -108,7 +110,7 @@ struct SkillOptionsSheet: View {
                     }
                 }
 
-                Section(header: Text(LocalizedStringKey("time_distribution_title"))) {
+                Section(header: LText(key: "time_distribution_title")) {
                     #if os(macOS)
                     // A macOS sheet is sized from the top of its navigation stack,
                     // and a *pushed* screen reserves a navigation bar the sheet
@@ -116,21 +118,34 @@ struct SkillOptionsSheet: View {
                     // bucket) ended up below the sheet's bottom edge. Presenting
                     // the chart as its own sheet keeps the whole histogram, last
                     // bar and its inset included, inside the window.
-                    Button(LocalizedStringKey("view_distribution")) {
+                    Button {
                         showingDistribution = true
+                    } label: {
+                        Text(verbatim: L10n.string("view_distribution"))
                     }
                     #else
-                    NavigationLink(LocalizedStringKey("view_distribution")) { TimeDistributionView(skill: skill) }
+                    NavigationLink {
+                        TimeDistributionView(skill: skill)
+                    } label: {
+                        Text(verbatim: L10n.string("view_distribution"))
+                    }
                     #endif
                 }
 
-                Section(header: Text(LocalizedStringKey("reset_section"))) {
-                    Button(LocalizedStringKey("reset_progress"), role: .destructive) {
+                Section(header: LText(key: "reset_section")) {
+                    Button(role: .destructive) {
                         showResetConfirmation = true
+                    } label: {
+                        Text(verbatim: L10n.string("reset_progress"))
                     }
-                    .confirmationDialog(LocalizedStringKey("reset_confirm_title"), isPresented: $showResetConfirmation) {
-                        Button(LocalizedStringKey("reset_confirm_action"), role: .destructive) {
+                    .confirmationDialog(
+                        Text(verbatim: L10n.string("reset_confirm_title")),
+                        isPresented: $showResetConfirmation
+                    ) {
+                        Button(role: .destructive) {
                             skill.hours = 0
+                        } label: {
+                            Text(verbatim: L10n.string("reset_confirm_action"))
                         }
                     }
                 }
@@ -139,20 +154,27 @@ struct SkillOptionsSheet: View {
                     Button(role: .destructive) {
                         showDeleteConfirmation = true
                     } label: {
-                        Label(LocalizedStringKey("delete_skill"), systemImage: "trash")
+                        Label { Text(verbatim: L10n.string("delete_skill")) } icon: { Image(systemName: "trash") }
                     }
-                    .alert(LocalizedStringKey("delete_confirm_title"), isPresented: $showDeleteConfirmation) {
-                        Button(LocalizedStringKey("delete_confirm_action"), role: .destructive) {
+                    .alert(
+                        Text(verbatim: L10n.string("delete_confirm_title")),
+                        isPresented: $showDeleteConfirmation
+                    ) {
+                        Button(role: .destructive) {
                             onDelete()
                             dismiss()
+                        } label: {
+                            Text(verbatim: L10n.string("delete_confirm_action"))
                         }
-                        Button(LocalizedStringKey("cancel"), role: .cancel) { }
+                        Button(role: .cancel) {} label: {
+                            Text(verbatim: L10n.string("cancel"))
+                        }
                     } message: {
-                        Text(LocalizedStringKey("delete_confirm_message"))
+                        LText(key: "delete_confirm_message")
                     }
                 }
             }
-            .navigationTitle(LocalizedStringKey("skill_options_title"))
+            .navigationTitle(Text(verbatim: L10n.string("skill_options_title")))
             .inlineNavigationBarTitle()
             #if os(macOS)
             // The chart is a sheet of its own (see the section above), so no
@@ -165,12 +187,14 @@ struct SkillOptionsSheet: View {
             #endif
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Button(LocalizedStringKey("done")) {
+                    Button {
                         if !newName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                             skill.name = newName
                             skill.icon = skillIcon
                             dismiss()
                         }
+                    } label: {
+                        Text(verbatim: L10n.string("done"))
                     }
                     // Return applies the time change instead of closing the whole
                     // sheet; the sheet itself is closed with Shift-Return.

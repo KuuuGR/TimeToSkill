@@ -75,8 +75,7 @@
 "support_nav_title" = "支持";
 
 // MARK: - TheoryView
-"theory_title" = "學習時間理論";
-
+"theory_title" = "學習理論";
 "theory_10k_title" = "一萬小時法則";
 "theory_10k_author" = "Malcolm Gladwell（根據 Anders Ericsson）";
 "theory_10k_description" = "若要達到精通，你需要大約一萬小時的刻意練習。適用於菁英表現者（音樂家、運動員、西洋棋手）。不僅是數量，質量同樣重要。該理論因過度簡化而受到批評。";
@@ -101,7 +100,6 @@
 "theory_comparison_text" = "• 20 小時 → 良好開始（業餘）\n• 100 小時 → 穩固水準（中階）\n• 1000 小時 → 專業人士\n• 10 000 小時 → 大師（菁英）";
 
 "theory_nav_title" = "學習理論";
-
 // MARK: - StatsView
 "stats_title_overview" = "📊 技能進度總覽";
 "stats_nav_title" = "你的統計資料";
@@ -134,9 +132,9 @@
 
 "skill_name_section" = "名稱";
 "skill_name_label" = "技能名稱";
-"skill_icon_label" = "Icon";
-"skill_emoji_picker_title" = "Choose Icon";
-"skill_emoji_picker_none" = "None";
+"skill_icon_label" = "圖示";
+"skill_emoji_picker_title" = "選擇圖示";
+"skill_emoji_picker_none" = "无";
 "skill_emoji_section_faces" = "表情";
 "skill_emoji_section_work" = "工作";
 "skill_emoji_section_creativity" = "創意";
@@ -213,7 +211,7 @@
 "time_mean_minutes_format" = "平均間隔：%@ 分鐘";
 "time_std_minutes_format" = "標準差：%@ 分鐘";
 "distribution_nav_title" = "分佈";
-"distribution_empty_message" = "No sessions recorded for this skill yet.";
+"distribution_empty_message" = "此技能尚無已記錄的練習時段。";
 "global_time_distribution_title" = "全球時間分佈";
 
 // MARK: - Sort options (Exemplary)
@@ -329,51 +327,51 @@
 "sidebar_overview" = "總覽";
 
 // MARK: - SplashView
-"splash_presents" = "presents";
-"splash_tagline" = "Track your time. Learn smarter. Grow with patience.";
-"splash_reflection_1" = "Every hour you practice is a step toward mastery.";
-"splash_reflection_2" = "Skill is the reward of time well spent.";
-"splash_reflection_3" = "Small hours, repeated, become mastery.";
-"splash_reflection_4" = "Progress is patience made visible.";
-"splash_reflection_5" = "Time invested in learning is never wasted.";
+"splash_presents" = "呈现";
+"splash_tagline" = "記錄時間。更聰明地學習。耐心成長。";
+"splash_reflection_1" = "每一个练习小时都是迈向精通的一步。";
+"splash_reflection_2" = "技能是善用时间的回报。";
+"splash_reflection_3" = "反复积累的小时会成为精通。";
+"splash_reflection_4" = "进步是变得可见的耐心。";
+"splash_reflection_5" = "投入学习的时间永远不会浪费。";
 
 // MARK: - Per-skill timer session chart (T4S-001)
-"session_chart_open" = "Session chart";
-"session_chart_nav_title" = "Timer sessions";
-"session_chart_metric" = "Timer sessions and manual hour additions for this skill.";
-"session_chart_bin_width" = "Bar width";
-"session_chart_detail_wide" = "Wide";
-"session_chart_detail_medium" = "Medium";
-"session_chart_detail_narrow" = "Narrow";
-"session_chart_bin_minutes" = "%d min";
-"session_chart_bin_range" = "%1$@–%2$@ min";
-"session_chart_bin_overflow" = "≥ %1$@ min";
-"session_chart_count_format" = "%d sessions";
-"session_chart_mean_format" = "Mean: %@ min";
+"session_chart_open" = "练习时段图表";
+"session_chart_nav_title" = "计时练习";
+"session_chart_metric" = "该技能的计时练习与手动添加的小时。";
+"session_chart_bin_width" = "柱宽";
+"session_chart_detail_wide" = "宽";
+"session_chart_detail_medium" = "中";
+"session_chart_detail_narrow" = "窄";
+"session_chart_bin_minutes" = "%d 分鐘";
+"session_chart_bin_range" = "%1$@–%2$@ 分鐘";
+"session_chart_bin_overflow" = "≥ %1$@ 分鐘";
+"session_chart_count_format" = "%d 次练习";
+"session_chart_mean_format" = "平均：%@ 分钟";
 "session_chart_mean_unavailable" = "—";
-"session_chart_empty" = "No completed timer sessions for this skill yet.";
-"session_chart_curve_caption" = "The translucent curve is a normal-distribution reference for these sessions. It is not a prediction and does not mean the sessions follow a normal distribution.";
-"session_chart_curve_hidden" = "Not enough variation or completed timer sessions to show a stable reference curve.";
-"session_chart_outside_range_format" = "%d observations lie outside the visible range.";
-"session_chart_accessibility" = "Timer session duration chart";
-"session_chart_row_accessibility" = "%1$@, %2$d sessions";
+"session_chart_empty" = "此技能尚無已完成的計時練習。";
+"session_chart_curve_caption" = "半透明曲线是这些练习的正态分布参考。仅为参考，不是预测。";
+"session_chart_curve_hidden" = "变化或已完成练习不足，无法显示稳定的参考曲线。";
+"session_chart_outside_range_format" = "%d 个观测值在可见范围之外。";
+"session_chart_accessibility" = "计时练习时长图表";
+"session_chart_row_accessibility" = "%1$@，%2$d 次练习";
 
 // MARK: - Theory topics (T4S-002)
-"theory_intro" = "Ideas you can try while you practise. The short version is enough. Open sources only when you want the research context.";
-"theory_takeaway_label" = "Practical takeaway";
-"theory_sources_button" = "Sources & research details ↗";
-"theory_sources_accessibility" = "Sources and research details";
-"theory_detail_title" = "Research details";
-"theory_detail_citation" = "Citation";
-"theory_detail_source_type" = "Source type";
-"theory_detail_context" = "Research context";
-"theory_detail_limitation" = "Limitation";
-"theory_detail_links" = "Source links";
-"theory_type_framework" = "Author's practical framework";
-"theory_type_article" = "Research article";
-"theory_type_meta" = "Meta-analysis";
-"theory_link_author_site" = "Author's website";
-"theory_link_publisher" = "Publisher";
+"theory_intro" = "練習時可嘗試的想法。簡短版本就夠了。只有在需要研究背景時再打開來源。";
+"theory_takeaway_label" = "實務要點";
+"theory_sources_button" = "來源與研究詳情 ↗";
+"theory_sources_accessibility" = "來源與研究詳情";
+"theory_detail_title" = "研究詳情";
+"theory_detail_citation" = "引用";
+"theory_detail_source_type" = "來源類型";
+"theory_detail_context" = "研究背景";
+"theory_detail_limitation" = "局限";
+"theory_detail_links" = "來源連結";
+"theory_type_framework" = "作者的實用框架";
+"theory_type_article" = "研究論文";
+"theory_type_meta" = "統合分析";
+"theory_link_author_site" = "作者網站";
+"theory_link_publisher" = "出版社";
 "theory_link_ericsson_1993" = "Ericsson, Krampe, and Tesch-Römer, 1993";
 "theory_link_macnamara_2019" = "Macnamara and Maitra, 2019";
 "theory_link_macnamara_2014" = "Macnamara, Hambrick, and Oswald, 2014";
@@ -381,172 +379,166 @@
 "theory_link_cepeda_2006" = "Cepeda and colleagues, 2006";
 "theory_link_lally_2010" = "Lally and colleagues, 2010";
 
-"theory_topic_first20_title" = "The First 20 Hours: Get Past the Beginning";
-"theory_topic_first20_summary" = "Starting a skill is often frustrating because everything is unfamiliar. Josh Kaufman proposes a practical approach: break a skill into smaller parts, focus on what matters, remove barriers to practice, and spend focused time improving. His 20-hour framework is a starting method, not a scientific guarantee that any skill can be mastered in 20 hours.";
-"theory_topic_first20_takeaway" = "Choose one specific thing you want to be able to do better after your first 20 hours.";
+"theory_topic_first20_title" = "前 20 小時：邁過開始";
+"theory_topic_first20_summary" = "開始一項技能常常令人沮喪，因為一切都不熟悉。Josh Kaufman 提出實用做法：拆分技能、抓住重點、去掉練習障礙，並投入專注時間改進。他的 20 小時框架是起步方法，不是任何技能都能在 20 小時內掌握的科學保證。";
+"theory_topic_first20_takeaway" = "選一件在前 20 小時之後你想做得更好的具體事情。";
 "theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Ebook published in 2013; paperback published in 2014.";
-"theory_topic_first20_context" = "Author's practical framework and book, not a controlled scientific study.";
-"theory_topic_first20_limitation" = "The 20-hour framework is a starting method. It is not a scientifically established time needed to master a skill.";
-
-"theory_topic_deliberate_title" = "Practice With a Purpose";
-"theory_topic_deliberate_summary" = "Repeating an activity is not the same as deliberately improving it. Choose a specific aspect to work on, practise with a clear goal, notice errors, and adjust your next attempt. Time is useful to track, but the way you practise matters too.";
-"theory_topic_deliberate_takeaway" = "Before a session, decide what one thing you want to improve.";
+"theory_topic_first20_context" = "作者的實用框架與書籍，不是受控科學研究。";
+"theory_topic_first20_limitation" = "20 小時框架是起步方法。它不是科學確立的精通所需時間。";
+"theory_topic_deliberate_title" = "有目的地練習";
+"theory_topic_deliberate_summary" = "重複一項活動不等於有意識地改進它。選擇具體方面，帶著明確目標練習，注意錯誤並調整下一次嘗試。追蹤時間有用，但練習方式也很重要。";
+"theory_topic_deliberate_takeaway" = "在一次練習前，決定你想改進的一件事。";
 "theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
-"theory_topic_deliberate_context" = "The paper developed a framework for expert performance and reported studies involving musicians, including violinists and pianists.";
-"theory_topic_deliberate_limitation" = "The paper does not establish one fixed number of practice hours that guarantees mastery across all skills.";
-
-"theory_topic_10k_title" = "10,000 Hours: A Popular Rule, Not a Law";
-"theory_topic_10k_summary" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). It drew on research about expert performance, but the popular version simplified the original argument. There is no universal magic number of hours that guarantees mastery.";
-"theory_topic_10k_takeaway" = "Use long-term milestones to celebrate persistence, not to predict when you will become an expert.";
+"theory_topic_deliberate_context" = "該論文發展了專家表現框架，並報告了包括小提琴家與鋼琴家在內的音樂家研究。";
+"theory_topic_deliberate_limitation" = "該論文沒有確立保證所有技能精通的固定練習小時數。";
+"theory_topic_10k_title" = "一萬小時：流行規則，不是定律";
+"theory_topic_10k_summary" = "一萬小時規則因 Malcolm Gladwell 的 Outliers（2008）而廣為人知。它依據專家表現研究，但流行版本簡化了原論點。並不存在保證精通的普遍神奇小時數。";
+"theory_topic_10k_takeaway" = "用長期里程碑慶祝堅持，而不是預測何時成為專家。";
 "theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara and Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
-"theory_topic_10k_context" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). The 2019 paper discusses how that popular rule differs from the 1993 research.";
-"theory_topic_10k_limitation" = "Ericsson and colleagues did not establish a universal 10,000-hour mastery law. There is no universal number of hours that guarantees mastery.";
-
-"theory_topic_variance_title" = "Practice Matters, but It Is Not Everything";
-"theory_topic_variance_summary" = "A 2014 meta-analysis examined deliberate practice across several fields. It found that practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_takeaway" = "Practice is something you can influence. Results also depend on other factors, which differ between activities.";
+"theory_topic_10k_context" = "一萬小時規則因 Malcolm Gladwell 的 Outliers（2008）而廣為人知。2019 年論文討論該流行規則與 1993 年研究的差異。";
+"theory_topic_10k_limitation" = "Ericsson 及其同事沒有確立普遍的一萬小時精通定律。不存在保證精通的普遍小時數。";
+"theory_topic_variance_title" = "練習重要，但不是全部";
+"theory_topic_variance_summary" = "2014 年統合分析考察了多個領域的刻意練習。練習與表現相關，但其貢獻因領域而顯著不同。";
+"theory_topic_variance_takeaway" = "練習是你可以影響的事。結果也取決於其他因素，而這些因素因活動而異。";
 "theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick, and Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
-"theory_topic_variance_context" = "A 2014 meta-analysis examined deliberate practice across several fields. Practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_findings_intro" = "The estimated share of performance differences explained by deliberate practice in this analysis was:";
-"theory_topic_variance_limitation" = "These percentages refer to variance in performance explained in this meta-analysis. They are not the percentage of skill that a person can learn, and they are not an individual's probability of success.";
-"theory_finding_games" = "Games";
+"theory_topic_variance_context" = "2014 年統合分析考察了多個領域的刻意練習。練習與表現相關，但其貢獻因領域而顯著不同。";
+"theory_topic_variance_findings_intro" = "該分析中，刻意練習所解釋的表現差異估計份額為：";
+"theory_topic_variance_limitation" = "這些百分比指的是該統合分析中所解釋的表現方差。它們不是一個人能學會的技能百分比，也不是個體成功機率。";
+"theory_finding_games" = "遊戲";
 "theory_finding_games_value" = "26%";
-"theory_finding_music" = "Music";
-"theory_finding_sports" = "Sports";
-"theory_finding_education" = "Education";
-"theory_finding_professions" = "Professions";
+"theory_finding_music" = "音樂";
+"theory_finding_sports" = "體育";
+"theory_finding_education" = "教育";
+"theory_finding_professions" = "職業";
 "theory_finding_music_value" = "21%";
 "theory_finding_sports_value" = "18%";
 "theory_finding_education_value" = "4%";
 "theory_finding_professions_value" = "Less than 1%";
 
-"theory_topic_spacing_title" = "Return to a Skill, Rather Than Cramming Everything Together";
-"theory_topic_spacing_summary" = "Research on distributed practice supports spreading learning across multiple sessions rather than relying only on massed practice. The best spacing depends on the material and on how long you want to retain it.";
-"theory_topic_spacing_takeaway" = "Try returning to a skill over several days and observe what you remember and what needs more practice.";
+"theory_topic_spacing_title" = "回到技能，而不是一次塞滿";
+"theory_topic_spacing_summary" = "關於分散練習的研究支持把學習分散到多次，而不是只依賴集中練習。最佳間隔取決於材料以及你希望保持多久。";
+"theory_topic_spacing_takeaway" = "試著在幾天內反覆回到一項技能，觀察記住了什麼、還需要更多練習什麼。";
 "theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted, and Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
-"theory_topic_spacing_context" = "The meta-analysis reviewed 317 experiments across 184 articles, with 839 assessments of distributed practice.";
-"theory_topic_spacing_limitation" = "These results concern learning and recall tasks. They do not present one schedule as optimal for every physical, social, artistic, or professional skill.";
-
-"theory_topic_habit_title" = "A Habit Does Not Have a Universal Deadline";
-"theory_topic_habit_summary" = "Repeating an action in a consistent context can make it more automatic over time. However, the time required differs between people and behaviours. Missing one day does not mean that all progress has been lost.";
-"theory_topic_habit_takeaway" = "Connect an activity to a situation you encounter regularly, and resume without guilt when a session is missed.";
+"theory_topic_spacing_context" = "該統合分析回顧了 184 篇文章中的 317 項實驗，含 839 次分散練習評估。";
+"theory_topic_spacing_limitation" = "這些結果針對學習與回憶任務。它們並未給出適用於每一種身體、社會、藝術或職業技能的最佳時間表。";
+"theory_topic_habit_title" = "習慣沒有普遍截止日期";
+"theory_topic_habit_summary" = "在一致情境中重複一個動作，久而久之可使其更自動化。但所需時間因人、因行為而異。漏掉一天並不意味著全部進步都丟失。";
+"theory_topic_habit_takeaway" = "把活動連接到你經常遇到的情境，錯過一次練習時也無需內疚地重新開始。";
 "theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, and Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
-"theory_topic_habit_context" = "Ninety-six volunteers selected an eating, drinking, or activity behaviour to repeat in the same context for 12 weeks. Eighty-two participants provided sufficient data for analysis. The modelled time to reach 95% of the asymptotic automaticity estimate varied from 18 to 254 days.";
-"theory_topic_habit_limitation" = "This was a habit-formation study, not a study of how many hours it takes to master a skill. It does not support a 21-hour mastery threshold or a universal 21-day habit rule.";
-
-"theory_milestones_title" = "Progress milestones";
+"theory_topic_habit_context" = "九十六名志願者選擇在相同情境中重複十二週的飲食或活動行為。八十二名參與者提供了足夠資料。達到漸近自動化估計 95% 的建模時間為 18 到 254 天。";
+"theory_topic_habit_limitation" = "這是習慣形成研究，不是掌握技能需要多少小時的研究。它不支持 21 小時精通門檻，也不支持普遍的 21 天習慣規則。";
+"theory_milestones_title" = "進度里程碑";
 "theory_milestones_note" = "The 100-hour, 1,000-hour, and 10,000-hour marks in Time4Skill record time you have spent. They are progress milestones, not scientifically validated stages, and they do not predict when you will become an expert.";
-"theory_milestone_100_title" = "100 hours";
-"theory_milestone_1000_title" = "1,000 hours";
-"theory_milestone_10000_title" = "10,000 hours";
-"theory_milestone_note" = "Progress milestone, not a universal stage of expertise.";
+"theory_milestone_100_title" = "100 小時";
+"theory_milestone_1000_title" = "1000 小時";
+"theory_milestone_10000_title" = "1 萬小時";
+"theory_milestone_note" = "進度里程碑，並非普遍的專長階段。";
 
 // MARK: - Year activity calendar (T4S-003)
-"activity_calendar_title" = "Practice this year";
-"activity_calendar_previous" = "Previous year";
-"activity_calendar_next" = "Next year";
-"activity_calendar_summary" = "%1$d active days · %2$d skills";
-"activity_calendar_empty" = "No completed timer sessions yet. Days stay neutral until a timer session is saved.";
-"activity_calendar_year_empty" = "No completed timer sessions in this year.";
+"activity_calendar_title" = "今年的练习";
+"activity_calendar_previous" = "上一年";
+"activity_calendar_next" = "下一年";
+"activity_calendar_summary" = "%1$d 个活跃天 · %2$d 项技能";
+"activity_calendar_empty" = "尚无已完成的计时练习。在保存练习前，日期保持中性。";
+"activity_calendar_year_empty" = "今年没有已完成的计时练习。";
 "activity_calendar_day_accessibility" = "%1$@, %2$@";
-"activity_level_0" = "No recorded timer activity";
-"activity_level_1" = "Light activity";
-"activity_level_2" = "Some activity";
-"activity_level_3" = "Varied activity";
-"activity_level_4" = "Broad activity";
-"activity_level_5" = "Very broad activity";
+"activity_level_0" = "无计时活动记录";
+"activity_level_1" = "轻度活动";
+"activity_level_2" = "有一些活动";
+"activity_level_3" = "多样活动";
+"activity_level_4" = "广泛活动";
+"activity_level_5" = "非常广泛的活动";
 
 // MARK: - Catalog search
-"catalog_search_prompt" = "Search skills";
-"catalog_filter_all" = "All";
-"catalog_filter_done" = "Done";
-"catalog_filter_not_done" = "Not done";
+"catalog_search_prompt" = "搜尋技能";
+"catalog_filter_all" = "全部";
+"catalog_filter_done" = "已完成";
+"catalog_filter_not_done" = "未完成";
 "catalog_favorites_only" = "Favourites";
-"catalog_filter_reset" = "Reset";
-"catalog_no_results" = "No skills match these filters.";
+"catalog_filter_reset" = "重置";
+"catalog_no_results" = "沒有符合這些篩選條件的技能。";
 "catalog_favorite_add" = "Add to favourites";
 "catalog_favorite_remove" = "Remove from favourites";
-"catalog_crystal_reward" = "Crystal for an obtained skill";
-"catalog_progress" = "Progress";
+"catalog_crystal_reward" = "已獲得技能的水晶";
+"catalog_progress" = "进度";
 
 /* T4S-035 timers, counters, theory threshold */
 
-"tracker_tool_label" = "Tool";
-"tracker_tool_progress" = "Progress";
-"tracker_tool_balance" = "Time balance";
-"time_balance_note" = "This balance can go up or down. It is not skill progress, and using it does not reduce hours already tracked.";
-"time_balance_empty_title" = "No time balance yet";
-"time_balance_empty_description" = "Add a balance when you want to save time and count it down later.";
-"time_balance_add_quarter" = "Add 15 min";
-"time_balance_new" = "New balance";
-"time_balance_remaining" = "Time remaining";
-"time_balance_start" = "Count down";
-"time_balance_stop" = "Pause";
-"time_balance_delete" = "Delete balance";
-"counter_delete" = "Delete counter";
-"theory_threshold_crystal" = "Hour-threshold color in Time4Skill. Not a guarantee of mastery.";
-"theory_milestone_21_title" = "21 hours";
-
+"tracker_tool_label" = "工具";
+"tracker_tool_progress" = "进度";
+"tracker_tool_balance" = "時間餘額";
+"time_balance_note" = "该余额可增可减。它不是技能进度，也不会减少已记录的小时。";
+"time_balance_empty_title" = "尚無時間餘額";
+"time_balance_empty_description" = "若要储蓄时间并稍后倒计时，请添加余额。";
+"time_balance_add_quarter" = "添加 15 分钟";
+"time_balance_new" = "新建餘額";
+"time_balance_remaining" = "剩余时间";
+"time_balance_start" = "倒计时";
+"time_balance_stop" = "暂停";
+"time_balance_delete" = "刪除餘額";
+"counter_delete" = "刪除計數器";
+"theory_threshold_crystal" = "Time4Skill 中的小時閾值顏色。不保證精通。";
+"theory_milestone_21_title" = "21 小時";
 /* T4S-036 compendium, counters, catalog note */
-"catalog_exemplary_note" = "This screen lists the skills shipped with the app: the original set plus entries accepted from the developed collection. Pilot proposal files are not the catalog by themselves.";
-"theory_compendium_intro" = "Each tab is an hour mark already used by the progress bar. The crystal is that mark's color. The text explains what the mark does and does not mean.";
-"theory_hour_unit" = "hours";
-"theory_callout_example" = "Example";
-"theory_callout_caveat" = "Caveat";
-"theory_callout_takeaway" = "Takeaway";
-"theory_chapter_21_title" = "Getting past the beginning";
-"theory_chapter_21_lead" = "Twenty-one hours changes the color of the progress bar. It is not a research finding. The closest published method is Josh Kaufman's 20-hour framework for surviving the awkward start, and those two numbers are not the same claim.";
-"theory_chapter_21_mechanism_title" = "A method for the start";
-"theory_chapter_21_mechanism" = "Kaufman treats the beginning as a practical problem. Split the skill into smaller parts, learn enough to notice your own mistakes, remove barriers that make practice inconvenient, and spend focused time on one result. The book presents this as an author's method for getting started.";
-"theory_chapter_21_example" = "A person who wants three chords to sound clean can practise that result. \"Learn the guitar\" is a larger aim, and the first hours do not settle it.";
-"theory_chapter_100_title" = "One hundred hours, as an app mark";
-"theory_chapter_100_lead" = "One hundred hours is a Time4Skill milestone for time already logged. None of the studies collected in this compendium define 100 hours as the point at which someone becomes competent.";
-"theory_chapter_100_mechanism_title" = "What nearby research actually measured";
-"theory_chapter_100_mechanism" = "Two lines of work sit near this period without measuring it in hours. Cepeda, Pashler, Vul, Wixted, and Rohrer reviewed 317 experiments on verbal recall. Spacing sessions beat cramming in that literature, and the useful gap depended on how long the material had to be remembered. Lally, van Jaarsveld, Potts, and Wardle asked volunteers to repeat an eating, drinking, or activity behaviour in the same context. The modelled time to reach 95 percent of each person's own plateau varied widely. Missing one day did not erase the curve.";
-"theory_chapter_100_example" = "Playing a short piece on three different days shows which bar actually stayed in memory. One long evening of repetition does not answer that question.";
-"theory_chapter_100_caveat" = "The spacing review is about verbal recall. The habit study is about automaticity of a chosen behaviour, and its range was 18 to 254 days in the model reported with the paper, not a 100-hour competence line. Neither result says that 100 hours makes someone competent at photography, driving, or any other skill.";
-"theory_chapter_100_takeaway" = "Use the mark to notice whether you are coming back. Do not treat it as a level you have earned.";
-"theory_chapter_1000_title" = "Practice aimed at one gap";
-"theory_chapter_1000_lead" = "The 1,000-hour crystal records time spent. It does not mean the person is now a professional, a teacher, or someone who can earn a living from the skill.";
-"theory_chapter_1000_mechanism_title" = "Deliberate practice, and how much it explained";
-"theory_chapter_1000_mechanism" = "Ericsson, Krampe, and Tesch-Römer described deliberate practice as activity arranged to improve a specific aspect, with feedback and correction, rather than simply repeating what is already comfortable. Their 1993 paper developed that framework with studies of musicians. It did not publish one hour-count that creates experts in every field. Macnamara, Hambrick, and Oswald later estimated how much of the difference in performance was associated with deliberate practice. The shares differed by domain: higher in games, music, and sports than in education and professions.";
-"theory_chapter_1000_example" = "An hour spent on the passage that keeps breaking down is a different activity from an hour of playing pieces that already go well. The progress bar records the time either way.";
-"theory_chapter_1000_caveat" = "The domain percentages are shares of variance in that 2014 meta-analysis. They are not the portion of a skill a person can learn, and they are not anyone's chance of success. The paper does not set 1,000 hours as a professional threshold. Older wording in the app that treated 1,000 hours as the point of becoming a professional overstated the evidence.";
-"theory_chapter_10000_title" = "A famous number, not a law";
-"theory_chapter_10000_lead" = "Ten thousand hours became famous as a rule of mastery. The research it was drawn from did not establish a law, and the crystal on this tab only identifies the app's highest displayed hour mark.";
-"theory_chapter_10000_mechanism_title" = "How the number travelled";
-"theory_chapter_10000_mechanism" = "Malcolm Gladwell's Outliers (2008) made the round number widely known. It drew on research about expert performance, including the 1993 paper by Ericsson, Krampe, and Tesch-Römer on deliberate practice among musicians. Macnamara and Maitra (2019) discuss how that popular rule differs from the research. The popular version collapsed a complicated argument into one threshold that would guarantee mastery.";
-"theory_chapter_10000_example" = "Two people can log the same total and still have spent the time differently. One may have had a teacher correcting a specific fault. The other may have been repeating a piece they already play. The hour total does not record that difference.";
-"counter_kind_label" = "Kind";
-"counter_kind_manual" = "Manual count";
-"counter_kind_elapsed" = "Days since a date";
-"counter_anchor_label" = "Start date";
-"counter_refresh" = "Refresh value";
-"counter_refresh_unavailable" = "Set a start date before refreshing. Until then the value stays as it is.";
+"catalog_exemplary_note" = "本屏幕列出应用附带的技能：原有集合以及来自已整理目录的条目。";
+"theory_compendium_intro" = "每個標籤都是進度條已經使用的小時標記。水晶是該標記的顏色。文字說明這個標記意味著什麼——以及不意味著什麼。";
+"theory_hour_unit" = "小時";
+"theory_callout_example" = "例子";
+"theory_callout_caveat" = "注意";
+"theory_callout_takeaway" = "要點";
+"theory_chapter_21_title" = "邁過開始階段";
+"theory_chapter_21_lead" = "二十一小時會改變進度條的顏色。這不是研究發現。最接近的已發表方法是 Josh Kaufman 幫助度過尷尬開端的 20 小時框架，這兩個數字並不是同一主張。";
+"theory_chapter_21_mechanism_title" = "起步方法";
+"theory_chapter_21_mechanism" = "Kaufman 把開始當作實際問題。把技能拆成更小部分，學到足以察覺自己的錯誤，去掉妨礙練習的障礙，並把專注時間用在一個結果上。書中把它呈現為作者的起步方法。";
+"theory_chapter_21_example" = "想讓三個和弦乾淨的人，可以專門練習這個結果。「學會吉他」是更大的目標，最初幾小時並不能決定它。";
+"theory_chapter_100_title" = "作為應用標記的一百小時";
+"theory_chapter_100_lead" = "一百小時是 Time4Skill 對已記錄時間的里程碑。本彙編中的研究都沒有把 100 小時定義為某人變得勝任的時刻。";
+"theory_chapter_100_mechanism_title" = "相近研究實際測量了什麼";
+"theory_chapter_100_mechanism" = "兩條研究線接近這段時期，但並不以小時計。Cepeda、Pashler、Vul、Wixted 與 Rohrer 回顧了 317 項言語回憶實驗。在該文獻中，分散練習優於突擊，有用的間隔取決於材料需要被記住多久。Lally、van Jaarsveld、Potts 與 Wardle 讓志願者在相同情境中重複飲食或活動行為。達到每人自身平台 95% 的建模時間差異很大。漏掉一天並不會抹掉曲線。";
+"theory_chapter_100_example" = "在三個不同日子演奏一小段，能看出哪一小節真正留在記憶裡。一整晚的重複回答不了這個問題。";
+"theory_chapter_100_caveat" = "關於間隔的綜述針對言語回憶。習慣研究針對所選行為的自動化，文中模型的範圍是 18 到 254 天，而不是 100 小時的勝任線。任何結果都沒有說 100 小時會讓人在攝影、駕駛或其他技能上變得勝任。";
+"theory_chapter_100_takeaway" = "用這個標記留意自己是否回來練習。不要把它當成已經賺到的等級。";
+"theory_chapter_1000_title" = "針對一個缺口的練習";
+"theory_chapter_1000_lead" = "1000 小時水晶記錄花費的時間。它並不表示此人已成為專業人士、教師，或能靠該技能謀生的人。";
+"theory_chapter_1000_mechanism_title" = "刻意練習及其解釋的份額";
+"theory_chapter_1000_mechanism" = "Ericsson、Krampe 與 Tesch-Römer 將刻意練習描述為旨在改進特定方面的活動，帶有回饋與糾正，而不是簡單重複已經舒適的內容。他們 1993 年的論文以音樂家研究發展了該框架。它沒有公布在每個領域造就專家的小時數。Macnamara、Hambrick 與 Oswald 後來估計表現差異中有多少與刻意練習相關。份額因領域而異：遊戲、音樂與體育高於教育與職業。";
+"theory_chapter_1000_example" = "花在仍會出錯的片段上的一小時，與演奏已經順利的曲目的一小時，是不同的活動。進度條兩種情況都會記錄時間。";
+"theory_chapter_1000_caveat" = "各領域百分比是 2014 年統合分析中的方差份額。它們不是一個人能學會的技能比例，也不是任何人的成功機率。論文沒有把 1000 小時設為職業門檻。應用中把 1000 小時當作成為專業人士時刻的舊表述誇大了證據。";
+"theory_chapter_10000_title" = "著名數字，不是定律";
+"theory_chapter_10000_lead" = "一萬小時因精通規則而著名。它所依據的研究並沒有確立定律，此標籤上的水晶只標識應用顯示的最高小時標記。";
+"theory_chapter_10000_mechanism_title" = "這個數字如何流傳";
+"theory_chapter_10000_mechanism" = "Malcolm Gladwell 的 Outliers（2008）使這個整數廣為人知。它依據專家表現研究，包括 Ericsson、Krampe 與 Tesch-Römer 1993 年關於音樂家刻意練習的論文。Macnamara 與 Maitra（2019）討論該流行規則與研究的差異。流行版本把複雜論證壓縮成一個據稱保證精通的門檻。";
+"theory_chapter_10000_example" = "兩個人可以記錄相同總數，卻以不同方式花費時間。一人可能有老師糾正具體缺點。另一人可能在重複已經會彈的曲子。小時總數不會記錄這種差別。";
+"counter_kind_label" = "类型";
+"counter_kind_manual" = "手动计数";
+"counter_kind_elapsed" = "自某日期起的天数";
+"counter_anchor_label" = "开始日期";
+"counter_refresh" = "重新整理數值";
+"counter_refresh_unavailable" = "刷新前请先设置开始日期。在此之前数值保持不变。";
 
 /* T4S-039 stats and overview */
-"stats_tab_overview" = "Overview";
-"stats_tab_time" = "Practice time";
-"stats_tab_skills" = "Skills";
-"stats_tab_thresholds" = "Hour thresholds";
-"stats_tab_activity" = "Activity";
-"stats_collection_heading" = "Skill collection";
-"stats_tracked_heading" = "Tracked skills";
-"stats_catalog_obtained_format" = "Obtained in the collection: %d of %d";
-"stats_catalog_not_obtained_format" = "Not yet marked obtained: %d";
-"stats_tracked_with_time_format" = "With recorded time: %d";
-"stats_tracked_without_time_format" = "With no recorded time: %d";
-"stats_group_empty" = "Nothing in this group.";
-"stats_thresholds_note" = "The 21, 100, 1,000 and 10,000 hour marks belong to the app. The number is how many tracked skills have at least that much recorded time. It is not a separate personal goal.";
-"stats_thresholds_empty" = "There are no tracked skills yet, so the thresholds have nothing to show.";
+"stats_tab_overview" = "概覽";
+"stats_tab_time" = "练习时间";
+"stats_tab_skills" = "技能";
+"stats_tab_thresholds" = "小时阈值";
+"stats_tab_activity" = "活动";
+"stats_collection_heading" = "技能收藏";
+"stats_tracked_heading" = "正在跟踪的技能";
+"stats_catalog_obtained_format" = "收藏中已获得：%d / %d";
+"stats_catalog_not_obtained_format" = "尚未标记为已获得：%d";
+"stats_tracked_with_time_format" = "有记录时间：%d";
+"stats_tracked_without_time_format" = "无记录时间：%d";
+"stats_group_empty" = "该分组中没有内容。";
+"stats_thresholds_note" = "21、100、1,000 和 10,000 小時標記屬於應用程式。數字表示至少有這麼多時間的追蹤技能數量。";
+"stats_thresholds_empty" = "尚无跟踪中的技能，因此阈值没有可显示的内容。";
 "stats_threshold_count_format" = "%d";
-"month_activity_title" = "This month";
-"month_activity_previous" = "Previous month";
-"month_activity_next" = "Next month";
-"month_activity_practice" = "Day with a saved session";
-"month_activity_obtained" = "Day a skill was marked obtained";
-"month_activity_empty" = "No saved sessions or obtained dates this month. A total of hours is not spread across days.";
-"overview_tracking_tools" = "Tracking tools";
+"month_activity_title" = "本月";
+"month_activity_previous" = "上个月";
+"month_activity_next" = "下个月";
+"month_activity_practice" = "有已保存练习的日期";
+"month_activity_obtained" = "技能被标记为已获得的日期";
+"month_activity_empty" = "本月没有已保存的练习或获得日期。小时总计不会按天分摊。";
+"overview_tracking_tools" = "追蹤工具";
 
 /* T4S-040 custom skill filter */
 "catalog_filter_custom" = "自建";
@@ -569,17 +561,17 @@
 "language_script_glagolitic" = "格拉哥里字母";
 
 /* T4S-042 time balance + language visibility */
-"time_balance_minus_start" = "− Start";
-"time_balance_plus_start" = "+ Start";
-"time_balance_minus_stop" = "− Stop";
-"time_balance_plus_stop" = "+ Stop";
-"time_balance_a11y_decrease" = "Start decreasing the time balance";
-"time_balance_a11y_increase" = "Start increasing the time balance";
-"time_balance_a11y_stop_decrease" = "Stop decreasing the time balance";
-"time_balance_a11y_stop_increase" = "Stop increasing the time balance";
-"time_balance_bar" = "Time balance";
-"time_balance_zero_sound" = "Play a sound when the balance reaches zero";
-"time_balance_sound_section" = "Time balance";
+"time_balance_minus_start" = "− 開始";
+"time_balance_plus_start" = "+ 開始";
+"time_balance_minus_stop" = "− 停止";
+"time_balance_plus_stop" = "+ 停止";
+"time_balance_a11y_decrease" = "开始减少时间余额";
+"time_balance_a11y_increase" = "开始增加时间余额";
+"time_balance_a11y_stop_decrease" = "停止减少时间余额";
+"time_balance_a11y_stop_increase" = "停止增加时间余额";
+"time_balance_bar" = "時間餘額";
+"time_balance_zero_sound" = "余额到零时播放声音";
+"time_balance_sound_section" = "時間餘額";
 
 /* T4S-UI-042 supplement: converter nav + recent tracking */
 "time_converter_nav_title" = "時間轉換器";
@@ -588,3 +580,5 @@
 "stats_this_month" = "本月";
 
 "export_pdf_generated_on_format" = "產生於：%@";
+"timer_start" = "開始";
+"timer_stop" = "停止";

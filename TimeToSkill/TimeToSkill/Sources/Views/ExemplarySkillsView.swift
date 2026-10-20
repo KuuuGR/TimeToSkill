@@ -83,7 +83,7 @@ struct ExemplarySkillsView: View {
                 .padding(.horizontal)
                 .padding(.top, 8)
 
-            Text(LocalizedStringKey("catalog_exemplary_note"))
+            LText(key: "catalog_exemplary_note")
                 .font(.caption)
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -97,7 +97,7 @@ struct ExemplarySkillsView: View {
             // growing to the full catalog.
             ScrollView {
                     if visibleSkills.isEmpty {
-                        Text(LocalizedStringKey(catalogQuery.emptyStateKey))
+                        Text(verbatim: L10n.string(catalogQuery.emptyStateKey))
                             .font(.callout)
                             .foregroundColor(.secondary)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -113,8 +113,8 @@ struct ExemplarySkillsView: View {
                                 }
                                 if skill.isUserCreated {
                                     Menu {
-                                        Button(LocalizedStringKey("hide")) { skill.isHidden = true; try? context.save() }
-                                        Button(LocalizedStringKey("delete_skill"), role: .destructive) {
+                                        Button(L10n.string("hide")) { skill.isHidden = true; try? context.save() }
+                                        Button(L10n.string("delete_skill"), role: .destructive) {
                                             pendingDelete = skill
                                             showingDeleteConfirm = true
                                         }
@@ -128,7 +128,7 @@ struct ExemplarySkillsView: View {
                                     .padding(6)
                                 } else {
                                     Menu {
-                                        Button(LocalizedStringKey("hide")) { skill.isHidden = true; try? context.save() }
+                                        Button(L10n.string("hide")) { skill.isHidden = true; try? context.save() }
                                     } label: {
                                         Image(systemName: "ellipsis.circle")
                                             .foregroundColor(.gray)
@@ -149,12 +149,12 @@ struct ExemplarySkillsView: View {
                     .macOSContentWidth(760)
                     if !archivedSkills.isEmpty {
                         VStack(alignment: .leading, spacing: 8) {
-                            Text(LocalizedStringKey("archived_section")).font(.headline).padding(.horizontal)
+                            LText(key: "archived_section").font(.headline).padding(.horizontal)
                             LazyVGrid(columns: gridColumns, spacing: 3) {
                                 ForEach(archivedSkills) { skill in
                                     ZStack(alignment: .topTrailing) {
                                         ExemplarySkillCard(skill: skill) { selectedSkill = skill }
-                                        Button(LocalizedStringKey("unhide")) { skill.isHidden = false; try? context.save() }
+                                        Button(L10n.string("unhide")) { skill.isHidden = false; try? context.save() }
                                             .buttonStyle(.bordered)
                                             .tint(.gray)
                                             .padding(6)
@@ -173,7 +173,7 @@ struct ExemplarySkillsView: View {
             .accessibilityIdentifier("CatalogSkillList")
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .navigationTitle(LocalizedStringKey("exemplary_skills_title"))
+        .navigationTitle(Text(verbatim: L10n.string("exemplary_skills_title")))
 
         .onAppear {
             loadDailyEvaluationsCount()
@@ -181,10 +181,10 @@ struct ExemplarySkillsView: View {
             PreviewProgressSeeder.apply(context: context)
         }
         .modifier(CatalogSkillPresentation(selectedSkill: $selectedSkill, evaluate: evaluateSkill))
-        .alert(LocalizedStringKey("daily_limit_reached_title"), isPresented: $showingDailyLimitAlert) {
-                Button(LocalizedStringKey("ok")) { }
+        .alert(L10n.string("daily_limit_reached_title"), isPresented: $showingDailyLimitAlert) {
+                Button(L10n.string("ok")) { }
             } message: {
-                Text(String(format: NSLocalizedString("daily_limit_reached_message_format", comment: ""), ExemplarySkillConstants.dailyEvaluationLimit))
+                Text(String(format: L10n.string("daily_limit_reached_message_format"), ExemplarySkillConstants.dailyEvaluationLimit))
             }
             .background(deleteConfirmDialog)
     }
@@ -202,7 +202,7 @@ extension ExemplarySkillsView {
             HStack(spacing: 8) {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.secondary)
-                TextField(LocalizedStringKey("catalog_search_prompt"), text: $searchText)
+                TextField("", text: $searchText, prompt: Text(verbatim: L10n.string("catalog_search_prompt")))
                     .textFieldStyle(.plain)
                     .accessibilityIdentifier("CatalogSearchField")
                 if !searchText.isEmpty {
@@ -213,7 +213,7 @@ extension ExemplarySkillsView {
                             .foregroundColor(.secondary)
                     }
                     .buttonStyle(.plain)
-                    .accessibilityLabel(LocalizedStringKey("catalog_filter_reset"))
+                    .accessibilityLabel(Text(verbatim: L10n.string("catalog_filter_reset")))
                 }
             }
             .padding(.horizontal, 10)
@@ -232,26 +232,34 @@ extension ExemplarySkillsView {
             HStack(spacing: 12) {
                 Menu {
                     ForEach(CatalogSort.allCases, id: \.self) { option in
-                        Button(option.localizedTitle) { sortOptionRaw = option.rawValue }
+                        Button {
+                            sortOptionRaw = option.rawValue
+                        } label: {
+                            Text(verbatim: option.localizedTitle)
+                        }
                     }
                 } label: {
-                    Label(LocalizedStringKey("sort_menu_label"), systemImage: "arrow.up.arrow.down")
+                    Label { Text(verbatim: L10n.string("sort_menu_label")) } icon: { Image(systemName: "arrow.up.arrow.down") }
                         .font(.caption)
                 }
                 .accessibilityIdentifier("CatalogSortMenu")
                 if !catalogQuery.isDefault {
-                    Button(LocalizedStringKey("catalog_filter_reset"), action: resetCatalogQuery)
+                    Button(action: resetCatalogQuery) {
+                        Text(verbatim: L10n.string("catalog_filter_reset"))
+                    }
                         .font(.caption)
                         .accessibilityIdentifier("CatalogResetFilters")
                 }
             }
 
             HStack {
-                Text(String(format: NSLocalizedString("daily_evaluations_format", comment: ""), dailyEvaluationsCount, ExemplarySkillConstants.dailyEvaluationLimit))
+                Text(String(format: L10n.string("daily_evaluations_format"), dailyEvaluationsCount, ExemplarySkillConstants.dailyEvaluationLimit))
                     .font(.caption)
                     .foregroundColor(.secondary)
                 Spacer()
-                Button(LocalizedStringKey("reset_daily_limit")) { resetDailyLimit() }
+                Button { resetDailyLimit() } label: {
+                    Text(verbatim: L10n.string("reset_daily_limit"))
+                }
                     .font(.caption)
                     .foregroundColor(.blue)
                     .macOSLinkButtonStyle()
@@ -261,21 +269,21 @@ extension ExemplarySkillsView {
 
     private var chipRow: some View {
         HStack(spacing: 8) {
-            catalogChip(LocalizedStringKey("catalog_filter_all"), selected: completionRaw == CompletionFilter.all.rawValue) {
+            catalogChip(L10n.string("catalog_filter_all"), selected: completionRaw == CompletionFilter.all.rawValue) {
                 completionRaw = CompletionFilter.all.rawValue
             }
-            catalogChip(LocalizedStringKey("catalog_filter_done"), selected: completionRaw == CompletionFilter.done.rawValue) {
+            catalogChip(L10n.string("catalog_filter_done"), selected: completionRaw == CompletionFilter.done.rawValue) {
                 completionRaw = CompletionFilter.done.rawValue
             }
-            catalogChip(LocalizedStringKey("catalog_filter_not_done"), selected: completionRaw == CompletionFilter.notDone.rawValue) {
+            catalogChip(L10n.string("catalog_filter_not_done"), selected: completionRaw == CompletionFilter.notDone.rawValue) {
                 completionRaw = CompletionFilter.notDone.rawValue
             }
-            catalogChip(LocalizedStringKey("catalog_favorites_only"), selected: favoriteRaw == FavoriteFilter.favorites.rawValue) {
+            catalogChip(L10n.string("catalog_favorites_only"), selected: favoriteRaw == FavoriteFilter.favorites.rawValue) {
                 favoriteRaw = favoriteRaw == FavoriteFilter.favorites.rawValue
                     ? FavoriteFilter.all.rawValue
                     : FavoriteFilter.favorites.rawValue
             }
-            catalogChip(LocalizedStringKey("catalog_filter_custom"), selected: ownershipRaw == OwnershipFilter.custom.rawValue) {
+            catalogChip(L10n.string("catalog_filter_custom"), selected: ownershipRaw == OwnershipFilter.custom.rawValue) {
                 ownershipRaw = ownershipRaw == OwnershipFilter.custom.rawValue
                     ? OwnershipFilter.all.rawValue
                     : OwnershipFilter.custom.rawValue
@@ -283,9 +291,9 @@ extension ExemplarySkillsView {
         }
     }
 
-    private func catalogChip(_ title: LocalizedStringKey, selected: Bool, action: @escaping () -> Void) -> some View {
+    private func catalogChip(_ title: String, selected: Bool, action: @escaping () -> Void) -> some View {
         Button(action: action) {
-            Text(title)
+            Text(verbatim: title)
                 .font(.caption)
                 .padding(.horizontal, 10)
                 .padding(.vertical, 6)
@@ -308,7 +316,7 @@ extension ExemplarySkillsView {
                 .background(.ultraThinMaterial, in: Circle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(Text(LocalizedStringKey(skill.isFavorite ? "catalog_favorite_remove" : "catalog_favorite_add")))
+        .accessibilityLabel(Text(verbatim: L10n.string(skill.isFavorite ? "catalog_favorite_remove" : "catalog_favorite_add")))
         .accessibilityIdentifier("CatalogFavoriteButton_\(skill.id.uuidString)")
     }
 
@@ -316,19 +324,23 @@ extension ExemplarySkillsView {
     private var deleteConfirmDialog: some View {
         EmptyView()
             .confirmationDialog(
-                LocalizedStringKey("delete_confirm_title"),
+                Text(verbatim: L10n.string("delete_confirm_title")),
                 isPresented: $showingDeleteConfirm,
                 titleVisibility: .visible
             ) {
-                Button(LocalizedStringKey("delete_confirm_action"), role: .destructive) {
+                Button(role: .destructive) {
                     if let skill = pendingDelete { deleteSkill(skill) }
                     pendingDelete = nil
+                } label: {
+                    Text(verbatim: L10n.string("delete_confirm_action"))
                 }
-                Button(LocalizedStringKey("cancel"), role: .cancel) {
+                Button(role: .cancel) {
                     pendingDelete = nil
+                } label: {
+                    Text(verbatim: L10n.string("cancel"))
                 }
             } message: {
-                Text(LocalizedStringKey("delete_confirm_message"))
+                LText(key: "delete_confirm_message")
             }
     }
 }

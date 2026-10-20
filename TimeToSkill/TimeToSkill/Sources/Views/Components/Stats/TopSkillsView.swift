@@ -20,12 +20,12 @@ struct TopSkillsView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStringKey("stats_top_skills_title"))
+            LText(key: "stats_top_skills_title")
                 .font(.title2)
                 .fontWeight(.semibold)
 
             if topSkills.isEmpty {
-                Text(LocalizedStringKey("stats_top_skills_empty_msg"))
+                LText(key: "stats_top_skills_empty_msg")
                     .font(.footnote)
                     .foregroundColor(.secondary)
                     .italic()

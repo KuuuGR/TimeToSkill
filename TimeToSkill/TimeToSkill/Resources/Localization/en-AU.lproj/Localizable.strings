@@ -588,3 +588,5 @@
 "stats_this_month" = "This month";
 
 "export_pdf_generated_on_format" = "Generated on: %@";
+"timer_start" = "Start";
+"timer_stop" = "Stop";

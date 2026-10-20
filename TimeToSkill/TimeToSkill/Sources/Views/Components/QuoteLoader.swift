@@ -11,19 +11,31 @@ class QuoteLoader {
             langPrefix = preferredLang.lowercased()
         }
         
-        //print("📘 Detected language prefix:", langPrefix)
-        
         let preferredFile = "\(langPrefix)_quotes"
         let fallbackFile = "en_quotes"
 
-        if let quotes = loadQuotes(from: preferredFile) {
-            return quotes
+        let quotes: [Quote]
+        if let loaded = loadQuotes(from: preferredFile) {
+            quotes = loaded
         } else if let fallback = loadQuotes(from: fallbackFile) {
-            return fallback
+            quotes = fallback
+        } else {
+            print("❌ No quotes file found for locale prefix \(langPrefix)")
+            return []
         }
 
-        print("❌ No quotes file found for locale prefix \(langPrefix)")
-        return []
+        // Interslavic Latinica source → Cyrilica / Glagolica at presentation time.
+        guard preferredLang == "isv",
+              let script = LanguageState.shared.script(),
+              script != .latin else {
+            return quotes
+        }
+        return quotes.map { quote in
+            Quote(
+                quote: InterslavicTransliterator.convert(quote.quote, to: script),
+                author: InterslavicTransliterator.convert(quote.author, to: script)
+            )
+        }
     }
 
     private static func loadQuotes(from fileName: String) -> [Quote]? {
@@ -34,8 +46,7 @@ class QuoteLoader {
 
         do {
             let data = try Data(contentsOf: url)
-            let quotes = try JSONDecoder().decode([Quote].self, from: data)
-            return quotes
+            return try JSONDecoder().decode([Quote].self, from: data)
         } catch {
             print("❌ Failed to decode \(fileName).json:", error)
             return nil

@@ -46,13 +46,13 @@ struct BrandMark: View {
                 .accessibilityHidden(true)
 
             if showsWordmark {
-                Text("ab_app_name")
+                Text(verbatim: L10n.string("ab_app_name"))
                     .font(wordmarkFont)
                     .foregroundColor(wordmarkColor)
             }
         }
         .accessibilityElement(children: .combine)
-        .accessibilityLabel(Text("ab_app_name"))
+        .accessibilityLabel(Text(verbatim: L10n.string("ab_app_name")))
     }
 
     // MARK: - Symbols

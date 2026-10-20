@@ -41,7 +41,7 @@ struct FABButton: View {
         }
         .buttonStyle(.plain)
         .macOSHoverFeedback(scale: 1.06)
-        .accessibilityLabel(accessibilityLabelKey != nil ? LocalizedStringKey(accessibilityLabelKey!) : "")
+        .accessibilityLabel(Text(verbatim: accessibilityLabelKey.map { L10n.string($0) } ?? ""))
         .onAppear {
             // Run a one-time gentle animation
             if animatePulse && !animatedOnce {

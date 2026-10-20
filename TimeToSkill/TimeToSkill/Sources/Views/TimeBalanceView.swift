@@ -48,16 +48,16 @@ struct TimeBalanceView: View {
         TimelineView(.periodic(from: .now, by: 1)) { timeline in
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text(LocalizedStringKey("time_balance_note"))
+                    LText(key: "time_balance_note")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
 
                     if budgets.isEmpty {
                         ContentUnavailableView {
-                            Label(LocalizedStringKey("time_balance_empty_title"), systemImage: "hourglass")
+                            Label { Text(verbatim: L10n.string("time_balance_empty_title")) } icon: { Image(systemName: "hourglass") }
                         } description: {
-                            Text(LocalizedStringKey("time_balance_empty_description"))
+                            LText(key: "time_balance_empty_description")
                         }
                     } else {
                         ForEach(budgets) { budget in
@@ -77,30 +77,36 @@ struct TimeBalanceView: View {
                 Button {
                     showingNew = true
                 } label: {
-                    Label(LocalizedStringKey("time_balance_new"), systemImage: "plus")
+                    Label { Text(verbatim: L10n.string("time_balance_new")) } icon: { Image(systemName: "plus") }
                 }
-                .help(LocalizedStringKey("time_balance_new"))
-                .accessibilityLabel(Text(LocalizedStringKey("time_balance_new")))
+                .help(L10n.string("time_balance_new"))
+                .accessibilityLabel(Text(verbatim: L10n.string("time_balance_new")))
             }
         }
         .confirmationDialog(
-            LocalizedStringKey("delete_confirm_title"),
+            Text(verbatim: L10n.string("delete_confirm_title")),
             isPresented: Binding(
                 get: { pendingDelete != nil },
                 set: { if !$0 { pendingDelete = nil } }
             ),
             titleVisibility: .visible
         ) {
-            Button(LocalizedStringKey("delete_confirm_action"), role: .destructive) {
+            Button(role: .destructive) {
                 if let pendingDelete {
                     context.delete(pendingDelete)
                     try? context.save()
                 }
                 pendingDelete = nil
+            } label: {
+                Text(verbatim: L10n.string("delete_confirm_action"))
             }
-            Button(LocalizedStringKey("cancel"), role: .cancel) { pendingDelete = nil }
+            Button(role: .cancel) {
+                pendingDelete = nil
+            } label: {
+                Text(verbatim: L10n.string("cancel"))
+            }
         } message: {
-            Text(LocalizedStringKey("delete_confirm_message"))
+            LText(key: "delete_confirm_message")
         }
         .sheet(isPresented: $showingNew) {
             NewTimeBalanceSheet { title, symbol in
@@ -125,7 +131,7 @@ struct TimeBalanceView: View {
                 Spacer()
                 Text(Self.format(seconds: seconds))
                     .font(.title3.monospacedDigit())
-                    .accessibilityLabel(Text(LocalizedStringKey("time_balance_remaining")))
+                    .accessibilityLabel(Text(verbatim: L10n.string("time_balance_remaining")))
             }
 
             HStack(spacing: 10) {
@@ -156,7 +162,7 @@ struct TimeBalanceView: View {
                         height: 14,
                         animated: !reduceMotion
                     )
-                    .accessibilityLabel(Text(LocalizedStringKey("time_balance_bar")))
+                    .accessibilityLabel(Text(verbatim: L10n.string("time_balance_bar")))
                     .accessibilityValue(Text(Self.format(seconds: seconds)))
                 }
                 .frame(maxWidth: .infinity)
@@ -182,9 +188,11 @@ struct TimeBalanceView: View {
             }
 
             HStack {
-                Button(LocalizedStringKey("time_balance_add_quarter")) {
+                Button {
                     budget.add(minutes: 15, at: now)
                     try? context.save()
+                } label: {
+                    Text(verbatim: L10n.string("time_balance_add_quarter"))
                 }
                 .buttonStyle(.bordered)
                 Spacer()
@@ -193,7 +201,7 @@ struct TimeBalanceView: View {
                 } label: {
                     Image(systemName: "trash")
                 }
-                .accessibilityLabel(Text(LocalizedStringKey("time_balance_delete")))
+                .accessibilityLabel(Text(verbatim: L10n.string("time_balance_delete")))
             }
         }
         .padding()
@@ -201,8 +209,8 @@ struct TimeBalanceView: View {
     }
 
     private func directionButton(
-        titleKey: LocalizedStringKey,
-        accessibilityKey: LocalizedStringKey,
+        titleKey: String,
+        accessibilityKey: String,
         systemImage: String,
         isActive: Bool,
         disabled: Bool,
@@ -212,7 +220,7 @@ struct TimeBalanceView: View {
             VStack(spacing: 4) {
                 Image(systemName: systemImage)
                     .font(.headline.weight(.semibold))
-                Text(titleKey)
+                Text(verbatim: L10n.string(titleKey))
                     .font(.caption.weight(.semibold))
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
@@ -229,7 +237,7 @@ struct TimeBalanceView: View {
                 .strokeBorder(isActive ? AppColors.accent : Color.clear, lineWidth: 2)
         )
         .disabled(disabled)
-        .accessibilityLabel(Text(accessibilityKey))
+        .accessibilityLabel(L10n.string(accessibilityKey))
         .accessibilityAddTraits(isActive ? .isSelected : [])
     }
 
@@ -271,17 +279,21 @@ private struct NewTimeBalanceSheet: View {
         NavigationStack {
             Form {
                 SkillEmojiPickerButton(selection: $symbol)
-                TextField(LocalizedStringKey("counter_title_placeholder"), text: $title)
+                TextField("", text: $title, prompt: Text(verbatim: L10n.string("counter_title_placeholder")))
             }
-            .navigationTitle(LocalizedStringKey("time_balance_new"))
+            .navigationTitle(Text(verbatim: L10n.string("time_balance_new")))
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button(LocalizedStringKey("cancel")) { dismiss() }
+                    Button { dismiss() } label: {
+                        Text(verbatim: L10n.string("cancel"))
+                    }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button(LocalizedStringKey("create")) {
+                    Button {
                         onCreate(title, symbol)
                         dismiss()
+                    } label: {
+                        Text(verbatim: L10n.string("create"))
                     }
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
                 }

@@ -68,8 +68,7 @@
 "support_nav_title" = "الدعم";
 
 // MARK: - TheoryView
-"theory_title" = "نظريات وقت التعلم";
-
+"theory_title" = "نظريات التعلّم";
 "theory_10k_title" = "قاعدة 10,000 ساعة";
 "theory_10k_author" = "مالكوم جلادويل (بناءً على أندرس إريكسون)";
 "theory_10k_description" = "لتحقيق التميز، تحتاج إلى حوالي عشرة آلاف ساعة من التدريب المتعمَّد. تنطبق على المؤدين النخبة (الموسيقيين، الرياضيين، لاعبي الشطرنج). الكمية وحدها لا تكفي، بل الجودة أيضاً. تُنتقد لتبسيطها المفرط.";
@@ -93,8 +92,7 @@
 "theory_comparison_title" = "📈 المقارنة";
 "theory_comparison_text" = "• 20 ساعة → بداية جيدة (هاوٍ)\n• 100 ساعة → قوي (متوسط الخبرة)\n• 1,000 ساعة → محترف\n• 10,000 ساعة → خبير (نخبة)";
 
-"theory_nav_title" = "نظرية التعلم";
-
+"theory_nav_title" = "نظرية التعلّم";
 // MARK: - StatsView
 "stats_title_overview" = "📊 نظرة عامة على التقدم";
 "stats_nav_title" = "إحصاءاتك";
@@ -127,9 +125,9 @@
 
 "skill_name_section" = "الاسم";
 "skill_name_label" = "اسم المهارة";
-"skill_icon_label" = "Icon";
-"skill_emoji_picker_title" = "Choose Icon";
-"skill_emoji_picker_none" = "None";
+"skill_icon_label" = "أيقونة";
+"skill_emoji_picker_title" = "اختر أيقونة";
+"skill_emoji_picker_none" = "لا شيء";
 "skill_emoji_section_faces" = "الوجوه";
 "skill_emoji_section_work" = "العمل";
 "skill_emoji_section_creativity" = "الإبداع";
@@ -206,7 +204,7 @@
 "time_mean_minutes_format" = "المتوسط: %@ د";
 "time_std_minutes_format" = "الانحراف المعياري: %@ د";
 "distribution_nav_title" = "التوزيع";
-"distribution_empty_message" = "No sessions recorded for this skill yet.";
+"distribution_empty_message" = "لا توجد جلسات مسجّلة لهذه المهارة بعد.";
 "global_time_distribution_title" = "التوزيع العالمي للوقت";
 
 // MARK: - Sort options (Exemplary)
@@ -328,51 +326,51 @@
 "sidebar_overview" = "نظرة عامة";
 
 // MARK: - SplashView
-"splash_presents" = "presents";
-"splash_tagline" = "Track your time. Learn smarter. Grow with patience.";
-"splash_reflection_1" = "Every hour you practice is a step toward mastery.";
-"splash_reflection_2" = "Skill is the reward of time well spent.";
-"splash_reflection_3" = "Small hours, repeated, become mastery.";
-"splash_reflection_4" = "Progress is patience made visible.";
-"splash_reflection_5" = "Time invested in learning is never wasted.";
+"splash_presents" = "يقدّم";
+"splash_tagline" = "تتبّع وقتك. تعلّم بذكاء. انمُ بصبر.";
+"splash_reflection_1" = "كل ساعة تدريب خطوة نحو الإتقان.";
+"splash_reflection_2" = "المهارة مكافأة الوقت المُستثمر جيداً.";
+"splash_reflection_3" = "الساعات الصغيرة المتكررة تصبح إتقاناً.";
+"splash_reflection_4" = "التقدّم صبر أصبح مرئياً.";
+"splash_reflection_5" = "الوقت المستثمر في التعلّم لا يُهدر أبداً.";
 
 // MARK: - Per-skill timer session chart (T4S-001)
-"session_chart_open" = "Session chart";
-"session_chart_nav_title" = "Timer sessions";
-"session_chart_metric" = "Timer sessions and manual hour additions for this skill.";
-"session_chart_bin_width" = "Bar width";
-"session_chart_detail_wide" = "Wide";
-"session_chart_detail_medium" = "Medium";
-"session_chart_detail_narrow" = "Narrow";
-"session_chart_bin_minutes" = "%d min";
-"session_chart_bin_range" = "%1$@–%2$@ min";
-"session_chart_bin_overflow" = "≥ %1$@ min";
-"session_chart_count_format" = "%d sessions";
-"session_chart_mean_format" = "Mean: %@ min";
+"session_chart_open" = "مخطط الجلسات";
+"session_chart_nav_title" = "جلسات المؤقّت";
+"session_chart_metric" = "جلسات المؤقّت والإضافات اليدوية للساعات لهذه المهارة.";
+"session_chart_bin_width" = "عرض العمود";
+"session_chart_detail_wide" = "عريض";
+"session_chart_detail_medium" = "متوسط";
+"session_chart_detail_narrow" = "ضيق";
+"session_chart_bin_minutes" = "%d د";
+"session_chart_bin_range" = "%1$@–%2$@ د";
+"session_chart_bin_overflow" = "≥ %1$@ د";
+"session_chart_count_format" = "%d جلسات";
+"session_chart_mean_format" = "المتوسط: %@ د";
 "session_chart_mean_unavailable" = "—";
-"session_chart_empty" = "No completed timer sessions for this skill yet.";
-"session_chart_curve_caption" = "The translucent curve is a normal-distribution reference for these sessions. It is not a prediction and does not mean the sessions follow a normal distribution.";
-"session_chart_curve_hidden" = "Not enough variation or completed timer sessions to show a stable reference curve.";
-"session_chart_outside_range_format" = "%d observations lie outside the visible range.";
-"session_chart_accessibility" = "Timer session duration chart";
-"session_chart_row_accessibility" = "%1$@, %2$d sessions";
+"session_chart_empty" = "لا توجد جلسات مؤقّت مكتملة لهذه المهارة بعد.";
+"session_chart_curve_caption" = "المنحنى الشفاف مرجع لتوزيع طبيعي لهذه الجلسات. إرشاد وليس توقّعاً.";
+"session_chart_curve_hidden" = "لا يوجد تباين أو جلسات مكتملة كافية لعرض منحنى مرجعي مستقر.";
+"session_chart_outside_range_format" = "%d ملاحظات خارج النطاق المرئي.";
+"session_chart_accessibility" = "مخطط مدة جلسات المؤقّت";
+"session_chart_row_accessibility" = "%1$@، %2$d جلسات";
 
 // MARK: - Theory topics (T4S-002)
-"theory_intro" = "Ideas you can try while you practise. The short version is enough. Open sources only when you want the research context.";
-"theory_takeaway_label" = "Practical takeaway";
-"theory_sources_button" = "Sources & research details ↗";
-"theory_sources_accessibility" = "Sources and research details";
-"theory_detail_title" = "Research details";
-"theory_detail_citation" = "Citation";
-"theory_detail_source_type" = "Source type";
-"theory_detail_context" = "Research context";
-"theory_detail_limitation" = "Limitation";
-"theory_detail_links" = "Source links";
-"theory_type_framework" = "Author's practical framework";
-"theory_type_article" = "Research article";
-"theory_type_meta" = "Meta-analysis";
-"theory_link_author_site" = "Author's website";
-"theory_link_publisher" = "Publisher";
+"theory_intro" = "أفكار يمكنك تجربتها أثناء التمرين. النسخة القصيرة تكفي. افتح المصادر فقط عندما تريد سياق البحث.";
+"theory_takeaway_label" = "خلاصة عملية";
+"theory_sources_button" = "المصادر وتفاصيل البحث ↗";
+"theory_sources_accessibility" = "المصادر وتفاصيل البحث";
+"theory_detail_title" = "تفاصيل البحث";
+"theory_detail_citation" = "اقتباس";
+"theory_detail_source_type" = "نوع المصدر";
+"theory_detail_context" = "سياق البحث";
+"theory_detail_limitation" = "القيود";
+"theory_detail_links" = "روابط المصادر";
+"theory_type_framework" = "إطار عملي للمؤلف";
+"theory_type_article" = "مقال بحثي";
+"theory_type_meta" = "تحليل تلوي";
+"theory_link_author_site" = "موقع المؤلف";
+"theory_link_publisher" = "الناشر";
 "theory_link_ericsson_1993" = "Ericsson, Krampe, and Tesch-Römer, 1993";
 "theory_link_macnamara_2019" = "Macnamara and Maitra, 2019";
 "theory_link_macnamara_2014" = "Macnamara, Hambrick, and Oswald, 2014";
@@ -380,172 +378,166 @@
 "theory_link_cepeda_2006" = "Cepeda and colleagues, 2006";
 "theory_link_lally_2010" = "Lally and colleagues, 2010";
 
-"theory_topic_first20_title" = "The First 20 Hours: Get Past the Beginning";
-"theory_topic_first20_summary" = "Starting a skill is often frustrating because everything is unfamiliar. Josh Kaufman proposes a practical approach: break a skill into smaller parts, focus on what matters, remove barriers to practice, and spend focused time improving. His 20-hour framework is a starting method, not a scientific guarantee that any skill can be mastered in 20 hours.";
-"theory_topic_first20_takeaway" = "Choose one specific thing you want to be able to do better after your first 20 hours.";
+"theory_topic_first20_title" = "أول 20 ساعة: تجاوز البداية";
+"theory_topic_first20_summary" = "بدء مهارة غالبًا محبط لأن كل شيء غير مألوف. يقترح جوش كوفمان نهجًا عمليًا: قسّم المهارة، وركّز على المهم، وأزل عوائق التمرين، واقضِ وقتًا مركّزًا على التحسين. إطاره لـ20 ساعة طريقة للبدء، لا ضمان علمي بأن أي مهارة تُتقن في 20 ساعة.";
+"theory_topic_first20_takeaway" = "اختر شيئًا محددًا تريد فعله بشكل أفضل بعد أول 20 ساعة.";
 "theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Ebook published in 2013; paperback published in 2014.";
-"theory_topic_first20_context" = "Author's practical framework and book, not a controlled scientific study.";
-"theory_topic_first20_limitation" = "The 20-hour framework is a starting method. It is not a scientifically established time needed to master a skill.";
-
-"theory_topic_deliberate_title" = "Practice With a Purpose";
-"theory_topic_deliberate_summary" = "Repeating an activity is not the same as deliberately improving it. Choose a specific aspect to work on, practise with a clear goal, notice errors, and adjust your next attempt. Time is useful to track, but the way you practise matters too.";
-"theory_topic_deliberate_takeaway" = "Before a session, decide what one thing you want to improve.";
+"theory_topic_first20_context" = "إطار عملي وكتاب للمؤلف، لا دراسة علمية مضبوطة.";
+"theory_topic_first20_limitation" = "إطار العشرين ساعة طريقة للبدء. ليس وقتًا مثبتًا علميًا مطلوبًا للإتقان.";
+"theory_topic_deliberate_title" = "تمرّن بهدف";
+"theory_topic_deliberate_summary" = "تكرار نشاط ليس كتحسينه عمدًا. اختر جانبًا محددًا، وتمرّن بهدف واضح، ولاحظ الأخطاء، وعدّل المحاولة التالية. تتبّع الوقت مفيد، لكن طريقة التمرين مهمة أيضًا.";
+"theory_topic_deliberate_takeaway" = "قبل الجلسة، قرّر شيئًا واحدًا تريد تحسينه.";
 "theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
-"theory_topic_deliberate_context" = "The paper developed a framework for expert performance and reported studies involving musicians, including violinists and pianists.";
-"theory_topic_deliberate_limitation" = "The paper does not establish one fixed number of practice hours that guarantees mastery across all skills.";
-
-"theory_topic_10k_title" = "10,000 Hours: A Popular Rule, Not a Law";
-"theory_topic_10k_summary" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). It drew on research about expert performance, but the popular version simplified the original argument. There is no universal magic number of hours that guarantees mastery.";
-"theory_topic_10k_takeaway" = "Use long-term milestones to celebrate persistence, not to predict when you will become an expert.";
+"theory_topic_deliberate_context" = "طوّرت الورقة إطارًا لأداء الخبراء وأبلغت عن دراسات شملت موسيقيين، منهم عازفو كمان وبيانو.";
+"theory_topic_deliberate_limitation" = "لا تُثبت الورقة عدد ساعات تمرين ثابتًا يضمن الإتقان عبر كل المهارات.";
+"theory_topic_10k_title" = "10,000 ساعة: قاعدة شائعة، لا قانون";
+"theory_topic_10k_summary" = "أصبحت قاعدة الـ10,000 ساعة شائعة عبر Outliers (2008) لمالكوم غلادويل. استندت إلى بحث أداء الخبراء، لكن النسخة الشائعة بسّطت الحجة الأصلية. لا يوجد رقم ساعات سحري عالمي يضمن الإتقان.";
+"theory_topic_10k_takeaway" = "استخدم المعالم طويلة الأمد للاحتفال بالمثابرة، لا للتنبؤ بمتى تصبح خبيرًا.";
 "theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara and Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
-"theory_topic_10k_context" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). The 2019 paper discusses how that popular rule differs from the 1993 research.";
-"theory_topic_10k_limitation" = "Ericsson and colleagues did not establish a universal 10,000-hour mastery law. There is no universal number of hours that guarantees mastery.";
-
-"theory_topic_variance_title" = "Practice Matters, but It Is Not Everything";
-"theory_topic_variance_summary" = "A 2014 meta-analysis examined deliberate practice across several fields. It found that practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_takeaway" = "Practice is something you can influence. Results also depend on other factors, which differ between activities.";
+"theory_topic_10k_context" = "أصبحت قاعدة الـ10,000 ساعة شائعة عبر Outliers (2008) لمالكوم غلادويل. تناقش ورقة 2019 كيف تختلف تلك القاعدة الشائعة عن بحث 1993.";
+"theory_topic_10k_limitation" = "لم يُثبت إريكسون وزملاؤه قانون إتقان عالميًا بـ10,000 ساعة. لا يوجد عدد ساعات عالمي يضمن الإتقان.";
+"theory_topic_variance_title" = "التمرين مهم، لكنه ليس كل شيء";
+"theory_topic_variance_summary" = "فحص تحليل تلوي لعام 2014 التمرين المتعمّد عبر عدة مجالات. ارتبط التمرين بالأداء، لكن مساهمته اختلفت كثيرًا حسب المجال.";
+"theory_topic_variance_takeaway" = "التمرين شيء يمكنك التأثير فيه. تعتمد النتائج أيضًا على عوامل أخرى تختلف بين الأنشطة.";
 "theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick, and Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
-"theory_topic_variance_context" = "A 2014 meta-analysis examined deliberate practice across several fields. Practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_findings_intro" = "The estimated share of performance differences explained by deliberate practice in this analysis was:";
-"theory_topic_variance_limitation" = "These percentages refer to variance in performance explained in this meta-analysis. They are not the percentage of skill that a person can learn, and they are not an individual's probability of success.";
-"theory_finding_games" = "Games";
+"theory_topic_variance_context" = "فحص تحليل تلوي لعام 2014 التمرين المتعمّد عبر عدة مجالات. ارتبط التمرين بالأداء، لكن مساهمته اختلفت كثيرًا حسب المجال.";
+"theory_topic_variance_findings_intro" = "كانت الحصة المقدّرة لفروق الأداء التي فسّرها التمرين المتعمّد في هذا التحليل:";
+"theory_topic_variance_limitation" = "تشير هذه النسب إلى تباين الأداء المفسَّر في هذا التحليل التلوي. ليست نسبة المهارة التي يمكن لشخص تعلّمها، ولا احتمال نجاح فردي.";
+"theory_finding_games" = "ألعاب";
 "theory_finding_games_value" = "26%";
-"theory_finding_music" = "Music";
-"theory_finding_sports" = "Sports";
-"theory_finding_education" = "Education";
-"theory_finding_professions" = "Professions";
+"theory_finding_music" = "موسيقى";
+"theory_finding_sports" = "رياضة";
+"theory_finding_education" = "تعليم";
+"theory_finding_professions" = "مهن";
 "theory_finding_music_value" = "21%";
 "theory_finding_sports_value" = "18%";
 "theory_finding_education_value" = "4%";
 "theory_finding_professions_value" = "Less than 1%";
 
-"theory_topic_spacing_title" = "Return to a Skill, Rather Than Cramming Everything Together";
-"theory_topic_spacing_summary" = "Research on distributed practice supports spreading learning across multiple sessions rather than relying only on massed practice. The best spacing depends on the material and on how long you want to retain it.";
-"theory_topic_spacing_takeaway" = "Try returning to a skill over several days and observe what you remember and what needs more practice.";
+"theory_topic_spacing_title" = "عُد إلى مهارة بدل حشر كل شيء معًا";
+"theory_topic_spacing_summary" = "يدعم بحث التمرين الموزّع نشر التعلّم على جلسات متعددة بدل الاعتماد فقط على التمرين المكثف. أفضل تباعد يعتمد على المادة وعلى مدة الاحتفاظ بها.";
+"theory_topic_spacing_takeaway" = "جرّب العودة إلى مهارة على مدى عدة أيام ولاحظ ما تتذكره وما يحتاج مزيدًا من التمرين.";
 "theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted, and Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
-"theory_topic_spacing_context" = "The meta-analysis reviewed 317 experiments across 184 articles, with 839 assessments of distributed practice.";
-"theory_topic_spacing_limitation" = "These results concern learning and recall tasks. They do not present one schedule as optimal for every physical, social, artistic, or professional skill.";
-
-"theory_topic_habit_title" = "A Habit Does Not Have a Universal Deadline";
-"theory_topic_habit_summary" = "Repeating an action in a consistent context can make it more automatic over time. However, the time required differs between people and behaviours. Missing one day does not mean that all progress has been lost.";
-"theory_topic_habit_takeaway" = "Connect an activity to a situation you encounter regularly, and resume without guilt when a session is missed.";
+"theory_topic_spacing_context" = "راجع التحليل التلوي 317 تجربة عبر 184 مقالة، مع 839 تقييمًا للتمرين الموزّع.";
+"theory_topic_spacing_limitation" = "تتعلق هذه النتائج بمهام التعلّم والاسترجاع. لا تقدّم جدولًا أمثل لكل مهارة جسدية أو اجتماعية أو فنية أو مهنية.";
+"theory_topic_habit_title" = "ليس للعادة موعد نهائي عالمي";
+"theory_topic_habit_summary" = "تكرار فعل في سياق ثابت يمكن أن يجعله أكثر تلقائية بمرور الوقت. لكن الوقت المطلوب يختلف بين الأشخاص والسلوكيات. تفويت يوم لا يعني فقدان كل التقدّم.";
+"theory_topic_habit_takeaway" = "اربط نشاطًا بموقف تصادفه بانتظام، واستأنف بلا ذنب عندما تُفوت جلسة.";
 "theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, and Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
-"theory_topic_habit_context" = "Ninety-six volunteers selected an eating, drinking, or activity behaviour to repeat in the same context for 12 weeks. Eighty-two participants provided sufficient data for analysis. The modelled time to reach 95% of the asymptotic automaticity estimate varied from 18 to 254 days.";
-"theory_topic_habit_limitation" = "This was a habit-formation study, not a study of how many hours it takes to master a skill. It does not support a 21-hour mastery threshold or a universal 21-day habit rule.";
-
-"theory_milestones_title" = "Progress milestones";
+"theory_topic_habit_context" = "اختار ستة وتسعون متطوعًا سلوك أكل أو شرب أو نشاط لتكراره في السياق نفسه 12 أسبوعًا. قدّم اثنان وثمانون مشاركًا بيانات كافية. تراوح الوقت النموذجي للوصول إلى 95٪ من تقدير التلقائية التقاربي بين 18 و254 يومًا.";
+"theory_topic_habit_limitation" = "كانت دراسة لتكوين العادة، لا دراسة عن عدد الساعات اللازمة لإتقان مهارة. لا تدعم عتبة إتقان 21 ساعة ولا قاعدة عادة عالمية من 21 يومًا.";
+"theory_milestones_title" = "معالم التقدم";
 "theory_milestones_note" = "The 100-hour, 1,000-hour, and 10,000-hour marks in Time4Skill record time you have spent. They are progress milestones, not scientifically validated stages, and they do not predict when you will become an expert.";
-"theory_milestone_100_title" = "100 hours";
-"theory_milestone_1000_title" = "1,000 hours";
-"theory_milestone_10000_title" = "10,000 hours";
-"theory_milestone_note" = "Progress milestone, not a universal stage of expertise.";
+"theory_milestone_100_title" = "١٠٠ ساعة";
+"theory_milestone_1000_title" = "١٠٠٠ ساعة";
+"theory_milestone_10000_title" = "١٠٬٠٠٠ ساعة";
+"theory_milestone_note" = "معلم تقدم، وليس مرحلة عالمية من الخبرة.";
 
 // MARK: - Year activity calendar (T4S-003)
-"activity_calendar_title" = "Practice this year";
-"activity_calendar_previous" = "Previous year";
-"activity_calendar_next" = "Next year";
-"activity_calendar_summary" = "%1$d active days · %2$d skills";
-"activity_calendar_empty" = "No completed timer sessions yet. Days stay neutral until a timer session is saved.";
-"activity_calendar_year_empty" = "No completed timer sessions in this year.";
+"activity_calendar_title" = "التدريب هذا العام";
+"activity_calendar_previous" = "العام السابق";
+"activity_calendar_next" = "العام التالي";
+"activity_calendar_summary" = "%1$d أيام نشطة · %2$d مهارات";
+"activity_calendar_empty" = "لا توجد جلسات مؤقّت مكتملة بعد. تبقى الأيام محايدة حتى تُحفظ جلسة.";
+"activity_calendar_year_empty" = "لا توجد جلسات مؤقّت مكتملة في هذا العام.";
 "activity_calendar_day_accessibility" = "%1$@, %2$@";
-"activity_level_0" = "No recorded timer activity";
-"activity_level_1" = "Light activity";
-"activity_level_2" = "Some activity";
-"activity_level_3" = "Varied activity";
-"activity_level_4" = "Broad activity";
-"activity_level_5" = "Very broad activity";
+"activity_level_0" = "لا نشاط مؤقّت مسجّل";
+"activity_level_1" = "نشاط خفيف";
+"activity_level_2" = "بعض النشاط";
+"activity_level_3" = "نشاط متنوع";
+"activity_level_4" = "نشاط واسع";
+"activity_level_5" = "نشاط واسع جداً";
 
 // MARK: - Catalog search
-"catalog_search_prompt" = "Search skills";
-"catalog_filter_all" = "All";
-"catalog_filter_done" = "Done";
-"catalog_filter_not_done" = "Not done";
+"catalog_search_prompt" = "ابحث عن المهارات";
+"catalog_filter_all" = "الكل";
+"catalog_filter_done" = "منجز";
+"catalog_filter_not_done" = "غير منجز";
 "catalog_favorites_only" = "Favourites";
-"catalog_filter_reset" = "Reset";
-"catalog_no_results" = "No skills match these filters.";
+"catalog_filter_reset" = "إعادة ضبط";
+"catalog_no_results" = "لا مهارات تطابق هذه المرشّحات.";
 "catalog_favorite_add" = "Add to favourites";
 "catalog_favorite_remove" = "Remove from favourites";
-"catalog_crystal_reward" = "Crystal for an obtained skill";
-"catalog_progress" = "Progress";
+"catalog_crystal_reward" = "بلورة لمهارة مكتسبة";
+"catalog_progress" = "التقدّم";
 
 /* T4S-035 timers, counters, theory threshold */
 
-"tracker_tool_label" = "Tool";
-"tracker_tool_progress" = "Progress";
-"tracker_tool_balance" = "Time balance";
-"time_balance_note" = "This balance can go up or down. It is not skill progress, and using it does not reduce hours already tracked.";
-"time_balance_empty_title" = "No time balance yet";
-"time_balance_empty_description" = "Add a balance when you want to save time and count it down later.";
-"time_balance_add_quarter" = "Add 15 min";
-"time_balance_new" = "New balance";
-"time_balance_remaining" = "Time remaining";
-"time_balance_start" = "Count down";
-"time_balance_stop" = "Pause";
-"time_balance_delete" = "Delete balance";
-"counter_delete" = "Delete counter";
-"theory_threshold_crystal" = "Hour-threshold color in Time4Skill. Not a guarantee of mastery.";
-"theory_milestone_21_title" = "21 hours";
-
+"tracker_tool_label" = "أداة";
+"tracker_tool_progress" = "التقدّم";
+"tracker_tool_balance" = "رصيد الوقت";
+"time_balance_note" = "يمكن أن يزيد هذا الرصيد أو ينقص. ليس تقدّم مهارة ولا يقلّل الساعات المسجّلة مسبقاً.";
+"time_balance_empty_title" = "لا رصيد وقت بعد";
+"time_balance_empty_description" = "أضف رصيداً عندما تريد ادّخار الوقت وعدّه لاحقاً.";
+"time_balance_add_quarter" = "إضافة 15 د";
+"time_balance_new" = "رصيد جديد";
+"time_balance_remaining" = "الوقت المتبقي";
+"time_balance_start" = "عدّ تنازلي";
+"time_balance_stop" = "إيقاف مؤقت";
+"time_balance_delete" = "حذف الرصيد";
+"counter_delete" = "حذف العداد";
+"theory_threshold_crystal" = "لون عتبة الساعات في Time4Skill. ليس ضمانًا للإتقان.";
+"theory_milestone_21_title" = "٢١ ساعة";
 /* T4S-036 compendium, counters, catalog note */
-"catalog_exemplary_note" = "This screen lists the skills shipped with the app: the original set plus entries accepted from the developed collection. Pilot proposal files are not the catalog by themselves.";
-"theory_compendium_intro" = "Each tab is an hour mark already used by the progress bar. The crystal is that mark's color. The text explains what the mark does and does not mean.";
-"theory_hour_unit" = "hours";
-"theory_callout_example" = "Example";
-"theory_callout_caveat" = "Caveat";
-"theory_callout_takeaway" = "Takeaway";
-"theory_chapter_21_title" = "Getting past the beginning";
-"theory_chapter_21_lead" = "Twenty-one hours changes the color of the progress bar. It is not a research finding. The closest published method is Josh Kaufman's 20-hour framework for surviving the awkward start, and those two numbers are not the same claim.";
-"theory_chapter_21_mechanism_title" = "A method for the start";
-"theory_chapter_21_mechanism" = "Kaufman treats the beginning as a practical problem. Split the skill into smaller parts, learn enough to notice your own mistakes, remove barriers that make practice inconvenient, and spend focused time on one result. The book presents this as an author's method for getting started.";
-"theory_chapter_21_example" = "A person who wants three chords to sound clean can practise that result. \"Learn the guitar\" is a larger aim, and the first hours do not settle it.";
-"theory_chapter_100_title" = "One hundred hours, as an app mark";
-"theory_chapter_100_lead" = "One hundred hours is a Time4Skill milestone for time already logged. None of the studies collected in this compendium define 100 hours as the point at which someone becomes competent.";
-"theory_chapter_100_mechanism_title" = "What nearby research actually measured";
-"theory_chapter_100_mechanism" = "Two lines of work sit near this period without measuring it in hours. Cepeda, Pashler, Vul, Wixted, and Rohrer reviewed 317 experiments on verbal recall. Spacing sessions beat cramming in that literature, and the useful gap depended on how long the material had to be remembered. Lally, van Jaarsveld, Potts, and Wardle asked volunteers to repeat an eating, drinking, or activity behaviour in the same context. The modelled time to reach 95 percent of each person's own plateau varied widely. Missing one day did not erase the curve.";
-"theory_chapter_100_example" = "Playing a short piece on three different days shows which bar actually stayed in memory. One long evening of repetition does not answer that question.";
-"theory_chapter_100_caveat" = "The spacing review is about verbal recall. The habit study is about automaticity of a chosen behaviour, and its range was 18 to 254 days in the model reported with the paper, not a 100-hour competence line. Neither result says that 100 hours makes someone competent at photography, driving, or any other skill.";
-"theory_chapter_100_takeaway" = "Use the mark to notice whether you are coming back. Do not treat it as a level you have earned.";
-"theory_chapter_1000_title" = "Practice aimed at one gap";
-"theory_chapter_1000_lead" = "The 1,000-hour crystal records time spent. It does not mean the person is now a professional, a teacher, or someone who can earn a living from the skill.";
-"theory_chapter_1000_mechanism_title" = "Deliberate practice, and how much it explained";
-"theory_chapter_1000_mechanism" = "Ericsson, Krampe, and Tesch-Römer described deliberate practice as activity arranged to improve a specific aspect, with feedback and correction, rather than simply repeating what is already comfortable. Their 1993 paper developed that framework with studies of musicians. It did not publish one hour-count that creates experts in every field. Macnamara, Hambrick, and Oswald later estimated how much of the difference in performance was associated with deliberate practice. The shares differed by domain: higher in games, music, and sports than in education and professions.";
-"theory_chapter_1000_example" = "An hour spent on the passage that keeps breaking down is a different activity from an hour of playing pieces that already go well. The progress bar records the time either way.";
-"theory_chapter_1000_caveat" = "The domain percentages are shares of variance in that 2014 meta-analysis. They are not the portion of a skill a person can learn, and they are not anyone's chance of success. The paper does not set 1,000 hours as a professional threshold. Older wording in the app that treated 1,000 hours as the point of becoming a professional overstated the evidence.";
-"theory_chapter_10000_title" = "A famous number, not a law";
-"theory_chapter_10000_lead" = "Ten thousand hours became famous as a rule of mastery. The research it was drawn from did not establish a law, and the crystal on this tab only identifies the app's highest displayed hour mark.";
-"theory_chapter_10000_mechanism_title" = "How the number travelled";
-"theory_chapter_10000_mechanism" = "Malcolm Gladwell's Outliers (2008) made the round number widely known. It drew on research about expert performance, including the 1993 paper by Ericsson, Krampe, and Tesch-Römer on deliberate practice among musicians. Macnamara and Maitra (2019) discuss how that popular rule differs from the research. The popular version collapsed a complicated argument into one threshold that would guarantee mastery.";
-"theory_chapter_10000_example" = "Two people can log the same total and still have spent the time differently. One may have had a teacher correcting a specific fault. The other may have been repeating a piece they already play. The hour total does not record that difference.";
-"counter_kind_label" = "Kind";
-"counter_kind_manual" = "Manual count";
-"counter_kind_elapsed" = "Days since a date";
-"counter_anchor_label" = "Start date";
-"counter_refresh" = "Refresh value";
-"counter_refresh_unavailable" = "Set a start date before refreshing. Until then the value stays as it is.";
+"catalog_exemplary_note" = "تعرض هذه الشاشة المهارات المرفقة مع التطبيق: المجموعة الأصلية بالإضافة إلى عناصر من الكتالوج المُعدّ.";
+"theory_compendium_intro" = "كل علامة تبويب هي عتبة ساعات تستخدمها شريط التقدّم بالفعل. البلورة هي لون تلك العتبة. يشرح النص ما تعنيه العتبة — وما لا تعنيه.";
+"theory_hour_unit" = "ساعات";
+"theory_callout_example" = "مثال";
+"theory_callout_caveat" = "تحفظ";
+"theory_callout_takeaway" = "الخلاصة";
+"theory_chapter_21_title" = "تجاوز البداية";
+"theory_chapter_21_lead" = "إحدى وعشرون ساعة تغيّر لون شريط التقدّم. هذا ليس نتيجة بحث. أقرب طريقة منشورة هي إطار العشرين ساعة لجوش كوفمان لتجاوز البداية المحرجة، وهذان الرقمان ليسا الادعاء نفسه.";
+"theory_chapter_21_mechanism_title" = "طريقة للبداية";
+"theory_chapter_21_mechanism" = "يعامل كوفمان البداية كمشكلة عملية. قسّم المهارة إلى أجزاء أصغر، وتعلّم ما يكفي لملاحظة أخطائك، وأزل العوائق التي تجعل التمرين غير مريح، واقضِ وقتًا مركّزًا على نتيجة واحدة. يعرض الكتاب ذلك كطريقة للمؤلف للبدء.";
+"theory_chapter_21_example" = "من يريد أن تبدو ثلاث أوتار نظيفة يمكنه التمرين على تلك النتيجة تحديدًا. «تعلّم الجيتار» هدف أكبر، والساعات الأولى لا تحسمه.";
+"theory_chapter_100_title" = "مائة ساعة كعلامة للتطبيق";
+"theory_chapter_100_lead" = "مائة ساعة معلم في Time4Skill للوقت المسجّل أصلًا. لا تُعرّف أي دراسة في هذا الملخص 100 ساعة كلحظة يصبح فيها شخص كفؤًا.";
+"theory_chapter_100_mechanism_title" = "ما قاسه البحث القريب فعليًا";
+"theory_chapter_100_mechanism" = "يقع خطّان من العمل قرب هذه الفترة دون قياسها بالساعات. راجع سيبيدا وباشلر وفول وويكستد ورورر 317 تجربة عن الاسترجاع اللفظي. تفوقت الجلسات الموزّعة على الحفظ المكثف في تلك الأدبيات، واعتمد الفاصل المفيد على مدة الاحتفاظ بالمادة. طلبت لالي وفان يارسفيلد وبوتس وواردل من متطوعين تكرار سلوك أكل أو شرب أو نشاط في السياق نفسه. تباين الوقت النموذجي للوصول إلى 95 بالمئة من هضبة كل شخص كثيرًا. تفويت يوم واحد لم يمحُ المنحنى.";
+"theory_chapter_100_example" = "عزف مقطع قصير في ثلاثة أيام مختلفة يُظهر أي مقياس بقي فعلًا في الذاكرة. أمسية طويلة من التكرار لا تجيب عن هذا السؤال.";
+"theory_chapter_100_caveat" = "مراجعة التباعد تتعلق بالاسترجاع اللفظي. دراسة العادة تتعلق بأتمتة سلوك مختار، وكان المدى في النموذج المبلغ عنه مع المقال من 18 إلى 254 يومًا، لا خط كفاءة عند 100 ساعة. لا نتيجة تقول إن 100 ساعة تجعل أحدًا كفؤًا في التصوير أو القيادة أو أي مهارة أخرى.";
+"theory_chapter_100_takeaway" = "استخدم العلامة لتلاحظ إن كنت تعود. لا تعاملها كمستوى مكتسب.";
+"theory_chapter_1000_title" = "تمرين موجّه نحو فجوة واحدة";
+"theory_chapter_1000_lead" = "بلورة الألف ساعة تسجّل الوقت المُستغرق. لا تعني أن الشخص أصبح محترفًا أو معلّمًا أو من يمكنه العيش من المهارة.";
+"theory_chapter_1000_mechanism_title" = "التمرين المتعمّد، وكم فسّر";
+"theory_chapter_1000_mechanism" = "وصف إريكسون وكرامبي وتش-رومر التمرين المتعمّد بأنه نشاط منظم لتحسين جانب محدد، مع تغذية راجعة وتصحيح، بدل مجرد تكرار ما هو مريح أصلًا. طوّرت ورقتهم لعام 1993 هذا الإطار بدراسات على موسيقيين. لم تنشر عدد ساعات يصنع خبراء في كل مجال. قدّر ماكنامارا وهامبريك وأوزوالد لاحقًا كم من فرق الأداء ارتبط بالتمرين المتعمّد. اختلفت الحصص حسب المجال: أعلى في الألعاب والموسيقى والرياضة منها في التعليم والمهن.";
+"theory_chapter_1000_example" = "ساعة على المقطع الذي ما زال ينهار نشاط مختلف عن ساعة عزف قطع تسير جيدًا. يسجّل شريط التقدّم الوقت في الحالتين.";
+"theory_chapter_1000_caveat" = "نسب المجالات حصص تباين في التحليل التلوي لعام 2014. ليست جزء المهارة الذي يمكن تعلّمه، ولا فرصة نجاح أحد. لا تضع الورقة 1000 ساعة كعتبة مهنية. الصياغة الأقدم في التطبيق التي اعتبرت 1000 ساعة لحظة أن تصبح محترفًا بالغت في الأدلة.";
+"theory_chapter_10000_title" = "رقم شهير، لا قانون";
+"theory_chapter_10000_lead" = "عشرة آلاف ساعة اشتهرت كقاعدة للإتقان. البحث الذي استُمدت منه لم يُثبت قانونًا، وبلورة هذه العلامة تحدد فقط أعلى عتبة ساعات يعرضها التطبيق.";
+"theory_chapter_10000_mechanism_title" = "كيف سافر الرقم";
+"theory_chapter_10000_mechanism" = "جعل كتاب Outliers (2008) لمالكوم غلادويل الرقم المستدير معروفًا على نطاق واسع. استند إلى بحث عن أداء الخبراء، بما في ذلك ورقة إريكسون وكرامبي وتش-رومر لعام 1993 عن التمرين المتعمّد لدى الموسيقيين. يناقش ماكنامارا ومايترا (2019) كيف تختلف تلك القاعدة الشائعة عن البحث. ضغطت النسخة الشائعة حجة معقدة إلى عتبة واحدة يُفترض أن تضمن الإتقان.";
+"theory_chapter_10000_example" = "يمكن لشخصين تسجيل المجموع نفسه ومع ذلك قضاء الوقت بشكل مختلف. ربما كان لأحدهما معلّم يصحح عيبًا محددًا. وربما كرر الآخر قطعة يعزفها أصلًا. مجموع الساعات لا يسجّل ذلك الفرق.";
+"counter_kind_label" = "النوع";
+"counter_kind_manual" = "عدّ يدوي";
+"counter_kind_elapsed" = "أيام منذ تاريخ";
+"counter_anchor_label" = "تاريخ البدء";
+"counter_refresh" = "تحديث القيمة";
+"counter_refresh_unavailable" = "عيّن تاريخ بدء قبل التحديث. حتى ذلك تبقى القيمة كما هي.";
 
 /* T4S-039 stats and overview */
-"stats_tab_overview" = "Overview";
-"stats_tab_time" = "Practice time";
-"stats_tab_skills" = "Skills";
-"stats_tab_thresholds" = "Hour thresholds";
-"stats_tab_activity" = "Activity";
-"stats_collection_heading" = "Skill collection";
-"stats_tracked_heading" = "Tracked skills";
-"stats_catalog_obtained_format" = "Obtained in the collection: %d of %d";
-"stats_catalog_not_obtained_format" = "Not yet marked obtained: %d";
-"stats_tracked_with_time_format" = "With recorded time: %d";
-"stats_tracked_without_time_format" = "With no recorded time: %d";
-"stats_group_empty" = "Nothing in this group.";
-"stats_thresholds_note" = "The 21, 100, 1,000 and 10,000 hour marks belong to the app. The number is how many tracked skills have at least that much recorded time. It is not a separate personal goal.";
-"stats_thresholds_empty" = "There are no tracked skills yet, so the thresholds have nothing to show.";
+"stats_tab_overview" = "نظرة عامة";
+"stats_tab_time" = "وقت التدرّب";
+"stats_tab_skills" = "المهارات";
+"stats_tab_thresholds" = "عتبات الساعات";
+"stats_tab_activity" = "النشاط";
+"stats_collection_heading" = "مجموعة المهارات";
+"stats_tracked_heading" = "المهارات المتتبَّعة";
+"stats_catalog_obtained_format" = "مكتسبة في المجموعة: %d من %d";
+"stats_catalog_not_obtained_format" = "لم تُعلَّم مكتسبة بعد: %d";
+"stats_tracked_with_time_format" = "بوقت مسجّل: %d";
+"stats_tracked_without_time_format" = "بدون وقت مسجّل: %d";
+"stats_group_empty" = "لا شيء في هذه المجموعة.";
+"stats_thresholds_note" = "علامات 21 و100 و1000 و10000 ساعة تخص التطبيق. الرقم هو عدد المهارات المتتبَّعة التي لديها على الأقل هذا الوقت.";
+"stats_thresholds_empty" = "لا توجد مهارات متتبَّعة بعد، لذا ليس للعتبات ما تعرضه.";
 "stats_threshold_count_format" = "%d";
-"month_activity_title" = "This month";
-"month_activity_previous" = "Previous month";
-"month_activity_next" = "Next month";
-"month_activity_practice" = "Day with a saved session";
-"month_activity_obtained" = "Day a skill was marked obtained";
-"month_activity_empty" = "No saved sessions or obtained dates this month. A total of hours is not spread across days.";
-"overview_tracking_tools" = "Tracking tools";
+"month_activity_title" = "هذا الشهر";
+"month_activity_previous" = "الشهر السابق";
+"month_activity_next" = "الشهر التالي";
+"month_activity_practice" = "يوم بجلسة محفوظة";
+"month_activity_obtained" = "يوم وُسمت فيه مهارة كمكتسبة";
+"month_activity_empty" = "لا جلسات محفوظة ولا تواريخ اكتساب هذا الشهر. مجموع الساعات لا يوزَّع على الأيام.";
+"overview_tracking_tools" = "أدوات التتبّع";
 
 /* T4S-040 custom skill filter */
 "catalog_filter_custom" = "الخاصة";
@@ -568,17 +560,17 @@
 "language_script_glagolitic" = "الكتابة الغلاغوليتسية";
 
 /* T4S-042 time balance + language visibility */
-"time_balance_minus_start" = "− Start";
-"time_balance_plus_start" = "+ Start";
-"time_balance_minus_stop" = "− Stop";
-"time_balance_plus_stop" = "+ Stop";
-"time_balance_a11y_decrease" = "Start decreasing the time balance";
-"time_balance_a11y_increase" = "Start increasing the time balance";
-"time_balance_a11y_stop_decrease" = "Stop decreasing the time balance";
-"time_balance_a11y_stop_increase" = "Stop increasing the time balance";
-"time_balance_bar" = "Time balance";
-"time_balance_zero_sound" = "Play a sound when the balance reaches zero";
-"time_balance_sound_section" = "Time balance";
+"time_balance_minus_start" = "− بدء";
+"time_balance_plus_start" = "+ بدء";
+"time_balance_minus_stop" = "− إيقاف";
+"time_balance_plus_stop" = "+ إيقاف";
+"time_balance_a11y_decrease" = "بدء إنقاص رصيد الوقت";
+"time_balance_a11y_increase" = "بدء زيادة رصيد الوقت";
+"time_balance_a11y_stop_decrease" = "إيقاف إنقاص رصيد الوقت";
+"time_balance_a11y_stop_increase" = "إيقاف زيادة رصيد الوقت";
+"time_balance_bar" = "رصيد الوقت";
+"time_balance_zero_sound" = "تشغيل صوت عند وصول الرصيد إلى صفر";
+"time_balance_sound_section" = "رصيد الوقت";
 
 /* T4S-UI-042 supplement: converter nav + recent tracking */
 "time_converter_nav_title" = "محول الوقت";
@@ -587,3 +579,5 @@
 "stats_this_month" = "هذا الشهر";
 
 "export_pdf_generated_on_format" = "تاريخ الإنشاء: %@";
+"timer_start" = "بدء";
+"timer_stop" = "إيقاف";

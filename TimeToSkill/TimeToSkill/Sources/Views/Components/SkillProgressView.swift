@@ -71,7 +71,7 @@ struct SkillProgressView: View {
         #if os(macOS)
         .buttonStyle(.borderless)
         #endif
-        .accessibilityLabel(Text(LocalizedStringKey("session_chart_open")))
+        .accessibilityLabel(Text(verbatim: L10n.string("session_chart_open")))
         .accessibilityIdentifier("SessionChartButton_\(skill.id.hashValue)")
     }
 
@@ -110,7 +110,7 @@ struct SkillProgressView: View {
 
             // Timer button
             Button(action: onToggleTimer) {
-                Text(isActive ? "Stop" : "Start")
+                Text(verbatim: L10n.string(isActive ? "timer_stop" : "timer_start"))
                     .font(.subheadline)
                     .padding(.horizontal, 24)
                     .padding(.vertical, 8)
@@ -162,7 +162,7 @@ struct SkillProgressView: View {
                 // Native push button: the system draws its own background, so
                 // the tinted pill is no longer double-drawn on macOS.
                 Button(action: onToggleTimer) {
-                    Text(isActive ? "Stop" : "Start")
+                    Text(verbatim: L10n.string(isActive ? "timer_stop" : "timer_start"))
                         .frame(minWidth: 52)
                 }
                 .buttonStyle(.bordered)

@@ -14,7 +14,7 @@ struct AddSkillView: View {
                 HStack(spacing: 12) {
                     SkillEmojiPickerButton(selection: $skillIcon)
 
-                    TextField(LocalizedStringKey("enter_skill_name"), text: $skillName)
+                    TextField("", text: $skillName, prompt: Text(verbatim: L10n.string("enter_skill_name")))
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .accessibilityIdentifier("AddSkillNameField")
                 }
@@ -26,7 +26,7 @@ struct AddSkillView: View {
                     context.insert(newSkill)
                     dismiss()
                 }) {
-                    Text(LocalizedStringKey("add_skill"))
+                    LText(key: "add_skill")
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -40,11 +40,13 @@ struct AddSkillView: View {
                 Spacer()
             }
             .macOSSheetMinSize(width: 460, height: 260)
-            .navigationTitle(LocalizedStringKey("new_skill"))
+            .navigationTitle(Text(verbatim: L10n.string("new_skill")))
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button(LocalizedStringKey("cancel")) {
+                    Button {
                         dismiss()
+                    } label: {
+                        Text(verbatim: L10n.string("cancel"))
                     }
                 }
             }

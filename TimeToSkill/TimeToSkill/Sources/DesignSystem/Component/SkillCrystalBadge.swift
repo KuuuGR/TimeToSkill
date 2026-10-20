@@ -12,12 +12,12 @@ struct SkillCrystalBadge: View {
     var compact: Bool = false
     /// Hour-band crystal. Nil keeps the gold reward gem used on an obtained skill.
     var palette: CrystalPalette? = nil
-    var accessibilityKey: LocalizedStringKey = "catalog_crystal_reward"
+    var accessibilityKey: String = "catalog_crystal_reward"
 
     var body: some View {
         CrystalGem(colors: palette?.gemColors ?? Self.rewardColors)
             .frame(width: compact ? 12 : 18, height: compact ? 16 : 24)
-            .accessibilityLabel(Text(accessibilityKey))
+            .accessibilityLabel(Text(verbatim: L10n.string(accessibilityKey)))
     }
 
     private static let rewardColors = [

@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct TimeConverterView: View {
+    @ObservedObject private var language = AppLanguage.shared
+
     @State private var hoursInput: String = ""
     @State private var days8hOutput: String = ""
     @State private var days12hOutput: String = ""
@@ -32,13 +34,18 @@ struct TimeConverterView: View {
     @State private var matchedPerspective: TimePerspective?
 
     var body: some View {
+        let _ = language.resolved.presentationIdentity
         List {
             Section {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(LocalizedStringKey("Time_Converter_Hours_Label"))
+                    LText(key: "Time_Converter_Hours_Label")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                    TextField(LocalizedStringKey("Time_Converter_Hours_Placeholder"), text: $hoursInput)
+                    TextField(
+                        "",
+                        text: $hoursInput,
+                        prompt: Text(verbatim: L10n.string("Time_Converter_Hours_Placeholder"))
+                    )
                         .numberPadKeyboard()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .focused($focusedField, equals: .hours)
@@ -51,25 +58,25 @@ struct TimeConverterView: View {
 
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
                     converterField(
-                        label: "Time_Converter_Days8h_Label",
+                        labelKey: "Time_Converter_Days8h_Label",
                         text: $days8hOutput,
                         field: .days8,
                         maxChars: days8hMaxChars
                     )
                     converterField(
-                        label: "Time_Converter_Days12h_Label",
+                        labelKey: "Time_Converter_Days12h_Label",
                         text: $days12hOutput,
                         field: .days12,
                         maxChars: days12hMaxChars
                     )
                     converterField(
-                        label: "Time_Converter_Days24h_Label",
+                        labelKey: "Time_Converter_Days24h_Label",
                         text: $days24hOutput,
                         field: .days24,
                         maxChars: days24hMaxChars
                     )
                     converterField(
-                        label: "Time_Converter_Years_Label",
+                        labelKey: "Time_Converter_Years_Label",
                         text: $yearsOutput,
                         field: .years,
                         maxChars: yearsMaxChars
@@ -77,12 +84,14 @@ struct TimeConverterView: View {
                 }
                 .padding(.vertical, 8)
 
-                Button(LocalizedStringKey("Time_Converter_Calculate_Button")) {
+                Button {
                     if let focused = focusedField {
                         activeSource = focused
                     }
                     focusedField = nil
                     updateConversions()
+                } label: {
+                    LText(key: "Time_Converter_Calculate_Button")
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.top, 8)
@@ -90,10 +99,10 @@ struct TimeConverterView: View {
                 TimePerspectiveCard(perspective: matchedPerspective)
                     .padding(.top, 4)
             } header: {
-                Text(LocalizedStringKey("Time_Converter_Section_Header"))
+                LText(key: "Time_Converter_Section_Header")
             }
         }
-        .navigationTitle(LocalizedStringKey("time_converter_nav_title"))
+        .navigationTitle(Text(verbatim: L10n.string("time_converter_nav_title")))
         .inlineNavigationBarTitle()
         .onAppear {
             if perspectiveLibrary.isEmpty {
@@ -111,12 +120,14 @@ struct TimeConverterView: View {
         #if canImport(UIKit)
         .toolbar {
             ToolbarItem(placement: .keyboard) {
-                Button(LocalizedStringKey("Time_Converter_Calculate_Button")) {
+                Button {
                     if let focused = focusedField {
                         activeSource = focused
                     }
                     focusedField = nil
                     updateConversions()
+                } label: {
+                    LText(key: "Time_Converter_Calculate_Button")
                 }
             }
         }
@@ -124,16 +135,20 @@ struct TimeConverterView: View {
     }
 
     private func converterField(
-        label: LocalizedStringKey,
+        labelKey: String,
         text: Binding<String>,
         field: Field,
         maxChars: Int
     ) -> some View {
         VStack(alignment: .leading) {
-            Text(label)
+            LText(key: labelKey)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-            TextField(LocalizedStringKey("Time_Converter_Days_Placeholder"), text: text)
+            TextField(
+                "",
+                text: text,
+                prompt: Text(verbatim: L10n.string("Time_Converter_Days_Placeholder"))
+            )
                 .numberPadKeyboard()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .focused($focusedField, equals: field)

@@ -57,7 +57,7 @@ struct SplashView: View {
                 Spacer().frame(height: 16)
 
                 // 2. "presents"
-                Text("splash_presents")
+                LText(key: "splash_presents")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .tracking(2)
@@ -66,7 +66,7 @@ struct SplashView: View {
                 Spacer().frame(height: 24)
 
                 // 3. App title
-                Text("ab_app_name")
+                LText(key: "ab_app_name")
                     .font(.largeTitle.bold())
                     .foregroundColor(.primary)
                     .opacity(titleOpacity)
@@ -74,7 +74,7 @@ struct SplashView: View {
                 Spacer().frame(height: 12)
 
                 // 4. Subtitle
-                Text("splash_tagline")
+                LText(key: "splash_tagline")
                     .font(.body)
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)

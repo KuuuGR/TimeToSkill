@@ -64,8 +64,7 @@
 "support_nav_title" = "Podpora";
 
 // MARK: - TheoryView
-"theory_title" = "Teorie času učení";
-
+"theory_title" = "Teorie učení";
 "theory_10k_title" = "Pravidlo 10 000 hodin";
 "theory_10k_author" = "Malcolm Gladwell (na základě Andersa Ericssona)";
 "theory_10k_description" = "K dosažení mistrovství potřebuješ přibližně deset tisíc hodin vědomé praxe. Platí pro špičkové výkony (hudebníci, sportovci, šachisté). Nejde jen o množství, ale i o kvalitu. Kritizováno za zjednodušení.";
@@ -90,7 +89,6 @@
 "theory_comparison_text" = "• 20 hodin → Dobrý začátek (Amatér)\n• 100 hodin → Solidní (Středně pokročilý)\n• 1 000 hodin → Profesionál\n• 10 000 hodin → Mistr (Elita)";
 
 "theory_nav_title" = "Teorie učení";
-
 // MARK: - StatsView
 "stats_title_overview" = "📊 Přehled pokroku";
 "stats_nav_title" = "Tvé statistiky";
@@ -123,9 +121,9 @@
 
 "skill_name_section" = "Název";
 "skill_name_label" = "Název dovednosti";
-"skill_icon_label" = "Icon";
-"skill_emoji_picker_title" = "Choose Icon";
-"skill_emoji_picker_none" = "None";
+"skill_icon_label" = "Ikona";
+"skill_emoji_picker_title" = "Vybrat ikonu";
+"skill_emoji_picker_none" = "Žádná";
 "skill_emoji_section_faces" = "Tváře";
 "skill_emoji_section_work" = "Práce";
 "skill_emoji_section_creativity" = "Kreativita";
@@ -202,7 +200,7 @@
 "time_mean_minutes_format" = "Průměrný interval: %@ min";
 "time_std_minutes_format" = "Směrodatná odchylka: %@ min";
 "distribution_nav_title" = "Rozdělení";
-"distribution_empty_message" = "No sessions recorded for this skill yet.";
+"distribution_empty_message" = "Pro tuto dovednost zatím nejsou uložené žádné relace.";
 "global_time_distribution_title" = "Globální rozdělení času";
 
 // MARK: - Sort options (Exemplary)
@@ -329,51 +327,51 @@
 "sidebar_overview" = "Přehled";
 
 // MARK: - SplashView
-"splash_presents" = "presents";
-"splash_tagline" = "Track your time. Learn smarter. Grow with patience.";
-"splash_reflection_1" = "Every hour you practice is a step toward mastery.";
-"splash_reflection_2" = "Skill is the reward of time well spent.";
-"splash_reflection_3" = "Small hours, repeated, become mastery.";
-"splash_reflection_4" = "Progress is patience made visible.";
-"splash_reflection_5" = "Time invested in learning is never wasted.";
+"splash_presents" = "představuje";
+"splash_tagline" = "Sledujte svůj čas. Učte se chytřeji. Rostěte s trpělivostí.";
+"splash_reflection_1" = "Každá hodina cvičení je krok k mistrovství.";
+"splash_reflection_2" = "Dovednost je odměnou za dobře strávený čas.";
+"splash_reflection_3" = "Malé hodiny, opakované, se stávají mistrovstvím.";
+"splash_reflection_4" = "Pokrok je trpělivost učiněná viditelnou.";
+"splash_reflection_5" = "Čas investovaný do učení není nikdy ztracený.";
 
 // MARK: - Per-skill timer session chart (T4S-001)
-"session_chart_open" = "Session chart";
-"session_chart_nav_title" = "Timer sessions";
-"session_chart_metric" = "Sezení časovače a ruční přidání hodin pro tuto dovednost.";
-"session_chart_bin_width" = "Bar width";
-"session_chart_detail_wide" = "Wide";
-"session_chart_detail_medium" = "Medium";
-"session_chart_detail_narrow" = "Narrow";
+"session_chart_open" = "Graf relací";
+"session_chart_nav_title" = "Relace časovače";
+"session_chart_metric" = "Sesje czasomierza i ręczne dodania godzin dla tej umiejętności.";
+"session_chart_bin_width" = "Šířka sloupce";
+"session_chart_detail_wide" = "Široký";
+"session_chart_detail_medium" = "Střední";
+"session_chart_detail_narrow" = "Úzký";
 "session_chart_bin_minutes" = "%d min";
 "session_chart_bin_range" = "%1$@–%2$@ min";
 "session_chart_bin_overflow" = "≥ %1$@ min";
-"session_chart_count_format" = "%d sessions";
-"session_chart_mean_format" = "Mean: %@ min";
+"session_chart_count_format" = "%d relací";
+"session_chart_mean_format" = "Průměr: %@ min";
 "session_chart_mean_unavailable" = "—";
-"session_chart_empty" = "No completed timer sessions for this skill yet.";
-"session_chart_curve_caption" = "The translucent curve is a normal-distribution reference for these sessions. It is not a prediction and does not mean the sessions follow a normal distribution.";
-"session_chart_curve_hidden" = "Not enough variation or completed timer sessions to show a stable reference curve.";
-"session_chart_outside_range_format" = "%d pozorování leží mimo viditelný rozsah.";
-"session_chart_accessibility" = "Timer session duration chart";
-"session_chart_row_accessibility" = "%1$@, %2$d sessions";
+"session_chart_empty" = "Pro tuto dovednost zatím nejsou dokončené relace časovače.";
+"session_chart_curve_caption" = "Prześwitująca krzywa to odniesienie do rozkładu normalnego dla tych sesji. To orientacja, nie prognoza.";
+"session_chart_curve_hidden" = "Za mało zróżnicowania lub ukończonych sesji, by pokazać stabilną krzywą odniesienia.";
+"session_chart_outside_range_format" = "%d obserwacji leży poza widocznym zakresem.";
+"session_chart_accessibility" = "Wykres czasu trwania sesji czasomierza";
+"session_chart_row_accessibility" = "%1$@, %2$d sesji";
 
 // MARK: - Theory topics (T4S-002)
-"theory_intro" = "Ideas you can try while you practise. The short version is enough. Open sources only when you want the research context.";
-"theory_takeaway_label" = "Practical takeaway";
-"theory_sources_button" = "Sources & research details ↗";
-"theory_sources_accessibility" = "Sources and research details";
-"theory_detail_title" = "Research details";
-"theory_detail_citation" = "Citation";
-"theory_detail_source_type" = "Source type";
-"theory_detail_context" = "Research context";
-"theory_detail_limitation" = "Limitation";
-"theory_detail_links" = "Source links";
-"theory_type_framework" = "Author's practical framework";
-"theory_type_article" = "Research article";
-"theory_type_meta" = "Meta-analysis";
-"theory_link_author_site" = "Author's website";
-"theory_link_publisher" = "Publisher";
+"theory_intro" = "Nápady, které můžete vyzkoušet při cvičení. Krátká verze stačí. Zdroje otevírejte jen tehdy, když chcete výzkumný kontext.";
+"theory_takeaway_label" = "Praktické shrnutí";
+"theory_sources_button" = "Zdroje a podrobnosti výzkumu ↗";
+"theory_sources_accessibility" = "Zdroje a podrobnosti výzkumu";
+"theory_detail_title" = "Podrobnosti výzkumu";
+"theory_detail_citation" = "Citace";
+"theory_detail_source_type" = "Typ zdroje";
+"theory_detail_context" = "Kontext výzkumu";
+"theory_detail_limitation" = "Omezení";
+"theory_detail_links" = "Odkazy na zdroje";
+"theory_type_framework" = "Praktický rámec autora";
+"theory_type_article" = "Výzkumný článek";
+"theory_type_meta" = "Metaanalýza";
+"theory_link_author_site" = "Web autora";
+"theory_link_publisher" = "Vydavatel";
 "theory_link_ericsson_1993" = "Ericsson, Krampe, and Tesch-Römer, 1993";
 "theory_link_macnamara_2019" = "Macnamara and Maitra, 2019";
 "theory_link_macnamara_2014" = "Macnamara, Hambrick, and Oswald, 2014";
@@ -381,172 +379,166 @@
 "theory_link_cepeda_2006" = "Cepeda and colleagues, 2006";
 "theory_link_lally_2010" = "Lally and colleagues, 2010";
 
-"theory_topic_first20_title" = "The First 20 Hours: Get Past the Beginning";
-"theory_topic_first20_summary" = "Starting a skill is often frustrating because everything is unfamiliar. Josh Kaufman proposes a practical approach: break a skill into smaller parts, focus on what matters, remove barriers to practice, and spend focused time improving. His 20-hour framework is a starting method, not a scientific guarantee that any skill can be mastered in 20 hours.";
-"theory_topic_first20_takeaway" = "Choose one specific thing you want to be able to do better after your first 20 hours.";
+"theory_topic_first20_title" = "Prvních 20 hodin: překonat začátek";
+"theory_topic_first20_summary" = "Začátek dovednosti často frustruje, protože je vše nové. Josh Kaufman navrhuje praktický přístup: rozdělte dovednost, soustřeďte se na důležité, odstraňte překážky cvičení a věnujte soustředěný čas zlepšování. Jeho rámec 20 hodin je metoda startu, ne vědecká záruka, že se jakákoli dovednost zvládne za 20 hodin.";
+"theory_topic_first20_takeaway" = "Vyberte jednu konkrétní věc, kterou chcete po prvních 20 hodinách umět lépe.";
 "theory_topic_first20_citation" = "Josh Kaufman. The First 20 Hours: How to Learn Anything… Fast! Ebook published in 2013; paperback published in 2014.";
-"theory_topic_first20_context" = "Author's practical framework and book, not a controlled scientific study.";
-"theory_topic_first20_limitation" = "The 20-hour framework is a starting method. It is not a scientifically established time needed to master a skill.";
-
-"theory_topic_deliberate_title" = "Practice With a Purpose";
-"theory_topic_deliberate_summary" = "Repeating an activity is not the same as deliberately improving it. Choose a specific aspect to work on, practise with a clear goal, notice errors, and adjust your next attempt. Time is useful to track, but the way you practise matters too.";
-"theory_topic_deliberate_takeaway" = "Before a session, decide what one thing you want to improve.";
+"theory_topic_first20_context" = "Praktický rámec a kniha autora, ne kontrolovaná vědecká studie.";
+"theory_topic_first20_limitation" = "Rámec 20 hodin je metoda startu. Není to vědecky stanovený čas potřebný k mistrovství.";
+"theory_topic_deliberate_title" = "Cvičit s cílem";
+"theory_topic_deliberate_summary" = "Opakovat činnost není totéž jako ji záměrně zlepšovat. Vyberte konkrétní aspekt, cvičte s jasným cílem, všímejte si chyb a upravte další pokus. Sledovat čas je užitečné, ale záleží i na způsobu cvičení.";
+"theory_topic_deliberate_takeaway" = "Před session rozhodněte, co jednu věc chcete zlepšit.";
 "theory_topic_deliberate_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer. The Role of Deliberate Practice in the Acquisition of Expert Performance. Psychological Review, 1993, 100(3), 363–406.";
-"theory_topic_deliberate_context" = "The paper developed a framework for expert performance and reported studies involving musicians, including violinists and pianists.";
-"theory_topic_deliberate_limitation" = "The paper does not establish one fixed number of practice hours that guarantees mastery across all skills.";
-
-"theory_topic_10k_title" = "10,000 Hours: A Popular Rule, Not a Law";
-"theory_topic_10k_summary" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). It drew on research about expert performance, but the popular version simplified the original argument. There is no universal magic number of hours that guarantees mastery.";
-"theory_topic_10k_takeaway" = "Use long-term milestones to celebrate persistence, not to predict when you will become an expert.";
+"theory_topic_deliberate_context" = "Článek rozvinul rámec expertního výkonu a uvedl studie s hudebníky včetně houslistů a pianistů.";
+"theory_topic_deliberate_limitation" = "Článek nestanoví jedno pevné číslo hodin cvičení, které zaručí mistrovství ve všech dovednostech.";
+"theory_topic_10k_title" = "10 000 hodin: populární pravidlo, ne zákon";
+"theory_topic_10k_summary" = "Pravidlo 10 000 hodin se stalo široce známým díky Outliers (2008) Malcolma Gladwella. Opíralo se o výzkum expertního výkonu, ale populární verze zjednodušila původní argument. Neexistuje univerzální magické číslo hodin, které zaručí mistrovství.";
+"theory_topic_10k_takeaway" = "Používejte dlouhodobé milníky k oslavě vytrvalosti, ne k předpovědi, kdy se stanete expertem.";
 "theory_topic_10k_citation" = "K. Anders Ericsson, Ralf T. Krampe, and Clemens Tesch-Römer (1993). The Role of Deliberate Practice in the Acquisition of Expert Performance. Brooke N. Macnamara and Megha Maitra (2019). The Role of Deliberate Practice in Expert Performance: Revisiting Ericsson, Krampe & Tesch-Römer (1993).";
-"theory_topic_10k_context" = "The 10,000-hour rule became widely popular through Malcolm Gladwell's Outliers (2008). The 2019 paper discusses how that popular rule differs from the 1993 research.";
-"theory_topic_10k_limitation" = "Ericsson and colleagues did not establish a universal 10,000-hour mastery law. There is no universal number of hours that guarantees mastery.";
-
-"theory_topic_variance_title" = "Practice Matters, but It Is Not Everything";
-"theory_topic_variance_summary" = "A 2014 meta-analysis examined deliberate practice across several fields. It found that practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_takeaway" = "Practice is something you can influence. Results also depend on other factors, which differ between activities.";
+"theory_topic_10k_context" = "Pravidlo 10 000 hodin se stalo široce známým díky Outliers (2008) Malcolma Gladwella. Článek z roku 2019 probírá, čím se toto populární pravidlo liší od výzkumu z roku 1993.";
+"theory_topic_10k_limitation" = "Ericsson a kolegové nestanovili univerzální zákon mistrovství o 10 000 hodinách. Neexistuje univerzální počet hodin, který zaručí mistrovství.";
+"theory_topic_variance_title" = "Cvičení má význam, ale není vším";
+"theory_topic_variance_summary" = "Metaanalýza z roku 2014 zkoumala záměrnou praxi v několika oborech. Praxe souvisela s výkonem, ale její přínos se výrazně lišil podle oblasti.";
+"theory_topic_variance_takeaway" = "Cvičení je něco, co můžete ovlivnit. Výsledky také závisí na jiných faktorech, které se mezi činnostmi liší.";
 "theory_topic_variance_citation" = "Brooke N. Macnamara, David Z. Hambrick, and Frederick L. Oswald. Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis. Psychological Science, 2014, 25(8), 1608–1618.";
-"theory_topic_variance_context" = "A 2014 meta-analysis examined deliberate practice across several fields. Practice was associated with performance, but its contribution differed substantially by domain.";
-"theory_topic_variance_findings_intro" = "The estimated share of performance differences explained by deliberate practice in this analysis was:";
-"theory_topic_variance_limitation" = "These percentages refer to variance in performance explained in this meta-analysis. They are not the percentage of skill that a person can learn, and they are not an individual's probability of success.";
-"theory_finding_games" = "Games";
+"theory_topic_variance_context" = "Metaanalýza z roku 2014 zkoumala záměrnou praxi v několika oborech. Praxe souvisela s výkonem, ale její přínos se výrazně lišil podle oblasti.";
+"theory_topic_variance_findings_intro" = "Odhadovaný podíl rozdílů ve výkonu vysvětlený záměrnou praxí v této analýze byl:";
+"theory_topic_variance_limitation" = "Tato procenta se týkají vysvětlené variance výkonu v této metaanalýze. Nejsou procentem dovednosti, kterou lze naučit, ani individuální pravděpodobností úspěchu.";
+"theory_finding_games" = "Hry";
 "theory_finding_games_value" = "26%";
-"theory_finding_music" = "Music";
-"theory_finding_sports" = "Sports";
-"theory_finding_education" = "Education";
-"theory_finding_professions" = "Professions";
+"theory_finding_music" = "Hudba";
+"theory_finding_sports" = "Sport";
+"theory_finding_education" = "Vzdělávání";
+"theory_finding_professions" = "Profese";
 "theory_finding_music_value" = "21%";
 "theory_finding_sports_value" = "18%";
 "theory_finding_education_value" = "4%";
 "theory_finding_professions_value" = "Less than 1%";
 
-"theory_topic_spacing_title" = "Return to a Skill, Rather Than Cramming Everything Together";
-"theory_topic_spacing_summary" = "Research on distributed practice supports spreading learning across multiple sessions rather than relying only on massed practice. The best spacing depends on the material and on how long you want to retain it.";
-"theory_topic_spacing_takeaway" = "Try returning to a skill over several days and observe what you remember and what needs more practice.";
+"theory_topic_spacing_title" = "Vracejte se k dovednosti místo biflování všeho najednou";
+"theory_topic_spacing_summary" = "Výzkum rozložené praxe podporuje rozprostření učení do více session místo spoléhání jen na masovanou praxi. Nejlepší rozestup závisí na materiálu a na tom, jak dlouho jej chcete udržet.";
+"theory_topic_spacing_takeaway" = "Zkuste se k dovednosti vracet několik dní a sledujte, co si pamatujete a co potřebuje více cvičení.";
 "theory_topic_spacing_citation" = "Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted, and Doug Rohrer. Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 2006, 132(3), 354–380.";
-"theory_topic_spacing_context" = "The meta-analysis reviewed 317 experiments across 184 articles, with 839 assessments of distributed practice.";
-"theory_topic_spacing_limitation" = "These results concern learning and recall tasks. They do not present one schedule as optimal for every physical, social, artistic, or professional skill.";
-
-"theory_topic_habit_title" = "A Habit Does Not Have a Universal Deadline";
-"theory_topic_habit_summary" = "Repeating an action in a consistent context can make it more automatic over time. However, the time required differs between people and behaviours. Missing one day does not mean that all progress has been lost.";
-"theory_topic_habit_takeaway" = "Connect an activity to a situation you encounter regularly, and resume without guilt when a session is missed.";
+"theory_topic_spacing_context" = "Metaanalýza prohlédla 317 experimentů v 184 článcích s 839 hodnoceními rozložené praxe.";
+"theory_topic_spacing_limitation" = "Tyto výsledky se týkají úloh učení a vybavení. Nenabízejí jeden optimální rozvrh pro každou fyzickou, sociální, uměleckou nebo profesní dovednost.";
+"theory_topic_habit_title" = "Návyk nemá univerzální lhůtu";
+"theory_topic_habit_summary" = "Opakování akce ve stejném kontextu ji může časem učinit automatickější. Potřebný čas se však liší mezi lidmi a chováními. Vynechání jednoho dne neznamená, že je veškerý pokrok ztracen.";
+"theory_topic_habit_takeaway" = "Propojte činnost se situací, kterou potkáváte pravidelně, a vraťte se bez viny, když session vypadne.";
 "theory_topic_habit_citation" = "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, and Jane Wardle. How Are Habits Formed: Modelling Habit Formation in the Real World. European Journal of Social Psychology, 2010, 40, 998–1009.";
-"theory_topic_habit_context" = "Ninety-six volunteers selected an eating, drinking, or activity behaviour to repeat in the same context for 12 weeks. Eighty-two participants provided sufficient data for analysis. The modelled time to reach 95% of the asymptotic automaticity estimate varied from 18 to 254 days.";
-"theory_topic_habit_limitation" = "This was a habit-formation study, not a study of how many hours it takes to master a skill. It does not support a 21-hour mastery threshold or a universal 21-day habit rule.";
-
-"theory_milestones_title" = "Progress milestones";
+"theory_topic_habit_context" = "Devadesát šest dobrovolníků zvolilo chování jídla, pití nebo aktivity k opakování ve stejném kontextu po 12 týdnů. Osmdesát dva účastníků dodalo dostatek dat. Modelovaný čas k dosažení 95 % odhadu asymptotické automatizace se pohyboval od 18 do 254 dní.";
+"theory_topic_habit_limitation" = "Šlo o studii tvorby návyku, ne o studii, kolik hodin je třeba k mistrovství. Nepodporuje práh mistrovství 21 hodin ani univerzální pravidlo návyku 21 dní.";
+"theory_milestones_title" = "Milníky pokroku";
 "theory_milestones_note" = "The 100-hour, 1,000-hour, and 10,000-hour marks in Time4Skill record time you have spent. They are progress milestones, not scientifically validated stages, and they do not predict when you will become an expert.";
-"theory_milestone_100_title" = "100 hours";
-"theory_milestone_1000_title" = "1,000 hours";
-"theory_milestone_10000_title" = "10,000 hours";
-"theory_milestone_note" = "Progress milestone, not a universal stage of expertise.";
+"theory_milestone_100_title" = "100 hodin";
+"theory_milestone_1000_title" = "1000 hodin";
+"theory_milestone_10000_title" = "10 000 hodin";
+"theory_milestone_note" = "Milník pokroku, nikoli univerzální stupeň odbornosti.";
 
 // MARK: - Year activity calendar (T4S-003)
-"activity_calendar_title" = "Practice this year";
-"activity_calendar_previous" = "Previous year";
-"activity_calendar_next" = "Next year";
-"activity_calendar_summary" = "%1$d active days · %2$d skills";
-"activity_calendar_empty" = "No completed timer sessions yet. Days stay neutral until a timer session is saved.";
-"activity_calendar_year_empty" = "No completed timer sessions in this year.";
+"activity_calendar_title" = "Ćwiczenia w tym roku";
+"activity_calendar_previous" = "Poprzedni rok";
+"activity_calendar_next" = "Następny rok";
+"activity_calendar_summary" = "%1$d aktywnych dni · %2$d umiejętności";
+"activity_calendar_empty" = "Brak ukończonych sesji czasomierza. Dni pozostają neutralne, dopóki sesja nie zostanie zapisana.";
+"activity_calendar_year_empty" = "Brak ukończonych sesji czasomierza w tym roku.";
 "activity_calendar_day_accessibility" = "%1$@, %2$@";
-"activity_level_0" = "No recorded timer activity";
-"activity_level_1" = "Light activity";
-"activity_level_2" = "Some activity";
-"activity_level_3" = "Varied activity";
-"activity_level_4" = "Broad activity";
-"activity_level_5" = "Very broad activity";
+"activity_level_0" = "Brak zapisanej aktywności czasomierza";
+"activity_level_1" = "Lekka aktywność";
+"activity_level_2" = "Pewna aktywność";
+"activity_level_3" = "Zróżnicowana aktywność";
+"activity_level_4" = "Szeroka aktywność";
+"activity_level_5" = "Bardzo szeroka aktywność";
 
 // MARK: - Catalog search
-"catalog_search_prompt" = "Search skills";
-"catalog_filter_all" = "All";
-"catalog_filter_done" = "Done";
-"catalog_filter_not_done" = "Not done";
+"catalog_search_prompt" = "Hledat dovednosti";
+"catalog_filter_all" = "Vše";
+"catalog_filter_done" = "Hotovo";
+"catalog_filter_not_done" = "Nehotovo";
 "catalog_favorites_only" = "Favourites";
-"catalog_filter_reset" = "Reset";
-"catalog_no_results" = "No skills match these filters.";
+"catalog_filter_reset" = "Resetovat";
+"catalog_no_results" = "Brak umiejętności dla tych filtrów.";
 "catalog_favorite_add" = "Add to favourites";
 "catalog_favorite_remove" = "Remove from favourites";
-"catalog_crystal_reward" = "Crystal for an obtained skill";
-"catalog_progress" = "Progress";
+"catalog_crystal_reward" = "Kryształ za zdobytą umiejętność";
+"catalog_progress" = "Postęp";
 
 /* T4S-035 timers, counters, theory threshold */
 
-"tracker_tool_label" = "Tool";
-"tracker_tool_progress" = "Progress";
-"tracker_tool_balance" = "Time balance";
-"time_balance_note" = "This balance can go up or down. It is not skill progress, and using it does not reduce hours already tracked.";
-"time_balance_empty_title" = "No time balance yet";
-"time_balance_empty_description" = "Add a balance when you want to save time and count it down later.";
-"time_balance_add_quarter" = "Add 15 min";
-"time_balance_new" = "New balance";
-"time_balance_remaining" = "Time remaining";
-"time_balance_start" = "Count down";
-"time_balance_stop" = "Pause";
-"time_balance_delete" = "Delete balance";
-"counter_delete" = "Delete counter";
-"theory_threshold_crystal" = "Hour-threshold color in Time4Skill. Not a guarantee of mastery.";
-"theory_milestone_21_title" = "21 hours";
-
+"tracker_tool_label" = "Narzędzie";
+"tracker_tool_progress" = "Pokrok";
+"tracker_tool_balance" = "Časový zůstatek";
+"time_balance_note" = "To saldo może rosnąć albo maleć. Nie jest postępem umiejętności i nie zmniejsza już zapisanych godzin.";
+"time_balance_empty_title" = "Nie ma jeszcze salda";
+"time_balance_empty_description" = "Dodaj saldo, gdy chcesz odłożyć czas i później go odliczać.";
+"time_balance_add_quarter" = "Dodaj 15 min";
+"time_balance_new" = "Nowe saldo";
+"time_balance_remaining" = "Pozostały czas";
+"time_balance_start" = "Odliczaj";
+"time_balance_stop" = "Pauza";
+"time_balance_delete" = "Usuń saldo";
+"counter_delete" = "Usuń licznik";
+"theory_threshold_crystal" = "Barva hodinového prahu v Time4Skill. Není zárukou mistrovství.";
+"theory_milestone_21_title" = "21 hodin";
 /* T4S-036 compendium, counters, catalog note */
-"catalog_exemplary_note" = "This screen lists the skills shipped with the app: the original set plus entries accepted from the developed collection. Pilot proposal files are not the catalog by themselves.";
-"theory_compendium_intro" = "Each tab is an hour mark already used by the progress bar. The crystal is that mark's color. The text explains what the mark does and does not mean.";
-"theory_hour_unit" = "hours";
-"theory_callout_example" = "Example";
-"theory_callout_caveat" = "Caveat";
-"theory_callout_takeaway" = "Takeaway";
-"theory_chapter_21_title" = "Getting past the beginning";
-"theory_chapter_21_lead" = "Twenty-one hours changes the color of the progress bar. It is not a research finding. The closest published method is Josh Kaufman's 20-hour framework for surviving the awkward start, and those two numbers are not the same claim.";
-"theory_chapter_21_mechanism_title" = "A method for the start";
-"theory_chapter_21_mechanism" = "Kaufman treats the beginning as a practical problem. Split the skill into smaller parts, learn enough to notice your own mistakes, remove barriers that make practice inconvenient, and spend focused time on one result. The book presents this as an author's method for getting started.";
-"theory_chapter_21_example" = "A person who wants three chords to sound clean can practise that result. \"Learn the guitar\" is a larger aim, and the first hours do not settle it.";
-"theory_chapter_100_title" = "One hundred hours, as an app mark";
-"theory_chapter_100_lead" = "One hundred hours is a Time4Skill milestone for time already logged. None of the studies collected in this compendium define 100 hours as the point at which someone becomes competent.";
-"theory_chapter_100_mechanism_title" = "What nearby research actually measured";
-"theory_chapter_100_mechanism" = "Two lines of work sit near this period without measuring it in hours. Cepeda, Pashler, Vul, Wixted, and Rohrer reviewed 317 experiments on verbal recall. Spacing sessions beat cramming in that literature, and the useful gap depended on how long the material had to be remembered. Lally, van Jaarsveld, Potts, and Wardle asked volunteers to repeat an eating, drinking, or activity behaviour in the same context. The modelled time to reach 95 percent of each person's own plateau varied widely. Missing one day did not erase the curve.";
-"theory_chapter_100_example" = "Playing a short piece on three different days shows which bar actually stayed in memory. One long evening of repetition does not answer that question.";
-"theory_chapter_100_caveat" = "The spacing review is about verbal recall. The habit study is about automaticity of a chosen behaviour, and its range was 18 to 254 days in the model reported with the paper, not a 100-hour competence line. Neither result says that 100 hours makes someone competent at photography, driving, or any other skill.";
-"theory_chapter_100_takeaway" = "Use the mark to notice whether you are coming back. Do not treat it as a level you have earned.";
-"theory_chapter_1000_title" = "Practice aimed at one gap";
-"theory_chapter_1000_lead" = "The 1,000-hour crystal records time spent. It does not mean the person is now a professional, a teacher, or someone who can earn a living from the skill.";
-"theory_chapter_1000_mechanism_title" = "Deliberate practice, and how much it explained";
-"theory_chapter_1000_mechanism" = "Ericsson, Krampe, and Tesch-Römer described deliberate practice as activity arranged to improve a specific aspect, with feedback and correction, rather than simply repeating what is already comfortable. Their 1993 paper developed that framework with studies of musicians. It did not publish one hour-count that creates experts in every field. Macnamara, Hambrick, and Oswald later estimated how much of the difference in performance was associated with deliberate practice. The shares differed by domain: higher in games, music, and sports than in education and professions.";
-"theory_chapter_1000_example" = "An hour spent on the passage that keeps breaking down is a different activity from an hour of playing pieces that already go well. The progress bar records the time either way.";
-"theory_chapter_1000_caveat" = "The domain percentages are shares of variance in that 2014 meta-analysis. They are not the portion of a skill a person can learn, and they are not anyone's chance of success. The paper does not set 1,000 hours as a professional threshold. Older wording in the app that treated 1,000 hours as the point of becoming a professional overstated the evidence.";
-"theory_chapter_10000_title" = "A famous number, not a law";
-"theory_chapter_10000_lead" = "Ten thousand hours became famous as a rule of mastery. The research it was drawn from did not establish a law, and the crystal on this tab only identifies the app's highest displayed hour mark.";
-"theory_chapter_10000_mechanism_title" = "How the number travelled";
-"theory_chapter_10000_mechanism" = "Malcolm Gladwell's Outliers (2008) made the round number widely known. It drew on research about expert performance, including the 1993 paper by Ericsson, Krampe, and Tesch-Römer on deliberate practice among musicians. Macnamara and Maitra (2019) discuss how that popular rule differs from the research. The popular version collapsed a complicated argument into one threshold that would guarantee mastery.";
-"theory_chapter_10000_example" = "Two people can log the same total and still have spent the time differently. One may have had a teacher correcting a specific fault. The other may have been repeating a piece they already play. The hour total does not record that difference.";
-"counter_kind_label" = "Kind";
-"counter_kind_manual" = "Manual count";
-"counter_kind_elapsed" = "Days since a date";
-"counter_anchor_label" = "Start date";
-"counter_refresh" = "Refresh value";
-"counter_refresh_unavailable" = "Set a start date before refreshing. Until then the value stays as it is.";
+"catalog_exemplary_note" = "Ten ekran pokazuje umiejętności dołączone do aplikacji: dotychczasowy zestaw oraz pozycje przyjęte z opracowanego zbioru. Pliki propozycji pilotażowych same nie są katalogiem.";
+"theory_compendium_intro" = "Každá záložka je hodinová značka, kterou už používá ukazatel postupu. Krystal je barva této značky. Text vysvětluje, co značka znamená — a co ne.";
+"theory_hour_unit" = "hodin";
+"theory_callout_example" = "Příklad";
+"theory_callout_caveat" = "Výhrada";
+"theory_callout_takeaway" = "Shrnutí";
+"theory_chapter_21_title" = "Překonat začátek";
+"theory_chapter_21_lead" = "Dvacet jedna hodin mění barvu ukazatele postupu. To není výzkumný závěr. Nejbližší publikovaná metoda je Kaufmanův rámec 20 hodin pro přežití nešikovného začátku, a tato dvě čísla nejsou stejné tvrzení.";
+"theory_chapter_21_mechanism_title" = "Metoda pro start";
+"theory_chapter_21_mechanism" = "Kaufman bere začátek jako praktický problém. Rozdělte dovednost na menší části, naučte se dost na to, abyste si všimli vlastních chyb, odstraňte překážky, které cvičení ztěžují, a věnujte soustředěný čas jednomu výsledku. Kniha to představuje jako autorovu metodu, jak začít.";
+"theory_chapter_21_example" = "Kdo chce, aby tři akordy zněly čistě, může cvičit právě tento výsledek. „Naučit se kytaru“ je větší cíl a první hodiny jej nerozhodnou.";
+"theory_chapter_100_title" = "Sto hodin jako značka aplikace";
+"theory_chapter_100_lead" = "Sto hodin je milník Time4Skill pro už zaznamenaný čas. Žádná ze studií v tomto kompendiu nedefinuje 100 hodin jako bod, kdy se někdo stává kompetentním.";
+"theory_chapter_100_mechanism_title" = "Co blízký výzkum skutečně měřil";
+"theory_chapter_100_mechanism" = "Dvě výzkumné linie leží blízko tohoto období, aniž by je měřily v hodinách. Cepeda, Pashler, Vul, Wixted a Rohrer prohlédli 317 experimentů o slovním vybavení. Rozložené sessiony v té literatuře porážely biflování a užitečný odstup závisel na tom, jak dlouho měl být materiál pamatován. Lally, van Jaarsveld, Potts a Wardle žádali dobrovolníky, aby opakovali chování jídla, pití nebo aktivity ve stejném kontextu. Modelovaný čas do 95 procent vlastního plateaus každé osoby se široce lišil. Vynechání jednoho dne křivku nevymazalo.";
+"theory_chapter_100_example" = "Hraní krátkého úryvku ve tři různé dny ukáže, který takt opravdu zůstal v paměti. Jeden dlouhý večer opakování na tuto otázku neodpoví.";
+"theory_chapter_100_caveat" = "Přehled o rozložení se týká slovního vybavení. Studie návyku se týká automatizace zvoleného chování a rozsah v modelu u článku byl 18 až 254 dní, ne linie kompetence na 100 hodinách. Žádný výsledek neříká, že 100 hodin dělá někoho kompetentním ve fotografii, řízení auta nebo jiné dovednosti.";
+"theory_chapter_100_takeaway" = "Použijte značku, abyste si všimli, zda se vracíte. Netrachte ji jako zaslouženou úroveň.";
+"theory_chapter_1000_title" = "Cvičení zaměřené na jednu mezeru";
+"theory_chapter_1000_lead" = "Krystal 1000 hodin zaznamenává strávený čas. Neznamená, že je osoba nyní profesionál, učitel nebo někdo, kdo může z dovednosti žít.";
+"theory_chapter_1000_mechanism_title" = "Záměrná praxe a kolik vysvětlovala";
+"theory_chapter_1000_mechanism" = "Ericsson, Krampe a Tesch-Römer popsali záměrnou praxi jako činnost uspořádanou ke zlepšení konkrétního aspektu, se zpětnou vazbou a opravou, místo pouhého opakování už pohodlného. Jejich článek z roku 1993 rozvíjel tento rámec na studiích hudebníků. Neuveřejnil počet hodin, který tvoří experty v každém oboru. Macnamara, Hambrick a Oswald později odhadli, jaká část rozdílů ve výkonu souvisela se záměrnou praxí. Podíly se lišily podle oblasti: vyšší ve hrách, hudbě a sportu než ve vzdělávání a profesích.";
+"theory_chapter_1000_example" = "Hodina u pasáže, která se stále láme, je jiná činnost než hodina skladeb, které už jdou dobře. Ukazatel postupu zaznamenává čas v obou případech.";
+"theory_chapter_1000_caveat" = "Procenta podle oblastí jsou podíly variance v metaanalýze z roku 2014. Nejsou částí dovednosti, kterou lze naučit, ani něčí šancí na úspěch. Článek nestanoví 1000 hodin jako profesní práh. Starší znění v aplikaci, které bralo 1000 hodin jako moment stát se profesionálem, přehánělo důkazy.";
+"theory_chapter_10000_title" = "Slavné číslo, ne zákon";
+"theory_chapter_10000_lead" = "Deset tisíc hodin se proslavilo jako pravidlo mistrovství. Výzkum, z nějž vycházelo, nestanovil zákon a krystal na této záložce jen označuje nejvyšší zobrazenou hodinovou značku aplikace.";
+"theory_chapter_10000_mechanism_title" = "Jak číslo cestovalo";
+"theory_chapter_10000_mechanism" = "Outliers (2008) Malcolma Gladwella učinilo kulaté číslo široce známým. Opíralo se o výzkum expertního výkonu včetně článku Ericssona, Krampeho a Tesch-Römera z roku 1993 o záměrné praxi hudebníků. Macnamara a Maitra (2019) probírají, čím se toto populární pravidlo liší od výzkumu. Populární verze stlačila složitý argument do jednoho prahu, který měl zaručit mistrovství.";
+"theory_chapter_10000_example" = "Dva lidé mohou zaznamenat stejný součet a přesto strávit čas jinak. Jeden mohl mít učitele opravujícího konkrétní chybu. Druhý mohl opakovat skladbu, kterou už hraje. Součet hodin tento rozdíl nezaznamená.";
+"counter_kind_label" = "Rodzaj";
+"counter_kind_manual" = "Liczenie ręczne";
+"counter_kind_elapsed" = "Dny od data";
+"counter_anchor_label" = "Data początkowa";
+"counter_refresh" = "Odśwież wartość";
+"counter_refresh_unavailable" = "Ustaw datę początkową, zanim odświeżysz. Do tego czasu wartość zostaje bez zmian.";
 
 /* T4S-039 stats and overview */
-"stats_tab_overview" = "Overview";
-"stats_tab_time" = "Practice time";
-"stats_tab_skills" = "Skills";
-"stats_tab_thresholds" = "Hour thresholds";
-"stats_tab_activity" = "Activity";
-"stats_collection_heading" = "Skill collection";
-"stats_tracked_heading" = "Tracked skills";
-"stats_catalog_obtained_format" = "Obtained in the collection: %d of %d";
-"stats_catalog_not_obtained_format" = "Not yet marked obtained: %d";
-"stats_tracked_with_time_format" = "With recorded time: %d";
-"stats_tracked_without_time_format" = "With no recorded time: %d";
-"stats_group_empty" = "Nothing in this group.";
-"stats_thresholds_note" = "The 21, 100, 1,000 and 10,000 hour marks belong to the app. The number is how many tracked skills have at least that much recorded time. It is not a separate personal goal.";
-"stats_thresholds_empty" = "There are no tracked skills yet, so the thresholds have nothing to show.";
+"stats_tab_overview" = "Přehled";
+"stats_tab_time" = "Czas nauki";
+"stats_tab_skills" = "Dovednosti";
+"stats_tab_thresholds" = "Progi godzin";
+"stats_tab_activity" = "Aktywność";
+"stats_collection_heading" = "Kolekcja umiejętności";
+"stats_tracked_heading" = "Śledzone umiejętności";
+"stats_catalog_obtained_format" = "Zdobyte w kolekcji: %d z %d";
+"stats_catalog_not_obtained_format" = "Jeszcze nieoznaczone: %d";
+"stats_tracked_with_time_format" = "Z zapisanym czasem: %d";
+"stats_tracked_without_time_format" = "Bez zapisanego czasu: %d";
+"stats_group_empty" = "Brak pozycji w tej grupie.";
+"stats_thresholds_note" = "Progi 21, 100, 1 000 i 10 000 godzin należą do aplikacji. Liczba przy progu to śledzone umiejętności, których zapisany czas jest co najmniej taki. To nie jest osobny cel.";
+"stats_thresholds_empty" = "Nie ma jeszcze śledzonych umiejętności, więc progi nie mają czego pokazać.";
 "stats_threshold_count_format" = "%d";
-"month_activity_title" = "This month";
-"month_activity_previous" = "Previous month";
-"month_activity_next" = "Next month";
-"month_activity_practice" = "Day with a saved session";
-"month_activity_obtained" = "Day a skill was marked obtained";
-"month_activity_empty" = "No saved sessions or obtained dates this month. A total of hours is not spread across days.";
-"overview_tracking_tools" = "Tracking tools";
+"month_activity_title" = "Tento měsíc";
+"month_activity_previous" = "Poprzedni miesiąc";
+"month_activity_next" = "Następny miesiąc";
+"month_activity_practice" = "Dzień z zapisaną sesją";
+"month_activity_obtained" = "Dzień zdobycia umiejętności";
+"month_activity_empty" = "Brak zapisanych sesji i dat zdobycia w tym miesiącu. Suma godzin bez historii nie jest rozkładana na dni.";
+"overview_tracking_tools" = "Narzędzia śledzenia";
 
 /* T4S-040 custom skill filter */
 "catalog_filter_custom" = "Vlastní";
@@ -573,13 +565,13 @@
 "time_balance_plus_start" = "+ Start";
 "time_balance_minus_stop" = "− Stop";
 "time_balance_plus_stop" = "+ Stop";
-"time_balance_a11y_decrease" = "Start decreasing the time balance";
-"time_balance_a11y_increase" = "Start increasing the time balance";
-"time_balance_a11y_stop_decrease" = "Stop decreasing the time balance";
-"time_balance_a11y_stop_increase" = "Stop increasing the time balance";
-"time_balance_bar" = "Time balance";
-"time_balance_zero_sound" = "Play a sound when the balance reaches zero";
-"time_balance_sound_section" = "Time balance";
+"time_balance_a11y_decrease" = "Zacznij zmniejszać saldo czasu";
+"time_balance_a11y_increase" = "Zacznij zwiększać saldo czasu";
+"time_balance_a11y_stop_decrease" = "Zatrzymaj zmniejszanie salda czasu";
+"time_balance_a11y_stop_increase" = "Zatrzymaj zwiększanie salda czasu";
+"time_balance_bar" = "Časový zůstatek";
+"time_balance_zero_sound" = "Odtwarzaj dźwięk, gdy saldo dojdzie do zera";
+"time_balance_sound_section" = "Časový zůstatek";
 
 /* T4S-UI-042 supplement: converter nav + recent tracking */
 "time_converter_nav_title" = "Převodník času";
@@ -588,3 +580,5 @@
 "stats_this_month" = "Tento měsíc";
 
 "export_pdf_generated_on_format" = "Vygenerováno: %@";
+"timer_start" = "Start";
+"timer_stop" = "Stop";

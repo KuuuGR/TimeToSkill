@@ -144,7 +144,7 @@ struct CrystalProgressBar: View {
         }
         .frame(height: height)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel(Text(LocalizedStringKey("catalog_progress")))
+        .accessibilityLabel(Text(L10n.string("catalog_progress")))
         .accessibilityValue(Text("\(Int((clamped * 100).rounded()))%"))
     }
 }

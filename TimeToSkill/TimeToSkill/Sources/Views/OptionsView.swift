@@ -26,31 +26,30 @@ struct OptionsView: View {
                     Button(action: {
                         generatePDF()
                     }) {
-                        Label(
-                            LocalizedStringKey("export_pdf_button"),
-                            systemImage: "square.and.arrow.up"
-                        )
+                        Label { Text(verbatim: L10n.string("export_pdf_button")) } icon: { Image(systemName: "square.and.arrow.up") }
                     }
                 } header: {
-                    Text(LocalizedStringKey("options_export_section"))
+                    LText(key: "options_export_section")
                 }
 
                 Section {
                     Toggle(isOn: $balanceZeroSoundEnabled) {
-                        Text(LocalizedStringKey("time_balance_zero_sound"))
+                        LText(key: "time_balance_zero_sound")
                     }
                     .accessibilityIdentifier("TimeBalanceZeroSoundToggle")
                 } header: {
-                    Text(LocalizedStringKey("time_balance_sound_section"))
+                    LText(key: "time_balance_sound_section")
                 }
             }
-            .navigationTitle(LocalizedStringKey("options_title"))
+            .navigationTitle(Text(verbatim: L10n.string("options_title")))
             .inlineNavigationBarTitle()
             .toolbar {
                 if showsDoneButton {
                     ToolbarItem(placement: .cancellationAction) {
-                        Button(LocalizedStringKey("button_done")) {
+                        Button {
                             dismiss()
+                        } label: {
+                            Text(verbatim: L10n.string("button_done"))
                         }
                     }
                 }
@@ -91,7 +90,7 @@ struct OptionsView: View {
             let titleAttributes = [
                 NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 24)
             ]
-            let titleString = NSLocalizedString("skills_report_title", comment: "")
+            let titleString = L10n.string("skills_report_title")
             titleString.draw(at: CGPoint(x: 50, y: 50), withAttributes: titleAttributes)
             
             // Date
@@ -99,7 +98,7 @@ struct OptionsView: View {
                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)
             ]
             let dateString = String(
-                format: NSLocalizedString("export_pdf_generated_on_format", comment: ""),
+                format: L10n.string("export_pdf_generated_on_format"),
                 Date().formatted(date: .long, time: .shortened)
             )
             dateString.draw(at: CGPoint(x: 50, y: 80), withAttributes: dateAttributes)
@@ -134,7 +133,7 @@ struct OptionsView: View {
             let countersTitleAttributes = [
                 NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)
             ]
-            let countersTitle = NSLocalizedString("manage_counters_title", comment: "")
+            let countersTitle = L10n.string("manage_counters_title")
             countersTitle.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: countersTitleAttributes)
             yPosition += 28
 
@@ -146,7 +145,7 @@ struct OptionsView: View {
                 let thresholdsText: String
                 let limits = counter.thresholds
                 if limits.isEmpty {
-                    thresholdsText = NSLocalizedString("counter_no_thresholds", comment: "")
+                    thresholdsText = L10n.string("counter_no_thresholds")
                 } else {
                     thresholdsText = limits.map { String($0) }.joined(separator: ", ")
                 }
@@ -176,7 +175,7 @@ struct OptionsView: View {
                     let sectionTitleAttributes = [
                         NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)
                     ]
-                    let sectionTitle = NSLocalizedString("global_time_distribution_title", comment: "")
+                    let sectionTitle = L10n.string("global_time_distribution_title")
                     sectionTitle.draw(at: CGPoint(x: 50, y: yPosition), withAttributes: sectionTitleAttributes)
                     yPosition += 26
 
@@ -201,7 +200,7 @@ struct OptionsView: View {
                 let sectionTitleAttributes = [
                     NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)
                 ]
-                let skillSectionTitle = String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name)
+                let skillSectionTitle = String(format: L10n.string("time_distribution_skill_format"), skill.name)
                 (skillSectionTitle as NSString).draw(at: CGPoint(x: 50, y: yPosition), withAttributes: sectionTitleAttributes)
                 yPosition += 24
 
@@ -220,11 +219,11 @@ struct OptionsView: View {
         let titleFont = "Helvetica-Bold"
         let bodyFont = "Helvetica"
 
-        let titleString = NSLocalizedString("skills_report_title", comment: "")
+        let titleString = L10n.string("skills_report_title")
         builder.drawText(titleString, topLeft: CGPoint(x: 50, y: 50), fontName: titleFont, fontSize: 24, color: .black)
 
         let dateString = String(
-            format: NSLocalizedString("export_pdf_generated_on_format", comment: ""),
+            format: L10n.string("export_pdf_generated_on_format"),
             Date().formatted(date: .long, time: .shortened)
         )
         builder.drawText(dateString, topLeft: CGPoint(x: 50, y: 80), fontName: bodyFont, fontSize: 12, color: .black)
@@ -248,7 +247,7 @@ struct OptionsView: View {
             yPosition = 50
         }
 
-        let countersTitle = NSLocalizedString("manage_counters_title", comment: "")
+        let countersTitle = L10n.string("manage_counters_title")
         builder.drawText(countersTitle, topLeft: CGPoint(x: 50, y: yPosition), fontName: titleFont, fontSize: 18, color: .black)
         yPosition += 28
 
@@ -256,7 +255,7 @@ struct OptionsView: View {
             let thresholdsText: String
             let limits = counter.thresholds
             if limits.isEmpty {
-                thresholdsText = NSLocalizedString("counter_no_thresholds", comment: "")
+                thresholdsText = L10n.string("counter_no_thresholds")
             } else {
                 thresholdsText = limits.map { String($0) }.joined(separator: ", ")
             }
@@ -279,7 +278,7 @@ struct OptionsView: View {
                     builder.newPage()
                     yPosition = 50
                 }
-                let sectionTitle = NSLocalizedString("global_time_distribution_title", comment: "")
+                let sectionTitle = L10n.string("global_time_distribution_title")
                 builder.drawText(sectionTitle, topLeft: CGPoint(x: 50, y: yPosition), fontName: titleFont, fontSize: 18, color: .black)
                 yPosition += 26
                 drawHistogramBars(bins: bins, pageRect: pageRect, yPosition: &yPosition, color: .systemBlue, builder: builder)
@@ -297,7 +296,7 @@ struct OptionsView: View {
                 builder.newPage()
                 yPosition = 50
             }
-            let skillSectionTitle = String(format: NSLocalizedString("time_distribution_skill_format", comment: ""), skill.name)
+            let skillSectionTitle = String(format: L10n.string("time_distribution_skill_format"), skill.name)
             builder.drawText(skillSectionTitle, topLeft: CGPoint(x: 50, y: yPosition), fontName: titleFont, fontSize: 18, color: .black)
             yPosition += 24
             drawHistogramBars(bins: bins, pageRect: pageRect, yPosition: &yPosition, color: .systemPurple, builder: builder)

@@ -47,6 +47,8 @@ final class LocalizationCompletenessTests: XCTestCase {
             "export_pdf_generated_on_format",
             "main_manage_trackers",
             "main_manage_counters",
+            "tracking_nav_title",
+            "tracking_title",
             "exemplary_skills_title",
             "stats_nav_title",
             "theory_nav_title",
@@ -180,6 +182,85 @@ final class LocalizationCompletenessTests: XCTestCase {
         XCTAssertEqual(HomeSection.timeConverter.rawValue, "timeConverter")
         XCTAssertEqual(HomeSection.timeConverter.systemImage, "arrow.left.arrow.right")
 #endif
+    }
+
+    func testTheoryCompendiumKeysDifferFromEnglishWhereRequired() throws {
+        let english = try Self.loadBundledStrings(table: "Localizable", locale: "en")
+        let mustDiffer = TheoryCatalog.chapters.flatMap { chapter in
+            [
+                chapter.titleKey, chapter.leadKey, chapter.mechanismTitleKey, chapter.mechanismKey,
+                chapter.exampleKey, chapter.caveatKey, chapter.takeawayKey
+            ]
+        } + [
+            "theory_compendium_intro",
+            "theory_callout_example",
+            "theory_callout_caveat",
+            "theory_callout_takeaway",
+            "theory_hour_unit",
+            "theory_detail_links",
+            "time_converter_nav_title",
+            "Time_Converter_Section_Header",
+            "tracking_nav_title",
+            "tracking_title"
+        ]
+
+        let englishVariants: Set<String> = ["en", "en-GB", "en-AU", "en-CA", "en-IN"]
+        var leftovers: [String] = []
+        for code in Self.bundledLocales(containing: "Localizable").sorted() where !englishVariants.contains(code) {
+            let table = try Self.loadBundledStrings(table: "Localizable", locale: code)
+            for key in mustDiffer {
+                let value = (table[key] ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+                let englishValue = (english[key] ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+                if value.isEmpty || value == key {
+                    leftovers.append("\(code): empty/raw \(key)")
+                } else if value == englishValue {
+                    leftovers.append("\(code): still English \(key)")
+                }
+            }
+        }
+        XCTAssertTrue(leftovers.isEmpty, leftovers.prefix(40).joined(separator: "\n"))
+    }
+
+    func testTimePerspectiveCardChromeIsNotPolishFallbackElsewhere() throws {
+        let polish = try Self.loadBundledStrings(table: "TimePerspective", locale: "pl")
+        let english = try Self.loadBundledStrings(table: "TimePerspective", locale: "en")
+        let chrome = [
+            "time_perspective.card.title",
+            "time_perspective.card.empty_tagline",
+            "time_perspective.card.empty_prompt"
+        ]
+        for code in ["de", "fr", "isv", "eo", "es", "ja"].sorted() {
+            let table = try Self.loadBundledStrings(table: "TimePerspective", locale: code)
+            for key in chrome {
+                let value = table[key] ?? ""
+                XCTAssertFalse(value.isEmpty, "\(code) \(key)")
+                XCTAssertNotEqual(value, key, "\(code) \(key)")
+                // Non-Polish locales must not silently reuse Polish chrome.
+                if code != "pl" {
+                    XCTAssertNotEqual(value, polish[key], "\(code) reused Polish for \(key)")
+                }
+                if code == "isv" {
+                    XCTAssertNotEqual(value, english[key], "isv still English for \(key)")
+                }
+            }
+        }
+    }
+
+    func testTheoryTopicBodiesPresentForPrimaryLocales() throws {
+        let english = try Self.loadBundledStrings(table: "Localizable", locale: "en")
+        let topicKeys = TheoryCatalog.topics.flatMap { topic in
+            [topic.titleKey, topic.summaryKey, topic.takeawayKey, topic.contextKey, topic.limitationKey]
+        }
+        for code in ["pl", "isv", "eo", "es", "de", "fr", "it", "ru", "uk", "ja", "zh-Hans"].sorted() {
+            let table = try Self.loadBundledStrings(table: "Localizable", locale: code)
+            for key in topicKeys {
+                let value = (table[key] ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+                XCTAssertFalse(value.isEmpty || value == key, "\(code) missing \(key)")
+                if code != "en" {
+                    XCTAssertNotEqual(value, english[key], "\(code) still English \(key)")
+                }
+            }
+        }
     }
 
     // MARK: - Helpers

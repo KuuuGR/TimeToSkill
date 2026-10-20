@@ -5,7 +5,7 @@ enum SkillEmojiCatalog {
     struct Section: Identifiable {
         let id: String
         let symbol: String
-        let titleKey: LocalizedStringKey
+        let titleKey: String
         let emojis: [String]
     }
 
@@ -172,9 +172,9 @@ struct SkillEmojiPickerButton: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(LocalizedStringKey("skill_icon_label"))
+        .accessibilityLabel(Text(verbatim: L10n.string("skill_icon_label")))
         .accessibilityValue(selection.isEmpty
-            ? String(localized: "skill_emoji_picker_none")
+            ? L10n.string("skill_emoji_picker_none")
             : selection)
         .modifier(EmojiPickerPresentation(
             isPresented: $isPresented,
@@ -199,11 +199,11 @@ private struct EmojiPickerPresentation: ViewModifier {
             content.sheet(isPresented: $isPresented) {
                 NavigationStack {
                     SkillEmojiPickerView(selection: $selection, isPresented: $isPresented)
-                        .navigationTitle(LocalizedStringKey("skill_emoji_picker_title"))
+                        .navigationTitle(Text(verbatim: L10n.string("skill_emoji_picker_title")))
                         .inlineNavigationBarTitle()
                         .toolbar {
                             ToolbarItem(placement: .cancellationAction) {
-                                Button(LocalizedStringKey("cancel")) {
+                                Button(L10n.string("cancel")) {
                                     isPresented = false
                                 }
                             }
@@ -228,7 +228,7 @@ struct SkillEmojiPickerView: View {
                     VStack(alignment: .leading, spacing: 10) {
                         HStack(spacing: 8) {
                             Text(section.symbol)
-                            Text(section.titleKey)
+                            Text(verbatim: L10n.string(section.titleKey))
                                 .font(.headline)
                         }
 

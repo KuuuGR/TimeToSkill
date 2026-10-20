@@ -89,7 +89,7 @@
 
 "theory_100_title" = "Pravilo 100 časov";
 "theory_100_author" = "Neformalna obrazovatelna ideja";
-"theory_100_description" = "Okolo 100 časov može dati tvrdu kompetenciju: osnovna fotografija, pečenje, malovanje, voženje ili česte orudja kak Excel.";
+"theory_100_description" = "Okolo 100 časov može dati tvrdu kompetenciju: osnovna fotografija, pečenje, malovanje, voženje ili česte orudja kak Eksel.";
 "theory_100_works" = "✔️ Praktične umětnosti, změna kariery\n✖️ Ne ekspertny urovenj";
 
 "theory_1000_title" = "Pravilo 1 000 časov";
@@ -230,7 +230,7 @@
 "skill_details_title" = "Podrobnosti umětnosti";
 "close" = "Zakryti";
 "change_rating_accessibility" = "Změniti ocěnu";
-"description" = "Opis";
+"description" = "Opisanje";
 "achievement_status" = "Stan dostignjenja";
 "obtained_label" = "Priobreno:";
 "unknown" = "Neizvěstno";
@@ -262,10 +262,10 @@
 "fab_add_custom_skill" = "Dodati svoju umětnost";
 "difficulty_label" = "Trudnost";
 "star_descriptions_title" = "Opisy zvězdnyh urovnjov";
-"one_star_description" = "Opis 1★";
-"two_star_description" = "Opis 2★";
-"three_star_description" = "Opis 3★";
-"image_label" = "Obraz";
+"one_star_description" = "Opisanje 1★";
+"two_star_description" = "Opisanje 2★";
+"three_star_description" = "Opisanje 3★";
+"image_label" = "Obrazok";
 "choose_image" = "Izbrati obraz";
 "category_label" = "Kategorija";
 "category_custom_placeholder" = "Svoja kategorija";
@@ -344,9 +344,9 @@
 "session_chart_detail_wide" = "Široke";
 "session_chart_detail_medium" = "Srědnje";
 "session_chart_detail_narrow" = "Uzke";
-"session_chart_bin_minutes" = "%d min.";
-"session_chart_bin_range" = "%1$@–%2$@ min.";
-"session_chart_bin_overflow" = "≥ %1$@ min.";
+"session_chart_bin_minutes" = "%d min";
+"session_chart_bin_range" = "%1$@–%2$@ min";
+"session_chart_bin_overflow" = "≥ %1$@ min";
 "session_chart_count_format" = "%d sesij";
 "session_chart_mean_format" = "Srědnje: %@ min";
 "session_chart_mean_unavailable" = "—";
@@ -505,7 +505,7 @@
 "theory_chapter_100_example" = "Igrati kratky kus v tri razne dni pokazuje, ktory takt dejstvitelno ostal v paměti. Jedin dolgy večer povtorjenja ne odgovarja na to pytanje.";
 "theory_chapter_100_caveat" = "Prěgled o razstojah kasaje se slovesnogo pripomněnja. Izslědovanje o navykah kasaje se avtomatičnosti izbranogo povedenja, i jego diapazon byl 18 do 254 dni v modelu objavljenom s člankom, a ne linija kompetencije na 100 časov. Nijaky rezultat ne govori, že 100 časov děla někogo kompetentnym v fotografiji, voženju ili inoj umětnosti.";
 "theory_chapter_100_takeaway" = "Upotrěbljajte oznaku, da by zamětiti, či vračajete se. Ne traktujte ju kak urovenj, ktory ste zaslužili.";
-"theory_chapter_1000_title" = "Praktika směrovana na jednu prázdnotu";
+"theory_chapter_1000_title" = "Praktika směrovana na jednu prazdnotu";
 "theory_chapter_1000_lead" = "Kristal 1 000 časov zapisyje potrěteno vrěme. On ne znači, že osoba nyně jest profesional, učitelj ili někto, ktory može živeti od umětnosti.";
 "theory_chapter_1000_mechanism_title" = "Naměrna praktika, i koliko ona objasnila";
 "theory_chapter_1000_mechanism" = "Ericsson, Krampe i Tesch-Römer opisali naměrnu praktiku kak dějanje ustrojeno da by ulěpšiti konkretny aspekt, s povratnoju informacijoju i popravkoju, vměsto prostogo povtorjenja togo, čto již jest udobno. Jihny članok iz 1993 razvil taky okvir na izslědovanjah muzikantov. On ne objavil jednogo čisla časov, ktore tvori ekspertov v vsakoj oblasti. Macnamara, Hambrick i Oswald pozže ocěnili, koliko razliky v izpolnjenju bylo svęzano s naměrnoju praktikoju. Čęsti razlikovali se po oblasti: vyše v igrah, muzikě i sportu než v obrazovanju i profesijah.";
@@ -586,3 +586,36 @@
 "stats_this_month" = "Tuty měsęc";
 
 "export_pdf_generated_on_format" = "Sgenerovano: %@";
+"timer_start" = "Početi";
+"timer_stop" = "Zastaviti";
+"calendar_month_1" = "Januar";
+"calendar_month_short_1" = "Jan";
+"calendar_month_2" = "Fevruar";
+"calendar_month_short_2" = "Fev";
+"calendar_month_3" = "Marec";
+"calendar_month_short_3" = "Mar";
+"calendar_month_4" = "April";
+"calendar_month_short_4" = "Apr";
+"calendar_month_5" = "Maj";
+"calendar_month_short_5" = "Maj";
+"calendar_month_6" = "Junij";
+"calendar_month_short_6" = "Jun";
+"calendar_month_7" = "Julij";
+"calendar_month_short_7" = "Jul";
+"calendar_month_8" = "Avgust";
+"calendar_month_short_8" = "Avg";
+"calendar_month_9" = "Sentębr";
+"calendar_month_short_9" = "Sen";
+"calendar_month_10" = "Oktobr";
+"calendar_month_short_10" = "Okt";
+"calendar_month_11" = "Nojebr";
+"calendar_month_short_11" = "Noj";
+"calendar_month_12" = "Dekabr";
+"calendar_month_short_12" = "Dek";
+"calendar_weekday_short_1" = "Nd";
+"calendar_weekday_short_2" = "Pn";
+"calendar_weekday_short_3" = "Vt";
+"calendar_weekday_short_4" = "Sr";
+"calendar_weekday_short_5" = "Čt";
+"calendar_weekday_short_6" = "Pt";
+"calendar_weekday_short_7" = "Sb";

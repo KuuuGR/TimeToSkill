@@ -32,12 +32,12 @@ struct ActivityLogView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStringKey("activity_log_title"))
+            LText(key: "activity_log_title")
                 .font(.title2)
                 .fontWeight(.semibold)
 
             if recentSessions.isEmpty {
-                Text(LocalizedStringKey("activity_log_empty_message"))
+                LText(key: "activity_log_empty_message")
                     .foregroundColor(.secondary)
                     .font(.footnote)
                     .padding(.top, 8)

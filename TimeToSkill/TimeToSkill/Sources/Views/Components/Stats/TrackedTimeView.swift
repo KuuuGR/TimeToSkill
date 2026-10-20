@@ -19,13 +19,13 @@ struct TrackedTimeView: View {
         let last30 = committedHours(daysAgo: 30)
 
         VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStringKey("stats_tracked_time_title"))
+            LText(key: "stats_tracked_time_title")
                 .font(.title2)
                 .fontWeight(.semibold)
 
             HStack(spacing: 16) {
                 StatCard(
-                    label: NSLocalizedString("stats_week_label", comment: ""),
+                    label: L10n.string("stats_week_label"),
                     value: String(format: "%.1f h", last7),
                     subtext: TrackedTimeCalculation.percentageLabel(
                         periodHours: last7,
@@ -35,7 +35,7 @@ struct TrackedTimeView: View {
                 )
 
                 StatCard(
-                    label: NSLocalizedString("stats_month_label", comment: ""),
+                    label: L10n.string("stats_month_label"),
                     value: String(format: "%.1f h", last30),
                     subtext: TrackedTimeCalculation.percentageLabel(
                         periodHours: last30,
@@ -47,7 +47,7 @@ struct TrackedTimeView: View {
 
             HStack(spacing: 16) {
                 StatCard(
-                    label: NSLocalizedString("stats_total_label", comment: ""),
+                    label: L10n.string("stats_total_label"),
                     value: String(format: "%.1f h", lifetime),
                     subtext: lifetime > 0 ? "100%" : "0%",
                     color: .gold

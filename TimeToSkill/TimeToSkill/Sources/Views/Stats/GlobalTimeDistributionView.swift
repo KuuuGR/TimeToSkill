@@ -10,12 +10,12 @@ struct GlobalTimeDistributionView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStringKey("global_time_distribution_title"))
+            LText(key: "global_time_distribution_title")
                 .font(.title2).bold()
             VStack(alignment: .leading, spacing: 6) {
-                Text(String(format: NSLocalizedString("time_total_hours_format", comment: ""), formatHours(totalMinutes / 60)))
-                Text(String(format: NSLocalizedString("time_mean_minutes_format", comment: ""), formatMinutes(meanMinutes)))
-                Text(String(format: NSLocalizedString("time_std_minutes_format", comment: ""), formatMinutes(stdMinutes)))
+                Text(String(format: L10n.string("time_total_hours_format"), formatHours(totalMinutes / 60)))
+                Text(String(format: L10n.string("time_mean_minutes_format"), formatMinutes(meanMinutes)))
+                Text(String(format: L10n.string("time_std_minutes_format"), formatMinutes(stdMinutes)))
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 12).fill(Color.gray.opacity(0.08)))

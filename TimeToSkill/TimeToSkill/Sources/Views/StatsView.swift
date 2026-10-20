@@ -37,14 +37,16 @@ struct StatsView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .navigationTitle(LocalizedStringKey("stats_nav_title"))
+            .navigationTitle(Text(verbatim: L10n.string("stats_nav_title")))
 
             .inlineNavigationBarTitle()
             .toolbar {
                 if showsDoneButton {
                     ToolbarItem(placement: .cancellationAction) {
-                        Button(LocalizedStringKey("button_done")) {
+                        Button {
                             dismiss()
+                        } label: {
+                            Text(verbatim: L10n.string("button_done"))
                         }
                     }
                 }
@@ -64,7 +66,7 @@ struct StatsView: View {
                         VStack(spacing: 4) {
                             Image(systemName: item.systemImage)
                                 .font(.body)
-                            Text(LocalizedStringKey(item.titleKey))
+                            Text(verbatim: L10n.string(item.titleKey))
                                 .font(.caption.weight(selected ? .semibold : .regular))
                                 .lineLimit(1)
                         }
@@ -145,11 +147,11 @@ struct StatsCollectionCounts: View {
         let visible = catalog.filter { !$0.isHidden }
         let obtained = visible.filter(\.isObtained).count
         VStack(alignment: .leading, spacing: 8) {
-            Text(LocalizedStringKey("stats_collection_heading"))
+            LText(key: "stats_collection_heading")
                 .font(.title3.weight(.semibold))
-            Text(String(format: NSLocalizedString("stats_catalog_obtained_format", comment: ""), obtained, visible.count))
+            Text(String(format: L10n.string("stats_catalog_obtained_format"), obtained, visible.count))
                 .font(.body)
-            Text(String(format: NSLocalizedString("stats_catalog_not_obtained_format", comment: ""), visible.count - obtained))
+            Text(String(format: L10n.string("stats_catalog_not_obtained_format"), visible.count - obtained))
                 .font(.body)
                 .foregroundStyle(.secondary)
         }
@@ -171,16 +173,16 @@ struct StatsSkillGroups: View {
             group(
                 title: "stats_collection_heading",
                 lines: [
-                    String(format: NSLocalizedString("stats_catalog_obtained_format", comment: ""), obtained.count, visible.count),
-                    String(format: NSLocalizedString("stats_catalog_not_obtained_format", comment: ""), visible.count - obtained.count)
+                    String(format: L10n.string("stats_catalog_obtained_format"), obtained.count, visible.count),
+                    String(format: L10n.string("stats_catalog_not_obtained_format"), visible.count - obtained.count)
                 ],
                 names: obtained.prefix(5).map(\.title)
             )
             group(
                 title: "stats_tracked_heading",
                 lines: [
-                    String(format: NSLocalizedString("stats_tracked_with_time_format", comment: ""), withTime.count),
-                    String(format: NSLocalizedString("stats_tracked_without_time_format", comment: ""), tracked.count - withTime.count)
+                    String(format: L10n.string("stats_tracked_with_time_format"), withTime.count),
+                    String(format: L10n.string("stats_tracked_without_time_format"), tracked.count - withTime.count)
                 ],
                 names: withTime.sorted { $0.hours > $1.hours }.prefix(5).map(\.name)
             )
@@ -189,13 +191,13 @@ struct StatsSkillGroups: View {
 
     private func group(title: String, lines: [String], names: [String]) -> some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(LocalizedStringKey(title))
+            Text(verbatim: L10n.string(title))
                 .font(.title3.weight(.semibold))
             ForEach(lines, id: \.self) { line in
                 Text(line)
             }
             if names.isEmpty {
-                Text(LocalizedStringKey("stats_group_empty"))
+                LText(key: "stats_group_empty")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             } else {
@@ -219,12 +221,12 @@ struct StatsThresholds: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text(LocalizedStringKey("stats_thresholds_note"))
+            LText(key: "stats_thresholds_note")
                 .font(.callout)
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
             if skills.isEmpty {
-                Text(LocalizedStringKey("stats_thresholds_empty"))
+                LText(key: "stats_thresholds_empty")
                     .font(.callout)
                     .foregroundStyle(.secondary)
             } else {
@@ -237,10 +239,10 @@ struct StatsThresholds: View {
                             .frame(width: 16, height: 16)
                         Text(mark, format: .number.grouping(.automatic))
                             .font(.headline.monospacedDigit())
-                        Text(LocalizedStringKey("theory_hour_unit"))
+                        LText(key: "theory_hour_unit")
                             .foregroundStyle(.secondary)
                         Spacer()
-                        Text(String(format: NSLocalizedString("stats_threshold_count_format", comment: ""), reached))
+                        Text(String(format: L10n.string("stats_threshold_count_format"), reached))
                             .font(.title3.weight(.semibold).monospacedDigit())
                     }
                     .padding(12)

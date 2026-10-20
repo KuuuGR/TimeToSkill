@@ -40,7 +40,7 @@ struct LanguageSelectorButton: View {
         .buttonStyle(.plain)
         .accessibilityLabel(Text(accessibilityName))
         .accessibilityIdentifier("LanguageSelectorButton")
-        .help(Text(LocalizedStringKey("language_picker_title")))
+        .help(Text(L10n.string("language_picker_title")))
         .sheet(isPresented: $showingPicker) {
             LanguagePickerSheet()
                 .macOSSheetMinSize(width: 420, height: 520)
@@ -260,11 +260,11 @@ struct LanguagePickerSheet: View {
                 featuredRows
                 otherRows
             }
-            .navigationTitle(Text(LocalizedStringKey("language_picker_title")))
+            .navigationTitle(Text(L10n.string("language_picker_title")))
             .inlineNavigationBarTitle()
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button(LocalizedStringKey("close")) { dismiss() }
+                    Button(L10n.string("close")) { dismiss() }
                 }
             }
         }
@@ -280,8 +280,8 @@ struct LanguagePickerSheet: View {
             HStack(spacing: 12) {
                 LanguageFlag(option: .device, diameter: 32)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(LocalizedStringKey("language_device"))
-                    Text(LocalizedStringKey("language_device_detail"))
+                    Text(L10n.string("language_device"))
+                    Text(L10n.string("language_device_detail"))
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
@@ -299,11 +299,11 @@ struct LanguagePickerSheet: View {
 
     @ViewBuilder
     private var featuredRows: some View {
-        languageRow(code: "pl", title: LocalizedStringKey("language_name_polish"))
-        languageRow(code: "en", title: LocalizedStringKey("language_name_english"))
-        languageRow(code: "es", title: LocalizedStringKey("language_name_spanish"))
+        languageRow(code: "pl", title: L10n.string("language_name_polish"))
+        languageRow(code: "en", title: L10n.string("language_name_english"))
+        languageRow(code: "es", title: L10n.string("language_name_spanish"))
         interslavicSection
-        languageRow(code: "eo", title: LocalizedStringKey("language_name_esperanto"))
+        languageRow(code: "eo", title: L10n.string("language_name_esperanto"))
     }
 
     private var otherRows: some View {
@@ -313,17 +313,17 @@ struct LanguagePickerSheet: View {
             .filter { $0 != "Base" }
             .sorted { LanguageName.endonym(for: $0).localizedCaseInsensitiveCompare(LanguageName.endonym(for: $1)) == .orderedAscending }
         return ForEach(codes, id: \.self) { code in
-            languageRow(code: code, title: LocalizedStringKey(stringLiteral: LanguageName.endonym(for: code)))
+            languageRow(code: code, title: L10n.string(LanguageName.endonym(for: code)))
         }
     }
 
-    private func languageRow(code: String, title: LocalizedStringKey) -> some View {
+    private func languageRow(code: String, title: String) -> some View {
         Button {
             choose(code)
         } label: {
             HStack(spacing: 12) {
                 LanguageFlag(option: .bundle(code), diameter: 32)
-                Text(title)
+                Text(verbatim: title)
                 Spacer(minLength: 8)
                 if language.resolved.preferenceKey == code {
                     Image(systemName: "checkmark")
@@ -349,7 +349,7 @@ struct LanguagePickerSheet: View {
                 HStack(spacing: 12) {
                     LanguageFlag(option: .interslavic(language.savedInterslavicScript), diameter: 32)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(LocalizedStringKey("language_name_interslavic"))
+                        Text(L10n.string("language_name_interslavic"))
                         Text(scriptTitle(selected ?? language.savedInterslavicScript))
                             .font(.caption)
                             .foregroundStyle(.secondary)
@@ -366,7 +366,7 @@ struct LanguagePickerSheet: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(Text(LocalizedStringKey("language_name_interslavic")))
+            .accessibilityLabel(Text(L10n.string("language_name_interslavic")))
             .accessibilityAddTraits(selected != nil ? .isSelected : [])
 
             if scriptsVisible {

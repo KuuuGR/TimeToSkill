@@ -12,9 +12,12 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         #if os(macOS)
+        // Remount when Interslavic script changes so L10n / LText rows refresh.
         MacRootView()
+            .interslavicPresentationRefresh()
         #else
         HomeView()
+            .interslavicPresentationRefresh()
         #endif
     }
 }
