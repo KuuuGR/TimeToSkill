@@ -75,10 +75,12 @@ private struct InterslavicFontEnvironment: ViewModifier {
     var script: InterslavicScript?
 
     func body(content: Content) -> some View {
-        content.transformEnvironment(\.font) { font in
-            if script == .glagolitic {
-                font = Font.custom(AppFontRegistry.glagoliticFamily, size: 17, relativeTo: .body)
-            }
+        if let font = AppFontRegistry.uiFont(for: script) {
+            // Replace (do not only transform) so navigation chrome and sidebar
+            // Labels inherit a face that can draw Glagolitic code points.
+            content.environment(\.font, font)
+        } else {
+            content
         }
     }
 }

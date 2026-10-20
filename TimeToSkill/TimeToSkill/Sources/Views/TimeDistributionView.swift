@@ -2,9 +2,9 @@
 //  TimeDistributionView.swift
 //  TimeToSkill
 //
-//  Per-skill chart of completed timer-session durations (T4S-001).
-//  Manual adjustments are not part of this sample. The global distribution
-//  and the PDF keep their own bins and continue to include manual entries.
+//  Per-skill chart of session durations (T4S-001): completed timer sessions
+//  and positive manual hour additions. The global distribution and the PDF
+//  keep their own bins.
 
 import SwiftUI
 import SwiftData
@@ -44,40 +44,26 @@ struct TimeDistributionView: View {
             #endif
         }
         .navigationTitle(LocalizedStringKey("session_chart_nav_title"))
-        .toolbar {
-            // Always in the navigation bar so the sheet can be dismissed even
-            // when the histogram has not finished laying out, and without
-            // scrolling below a tall chart (the previous macOS-only Done row
-            // sat under the plot and could be clipped).
-            if showsDoneButton {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(LocalizedStringKey("button_done")) {
-                        dismiss()
-                    }
-                    .keyboardShortcut(.cancelAction)
-                }
-            }
-        }
     }
 
     private var layout: some View {
         VStack(alignment: .leading, spacing: 20) {
-            if showsDoneButton {
-                // Redundant with the toolbar on purpose: some macOS sheet hosts
-                // hide the navigation bar chrome; this stays in the content.
-                closeRow
-            }
             header
             summary
             detailPicker
             chartSection
+            // Single dismiss control at the bottom of the chart content —
+            // not also in the toolbar / header (that duplicated “Gotowe”).
+            if showsDoneButton {
+                doneRow
+            }
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .macOSContentWidth(700)
     }
 
-    private var closeRow: some View {
+    private var doneRow: some View {
         HStack {
             Spacer()
             Button(LocalizedStringKey("button_done")) {
@@ -216,17 +202,17 @@ struct TimeDistributionView: View {
 
     // MARK: - Data
 
-    private var timerMinutes: [Double] {
-        entries.compactMap { entry in
-            TimerSessionSample.minutes(
-                sourceRaw: entry.sourceRaw,
-                durationMinutes: entry.durationMinutes
-            )
-        }
+    /// Live sample for this skill: timer sessions and manual hour additions.
+    /// Recomputed whenever `@Query` sees new `TimeIntervalEntry` rows.
+    private var observationMinutes: [Double] {
+        SkillDurationSample.minutes(
+            forSkillId: skill.id,
+            entries: entries.map { ($0.skillId, $0.sourceRaw, $0.durationMinutes) }
+        )
     }
 
     private var distribution: SessionDurationHistogram {
-        SessionDurationHistogram(minutes: timerMinutes, detail: detail)
+        SessionDurationHistogram(minutes: observationMinutes, detail: detail)
     }
 
     private func formatMinutes(_ minutes: Double?) -> String {

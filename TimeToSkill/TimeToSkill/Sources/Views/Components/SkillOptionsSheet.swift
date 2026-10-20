@@ -201,7 +201,8 @@ struct SkillOptionsSheet: View {
         // Persist interval entry as absolute minutes for distribution
         let entry = TimeIntervalEntry(skillId: skill.id, durationMinutes: abs(totalHours) * 60.0, source: .manual)
         context.insert(entry)
-        
+        try? context.save()
+
         adjustHours = ""
         adjustMinutes = ""
         showSuccessMessage = true

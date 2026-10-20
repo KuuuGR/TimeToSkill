@@ -339,7 +339,7 @@
 // MARK: - Per-skill timer session chart (T4S-001)
 "session_chart_open" = "Diagramo de seancoj";
 "session_chart_nav_title" = "Seancoj de la tempilo";
-"session_chart_metric" = "Nur finitaj seancoj de la tempilo. Manaj ĝustigoj de tempo ne estas enkalkulitaj.";
+"session_chart_metric" = "Seancoj de la tempilo kaj manaj hor-aldonoj por ĉi tiu kapablo.";
 "session_chart_bin_width" = "Larĝo de stangoj";
 "session_chart_detail_wide" = "Larĝaj";
 "session_chart_detail_medium" = "Mezaj";

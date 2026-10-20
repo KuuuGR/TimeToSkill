@@ -8,7 +8,8 @@
 
 import Foundation
 
-/// Selects completed timer sessions for the per-skill duration chart.
+/// Selects completed timer sessions for activity calendars and similar views
+/// that intentionally ignore manual time adjustments.
 enum TimerSessionSample {
     /// Stored `sourceRaw` value that counts as a completed timer session.
     /// Kept equal to `TimeIntervalSource.timer.rawValue`; the unit test locks that.
@@ -27,6 +28,38 @@ enum TimerSessionSample {
     static func minutes(isTimer: Bool, durationMinutes: Double) -> Double? {
         guard isTimer, durationMinutes.isFinite, durationMinutes > 0 else { return nil }
         return durationMinutes
+    }
+}
+
+/// Observations for the per-skill duration / Gaussian chart.
+///
+/// Includes both completed timer sessions and positive manual adjustments
+/// (“Add hours”). Unknown source strings are rejected so a corrupted row
+/// cannot masquerade as a timer via `TimeIntervalEntry.source`'s default.
+enum SkillDurationSample {
+    static let timerSourceRaw = TimeIntervalSource.timer.rawValue
+    static let manualSourceRaw = TimeIntervalSource.manual.rawValue
+
+    /// Returns minutes when the row is a chart observation for this skill.
+    static func minutes(sourceRaw: String, durationMinutes: Double) -> Double? {
+        guard durationMinutes.isFinite, durationMinutes > 0 else { return nil }
+        switch sourceRaw {
+        case timerSourceRaw, manualSourceRaw:
+            return durationMinutes
+        default:
+            return nil
+        }
+    }
+
+    /// Skill-scoped sample used by the distribution chart and its unit tests.
+    static func minutes(
+        forSkillId skillId: UUID,
+        entries: [(skillId: UUID, sourceRaw: String, durationMinutes: Double)]
+    ) -> [Double] {
+        entries.compactMap { entry in
+            guard entry.skillId == skillId else { return nil }
+            return minutes(sourceRaw: entry.sourceRaw, durationMinutes: entry.durationMinutes)
+        }
     }
 }
 

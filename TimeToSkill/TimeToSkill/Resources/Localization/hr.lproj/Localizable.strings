@@ -340,7 +340,7 @@
 // MARK: - Per-skill timer session chart (T4S-001)
 "session_chart_open" = "Session chart";
 "session_chart_nav_title" = "Timer sessions";
-"session_chart_metric" = "Completed timer sessions only. Manual time adjustments are not included.";
+"session_chart_metric" = "Sesije mjerača vremena i ručna dodavanja sati za ovu vještinu.";
 "session_chart_bin_width" = "Bar width";
 "session_chart_detail_wide" = "Wide";
 "session_chart_detail_medium" = "Medium";

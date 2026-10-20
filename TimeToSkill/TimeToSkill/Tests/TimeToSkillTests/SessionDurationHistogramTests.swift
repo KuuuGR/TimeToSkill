@@ -356,3 +356,71 @@ final class TrackerToolKindTests: XCTestCase {
         XCTAssertEqual(TrackerToolKind.resolve("unknown"), .progress)
     }
 }
+
+final class SkillDurationSampleTests: XCTestCase {
+
+    func testManualHourAdditionsAreIncludedInDistributionSample() {
+        XCTAssertEqual(
+            SkillDurationSample.minutes(sourceRaw: TimeIntervalSource.manual.rawValue, durationMinutes: 60),
+            60
+        )
+        XCTAssertEqual(
+            SkillDurationSample.minutes(sourceRaw: TimeIntervalSource.timer.rawValue, durationMinutes: 25),
+            25
+        )
+        XCTAssertNil(SkillDurationSample.minutes(sourceRaw: "bogus", durationMinutes: 40))
+        XCTAssertNil(SkillDurationSample.minutes(sourceRaw: TimeIntervalSource.manual.rawValue, durationMinutes: 0))
+    }
+
+    func testAddingSessionsChangesDistributionInputAndHistogram() {
+        let skill = UUID()
+        var rows: [(skillId: UUID, sourceRaw: String, durationMinutes: Double)] = [
+            (skill, "timer", 30)
+        ]
+        let first = SkillDurationSample.minutes(forSkillId: skill, entries: rows)
+        XCTAssertEqual(first, [30])
+
+        rows.append((skill, "manual", 60))
+        rows.append((skill, "manual", 180))
+        rows.append((skill, "manual", 300))
+        let second = SkillDurationSample.minutes(forSkillId: skill, entries: rows)
+        XCTAssertEqual(second, [30, 60, 180, 300])
+
+        let before = SessionDurationHistogram(minutes: first, detail: .medium)
+        let after = SessionDurationHistogram(minutes: second, detail: .medium)
+        XCTAssertEqual(before.bins.reduce(0) { $0 + $1.count }, 1)
+        XCTAssertEqual(after.bins.reduce(0) { $0 + $1.count }, 4)
+        XCTAssertNotEqual(before.bins.map(\.count), after.bins.map(\.count))
+        XCTAssertEqual(after.mean ?? 0, second.reduce(0, +) / Double(second.count), accuracy: 1e-9)
+    }
+
+    func testOtherSkillsDoNotAffectSelectedSample() {
+        let skillA = UUID()
+        let skillB = UUID()
+        let rows: [(skillId: UUID, sourceRaw: String, durationMinutes: Double)] = [
+            (skillA, "manual", 60),
+            (skillB, "manual", 999),
+            (skillA, "timer", 15),
+            (skillB, "timer", 500)
+        ]
+        XCTAssertEqual(SkillDurationSample.minutes(forSkillId: skillA, entries: rows), [60, 15])
+        XCTAssertEqual(SkillDurationSample.minutes(forSkillId: skillB, entries: rows), [999, 500])
+    }
+
+    func testPersistedRowShapeReplaysTheSameObservations() {
+        let skill = UUID()
+        let stored = [
+            (skillId: skill, sourceRaw: "manual", durationMinutes: 60.0),
+            (skillId: skill, sourceRaw: "manual", durationMinutes: 180.0),
+            (skillId: skill, sourceRaw: "timer", durationMinutes: 45.0)
+        ]
+        let firstRead = SkillDurationSample.minutes(forSkillId: skill, entries: stored)
+        let secondRead = SkillDurationSample.minutes(forSkillId: skill, entries: stored)
+        XCTAssertEqual(firstRead, secondRead)
+        XCTAssertEqual(firstRead, [60, 180, 45])
+
+        let histogram = SessionDurationHistogram(minutes: firstRead, detail: .medium)
+        XCTAssertEqual(histogram.minutes, firstRead)
+        XCTAssertEqual(histogram.bins.reduce(0) { $0 + $1.count }, firstRead.count)
+    }
+}

@@ -340,7 +340,7 @@
 // MARK: - Per-skill timer session chart (T4S-001)
 "session_chart_open" = "Gráfico de sesiones";
 "session_chart_nav_title" = "Sesiones del temporizador";
-"session_chart_metric" = "Solo sesiones terminadas del temporizador. Los ajustes manuales de tiempo no entran.";
+"session_chart_metric" = "Sesiones del temporizador y horas añadidas manualmente de esta habilidad.";
 "session_chart_bin_width" = "Ancho de barras";
 "session_chart_detail_wide" = "Anchas";
 "session_chart_detail_medium" = "Medias";

@@ -44,14 +44,33 @@ final class LocalizationCompletenessTests: XCTestCase {
             "language_script_latin",
             "language_script_cyrillic",
             "language_script_glagolitic",
-            "export_pdf_generated_on_format"
+            "export_pdf_generated_on_format",
+            "main_manage_trackers",
+            "main_manage_counters",
+            "exemplary_skills_title",
+            "stats_nav_title",
+            "theory_nav_title",
+            "ab_navigation_title",
+            "button_done",
+            "session_chart_detail_wide",
+            "session_chart_detail_medium",
+            "session_chart_detail_narrow",
+            "session_chart_bin_width",
+            "session_chart_metric"
         ]
         for code in Self.bundledLocales(containing: "Localizable").sorted() {
             let table = try Self.loadBundledStrings(table: "Localizable", locale: code)
             for key in required {
                 let value = table[key]?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
                 XCTAssertFalse(value.isEmpty, "\(code) missing/empty \(key)")
+                XCTAssertNotEqual(value, key, "\(code) uses key as text for \(key)")
             }
+        }
+
+        let isv = try Self.loadBundledStrings(table: "Localizable", locale: "isv")
+        for key in ["session_chart_detail_wide", "session_chart_detail_medium", "session_chart_detail_narrow", "session_chart_bin_width"] {
+            let value = isv[key] ?? ""
+            XCTAssertFalse(["Wide", "Medium", "Narrow", "Bar width"].contains(value), "isv still English for \(key)")
         }
     }
 

@@ -59,6 +59,9 @@ import SwiftData
 
 struct MacRootView: View {
     @Environment(\.modelContext) private var modelContext
+    /// Observed so sidebar / detail strings refresh when the script changes
+    /// (Latinica → Cyrilica / Glagolica) without restarting the app.
+    @ObservedObject private var language = AppLanguage.shared
 
     @AppStorage(MacSidebarSection.selectionDefaultsKey)
     private var selectionRaw: String = MacSidebarSection.overview.rawValue
@@ -86,6 +89,9 @@ struct MacRootView: View {
             .frame(minWidth: 520, minHeight: 420)
         }
         .navigationSplitViewStyle(.balanced)
+        // Locale+script identity forces Label/LocalizedStringKey rows to
+        // re-resolve through LanguageBundle after an alphabet change.
+        .id(language.resolved.localeIdentifier)
         .sheet(isPresented: $showingCustomSkillSheet) {
             CustomExemplarySkillSheet { title, description, category, difficulty, one, two, three, imagePath in
                 let model = ExemplarySkill(

@@ -119,4 +119,86 @@ final class InterslavicScriptTests: XCTestCase {
         XCTAssertEqual(ui.bundleCode, "isv")
         XCTAssertNotEqual(ui.bundleCode, SkillSeeder.catalogOverlayCode(for: "pl-PL"))
     }
+
+    func testMenuKeysHaveInterslavicLatinSourceAndTransliterate() throws {
+        let isv = try Self.loadLocalizable(locale: "isv")
+        let menuKeys = [
+            "sidebar_overview",
+            "main_manage_trackers",
+            "main_manage_counters",
+            "time_converter_nav_title",
+            "stats_nav_title",
+            "theory_nav_title",
+            "exemplary_skills_title",
+            "options_title",
+            "ab_navigation_title",
+            "button_done",
+            "session_chart_detail_wide",
+            "session_chart_detail_medium",
+            "session_chart_detail_narrow",
+            "session_chart_bin_width"
+        ]
+        for key in menuKeys {
+            let latin = try XCTUnwrap(isv[key]?.trimmingCharacters(in: .whitespacesAndNewlines))
+            XCTAssertFalse(latin.isEmpty, key)
+            XCTAssertNotEqual(latin, key, "Key leaked as label: \(key)")
+            // Must not leave English control labels for chart density.
+            if key.hasPrefix("session_chart_detail_") || key == "session_chart_bin_width" {
+                XCTAssertFalse(["Wide", "Medium", "Narrow", "Bar width"].contains(latin), key)
+            }
+
+            let cyrillic = LanguageCatalog.lookup(
+                key: key,
+                bundleCode: "isv",
+                script: .cyrillic,
+                tables: ["isv": isv, "en": [:]]
+            )
+            let glagolitic = LanguageCatalog.lookup(
+                key: key,
+                bundleCode: "isv",
+                script: .glagolitic,
+                tables: ["isv": isv, "en": [:]]
+            )
+            XCTAssertTrue(
+                InterslavicTransliterator.appearsConverted(to: .cyrillic, text: cyrillic)
+                    || cyrillic == InterslavicTransliterator.latinToCyrillic(latin),
+                "\(key) cyrillic"
+            )
+            XCTAssertEqual(cyrillic, InterslavicTransliterator.latinToCyrillic(latin))
+            XCTAssertEqual(glagolitic, InterslavicTransliterator.latinToGlagolitic(latin))
+            // No double conversion.
+            XCTAssertEqual(
+                LanguageCatalog.lookup(
+                    key: key,
+                    bundleCode: "isv",
+                    script: .cyrillic,
+                    tables: ["isv": [key: cyrillic], "en": [:]]
+                ),
+                cyrillic
+            )
+        }
+    }
+
+    @MainActor
+    func testPresentationCacheInvalidatesWhenScriptChanges() {
+        let suite = "t4s.isv.cache.\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: suite)!
+        defaults.removePersistentDomain(forName: suite)
+        let language = AppLanguage(defaults: defaults, deviceLanguages: ["en-US"])
+        language.select("isv-Latn")
+        let latin = LanguageState.shared.string("sidebar_overview")
+        language.select("isv-Cyrl")
+        let cyrillic = LanguageState.shared.string("sidebar_overview")
+        XCTAssertNotEqual(latin, cyrillic)
+        XCTAssertEqual(cyrillic, InterslavicTransliterator.latinToCyrillic(latin))
+        language.select("isv-Glag")
+        let glagolitic = LanguageState.shared.string("sidebar_overview")
+        XCTAssertEqual(glagolitic, InterslavicTransliterator.latinToGlagolitic(latin))
+    }
+
+    private static func loadLocalizable(locale: String) throws -> [String: String] {
+        let table = LanguageCatalog.loadStringsTable(named: "Localizable", locale: locale)
+        XCTAssertFalse(table.isEmpty, "Missing Localizable for \(locale)")
+        return table
+    }
 }
