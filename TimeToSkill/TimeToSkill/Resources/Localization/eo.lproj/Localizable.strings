@@ -340,7 +340,10 @@
 "session_chart_open" = "Diagramo de seancoj";
 "session_chart_nav_title" = "Seancoj de la tempilo";
 "session_chart_metric" = "Nur finitaj seancoj de la tempilo. Manaj ĝustigoj de tempo ne estas enkalkulitaj.";
-"session_chart_bin_width" = "Larĝo de intervalo";
+"session_chart_bin_width" = "Larĝo de stangoj";
+"session_chart_detail_wide" = "Larĝaj";
+"session_chart_detail_medium" = "Mezaj";
+"session_chart_detail_narrow" = "Mallarĝaj";
 "session_chart_bin_minutes" = "%d min";
 "session_chart_bin_range" = "%1$@–%2$@ min";
 "session_chart_bin_overflow" = "≥ %1$@ min";

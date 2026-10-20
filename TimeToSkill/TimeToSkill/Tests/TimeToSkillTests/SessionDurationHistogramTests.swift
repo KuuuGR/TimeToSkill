@@ -12,6 +12,12 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertFalse(histogram.showsReferenceCurve)
     }
 
+    func testEmptySampleWithDetailHasNoBins() {
+        let histogram = SessionDurationHistogram(minutes: [], detail: .narrow)
+        XCTAssertTrue(histogram.bins.isEmpty)
+        XCTAssertFalse(histogram.showsReferenceCurve)
+    }
+
     func testUnknownSourceIsNotATimerSession() {
         XCTAssertEqual(TimerSessionSample.timerSourceRaw, TimeIntervalSource.timer.rawValue)
         XCTAssertEqual(TimerSessionSample.minutes(sourceRaw: TimeIntervalSource.timer.rawValue, durationMinutes: 10), 10)
@@ -67,6 +73,17 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertEqual(histogram.mean, 30)
         XCTAssertEqual(histogram.bins.map(\.count).reduce(0, +), 12)
         XCTAssertEqual(histogram.bins.last?.count, 12)
+    }
+
+    func testZeroVarianceWithDetailHidesTheCurve() {
+        let histogram = SessionDurationHistogram(
+            minutes: Array(repeating: 42, count: 20),
+            detail: .medium
+        )
+        XCTAssertEqual(histogram.sampleStandardDeviation, 0)
+        XCTAssertFalse(histogram.showsReferenceCurve)
+        XCTAssertEqual(histogram.bins.reduce(0) { $0 + $1.count }, 20)
+        XCTAssertTrue(histogram.bins.allSatisfy { $0.expectedCount == nil })
     }
 
     func testExactBoundaryFallsInTheNextFiniteBin() throws {
@@ -192,5 +209,115 @@ final class SessionDurationHistogramTests: XCTestCase {
             bin.lowerMinutes.isFinite && (bin.upperMinutes?.isFinite ?? false) && !bin.isOverflow
         })
         XCTAssertFalse(histogram.showsReferenceCurve)
+    }
+
+    // MARK: - Three detail levels
+
+    func testDetailLevelsCapRegularBinCounts() {
+        // Spread observations across a long range so each level wants many bins.
+        let minutes = stride(from: 5.0, through: 480.0, by: 5).map { $0 }
+        let wide = SessionDurationHistogram(minutes: minutes, detail: .wide)
+        let medium = SessionDurationHistogram(minutes: minutes, detail: .medium)
+        let narrow = SessionDurationHistogram(minutes: minutes, detail: .narrow)
+
+        XCTAssertLessThanOrEqual(wide.bins.filter { !$0.isOverflow }.count, SessionChartDetail.wide.maximumRegularBinCount)
+        XCTAssertLessThanOrEqual(medium.bins.filter { !$0.isOverflow }.count, SessionChartDetail.medium.maximumRegularBinCount)
+        XCTAssertLessThanOrEqual(narrow.bins.filter { !$0.isOverflow }.count, SessionChartDetail.narrow.maximumRegularBinCount)
+
+        XCTAssertLessThan(wide.bins.filter { !$0.isOverflow }.count, narrow.bins.filter { !$0.isOverflow }.count)
+        XCTAssertGreaterThan(wide.binWidth, narrow.binWidth)
+    }
+
+    func testChangingDetailPreservesSampleAndStatistics() {
+        let minutes = [10, 20, 25, 30, 35, 40, 45, 50, 60, 90].map(Double.init)
+        let wide = SessionDurationHistogram(minutes: minutes, detail: .wide)
+        let medium = SessionDurationHistogram(minutes: minutes, detail: .medium)
+        let narrow = SessionDurationHistogram(minutes: minutes, detail: .narrow)
+
+        XCTAssertEqual(wide.minutes, medium.minutes)
+        XCTAssertEqual(medium.minutes, narrow.minutes)
+        XCTAssertEqual(wide.mean ?? -1, medium.mean ?? -2, accuracy: 1e-12)
+        XCTAssertEqual(medium.mean ?? -1, narrow.mean ?? -2, accuracy: 1e-12)
+        XCTAssertEqual(
+            wide.sampleStandardDeviation ?? -1,
+            medium.sampleStandardDeviation ?? -2,
+            accuracy: 1e-12
+        )
+        XCTAssertEqual(
+            medium.sampleStandardDeviation ?? -1,
+            narrow.sampleStandardDeviation ?? -2,
+            accuracy: 1e-12
+        )
+        XCTAssertEqual(wide.showsReferenceCurve, medium.showsReferenceCurve)
+        XCTAssertEqual(medium.showsReferenceCurve, narrow.showsReferenceCurve)
+    }
+
+    func testDetailLevelsNeverDropOrDoubleCountObservations() {
+        let minutes: [Double] = [
+            3, 7, 12, 12, 18, 22, 29, 31, 40, 55, 70, 95, 120, 180
+        ]
+        for detail in SessionChartDetail.allCases {
+            let histogram = SessionDurationHistogram(minutes: minutes, detail: detail)
+            XCTAssertEqual(
+                histogram.bins.reduce(0) { $0 + $1.count },
+                minutes.count,
+                "Detail \(detail) lost or double-counted observations"
+            )
+            XCTAssertEqual(histogram.minutes.count, minutes.count)
+        }
+    }
+
+    func testObservationsAreAssignedToHalfOpenBinsWithoutOverlap() throws {
+        let minutes: [Double] = [0.5, 14.9, 15, 29.9, 30, 44.9]
+        let histogram = SessionDurationHistogram(minutes: minutes, binWidth: 15)
+        // Half-open [0,15), [15,30), [30,45)
+        XCTAssertEqual(histogram.bins.map(\.count), [2, 2, 2])
+        XCTAssertEqual(histogram.bins.reduce(0) { $0 + $1.count }, minutes.count)
+
+        for bin in histogram.bins where !bin.isOverflow {
+            let upper = try XCTUnwrap(bin.upperMinutes)
+            let assigned = minutes.filter { $0 >= bin.lowerMinutes && $0 < upper }
+            XCTAssertEqual(assigned.count, bin.count)
+        }
+    }
+
+    func testDetailCurveUsesActualBinWidthForExpectedCounts() throws {
+        let minutes = [10, 15, 20, 25, 30, 35, 40, 50, 60, 80].map(Double.init)
+        let histogram = SessionDurationHistogram(minutes: minutes, detail: .medium)
+        XCTAssertTrue(histogram.showsReferenceCurve)
+
+        let mean = try XCTUnwrap(histogram.mean)
+        let deviation = try XCTUnwrap(histogram.sampleStandardDeviation)
+        let first = try XCTUnwrap(histogram.bins.first { !$0.isOverflow })
+        let upper = try XCTUnwrap(first.upperMinutes)
+        XCTAssertEqual(upper - first.lowerMinutes, histogram.binWidth, accuracy: 1e-12)
+
+        let direct = SessionDurationHistogram.expectedFrequency(
+            sampleCount: minutes.count,
+            mean: mean,
+            sampleStandardDeviation: deviation,
+            lower: first.lowerMinutes,
+            upper: upper
+        )
+        XCTAssertEqual(first.expectedCount ?? -1, direct, accuracy: 1e-9)
+
+        let totalExpected = histogram.bins.compactMap(\.expectedCount).reduce(0, +)
+        XCTAssertGreaterThan(totalExpected, 0)
+        XCTAssertLessThanOrEqual(totalExpected, Double(minutes.count) + 0.001)
+    }
+
+    func testDefaultDetailIsMedium() {
+        XCTAssertEqual(SessionDurationHistogram.defaultDetail, .medium)
+        let histogram = SessionDurationHistogram(minutes: [10, 20, 30])
+        XCTAssertEqual(histogram.detail, .medium)
+    }
+
+    func testResolvedWidthTracksDetailTarget() {
+        let values = Array(stride(from: 10.0, through: 200.0, by: 10))
+        let wide = SessionDurationHistogram.resolvedWidth(values: values, detail: .wide)
+        let narrow = SessionDurationHistogram.resolvedWidth(values: values, detail: .narrow)
+        XCTAssertGreaterThanOrEqual(wide, narrow)
+        XCTAssertGreaterThan(wide, 0)
+        XCTAssertGreaterThan(narrow, 0)
     }
 }

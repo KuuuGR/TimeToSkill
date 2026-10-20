@@ -30,6 +30,44 @@ enum TimerSessionSample {
     }
 }
 
+/// Three readable histogram densities. Width in minutes is derived from the
+/// sample range so the chart stays a classic vertical histogram instead of
+/// hundreds of empty slots.
+enum SessionChartDetail: String, CaseIterable, Identifiable, Equatable {
+    case wide
+    case medium
+    case narrow
+
+    var id: String { rawValue }
+
+    /// Localization key for the segmented control.
+    var titleKey: String {
+        switch self {
+        case .wide: return "session_chart_detail_wide"
+        case .medium: return "session_chart_detail_medium"
+        case .narrow: return "session_chart_detail_narrow"
+        }
+    }
+
+    /// Preferred number of equal-width regular bins before any overflow bin.
+    var targetRegularBinCount: Int {
+        switch self {
+        case .wide: return 8
+        case .medium: return 14
+        case .narrow: return 24
+        }
+    }
+
+    /// Hard cap on regular bins so the plot never becomes unreadable.
+    var maximumRegularBinCount: Int {
+        switch self {
+        case .wide: return 12
+        case .medium: return 20
+        case .narrow: return 32
+        }
+    }
+}
+
 /// Equal-width histogram of session durations, plus an optional normal
 /// reference expressed in the same frequency units as the bins.
 struct SessionDurationHistogram: Equatable {
@@ -48,15 +86,18 @@ struct SessionDurationHistogram: Equatable {
         let expectedCount: Double?
     }
 
-    static let availableWidths: [Double] = [5, 15, 30, 60]
-    /// The previous per-skill chart resolved only the first 15 minutes into
-    /// 5-minute bins, then widened. 15 minutes is the default step.
-    static let defaultWidth: Double = 15
+    /// Default detail level for the segmented control.
+    static let defaultDetail: SessionChartDetail = .medium
     static let minimumCurveSampleCount = 10
-    /// Regular equal-width bins drawn before one explicit overflow bin.
-    static let maximumRegularBinCount = 512
+
+    /// Kept for older call sites / tests that still pass an explicit minute width.
+    static let defaultWidth: Double = 15
+    static let availableWidths: [Double] = [5, 15, 30, 60]
+    /// Legacy absolute ceiling used only by the width-based initializer path.
+    static let maximumRegularBinCount = 32
 
     let minutes: [Double]
+    let detail: SessionChartDetail
     let binWidth: Double
     let mean: Double?
     /// Sample standard deviation (divisor n − 1). Nil when n < 2.
@@ -64,6 +105,30 @@ struct SessionDurationHistogram: Equatable {
     let showsReferenceCurve: Bool
     let bins: [Bin]
 
+    init(minutes: [Double], detail: SessionChartDetail = .medium) {
+        let clean = minutes.filter { $0.isFinite && $0 > 0 }
+        let mean = Self.arithmeticMean(clean)
+        let deviation = mean.flatMap { Self.sampleStandardDeviation(clean, mean: $0) }
+        let showsCurve = Self.shouldShowCurve(count: clean.count, deviation: deviation)
+        let width = Self.resolvedWidth(values: clean, detail: detail)
+
+        self.minutes = clean
+        self.detail = detail
+        self.binWidth = width
+        self.mean = mean
+        self.sampleStandardDeviation = deviation
+        self.showsReferenceCurve = showsCurve
+        self.bins = Self.makeBins(
+            values: clean,
+            width: width,
+            maximumRegularBins: detail.maximumRegularBinCount,
+            mean: mean,
+            deviation: deviation,
+            showsCurve: showsCurve
+        )
+    }
+
+    /// Width-based initializer retained for unit tests that pin a minute step.
     init(minutes: [Double], binWidth: Double) {
         let clean = minutes.filter { $0.isFinite && $0 > 0 }
         let width = Self.usableWidth(binWidth)
@@ -72,6 +137,7 @@ struct SessionDurationHistogram: Equatable {
         let showsCurve = Self.shouldShowCurve(count: clean.count, deviation: deviation)
 
         self.minutes = clean
+        self.detail = .medium
         self.binWidth = width
         self.mean = mean
         self.sampleStandardDeviation = deviation
@@ -79,6 +145,7 @@ struct SessionDurationHistogram: Equatable {
         self.bins = Self.makeBins(
             values: clean,
             width: width,
+            maximumRegularBins: Self.maximumRegularBinCount,
             mean: mean,
             deviation: deviation,
             showsCurve: showsCurve
@@ -141,11 +208,35 @@ struct SessionDurationHistogram: Equatable {
         return expected.isFinite ? expected : 0
     }
 
+    /// Picks a readable minute width so ~`detail.targetRegularBinCount` bins
+    /// cover the observed range, never exceeding the detail's hard cap.
+    static func resolvedWidth(values: [Double], detail: SessionChartDetail) -> Double {
+        guard let maximum = values.max(), maximum.isFinite, maximum > 0 else {
+            return defaultWidth
+        }
+        let target = max(1, detail.targetRegularBinCount)
+        let raw = maximum / Double(target)
+        return niceWidth(raw)
+    }
+
     // MARK: - Private
 
     private static func usableWidth(_ width: Double) -> Double {
         guard width.isFinite, width > 0 else { return defaultWidth }
         return width
+    }
+
+    /// Rounds a raw width up to a short list of human-readable minute steps.
+    private static func niceWidth(_ raw: Double) -> Double {
+        guard raw.isFinite, raw > 0 else { return defaultWidth }
+        let steps: [Double] = [
+            1, 2, 5, 10, 15, 20, 30, 45, 60, 90, 120, 180, 240, 360, 480, 720, 1440
+        ]
+        for step in steps where step >= raw - 1e-9 {
+            return step
+        }
+        let rounded = (raw / 1440).rounded(.up) * 1440
+        return rounded.isFinite && rounded > 0 ? rounded : defaultWidth
     }
 
     private static func arithmeticMean(_ values: [Double]) -> Double? {
@@ -181,17 +272,20 @@ struct SessionDurationHistogram: Equatable {
     private static func makeBins(
         values: [Double],
         width: Double,
+        maximumRegularBins: Int,
         mean: Double?,
         deviation: Double?,
         showsCurve: Bool
     ) -> [Bin] {
         guard let maximum = values.max(), maximum.isFinite, maximum > 0 else { return [] }
-        let cutoff = Double(maximumRegularBinCount) * width
+        let limit = max(1, maximumRegularBins)
+        let cutoff = Double(limit) * width
         if !cutoff.isFinite || cutoff <= 0 || maximum >= cutoff {
             return binsWithOverflow(
                 values: values,
                 width: width,
                 cutoff: cutoff,
+                maximumRegularBins: limit,
                 mean: mean,
                 deviation: deviation,
                 showsCurve: showsCurve
@@ -203,6 +297,7 @@ struct SessionDurationHistogram: Equatable {
                 values: values,
                 width: width,
                 cutoff: cutoff,
+                maximumRegularBins: limit,
                 mean: mean,
                 deviation: deviation,
                 showsCurve: showsCurve
@@ -210,11 +305,12 @@ struct SessionDurationHistogram: Equatable {
         }
 
         let rawCount = end / width
-        guard rawCount.isFinite, rawCount >= 1, rawCount <= Double(maximumRegularBinCount) else {
+        guard rawCount.isFinite, rawCount >= 1, rawCount <= Double(limit) else {
             return binsWithOverflow(
                 values: values,
                 width: width,
                 cutoff: cutoff,
+                maximumRegularBins: limit,
                 mean: mean,
                 deviation: deviation,
                 showsCurve: showsCurve
@@ -236,6 +332,7 @@ struct SessionDurationHistogram: Equatable {
                 values: values,
                 width: width,
                 cutoff: cutoff,
+                maximumRegularBins: limit,
                 mean: mean,
                 deviation: deviation,
                 showsCurve: showsCurve
@@ -256,13 +353,14 @@ struct SessionDurationHistogram: Equatable {
         }
     }
 
-    /// 512 equal-width bins on [0, cutoff), then one open bin [cutoff, +∞).
+    /// Equal-width bins on [0, cutoff), then one open bin [cutoff, +∞).
     /// When cutoff itself is not a finite bound, every observation is counted
     /// in a single overflow bin starting at 0.
     private static func binsWithOverflow(
         values: [Double],
         width: Double,
         cutoff: Double,
+        maximumRegularBins: Int,
         mean: Double?,
         deviation: Double?,
         showsCurve: Bool
@@ -278,17 +376,18 @@ struct SessionDurationHistogram: Equatable {
             )]
         }
 
-        var counts = Array(repeating: 0, count: maximumRegularBinCount)
+        let limit = max(1, maximumRegularBins)
+        var counts = Array(repeating: 0, count: limit)
         var overflow = 0
         for value in values {
             if !value.isFinite || value >= cutoff {
                 overflow += 1
-            } else if let index = regularIndex(value: value, width: width, limit: maximumRegularBinCount) {
+            } else if let index = regularIndex(value: value, width: width, limit: limit) {
                 counts[index] += 1
             } else {
                 // Still below the overflow edge, so it belongs in the last
                 // regular bin rather than the open tail.
-                counts[maximumRegularBinCount - 1] += 1
+                counts[limit - 1] += 1
             }
         }
 

@@ -339,7 +339,10 @@
 "session_chart_open" = "Session chart";
 "session_chart_nav_title" = "Timer sessions";
 "session_chart_metric" = "Completed timer sessions only. Manual time adjustments are not included.";
-"session_chart_bin_width" = "Bin width";
+"session_chart_bin_width" = "Bar width";
+"session_chart_detail_wide" = "Wide";
+"session_chart_detail_medium" = "Medium";
+"session_chart_detail_narrow" = "Narrow";
 "session_chart_bin_minutes" = "%d min";
 "session_chart_bin_range" = "%1$@–%2$@ min";
 "session_chart_bin_overflow" = "≥ %1$@ min";

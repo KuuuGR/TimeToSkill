@@ -340,7 +340,10 @@
 "session_chart_open" = "Diagram sesij";
 "session_chart_nav_title" = "Sesije časoměra";
 "session_chart_metric" = "Samo dokončene sesije časoměra. Ručne popravky vremene ne vhodet.";
-"session_chart_bin_width" = "Širina intervala";
+"session_chart_bin_width" = "Bar width";
+"session_chart_detail_wide" = "Wide";
+"session_chart_detail_medium" = "Medium";
+"session_chart_detail_narrow" = "Narrow";
 "session_chart_bin_minutes" = "%d min.";
 "session_chart_bin_range" = "%1$@–%2$@ min.";
 "session_chart_bin_overflow" = "≥ %1$@ min.";

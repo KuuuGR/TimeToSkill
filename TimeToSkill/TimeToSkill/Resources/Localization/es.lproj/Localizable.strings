@@ -341,7 +341,10 @@
 "session_chart_open" = "Gráfico de sesiones";
 "session_chart_nav_title" = "Sesiones del temporizador";
 "session_chart_metric" = "Solo sesiones terminadas del temporizador. Los ajustes manuales de tiempo no entran.";
-"session_chart_bin_width" = "Ancho del intervalo";
+"session_chart_bin_width" = "Ancho de barras";
+"session_chart_detail_wide" = "Anchas";
+"session_chart_detail_medium" = "Medias";
+"session_chart_detail_narrow" = "Estrechas";
 "session_chart_bin_minutes" = "%d min";
 "session_chart_bin_range" = "%1$@–%2$@ min";
 "session_chart_bin_overflow" = "≥ %1$@ min";
