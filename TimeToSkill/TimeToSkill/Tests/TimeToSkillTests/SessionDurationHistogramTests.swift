@@ -161,7 +161,6 @@ final class SessionDurationHistogramTests: XCTestCase {
     }
 
     func testIntegratedFrequencyMatchesTheNormalBinProbability() {
-        // Φ(1.5) − Φ(0) ≈ 0.4331928, times n = 10.
         let expected = SessionDurationHistogram.expectedFrequency(
             sampleCount: 10,
             mean: 30,
@@ -211,45 +210,60 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertFalse(histogram.showsReferenceCurve)
     }
 
-    // MARK: - Three detail levels
+    // MARK: - Freedman–Diaconis multipliers
 
-    func testDetailLevelsCapRegularBinCounts() {
-        // Spread observations across a long range so each level wants many bins.
-        let minutes = stride(from: 5.0, through: 480.0, by: 5).map { $0 }
-        let wide = SessionDurationHistogram(minutes: minutes, detail: .wide)
+    func testMediumWidthEqualsAutomaticBaseWidth() {
+        let minutes = stride(from: 5.0, through: 120.0, by: 2.5).map { $0 }
         let medium = SessionDurationHistogram(minutes: minutes, detail: .medium)
-        let narrow = SessionDurationHistogram(minutes: minutes, detail: .narrow)
-
-        XCTAssertLessThanOrEqual(wide.bins.filter { !$0.isOverflow }.count, SessionChartDetail.wide.maximumRegularBinCount)
-        XCTAssertLessThanOrEqual(medium.bins.filter { !$0.isOverflow }.count, SessionChartDetail.medium.maximumRegularBinCount)
-        XCTAssertLessThanOrEqual(narrow.bins.filter { !$0.isOverflow }.count, SessionChartDetail.narrow.maximumRegularBinCount)
-
-        XCTAssertLessThan(wide.bins.filter { !$0.isOverflow }.count, narrow.bins.filter { !$0.isOverflow }.count)
-        XCTAssertGreaterThan(wide.binWidth, narrow.binWidth)
+        let base = SessionDurationHistogram.freedmanDiaconisBaseWidth(values: minutes)
+        XCTAssertEqual(medium.baseBinWidth, base, accuracy: 1e-12)
+        XCTAssertEqual(medium.binWidth, base, accuracy: 1e-12)
     }
 
-    func testChangingDetailPreservesSampleAndStatistics() {
-        let minutes = [10, 20, 25, 30, 35, 40, 45, 50, 60, 90].map(Double.init)
+    func testWideIsThreeTimesBaseAndNarrowIsOneThird() {
+        // Spread sample so clamps do not flatten the multipliers.
+        var minutes: [Double] = []
+        for i in 0..<80 {
+            minutes.append(10 + Double(i) * 1.5 + Double(i % 7) * 0.3)
+        }
+        let base = SessionDurationHistogram.freedmanDiaconisBaseWidth(values: minutes)
         let wide = SessionDurationHistogram(minutes: minutes, detail: .wide)
         let medium = SessionDurationHistogram(minutes: minutes, detail: .medium)
         let narrow = SessionDurationHistogram(minutes: minutes, detail: .narrow)
 
-        XCTAssertEqual(wide.minutes, medium.minutes)
-        XCTAssertEqual(medium.minutes, narrow.minutes)
-        XCTAssertEqual(wide.mean ?? -1, medium.mean ?? -2, accuracy: 1e-12)
-        XCTAssertEqual(medium.mean ?? -1, narrow.mean ?? -2, accuracy: 1e-12)
-        XCTAssertEqual(
-            wide.sampleStandardDeviation ?? -1,
-            medium.sampleStandardDeviation ?? -2,
-            accuracy: 1e-12
-        )
-        XCTAssertEqual(
-            medium.sampleStandardDeviation ?? -1,
-            narrow.sampleStandardDeviation ?? -2,
-            accuracy: 1e-12
-        )
-        XCTAssertEqual(wide.showsReferenceCurve, medium.showsReferenceCurve)
-        XCTAssertEqual(medium.showsReferenceCurve, narrow.showsReferenceCurve)
+        XCTAssertEqual(medium.binWidth, base, accuracy: 1e-9)
+        XCTAssertEqual(wide.binWidth, base * 3, accuracy: 1e-9)
+        XCTAssertEqual(narrow.binWidth, base / 3, accuracy: 1e-9)
+        XCTAssertEqual(wide.baseBinWidth, base, accuracy: 1e-9)
+        XCTAssertEqual(narrow.baseBinWidth, base, accuracy: 1e-9)
+    }
+
+    func testDifferentDistributionsYieldDifferentBaseWidths() {
+        let tight = (0..<40).map { 50.0 + Double($0) * 0.2 }
+        let wide = (0..<40).map { 10.0 + Double($0) * 4.0 }
+        let tightBase = SessionDurationHistogram.freedmanDiaconisBaseWidth(values: tight)
+        let wideBase = SessionDurationHistogram.freedmanDiaconisBaseWidth(values: wide)
+        XCTAssertNotEqual(tightBase, wideBase, accuracy: 1e-6)
+        XCTAssertLessThan(tightBase, wideBase)
+    }
+
+    func testDetailChangeAltersBinEdgesAndCounts() {
+        var minutes: [Double] = []
+        for i in 0..<60 {
+            minutes.append(8 + Double(i) * 1.7)
+        }
+        let wide = SessionDurationHistogram(minutes: minutes, detail: .wide)
+        let medium = SessionDurationHistogram(minutes: minutes, detail: .medium)
+        let narrow = SessionDurationHistogram(minutes: minutes, detail: .narrow)
+
+        XCTAssertNotEqual(wide.binWidth, medium.binWidth)
+        XCTAssertNotEqual(medium.binWidth, narrow.binWidth)
+        XCTAssertNotEqual(wide.bins.map(\.lowerMinutes), narrow.bins.map(\.lowerMinutes))
+        XCTAssertGreaterThan(narrow.bins.filter { !$0.isOverflow }.count, wide.bins.filter { !$0.isOverflow }.count)
+
+        XCTAssertEqual(wide.bins.reduce(0) { $0 + $1.count }, minutes.count)
+        XCTAssertEqual(medium.bins.reduce(0) { $0 + $1.count }, minutes.count)
+        XCTAssertEqual(narrow.bins.reduce(0) { $0 + $1.count }, minutes.count)
     }
 
     func testDetailLevelsNeverDropOrDoubleCountObservations() {
@@ -264,13 +278,17 @@ final class SessionDurationHistogramTests: XCTestCase {
                 "Detail \(detail) lost or double-counted observations"
             )
             XCTAssertEqual(histogram.minutes.count, minutes.count)
+            XCTAssertEqual(histogram.mean, SessionDurationHistogram(minutes: minutes, detail: .medium).mean)
+            XCTAssertEqual(
+                histogram.sampleStandardDeviation,
+                SessionDurationHistogram(minutes: minutes, detail: .medium).sampleStandardDeviation
+            )
         }
     }
 
     func testObservationsAreAssignedToHalfOpenBinsWithoutOverlap() throws {
         let minutes: [Double] = [0.5, 14.9, 15, 29.9, 30, 44.9]
         let histogram = SessionDurationHistogram(minutes: minutes, binWidth: 15)
-        // Half-open [0,15), [15,30), [30,45)
         XCTAssertEqual(histogram.bins.map(\.count), [2, 2, 2])
         XCTAssertEqual(histogram.bins.reduce(0) { $0 + $1.count }, minutes.count)
 
@@ -281,29 +299,30 @@ final class SessionDurationHistogramTests: XCTestCase {
         }
     }
 
-    func testDetailCurveUsesActualBinWidthForExpectedCounts() throws {
+    func testCurveScaleMatchesBinWidthForEachDetail() throws {
         let minutes = [10, 15, 20, 25, 30, 35, 40, 50, 60, 80].map(Double.init)
-        let histogram = SessionDurationHistogram(minutes: minutes, detail: .medium)
-        XCTAssertTrue(histogram.showsReferenceCurve)
+        for detail in SessionChartDetail.allCases {
+            let histogram = SessionDurationHistogram(minutes: minutes, detail: detail)
+            XCTAssertTrue(histogram.showsReferenceCurve)
+            let mean = try XCTUnwrap(histogram.mean)
+            let deviation = try XCTUnwrap(histogram.sampleStandardDeviation)
+            let first = try XCTUnwrap(histogram.bins.first { !$0.isOverflow })
+            let upper = try XCTUnwrap(first.upperMinutes)
+            XCTAssertEqual(upper - first.lowerMinutes, histogram.binWidth, accuracy: 1e-12)
 
-        let mean = try XCTUnwrap(histogram.mean)
-        let deviation = try XCTUnwrap(histogram.sampleStandardDeviation)
-        let first = try XCTUnwrap(histogram.bins.first { !$0.isOverflow })
-        let upper = try XCTUnwrap(first.upperMinutes)
-        XCTAssertEqual(upper - first.lowerMinutes, histogram.binWidth, accuracy: 1e-12)
+            let direct = SessionDurationHistogram.expectedFrequency(
+                sampleCount: minutes.count,
+                mean: mean,
+                sampleStandardDeviation: deviation,
+                lower: first.lowerMinutes,
+                upper: upper
+            )
+            XCTAssertEqual(first.expectedCount ?? -1, direct, accuracy: 1e-9)
 
-        let direct = SessionDurationHistogram.expectedFrequency(
-            sampleCount: minutes.count,
-            mean: mean,
-            sampleStandardDeviation: deviation,
-            lower: first.lowerMinutes,
-            upper: upper
-        )
-        XCTAssertEqual(first.expectedCount ?? -1, direct, accuracy: 1e-9)
-
-        let totalExpected = histogram.bins.compactMap(\.expectedCount).reduce(0, +)
-        XCTAssertGreaterThan(totalExpected, 0)
-        XCTAssertLessThanOrEqual(totalExpected, Double(minutes.count) + 0.001)
+            let totalExpected = histogram.bins.compactMap(\.expectedCount).reduce(0, +)
+            XCTAssertGreaterThan(totalExpected, 0)
+            XCTAssertLessThanOrEqual(totalExpected, Double(minutes.count) + 0.001)
+        }
     }
 
     func testDefaultDetailIsMedium() {
@@ -312,12 +331,28 @@ final class SessionDurationHistogramTests: XCTestCase {
         XCTAssertEqual(histogram.detail, .medium)
     }
 
-    func testResolvedWidthTracksDetailTarget() {
-        let values = Array(stride(from: 10.0, through: 200.0, by: 10))
-        let wide = SessionDurationHistogram.resolvedWidth(values: values, detail: .wide)
-        let narrow = SessionDurationHistogram.resolvedWidth(values: values, detail: .narrow)
-        XCTAssertGreaterThanOrEqual(wide, narrow)
-        XCTAssertGreaterThan(wide, 0)
-        XCTAssertGreaterThan(narrow, 0)
+    func testZeroVarianceAndEmptyDoNotProduceNaNWidths() {
+        let empty = SessionDurationHistogram.freedmanDiaconisBaseWidth(values: [])
+        XCTAssertTrue(empty.isFinite && empty > 0)
+        let constant = SessionDurationHistogram.freedmanDiaconisBaseWidth(values: Array(repeating: 12, count: 8))
+        XCTAssertTrue(constant.isFinite && constant > 0)
+        let hist = SessionDurationHistogram(minutes: Array(repeating: 12, count: 8), detail: .narrow)
+        XCTAssertTrue(hist.binWidth.isFinite && hist.binWidth > 0)
+        XCTAssertTrue(hist.bins.allSatisfy { $0.lowerMinutes.isFinite })
+    }
+}
+
+final class TrackerToolKindTests: XCTestCase {
+    func testProgressShowsNewSkillAndBalanceDoesNot() {
+        XCTAssertTrue(TrackerToolKind.progress.showsNewSkillAction)
+        XCTAssertFalse(TrackerToolKind.progress.showsNewBalanceAction)
+        XCTAssertFalse(TrackerToolKind.balance.showsNewSkillAction)
+        XCTAssertTrue(TrackerToolKind.balance.showsNewBalanceAction)
+    }
+
+    func testResolveFallsBackToProgress() {
+        XCTAssertEqual(TrackerToolKind.resolve("progress"), .progress)
+        XCTAssertEqual(TrackerToolKind.resolve("balance"), .balance)
+        XCTAssertEqual(TrackerToolKind.resolve("unknown"), .progress)
     }
 }

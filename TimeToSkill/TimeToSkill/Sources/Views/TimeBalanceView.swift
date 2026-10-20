@@ -77,8 +77,9 @@ struct TimeBalanceView: View {
                 Button {
                     showingNew = true
                 } label: {
-                    Image(systemName: "plus")
+                    Label(LocalizedStringKey("time_balance_new"), systemImage: "plus")
                 }
+                .help(LocalizedStringKey("time_balance_new"))
                 .accessibilityLabel(Text(LocalizedStringKey("time_balance_new")))
             }
         }

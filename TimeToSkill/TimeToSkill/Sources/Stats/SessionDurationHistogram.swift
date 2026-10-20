@@ -30,9 +30,8 @@ enum TimerSessionSample {
     }
 }
 
-/// Three readable histogram densities. Width in minutes is derived from the
-/// sample range so the chart stays a classic vertical histogram instead of
-/// hundreds of empty slots.
+/// Three readable histogram densities. Medium uses an automatic base width;
+/// wide and narrow are exact multipliers of that base.
 enum SessionChartDetail: String, CaseIterable, Identifiable, Equatable {
     case wide
     case medium
@@ -49,21 +48,12 @@ enum SessionChartDetail: String, CaseIterable, Identifiable, Equatable {
         }
     }
 
-    /// Preferred number of equal-width regular bins before any overflow bin.
-    var targetRegularBinCount: Int {
+    /// Exact multiplier applied to the automatic medium (`base`) width.
+    var widthMultiplier: Double {
         switch self {
-        case .wide: return 8
-        case .medium: return 14
-        case .narrow: return 24
-        }
-    }
-
-    /// Hard cap on regular bins so the plot never becomes unreadable.
-    var maximumRegularBinCount: Int {
-        switch self {
-        case .wide: return 12
-        case .medium: return 20
-        case .narrow: return 32
+        case .wide: return 3
+        case .medium: return 1
+        case .narrow: return 1.0 / 3.0
         }
     }
 }
@@ -90,14 +80,21 @@ struct SessionDurationHistogram: Equatable {
     static let defaultDetail: SessionChartDetail = .medium
     static let minimumCurveSampleCount = 10
 
-    /// Kept for older call sites / tests that still pass an explicit minute width.
+    /// Fallback when the sample is empty or has no usable spread.
     static let defaultWidth: Double = 15
     static let availableWidths: [Double] = [5, 15, 30, 60]
-    /// Legacy absolute ceiling used only by the width-based initializer path.
-    static let maximumRegularBinCount = 32
+
+    /// Explicit bin-count limits so FD / multipliers never produce a single
+    /// unreadable bar or hundreds of hairline slots.
+    static let minimumRegularBinCount = 2
+    static let maximumRegularBinCount = 48
 
     let minutes: [Double]
     let detail: SessionChartDetail
+    /// Freedman–Diaconis (or fallback) width for the medium setting, before
+    /// applying the detail multiplier and bin-count clamps.
+    let baseBinWidth: Double
+    /// Actual numeric bin width used for this histogram.
     let binWidth: Double
     let mean: Double?
     /// Sample standard deviation (divisor n − 1). Nil when n < 2.
@@ -110,10 +107,12 @@ struct SessionDurationHistogram: Equatable {
         let mean = Self.arithmeticMean(clean)
         let deviation = mean.flatMap { Self.sampleStandardDeviation(clean, mean: $0) }
         let showsCurve = Self.shouldShowCurve(count: clean.count, deviation: deviation)
-        let width = Self.resolvedWidth(values: clean, detail: detail)
+        let base = Self.freedmanDiaconisBaseWidth(values: clean)
+        let width = Self.resolvedWidth(values: clean, detail: detail, base: base)
 
         self.minutes = clean
         self.detail = detail
+        self.baseBinWidth = base
         self.binWidth = width
         self.mean = mean
         self.sampleStandardDeviation = deviation
@@ -121,7 +120,8 @@ struct SessionDurationHistogram: Equatable {
         self.bins = Self.makeBins(
             values: clean,
             width: width,
-            maximumRegularBins: detail.maximumRegularBinCount,
+            originAlignedToData: true,
+            maximumRegularBins: Self.maximumRegularBinCount,
             mean: mean,
             deviation: deviation,
             showsCurve: showsCurve
@@ -129,6 +129,7 @@ struct SessionDurationHistogram: Equatable {
     }
 
     /// Width-based initializer retained for unit tests that pin a minute step.
+    /// Bins start at 0 so legacy half-open expectations stay stable.
     init(minutes: [Double], binWidth: Double) {
         let clean = minutes.filter { $0.isFinite && $0 > 0 }
         let width = Self.usableWidth(binWidth)
@@ -138,6 +139,7 @@ struct SessionDurationHistogram: Equatable {
 
         self.minutes = clean
         self.detail = .medium
+        self.baseBinWidth = width
         self.binWidth = width
         self.mean = mean
         self.sampleStandardDeviation = deviation
@@ -145,6 +147,7 @@ struct SessionDurationHistogram: Equatable {
         self.bins = Self.makeBins(
             values: clean,
             width: width,
+            originAlignedToData: false,
             maximumRegularBins: Self.maximumRegularBinCount,
             mean: mean,
             deviation: deviation,
@@ -208,15 +211,55 @@ struct SessionDurationHistogram: Equatable {
         return expected.isFinite ? expected : 0
     }
 
-    /// Picks a readable minute width so ~`detail.targetRegularBinCount` bins
-    /// cover the observed range, never exceeding the detail's hard cap.
-    static func resolvedWidth(values: [Double], detail: SessionChartDetail) -> Double {
-        guard let maximum = values.max(), maximum.isFinite, maximum > 0 else {
+    /// Automatic medium width: Freedman–Diaconis `2 · IQR · n^(−1/3)`, with
+    /// Scott's rule when IQR is zero but sample SD is positive, then a range
+    /// fallback. Result is clamped so the data range yields between
+    /// `minimumRegularBinCount` and `maximumRegularBinCount` bins.
+    static func freedmanDiaconisBaseWidth(values: [Double]) -> Double {
+        guard values.count >= 2,
+              let lo = values.min(), let hi = values.max(),
+              lo.isFinite, hi.isFinite
+        else { return defaultWidth }
+
+        let range = hi - lo
+        if !(range.isFinite && range > 0) {
             return defaultWidth
         }
-        let target = max(1, detail.targetRegularBinCount)
-        let raw = maximum / Double(target)
-        return niceWidth(raw)
+
+        let n = Double(values.count)
+        let iqr = interquartileRange(values)
+        let raw: Double
+        if iqr.isFinite, iqr > 0 {
+            raw = 2.0 * iqr / pow(n, 1.0 / 3.0)
+        } else if let mean = arithmeticMean(values),
+                  let s = sampleStandardDeviation(values, mean: mean),
+                  s.isFinite, s > 0 {
+            // Scott: 3.5 · s · n^(−1/3) when IQR vanishes but variance remains.
+            raw = 3.5 * s / pow(n, 1.0 / 3.0)
+        } else {
+            // All equal (or no usable spread): one “medium” slot spanning the
+            // tiny numeric gap; clamps below still enforce at least 2 bins when
+            // the caller later expands the range with nextUp edges.
+            raw = max(range, defaultWidth)
+        }
+
+        guard raw.isFinite, raw > 0 else { return defaultWidth }
+        return clampWidth(raw, range: range)
+    }
+
+    /// Medium → base; wide → `base × 3`; narrow → `base ÷ 3`.
+    /// Multipliers stay exact so the three settings never collapse to one
+    /// width; bin-count limits are enforced later when laying out bins
+    /// (overflow after `maximumRegularBinCount`), not by rewriting the width.
+    static func resolvedWidth(
+        values: [Double],
+        detail: SessionChartDetail,
+        base: Double? = nil
+    ) -> Double {
+        let baseWidth = base ?? freedmanDiaconisBaseWidth(values: values)
+        let scaled = baseWidth * detail.widthMultiplier
+        guard scaled.isFinite, scaled > 0 else { return usableWidth(baseWidth) }
+        return scaled
     }
 
     // MARK: - Private
@@ -226,17 +269,38 @@ struct SessionDurationHistogram: Equatable {
         return width
     }
 
-    /// Rounds a raw width up to a short list of human-readable minute steps.
-    private static func niceWidth(_ raw: Double) -> Double {
-        guard raw.isFinite, raw > 0 else { return defaultWidth }
-        let steps: [Double] = [
-            1, 2, 5, 10, 15, 20, 30, 45, 60, 90, 120, 180, 240, 360, 480, 720, 1440
-        ]
-        for step in steps where step >= raw - 1e-9 {
-            return step
+    /// Keeps `range / width` inside `[minimumRegularBinCount, maximumRegularBinCount]`.
+    private static func clampWidth(_ width: Double, range: Double) -> Double {
+        guard width.isFinite, width > 0, range.isFinite, range > 0 else {
+            return usableWidth(width)
         }
-        let rounded = (raw / 1440).rounded(.up) * 1440
-        return rounded.isFinite && rounded > 0 ? rounded : defaultWidth
+        let maxWidth = range / Double(minimumRegularBinCount)
+        let minWidth = range / Double(maximumRegularBinCount)
+        let clamped = min(max(width, minWidth), maxWidth)
+        return clamped.isFinite && clamped > 0 ? clamped : usableWidth(width)
+    }
+
+    /// Tukey hinges: Q3 − Q1 on the sorted sample.
+    private static func interquartileRange(_ values: [Double]) -> Double {
+        let sorted = values.sorted()
+        guard sorted.count >= 2 else { return 0 }
+        let q1 = quantile(sorted, probability: 0.25)
+        let q3 = quantile(sorted, probability: 0.75)
+        guard q1.isFinite, q3.isFinite else { return 0 }
+        return max(0, q3 - q1)
+    }
+
+    private static func quantile(_ sorted: [Double], probability: Double) -> Double {
+        guard !sorted.isEmpty else { return .nan }
+        if sorted.count == 1 { return sorted[0] }
+        let p = min(1, max(0, probability))
+        let position = p * Double(sorted.count - 1)
+        let lowerIndex = Int(position.rounded(.down))
+        let upperIndex = min(sorted.count - 1, lowerIndex + 1)
+        let fraction = position - Double(lowerIndex)
+        let lower = sorted[lowerIndex]
+        let upper = sorted[upperIndex]
+        return lower + (upper - lower) * fraction
     }
 
     private static func arithmeticMean(_ values: [Double]) -> Double? {
@@ -272,56 +336,73 @@ struct SessionDurationHistogram: Equatable {
     private static func makeBins(
         values: [Double],
         width: Double,
+        originAlignedToData: Bool,
         maximumRegularBins: Int,
         mean: Double?,
         deviation: Double?,
         showsCurve: Bool
     ) -> [Bin] {
-        guard let maximum = values.max(), maximum.isFinite, maximum > 0 else { return [] }
+        guard let maximum = values.max(), maximum.isFinite, maximum > 0,
+              let minimum = values.min(), minimum.isFinite
+        else { return [] }
+
+        let origin: Double
+        if originAlignedToData {
+            // Align the first edge to a multiple of `width` at or below min so
+            // empty leading bins below the sample are not invented from zero.
+            let rawOrigin = (minimum / width).rounded(.down) * width
+            origin = rawOrigin.isFinite ? max(0, rawOrigin) : 0
+        } else {
+            origin = 0
+        }
+
         let limit = max(1, maximumRegularBins)
-        let cutoff = Double(limit) * width
-        if !cutoff.isFinite || cutoff <= 0 || maximum >= cutoff {
+        guard width.isFinite, width > 0, origin.isFinite else {
+            return [overflowBin(
+                lower: 0,
+                count: values.count,
+                mean: mean,
+                deviation: deviation,
+                sampleCount: values.count,
+                showsCurve: showsCurve
+            )]
+        }
+
+        // Half-open bins: value `v` lands in floor((v − origin) / width).
+        // A session exactly on a multiple therefore needs the next bin, not
+        // an exclusive end that drops it. Compare in Double first so a huge
+        // duration never traps when converting the quotient to Int.
+        let lastScaled = (maximum - origin) / width
+        guard lastScaled.isFinite, lastScaled >= 0 else {
             return binsWithOverflow(
                 values: values,
                 width: width,
-                cutoff: cutoff,
+                origin: origin,
+                cutoff: origin + Double(limit) * width,
                 maximumRegularBins: limit,
                 mean: mean,
                 deviation: deviation,
                 showsCurve: showsCurve
             )
         }
-
-        guard let end = coveredEnd(maximum: maximum, width: width) else {
+        if lastScaled >= Double(limit) {
             return binsWithOverflow(
                 values: values,
                 width: width,
-                cutoff: cutoff,
+                origin: origin,
+                cutoff: origin + Double(limit) * width,
                 maximumRegularBins: limit,
                 mean: mean,
                 deviation: deviation,
                 showsCurve: showsCurve
             )
         }
-
-        let rawCount = end / width
-        guard rawCount.isFinite, rawCount >= 1, rawCount <= Double(limit) else {
-            return binsWithOverflow(
-                values: values,
-                width: width,
-                cutoff: cutoff,
-                maximumRegularBins: limit,
-                mean: mean,
-                deviation: deviation,
-                showsCurve: showsCurve
-            )
-        }
-
-        let binCount = Int(rawCount.rounded())
+        let lastIndex = Int(lastScaled.rounded(.down))
+        let binCount = max(1, lastIndex + 1)
         var counts = Array(repeating: 0, count: binCount)
         var overflow = 0
         for value in values {
-            if let index = regularIndex(value: value, width: width, limit: binCount) {
+            if let index = regularIndex(value: value, origin: origin, width: width, limit: binCount) {
                 counts[index] += 1
             } else {
                 overflow += 1
@@ -331,7 +412,8 @@ struct SessionDurationHistogram: Equatable {
             return binsWithOverflow(
                 values: values,
                 width: width,
-                cutoff: cutoff,
+                origin: origin,
+                cutoff: origin + Double(binCount) * width,
                 maximumRegularBins: limit,
                 mean: mean,
                 deviation: deviation,
@@ -340,7 +422,7 @@ struct SessionDurationHistogram: Equatable {
         }
 
         return counts.enumerated().map { index, count in
-            let lower = Double(index) * width
+            let lower = origin + Double(index) * width
             return regularBin(
                 lower: lower,
                 upper: lower + width,
@@ -353,21 +435,19 @@ struct SessionDurationHistogram: Equatable {
         }
     }
 
-    /// Equal-width bins on [0, cutoff), then one open bin [cutoff, +∞).
-    /// When cutoff itself is not a finite bound, every observation is counted
-    /// in a single overflow bin starting at 0.
     private static func binsWithOverflow(
         values: [Double],
         width: Double,
+        origin: Double,
         cutoff: Double,
         maximumRegularBins: Int,
         mean: Double?,
         deviation: Double?,
         showsCurve: Bool
     ) -> [Bin] {
-        guard cutoff.isFinite, cutoff > 0 else {
+        guard cutoff.isFinite, cutoff > origin else {
             return [overflowBin(
-                lower: 0,
+                lower: origin,
                 count: values.count,
                 mean: mean,
                 deviation: deviation,
@@ -382,17 +462,15 @@ struct SessionDurationHistogram: Equatable {
         for value in values {
             if !value.isFinite || value >= cutoff {
                 overflow += 1
-            } else if let index = regularIndex(value: value, width: width, limit: limit) {
+            } else if let index = regularIndex(value: value, origin: origin, width: width, limit: limit) {
                 counts[index] += 1
             } else {
-                // Still below the overflow edge, so it belongs in the last
-                // regular bin rather than the open tail.
                 counts[limit - 1] += 1
             }
         }
 
         var bins = counts.enumerated().map { index, count in
-            let lower = Double(index) * width
+            let lower = origin + Double(index) * width
             return regularBin(
                 lower: lower,
                 upper: lower + width,
@@ -414,40 +492,20 @@ struct SessionDurationHistogram: Equatable {
         return bins
     }
 
-    /// Index of a half-open regular bin, or nil when the value belongs in the
-    /// overflow bin. Avoids converting a huge quotient to `Int`.
-    private static func regularIndex(value: Double, width: Double, limit: Int) -> Int? {
-        guard value.isFinite, width.isFinite, width > 0, limit > 0 else { return nil }
-        let scaled = value / width
-        guard scaled.isFinite, scaled < Double(limit) else { return nil }
+    /// Index of a half-open regular bin relative to `origin`, or nil for overflow.
+    private static func regularIndex(
+        value: Double,
+        origin: Double,
+        width: Double,
+        limit: Int
+    ) -> Int? {
+        guard value.isFinite, origin.isFinite, width.isFinite, width > 0, limit > 0 else { return nil }
+        let scaled = (value - origin) / width
+        guard scaled.isFinite, scaled >= 0, scaled < Double(limit) else { return nil }
         var index = Int(scaled.rounded(.down))
         if index >= limit { return nil }
         if index < 0 { index = 0 }
         return index
-    }
-
-    /// Smallest multiple of `width` that is strictly above `maximum`, so a
-    /// session that lands exactly on a boundary still belongs to a real bin.
-    /// If that multiple overflows, the next representable value is used so the
-    /// observation is not dropped.
-    private static func coveredEnd(maximum: Double, width: Double) -> Double? {
-        guard maximum.isFinite, maximum > 0, width.isFinite, width > 0 else { return nil }
-        var end = (maximum / width).rounded(.up) * width
-        if !end.isFinite || end <= 0 {
-            end = maximum.nextUp
-        } else if maximum >= end - 1e-6 {
-            let extended = end + width
-            // Adding the width can be a no-op once the magnitude exceeds
-            // what Double can distinguish. Use the next representable value
-            // so the edge stays strictly above the longest session.
-            if extended.isFinite, extended > maximum {
-                end = extended
-            } else {
-                end = maximum.nextUp
-            }
-        }
-        guard end.isFinite, end > maximum else { return nil }
-        return end
     }
 
     private static func regularBin(

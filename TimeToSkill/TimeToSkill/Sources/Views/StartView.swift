@@ -12,7 +12,11 @@ struct StartView: View {
 
     // Using AppStorage for automatic UserDefaults persistence
     @AppStorage("selectedSortOption") private var selectedSortRawValue: String = SkillSortOption.nameAsc.rawValue
-    @AppStorage("TrackerTool") private var trackerToolRaw: String = "progress"
+    @AppStorage(TrackerToolKind.storageKey) private var trackerToolRaw: String = TrackerToolKind.default.rawValue
+
+    private var trackerTool: TrackerToolKind {
+        TrackerToolKind.resolve(trackerToolRaw)
+    }
 
     enum SkillSortOption: String, CaseIterable, Identifiable {
         case nameAsc = "sort_name_asc"
@@ -34,13 +38,22 @@ struct StartView: View {
             mainContent(now: context.date)
         }
         .navigationTitle(LocalizedStringKey("tracking_nav_title"))
-
-        .macOSToolbarAction(
-            title: LocalizedStringKey("fab_add_skill"),
-            systemImage: "plus",
-            shortcut: KeyboardShortcut("n", modifiers: .command)
-        ) {
-            showingAddSkill = true
+        // Only on Progress. Time Balance has its own "new balance" toolbar item;
+        // showing both plus actions at once is confusing.
+        .toolbar {
+            #if os(macOS)
+            if trackerTool.showsNewSkillAction {
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
+                        showingAddSkill = true
+                    } label: {
+                        Label(LocalizedStringKey("fab_add_skill"), systemImage: "plus")
+                    }
+                    .help(LocalizedStringKey("fab_add_skill"))
+                    .keyboardShortcut("n", modifiers: .command)
+                }
+            }
+            #endif
         }
         .sheet(isPresented: $showingAddSkill) {
             AddSkillView()
@@ -80,14 +93,14 @@ struct StartView: View {
             .padding(.bottom, 8)
 
             Picker(LocalizedStringKey("tracker_tool_label"), selection: $trackerToolRaw) {
-                Text(LocalizedStringKey("tracker_tool_progress")).tag("progress")
-                Text(LocalizedStringKey("tracker_tool_balance")).tag("balance")
+                Text(LocalizedStringKey("tracker_tool_progress")).tag(TrackerToolKind.progress.rawValue)
+                Text(LocalizedStringKey("tracker_tool_balance")).tag(TrackerToolKind.balance.rawValue)
             }
             .pickerStyle(.segmented)
             .padding(.horizontal)
             .accessibilityIdentifier("TrackerToolPicker")
 
-            if trackerToolRaw == "balance" {
+            if trackerTool == .balance {
                 TimeBalanceView()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {

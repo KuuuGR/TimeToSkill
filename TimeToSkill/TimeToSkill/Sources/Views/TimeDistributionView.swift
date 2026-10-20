@@ -182,6 +182,9 @@ struct TimeDistributionView: View {
                 emptyState
             } else {
                 SessionDurationChart(histogram: distribution)
+                    // Force a fresh plot when the detail level changes the
+                    // numeric bin width (avoids stale geometry from a prior pick).
+                    .id("\(detail.rawValue)-\(distribution.binWidth)")
                 curveCaption
             }
         }

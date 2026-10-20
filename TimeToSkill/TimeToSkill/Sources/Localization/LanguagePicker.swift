@@ -3,8 +3,9 @@
 //  TimeToSkill
 //
 //  Circular flag button and language sheet modeled on MedBioPhys.
-//  The control lives only in Options (trailing toolbar). Every language
-//  row has a dedicated flag asset; "device language" uses a neutral icon.
+//  The same control is overlaid in the top-trailing corner of Overview and
+//  Options so both screens share AppLanguage.shared. Every language row has
+//  a dedicated flag asset; "device language" uses a neutral icon.
 //
 
 import SwiftUI
@@ -14,6 +15,12 @@ import AppKit
 import UIKit
 #endif
 
+/// Hit target and visible disc for the language control.
+enum LanguageSelectorMetrics {
+    static let discDiameter: CGFloat = 32
+    static let hitSize: CGFloat = 44
+}
+
 struct LanguageSelectorButton: View {
     @ObservedObject private var language = AppLanguage.shared
     @State private var showingPicker = false
@@ -22,9 +29,13 @@ struct LanguageSelectorButton: View {
         Button {
             showingPicker = true
         } label: {
-            LanguageFlag(option: indicatorOption, diameter: 26)
-                .frame(width: 44, height: 44)
-                .contentShape(Circle())
+            // Disc is centered in the hit circle with no extra padding that
+            // would shift the flag off-center inside the visible field.
+            ZStack {
+                LanguageFlag(option: indicatorOption, diameter: LanguageSelectorMetrics.discDiameter)
+            }
+            .frame(width: LanguageSelectorMetrics.hitSize, height: LanguageSelectorMetrics.hitSize)
+            .contentShape(Circle())
         }
         .buttonStyle(.plain)
         .accessibilityLabel(Text(accessibilityName))
@@ -83,7 +94,8 @@ struct LanguageFlag: View {
 
     @Environment(\.colorScheme) private var colorScheme
 
-    private static let imageScale: CGFloat = 17.0 / 26.0
+    /// Flag artwork fills most of the disc while staying inside the stroke.
+    private static let imageScale: CGFloat = 0.72
 
     var body: some View {
         let imageSide = diameter * Self.imageScale
@@ -92,13 +104,13 @@ struct LanguageFlag: View {
                 .fill(.ultraThinMaterial)
             Circle()
                 .fill(fillColor)
-            Circle()
-                .strokeBorder(strokeColor, lineWidth: 1)
             flagImage
                 .frame(width: imageSide, height: imageSide)
                 .clipShape(Circle())
+            Circle()
+                .strokeBorder(strokeColor, lineWidth: 1)
         }
-        .frame(width: diameter, height: diameter)
+        .frame(width: diameter, height: diameter, alignment: .center)
         .accessibilityHidden(true)
     }
 
@@ -118,6 +130,7 @@ struct LanguageFlag: View {
             Image(systemName: "desktopcomputer")
                 .font(.system(size: diameter * 0.42, weight: .semibold))
                 .foregroundStyle(.primary)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         } else {
             // Should not happen when assets are complete; keep a non-emoji glyph badge.
             Text(badge)
@@ -125,6 +138,7 @@ struct LanguageFlag: View {
                 .foregroundStyle(.primary.opacity(0.88))
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
     }
 
@@ -183,6 +197,28 @@ enum LanguageFlagCatalog {
     }
 }
 
+/// Pins the shared language button to the top-trailing corner of a detail
+/// panel's working area (not the whole screen / window chrome).
+struct LanguageSelectorCorner: ViewModifier {
+    var top: CGFloat = 10
+    var trailing: CGFloat = 14
+
+    func body(content: Content) -> some View {
+        content.overlay(alignment: .topTrailing) {
+            LanguageSelectorButton()
+                .padding(.top, top)
+                .padding(.trailing, trailing)
+        }
+    }
+}
+
+extension View {
+    /// Same corner placement on Overview and Options.
+    func languageSelectorCorner(top: CGFloat = 10, trailing: CGFloat = 14) -> some View {
+        modifier(LanguageSelectorCorner(top: top, trailing: trailing))
+    }
+}
+
 private struct FlagAsset: View {
     let name: String
 
@@ -190,7 +226,9 @@ private struct FlagAsset: View {
         if let image = Self.image(named: name) {
             image
                 .resizable()
-                .scaledToFit()
+                // Fill the circular crop so non-square PNGs stay centered.
+                .scaledToFill()
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         } else {
             Color.clear
         }

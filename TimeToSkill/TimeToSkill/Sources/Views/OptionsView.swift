@@ -54,11 +54,9 @@ struct OptionsView: View {
                         }
                     }
                 }
-
-                ToolbarItem(placement: .primaryAction) {
-                    LanguageSelectorButton()
-                }
             }
+            // Shared with Overview: same corner, same AppLanguage.shared state.
+            .languageSelectorCorner()
         }
         .macOSSheetMinSize(width: 620, height: 660)
         .sheet(isPresented: $showingShareSheet) {

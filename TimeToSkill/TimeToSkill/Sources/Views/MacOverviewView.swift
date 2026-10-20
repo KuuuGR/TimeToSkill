@@ -74,6 +74,8 @@ struct MacOverviewView: View {
             .frame(maxWidth: .infinity, alignment: .center)
         }
         .navigationTitle(LocalizedStringKey("ab_app_name"))
+        // Same shared control as Options — top-trailing of the detail panel.
+        .languageSelectorCorner()
     }
 
     private func formatHours(_ hours: Double) -> String {
