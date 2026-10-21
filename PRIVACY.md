@@ -1,32 +1,14 @@
 # Privacy Policy
 
-**TimeToSkill** is a fully offline app designed with privacy in mind.
+**Time4Skill** stores practice data on your device. There is no Time4Skill account.
 
-## 🛡️ What data do we collect?
+The canonical, detailed policy is published on the product wiki:
 
-We do **not** collect any personal data.
+**https://github.com/GKulesza/Time4Skill/wiki/Privacy**
 
-- No account is required to use the app.
-- We do not store or transmit any of your information.
-- Your skill progress remains **only on your device**.
+Summary:
 
-## 🌐 Does the app use internet?
-
-No. TimeToSkill works **entirely offline**.
-
-- No internet connection is needed.
-- The app does not communicate with any server.
-
-## 🧭 Why this approach?
-
-Because we believe in simplicity and focus.
-
-- **No tracking**
-- **No ads**
-- **No distractions**
-
-Just you and your time.
-
----
-
-*If you have any questions, feel free to contact the developer at: etaosin@gmail.com*
+- No advertising or third-party analytics SDKs in the app sources
+- Skills, counters, balances and session history stay in the app sandbox unless you export/share them
+- Optional actions may open Apple system UI (rating prompt) or Safari (wiki / reference / support links)
+- Contact: etaosin@gmail.com

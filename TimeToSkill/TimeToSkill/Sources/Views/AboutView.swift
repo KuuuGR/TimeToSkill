@@ -9,8 +9,8 @@ import SwiftUI
 
 struct AboutView: View {
     private static let wikiURL = "https://github.com/GKulesza/Time4Skill/wiki"
-    private static let privacyPolicyURL = URL(string: "\(wikiURL)#privacy")!
-    private static let termsOfUseURL = URL(string: "\(wikiURL)#welcome-to-time4skill")!
+    private static let privacyPolicyURL = URL(string: "\(wikiURL)/Privacy")!
+    private static let termsOfUseURL = URL(string: "\(wikiURL)/Terms")!
     private static let supportURL = URL(string: "\(wikiURL)/Support")!
 
     private var appVersion: String {

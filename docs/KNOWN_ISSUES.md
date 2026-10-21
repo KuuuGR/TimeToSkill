@@ -13,16 +13,15 @@ Audit performed by static inspection only. **Nothing was fixed.** Compiler warni
 - **No write** of `customSkillUnlocked = true` exists anywhere in the Swift sources.
 - **Effect:** Successful purchase can dismiss the paywall but leave Pro features locked.
 
-### 2. `Skill.lastUpdated` never updates after creation
+### 2. `Skill.lastUpdated` never updates after creation — **fixed (2026-10-21)**
 
-- Set only in `Skill.init`.
-- Timer stop / manual adjust / rename do not touch it.
-- **Effect:** `TrackedTimeView` week/month filters, `ActivityLogView`, `RecentTrackingView`, and `StatsSummaryView` earliest-date logic are wrong or useless.
+- `Skill.touchLastUpdated()` is called on timer start/stop, manual hour adjust,
+  rename/icon save, and progress reset (`StartView`, `SkillOptionsSheet`).
 
-### 3. Skill delete does not remove related `TimeIntervalEntry` rows
+### 3. Skill delete does not remove related `TimeIntervalEntry` rows — **fixed (2026-10-21)**
 
-- Entries reference `skillId` UUID without SwiftData relationship/cascade.
-- **Effect:** Orphan intervals inflate global distribution / PDF histograms.
+- `SkillIntervalCleanup.deleteEntries(for:in:)` runs before skill delete and on
+  progress reset. Covered by `SkillDataIntegrityTests`.
 
 ---
 

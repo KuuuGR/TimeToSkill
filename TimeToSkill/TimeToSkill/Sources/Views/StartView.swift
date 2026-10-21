@@ -64,7 +64,15 @@ struct StartView: View {
         }
         .sheet(item: $selectedSkillForOptions) { skill in
             SkillOptionsSheet(skill: skill) {
-                context.delete(skill)
+                let skillId = skill.id
+                do {
+                    _ = try SkillIntervalCleanup.deleteEntries(for: skillId, in: context)
+                    context.delete(skill)
+                    try context.save()
+                } catch {
+                    // Keep the sheet usable; SwiftData will surface a later save failure.
+                    context.delete(skill)
+                }
             }
         }
         .sheet(item: $selectedSkillForChart) { skill in
@@ -193,6 +201,7 @@ struct StartView: View {
             // Guard against NaN and infinite values
             guard hoursToAdd.isFinite && !hoursToAdd.isNaN && hoursToAdd >= 0 else {
                 skill.activeStart = nil
+                skill.touchLastUpdated()
                 return
             }
 
@@ -203,8 +212,10 @@ struct StartView: View {
             context.insert(entry)
 
             skill.activeStart = nil
+            skill.touchLastUpdated()
         } else {
             skill.activeStart = Date()
+            skill.touchLastUpdated()
         }
     }
 

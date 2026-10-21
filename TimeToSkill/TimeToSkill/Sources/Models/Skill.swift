@@ -28,6 +28,12 @@ final class Skill {
         self.lastUpdated = Date()
     }
 
+    /// Marks a real persisted change (hours, identity, or timer checkpoint).
+    /// Call only when stored fields change — not for pure display refreshes.
+    func touchLastUpdated(at date: Date = .now) {
+        lastUpdated = date
+    }
+
     /// Persisted hours plus the current running session (if any), as of `date`.
     ///
     /// This is display-only — persistence still writes to `hours` on Stop.

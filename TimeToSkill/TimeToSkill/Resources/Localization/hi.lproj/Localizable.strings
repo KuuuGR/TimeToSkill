@@ -582,3 +582,36 @@
 "export_pdf_generated_on_format" = "निर्मित: %@";
 "timer_start" = "शुरू";
 "timer_stop" = "रोकें";
+
+/* Calendar month/weekday names (from en; system DateFormatter used for non-isv) */
+"calendar_month_1" = "January";
+"calendar_month_short_1" = "Jan";
+"calendar_month_2" = "February";
+"calendar_month_short_2" = "Feb";
+"calendar_month_3" = "March";
+"calendar_month_short_3" = "Mar";
+"calendar_month_4" = "April";
+"calendar_month_short_4" = "Apr";
+"calendar_month_5" = "May";
+"calendar_month_short_5" = "May";
+"calendar_month_6" = "June";
+"calendar_month_short_6" = "Jun";
+"calendar_month_7" = "July";
+"calendar_month_short_7" = "Jul";
+"calendar_month_8" = "August";
+"calendar_month_short_8" = "Aug";
+"calendar_month_9" = "September";
+"calendar_month_short_9" = "Sep";
+"calendar_month_10" = "October";
+"calendar_month_short_10" = "Oct";
+"calendar_month_11" = "November";
+"calendar_month_short_11" = "Nov";
+"calendar_month_12" = "December";
+"calendar_month_short_12" = "Dec";
+"calendar_weekday_short_1" = "Su";
+"calendar_weekday_short_2" = "Mo";
+"calendar_weekday_short_3" = "Tu";
+"calendar_weekday_short_4" = "We";
+"calendar_weekday_short_5" = "Th";
+"calendar_weekday_short_6" = "Fr";
+"calendar_weekday_short_7" = "Sa";

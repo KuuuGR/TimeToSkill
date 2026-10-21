@@ -143,7 +143,7 @@ struct SkillOptionsSheet: View {
                         isPresented: $showResetConfirmation
                     ) {
                         Button(role: .destructive) {
-                            skill.hours = 0
+                            resetProgress()
                         } label: {
                             Text(verbatim: L10n.string("reset_confirm_action"))
                         }
@@ -189,8 +189,14 @@ struct SkillOptionsSheet: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button {
                         if !newName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                            skill.name = newName
+                            let trimmed = newName.trimmingCharacters(in: .whitespacesAndNewlines)
+                            let nameChanged = trimmed != skill.name
+                            let iconChanged = skillIcon != skill.icon
+                            skill.name = trimmed
                             skill.icon = skillIcon
+                            if nameChanged || iconChanged {
+                                skill.touchLastUpdated()
+                            }
                             dismiss()
                         }
                     } label: {
@@ -222,6 +228,7 @@ struct SkillOptionsSheet: View {
         guard totalHours != 0 && totalHours.isFinite && !totalHours.isNaN else { return }
 
         skill.hours += totalHours
+        skill.touchLastUpdated()
         // Persist interval entry as absolute minutes for distribution
         let entry = TimeIntervalEntry(skillId: skill.id, durationMinutes: abs(totalHours) * 60.0, source: .manual)
         context.insert(entry)
@@ -233,6 +240,20 @@ struct SkillOptionsSheet: View {
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             showSuccessMessage = false
+        }
+    }
+
+    /// Clears tracked hours and matching interval history so stats / PDF /
+    /// calendars stay consistent with a zeroed skill.
+    private func resetProgress() {
+        skill.hours = 0
+        skill.activeStart = nil
+        skill.touchLastUpdated()
+        do {
+            _ = try SkillIntervalCleanup.deleteEntries(for: skill.id, in: context)
+            try context.save()
+        } catch {
+            try? context.save()
         }
     }
 }
