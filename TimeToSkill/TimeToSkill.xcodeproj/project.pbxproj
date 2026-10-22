@@ -79,6 +79,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/CatalogLocalizationTests.swift,
 				Tests/TimeToSkillTests/CatalogQueryTests.swift,
 				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
 				Tests/TimeToSkillTests/LocalizationCompletenessTests.swift,
@@ -100,6 +101,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/CatalogLocalizationTests.swift,
 				Tests/TimeToSkillTests/CatalogQueryTests.swift,
 				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
 				Tests/TimeToSkillTests/LocalizationCompletenessTests.swift,
@@ -127,6 +129,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Tests/TimeToSkillTests/AppLaunchTests.swift,
+				Tests/TimeToSkillTests/CatalogLocalizationTests.swift,
 				Tests/TimeToSkillTests/CatalogQueryTests.swift,
 				Tests/TimeToSkillTests/FavoriteMigrationTests.swift,
 				Tests/TimeToSkillTests/LocalizationCompletenessTests.swift,

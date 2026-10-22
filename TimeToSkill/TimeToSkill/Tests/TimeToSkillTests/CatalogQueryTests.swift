@@ -275,9 +275,18 @@ final class AppLanguageTests: XCTestCase {
     func testCatalogOverlayFollowsDeviceLanguageIndependentlyOfUI() {
         // UI may be Spanish while the catalog overlay still keys off the device tag.
         XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "pl-PL"), "pl")
-        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "es-419"), "es")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "es-419"), "es-419")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "es-MX"), "es")
         XCTAssertNil(SkillSeeder.catalogOverlayCode(for: "en-GB"))
         XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "de-DE"), "de")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "zh-Hans"), "zh-Hans")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "zh-Hant-TW"), "zh-Hant")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "pt-BR"), "pt-BR")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "pt-PT"), "pt-PT")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "pt"), "pt-BR")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "fr-CA"), "fr-CA")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "isv"), "isv")
+        XCTAssertEqual(SkillSeeder.catalogOverlayCode(for: "isv-Cyrl"), "isv")
 
         let uiSpanish = LanguageCatalog.resolve(preferenceKey: "es", deviceLanguages: ["pl-PL"], available: available)
         XCTAssertEqual(uiSpanish.bundleCode, "es")

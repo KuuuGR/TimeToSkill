@@ -65,9 +65,19 @@ enum CatalogDefaults {
 }
 
 enum SkillSeeder {
+    /// Shipped `ExemplarySkills_<code>.json` suffixes (non-English). Keep in sync with Resources.
+    static let shippedOverlayCodes: Set<String> = [
+        "ar", "ca", "cs", "da", "de", "el", "eo", "es", "es-419", "fi", "fr", "fr-CA",
+        "he", "hi", "hr", "hu", "id", "isv", "it", "ja", "ko", "ms", "nb", "nl", "pl",
+        "pt-BR", "pt-PT", "ro", "ru", "sk", "sv", "th", "tr", "uk", "vi", "zh-Hans", "zh-Hant"
+    ]
+
     /// Catalog overlays follow the device language preference list, not the
     /// in-app UI language. Changing Options → language must not rewrite skill
     /// titles or descriptions.
+    ///
+    /// Resolution order: exact regional/script form → language head → family default.
+    /// English (`en` / `en-*`) always uses the base catalog (returns nil).
     static func catalogOverlayCode(for deviceLanguageCode: String) -> String? {
         let trimmed = deviceLanguageCode.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         guard !trimmed.isEmpty else { return nil }
@@ -75,7 +85,39 @@ enum SkillSeeder {
             .first
             .map(String.init) ?? trimmed
         if head == "en" { return nil }
-        return head
+
+        var candidates: [String] = []
+        if trimmed.hasPrefix("zh-hans") || trimmed == "zh-cn" {
+            candidates.append("zh-Hans")
+        } else if trimmed.hasPrefix("zh-hant") || trimmed == "zh-tw" || trimmed == "zh-hk" {
+            candidates.append("zh-Hant")
+        } else if trimmed == "pt-br" || trimmed.hasPrefix("pt-br") {
+            candidates.append("pt-BR")
+        } else if trimmed == "pt-pt" || trimmed.hasPrefix("pt-pt") {
+            candidates.append("pt-PT")
+        } else if trimmed == "es-419" || trimmed.hasPrefix("es-419") {
+            candidates.append("es-419")
+        } else if trimmed == "fr-ca" || trimmed.hasPrefix("fr-ca") {
+            candidates.append("fr-CA")
+        } else if head == "isv" {
+            candidates.append("isv")
+        } else if shippedOverlayCodes.contains(trimmed) {
+            candidates.append(trimmed)
+        }
+
+        candidates.append(head)
+        // Bare language tags that only exist as regional overlays.
+        if head == "pt" {
+            candidates.append(contentsOf: ["pt-BR", "pt-PT"])
+        } else if head == "zh" {
+            candidates.append(contentsOf: ["zh-Hans", "zh-Hant"])
+        }
+
+        var seen = Set<String>()
+        for code in candidates where seen.insert(code).inserted {
+            if shippedOverlayCodes.contains(code) { return code }
+        }
+        return nil
     }
 
     /// Loads the full base catalog, then overlays a localized file by id.
