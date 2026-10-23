@@ -20,7 +20,7 @@ enum L10n {
         return String(format: template, locale: Locale(identifier: LanguageState.shared.bundleCode()), arguments: arguments)
     }
 
-    /// Locale for dates / numbers — always the `.lproj` code (`isv`), never `isv-Cyrl`.
+    /// Locale for dates / numbers — logical language code (`isv`), never `isv-Cyrl`.
     static var locale: Locale {
         Locale(identifier: LanguageState.shared.bundleCode())
     }

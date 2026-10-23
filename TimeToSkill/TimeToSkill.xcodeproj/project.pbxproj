@@ -228,6 +228,7 @@
 				0713ACA92DA29289005F9E07 /* Sources */,
 				0713ACAA2DA29289005F9E07 /* Frameworks */,
 				0713ACAB2DA29289005F9E07 /* Resources */,
+				AAISV0000000000000000001 /* Run Script: Strip unrecognized isv.lproj */,
 				0713AE2F2DA32000005F9E07 /* Run Script: Bump catalogVersion on app version change */,
 				0713AE272DA3077B005F9E07 /* Embed Frameworks */,
 			);
@@ -294,6 +295,7 @@
 				AA0000000000000000000005 /* Sources */,
 				AA0000000000000000000006 /* Frameworks */,
 				AA0000000000000000000007 /* Resources */,
+				AAISV0000000000000000001 /* Run Script: Strip unrecognized isv.lproj */,
 			);
 			buildRules = (
 			);
@@ -380,7 +382,6 @@
 				ca,
 				"en-IN",
 				eo,
-				isv,
 			);
 			mainGroup = 0713ACA42DA29289005F9E07;
 			minimizedProjectReferenceProxies = 1;
@@ -429,6 +430,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AAISV0000000000000000001 /* Run Script: Strip unrecognized isv.lproj */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Strip unrecognized isv.lproj";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Interslavic is an in-app language loaded from Localizable_isv.strings.\n# App Store Connect rejects isv.lproj (not a recognized BCP-47 App Store locale).\nrm -rf \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/isv.lproj\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/isv.lproj\"\n";
+		};
 		0713AE2F2DA32000005F9E07 /* Run Script: Bump catalogVersion on app version change */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -626,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 8TC5J5KMXE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
@@ -656,7 +676,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 8TC5J5KMXE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Time4Skill;
@@ -756,7 +776,7 @@
 				CODE_SIGN_ENTITLEMENTS = Time4SkillMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 8TC5J5KMXE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -781,7 +801,7 @@
 				CODE_SIGN_ENTITLEMENTS = Time4SkillMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 8TC5J5KMXE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;

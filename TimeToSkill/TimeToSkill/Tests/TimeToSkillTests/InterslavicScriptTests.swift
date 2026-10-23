@@ -81,7 +81,7 @@ final class InterslavicScriptTests: XCTestCase {
         XCTAssertEqual(latin.bundleCode, "isv")
         XCTAssertEqual(cyrillic.bundleCode, "isv")
         XCTAssertEqual(glagolitic.bundleCode, "isv")
-        // Locale id must stay `isv` so Foundation loads isv.lproj; script is separate.
+        // Locale id must stay `isv` (logical code); strings load from Interslavic/, not isv.lproj.
         XCTAssertEqual(latin.localeIdentifier, "isv")
         XCTAssertEqual(cyrillic.localeIdentifier, "isv")
         XCTAssertEqual(glagolitic.localeIdentifier, "isv")

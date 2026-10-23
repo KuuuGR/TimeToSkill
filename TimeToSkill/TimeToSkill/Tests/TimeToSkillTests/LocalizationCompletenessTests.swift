@@ -269,6 +269,7 @@ final class LocalizationCompletenessTests: XCTestCase {
         var codes = Set<String>()
         for localization in Bundle.main.localizations {
             let code = localization == "Base" ? "en" : localization
+            if code == "isv" { continue } // must not ship as isv.lproj
             if Bundle.main.path(
                 forResource: table,
                 ofType: "strings",
@@ -277,6 +278,11 @@ final class LocalizationCompletenessTests: XCTestCase {
             ) != nil {
                 codes.insert(code)
             }
+        }
+        let isvResource = "\(table)_isv"
+        if Bundle.main.path(forResource: isvResource, ofType: "strings", inDirectory: "Interslavic") != nil
+            || Bundle.main.path(forResource: isvResource, ofType: "strings") != nil {
+            codes.insert("isv")
         }
         return codes
     }

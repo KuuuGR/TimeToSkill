@@ -45,9 +45,10 @@ struct ResolvedLanguage: Equatable {
     var bundleCode: String
     var script: InterslavicScript?
 
-    /// Foundation / SwiftUI locale. Always the `.lproj` code (e.g. `isv`), never
-    /// `isv-Glag` / `isv-Cyrl` — those folders do not exist, and using them made
-    /// the system skip Interslavic strings so the UI stayed in Latinica.
+    /// Foundation / SwiftUI locale id. For Interslavic this stays `isv` (logical
+    /// language code) even though strings live in `Interslavic/`, not `isv.lproj`
+    /// (App Store Connect rejects unrecognized `.lproj` names). Never use
+    /// `isv-Glag` / `isv-Cyrl` here — those would miss the string tables.
     var localeIdentifier: String { bundleCode }
 
     /// View-identity token that changes when the alphabet changes.
@@ -105,11 +106,28 @@ enum LanguageCatalog {
 
     /// Loads a compiled `.strings` table for one localization (e.g. `Localizable`, `TimePerspective`).
     /// Xcode compiles `.xcstrings` catalogs into per-locale `.strings` files at build time.
+    ///
+    /// Interslavic (`isv`) is **not** shipped as `isv.lproj` — App Store Connect rejects that
+    /// folder name (not a recognized BCP-47 App Store locale). Strings live in `Interslavic/`.
     static func loadStringsTable(
         named name: String,
         locale: String,
         bundle: Bundle = .main
     ) -> [String: String] {
+        if locale == "isv" {
+            // Not shipped as isv.lproj (App Store rejects it). Files are named
+            // Localizable_isv.strings / TimePerspective_isv.strings so they do not
+            // collide with .xcstrings tables or development-language Localizable.
+            let resourceName = "\(name)_isv"
+            let path =
+                bundle.path(forResource: resourceName, ofType: "strings", inDirectory: "Interslavic")
+                ?? bundle.path(forResource: resourceName, ofType: "strings")
+            guard let path,
+                  let dictionary = NSDictionary(contentsOfFile: path) as? [String: String] else {
+                return [:]
+            }
+            return dictionary
+        }
         guard let path = bundle.path(
             forResource: name,
             ofType: "strings",
@@ -480,6 +498,13 @@ final class AppLanguage: ObservableObject {
             }
         }
         codes.insert("en")
+        // Drop any leftover `isv.lproj` discovery — that folder must not ship.
+        codes.remove("isv")
+        // Interslavic is a custom in-app language (Localizable_isv.strings), not an App Store locale.
+        if Bundle.main.path(forResource: "Localizable_isv", ofType: "strings", inDirectory: "Interslavic") != nil
+            || Bundle.main.path(forResource: "Localizable_isv", ofType: "strings") != nil {
+            codes.insert("isv")
+        }
         return codes
     }
 
